@@ -1,0 +1,26 @@
+{
+  "slug": "recognition-vs-recall",
+  "title": ["RECALL", "MEMORY"],
+  "hookStyle": "thoughts",
+  "titleCue": "recall.",
+  "credit": "Bahrick, Bahrick & Wittlinger · 1975",
+  "stat": {
+    "unit": "%",
+    "a": { "label": "Recognized", "value": 90, "cue": "ninety" }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    { "sec": "hook", "text": "Ever spot the right answer, but couldn't have come up with it yourself?" },
+    { "sec": "name", "text": "That gap is recognition versus recall." },
+    { "sec": "study", "text": "Researchers tested 392 graduates on their old high school classmates.", "say": "Researchers tested three hundred ninety-two graduates on their old high school classmates." },
+    { "sec": "stat", "text": "Fifteen years on, they still recognized names and faces ninety percent of the time." },
+    { "sec": "stat", "text": "But recalling names from a blank page kept fading year after year." },
+    { "sec": "takeaway", "text": "Picking from a list feels like knowing." },
+    { "sec": "takeaway", "text": "So test yourself on a blank page. If you can't recall it, you don't own it yet." }
+  ],
+  "post": {
+    "title": "Why You Recognize Answers You Can't Remember #shorts",
+    "description": "Recognizing the answer isn't the same as knowing it. Bahrick, Bahrick & Wittlinger (1975) found graduates still recognized classmates' names and faces about 90% of the time 15 years on, while free recall kept declining. Study tip: test yourself from a blank page. #psychology #shorts #memory #studytips",
+    "tags": ["recognition vs recall", "memory", "psychology", "study tips"]
+  }
+}
