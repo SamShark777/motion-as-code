@@ -1,7 +1,7 @@
 # Daily Shorts pipeline — runbook
 
 One psychology Short a day, made with the Motion as Code kit (vertical template + Shivam's pixel avatar),
-hosted as a GitHub release asset on this repo, scheduled through Metricool to YouTube Shorts,
+hosted on this public repo's `media` branch, scheduled through Metricool to YouTube Shorts,
 Instagram Reels and TikTok **the day before it posts** so Shivam can veto it.
 
 State lives in this repo:
@@ -12,11 +12,15 @@ State lives in this repo:
 - `shorts/reviews/<date>.md` — the weekly reviews.
 
 Metricool brand: `blogId 7365379` (timezone America/Los_Angeles).
-Video URL pattern: `https://github.com/SamShark777/motion-as-code/releases/download/short-<slug>/<slug>.mp4`
+Code and state live on the **`shorts` branch** (main stays the original kit).
+Video URL pattern: `https://raw.githubusercontent.com/SamShark777/motion-as-code/media/<slug>.mp4`
+(Metricool copies the video into its own storage when the post is scheduled, so the `media` branch
+only ever holds the newest video — it is force-pushed fresh each day and never grows.)
 
 ## Daily run (≈ 45–60 min)
 
-1. **Setup.** Clone `SamShark777/motion-as-code` with push access; `cd` into it.
+1. **Setup.** Call `add_repo` (owner SamShark777, repo motion-as-code, access push), then
+   `git clone --depth 1 --branch shorts https://github.com/SamShark777/motion-as-code` and `cd` into it.
 2. **Vetoes.** For every queue row with status `scheduled` and post_date ≥ today, look it up with
    Metricool `getScheduledPosts` (by uuid). If it's gone and its post_date is in the future, Shivam
    vetoed it: set status `vetoed`. Rows whose post_date has passed and still exist as published → `posted`.
@@ -41,17 +45,19 @@ Video URL pattern: `https://github.com/SamShark777/motion-as-code/releases/downl
    - Add `say` with a phonetic spelling when TTS would misread a word (e.g. "T-shirt" → "tee shirt").
 6. **Build.** `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`.
    Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
-7. **Host.** `gh release create short-<slug> shorts/<slug>/<slug>.mp4 --repo SamShark777/motion-as-code --title "<title>" --notes "Short: <idea>"`.
-   Check the asset URL answers (`curl -sIL` → 200).
+7. **Host.** Push the video alone to the `media` branch (replacing what's there):
+   `M=$(mktemp -d) && cp shorts/<slug>/<slug>.mp4 $M && cd $M && git init -q && git checkout -q -b media && git add . && git -c commit.gpgsign=false commit -qm "media: <slug>" && git remote add origin https://github.com/SamShark777/motion-as-code.git && git push -q -f origin media && cd -`
+   Check `https://raw.githubusercontent.com/SamShark777/motion-as-code/media/<slug>.mp4` answers 200
+   (`curl -sL -o /dev/null -w "%{http_code}"`; retry for up to a minute — the CDN can lag).
 8. **Schedule** with Metricool `createScheduledPost` for **tomorrow 4:00 PM America/Los_Angeles**
    (or the best slot from `getBestTimeToPostByNetwork` for youtube between 12:00 and 18:00 tomorrow):
-   - media: the release asset URL; providers youtube, instagram, tiktok.
+   - media: the raw media-branch URL; providers youtube, instagram, tiktok.
    - youtubeData: `{type: "short", title: "<post.title>", privacy: "public", madeForKids: false, category: "EDUCATION", tags, isAiGeneratedContent: false}`
    - instagramData: `{type: "REEL", showReelOnFeed: true}`; tiktokData: `{title: "<post.title>", privacyOption: "PUBLIC_TO_EVERYONE"}`
    - text: the post description + 3–5 hashtags (#psychology #shorts + topic tags).
-9. **Record.** Queue row → `scheduled`, post_date, release_url, metricool_uuid. Tracker row: slug, idea,
+9. **Record.** Queue row → `scheduled`, post_date, release_url (the raw URL), metricool_uuid. Tracker row: slug, idea,
    post_date, title, hookStyle, duration_s, word_count, title_words, stat_type (percent / other).
-   Commit "short: <slug>" and push.
+   Commit "short: <slug>" and push to `shorts` (fetch + rebase first if the push is rejected).
 10. **Tell Shivam** (push notification): the title, post time, preview.jpg, the planner link and
     "Delete it in Metricool before 4 PM tomorrow to veto."
 
