@@ -55,6 +55,8 @@ only ever holds the newest video — it is force-pushed fresh each day and never
 8. **Schedule** with Metricool `createScheduledPost` for **tomorrow 4:00 PM America/Los_Angeles**
    (or the best slot from `getBestTimeToPostByNetwork` for youtube between 12:00 and 18:00 tomorrow):
    - media: the raw media-branch URL; providers youtube, instagram, tiktok.
+   - Always post as a **Short** (Shivam's rule): youtubeData `type` must be `"short"`, never `"video"`,
+     and the video must be the vertical 1080×1920 build. Re-read the createScheduledPost response and fix it if not.
    - youtubeData: `{type: "short", title: "<post.title>", privacy: "public", madeForKids: false, category: "EDUCATION", tags, isAiGeneratedContent: false}`
    - instagramData: `{type: "REEL", showReelOnFeed: true}`; tiktokData: `{title: "<post.title>", privacyOption: "PUBLIC_TO_EVERYONE"}`
    - text: the post description + 3–5 hashtags (#psychology #shorts + topic tags).
