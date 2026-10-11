@@ -15,3 +15,10 @@ analysis/qa/
 
 # alignment model (downloaded by hand, see README)
 analysis/models/
+
+# shorts pipeline
+audio/voiceover.wav
+shorts/*/*.mp4
+shorts/*/preview.jpg
+out/
+shorts/drive_uploader.gs

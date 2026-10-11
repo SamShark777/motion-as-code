@@ -2,12 +2,12 @@
 // a texture compositor and Canvas2D layers uploaded as textures.
 import * as THREE from 'three';
 import { GLSL_COMMON } from './glsl/common';
-import { SCALE } from './scale';
+import { SCALE, VERTICAL } from './scale';
 
-export { SCALE };
+export { SCALE, VERTICAL };
 /** Logical canvas: scenes lay out in these px at every output scale. */
-export const W = 1920;
-export const H = 1080;
+export const W = VERTICAL ? 1080 : 1920;
+export const H = VERTICAL ? 1920 : 1080;
 /** Physical (output) size: the logical canvas times SCALE (`?scale=2` → 3840x2160). */
 export const PW = W * SCALE;
 export const PH = H * SCALE;

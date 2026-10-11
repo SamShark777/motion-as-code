@@ -9,3 +9,6 @@ function readScale() {
 
 /** Physical pixels per logical pixel of the output (integer 1..4, default 1). */
 export const SCALE = readScale();
+
+/** Vertical 9:16 output (`?vertical=1`): the logical canvas becomes 1080x1920. */
+export const VERTICAL = typeof location !== 'undefined' && new URLSearchParams(location.search).get('vertical') === '1';

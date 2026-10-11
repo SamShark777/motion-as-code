@@ -1,6 +1,6 @@
 // Entry: preview player (default) or export mode (?export=1, driven by scripts/render.ts).
 import { Engine, type AdaptiveSampling } from './engine/engine';
-import { PW, PH, SCALE } from './engine/gl';
+import { PW, PH, SCALE, W, H, VERTICAL } from './engine/gl';
 import { makeTimeline } from './timeline';
 
 const params = new URLSearchParams(location.search);
@@ -32,6 +32,8 @@ async function boot() {
 // ------------------------------------------------------------------ export API
 function setupExport() {
   document.body.classList.add('export');
+  canvas.style.width = `${W}px`; canvas.style.height = `${H}px`;
+  if (VERTICAL) canvas.style.aspectRatio = '9/16';
   window.__pdoom = {
     engine,
     duration: engine.duration,

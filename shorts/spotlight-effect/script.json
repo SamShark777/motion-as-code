@@ -1,0 +1,27 @@
+{
+  "slug": "spotlight-effect",
+  "title": ["SPOTLIGHT", "EFFECT"],
+  "hookStyle": "eyes",
+  "titleCue": "spotlight",
+  "credit": "Gilovich, Medvec & Savitsky · 2000",
+  "stat": {
+    "unit": "%",
+    "a": { "label": "Guessed", "value": 50, "cue": "half" },
+    "b": { "label": "Actual", "value": 23, "cue": "quarter." }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    { "sec": "hook", "text": "Ever feel like everyone is staring at you?" },
+    { "sec": "name", "text": "Psychologists call it the spotlight effect." },
+    { "sec": "study", "text": "In one study, students wore an embarrassing T-shirt into a full room.", "say": "In one study, students wore an embarrassing tee shirt into a full room." },
+    { "sec": "stat", "text": "They guessed half the room noticed." },
+    { "sec": "stat", "text": "The real number? About a quarter." },
+    { "sec": "takeaway", "text": "Everyone else is busy starring in their own movie." },
+    { "sec": "takeaway", "text": "So relax. Nobody's watching as closely as you think." }
+  ],
+  "post": {
+    "title": "Why It Feels Like Everyone's Watching You #shorts",
+    "description": "Psychologists call it the spotlight effect. #psychology #spotlighteffect #shorts",
+    "tags": ["spotlight effect", "psychology", "social anxiety"]
+  }
+}

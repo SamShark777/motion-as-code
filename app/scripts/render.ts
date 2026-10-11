@@ -23,7 +23,9 @@ const opt = (k: string, d?: string) => { const i = argv.indexOf(`--${k}`); retur
 const flag = (k: string) => argv.includes(`--${k}`);
 const APP = path.resolve(import.meta.dir, '..');
 const SCALE = Math.max(1, Math.round(+opt('scale', '1')!));
-const OW = 1920 * SCALE, OH = 1080 * SCALE; // output size
+const VERT = flag('vertical');
+const LW = VERT ? 1080 : 1920, LH = VERT ? 1920 : 1080;
+const OW = LW * SCALE, OH = LH * SCALE; // output size
 // --samples N (fixed) or --samples auto [--min-samples 4] [--max-samples 324] [--tol 3] (adaptive, see Engine.render)
 const SAMPLES = opt('samples', '1') === 'auto'
   ? { min: +opt('min-samples', '4')!, max: +opt('max-samples', '324')!, tol: +opt('tol', '3')! }
@@ -48,20 +50,20 @@ async function ensureServer(): Promise<{ url: string; stop: () => void }> {
 
 async function openPage(url: string) {
   const browser = await chromium.launch({
-    channel: process.env.BROWSER_CHANNEL ?? 'chrome',
+    ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: process.env.BROWSER_CHANNEL ?? 'chrome' }),
     headless: !flag('headed'),
-    args: [process.platform === 'win32' ? '--use-angle=d3d11' : '--use-angle=metal', '--enable-gpu-rasterization', '--ignore-gpu-blocklist', '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows'],
+    args: [process.platform === 'win32' ? '--use-angle=d3d11' : process.platform === 'linux' ? '--use-angle=swiftshader' : '--use-angle=metal', '--enable-unsafe-swiftshader', '--enable-gpu-rasterization', '--ignore-gpu-blocklist', '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows'],
   });
-  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
+  const page = await browser.newPage({ viewport: { width: LW, height: LH }, deviceScaleFactor: 1 });
   const logs: string[] = [];
   page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning') logs.push(`[${m.type()}] ${m.text()}`); });
   page.on('pageerror', (e) => logs.push(`[pageerror] ${e.message}`));
   const only = opt('only');
-  await page.goto(`${url}/?export=1${only ? `&only=${only}` : ''}${SCALE !== 1 ? `&scale=${SCALE}` : ''}`);
+  await page.goto(`${url}/?export=1${only ? `&only=${only}` : ''}${SCALE !== 1 ? `&scale=${SCALE}` : ''}${VERT ? '&vertical=1' : ''}`);
   await page.waitForFunction(() => (window as any).__pdoom?.ready || (window as any).__pdoom?.error, null, { timeout: 120000 });
   const err = await page.evaluate(() => (window as any).__pdoom.error);
   if (err) throw new Error(`app failed to boot:\n${err}\n${logs.join('\n')}`);
-  const size: [number, number] = await page.evaluate(() => [(window as any).__pdoom.width ?? 1920, (window as any).__pdoom.height ?? 1080]);
+  const size: [number, number] = await page.evaluate(() => [(window as any).__pdoom.width ?? LW, (window as any).__pdoom.height ?? LH]);
   if (size[0] !== OW || size[1] !== OH) throw new Error(`app renders ${size[0]}x${size[1]}, expected ${OW}x${OH} (--scale ${SCALE})`);
   const sceneErrors: string[] = await page.evaluate(() => (window as any).__pdoom.errors);
   if (sceneErrors.length) console.error('SCENE ERRORS:\n' + sceneErrors.join('\n'));
@@ -77,7 +79,7 @@ async function stills(page: Page, times: number[], outDir: string) {
     if (typeof SAMPLES !== 'number') console.log(`t=${t}: ${k} sub-frames`);
     // at scale > 1 the canvas is shown downscaled on the page: save the full-res pixel buffer instead
     if (SCALE !== 1) await Bun.write(f, Buffer.from(await page.evaluate(() => (window as any).__pdoom.png()), 'base64'));
-    else await page.screenshot({ path: f, clip: { x: 0, y: 0, width: 1920, height: 1080 } });
+    else await page.screenshot({ path: f, clip: { x: 0, y: 0, width: LW, height: LH } });
     files.push(f);
   }
   return files;
@@ -109,6 +111,7 @@ async function video(page: Page, from: number, to: number, fps: number, out: str
   ensureDir(path.dirname(out));
   const crf = opt('crf', '16')!;
   const audio = path.join(ROOT, 'audio/voiceover.mp3');
+  void LW;
   const args = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', `${OW}x${OH}`, '-r', String(fps), '-i', 'pipe:0'];
   if (!flag('noaudio')) args.push('-ss', String(from), '-t', String(to - from), '-i', audio);
   // Frames are sRGB (toSRGB in the final pass): convert with the BT.709 matrix and tag the stream,
