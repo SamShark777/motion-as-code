@@ -45,7 +45,7 @@ only ever holds the newest video — it is force-pushed fresh each day and never
    - Titles: `title[0]` is the big word(s) (≤ 14 characters reads best), `title[1]` the pill (one word).
    - `hookStyle`: `eyes` for social/being-watched topics, `thoughts` for thinking/memory/decision topics.
    - Add `say` with a phonetic spelling when TTS would misread a word (e.g. "T-shirt" → "tee shirt").
-   - Apply the "Rules from reviews" section at the end of this file (the weekly review keeps it current).
+   - Apply the "Rules from reviews" section below (the weekly review keeps it current).
 6. **Build.** `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`.
    Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
 7. **Host.** Push the video alone to the `media` branch (replacing what's there):
