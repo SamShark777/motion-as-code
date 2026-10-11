@@ -4,15 +4,15 @@ One psychology Short a day, made with the Motion as Code kit (vertical template 
 hosted on this public repo's `media` branch, scheduled through Metricool to YouTube Shorts,
 Instagram Reels and TikTok **the day before it posts** so Shivam can veto it.
 
-State lives in this repo:
-- `shorts/queue.csv` — the ideas, one row each: `id,idea,status,slug,post_date,release_url,metricool_uuid,notes`
-  - status: `new` → `scheduled` → (`posted`) | `vetoed` | `failed`
-- `shorts/tracker.csv` — one row per scheduled video with its features and its stats at 7 / 14 / 30 days.
+State lives in this repo on the **`shorts` branch** (main stays the original kit):
+- `shorts/Psychology_Shorts_Tracker.xlsx` — Shivam's 100 ideas + production and performance columns.
+  Always read and write it with `scripts/tracker.py` (never rebuild it), so formatting and formulas survive.
+  Status flow: `Idea` → `Scripted` → `Scheduled` → `Published` | `Vetoed` | `Failed`.
+  `Priority`: the lowest number with Status `Idea` is made next.
 - `shorts/<slug>/script.json` — the script of each video (the build input).
 - `shorts/reviews/<date>.md` — the weekly reviews.
 
 Metricool brand: `blogId 7365379` (timezone America/Los_Angeles).
-Code and state live on the **`shorts` branch** (main stays the original kit).
 Video URL pattern: `https://raw.githubusercontent.com/SamShark777/motion-as-code/media/<slug>.mp4`
 (Metricool copies the video into its own storage when the post is scheduled, so the `media` branch
 only ever holds the newest video — it is force-pushed fresh each day and never grows.)
@@ -21,19 +21,21 @@ only ever holds the newest video — it is force-pushed fresh each day and never
 
 1. **Setup.** Call `add_repo` (owner SamShark777, repo motion-as-code, access push), then
    `git clone --depth 1 --branch shorts https://github.com/SamShark777/motion-as-code` and `cd` into it.
-2. **Vetoes.** For every queue row with status `scheduled` and post_date ≥ today, look it up with
-   Metricool `getScheduledPosts` (by uuid). If it's gone and its post_date is in the future, Shivam
-   vetoed it: set status `vetoed`. Rows whose post_date has passed and still exist as published → `posted`.
-3. **Stats.** For tracker rows that reached 7, 14 or 30 days since posting and lack that column, pull the
-   numbers with `getAnalyticsDataByMetrics` (YouTube "all videos" connector: YTVV17 title, YTVV06 views,
+2. **Vetoes and go-lives.** `python3 scripts/tracker.py scheduled`. For each row, look its Metricool ID
+   (uuid) up with `getScheduledPosts` (range: its post date ± 1 day). Still pending and post date in the
+   future → leave it. Gone before its post date → Shivam vetoed it: `Status=Vetoed`. Post date passed →
+   `Status=Published`.
+3. **Stats.** `python3 scripts/tracker.py due` lists published rows that reached 7, 14 or 30 days without
+   numbers. Pull them with `getAnalyticsDataByMetrics` (YouTube "all videos": YTVV17 title, YTVV06 views,
    YTVV08 avg view duration, YTVV09 likes, YTVV11 comments, YTVV12 shares; Instagram reels and TikTok
-   posts: discover field ids with `getAnalyticsAvailableMetrics`). Match each video by its title.
-   Fill `views_d7, likes_d7, comments_d7, shares_d7, avd_d7` (likewise d14 and d30), per platform where available.
-4. **Pick the idea.** The first queue row with status `new`.
+   posts: find field ids with `getAnalyticsAvailableMetrics`), matching each video by its title, and write
+   them with `tracker.py set <No> "YT views d7=…" "YT avg view (s) d7=…" …` (d14 / d30: views only).
+4. **Pick the idea.** `python3 scripts/tracker.py next` (Idea text, opening hook, outline, theme).
 5. **Write the script** (`shorts/<slug>/script.json`, format below). Before writing, verify the core
-   finding with a web search and put the source URL in the queue row's `notes`. Rules:
+   finding with a web search; record the source in `Source checked`. Rules:
    - Only well-established findings. Name the researchers and year in `credit` exactly as published.
-     If you can't find a solid source, mark the row `failed` with the reason and take the next idea.
+     If you can't find a solid source, set `Status=Failed` with the reason in `Lesson / notes` and take the next idea.
+   - Start from Shivam's `Opening hook` and `Content outline`; tighten them for the format.
    - 55–85 spoken words → 22–35 s. Short sentences.
    - Sections in order: `hook` (1 line, a question or surprising claim to the viewer), `name`
      (1 line ending in the concept's name), `study` (1–2 lines), `stat` (1–2 lines carrying the numbers),
@@ -41,8 +43,9 @@ only ever holds the newest video — it is force-pushed fresh each day and never
    - The stat cue words must appear verbatim in the stat lines. Use `%` stats when possible (they light
      that share of the 20-person room); otherwise give `lit` (0–20) or `display`.
    - Titles: `title[0]` is the big word(s) (≤ 14 characters reads best), `title[1]` the pill (one word).
-   - Vary `hookStyle` (`eyes` for social/being-watched topics, `thoughts` for thinking/memory/decision topics).
+   - `hookStyle`: `eyes` for social/being-watched topics, `thoughts` for thinking/memory/decision topics.
    - Add `say` with a phonetic spelling when TTS would misread a word (e.g. "T-shirt" → "tee shirt").
+   - Apply the "Rules from reviews" section at the end of this file (the weekly review keeps it current).
 6. **Build.** `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`.
    Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
 7. **Host.** Push the video alone to the `media` branch (replacing what's there):
@@ -55,23 +58,32 @@ only ever holds the newest video — it is force-pushed fresh each day and never
    - youtubeData: `{type: "short", title: "<post.title>", privacy: "public", madeForKids: false, category: "EDUCATION", tags, isAiGeneratedContent: false}`
    - instagramData: `{type: "REEL", showReelOnFeed: true}`; tiktokData: `{title: "<post.title>", privacyOption: "PUBLIC_TO_EVERYONE"}`
    - text: the post description + 3–5 hashtags (#psychology #shorts + topic tags).
-9. **Record.** Queue row → `scheduled`, post_date, release_url (the raw URL), metricool_uuid. Tracker row: slug, idea,
-   post_date, title, hookStyle, duration_s, word_count, title_words, stat_type (percent / other).
-   Commit "short: <slug>" and push to `shorts` (fetch + rebase first if the push is rejected).
-10. **Tell Shivam** (push notification): the title, post time, preview.jpg, the planner link and
+9. **Record.** `tracker.py set <No> "Status=Scheduled" "Slug=…" "Post date=YYYY-MM-DD" "Hook style=…"
+   "Length (s)=…" "Title used=…" "Metricool ID=<uuid>"`. Commit "short: <slug>" and push to `shorts`
+   (fetch + rebase first if the push is rejected; on an xlsx conflict, re-apply your `set` calls on theirs).
+10. **Tell Shivam** (push notification / message): the title, post time, preview.jpg, the planner link and
     "Delete it in Metricool before 4 PM tomorrow to veto."
 
-If any step fails, don't schedule a half-made video: mark the row `failed` with the reason, push, and
-tell Shivam what broke.
+If any step fails, don't schedule a half-made video: set `Status=Failed` with the reason in
+`Lesson / notes`, push, and tell Shivam what broke.
 
 ## Weekly review (Sundays)
 
-Read `tracker.csv`. Compare videos by views at d7 (and d14/d30 when present), avg view duration as a
-share of length, likes and shares per 1k views — across hookStyle, length, title style, topic area,
-stat type and post weekday. Write `shorts/reviews/<date>.md`: what worked, what didn't, 3 concrete
-changes for next week (script rules, topics to move up the queue, posting time). With fewer than 5
-videos past d7, say the sample is too small and only describe. Commit, push and notify Shivam with the
-headline findings.
+`python3 scripts/tracker.py dump > /tmp/t.csv` and analyse the published vertical Shorts (skip No. 1, the
+horizontal pilot): total views and engagement at d7 (d14/d30 when present), YouTube retention (avg view ÷
+length) — compared across theme, hook style, length, title wording, opening-hook type (question vs claim),
+template fit and weekday. Then:
+- Write `shorts/reviews/<date>.md`: what worked, what didn't, with the numbers.
+- Fill `Lesson / notes` on reviewed rows with a one-line takeaway.
+- **Tune the queue:** renumber `Priority` on upcoming `Idea` rows to move the patterns that win forward,
+  and rewrite weak `Opening hook`s of upcoming ideas in the winning style (keep the old hook in
+  `Lesson / notes` as "was: …"). Add or update up to 5 bullet rules under "Rules from reviews" below.
+- With fewer than 5 Shorts past day 7, say the sample is too small: describe only, change nothing.
+Commit, push and send Shivam the headline findings plus what was changed.
+
+## Rules from reviews
+
+- (none yet)
 
 ## script.json
 
