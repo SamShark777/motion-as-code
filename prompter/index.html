@@ -107,7 +107,7 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   <button id="mic" title="Start or stop listening (M)"><span class="dot"></span><span id="micLabel">Start listening</span></button>
   <select id="speaker" aria-label="Whose script"></select>
   <nav class="track" id="track"></nav>
-  <span class="clock" id="clock">0:00 / ~5:30</span>
+  <span class="clock" id="clock">0:00</span>
   <button id="setupBtn">Setup</button>
 </header>
 
@@ -136,9 +136,7 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   <div class="row"><span id="loadMsg" class="msg"></span><button id="loadBtn">Load script</button></div>
   <div class="row" id="savedRow"></div>
   <hr>
-  <h3>Setup</h3>
-  <label>Valid JSON score (X out of 10)<input id="inX" type="text" inputmode="numeric" placeholder="e.g. 9"></label>
-  <label>Worked in sim (Y out of 10)<input id="inY" type="text" inputmode="numeric" placeholder="e.g. 4"></label>
+  <h3>Settings</h3>
   <label>Matching strictness<input id="inStrict" type="range" min="0.3" max="0.7" step="0.05"></label>
   <label>Text size<input id="inSize" type="range" min="22" max="80" step="2"></label>
   <div class="row"><button id="restartBtn">Restart from top</button><button id="closeSetup">Done</button></div>
@@ -148,108 +146,169 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
 /* ---------- Script ----------
    {word|synonym|synonym} = a key idea. Shown as the first option, matched on any option.
    cue: a stage direction with nothing to say. alt: a fresh rephrase used if you skip the line. */
-const SCRIPT = [
- {name:"Record", sub:"Data & Policy Research", beats:[
-  {say:"Hi, I'm {Shivam}, {Data and Policy Research|data|policy|research} for {Team 2|team two|team}.",
-   alt:"Quick intro: Shivam, data and policy research on Team 2."},
-  {say:"Our question: can {Yotie|yoti|yodie|yotie's} hear a {classroom|class} {command|commands} and actually {do it|do|carry out|perform}?",
-   alt:"The lab tested whether Yotie can turn a spoken classroom command into a real action."},
-  {say:"When the robot {fails|fail|failed|wrong|messes up}, {data} tells us whether it was {Claude} or the {robot}.",
-   alt:"Logs settle whether a failure came from Claude's answer or from the robot."},
-  {say:"For every attempt I {record|log|logged|recorded} three things. First, {o_t|o t|observation|observations}: what the robot {saw|sees|see}, its {pose}, the {chair}, any {contact|collision|bump}.",
-   alt:"First thing I log is o_t, what the robot observes: its pose, where the chair is, any contact."},
-  {say:"Second, {a_t|a t|action}: what it was {told|commanded|sent}, a {walking speed|speed|velocity} or an {arm target|arm}.",
-   alt:"Second is a_t, the command we sent it: walking speed or an arm target."},
-  {say:"Third, the whole {episode}: the {command}, Claude's {answer|response|output}, and whether it {worked|work|success}.",
-   alt:"Third, each full episode: the command, what Claude returned, and the outcome."},
+const NICK1 = [
+ {name:"Title", sub:"Nicholas · slide 1", beats:[
+  {say:"Good {afternoon|morning|everyone}. We are {Team 2|team two|team}: {Nicholas|nick}, {Shivam}, and {Daniel}.",
+   alt:"We're Team 2: Nicholas, Shivam and Daniel."},
+  {say:"Our project asks a {deceptively simple|simple|deceptively} question: when our {humanoid} classroom assistant {Yotie|yoti|yodie} {moves|move}, who is really in {control}?",
+   alt:"The question behind the project: when Yotie moves, who is actually in control?"},
+  {say:"We study how {instructions|instruction} become robot {actions|action}, where existing {controllers|controller} {succeed|success} or {fail|failure}, and how {physics-informed|physics} control could make them more {reliable}.",
+   alt:"We look at how instructions turn into actions, where controllers break, and how physics-informed control could make them reliable."},
  ]},
- {name:"Works", sub:"What we observed", beats:[
-  {say:"What works: a {classroom scene|classroom|scene} in {Lucky Engine|lucky}, and the {G1|g one|gee one} takes {walking|walk} commands.",
-   alt:"Working today: the Lucky Engine classroom, and walking commands on the G1."},
-  {say:"Both {arms} run a full {motion graph|graph}, and the {targets|target} make the motion much more {natural|naturally|smooth|smoother}.",
-   alt:"The arm motion graph runs on both arms, and graph targets made the movement far less stiff."},
-  {say:"Still {open|unsolved|not solved}: {reliable|reliably} {contact|touching|pushing|push} with the {chair}.",
-   alt:"What's not reliable yet is actually making contact with the chair and pushing it."},
-  {say:"These are {observations|observed} from the {sim|simulation}, not {scored|score} results yet.",
-   alt:"Note these come from watching the sim; they aren't scored yet."},
+ {name:"Team", sub:"Nicholas · slide 2", beats:[
+  {say:"We split the work into {three|3} connected {areas|area}. I focused on the {classroom} {tasks|task} and the {control} environment.",
+   alt:"Three areas of work. Mine was the classroom tasks and control environment."},
+  {say:"{Shivam} investigated {Lucky Engine|lucky} behavior, {command} {interpretation|interpreting}, and {controller} {failures|failure}.",
+   alt:"Shivam looked at Lucky Engine, how commands get interpreted, and why controllers fail."},
+  {say:"{Daniel} worked on {motion generation|generation|motion}, {visualization|visualize}, and {quantitative|tracking} {experiments|experiment}.",
+   alt:"Daniel handled motion generation, visualization and the tracking experiments."},
+  {say:"Together, we're building a way to {observe}, {measure}, and eventually {improve} {G1|g one} behavior.",
+   alt:"Together the goal is to observe, measure and improve how the G1 behaves."},
  ]},
- {name:"Clips", sub:"Demo evidence", beats:[
-  {say:"We ran {three|3} {commands} in the {sim|simulation}.",
-   alt:"We picked three commands and ran each one in simulation."},
-  {say:"For each, watch {what we said|said|say}, what {Claude} {answered|answer|returned}, and what the {robot} {did|actually did|does}.",
-   alt:"Compare three things each time: the command, Claude's answer, and the robot's behavior."},
+ {name:"Problem", sub:"Nicholas · slide 3", beats:[
+  {say:"A robot has to do more than {understand} a {sentence}.",
+   alt:"Understanding the sentence is only the start."},
+  {say:"It must {identify} the {task}, turn that {intent} into {coordinated} {motion}, and respond to {balance}, {contact}, and physical {constraints}.",
+   alt:"It has to find the task, turn intent into coordinated motion, and deal with balance, contact and constraints."},
+  {say:"A movement can look {convincing} in a {simulation|sim} {video} while still being {unreliable} as an actual task.",
+   alt:"Something can look right in a sim video and still fail as a real task."},
+  {say:"That {difference} is the {core} of our {research}.",
+   alt:"That gap is what our research is about."},
  ]},
- {name:"Walk", sub:"Clip 01", beats:[
-  {say:"Command one: {walk|walking} to the {chair}.",
-   alt:"First command was simply: walk to the chair."},
-  {say:"Claude answered {move_to|move to|moved to|move}, object {chair}, target {null|none|no target}. So: {go|approach|travel} to the chair.",
-   alt:"Claude returned move_to with the chair as the object and no target, meaning just go there."},
-  {cue:"Play clip 1"},
-  {say:"It {walks|walk|walked} over and {stops|stop|stopped} at the chair.",
-   alt:"The robot reaches the chair and stops there.", note:"Add: where it stopped, and whether it bumped anything."},
- ]},
- {name:"Point", sub:"Clip 02", beats:[
-  {say:"Command two: {point|pointing} at the {whiteboard|white board|board}.",
-   alt:"Second command: point at the whiteboard."},
-  {say:"Claude got it {exactly right|right|correct|perfect}: action {point}, object {whiteboard|white board|board}.",
-   alt:"Here Claude's JSON was correct: point, whiteboard."},
-  {cue:"Play clip 2"},
-  {say:"The {arm} {points|point|pointing} at the board, {holds|hold|holding}, and {returns|return|comes back|down} without losing {balance}.",
-   alt:"What to look for: the arm reaches the board, holds, and comes back down while the robot stays balanced."},
-  {say:"This is one of the {smoothest|smooth|cleanest|clean} {gestures|gesture} in our set.",
-   alt:"Of everything we ran, this gesture is one of the cleanest."},
- ]},
- {name:"Place", sub:"Clip 03", beats:[
-  {say:"Command three: {move|moving} the {chair} to the {front row|front|row}.",
-   alt:"Third command: move the chair to the front row."},
-  {say:"Claude answered {place|placed}, chair, front row.",
-   alt:"Claude chose the place action, with chair and front row."},
-  {say:"But {place} means putting down something {already held|already|held}. The robot isn't {holding|holds} anything.",
-   alt:"In our action list, place is for setting down an object the robot is already carrying, and it wasn't carrying anything."},
-  {say:"The right answer was {move_to|move to|move}.",
-   alt:"move_to was the correct action."},
-  {say:"{Valid JSON|valid|json|jason} and the {right answer|right|correct} are {two different|different|separate} tests.",
-   alt:"Key point: well-formed JSON can still be the wrong instruction."},
-  {cue:"Play clip 3"},
-  {say:"This is the {closest|close} we got: the robot {approaching|approach|approaches} the chair. A {partial} demo, not a {success}.",
-   alt:"What we have here is the approach only, so we count it as partial."},
- ]},
- {name:"Oops", sub:"Blooper", beats:[
-  {say:"{One more|another} clip before the {numbers|results|evaluation}.",
-   alt:"Before the results, one more clip."},
-  {cue:"Play blooper", note:"Let it run. Pause before speaking."},
-  {say:"The {arm controller|controller|arm} didn't {release|let go|hand back|give back} control after the {gesture}.",
-   alt:"After the gesture finished, the arm controller kept control instead of releasing it."},
-  {say:"So when the next {command} came in, the robot couldn't {walk|move|moving} normally.",
-   alt:"That's why the following command couldn't move the robot properly."},
-  {say:"In the sim that's a {bug|glitch|blooper}. Next to a real {student|person|people}, it's a {safety} problem.",
-   alt:"Harmless in simulation, but with a student nearby it would be a safety issue."},
-  {say:"The {fix|fixed}: after every gesture, the arms go to a {safe pose|safe|neutral} and hand control back to the {walking controller|walking|walk}.",
-   alt:"Our fix returns the arms to a safe pose after each gesture and gives control back to walking."},
- ]},
- {name:"Gap", sub:"Evaluation", beats:[
-  {say:"We wrote {10|ten} classroom commands: {7|seven} {specific} and {3|three} {vague} on purpose.",
-   alt:"The test set: ten commands, seven specific and three deliberately vague."},
-  {say:"We {scored|score} each one: {valid JSON|valid|json|jason}, right {action}, {object}, {target}, and whether it {worked|work} in the sim.",
-   alt:"Each was scored on valid JSON, correct action, object and target, plus whether the sim run succeeded."},
-  {say:"Claude produced {valid JSON|valid|json|jason} for %X% out of 10. In the {sim|simulation}, only %Y% actually {worked|work}.",
-   alt:"Scores: %X% of 10 were valid JSON, but only %Y% worked in simulation."},
-  {say:"The {vague} ones are the {weak|weakest|struggle|struggles|hardest} spot. Claude can't {see} the {room} or my {hand|gesture|pointing}, so it {guesses|guess|picks} the likeliest answer.",
-   alt:"Vague commands fail because Claude has no view of the room or of where I'm pointing, so it guesses."},
-  {say:"The {bigger|biggest} gap isn't {language}. It's what happens {after} the robot reaches the {chair}.",
-   alt:"Language isn't the main gap. The main gap starts once the robot gets to the chair."},
- ]},
- {name:"Nick", sub:"Handover", beats:[
-  {say:"Claude handles the {language} side. The hard part is {reach|reaching}, {contact}, and {grasp|grasping|grab}.",
-   alt:"The language part works; reach, contact and grasp are where the robot still struggles."},
-  {say:"That's {Nick|nick's|nicks}'s part. He's {breaking|break|splitting|split} each action into small {steps}: walk, approach, reach, grasp, {lift}.",
-   alt:"Nick is splitting each action into steps: walk, approach, reach, grasp, lift."},
-  {say:"Each step is {tested|test|testing} on its own, so when it fails we know {which step|which|exactly}.",
-   alt:"Testing every step separately tells us exactly where a failure happens."},
-  {say:"{Nick}, {over to you|over|yours|you}.",
-   alt:"Nick, over to you."},
+ {name:"Testbed", sub:"Nicholas · slide 4", beats:[
+  {say:"We chose {classroom} tasks because they're easy to {describe} but physically {demanding}.",
+   alt:"Classroom tasks are simple to say but hard to do physically, which is why we picked them."},
+  {say:"We want {Yotie|yoti|yodie} to {approach} a {chair} and {stop}, {point} toward a {whiteboard}, and eventually {grasp|grab} and move {objects}.",
+   alt:"Targets: approach a chair, point at the whiteboard, later grasp and move objects."},
+  {say:"Our approach: establish a {baseline}, {identify} {failures|failure}, and make {repeatable} {tests} before claiming a {better} {controller}.",
+   alt:"First a baseline, then failures, then repeatable tests, before we claim anything better."},
+  {say:"{Shivam} will show what the current {baseline} has {taught|teach|learned} us.",
+   alt:"Hand off to Shivam for the baseline."},
  ]},
 ];
+
+const SHIVAM = [
+ {name:"Observations", sub:"Shivam · slide 5", beats:[
+  {say:"Thanks, {Nicholas|nick}. {Lucky Engine|lucky} gives us a {classroom} {scene} and a local {bridge} from {speech} instructions to {motion}.",
+   alt:"Thanks Nicholas. Lucky Engine provides the classroom scene and a speech-to-motion bridge."},
+  {say:"We tested a {two-arm|arm|arms} {motion graph|graph} for {scripted} actions.",
+   alt:"We ran scripted actions through a two-arm motion graph."},
+  {say:"{Graph-based|graph} {targets|target} made arm motion {freer|free} than our earlier, {stiffer|stiff} {reaching|reach}.",
+   alt:"Graph targets loosened the arms compared with the stiff reaching we had before."},
+  {say:"But {interacting|interaction} with the {chair} was not {repeatable}, and {balance} and {controller handoff|handoff|controller} still need {attention|work}.",
+   alt:"Chair interaction wasn't repeatable, and balance and the controller handoff need work."},
+  {say:"These {observations|observation} tell us what to {measure} {next}.",
+   alt:"That tells us what to measure next."},
+ ]},
+ {name:"Obs → Outcome", sub:"Shivam · slide 6", beats:[
+  {say:"To {understand} a {failure}, we need to {record} {three|3} things.",
+   alt:"Understanding a failure takes three kinds of records."},
+  {say:"First, the {observation|observations}: the robot {pose}, {object|objects} {locations|location}, {contacts|contact}, and {collisions|collision}.",
+   alt:"Observation: pose, where objects are, contacts and collisions."},
+  {say:"Second, the {action}: the {velocity|speed} or {hand target|hand|target} sent to the {controller}.",
+   alt:"Action: the velocity or hand target we send the controller."},
+  {say:"Third, the {episode} {outcome}: the original {instruction}, the {interpreted|interpretation} {command}, robot {state}, and whether the task {succeeded|success}.",
+   alt:"Outcome: instruction, interpreted command, robot state, and success or not."},
+  {say:"This helps {separate} a {language} {interpretation} error from a {control} {failure}.",
+   alt:"With that we can tell a language error apart from a control failure."},
+ ]},
+ {name:"Demos", sub:"Shivam · slide 7", beats:[
+  {say:"Here are {two|2} {examples} from the {classroom} {scene}.",
+   alt:"Two examples from the classroom scene."},
+  {say:"For the {chair} {instruction}, {Claude} {interpreted|interpret} it as {move-to-chair|move to|move}.",
+   alt:"Chair command: Claude read it as move-to-chair."},
+  {say:"The {G1|g one} {approached|approach} the chair, made {contact}, and {stumbled|stumble}.",
+   alt:"The robot reached the chair, touched it, and stumbled."},
+  {say:"For the {whiteboard} instruction, the robot kept its {balance}, but its {pointing|point} {arm} didn't fully {extend|extended}.",
+   alt:"Whiteboard command: balanced, but the arm stopped short of full extension."},
+  {cue:"Play classroom video", note:"Only if the file is available."},
+  {say:"These results are {useful} because they show {partial} {execution} and specific {limits|limit}, not complete {success}.",
+   alt:"The value is in seeing partial execution and exactly where the limits are."},
+ ]},
+ {name:"Goes wrong", sub:"Shivam · slide 8", beats:[
+  {say:"We also {observed|observe|saw} a {controller handoff|handoff} {problem}.",
+   alt:"Next, the controller handoff issue."},
+  {say:"After an {arm} motion played, the arm {controller} {retained|kept|keeps} {control}, so a later {command} couldn't {move} normally.",
+   alt:"The arm controller held on after its motion, so the next command couldn't move the robot properly."},
+  {cue:"Play controller failure video"},
+  {say:"So we need an {explicit} {transition}: return to a {safe pose|safe|pose}, {release} the previous controller, and {restore} {walker|walking} control.",
+   alt:"The fix is a clear transition: safe pose, release the arm controller, give control back to the walker."},
+  {say:"We haven't yet {demonstrated|demonstrate} chair {transport}, or implemented {grasping|grasp} and {manipulation}.",
+   alt:"Chair transport, grasping and manipulation are still future work."},
+ ]},
+ {name:"Evaluation", sub:"Shivam · slide 9", beats:[
+  {say:"This slide {proposes|propose} how to {evaluate} {ten|10} {commands}, including {specific} and {vague} instructions.",
+   alt:"Here's the plan for scoring ten commands, both specific and vague."},
+  {say:"We'd {score} whether the {JSON|jason} is {valid}, whether the {action}, {object}, and {target} are {correct}, and whether the {simulation|sim} {succeeds|success}.",
+   alt:"Checks: valid JSON, correct action, object and target, and success in simulation."},
+  {say:"The numbers shown are {illustrative|example} {sample} scores, not results from ten {measured|measure} {trials}.",
+   alt:"Important: these are sample numbers, not measured trial results."},
+  {say:"The next {experiment} is to {replace} these {example|sample} values with actual {episode} {logs|log}, so we can {quantify} which {stage} fails.",
+   alt:"Next we fill this with real episode logs to pin down which stage fails."},
+  {say:"That's how we'll {measure} the {command} side. {Daniel} will show how we measure the {motion} itself.",
+   alt:"Hand off to Daniel for motion measurement."},
+ ]},
+];
+
+const DANIEL = [
+ {name:"Motion demo", sub:"Daniel · slide 10", beats:[
+  {say:"Thanks, {Shivam}. My work focused on what happens between a {motion} {reference} and a robot actually {following|follow} it.",
+   alt:"Thanks Shivam. My focus is the gap between a motion reference and the robot following it."},
+  {say:"First, I used motion {visualization|visualize} to {inspect} the {G1|g one}'s {walking|walk} and {whole-body|whole body} movement: {gait}, {posture}, and {timing}.",
+   alt:"I visualized the walking and full-body motion to check gait, posture and timing."},
+  {cue:"Play walking motion video"},
+  {say:"A {video} is a useful first {check}, but it doesn't tell us how closely the {joints|joint} {followed|follow} their {targets|target}.",
+   alt:"Video alone can't show how well the joints tracked their targets."},
+  {say:"So our next step is to {save} {reference} {trajectories|trajectory} and {compare} them against {measured} joint {positions|position}.",
+   alt:"Next we save reference trajectories and compare them with measured joint positions."},
+ ]},
+ {name:"Elbow", sub:"Daniel · slide 11", beats:[
+  {say:"This slide shows a {separate} {G1|g one} {right-elbow|elbow} {simulation} {experiment}.",
+   alt:"This is a standalone right-elbow simulation test."},
+  {say:"The {blue} curve is the {commanded|command} angle, and the {orange} curve is the {actual} {response}.",
+   alt:"Blue is commanded, orange is the actual response."},
+  {say:"Ideally they'd {overlap}. Instead, the response {lags|lag} behind, especially during {changes|change} in {direction}.",
+   alt:"They should overlap, but the response trails, mostly when direction changes."},
+  {say:"The {error} {graph} {measures|measure} that {difference} over time.",
+   alt:"The error plot tracks that gap over time."},
+  {say:"Across {350} {samples} and {6.98|7|seven} {seconds}, the {root-mean-square|rms|root mean square} {tracking} error was {1.20|1.2|one point two} {degrees|degree}.",
+   alt:"Over 350 samples and about 7 seconds, RMS tracking error was 1.2 degrees."},
+  {say:"The {maximum|max} error was {2.37|2.4} {degrees|degree}.",
+   alt:"Peak error was 2.37 degrees."},
+  {say:"These are {measured} {results} from the {elbow} {test}, not from the {walking|walk} {video}.",
+   alt:"These numbers come from the elbow test, not the walking video."},
+  {say:"This gives us a {concrete} {baseline} for future {control} {comparisons|comparison}.",
+   alt:"It's a concrete baseline for comparing controllers later."},
+  {say:"{Nicholas|nick} will {wrap up|wrap|summarize} where this leaves us.",
+   alt:"Hand back to Nicholas for the conclusion."},
+ ]},
+];
+
+const NICK2 = [
+ {name:"Conclusion", sub:"Nicholas · slide 12", beats:[
+  {say:"Thanks, {Daniel}. To {summarize}: we can {trigger} and {observe} {classroom} {actions|action}, and we can {visualize} motion {references|reference}.",
+   alt:"Thanks Daniel. In short: we can trigger and observe classroom actions and visualize motion references."},
+  {say:"But {chair} {contact}, {controller handoff|handoff}, and {repeatable} {multi-joint|joint} {tracking} still need {improvement|improve}.",
+   alt:"Still to fix: chair contact, controller handoff, and repeatable multi-joint tracking."},
+  {say:"Next, we'll {collect} {real} {command}, {state}, and {outcome} {logs|log}, and run {controlled} {comparisons|comparison}.",
+   alt:"Next up: real logs of command, state and outcome, and controlled comparisons."},
+  {say:"We'll also study how {dynamics} and {feedback} {constraints} affect {performance}.",
+   alt:"We'll also look at how dynamics and feedback constraints change performance."},
+  {say:"Our {goal} isn't just a robot that {moves|move}, but one whose behavior we can {explain}, {measure}, and {improve}.",
+   alt:"The aim is a robot we can explain, measure and improve, not just one that moves."},
+  {say:"{Thank you|thanks}. We {welcome} your {questions|question}.",
+   alt:"Thank you, we'd love your questions."},
+ ]},
+];
+
+const BUILTIN = [
+ {name:"Shivam", secs:SHIVAM},
+ {name:"Nicholas", secs:[...NICK1, ...NICK2]},
+ {name:"Daniel", secs:DANIEL},
+ {name:"Whole team", secs:[...NICK1, ...SHIVAM, ...DANIEL, ...NICK2]},
+];
+const SCRIPT = SHIVAM;
+
 
 /* ---------- Parsing & matching ---------- */
 const NUM = {zero:"0",one:"1",two:"2",three:"3",four:"4",five:"5",six:"6",seven:"7",eight:"8",nine:"9",ten:"10"};
@@ -344,12 +403,13 @@ let saved=[];
 try{ saved=JSON.parse(localStorage.getItem("lab3scripts")||"[]"); }catch(_){}
 function persistScripts(){ try{ localStorage.setItem("lab3scripts",JSON.stringify(saved)); }catch(_){} }
 function fillSpeakers(sel){
-  $("speaker").innerHTML=`<option value="-1">Shivam (built in)</option>`+saved.map((x,i)=>`<option value="${i}">${esc(x.name)}</option>`).join("");
-  $("speaker").value=String(sel);
+  $("speaker").innerHTML=BUILTIN.map((x,i)=>`<option value="b${i}">${esc(x.name)}</option>`).join("")+(saved.length?`<optgroup label="Uploaded">`+saved.map((x,i)=>`<option value="u${i}">${esc(x.name)} (uploaded)</option>`).join("")+`</optgroup>`:"");
+  $("speaker").value=sel;
 }
-function useScript(idx){
-  build(idx<0?SCRIPT:saved[idx].secs); restart();
-  setStatus(idx<0 && (!X||!Y) ? "Add your real scores in Setup before presenting." : "");
+function useScript(key){
+  const i=+key.slice(1);
+  build(key[0]==="b"?BUILTIN[i].secs:saved[i].secs); restart();
+  try{ localStorage.setItem("lab3speaker",key); }catch(_){}
 }
 
 function hits(i,toks){ return beats[i].groups.map(g=>g.some(alt=>alt.length && alt.every(t=>toks.some(w=>tokMatch(t,w))))); }
@@ -466,7 +526,7 @@ function stopMic(){ listening=false; try{rec&&rec.stop()}catch(_){} interim=[]; 
 function updMic(){ $("mic").classList.toggle("on",listening); $("micLabel").textContent=listening?"Listening":"Start listening"; }
 $("mic").onclick=()=> listening?stopMic():startMic();
 
-setInterval(()=>{ if(!t0) return; const s=Math.floor((Date.now()-t0)/1000); $("clock").textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")} / ~5:30`; },500);
+setInterval(()=>{ if(!t0) return; const s=Math.floor((Date.now()-t0)/1000); $("clock").textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")} `; },500);
 
 /* ---------- Controls ---------- */
 function manualNext(){
@@ -478,7 +538,7 @@ function manualNext(){
 }
 function back(){ if(cur===0) return; cur--; status[cur]="todo"; delete missFrom[cur]; winStart=words.length; lastHits={}; render(); }
 function jumpSection(si){ const i=beats.findIndex(b=>b.si===si); for(let k=i;k<beats.length;k++){ status[k]="todo"; delete missFrom[k]; } cur=i; winStart=words.length; lastHits={}; render(); }
-function restart(){ cur=0; status=beats.map(()=>"todo"); missFrom={}; words=[]; interim=[]; winStart=0; lastHits={}; t0=listening?Date.now():null; $("clock").textContent="0:00 / ~5:30"; $("heard").innerHTML="<span>Transcript cleared.</span>"; render(); }
+function restart(){ cur=0; status=beats.map(()=>"todo"); missFrom={}; words=[]; interim=[]; winStart=0; lastHits={}; t0=listening?Date.now():null; $("clock").textContent="0:00"; $("heard").innerHTML="<span>Transcript cleared.</span>"; render(); }
 function size(d){ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"))+d; const c=Math.max(22,Math.min(90,v)); document.documentElement.style.setProperty("--size",c+"px"); save(); }
 
 $("track").onclick=e=>{ const c=e.target.closest("[data-sec]"); if(c) jumpSection(+c.dataset.sec); };
@@ -496,14 +556,15 @@ document.addEventListener("keydown",e=>{
 /* ---------- Setup & saved prefs ---------- */
 function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({X,Y,strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
 try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); X=p.X||""; Y=p.Y||""; if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
-$("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inX").value=X; $("inY").value=Y; $("inStrict").value=strict; $("setup").showModal(); };
-$("closeSetup").onclick=()=>{ X=$("inX").value.trim(); Y=$("inY").value.trim(); strict=+$("inStrict").value; save(); $("setup").close(); render(); };
+$("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inStrict").value=strict; $("setup").showModal(); };
+$("closeSetup").onclick=()=>{ strict=+$("inStrict").value; save(); $("setup").close(); render(); };
 
 $("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); };
 $("restartBtn").onclick=()=>{ restart(); $("setup").close(); };
-$("speaker").onchange=e=>useScript(+e.target.value);
+$("speaker").onchange=e=>useScript(e.target.value);
 function renderSaved(){ $("savedRow").innerHTML = saved.length ? saved.map((x,i)=>`<button data-del="${i}" title="Remove">Remove ${esc(x.name)}</button>`).join("") : ""; }
-$("savedRow").onclick=e=>{ const b=e.target.closest("[data-del]"); if(!b) return; const i=+b.dataset.del; const cur=+$("speaker").value; saved.splice(i,1); persistScripts(); renderSaved(); fillSpeakers(cur===i?-1:cur>i?cur-1:cur); if(cur===i) useScript(-1); };
+$("savedRow").onclick=e=>{ const b=e.target.closest("[data-del]"); if(!b) return; const i=+b.dataset.del; const cur=$("speaker").value; saved.splice(i,1); persistScripts(); renderSaved();
+  if(cur==="u"+i){ fillSpeakers("b0"); useScript("b0"); } else if(cur[0]==="u" && +cur.slice(1)>i){ fillSpeakers("u"+(+cur.slice(1)-1)); } else fillSpeakers(cur); };
 $("loadBtn").onclick=async()=>{
   const name=$("inName").value.trim()||"Teammate", f=$("inFile").files[0], pasted=$("inPaste").value.trim();
   if(!f && !pasted){ $("loadMsg").textContent="Choose a file or paste the script first."; return; }
@@ -516,15 +577,16 @@ $("loadBtn").onclick=async()=>{
     const at=saved.findIndex(x=>x.name.toLowerCase()===name.toLowerCase());
     if(at>=0) saved[at]={name,secs}; else saved.push({name,secs});
     persistScripts(); const idx=at>=0?at:saved.length-1;
-    fillSpeakers(idx); useScript(idx); renderSaved();
+    fillSpeakers("u"+idx); useScript("u"+idx); renderSaved();
     $("loadMsg").textContent=`Loaded ${n} lines in ${secs.length} sections.`;
     $("inFile").value=""; $("inPaste").value="";
   }catch(err){ $("loadMsg").textContent=err.message||"Couldn't read that file."; }
 };
-fillSpeakers(-1); renderSaved();
+let startKey="b0"; try{ startKey=localStorage.getItem("lab3speaker")||"b0"; }catch(_){}
+if(!(startKey[0]==="b"&&BUILTIN[+startKey.slice(1)]) && !(startKey[0]==="u"&&saved[+startKey.slice(1)])) startKey="b0";
+fillSpeakers(startKey); renderSaved(); useScript(startKey);
 $("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
 render();
-if(!X||!Y) setStatus("Add your real scores in Setup before presenting.");
 </script>
 </body>
 </html>
