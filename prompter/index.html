@@ -76,9 +76,22 @@ dialog label{display:grid;gap:6px;margin-bottom:14px;font-size:14px;color:var(--
 dialog input[type=number],dialog input[type=text]{font:inherit;font-size:18px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 dialog .row{display:flex;gap:10px;justify-content:flex-end}
 
-@media (max-width:760px){
-  main{grid-template-columns:1fr;overflow:auto}
-  aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}
+.pad{display:none;gap:10px}
+.pad button{flex:1;padding:16px;font-size:18px;font-weight:700}
+.pad #nextBtn{background:var(--key);color:var(--bg);border-color:var(--key);flex:2}
+@media (max-width:760px),(pointer:coarse){
+  body{padding-inline:16px}
+  header{gap:8px;padding-block:10px}
+  .track{order:3;flex-basis:100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .chip{flex:none;font-size:12px;padding:4px 9px}
+  #mic{flex:1;justify-content:center;padding:12px}
+  main{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;gap:12px;padding-block:14px}
+  aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:10px;max-height:32vh}
+  aside:has(.empty){border-top:0;padding-top:0}
+  aside .empty, aside:has(.empty) h2{display:none}
+  .now-line{max-width:none}
+  .bar .hint{display:none}
+  .pad{display:flex}
   :root{--size:32px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -101,9 +114,10 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
 </main>
 
 <footer>
+  <div class="pad"><button id="backBtn">Back</button><button id="nextBtn">Next</button></div>
   <div class="heard" id="heard"><span>Transcript appears here once listening starts.</span></div>
   <div class="bar">
-    <span><kbd>Space</kbd> next line</span><span><kbd>←</kbd> back</span><span><kbd>M</kbd> mic</span><span><kbd>+</kbd><kbd>−</kbd> text size</span><span><kbd>R</kbd> restart</span>
+    <span class="hint"><kbd>Space</kbd> next line</span><span class="hint"><kbd>←</kbd> back</span><span class="hint"><kbd>M</kbd> mic</span><span class="hint"><kbd>+</kbd><kbd>−</kbd> text size</span><span class="hint"><kbd>R</kbd> restart</span>
     <span class="sp"></span><span id="status"></span>
   </div>
 </footer>
@@ -113,7 +127,8 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
   <label>Valid JSON score (X out of 10)<input id="inX" type="text" inputmode="numeric" placeholder="e.g. 9"></label>
   <label>Worked in sim (Y out of 10)<input id="inY" type="text" inputmode="numeric" placeholder="e.g. 4"></label>
   <label>Matching strictness<input id="inStrict" type="range" min="0.3" max="0.7" step="0.05"></label>
-  <div class="row"><button id="closeSetup">Done</button></div>
+  <label>Text size<input id="inSize" type="range" min="22" max="80" step="2"></label>
+  <div class="row"><button id="restartBtn">Restart from top</button><button id="closeSetup">Done</button></div>
 </dialog>
 
 <script>
@@ -333,7 +348,7 @@ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
 let rec=null, listening=false, t0=null, wake=null;
 function setStatus(s){ $("status").textContent=s; }
 function startMic(){
-  if(!SR){ setStatus("Voice tracking needs Chrome or Edge. Space still advances."); return; }
+  if(!SR){ setStatus("Voice tracking is not supported here. On iPhone use Safari; Next still works."); return; }
   rec=new SR(); rec.continuous=true; rec.interimResults=true; rec.lang="en-US";
   rec.onresult=e=>{
     let tmp="";
@@ -345,7 +360,7 @@ function startMic(){
     evaluate(); render();
   };
   rec.onerror=e=>{
-    if(e.error==="not-allowed"||e.error==="service-not-allowed"){ listening=false; setStatus("Microphone blocked. Allow it from the icon in the address bar, then press M."); updMic(); }
+    if(e.error==="not-allowed"||e.error==="service-not-allowed"){ listening=false; setStatus("Microphone blocked. On iPhone: Settings > Safari > Microphone > Allow, then tap Start."); updMic(); }
     else if(e.error==="network"){ setStatus("Speech service unreachable. Check Wi-Fi; Space still advances."); }
   };
   rec.onend=()=>{ if(listening) setTimeout(()=>{ try{rec.start()}catch(_){} },120); };
@@ -387,9 +402,12 @@ document.addEventListener("keydown",e=>{
 /* ---------- Setup & saved prefs ---------- */
 function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({X,Y,strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
 try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); X=p.X||""; Y=p.Y||""; if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
-$("setupBtn").onclick=()=>{ $("inX").value=X; $("inY").value=Y; $("inStrict").value=strict; $("setup").showModal(); };
+$("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inX").value=X; $("inY").value=Y; $("inStrict").value=strict; $("setup").showModal(); };
 $("closeSetup").onclick=()=>{ X=$("inX").value.trim(); Y=$("inY").value.trim(); strict=+$("inStrict").value; save(); $("setup").close(); render(); };
 
+$("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); };
+$("restartBtn").onclick=()=>{ restart(); $("setup").close(); };
+$("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
 render();
 if(!X||!Y) setStatus("Add your real scores in Setup before presenting.");
 </script>
