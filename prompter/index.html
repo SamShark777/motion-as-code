@@ -12,7 +12,7 @@
   color-scheme: dark;
   --bg:#0e1113; --panel:#161b1e; --line:#242b2f;
   --fg:#f1efe8; --dim:#7d8783; --faint:#4b5450;
-  --key:#f4cf6e; --heard:#6fc3b2; --miss:#ff9b6a; --cue:#9db4ff;
+  --key:#ffd04f; --unsaid:#b9bfb8; --heard:#6fc3b2; --miss:#ff9b6a; --cue:#9db4ff;
   --read:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --size:46px;
@@ -46,13 +46,15 @@ main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax
 .pip{width:22px;height:5px;border-radius:3px;background:var(--line)}
 .pip.done{background:var(--heard)} .pip.miss{background:var(--miss)} .pip.now{background:var(--key)}
 .now-line{font-size:var(--size);line-height:1.28;font-weight:400;text-wrap:pretty;max-width:26ch}
-.kw{color:var(--key);font-weight:700;transition:color .25s}
-.kw.hit{color:var(--heard);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.18em}
+.w{color:var(--unsaid);transition:color .18s ease,background-color .18s ease;border-radius:.18em;padding:0 .04em;margin:0 -.04em}
+.w.said{color:var(--key)}
+.w.cur{color:var(--fg);background:color-mix(in srgb,var(--key) 22%,transparent);box-shadow:0 .08em 0 var(--key)}
+.prev{font-size:calc(var(--size)*.42);line-height:1.35;color:color-mix(in srgb,var(--key) 55%,var(--bg));max-width:44ch}
 .cue{display:inline-flex;align-items:center;gap:14px;font-size:calc(var(--size)*.85);font-weight:700;color:var(--cue);border:2px dashed color-mix(in srgb,var(--cue) 55%,transparent);border-radius:14px;padding:.35em .7em}
 .cue small{font-size:.42em;font-weight:400;color:var(--dim);display:block}
 .next{font-size:calc(var(--size)*.5);line-height:1.35;color:var(--faint);max-width:40ch}
 .next::before{content:"NEXT  ";font-size:.55em;letter-spacing:.12em;color:var(--dim)}
-.next .kw{color:var(--dim)}
+
 
 aside{min-width:0;display:flex;flex-direction:column;gap:12px;border-left:1px solid var(--line);padding-left:24px;overflow:auto}
 aside h2{margin:0;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--miss)}
@@ -114,7 +116,7 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
 <main>
   <section class="stage" id="stage" aria-live="polite"></section>
   <aside>
-    <h2>Say this before moving on</h2>
+    <h2>You skipped these</h2>
     <div id="tray"></div>
   </aside>
 </main>
@@ -143,163 +145,99 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
 </dialog>
 
 <script>
-/* ---------- Script ----------
-   {word|synonym|synonym} = a key idea. Shown as the first option, matched on any option.
-   cue: a stage direction with nothing to say. alt: a fresh rephrase used if you skip the line. */
-const NICK1 = [
- {name:"Title", sub:"Nicholas · slide 1", beats:[
-  {say:"Good {afternoon|morning|everyone}. We are {Team 2|team two|team}: {Nicholas|nick}, {Shivam}, and {Daniel}.",
-   alt:"We're Team 2: Nicholas, Shivam and Daniel."},
-  {say:"Our project asks a {deceptively simple|simple|deceptively} question: when our {humanoid} classroom assistant {Yotie|yoti|yodie} {moves|move}, who is really in {control}?",
-   alt:"The question behind the project: when Yotie moves, who is actually in control?"},
-  {say:"We study how {instructions|instruction} become robot {actions|action}, where existing {controllers|controller} {succeed|success} or {fail|failure}, and how {physics-informed|physics} control could make them more {reliable}.",
-   alt:"We look at how instructions turn into actions, where controllers break, and how physics-informed control could make them reliable."},
- ]},
- {name:"Team", sub:"Nicholas · slide 2", beats:[
-  {say:"We split the work into {three|3} connected {areas|area}. I focused on the {classroom} {tasks|task} and the {control} environment.",
-   alt:"Three areas of work. Mine was the classroom tasks and control environment."},
-  {say:"{Shivam} investigated {Lucky Engine|lucky} behavior, {command} {interpretation|interpreting}, and {controller} {failures|failure}.",
-   alt:"Shivam looked at Lucky Engine, how commands get interpreted, and why controllers fail."},
-  {say:"{Daniel} worked on {motion generation|generation|motion}, {visualization|visualize}, and {quantitative|tracking} {experiments|experiment}.",
-   alt:"Daniel handled motion generation, visualization and the tracking experiments."},
-  {say:"Together, we're building a way to {observe}, {measure}, and eventually {improve} {G1|g one} behavior.",
-   alt:"Together the goal is to observe, measure and improve how the G1 behaves."},
- ]},
- {name:"Problem", sub:"Nicholas · slide 3", beats:[
-  {say:"A robot has to do more than {understand} a {sentence}.",
-   alt:"Understanding the sentence is only the start."},
-  {say:"It must {identify} the {task}, turn that {intent} into {coordinated} {motion}, and respond to {balance}, {contact}, and physical {constraints}.",
-   alt:"It has to find the task, turn intent into coordinated motion, and deal with balance, contact and constraints."},
-  {say:"A movement can look {convincing} in a {simulation|sim} {video} while still being {unreliable} as an actual task.",
-   alt:"Something can look right in a sim video and still fail as a real task."},
-  {say:"That {difference} is the {core} of our {research}.",
-   alt:"That gap is what our research is about."},
- ]},
- {name:"Testbed", sub:"Nicholas · slide 4", beats:[
-  {say:"We chose {classroom} tasks because they're easy to {describe} but physically {demanding}.",
-   alt:"Classroom tasks are simple to say but hard to do physically, which is why we picked them."},
-  {say:"We want {Yotie|yoti|yodie} to {approach} a {chair} and {stop}, {point} toward a {whiteboard}, and eventually {grasp|grab} and move {objects}.",
-   alt:"Targets: approach a chair, point at the whiteboard, later grasp and move objects."},
-  {say:"Our approach: establish a {baseline}, {identify} {failures|failure}, and make {repeatable} {tests} before claiming a {better} {controller}.",
-   alt:"First a baseline, then failures, then repeatable tests, before we claim anything better."},
-  {say:"{Shivam} will show what the current {baseline} has {taught|teach|learned} us.",
-   alt:"Hand off to Shivam for the baseline."},
- ]},
-];
-
+/* ================= Scripts (exact wording) ================= */
 const SHIVAM = [
- {name:"Observations", sub:"Shivam · slide 5", beats:[
-  {say:"Thanks, {Nicholas|nick}. {Lucky Engine|lucky} gives us a {classroom} {scene} and a local {bridge} from {speech} instructions to {motion}.",
-   alt:"Thanks Nicholas. Lucky Engine provides the classroom scene and a speech-to-motion bridge."},
-  {say:"We tested a {two-arm|arm|arms} {motion graph|graph} for {scripted} actions.",
-   alt:"We ran scripted actions through a two-arm motion graph."},
-  {say:"{Graph-based|graph} {targets|target} made arm motion {freer|free} than our earlier, {stiffer|stiff} {reaching|reach}.",
-   alt:"Graph targets loosened the arms compared with the stiff reaching we had before."},
-  {say:"But {interacting|interaction} with the {chair} was not {repeatable}, and {balance} and {controller handoff|handoff|controller} still need {attention|work}.",
-   alt:"Chair interaction wasn't repeatable, and balance and the controller handoff need work."},
-  {say:"These {observations|observation} tell us what to {measure} {next}.",
-   alt:"That tells us what to measure next."},
+ {name:"Lucky Engine", sub:"Slide 5 · What Lucky Engine has taught us", items:[
+  {say:"Hi, I'm Shivam, the Data and Policy Researcher for Team 2.", alt:"Introduce yourself: Shivam, Data and Policy, Team 2."},
+  {say:"Basically, I'm the person who keeps the robot's receipts.", alt:"Your role in one line: you keep the robot's records."},
+  {say:"Our question was simple: can we turn a classroom instruction into something G1 actually does?", alt:"The question: can a classroom instruction become a real G1 action?"},
+  {say:"We have a classroom environment in Lucky Engine, walking commands, and a motion graph that gives us more freedom with both arms.", alt:"What exists: the Lucky Engine classroom, walking commands, the two-arm motion graph."},
+  {say:"That took some experimenting.", alt:"It took trial and error to get there."},
+  {say:"Earlier, the arms looked like a mannequin trying to wave.", alt:"Early on the arm motion was stiff."},
+  {say:"The motion graph made them move more freely, but moving freely and completing a useful task are different things.", alt:"Freer arms helped, but free motion isn't the same as finishing a task."},
+  {say:"Walking toward a chair, pointing at something, and keeping balance all gave us different challenges.", alt:"Chair approach, pointing and balance each had their own problems."},
+  {say:"That's what simulation has taught us: a movement can look promising and still need a lot of testing.", alt:"Lesson from simulation: looking promising still needs heavy testing."},
  ]},
- {name:"Obs → Outcome", sub:"Shivam · slide 6", beats:[
-  {say:"To {understand} a {failure}, we need to {record} {three|3} things.",
-   alt:"Understanding a failure takes three kinds of records."},
-  {say:"First, the {observation|observations}: the robot {pose}, {object|objects} {locations|location}, {contacts|contact}, and {collisions|collision}.",
-   alt:"Observation: pose, where objects are, contacts and collisions."},
-  {say:"Second, the {action}: the {velocity|speed} or {hand target|hand|target} sent to the {controller}.",
-   alt:"Action: the velocity or hand target we send the controller."},
-  {say:"Third, the {episode} {outcome}: the original {instruction}, the {interpreted|interpretation} {command}, robot {state}, and whether the task {succeeded|success}.",
-   alt:"Outcome: instruction, interpreted command, robot state, and success or not."},
-  {say:"This helps {separate} a {language} {interpretation} error from a {control} {failure}.",
-   alt:"With that we can tell a language error apart from a control failure."},
+ {name:"Policy record", sub:"Slide 6 · What should a policy record?", items:[
+  {say:"When something goes wrong, we need to understand where it went wrong.", alt:"Failures only help if we can locate where they happened."},
+  {say:"Did the system misunderstand the instruction, or did the robot struggle to carry it out?", alt:"Was it a misunderstanding, or a robot execution problem?"},
+  {say:"My role is to define what information we should collect to answer that.", alt:"Your job: decide what data answers that question."},
+  {say:"First, the starting situation: where the robot is, where the object is, and whether anything is in its way.", alt:"One: starting state, robot position, object position, obstacles."},
+  {say:"Second, the action we sent: for example, a walking command or an arm target.", alt:"Two: the action sent, like a walk command or arm target."},
+  {say:"Third, the outcome: did it reach the object, make contact, or lose balance?", alt:"Three: the outcome, reached, contact, or lost balance."},
+  {say:"Together, those make one test episode.", alt:"Those three form one episode."},
+  {say:"We haven't collected every measurement yet, but this gives us a consistent way to organize future tests and data for policy training.", alt:"Not all measured yet, but it's the structure for future tests and policy training data."},
  ]},
- {name:"Demos", sub:"Shivam · slide 7", beats:[
-  {say:"Here are {two|2} {examples} from the {classroom} {scene}.",
-   alt:"Two examples from the classroom scene."},
-  {say:"For the {chair} {instruction}, {Claude} {interpreted|interpret} it as {move-to-chair|move to|move}.",
-   alt:"Chair command: Claude read it as move-to-chair."},
-  {say:"The {G1|g one} {approached|approach} the chair, made {contact}, and {stumbled|stumble}.",
-   alt:"The robot reached the chair, touched it, and stumbled."},
-  {say:"For the {whiteboard} instruction, the robot kept its {balance}, but its {pointing|point} {arm} didn't fully {extend|extended}.",
-   alt:"Whiteboard command: balanced, but the arm stopped short of full extension."},
-  {cue:"Play classroom video", note:"Only if the file is available."},
-  {say:"These results are {useful} because they show {partial} {execution} and specific {limits|limit}, not complete {success}.",
-   alt:"The value is in seeing partial execution and exactly where the limits are."},
+ {name:"Classroom demos", sub:"Slide 7 · Classroom commands: what happened?", items:[
+  {say:"Let's look at the difference between understanding a command and executing it.", alt:"Understanding a command and executing it are different."},
+  {say:"The first command was 'Walk to the chair.'", alt:"Command one: walk to the chair."},
+  {say:"Claude returned move_to, with chair as the object.", alt:"Claude's answer: move_to, chair."},
+  {say:"JSON is simply the structured format that holds that answer.", alt:"JSON is just the format holding the answer."},
+  {say:"It tells us which action and object Claude selected.", alt:"It records the chosen action and object."},
+  {say:"It doesn't contain the robot's joint movements.", alt:"It has no joint movements in it."},
+  {cue:"Play the chair clip"},
+  {say:"The robot approached the chair, but we also observed contact and stumbling.", alt:"It reached the chair, but bumped it and stumbled."},
+  {say:"So approaching it isn't the same as completing the task reliably.", alt:"Getting close isn't the same as a reliable success."},
+  {say:"The second command was 'Point at the whiteboard.'", alt:"Command two: point at the whiteboard."},
+  {say:"Claude selected point and whiteboard.", alt:"Claude chose point, whiteboard."},
+  {say:"For this recording, I triggered the pointing script manually.", alt:"You started the pointing script by hand for this clip."},
+  {say:"So, for this clip, I was the middleware.", alt:"You were the middleware here."},
+  {cue:"Play the pointing clip"},
+  {say:"The robot maintained balance, but the arm didn't fully extend as intended.", alt:"Balanced, but the arm stopped short."},
+  {say:"That's a useful observation: the language output matched the request, while the physical execution still needed improvement.", alt:"Language was right; the physical motion still needs work."},
  ]},
- {name:"Goes wrong", sub:"Shivam · slide 8", beats:[
-  {say:"We also {observed|observe|saw} a {controller handoff|handoff} {problem}.",
-   alt:"Next, the controller handoff issue."},
-  {say:"After an {arm} motion played, the arm {controller} {retained|kept|keeps} {control}, so a later {command} couldn't {move} normally.",
-   alt:"The arm controller held on after its motion, so the next command couldn't move the robot properly."},
-  {cue:"Play controller failure video"},
-  {say:"So we need an {explicit} {transition}: return to a {safe pose|safe|pose}, {release} the previous controller, and {restore} {walker|walking} control.",
-   alt:"The fix is a clear transition: safe pose, release the arm controller, give control back to the walker."},
-  {say:"We haven't yet {demonstrated|demonstrate} chair {transport}, or implemented {grasping|grasp} and {manipulation}.",
-   alt:"Chair transport, grasping and manipulation are still future work."},
+ {name:"Goes wrong", sub:"Slide 8 · When motion goes wrong", items:[
+  {say:"Now, one more clip.", alt:"One more clip."},
+  {say:"We were testing whether a pretrained SONIC whole-body controller could drive G1's movement inside Lucky Engine.", alt:"The test: a pretrained SONIC whole-body controller driving G1 in Lucky Engine."},
+  {cue:"Play the failure clip", note:"Pause after it ends."},
+  {say:"So... that happened.", alt:"React to the clip."},
+  {say:"The robot moved, but it lost balance during the control test.", alt:"It moved, then lost balance."},
+  {say:"We haven't confirmed the exact cause, so I wouldn't blame Claude or claim we've already fixed it.", alt:"Cause not confirmed: not blaming Claude, not claiming a fix."},
+  {say:"This clip shows why my role matters.", alt:"This is why your role exists."},
+  {say:"We need to observe what happened, record the conditions, and investigate the failure.", alt:"Observe, record conditions, investigate."},
+  {say:"In simulation, this can be a funny moment.", alt:"In sim it's harmless."},
+  {say:"Around students on campus, we wouldn't want this happening.", alt:"Near real students, it wouldn't be acceptable."},
+  {say:"That's why we test here first.", alt:"So simulation comes first."},
+  {say:"These failures help us decide what needs to improve before supervised testing on a real robot.", alt:"Failures here guide what to fix before real-robot testing."},
  ]},
- {name:"Evaluation", sub:"Shivam · slide 9", beats:[
-  {say:"This slide {proposes|propose} how to {evaluate} {ten|10} {commands}, including {specific} and {vague} instructions.",
-   alt:"Here's the plan for scoring ten commands, both specific and vague."},
-  {say:"We'd {score} whether the {JSON|jason} is {valid}, whether the {action}, {object}, and {target} are {correct}, and whether the {simulation|sim} {succeeds|success}.",
-   alt:"Checks: valid JSON, correct action, object and target, and success in simulation."},
-  {say:"The numbers shown are {illustrative|example} {sample} scores, not results from ten {measured|measure} {trials}.",
-   alt:"Important: these are sample numbers, not measured trial results."},
-  {say:"The next {experiment} is to {replace} these {example|sample} values with actual {episode} {logs|log}, so we can {quantify} which {stage} fails.",
-   alt:"Next we fill this with real episode logs to pin down which stage fails."},
-  {say:"That's how we'll {measure} the {command} side. {Daniel} will show how we measure the {motion} itself.",
-   alt:"Hand off to Daniel for motion measurement."},
+ {name:"Evaluation", sub:"Slide 9 · Evaluation and handover", items:[
+  {say:"For our language evaluation, we prepared ten classroom commands, including three deliberately vague ones, like 'put it over there.'", alt:"Ten test commands, three intentionally vague."},
+  {say:"All ten saved responses were valid JSON.", alt:"Every response was valid JSON."},
+  {say:"But that only tells us the format worked.", alt:"That only proves the format."},
+  {say:"We still need to evaluate whether the action, object, and target were correct.", alt:"Correct action, object and target still need scoring."},
+  {say:"'Over there' is a good example.", alt:"Use 'over there' as the example."},
+  {say:"Without information about where I'm pointing, the model has to make a prediction from incomplete context.", alt:"Without seeing where you point, the model has to guess."},
+  {say:"And even a correct interpretation still needs working robot controls behind it.", alt:"Even a right answer needs working controls."},
+  {say:"My takeaway is: we need to record both what the system intended and what the robot actually did.", alt:"Takeaway: log intent and actual behavior."},
+  {say:"That leads into Nick's work: breaking tasks into steps we can control and test, such as approach, reach, and grasp.", alt:"Lead into Nick: approach, reach, grasp as testable steps."},
+  {say:"Nick, the chair is all yours.", alt:"Hand off to Nick."},
  ]},
 ];
 
+function S(name,sub,text){ return {name,sub,items:splitText(text)}; }
+const NICK1 = [
+ S("Title","Nicholas · slide 1","Good afternoon. We are Team 2: Nicholas, Shivam, and Daniel. Our project asks a deceptively simple question: when our humanoid classroom assistant Yotie moves, who is really in control? We are studying how instructions become robot actions, where existing controllers succeed or fail, and what it would take to make those actions more reliable using physics-informed control."),
+ S("Team","Nicholas · slide 2","We divided the work into three connected areas. I focused on the classroom tasks and control environment. Shivam investigated Lucky Engine behavior, command interpretation, and controller failures. Daniel worked on motion generation, visualization, and quantitative tracking experiments. Together, we are building a way to observe, measure, and eventually improve G1 behavior."),
+ S("Problem","Nicholas · slide 3","A robot has to do more than understand a sentence. It must identify the task, turn that intent into coordinated motion, and respond to balance, contact, and physical constraints. A movement can look convincing in a simulation video while still being unreliable as an actual task. That difference is the core of our research."),
+ S("Testbed","Nicholas · slide 4","We chose classroom tasks because they are easy to describe but physically demanding. We want Yotie to approach a chair and stop, point toward a whiteboard, and eventually grasp and move objects. Our immediate approach is to establish a baseline, identify failures, and make repeatable tests before claiming we have a better controller. Shivam will show what the current baseline has taught us."),
+];
 const DANIEL = [
- {name:"Motion demo", sub:"Daniel · slide 10", beats:[
-  {say:"Thanks, {Shivam}. My work focused on what happens between a {motion} {reference} and a robot actually {following|follow} it.",
-   alt:"Thanks Shivam. My focus is the gap between a motion reference and the robot following it."},
-  {say:"First, I used motion {visualization|visualize} to {inspect} the {G1|g one}'s {walking|walk} and {whole-body|whole body} movement: {gait}, {posture}, and {timing}.",
-   alt:"I visualized the walking and full-body motion to check gait, posture and timing."},
-  {cue:"Play walking motion video"},
-  {say:"A {video} is a useful first {check}, but it doesn't tell us how closely the {joints|joint} {followed|follow} their {targets|target}.",
-   alt:"Video alone can't show how well the joints tracked their targets."},
-  {say:"So our next step is to {save} {reference} {trajectories|trajectory} and {compare} them against {measured} joint {positions|position}.",
-   alt:"Next we save reference trajectories and compare them with measured joint positions."},
- ]},
- {name:"Elbow", sub:"Daniel · slide 11", beats:[
-  {say:"This slide shows a {separate} {G1|g one} {right-elbow|elbow} {simulation} {experiment}.",
-   alt:"This is a standalone right-elbow simulation test."},
-  {say:"The {blue} curve is the {commanded|command} angle, and the {orange} curve is the {actual} {response}.",
-   alt:"Blue is commanded, orange is the actual response."},
-  {say:"Ideally they'd {overlap}. Instead, the response {lags|lag} behind, especially during {changes|change} in {direction}.",
-   alt:"They should overlap, but the response trails, mostly when direction changes."},
-  {say:"The {error} {graph} {measures|measure} that {difference} over time.",
-   alt:"The error plot tracks that gap over time."},
-  {say:"Across {350} {samples} and {6.98|7|seven} {seconds}, the {root-mean-square|rms|root mean square} {tracking} error was {1.20|1.2|one point two} {degrees|degree}.",
-   alt:"Over 350 samples and about 7 seconds, RMS tracking error was 1.2 degrees."},
-  {say:"The {maximum|max} error was {2.37|2.4} {degrees|degree}.",
-   alt:"Peak error was 2.37 degrees."},
-  {say:"These are {measured} {results} from the {elbow} {test}, not from the {walking|walk} {video}.",
-   alt:"These numbers come from the elbow test, not the walking video."},
-  {say:"This gives us a {concrete} {baseline} for future {control} {comparisons|comparison}.",
-   alt:"It's a concrete baseline for comparing controllers later."},
-  {say:"{Nicholas|nick} will {wrap up|wrap|summarize} where this leaves us.",
-   alt:"Hand back to Nicholas for the conclusion."},
- ]},
+ S("Motion demo","Daniel · slide 10","My work focused on what happens between a motion reference and a robot actually following it. First, I used motion visualization to inspect the G1's walking and whole-body movement, including gait, posture, and timing. A video is a useful first check, but it does not tell us how closely the joints followed their targets. That is why our next step is to save reference trajectories and compare them against measured joint positions. [Play walking motion video]"),
+ S("Elbow","Daniel · slide 11","This slide shows a separate G1 right-elbow simulation experiment. The blue curve is the commanded angle, and the orange curve is the actual response. Ideally they would overlap. Instead, the response lags behind the command, especially during changes in direction. The error graph measures that difference over time. Across 350 samples and 6.98 seconds, we measured a root-mean-square tracking error of 1.20 degrees and a maximum error of 2.37 degrees. Those are measured results from the elbow test, not from the walking video. This gives us a concrete baseline for future control comparisons."),
 ];
-
 const NICK2 = [
- {name:"Conclusion", sub:"Nicholas · slide 12", beats:[
-  {say:"Thanks, {Daniel}. To {summarize}: we can {trigger} and {observe} {classroom} {actions|action}, and we can {visualize} motion {references|reference}.",
-   alt:"Thanks Daniel. In short: we can trigger and observe classroom actions and visualize motion references."},
-  {say:"But {chair} {contact}, {controller handoff|handoff}, and {repeatable} {multi-joint|joint} {tracking} still need {improvement|improve}.",
-   alt:"Still to fix: chair contact, controller handoff, and repeatable multi-joint tracking."},
-  {say:"Next, we'll {collect} {real} {command}, {state}, and {outcome} {logs|log}, and run {controlled} {comparisons|comparison}.",
-   alt:"Next up: real logs of command, state and outcome, and controlled comparisons."},
-  {say:"We'll also study how {dynamics} and {feedback} {constraints} affect {performance}.",
-   alt:"We'll also look at how dynamics and feedback constraints change performance."},
-  {say:"Our {goal} isn't just a robot that {moves|move}, but one whose behavior we can {explain}, {measure}, and {improve}.",
-   alt:"The aim is a robot we can explain, measure and improve, not just one that moves."},
-  {say:"{Thank you|thanks}. We {welcome} your {questions|question}.",
-   alt:"Thank you, we'd love your questions."},
- ]},
+ S("Conclusion","Nicholas · slide 12","To summarize: we can trigger and observe classroom actions, and we can visualize motion references. But chair contact, controller handoff, and repeatable multi-joint tracking still need improvement. Next, we will collect real command, state, and outcome logs, run controlled comparisons, and study how dynamics and feedback constraints affect performance. Our goal is not just a robot that moves, but one whose behavior we can explain, measure, and improve. Thank you — we welcome your questions."),
 ];
+function splitText(text){
+  const out=[];
+  for(const part of text.split(/(\[[^\]]+\])/)){
+    if(!part.trim()) continue;
+    if(/^\[.*\]$/.test(part)){ out.push({cue:part.slice(1,-1).replace(/\.$/,"")}); continue; }
+    const sents=part.replace(/\s+/g," ").trim().split(/(?<=[.!?]['"’”]?)\s+(?=['"‘“(]?[A-Z0-9])/);
+    for(const x of sents) if(x.trim()) out.push({say:x.trim()});
+  }
+  return out;
+}
 
 const BUILTIN = [
  {name:"Shivam", secs:SHIVAM},
@@ -307,79 +245,209 @@ const BUILTIN = [
  {name:"Daniel", secs:DANIEL},
  {name:"Whole team", secs:[...NICK1, ...SHIVAM, ...DANIEL, ...NICK2]},
 ];
-const SCRIPT = SHIVAM;
 
-
-/* ---------- Parsing & matching ---------- */
-const NUM = {zero:"0",one:"1",two:"2",three:"3",four:"4",five:"5",six:"6",seven:"7",eight:"8",nine:"9",ten:"10"};
+/* ================= Words & matching ================= */
+const NUM={zero:"0",one:"1",two:"2",three:"3",four:"4",five:"5",six:"6",seven:"7",eight:"8",nine:"9",ten:"10",won:"1",to_:"2"};
+const ALIAS={jason:"json",jayson:"json",jsan:"json",yoti:"yotie",yodie:"yotie",yogi:"yotie",yoty:"yotie",cloud:"claude",clawed:"claude",claud:"claude",gee:"g",shivum:"shivam",shiv:"shivam",nic:"nick",nik:"nick",sonik:"sonic",okay:"ok"};
 function tokenize(s){
-  return s.toLowerCase().replace(/[’']/g,"").replace(/[^a-z0-9_]+/g," ").split(/[\s_]+/).filter(Boolean).map(w=>NUM[w]||w);
+  return s.toLowerCase().replace(/[’'`]/g,"").replace(/([a-z])(\d)/g,"$1 $2").replace(/(\d)([a-z])/g,"$1 $2")
+    .replace(/[^a-z0-9]+/g," ").split(" ").filter(Boolean).map(w=>ALIAS[w]||NUM[w]||w);
 }
-function tokMatch(a,b){
+const STOP=new Set("a an the and or but so if then than that this these those there here is are was were be been being am i im me my we our us you your he she it its they them their to of in on at for from with by as into about over under after before again just also very really can could will would should do did does done have has had not no yes what which who when where why how all any each every some more most other such only own same too now well like get got go one let lets".split(" "));
+function lev1(a,b){ if(Math.abs(a.length-b.length)>1) return false; let i=0,j=0,e=0; while(i<a.length&&j<b.length){ if(a[i]===b[j]){i++;j++;continue;} if(++e>1) return false; if(a.length>b.length) i++; else if(b.length>a.length) j++; else {i++;j++;} } return e+(a.length-i)+(b.length-j)<=1; }
+function wm(a,b){
   if(a===b) return true;
   const m=Math.min(a.length,b.length); if(m<4) return false;
   let p=0; while(p<m && a[p]===b[p]) p++;
-  return p>=Math.max(4,m-2);
+  if(p>=Math.max(4,m-2)) return true;
+  return m>=5 && lev1(a,b);
 }
 
-let X="", Y="", strict=0.45;
-let ACTIVE=SCRIPT, beats=[];
-function build(script){
-  ACTIVE=script; beats=[];
-  script.forEach((sec,si)=>sec.beats.forEach(b=>{
-    const groups=[];
-    if(!b.cue){ const re=/\{([^}]+)\}/g; let m; while((m=re.exec(b.say))) groups.push(m[1].split("|").map(tokenize)); }
-    beats.push({...b,si,groups});
-  }));
+let ACTIVE=[], items=[];
+function prep(it,si){
+  if(it.cue) return {...it,si};
+  const spans=it.say.split(/\s+/), words=[];
+  spans.forEach((sp,k)=>tokenize(sp).forEach(t=>words.push({t,span:k,content:!STOP.has(t)&&t.length>=3})));
+  return {...it,si,spans,words,nContent:words.filter(w=>w.content).length};
 }
-build(SCRIPT);
+function build(secs){ ACTIVE=secs; items=[]; secs.forEach((sec,si)=>sec.items.forEach(it=>items.push(prep(it,si)))); }
 
-/* ---------- Turning an uploaded script into prompter lines ---------- */
-const STOP=new Set("a an the and or but so if then than that this these those there here is are was were be been being am i im me my we our us you your he she it its they them their to of in on at for from with by as into onto about over under after before again just also very really can could will would should do did does done have has had not no yes what which who when where why how all any each every some more most other such only own same too now well like get got go going one two three".split(" "));
-function makeBeat(text){
-  text=text.replace(/[{}]/g,"").trim();
-  const words=text.match(/[A-Za-z0-9_']+/g)||[];
-  const seen=new Set(), cand=[];
-  words.forEach((w,i)=>{ const l=w.toLowerCase().replace(/'s$/,""); if(STOP.has(l)||(l.length<4&&!/\d/.test(l))||seen.has(l)) return; seen.add(l);
-    cand.push({w,i,score:l.length+(/^[A-Z]/.test(w)&&i>0?3:0)+(/\d/.test(l)?3:0)}); });
-  const k=Math.max(1,Math.min(4,Math.round(words.length/5)));
-  const pick=cand.sort((a,b)=>b.score-a.score).slice(0,k).sort((a,b)=>a.i-b.i);
-  let say=text;
-  for(const c of pick){ say=say.replace(new RegExp("\\b"+c.w.replace(/[^A-Za-z0-9_']/g,"")+"\\b"),"{"+c.w+"}"); }
-  return {say, alt:"Cover this: "+pick.map(c=>c.w).join(" · ")};
+/* ================= Tracking state ================= */
+let cur=0, status=[], al={}, missFrom={}, start=0, committed=[], session=[], strict=0.45;
+const heard=()=> session.length?committed.concat(session):committed;
+
+function align(i,from,T){
+  const W=items[i].words; let p=0, first=-1, last=-1; const seen=new Set();
+  for(let x=Math.max(0,from);x<T.length;x++){
+    const tok=T[x];
+    for(let j=p;j<Math.min(W.length,p+6);j++){
+      if(j>p && !W[j].content) continue;
+      if(wm(W[j].t,tok)){ if(first<0) first=x; p=j+1; last=x; break; }
+    }
+    W.forEach((w,k)=>{ if(w.content && !seen.has(k) && wm(w.t,tok)) seen.add(k); });
+  }
+  const cov=items[i].nContent? seen.size/items[i].nContent : (p>=W.length?1:0);
+  return {p,first,last,cov,seen};
 }
+function isDone(i,a){
+  const n=items[i].words.length, need=strict+0.15;
+  if(a.p>=n || (n>3 && a.p>=n-1)) return true;
+  if(a.p>=Math.ceil(n*0.8)) return true;
+  if(a.cov>=need && a.p>=Math.ceil(n*0.35)) return true;
+  if(items[i].nContent>=3 && a.cov>=Math.min(0.9,need+0.1)) return true;
+  return false;
+}
+function nextSay(i){ let j=i; while(j<items.length && items[j].cue) j++; return j; }
+
+function evaluate(){
+  const T=heard();
+  for(let guard=0; guard<6 && cur<items.length; guard++){
+    const it=items[cur];
+    if(it.cue){
+      const n=nextSay(cur+1); if(n>=items.length) break;
+      const a=align(n,start-2,T);
+      if(a.p>=2){ for(let k=cur;k<n;k++) status[k]="done"; cur=n; start=Math.max(start,a.first); continue; }
+      break;
+    }
+    const a=align(cur,start-2,T); al[cur]=a;
+    if(isDone(cur,a)){ status[cur]="done"; start=a.last>=0?a.last+1:T.length; cur++; continue; }
+    let jumped=false;
+    for(let k=cur+1, seen=0; k<items.length && seen<2; k++){
+      if(items[k].cue) continue; seen++;
+      const b=align(k,start-2,T), n=items[k].words.length;
+      if(b.p>=Math.min(4,n-1) && b.cov>=0.4 && b.first>=0 && (a.last<0 || b.first>a.first)){
+        for(let s=cur;s<k;s++){
+          if(items[s].cue){ status[s]="done"; continue; }
+          const as=align(s,start-2,T);
+          if(isDone(s,as)) status[s]="done"; else { status[s]="missed"; missFrom[s]=start-2; }
+        }
+        al={}; cur=k; start=b.first; jumped=true; break;
+      }
+    }
+    if(!jumped) break;
+  }
+  for(const k of Object.keys(missFrom)){ const a=align(+k,missFrom[k],T); if(a.cov>=strict+0.15 || isDone(+k,a)){ status[k]="done"; delete missFrom[k]; } }
+}
+
+/* ================= Rendering ================= */
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function karaoke(i){
+  const it=items[i], a=al[i]||{p:0,seen:new Set()};
+  const saidSpan=new Set(), curSpan=it.words[a.p]?.span;
+  it.words.forEach((w,k)=>{ if(k<a.p || a.seen.has(k)) saidSpan.add(w.span); });
+  return it.spans.map((sp,k)=>`<span class="w${saidSpan.has(k)?" said":""}${k===curSpan&&!saidSpan.has(k)?" cur":""}">${esc(sp)}</span>`).join(" ");
+}
+function cueHTML(b){ return `<div class="cue">▶ ${esc(b.cue)}${b.note?`<small>${esc(b.note)}</small>`:""}</div>`; }
+function autoAlt(i){ const w=items[i].words.filter(x=>x.content).map(x=>items[i].spans[x.span].replace(/[^\w'’-]/g,"")); return "Cover: "+[...new Set(w)].slice(0,5).join(" · "); }
+
+function render(){
+  const stage=$("stage");
+  if(cur>=items.length){
+    const m=Object.keys(missFrom).length;
+    stage.innerHTML=`<div class="where"><b>Done</b></div><div class="now-line">${m?"You reached the end. Lines still listed on the right weren't covered.":"You covered every line."}</div>`;
+  } else {
+    const it=items[cur], sec=ACTIVE[it.si];
+    const secIdx=items.map((x,i)=>i).filter(i=>items[i].si===it.si && !items[i].cue);
+    const pips=secIdx.map(i=>`<span class="pip ${i===cur?"now":status[i]==="done"?"done":status[i]==="missed"?"miss":""}"></span>`).join("");
+    let html=`<div class="where"><b>${esc(sec.name)}</b><span>${esc(sec.sub||"")}</span><span class="pips">${pips}</span></div>`;
+    let pv=cur-1; while(pv>=0 && items[pv].cue) pv--;
+    if(pv>=0 && items[pv].si===it.si) html+=`<div class="prev">${esc(items[pv].say)}</div>`;
+    html+= it.cue ? cueHTML(it) : `<div class="now-line">${karaoke(cur)}</div>`;
+    if(!it.cue && it.note) html+=`<div class="where" style="color:var(--cue);text-transform:none;letter-spacing:0;font-size:18px">${esc(it.note)}</div>`;
+    const n=cur+1;
+    if(n<items.length) html+= items[n].cue ? `<div class="next">▶ ${esc(items[n].cue)}</div>` : `<div class="next">${esc(items[n].say)}</div>`;
+    stage.innerHTML=html;
+  }
+  $("track").innerHTML=ACTIVE.map((s,si)=>{
+    const idx=items.map((x,i)=>i).filter(i=>items[i].si===si);
+    const isNow=cur<items.length&&items[cur].si===si, allDone=idx.every(i=>status[i]!=="todo"), miss=idx.some(i=>status[i]==="missed");
+    return `<button class="chip ${isNow?"now":allDone?"done":""} ${miss?"hasmiss":""}" data-sec="${si}">${esc(s.name)}</button>`;
+  }).join("");
+  const nowChip=document.querySelector(".chip.now"); if(nowChip) try{ nowChip.scrollIntoView({block:"nearest",inline:"center"}); }catch(_){}
+  const missed=Object.keys(missFrom).map(Number).sort((a,b)=>a-b);
+  $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(ACTIVE[items[i].si].name)}</span><span class="say">${esc(items[i].alt||autoAlt(i))}</span></button>`).join("") : `<p class="empty">Nothing skipped so far.</p>`;
+  const T=heard(); if(T.length) $("heard").innerHTML=`<span>${esc(T.slice(-26).join(" "))}</span>`;
+}
+
+/* ================= Speech ================= */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let rec=null, listening=false, t0=null, raf=0;
+function setStatus(s){ $("status").textContent=s; }
+function tick(){ cancelAnimationFrame(raf); raf=requestAnimationFrame(()=>{ evaluate(); render(); }); }
+function startMic(){
+  if(!SR){ setStatus("Voice tracking isn't available in this browser. On iPhone use Safari; Next still works."); return; }
+  rec=new SR(); rec.continuous=true; rec.interimResults=true; rec.lang="en-US"; rec.maxAlternatives=1;
+  rec.onresult=e=>{
+    const all=[]; for(let i=0;i<e.results.length;i++) all.push(...tokenize(e.results[i][0].transcript));
+    session=all; tick();
+  };
+  rec.onerror=e=>{
+    if(e.error==="not-allowed"||e.error==="service-not-allowed"){ listening=false; updMic(); setStatus("Microphone blocked. iPhone: Settings › Safari › Microphone › Allow. Then tap Start."); }
+    else if(e.error==="network") setStatus("Speech service unreachable. Check Wi-Fi; Next still works.");
+    else if(e.error==="audio-capture") setStatus("No microphone found.");
+  };
+  rec.onend=()=>{ committed=committed.concat(session); session=[]; if(listening) setTimeout(()=>{ try{ rec.start(); }catch(_){} },80); };
+  try{ rec.start(); listening=true; setStatus(""); if(!t0) t0=Date.now(); }catch(_){}
+  try{ navigator.wakeLock?.request("screen").catch(()=>{}); }catch(_){}
+  updMic();
+}
+function stopMic(){ listening=false; try{ rec&&rec.stop(); }catch(_){} updMic(); }
+function updMic(){ $("mic").classList.toggle("on",listening); $("micLabel").textContent=listening?"Listening":"Start listening"; }
+$("mic").onclick=()=> listening?stopMic():startMic();
+setInterval(()=>{ if(!t0) return; const s=Math.floor((Date.now()-t0)/1000); $("clock").textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}`; },500);
+
+/* ================= Controls ================= */
+function manualNext(){
+  if(cur>=items.length) return;
+  if(!items[cur].cue){ const a=al[cur]; if(a && a.p>0) status[cur]="done"; else { status[cur]="missed"; missFrom[cur]=heard().length; } } else status[cur]="done";
+  cur++; start=heard().length; render();
+}
+function back(){ if(cur===0) return; cur--; status[cur]="todo"; delete missFrom[cur]; delete al[cur]; start=heard().length; render(); }
+function jumpSection(si){ const i=items.findIndex(b=>b.si===si); for(let k=i;k<items.length;k++){ status[k]="todo"; delete missFrom[k]; } al={}; cur=i; start=heard().length; render(); }
+function restart(){ cur=0; status=items.map(()=>"todo"); al={}; missFrom={}; committed=[]; session=[]; start=0; t0=listening?Date.now():null; $("clock").textContent="0:00"; $("heard").innerHTML="<span>Transcript appears here once listening starts.</span>"; render(); }
+function size(d){ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"))+d; document.documentElement.style.setProperty("--size",Math.max(22,Math.min(90,v))+"px"); save(); }
+
+$("track").onclick=e=>{ const c=e.target.closest("[data-sec]"); if(c) jumpSection(+c.dataset.sec); };
+$("tray").onclick=e=>{ const m=e.target.closest("[data-miss]"); if(m){ const i=+m.dataset.miss; status[i]="done"; delete missFrom[i]; render(); } };
+document.addEventListener("keydown",e=>{
+  if($("setup").open || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+  if(e.key===" "||e.key==="ArrowRight"||e.key==="PageDown"){ e.preventDefault(); manualNext(); }
+  else if(e.key==="ArrowLeft"||e.key==="PageUp"){ e.preventDefault(); back(); }
+  else if(e.key==="m"||e.key==="M"){ listening?stopMic():startMic(); }
+  else if(e.key==="+"||e.key==="="){ size(4); }
+  else if(e.key==="-"||e.key==="_"){ size(-4); }
+  else if(e.key==="r"||e.key==="R"){ restart(); }
+});
+$("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
+
+/* ================= Settings & uploads ================= */
+function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
+try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
+$("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inStrict").value=strict; $("setup").showModal(); };
+$("closeSetup").onclick=()=>{ strict=+$("inStrict").value; save(); $("setup").close(); render(); };
+$("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); };
+$("restartBtn").onclick=()=>{ restart(); $("setup").close(); };
+
 function parseText(raw){
   const lines=raw.replace(/\r/g,"").split(/\n+/).map(l=>l.trim()).filter(Boolean);
   const secs=[]; let sec=null;
-  const isHead=l=> l.length<=60 && (/^(#+|\d+[.)])\s+\S/.test(l) || (!/[.?!:;,"”)\]]$/.test(l) && l.split(/\s+/).length<=7));
+  const isHead=l=> l.length<=70 && (/^(#+|\d+[.)])\s+\S/.test(l) || /^slide\s*\d+/i.test(l) || (!/[.?!:;,"”’)\]]$/.test(l) && l.split(/\s+/).length<=8));
   for(const l of lines){
-    if(isHead(l)){ sec={name:l.replace(/^(#+|\d+[.)])\s*/,"").replace(/[*_]/g,"").slice(0,30),sub:"",beats:[]}; secs.push(sec); continue; }
-    if(!sec){ sec={name:"Start",sub:"",beats:[]}; secs.push(sec); }
-    for(const part of l.split(/(\[[^\]]+\])/)){
-      if(/^\[.*\]$/.test(part)){ sec.beats.push({cue:part.slice(1,-1)}); continue; }
-      const sents=part.replace(/[*"“”]/g,"").replace(/(?<!\w)_+|_+(?!\w)/g,"").match(/[^.!?]+[.!?]*/g)||[];
-      let buf="";
-      for(const raw2 of sents){ const t=raw2.trim(); if(!t) continue;
-        if(buf && (buf+" "+t).split(/\s+/).length>28){ sec.beats.push(makeBeat(buf)); buf=t; } else buf=buf?buf+" "+t:t;
-        if(buf.split(/\s+/).length>=14){ sec.beats.push(makeBeat(buf)); buf=""; } }
-      if(buf) sec.beats.push(makeBeat(buf));
-    }
+    if(isHead(l)){ sec={name:l.replace(/^(#+|\d+[.)])\s*/,"").replace(/[*_]/g,"").slice(0,30),sub:"",items:[]}; secs.push(sec); continue; }
+    if(!sec){ sec={name:"Start",sub:"",items:[]}; secs.push(sec); }
+    sec.items.push(...splitText(l.replace(/[*]/g,"")));
   }
-  let out=secs.filter(x=>x.beats.some(b=>!b.cue));
-  if(out.length===1 && out[0].beats.length>8){
-    const all=out[0].beats; out=[];
-    for(let i=0;i<all.length;i+=5) out.push({name:"Part "+(out.length+1),sub:"",beats:all.slice(i,i+5)});
-  }
-  return out;
+  return secs.filter(x=>x.items.some(b=>!b.cue));
 }
 function joinPdfLines(lines){
   const out=[];
   for(const raw of lines){ const l=raw.trim(); if(!l){ out.push(""); continue; }
     const prev=out[out.length-1];
-    if(prev && !/[.?!:"”]$/.test(prev) && /^[a-z(,]/.test(l)) out[out.length-1]=prev+" "+l; else out.push(l); }
+    if(prev && !/[.?!:"”’\]]$/.test(prev) && /^[a-z(,'‘]/.test(l)) out[out.length-1]=prev+" "+l; else out.push(l); }
   return out.join("\n");
 }
-function loadLib(src){ return new Promise((res,rej)=>{ const el=document.createElement("script"); el.src=src; el.onload=res; el.onerror=()=>rej(new Error("Could not load the file reader. Check your connection.")); document.head.appendChild(el); }); }
+function loadLib(src){ return new Promise((res,rej)=>{ const el=document.createElement("script"); el.src=src; el.onload=res; el.onerror=()=>rej(new Error("Couldn't load the file reader. Check your connection.")); document.head.appendChild(el); }); }
 async function fileToText(f){
   const n=f.name.toLowerCase();
   if(n.endsWith(".pdf")){
@@ -392,201 +460,40 @@ async function fileToText(f){
     }
     return joinPdfLines(lines);
   }
-  if(n.endsWith(".docx")){
-    if(!window.mammoth) await loadLib("https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js");
-    return (await mammoth.extractRawText({arrayBuffer:await f.arrayBuffer()})).value;
-  }
+  if(n.endsWith(".docx")){ if(!window.mammoth) await loadLib("https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"); return (await mammoth.extractRawText({arrayBuffer:await f.arrayBuffer()})).value; }
   if(n.endsWith(".doc")) throw new Error("Old .doc files can't be read. Save it as .docx or PDF, or paste the text.");
   return await f.text();
 }
-let saved=[];
-try{ saved=JSON.parse(localStorage.getItem("lab3scripts")||"[]"); }catch(_){}
-function persistScripts(){ try{ localStorage.setItem("lab3scripts",JSON.stringify(saved)); }catch(_){} }
+let saved=[]; try{ saved=JSON.parse(localStorage.getItem("lab3scripts2")||"[]"); }catch(_){}
+function persistScripts(){ try{ localStorage.setItem("lab3scripts2",JSON.stringify(saved)); }catch(_){} }
 function fillSpeakers(sel){
   $("speaker").innerHTML=BUILTIN.map((x,i)=>`<option value="b${i}">${esc(x.name)}</option>`).join("")+(saved.length?`<optgroup label="Uploaded">`+saved.map((x,i)=>`<option value="u${i}">${esc(x.name)} (uploaded)</option>`).join("")+`</optgroup>`:"");
   $("speaker").value=sel;
 }
-function useScript(key){
-  const i=+key.slice(1);
-  build(key[0]==="b"?BUILTIN[i].secs:saved[i].secs); restart();
-  try{ localStorage.setItem("lab3speaker",key); }catch(_){}
-}
-
-function hits(i,toks){ return beats[i].groups.map(g=>g.some(alt=>alt.length && alt.every(t=>toks.some(w=>tokMatch(t,w))))); }
-function need(i,isAhead){
-  const n=beats[i].groups.length; if(!n) return Infinity;
-  if(isAhead) return Math.min(n,Math.max(2,Math.ceil(n*(strict+0.15))));
-  return n<=2?1:Math.ceil(n*strict);
-}
-function covered(i,toks,isAhead){ return hits(i,toks).filter(Boolean).length>=need(i,isAhead); }
-
-/* ---------- State ---------- */
-let cur=0, status=beats.map(()=> "todo"), missFrom={}, words=[], interim=[], winStart=0, lastHits={};
-function heard(from){ return words.slice(Math.max(0,from)).concat(interim); }
-function advanceTo(j){ cur=Math.min(j,beats.length); winStart=words.length+interim.length; }
-function nextSpoken(i){ let j=i; while(j<beats.length && beats[j].cue) j++; return j; }
-
-function evaluate(){
-  if(cur>=beats.length) return checkMissed();
-  const toks=heard(winStart-6);
-  lastHits={};
-  for(let k=cur;k<Math.min(beats.length,cur+4);k++) if(!beats[k].cue) lastHits[k]=hits(k,toks);
-  const b=beats[cur];
-  if(b.cue){
-    const n=nextSpoken(cur);
-    if(n<beats.length && covered(n,toks,false)){ for(let k=cur;k<=n;k++) status[k]="done"; advanceTo(n+1); }
-  } else if(covered(cur,toks,false)){
-    status[cur]="done"; advanceTo(cur+1);
-  } else {
-    for(let k=cur+1;k<Math.min(beats.length,cur+4);k++){
-      if(beats[k].cue) continue;
-      if(covered(k,toks,true)){
-        for(let s=cur;s<k;s++){ if(beats[s].cue) status[s]="done"; else { status[s]="missed"; missFrom[s]=winStart-6; } }
-        status[k]="done"; advanceTo(k+1); break;
-      }
-    }
-  }
-  checkMissed();
-}
-function checkMissed(){
-  for(const i of Object.keys(missFrom)){
-    if(covered(+i,heard(missFrom[i]),false)){ status[i]="done"; delete missFrom[i]; flashCleared(+i); }
-  }
-}
-
-/* ---------- Rendering ---------- */
-const $=id=>document.getElementById(id);
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function fill(s){ return s.replace(/%X%/g, X||"[X]").replace(/%Y%/g, Y||"[Y]"); }
-function sayHTML(i,withHits){
-  const b=beats[i]; let g=0; const h=withHits?(lastHits[i]||[]):[];
-  return esc(fill(b.say)).replace(/\{([^}]+)\}/g,(_,inner)=>{ const hit=h[g++]; return `<span class="kw${hit?" hit":""}">${inner.split("|")[0]}</span>`; });
-}
-function cueHTML(b){ return `<div class="cue">▶ ${esc(b.cue)}${b.note?`<small>${esc(b.note)}</small>`:""}</div>`; }
-
-function render(){
-  const stage=$("stage");
-  if(cur>=beats.length){
-    stage.innerHTML=`<div class="where"><b>Done</b></div><div class="now-line">You've reached the end. ${Object.keys(missFrom).length?'Anything still listed on the right was not covered.':'Every point was covered.'}</div>`;
-  } else {
-    const b=beats[cur], sec=ACTIVE[b.si];
-    const secBeats=beats.map((x,i)=>i).filter(i=>beats[i].si===b.si);
-    const pips=secBeats.map(i=>`<span class="pip ${i===cur?"now":status[i]==="done"?"done":status[i]==="missed"?"miss":""}"></span>`).join("");
-    let html=`<div class="where"><b>${String(b.si+1).padStart(2,"0")} ${esc(sec.name)}</b><span>${esc(sec.sub)}</span><span class="pips">${pips}</span></div>`;
-    html+= b.cue ? cueHTML(b) : `<div class="now-line">${sayHTML(cur,true)}</div>`;
-    if(!b.cue && b.note) html+=`<div class="where" style="color:var(--cue);text-transform:none;letter-spacing:0;font-size:18px">${esc(b.note)}</div>`;
-    const n=cur+1;
-    if(n<beats.length) html+= beats[n].cue ? `<div class="next">${esc(beats[n].cue)}</div>` : `<div class="next">${sayHTML(n,false)}</div>`;
-    stage.innerHTML=html;
-  }
-  // track
-  $("track").innerHTML=ACTIVE.map((s,si)=>{
-    const idx=beats.map((x,i)=>i).filter(i=>beats[i].si===si);
-    const isNow=cur<beats.length&&beats[cur].si===si;
-    const allDone=idx.every(i=>status[i]!=="todo");
-    const miss=idx.some(i=>status[i]==="missed");
-    return `<button class="chip ${isNow?"now":allDone?"done":""} ${miss?"hasmiss":""}" data-sec="${si}">${esc(s.name)}</button>`;
-  }).join("");
-  // tray
-  const missed=Object.keys(missFrom).map(Number).sort((a,b)=>a-b);
-  $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(ACTIVE[beats[i].si].name)}</span><span class="say">${esc(fill(beats[i].alt))}</span></button>`).join("")
-    : `<p class="empty">Nothing skipped so far.</p>`;
-  // transcript
-  const tail=words.slice(-24).join(" "), it=interim.join(" ");
-  if(tail||it) $("heard").innerHTML=`<span>${esc(tail)} <i>${esc(it)}</i></span>`;
-}
-function flashCleared(i){ const el=document.querySelector(`[data-miss="${i}"]`); if(el) el.classList.add("cleared"); }
-
-/* ---------- Speech ---------- */
-const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-let rec=null, listening=false, t0=null, wake=null;
-function setStatus(s){ $("status").textContent=s; }
-function startMic(){
-  if(!SR){ setStatus("Voice tracking is not supported here. On iPhone use Safari; Next still works."); return; }
-  rec=new SR(); rec.continuous=true; rec.interimResults=true; rec.lang="en-US";
-  rec.onresult=e=>{
-    let tmp="";
-    for(let i=e.resultIndex;i<e.results.length;i++){
-      const r=e.results[i];
-      if(r.isFinal) words.push(...tokenize(r[0].transcript)); else tmp+=r[0].transcript+" ";
-    }
-    interim=tokenize(tmp);
-    evaluate(); render();
-  };
-  rec.onerror=e=>{
-    if(e.error==="not-allowed"||e.error==="service-not-allowed"){ listening=false; setStatus("Microphone blocked. On iPhone: Settings > Safari > Microphone > Allow, then tap Start."); updMic(); }
-    else if(e.error==="network"){ setStatus("Speech service unreachable. Check Wi-Fi; Space still advances."); }
-  };
-  rec.onend=()=>{ if(listening) setTimeout(()=>{ try{rec.start()}catch(_){} },120); };
-  try{ rec.start(); listening=true; setStatus(""); if(!t0) t0=Date.now(); }catch(_){}
-  try{ navigator.wakeLock?.request("screen").then(w=>wake=w).catch(()=>{}); }catch(_){}
-  updMic();
-}
-function stopMic(){ listening=false; try{rec&&rec.stop()}catch(_){} interim=[]; updMic(); render(); }
-function updMic(){ $("mic").classList.toggle("on",listening); $("micLabel").textContent=listening?"Listening":"Start listening"; }
-$("mic").onclick=()=> listening?stopMic():startMic();
-
-setInterval(()=>{ if(!t0) return; const s=Math.floor((Date.now()-t0)/1000); $("clock").textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")} `; },500);
-
-/* ---------- Controls ---------- */
-function manualNext(){
-  if(cur>=beats.length) return;
-  const b=beats[cur];
-  if(b.cue || (lastHits[cur]||[]).some(Boolean)) status[cur]="done";
-  else { status[cur]="missed"; missFrom[cur]=words.length; }
-  advanceTo(cur+1); render();
-}
-function back(){ if(cur===0) return; cur--; status[cur]="todo"; delete missFrom[cur]; winStart=words.length; lastHits={}; render(); }
-function jumpSection(si){ const i=beats.findIndex(b=>b.si===si); for(let k=i;k<beats.length;k++){ status[k]="todo"; delete missFrom[k]; } cur=i; winStart=words.length; lastHits={}; render(); }
-function restart(){ cur=0; status=beats.map(()=>"todo"); missFrom={}; words=[]; interim=[]; winStart=0; lastHits={}; t0=listening?Date.now():null; $("clock").textContent="0:00"; $("heard").innerHTML="<span>Transcript cleared.</span>"; render(); }
-function size(d){ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"))+d; const c=Math.max(22,Math.min(90,v)); document.documentElement.style.setProperty("--size",c+"px"); save(); }
-
-$("track").onclick=e=>{ const c=e.target.closest("[data-sec]"); if(c) jumpSection(+c.dataset.sec); };
-$("tray").onclick=e=>{ const m=e.target.closest("[data-miss]"); if(m){ const i=+m.dataset.miss; status[i]="done"; delete missFrom[i]; render(); } };
-document.addEventListener("keydown",e=>{
-  if($("setup").open || e.target.tagName==="INPUT") return;
-  if(e.key===" "||e.key==="ArrowRight"||e.key==="PageDown"){ e.preventDefault(); manualNext(); }
-  else if(e.key==="ArrowLeft"||e.key==="PageUp"){ e.preventDefault(); back(); }
-  else if(e.key==="m"||e.key==="M"){ listening?stopMic():startMic(); }
-  else if(e.key==="+"||e.key==="="){ size(4); }
-  else if(e.key==="-"||e.key==="_"){ size(-4); }
-  else if(e.key==="r"||e.key==="R"){ restart(); }
-});
-
-/* ---------- Setup & saved prefs ---------- */
-function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({X,Y,strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
-try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); X=p.X||""; Y=p.Y||""; if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
-$("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inStrict").value=strict; $("setup").showModal(); };
-$("closeSetup").onclick=()=>{ strict=+$("inStrict").value; save(); $("setup").close(); render(); };
-
-$("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); };
-$("restartBtn").onclick=()=>{ restart(); $("setup").close(); };
+function useScript(key){ const i=+key.slice(1); build(key[0]==="b"?BUILTIN[i].secs:saved[i].secs); restart(); try{ localStorage.setItem("lab3speaker",key); }catch(_){} }
 $("speaker").onchange=e=>useScript(e.target.value);
-function renderSaved(){ $("savedRow").innerHTML = saved.length ? saved.map((x,i)=>`<button data-del="${i}" title="Remove">Remove ${esc(x.name)}</button>`).join("") : ""; }
-$("savedRow").onclick=e=>{ const b=e.target.closest("[data-del]"); if(!b) return; const i=+b.dataset.del; const cur=$("speaker").value; saved.splice(i,1); persistScripts(); renderSaved();
-  if(cur==="u"+i){ fillSpeakers("b0"); useScript("b0"); } else if(cur[0]==="u" && +cur.slice(1)>i){ fillSpeakers("u"+(+cur.slice(1)-1)); } else fillSpeakers(cur); };
+function renderSaved(){ $("savedRow").innerHTML=saved.map((x,i)=>`<button data-del="${i}">Remove ${esc(x.name)}</button>`).join(""); }
+$("savedRow").onclick=e=>{ const b=e.target.closest("[data-del]"); if(!b) return; const i=+b.dataset.del, curKey=$("speaker").value; saved.splice(i,1); persistScripts(); renderSaved();
+  if(curKey==="u"+i){ fillSpeakers("b0"); useScript("b0"); } else if(curKey[0]==="u" && +curKey.slice(1)>i) fillSpeakers("u"+(+curKey.slice(1)-1)); else fillSpeakers(curKey); };
 $("loadBtn").onclick=async()=>{
   const name=$("inName").value.trim()||"Teammate", f=$("inFile").files[0], pasted=$("inPaste").value.trim();
   if(!f && !pasted){ $("loadMsg").textContent="Choose a file or paste the script first."; return; }
   $("loadMsg").textContent="Reading…";
   try{
-    const text=f? await fileToText(f) : pasted;
-    const secs=parseText(text);
-    const n=secs.reduce((a,x)=>a+x.beats.filter(b=>!b.cue).length,0);
-    if(!n){ $("loadMsg").textContent="No readable text found. A scanned PDF won't work; try the .docx or paste it."; return; }
+    const secs=parseText(f? await fileToText(f) : pasted);
+    const n=secs.reduce((a,x)=>a+x.items.filter(b=>!b.cue).length,0);
+    if(!n){ $("loadMsg").textContent="No readable text found. Scanned PDFs won't work; try the .docx or paste it."; return; }
     const at=saved.findIndex(x=>x.name.toLowerCase()===name.toLowerCase());
     if(at>=0) saved[at]={name,secs}; else saved.push({name,secs});
     persistScripts(); const idx=at>=0?at:saved.length-1;
     fillSpeakers("u"+idx); useScript("u"+idx); renderSaved();
-    $("loadMsg").textContent=`Loaded ${n} lines in ${secs.length} sections.`;
-    $("inFile").value=""; $("inPaste").value="";
+    $("loadMsg").textContent=`Loaded ${n} sentences in ${secs.length} sections.`; $("inFile").value=""; $("inPaste").value="";
   }catch(err){ $("loadMsg").textContent=err.message||"Couldn't read that file."; }
 };
+
 let startKey="b0"; try{ startKey=localStorage.getItem("lab3speaker")||"b0"; }catch(_){}
-if(!(startKey[0]==="b"&&BUILTIN[+startKey.slice(1)]) && !(startKey[0]==="u"&&saved[+startKey.slice(1)])) startKey="b0";
+if(!((startKey[0]==="b"&&BUILTIN[+startKey.slice(1)])||(startKey[0]==="u"&&saved[+startKey.slice(1)]))) startKey="b0";
 fillSpeakers(startKey); renderSaved(); useScript(startKey);
-$("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
-render();
 </script>
 </body>
 </html>
