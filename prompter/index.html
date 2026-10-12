@@ -65,6 +65,11 @@ main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax
 
 
 aside{min-width:0;display:flex;flex-direction:column;gap:12px;border-left:1px solid var(--line);padding-left:24px;overflow:auto}
+.trayhead{display:flex;align-items:center;justify-content:space-between;gap:10px}
+#trayClose{font-size:22px;line-height:1;padding:4px 12px}
+#trayOpen{color:var(--miss);border-color:color-mix(in srgb,var(--miss) 45%,transparent)}
+body.notray main{grid-template-columns:minmax(0,1fr)}
+body.notray aside{display:none}
 aside h2{margin:0;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--miss)}
 aside .empty{color:var(--faint);font-size:16px}
 .miss{background:color-mix(in srgb,var(--miss) 9%,var(--panel));border:1px solid color-mix(in srgb,var(--miss) 35%,transparent);border-radius:10px;padding:12px 14px;text-align:left;display:block;width:100%}
@@ -109,7 +114,7 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   main{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;gap:12px;padding-block:14px}
   aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:10px}
   aside:has(.empty){border-top:0;padding-top:0}
-  aside .empty, aside:has(.empty) h2{display:none}
+  aside .empty, aside:has(.empty) .trayhead{display:none}
   .line{max-width:none}
   .bar .hint{display:none}
   .pad{display:flex}
@@ -124,13 +129,14 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   <select id="speaker" aria-label="Whose script"></select>
   <nav class="track" id="track"></nav>
   <span class="clock" id="clock">0:00</span>
+  <button id="trayOpen" hidden>Skipped</button>
   <button id="setupBtn">Settings</button>
 </header>
 
 <main>
   <section class="stage" id="stage"><div class="where" id="where"></div><div class="lyrics" id="lyrv"><div class="lyr" id="lyr"></div></div></section>
   <aside>
-    <h2>You skipped these</h2>
+    <div class="trayhead"><h2>You skipped these</h2><button id="trayClose" aria-label="Close skipped list">×</button></div>
     <div id="tray"></div>
   </aside>
 </main>
@@ -405,6 +411,8 @@ function render(){
   const nowChip=document.querySelector(".chip.now"); if(nowChip) try{ nowChip.scrollIntoView({block:"nearest",inline:"center"}); }catch(_){}
   const missed=Object.keys(missFrom).map(Number).sort((a,b)=>a-b);
   $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(ACTIVE[items[i].si].name)}</span><span class="say">${esc(items[i].alt||autoAlt(i))}</span></button>`).join("") : `<p class="empty">Nothing skipped so far.</p>`;
+  document.body.classList.toggle("notray",trayHidden);
+  $("trayOpen").hidden=!trayHidden; $("trayOpen").textContent=missed.length?`Skipped (${missed.length})`:"Skipped";
   const T=heard(); if(T.length) $("heard").innerHTML=`<span>${esc(T.slice(-26).join(" "))}</span>`;
 }
 window.addEventListener("resize",()=>render());
@@ -459,6 +467,9 @@ document.addEventListener("keydown",e=>{
   else if(e.key==="r"||e.key==="R"){ restart(); }
 });
 $("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
+let trayHidden=false; try{ trayHidden=localStorage.getItem("lab3tray")==="0"; }catch(_){}
+function setTray(hide){ trayHidden=hide; try{ localStorage.setItem("lab3tray",hide?"0":"1"); }catch(_){} render(); }
+$("trayClose").onclick=()=>setTray(true); $("trayOpen").onclick=()=>setTray(false);
 
 /* ================= Settings & uploads ================= */
 function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
