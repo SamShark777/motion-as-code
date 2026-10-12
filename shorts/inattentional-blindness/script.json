@@ -1,0 +1,24 @@
+{
+  "slug": "inattentional-blindness",
+  "title": ["INATTENTIONAL", "BLINDNESS"],
+  "hookStyle": "thoughts",
+  "titleCue": "inattentional",
+  "credit": "Simons & Chabris · 1999",
+  "stat": { "unit": "%",
+            "a": { "label": "Missed it", "value": 56, "cue": "half" },
+            "b": { "label": "Noticed", "value": 44, "cue": "noticed." } },
+  "cta": "Follow for more psychology",
+  "lines": [
+    { "sec": "hook", "text": "Could you miss a gorilla walking right past you?" },
+    { "sec": "name", "text": "Psychologists call it inattentional blindness." },
+    { "sec": "study", "text": "People counted basketball passes in a short video." },
+    { "sec": "study", "text": "Midway, someone in a gorilla suit strolled through the game." },
+    { "sec": "stat", "text": "More than half never saw the gorilla." },
+    { "sec": "stat", "text": "Only 44 percent noticed." },
+    { "sec": "takeaway", "text": "Focus is a spotlight, not a floodlight." },
+    { "sec": "takeaway", "text": "So what are you missing right now?" }
+  ],
+  "post": { "title": "Why You Can Miss a Gorilla Right in Front of You #shorts",
+            "description": "Could you miss a gorilla walking right past you? In Simons & Chabris (1999), more than half of people counting basketball passes never saw a person in a gorilla suit stroll through the game. That's inattentional blindness.",
+            "tags": ["inattentional blindness", "invisible gorilla", "attention", "psychology"] }
+}
