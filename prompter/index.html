@@ -39,12 +39,20 @@ select{font:inherit;font-size:15px;color:var(--fg);background:var(--panel);borde
 @keyframes pulse{50%{opacity:.35}}
 
 main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,30%);gap:28px;padding-block:28px}
-.stage{min-width:0;display:flex;flex-direction:column;gap:22px;overflow:auto}
+.stage{min-width:0;min-height:0;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+.lyrics{position:relative;flex:1;min-height:0;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 78%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 12%,#000 78%,transparent 100%)}
+.lyr{position:relative;transition:transform .55s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.line{font-size:var(--size);line-height:1.25;margin:0 0 .5em;max-width:28ch;text-wrap:pretty;transition:opacity .45s ease,transform .45s ease;transform-origin:left center}
+.line.past,.line.future{transform:scale(.95)}
+.line.missed{box-shadow:inset 4px 0 0 var(--miss);padding-left:.35em}
+.line.donefill .w{color:var(--key)}
+.sec{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:1.4em 0 .5em;transition:opacity .45s}
+.line.end{color:var(--dim);font-size:calc(var(--size)*.6)}
 .where{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .where b{color:var(--fg)}
 .pips{display:flex;gap:5px}
 .pip{width:22px;height:5px;border-radius:3px;background:var(--line)}
-.pip.done{background:var(--heard)} .pip.miss{background:var(--miss)} .pip.now{background:var(--key)}
+.pip.done{background:var(--heard)} .pip.pmiss{background:var(--miss)} .pip.now{background:var(--key)}
 .now-line{font-size:var(--size);line-height:1.28;font-weight:400;text-wrap:pretty;max-width:26ch}
 .w{color:var(--unsaid);transition:color .18s ease,background-color .18s ease;border-radius:.18em;padding:0 .04em;margin:0 -.04em}
 .w.said{color:var(--key)}
@@ -91,15 +99,21 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   header{gap:8px;padding-block:10px}
   .track{order:3;flex-basis:100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
   .chip{flex:none;font-size:12px;padding:4px 9px}
-  #mic{flex:1;justify-content:center;padding:12px}
+  #mic{flex:1 1 auto;justify-content:center;padding:10px 12px}
+  select{max-width:120px}
+  #setupBtn{padding:10px 12px}
+  .clock{font-size:13px}
+  .where{display:none}
+  aside{max-height:20vh}
+  .miss{padding:8px 12px}
   main{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;gap:12px;padding-block:14px}
-  aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:10px;max-height:32vh}
+  aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:10px}
   aside:has(.empty){border-top:0;padding-top:0}
   aside .empty, aside:has(.empty) h2{display:none}
-  .now-line{max-width:none}
+  .line{max-width:none}
   .bar .hint{display:none}
   .pad{display:flex}
-  :root{--size:32px}
+  :root{--size:28px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -110,11 +124,11 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   <select id="speaker" aria-label="Whose script"></select>
   <nav class="track" id="track"></nav>
   <span class="clock" id="clock">0:00</span>
-  <button id="setupBtn">Setup</button>
+  <button id="setupBtn">Settings</button>
 </header>
 
 <main>
-  <section class="stage" id="stage" aria-live="polite"></section>
+  <section class="stage" id="stage"><div class="where" id="where"></div><div class="lyrics" id="lyrv"><div class="lyr" id="lyr"></div></div></section>
   <aside>
     <h2>You skipped these</h2>
     <div id="tray"></div>
@@ -321,7 +335,7 @@ function evaluate(){
           const as=align(s,start-2,T);
           if(isDone(s,as)) status[s]="done"; else { status[s]="missed"; missFrom[s]=start-2; }
         }
-        al={}; cur=k; start=b.first; jumped=true; break;
+        cur=k; start=b.first; jumped=true; break;
       }
     }
     if(!jumped) break;
@@ -336,32 +350,46 @@ function karaoke(i){
   const it=items[i], a=al[i]||{p:0,seen:new Set()};
   const saidSpan=new Set(), curSpan=it.words[a.p]?.span;
   it.words.forEach((w,k)=>{ if(k<a.p || a.seen.has(k)) saidSpan.add(w.span); });
-  return it.spans.map((sp,k)=>`<span class="w${saidSpan.has(k)?" said":""}${k===curSpan&&!saidSpan.has(k)?" cur":""}">${esc(sp)}</span>`).join(" ");
+  return it.spans.map((sp,k)=>`<span class="w${saidSpan.has(k)?" said":""}${i===cur&&k===curSpan&&!saidSpan.has(k)?" cur":""}">${esc(sp)}</span>`).join(" ");
 }
 function cueHTML(b){ return `<div class="cue">▶ ${esc(b.cue)}${b.note?`<small>${esc(b.note)}</small>`:""}</div>`; }
 function autoAlt(i){ const w=items[i].words.filter(x=>x.content).map(x=>items[i].spans[x.span].replace(/[^\w'’-]/g,"")); return "Cover: "+[...new Set(w)].slice(0,5).join(" · "); }
 
+function buildLyrics(){
+  let html="", last=-1;
+  items.forEach((it,i)=>{
+    if(it.si!==last){ html+=`<div class="sec" id="S${i}">${esc(ACTIVE[it.si].sub||ACTIVE[it.si].name)}</div>`; last=it.si; }
+    html+= it.cue ? `<div class="line" id="L${i}">${cueHTML(it)}</div>` : `<div class="line" id="L${i}"></div>`;
+  });
+  html+=`<div class="line end" id="Lend">End of script</div>`;
+  $("lyr").innerHTML=html;
+  items.forEach((it,i)=>{ if(!it.cue) $("L"+i).innerHTML=karaoke(i); });
+}
+function fade(d){ return d===0?1 : d<0 ? [1,.6,.45,.34,.26][Math.min(4,-d)]||.2 : [1,.5,.34,.24,.18][Math.min(4,d)]||.15; }
 function render(){
-  const stage=$("stage");
-  if(cur>=items.length){
-    const m=Object.keys(missFrom).length;
-    stage.innerHTML=`<div class="where"><b>Done</b></div><div class="now-line">${m?"You reached the end. Lines still listed on the right weren't covered.":"You covered every line."}</div>`;
-  } else {
+  const n=items.length;
+  if(cur<n){
     const it=items[cur], sec=ACTIVE[it.si];
     const secIdx=items.map((x,i)=>i).filter(i=>items[i].si===it.si && !items[i].cue);
-    const pips=secIdx.map(i=>`<span class="pip ${i===cur?"now":status[i]==="done"?"done":status[i]==="missed"?"miss":""}"></span>`).join("");
-    let html=`<div class="where"><b>${esc(sec.name)}</b><span>${esc(sec.sub||"")}</span><span class="pips">${pips}</span></div>`;
-    let pv=cur-1; while(pv>=0 && items[pv].cue) pv--;
-    if(pv>=0 && items[pv].si===it.si) html+=`<div class="prev">${esc(items[pv].say)}</div>`;
-    html+= it.cue ? cueHTML(it) : `<div class="now-line">${karaoke(cur)}</div>`;
-    if(!it.cue && it.note) html+=`<div class="where" style="color:var(--cue);text-transform:none;letter-spacing:0;font-size:18px">${esc(it.note)}</div>`;
-    const n=cur+1;
-    if(n<items.length) html+= items[n].cue ? `<div class="next">▶ ${esc(items[n].cue)}</div>` : `<div class="next">${esc(items[n].say)}</div>`;
-    stage.innerHTML=html;
+    const pips=secIdx.map(i=>`<span class="pip ${i===cur?"now":status[i]==="done"?"done":status[i]==="missed"?"pmiss":""}"></span>`).join("");
+    $("where").innerHTML=`<b>${esc(sec.name)}</b><span class="pips">${pips}</span>`;
+  } else {
+    const m=Object.keys(missFrom).length;
+    $("where").innerHTML=`<b>Done</b>`; $("Lend").textContent=m?"End of script. Lines still listed under “You skipped these” weren't covered.":"End of script. You covered every line.";
   }
+  for(let i=0;i<n;i++){
+    const el=$("L"+i); if(!el) continue;
+    const d=i-cur;
+    el.className="line"+(d<0?" past":d>0?" future":"")+(status[i]==="missed"?" missed":"")+(status[i]==="done"&&!al[i]&&!items[i].cue?" donefill":"");
+    el.style.opacity=fade(d);
+    if(Math.abs(d)<=3 && !items[i].cue) el.innerHTML=karaoke(i);
+  }
+  items.forEach((it,i)=>{ const s=$("S"+i); if(s) s.style.opacity=fade(i-cur)*.9; });
+  const target=cur<n?$("L"+cur):$("Lend"), vp=$("lyrv");
+  if(target){ const y=Math.max(0,target.offsetTop - vp.clientHeight*0.3); $("lyr").style.transform=`translateY(${-y}px)`; }
   $("track").innerHTML=ACTIVE.map((s,si)=>{
     const idx=items.map((x,i)=>i).filter(i=>items[i].si===si);
-    const isNow=cur<items.length&&items[cur].si===si, allDone=idx.every(i=>status[i]!=="todo"), miss=idx.some(i=>status[i]==="missed");
+    const isNow=cur<n&&items[cur].si===si, allDone=idx.every(i=>status[i]!=="todo"), miss=idx.some(i=>status[i]==="missed");
     return `<button class="chip ${isNow?"now":allDone?"done":""} ${miss?"hasmiss":""}" data-sec="${si}">${esc(s.name)}</button>`;
   }).join("");
   const nowChip=document.querySelector(".chip.now"); if(nowChip) try{ nowChip.scrollIntoView({block:"nearest",inline:"center"}); }catch(_){}
@@ -369,6 +397,7 @@ function render(){
   $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(ACTIVE[items[i].si].name)}</span><span class="say">${esc(items[i].alt||autoAlt(i))}</span></button>`).join("") : `<p class="empty">Nothing skipped so far.</p>`;
   const T=heard(); if(T.length) $("heard").innerHTML=`<span>${esc(T.slice(-26).join(" "))}</span>`;
 }
+window.addEventListener("resize",()=>render());
 
 /* ================= Speech ================= */
 const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
@@ -405,8 +434,8 @@ function manualNext(){
 }
 function back(){ if(cur===0) return; cur--; status[cur]="todo"; delete missFrom[cur]; delete al[cur]; start=heard().length; render(); }
 function jumpSection(si){ const i=items.findIndex(b=>b.si===si); for(let k=i;k<items.length;k++){ status[k]="todo"; delete missFrom[k]; } al={}; cur=i; start=heard().length; render(); }
-function restart(){ cur=0; status=items.map(()=>"todo"); al={}; missFrom={}; committed=[]; session=[]; start=0; t0=listening?Date.now():null; $("clock").textContent="0:00"; $("heard").innerHTML="<span>Transcript appears here once listening starts.</span>"; render(); }
-function size(d){ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"))+d; document.documentElement.style.setProperty("--size",Math.max(22,Math.min(90,v))+"px"); save(); }
+function restart(){ cur=0; status=items.map(()=>"todo"); al={}; missFrom={}; committed=[]; session=[]; start=0; t0=listening?Date.now():null; $("clock").textContent="0:00"; $("heard").innerHTML="<span>Transcript appears here once listening starts.</span>"; buildLyrics(); render(); }
+function size(d){ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"))+d; document.documentElement.style.setProperty("--size",Math.max(22,Math.min(90,v))+"px"); save(); render(); }
 
 $("track").onclick=e=>{ const c=e.target.closest("[data-sec]"); if(c) jumpSection(+c.dataset.sec); };
 $("tray").onclick=e=>{ const m=e.target.closest("[data-miss]"); if(m){ const i=+m.dataset.miss; status[i]="done"; delete missFrom[i]; render(); } };
@@ -426,7 +455,7 @@ function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({strict
 try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
 $("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inStrict").value=strict; $("setup").showModal(); };
 $("closeSetup").onclick=()=>{ strict=+$("inStrict").value; save(); $("setup").close(); render(); };
-$("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); };
+$("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); render(); };
 $("restartBtn").onclick=()=>{ restart(); $("setup").close(); };
 
 function parseText(raw){
