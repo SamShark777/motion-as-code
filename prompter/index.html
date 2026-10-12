@@ -36,6 +36,7 @@ select{font:inherit;font-size:15px;color:var(--fg);background:var(--panel);borde
 #mic .dot{width:10px;height:10px;border-radius:50%;background:var(--faint)}
 #mic.on{border-color:var(--heard)}
 #mic.on .dot{background:#ff5a5a;animation:pulse 1.4s infinite}
+#mic.weak{border-color:var(--miss)} #mic.weak .dot{background:var(--miss)}
 @keyframes pulse{50%{opacity:.35}}
 
 main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,30%);gap:28px;padding-block:28px}
@@ -91,6 +92,8 @@ dialog h3{margin:0 0 14px}
 dialog label{display:grid;gap:6px;margin-bottom:14px;font-size:14px;color:var(--dim)}
 dialog input[type=number],dialog input[type=text]{font:inherit;font-size:18px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 dialog textarea{font:inherit;font-size:15px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical}
+dialog label.check{display:flex;gap:10px;align-items:flex-start;color:var(--fg)}
+dialog label.check input{margin-top:3px;width:18px;height:18px}
 dialog hr{border:0;border-top:1px solid var(--line);margin:18px 0}
 dialog .msg{flex:1;font-size:13px;color:var(--dim);align-self:center}
 dialog{max-height:90vh;overflow:auto}
@@ -160,6 +163,7 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   <hr>
   <h3>Settings</h3>
   <label>Matching strictness<input id="inStrict" type="range" min="0.3" max="0.7" step="0.05"></label>
+  <label class="check"><input id="inOffline" type="checkbox"> Offline speech (Chrome or Edge on a laptop only). Downloads a speech model once, then works without Wi-Fi.</label>
   <label>Text size<input id="inSize" type="range" min="22" max="80" step="2"></label>
   <div class="row"><button id="restartBtn">Restart from top</button><button id="closeSetup">Done</button></div>
 </dialog>
@@ -419,28 +423,74 @@ window.addEventListener("resize",()=>render());
 
 /* ================= Speech ================= */
 const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-let rec=null, listening=false, t0=null, raf=0;
+let offlinePref=false; try{ offlinePref=localStorage.getItem("lab3offline")==="1"; }catch(_){}
+let rec=null, listening=false, t0=null, raf=0, local=false, fails=0, lastEvent=0, lastResult=0, restartT=0, wake=null;
 function setStatus(s){ $("status").textContent=s; }
 function tick(){ cancelAnimationFrame(raf); raf=requestAnimationFrame(()=>{ evaluate(); render(); }); }
-function startMic(){
-  if(!SR){ setStatus("Voice tracking isn't available in this browser. On iPhone use Safari; Next still works."); return; }
-  rec=new SR(); rec.continuous=true; rec.interimResults=true; rec.lang="en-US"; rec.maxAlternatives=1;
-  rec.onresult=e=>{
+
+/* On-device speech (Chrome/Edge that support it): no Wi-Fi needed once downloaded. */
+async function prepareLocal(){
+  try{
+    if(!SR || typeof SR.available!=="function") return false;
+    const opts={langs:["en-US"],processLocally:true};
+    const st=await SR.available(opts);
+    if(st==="available") return true;
+    if((st==="downloadable"||st==="downloading") && typeof SR.install==="function"){
+      setStatus("Downloading on-device speech… using online for now.");
+      SR.install(opts).then(ok=>{ if(ok){ local=true; setStatus("On-device speech ready."); if(listening){ try{ rec.abort(); }catch(_){} } } }).catch(()=>{});
+    }
+  }catch(_){}
+  return false;
+}
+function makeRec(){
+  const r=new SR(); r.continuous=true; r.interimResults=true; r.lang="en-US"; r.maxAlternatives=1;
+  if(local){ try{ r.processLocally=true; }catch(_){} }
+  const alive=()=>{ lastEvent=Date.now(); };
+  r.onstart=alive; r.onaudiostart=alive; r.onspeechstart=alive;
+  r.onresult=e=>{
+    alive(); lastResult=Date.now(); fails=0; updMic();
     const all=[]; for(let i=0;i<e.results.length;i++) all.push(...tokenize(e.results[i][0].transcript));
     session=all; tick();
   };
-  rec.onerror=e=>{
-    if(e.error==="not-allowed"||e.error==="service-not-allowed"){ listening=false; updMic(); setStatus("Microphone blocked. iPhone: Settings › Safari › Microphone › Allow. Then tap Start."); }
-    else if(e.error==="network") setStatus("Speech service unreachable. Check Wi-Fi; Next still works.");
-    else if(e.error==="audio-capture") setStatus("No microphone found.");
+  r.onerror=e=>{
+    if(e.error==="not-allowed"||e.error==="service-not-allowed"){
+      if(local && e.error==="service-not-allowed"){ local=false; return; }   // fall back to online quietly
+      listening=false; updMic(); setStatus("Microphone blocked. iPhone: Settings › Safari › Microphone › Allow. Then tap Start."); return;
+    }
+    if(e.error==="audio-capture"){ setStatus("No microphone found."); }
+    if(e.error==="language-not-supported" && local){ local=false; }
+    if(e.error!=="no-speech" && e.error!=="aborted") fails++;
   };
-  rec.onend=()=>{ committed=committed.concat(session); session=[]; if(listening) setTimeout(()=>{ try{ rec.start(); }catch(_){} },80); };
-  try{ rec.start(); listening=true; setStatus(""); if(!t0) t0=Date.now(); }catch(_){}
-  try{ navigator.wakeLock?.request("screen").catch(()=>{}); }catch(_){}
-  updMic();
+  r.onend=()=>{
+    committed=committed.concat(session); session=[];
+    if(!listening || r!==rec) return;
+    clearTimeout(restartT);
+    restartT=setTimeout(relisten, fails? Math.min(1500,120*2**Math.min(fails,4)) : 40);
+    updMic();
+  };
+  return r;
 }
-function stopMic(){ listening=false; try{ rec&&rec.stop(); }catch(_){} updMic(); }
-function updMic(){ $("mic").classList.toggle("on",listening); $("micLabel").textContent=listening?"Listening":"Start listening"; }
+function relisten(){ if(!listening) return; rec=makeRec(); try{ rec.start(); lastEvent=Date.now(); }catch(_){ fails++; clearTimeout(restartT); restartT=setTimeout(relisten,400); } }
+async function startMic(){
+  if(!SR){ setStatus("Voice tracking isn't available in this browser. On iPhone use Safari; Next still works."); return; }
+  listening=true; setStatus(""); if(!t0) t0=Date.now(); updMic();
+  local = offlinePref ? await Promise.race([prepareLocal(), new Promise(r=>setTimeout(()=>r(false),1500))]) : false;
+  relisten();
+  try{ wake=await navigator.wakeLock?.request("screen"); }catch(_){}
+}
+function stopMic(){ listening=false; clearTimeout(restartT); try{ rec&&rec.stop(); }catch(_){} updMic(); }
+function updMic(){
+  const weak=listening && fails>=3 && Date.now()-lastResult>6000;
+  $("mic").classList.toggle("on",listening); $("mic").classList.toggle("weak",weak);
+  $("micLabel").textContent=!listening?"Start listening": weak?"Reconnecting…" : local?"Listening · offline":"Listening";
+}
+/* Watchdog: some browsers silently stop listening without telling the page. */
+setInterval(()=>{
+  if(!listening) return;
+  if(Date.now()-lastEvent>9000){ lastEvent=Date.now(); try{ rec.abort(); }catch(_){ relisten(); } }
+  updMic();
+},1500);
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible" && listening){ try{ rec.abort(); }catch(_){ relisten(); } navigator.wakeLock?.request("screen").then(w=>wake=w).catch(()=>{}); } });
 $("mic").onclick=()=> listening?stopMic():startMic();
 setInterval(()=>{ if(!t0) return; const s=Math.floor((Date.now()-t0)/1000); $("clock").textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")}`; },500);
 
@@ -474,6 +524,7 @@ $("trayClose").onclick=()=>setTray(true); $("trayOpen").onclick=()=>setTray(fals
 /* ================= Settings & uploads ================= */
 function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
 try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
+$("inOffline").checked=offlinePref; $("inOffline").onchange=e=>{ offlinePref=e.target.checked; try{ localStorage.setItem("lab3offline",offlinePref?"1":"0"); }catch(_){} };
 $("setupBtn").onclick=()=>{ $("inSize").value=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size")); $("inStrict").value=strict; $("setup").showModal(); };
 $("closeSetup").onclick=()=>{ strict=+$("inStrict").value; save(); $("setup").close(); render(); };
 $("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); render(); };
