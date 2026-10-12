@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Prompter">
+<meta name="theme-color" content="#07080c">
+<title>Lab 3 Prompter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Urbanist:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one column. Section rail on top, the line to say now large in the middle, what's next below it, live transcript and missed points pinned at the bottom. */
+:root{
+  color-scheme:dark;
+  --bg:#07080c; --bg2:#0f1118; --glass:rgba(255,255,255,.05); --line:rgba(255,255,255,.1);
+  --ink:#f1f2f8; --ink2:#a9aec0; --ink3:#666b80;
+  --accent:#5b84ff; --said:#46c99a; --half:#e7b14a; --miss:#ef6a55;
+  --f-ui:"Urbanist",ui-sans-serif,system-ui,-apple-system,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,Menlo,monospace;
+  --scale:1;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);overflow:hidden;-webkit-tap-highlight-color:transparent;
+  background:radial-gradient(120% 50% at 50% -10%, #1a1f4a 0%, transparent 60%), var(--bg)}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{height:100%;display:flex;flex-direction:column;padding:calc(10px + env(safe-area-inset-top,0px)) 16px calc(10px + env(safe-area-inset-bottom,0px))}
+/* top */
+.top{display:flex;align-items:center;gap:10px}
+.mic{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;font-size:15px}
+.mic.on{background:rgba(70,201,154,.16);color:var(--said);border:1px solid rgba(70,201,154,.45)}
+.mic .dot{width:9px;height:9px;border-radius:50%;background:currentColor}
+.mic.on .dot{animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.timer{font:500 15px var(--f-mono);color:var(--ink2);font-variant-numeric:tabular-nums}
+.timer.over{color:var(--half)}
+.sp{flex:1}
+.ib{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--line)}
+.ib svg{width:18px;height:18px}
+.rail{display:flex;gap:6px;margin:12px 0 4px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.rail::-webkit-scrollbar{display:none}
+.chip{flex:none;display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:13px;color:var(--ink2);white-space:nowrap}
+.chip.cur{background:#fff;color:#0a0b11;font-weight:600;border-color:#fff}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--ink3)}
+.chip.done i{background:var(--said)} .chip.part i{background:var(--half)}
+/* stage */
+.stage{position:relative;flex:1;min-height:0;overflow-y:auto;scroll-behavior:smooth;padding:24vh 0 40vh;mask-image:linear-gradient(transparent 0,#000 12%,#000 84%,transparent 100%);-webkit-mask-image:linear-gradient(transparent 0,#000 12%,#000 84%,transparent 100%)}
+.beat{display:block;width:100%;text-align:left;padding:10px 4px 10px 22px;margin:2px 0;border-radius:16px;position:relative;color:var(--ink3);font-size:calc(19px*var(--scale));line-height:1.35;transition:color .25s,font-size .25s}
+.beat::before{content:"";position:absolute;left:6px;top:18px;width:8px;height:8px;border-radius:50%;background:var(--line)}
+.beat.said::before{background:var(--said)} .beat.half::before{background:var(--half)} .beat.miss::before{background:var(--miss)}
+.beat.skip::before{background:transparent;border:1.5px solid var(--ink3)}
+.beat.said{color:#4f5466} .beat.half,.beat.miss{color:#7a7f93}
+.beat.next{color:var(--ink2);font-size:calc(22px*var(--scale))}
+.beat.focus{color:var(--ink);font-size:calc(31px*var(--scale));font-weight:600;line-height:1.28;letter-spacing:-.005em;background:linear-gradient(180deg,rgba(91,132,255,.10),rgba(91,132,255,.03));border:1px solid rgba(91,132,255,.28);padding:16px 14px 16px 26px}
+.beat.focus::before{background:var(--accent);box-shadow:0 0 12px var(--accent);top:28px;left:10px}
+.beat .w.hit{color:var(--said)}
+.beat .try{display:block;margin-top:10px;font-size:calc(19px*var(--scale));font-weight:500;color:var(--half);line-height:1.35}
+.beat .try b{font:500 11px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:2px;color:var(--half);opacity:.8}
+.sec{font:500 11px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin:26px 0 6px 22px}
+.cue{display:inline-flex;align-items:center;gap:8px;margin:6px 0 6px 22px;height:30px;padding:0 12px;border-radius:999px;border:1px dashed rgba(231,177,74,.55);color:var(--half);font-size:14px;font-weight:500}
+.cue.focus{background:rgba(231,177,74,.15);border-style:solid;font-size:17px;height:38px}
+/* bottom */
+.bottom{display:flex;flex-direction:column;gap:8px}
+.missed{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.missed::-webkit-scrollbar{display:none}
+.mcard{flex:none;width:min(78vw,340px);text-align:left;padding:10px 12px;border-radius:14px;background:rgba(239,106,85,.1);border:1px solid rgba(239,106,85,.35);font-size:14px;line-height:1.35;color:var(--ink)}
+.mcard.half{background:rgba(231,177,74,.1);border-color:rgba(231,177,74,.35)}
+.mcard small{display:block;font:500 10.5px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);margin-bottom:3px}
+.ticker{font:13px/1.4 var(--f-mono);color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:rtl;text-align:left;min-height:18px}
+.ticker span{direction:ltr;unicode-bidi:embed}
+.ticker .live{color:var(--ink2)}
+.nav{display:flex;gap:8px;align-items:center}
+.nav .ib{width:46px;height:46px}
+.status{font-size:13px;color:var(--ink3);flex:1;text-align:center}
+.status.err{color:var(--miss)}
+/* sheet */
+.sheet{position:fixed;inset:auto 0 0 0;z-index:20;background:#12141c;border-radius:24px 24px 0 0;border-top:1px solid var(--line);padding:20px 18px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:14px;box-shadow:0 -30px 60px rgba(0,0,0,.8);max-height:86vh;overflow:auto}
+.sheet h3{margin:0;font-size:18px}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--ink2)}
+.field input[type=text],.field input[type=number]{background:#0a0b10;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--ink);font:16px var(--f-ui)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{height:42px;padding:0 16px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-weight:600;font-size:14px}
+.btn.primary{background:var(--accent);border-color:transparent;color:#fff}
+.note{font-size:13px;color:var(--ink3);line-height:1.45;margin:0}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:19}
+input[type=range]{width:100%;accent-color:var(--accent)}
+@media (prefers-reduced-motion:reduce){ .stage{scroll-behavior:auto} .mic.on .dot{animation:none} }
+@media (min-width:900px){ .app{max-width:980px;margin:0 auto} }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <button class="mic" id="micBtn" aria-live="polite"><span class="dot"></span><span id="micTxt">Start</span></button>
+    <span class="timer" id="timer">0:00 / 6:00</span>
+    <span class="sp"></span>
+    <button class="ib" id="setBtn" aria-label="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></button>
+  </div>
+  <nav class="rail" id="rail" aria-label="Sections"></nav>
+  <main class="stage" id="stage" aria-live="off"></main>
+  <div class="bottom">
+    <div class="missed" id="missed" aria-label="Points you skipped or half-said"></div>
+    <div class="ticker" id="ticker"><span>Tap Start, then speak. The line you're on lights up.</span></div>
+    <div class="nav">
+      <button class="ib" id="prevBtn" aria-label="Previous line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg></button>
+      <span class="status" id="status">Ready</span>
+      <button class="ib" id="nextBtn" aria-label="Next line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="sheet" id="sheet" hidden role="dialog" aria-label="Settings">
+  <h3>Before you present</h3>
+  <div class="row">
+    <label class="field" style="flex:1">Valid out of 10 (X)<input type="number" id="xIn" min="0" max="10" inputmode="numeric" placeholder="X"></label>
+    <label class="field" style="flex:1">Worked in sim (Y)<input type="number" id="yIn" min="0" max="10" inputmode="numeric" placeholder="Y"></label>
+  </div>
+  <label class="field">Text size<input type="range" id="sizeIn" min="0.8" max="1.4" step="0.05"></label>
+  <label class="field">How strict the matching is<input type="range" id="strictIn" min="0.45" max="0.8" step="0.05"></label>
+  <p class="note">Lower = a line counts as said sooner. Raise it if lines turn green before you've finished them.</p>
+  <label class="row" style="font-size:14px;color:var(--ink2)"><input type="checkbox" id="semIn"> Smarter meaning matching (downloads about 25 MB once, best on Wi-Fi)</label>
+  <span class="note" id="semStatus"></span>
+  <div class="row"><button class="btn" id="resetBtn">Start over</button><span class="sp"></span><button class="btn primary" id="closeSet">Done</button></div>
+  <p class="note">Keep the phone unlocked and this tab in front. If listening stops, tap Start again. Speech goes to Apple's speech recognition; nothing is saved.</p>
+</div>
+
+<script>
+(() => {
+/* ---------- script (Lab 3, humour removed) ---------- */
+const SECTIONS = ["Record","What works","Clips","Walk","Point","Place","Failure case","Gap","Nick"];
+const B = [
+ {s:0,t:"Hi, I'm Shivam, the Data and Policy Research lead for Team 2. My job is to record what the robot does.",a:"I'm Shivam, Team 2's Data and Policy Research lead. I record everything the robot does.",k:[["shivam"],["data","policy","research"],["record","recorder","log","track"]]},
+ {s:0,t:"Our question for this lab: can Yotie hear a classroom command and actually carry it out, not just describe it?",a:"The question: can Yotie take a spoken classroom command and actually do it?",k:[["question","goal"],["command","instruction"],["classroom"],["carry out","actually do","execute","perform","do it"]]},
+ {s:0,t:"When the robot fails, the first question is whether it was Claude's fault or the robot's. Without data, we can't answer that.",a:"When something fails, we need data to tell whether Claude or the robot caused it.",k:[["fail","mess","wrong","mistake"],["claude"],["robot"],["fault","blame","cause"],["data"]]},
+ {s:0,t:"So for every attempt, I record three things.",a:"For each attempt I record three things.",k:[["every attempt","each attempt","every run","each run","every trial","each trial"],["three things","three"]]},
+ {s:0,t:"What the robot observed, o_t: its pose, where the chair is, and whether it collided with anything.",a:"First, what the robot sees: its pose, the chair's position, and any collisions.",k:[["observ","saw","see","o t"],["pose","position"],["chair"],["collid","collision","bump","hit","contact"]]},
+ {s:0,t:"What it was told to do, a_t: the walking speed or arm target we sent.",a:"Second, what we told it to do: the walking speed or the arm target.",k:[["told","action","a t","command"],["walk","speed","velocity"],["arm","target"]]},
+ {s:0,t:"And the whole episode: the command, Claude's answer, and whether it worked.",a:"Third, the full episode: the command, Claude's answer, and whether it worked.",k:[["episode","whole run"],["command"],["claude","answer","response","output"],["work","success","succeed"]]},
+ {s:0,t:"That way, every result can be traced back to evidence.",a:"So every result is backed by evidence.",k:[["trace","back","backed"],["evidence","data","proof","record"]]},
+
+ {s:1,t:"Here's where we are: what works, what improved, and what's still open.",a:"Let me cover what works, what improved, and what's still open.",k:[["where we are","status","progress"],["work"],["improv","better"],["open","remain","still"]]},
+ {s:1,t:"What works: we have a classroom scene in Lucky Engine, the G1 takes walking commands, and both arms move through a full motion graph.",a:"Working now: the classroom scene in Lucky Engine, walking commands on the G1, and both arms on a full motion graph.",k:[["classroom","scene"],["lucky engine","lucky"],["g1","walk"],["arm"],["motion graph","graph"]]},
+ {s:1,t:"What improved: with the graph targets, the arm movement is much more natural than before.",a:"The arms now move much more naturally thanks to the graph targets.",k:[["improv","better","before"],["graph","target"],["natural","smooth","realistic"],["arm"]]},
+ {s:1,t:"What's still open: the robot walks up to the chair and reaches, but sometimes misses. Reliable contact and pushing aren't solved yet.",a:"Still open: reaching the chair is unreliable. Contact and pushing aren't solved.",k:[["chair"],["reach"],["miss"],["contact","push"],["open","solved","reliable","yet"]]},
+ {s:1,t:"These are observations from the sim, not scored results yet.",a:"These are sim observations, not scored results.",k:[["observation","observ"],["sim","simulation"],["not scored","scored","score"]]},
+
+ {s:2,t:"We picked three commands and ran each one in the sim.",a:"We ran three commands in the sim.",k:[["three commands","three"],["ran","run","tested","test"],["sim","simulation"]]},
+ {s:2,t:"For each one, watch three things: what we said, what Claude answered, and what the robot actually did. Those don't always match.",a:"Watch what we said, what Claude answered, and what the robot did. They don't always match.",k:[["what we said","said"],["claude"],["robot"],["actually did","did","do"],["match","same","line up"]]},
+
+ {s:3,t:"Command one: \"Walk to the chair.\"",a:"First command: walk to the chair.",k:[["command one","first command","first"],["walk"],["chair"]]},
+ {s:3,t:"Claude answered move_to, object chair, target null. That means go to the chair, not move it.",a:"Claude returned move_to with the chair as the object and no target: go to the chair.",k:[["move to","move_to"],["object"],["target null","null","no target"],["go to","not move"]]},
+ {cue:"Play clip 01"},
+ {s:3,t:"The robot walks over and stops at the chair.",a:"It walks over and stops at the chair.",k:[["walk"],["stop"],["chair"]],note:"Add where it stopped and whether it bumped anything."},
+
+ {s:4,t:"Command two: \"Point at the whiteboard.\"",a:"Second command: point at the whiteboard.",k:[["command two","second command","second"],["point"],["whiteboard","board"]]},
+ {s:4,t:"Claude got this one exactly right: action point, object whiteboard.",a:"Claude's answer was correct: point, whiteboard.",k:[["right","correct","exactly","perfect"],["point"],["whiteboard","board"]]},
+ {s:4,t:"This clip shows the gesture side working: the arm moves through the pointing motion smoothly.",a:"Here the gesture works: the arm moves smoothly through the point.",k:[["gesture"],["arm"],["smooth","clean","natural"],["point","pointing"]]},
+ {cue:"Play clip 02"},
+ {s:4,t:"What we're checking: does the arm point at the board, hold it, and come back down without the robot losing balance?",a:"We check that the arm points, holds, and lowers while the robot stays balanced.",k:[["check","look"],["point"],["hold"],["come back","down","lower","return"],["balance"]]},
+
+ {s:5,t:"Command three: \"Move the chair to the front row.\"",a:"Third command: move the chair to the front row.",k:[["command three","third command","third"],["move"],["chair"],["front row","front"]]},
+ {s:5,t:"Claude answered: action place, object chair, target front row.",a:"Claude chose place, with the chair as object and the front row as target.",k:[["claude","answer"],["place"],["chair"],["front row","front"]]},
+ {s:5,t:"In our action list, place means put down something the robot is already holding. The robot isn't holding anything.",a:"But place means putting down something already held, and the robot holds nothing.",k:[["action list","list","defin"],["place"],["put down","set down"],["holding","hold","held"]]},
+ {s:5,t:"The correct answer was move_to.",a:"It should have been move_to.",k:[["correct","right answer","should have"],["move to","move_to"]]},
+ {s:5,t:"The JSON was valid, but the action was wrong. Valid JSON and the right answer are two different tests.",a:"Valid JSON isn't the same as the right action. Those are separate tests.",k:[["json"],["valid"],["wrong","incorrect"],["two different tests","different test","separate test","not the same"]]},
+ {cue:"Play clip 03"},
+ {s:5,t:"This is the closest we got: the robot approaching the chair. So this one is a partial demo, not a success.",a:"The robot only approaches the chair, so this counts as a partial demo.",k:[["closest"],["approach"],["chair"],["partial"],["not a success","success"]]},
+
+ {s:6,t:"One more clip before the evaluation.",a:"One more clip before the results.",k:[["one more clip","another clip","one more"],["evaluation","results","numbers"]]},
+ {cue:"Play the clip"},
+ {s:6,t:"Here the arm controller doesn't release after a gesture. It keeps control of the arms, so when the next command comes in, the robot can't move normally.",a:"The arm controller kept control after the gesture, which blocked the next command.",k:[["arm controller","controller"],["release","let go","hand back"],["gesture"],["control"],["next command","next"],["can t move","move normal","blocked"]]},
+ {s:6,t:"In simulation this is a bug. Next to a real student, it would be a safety incident.",a:"In sim it's a bug. Near a real student it's a safety problem.",k:[["simulation","sim"],["bug","glitch","error"],["real student","student"],["safety","incident","danger"]]},
+ {s:6,t:"The fix: after every gesture, the arms return to a safe pose and hand control back to the walking controller.",a:"Fix: after each gesture, return to a safe pose and give control back to walking.",k:[["fix","solution"],["gesture"],["safe pose","safe","pose"],["hand control back","control back","give control"],["walking controller","walking","walk"]]},
+
+ {s:7,t:"Now the evaluation.",a:"Now the results.",k:[["evaluation","results","report card","score"]]},
+ {s:7,t:"We wrote 10 classroom commands: seven specific and three deliberately vague, like \"put it over there.\"",a:"Ten commands: seven specific, three vague on purpose.",k:[["10","ten"],["7","seven","specific"],["3","three","vague"],["over there","purpose","deliberate"]]},
+ {s:7,t:"We ran all ten through Claude and scored each one: valid JSON, right action, right object, right target, and whether it worked in the sim.",a:"Each was scored on valid JSON, action, object, target, and success in the sim.",k:[["claude","ran"],["score","scored","graded"],["json","valid"],["action"],["object"],["target"],["worked","work","sim"]]},
+ {s:7,t:"Claude's outputs: {X} out of 10 were valid. In the sim, only {Y} actually worked.",a:"{X} of 10 were valid, but only {Y} worked in the sim.",k:[["out of 10","out of ten","of 10","of ten"],["valid"],["sim","simulation"],["worked","work"]]},
+ {s:7,t:"The vague commands are where it struggles. Claude can't see where \"over there\" is: it can't see my hand or the room.",a:"Vague commands fail because Claude can't see the room or where I'm pointing.",k:[["vague"],["struggl","fail","hard"],["over there","there"],["can t see","see"],["hand","room","point"]]},
+ {s:7,t:"So it picks the most likely answer and states it with full confidence.",a:"It guesses the likeliest answer and states it confidently.",k:[["most likely","likel","guess"],["confiden","sure"]]},
+ {s:7,t:"But the bigger gap isn't the language. It's everything that happens after the robot reaches the chair.",a:"The real gap is the physical part, after the robot reaches the chair.",k:[["bigger gap","gap"],["language"],["after"],["reach"],["chair"]]},
+
+ {s:8,t:"So Claude handles the language step, and the robot still needs work on the physical step: reach, contact and grasp.",a:"Language works; the physical step, reach, contact and grasp, still needs work.",k:[["claude","language"],["physical"],["reach"],["contact"],["grasp","grip","grab"]]},
+ {s:8,t:"That's Nick's part. He breaks each action into small steps the controller can run and test one at a time: walk, approach, reach, grasp, lift.",a:"Nick splits each action into small testable steps: walk, approach, reach, grasp, lift.",k:[["nick"],["break","split","decompos"],["small steps","steps","step"],["controller"],["test"],["approach","lift"]]},
+ {s:8,t:"That way, when something fails, we know exactly which step broke.",a:"So we can see exactly which step failed.",k:[["fail","broke","break"],["exactly","precisely"],["which step","step"]]},
+ {s:8,t:"Nick, over to you.",a:"Nick, it's yours.",k:[["nick"],["over to you","yours","take it","hand"]]}
+];
+
+/* ---------- text helpers ---------- */
+const NUM = {zero:"0",one:"1",two:"2",three:"3",four:"4",five:"5",six:"6",seven:"7",eight:"8",nine:"9",ten:"10"};
+const STOP = new Set("a an the and or but so to of in on at for with is are was were be been it its it s this that these those i we you he she they my our your their me us him her them what which who do does did as by from up out about into than then here just very can could would should will have has had im i m there s were re ll ve d".split(" "));
+function toks(s){ return String(s).toLowerCase().replace(/_/g," ").replace(/[’']/g," ").replace(/[^a-z0-9\s]/g," ").split(/\s+/).filter(Boolean).map(w=>NUM[w]||w); }
+function stem(w){ if(/^\d+$/.test(w)) return w; let x=w; for(const suf of ["ingly","edly","ation","ing","ed","ly","es","s"]) { if(x.length-suf.length>=3 && x.endsWith(suf)){ x=x.slice(0,-suf.length); break; } } if(x.length>3 && x.endsWith("e")) x=x.slice(0,-1); return x.slice(0,6); }
+const stems = s => toks(s).map(stem);
+
+/* ---------- state ---------- */
+const LS = k => { try{ return localStorage.getItem("prompter:"+k); }catch{ return null; } };
+const SS = (k,v) => { try{ localStorage.setItem("prompter:"+k, v); }catch{} };
+const st = { cur: firstBeat(0), listening:false, finals:[], interim:"", lastSpeech:0, started:0, elapsed:0, strict:+(LS("strict")||0.6), scale:+(LS("scale")||1), X:LS("x")||"", Y:LS("y")||"", sem:null, semScores:null, semBusy:false };
+function firstBeat(i){ while(i<B.length && B[i].cue) i++; return Math.min(i,B.length-1); }
+function fill(s){ return s.replace("{X}", st.X||"X").replace("{Y}", st.Y||"Y"); }
+function prep(){
+  B.forEach((b,i)=>{ b.i=i; if(b.cue) return;
+    b.state=""; b.hitG=new Set(); b.hitW=new Set(); b.best=0;
+    b.groups=b.k.map(g=>g.map(p=>stems(p)));
+    const content=[...new Set(stems(fill(b.t)).filter((w,j,arr)=>!STOP.has(toks(fill(b.t))[j])))];
+    b.content=content.filter(w=>w.length>1);
+    b.altContent=[...new Set(stems(fill(b.a)).filter((w,j)=>!STOP.has(toks(fill(b.a))[j])))].filter(w=>w.length>1);
+  });
+}
+prep();
+
+/* ---------- scoring ---------- */
+function groupHit(group, set){ return group.some(ph => ph.every(w => set.has(w) || [...set].some(x=>x.length>=4 && w.length>=4 && (x.startsWith(w)||w.startsWith(x))))); }
+function windowScore(b, set){
+  if(b.cue) return 0;
+  let g=0; b.groups.forEach(gr=>{ if(groupHit(gr,set)) g++; });
+  const kc = b.groups.length? g/b.groups.length : 0;
+  const lx = c => c.length? c.filter(w=>set.has(w)).length/c.length : 0;
+  let s = 0.6*kc + 0.4*Math.max(lx(b.content), lx(b.altContent));
+  if(st.semScores && st.semScores[b.i]!=null) s = 0.65*s + 0.35*st.semScores[b.i];
+  return s;
+}
+function coverage(b){ if(b.cue) return 1; const kc=b.groups.length? b.hitG.size/b.groups.length : 0; const lx=b.content.length? [...b.hitW].filter(w=>b.content.includes(w)||b.altContent.includes(w)).length/Math.max(4,Math.min(b.content.length,b.altContent.length||99)) : 0; return Math.min(1, Math.max(b.best, 0.6*kc+0.4*Math.min(1,lx))); }
+function accumulate(b, set, ws){
+  b.groups.forEach((gr,gi)=>{ if(groupHit(gr,set)) b.hitG.add(gi); });
+  set.forEach(w=>{ if(b.content.includes(w)||b.altContent.includes(w)) b.hitW.add(w); });
+  b.best=Math.max(b.best, ws);
+}
+const recentTokens = n => { const all=(st.finals.join(" ")+" "+st.interim).trim(); const t=stems(all); return t.slice(-n); };
+
+let missedList=[];
+function settle(from, to){ // beats passed over between from (incl) and to (excl)
+  const sec=B[from].cue? B[from+1]?.s : B[from].s;
+  for(let i=from;i<to;i++){ const b=B[i]; if(b.cue||b.state==="said") continue; const c=coverage(b);
+    const flag = b.s===sec || to-from<=4; // only flag the section you were in; a deliberate jump elsewhere just marks the rest as skipped
+    b.state = !flag ? "skip" : c>=st.strict*0.55 ? "half" : "miss";
+    if(flag && !missedList.includes(i)) missedList.push(i); }
+  renderMissed();
+}
+function setCur(j, manual){
+  j=Math.max(0,Math.min(B.length-1,j));
+  if(B[j].cue) j = manual && j<st.cur ? Math.max(0,j-1) : Math.min(B.length-1,j+1);
+  if(j>st.cur && !manual) settle(st.cur, j);
+  st.cur=j; render();
+}
+function update(){
+  const win=recentTokens(22); const set=new Set(win);
+  if(!set.size) return;
+  const pos=new Set(recentTokens(11));
+  const lo=Math.max(0,st.cur-2), hi=Math.min(B.length-1,st.cur+6);
+  let bestJ=st.cur, bestS=-1; const scores=B.map(b=>windowScore(b,pos));
+  for(let i=lo;i<=hi;i++) if(scores[i]>bestS){ bestS=scores[i]; bestJ=i; }
+  let gJ=0,gS=-1; scores.forEach((s,i)=>{ if(s>gS){gS=s;gJ=i;} });
+  const curS=scores[st.cur]||0;
+  if((gJ<lo||gJ>hi) && gS>=0.62 && gS>bestS+0.15){ setCur(gJ); }
+  else if(bestJ!==st.cur && bestS>=0.38 && bestS>curS+0.1){ setCur(bestJ); }
+  const markSaid=b=>{ if(b.state!=="said" && coverage(b)>=st.strict){ b.state="said"; const k=missedList.indexOf(b.i); if(k>=0){ missedList.splice(k,1); renderMissed(); } return true; } return false; };
+  const b=B[st.cur]; if(!b.cue){ accumulate(b,set,windowScore(b,set)); markSaid(b); }
+  // the following line, if you've clearly moved on to it, gets credit and becomes current
+  const n=nextBeat(st.cur); if(n!=null && scores[n]>=0.3){ accumulate(B[n],pos,scores[n]); if(markSaid(B[n])) setCur(n); }
+  render(); semUpdate(set);
+}
+function nextBeat(i){ for(let j=i+1;j<B.length;j++) if(!B[j].cue) return j; return null; }
+function focusIndex(){ const b=B[st.cur]; if(b.cue) return st.cur; if(b.state==="said"){ for(let j=st.cur+1;j<B.length;j++){ if(B[j].cue) return j; if(B[j].state!=="said") return j; } } return st.cur; }
+
+/* ---------- rendering ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let lastFocus=-1;
+function render(){
+  const f=focusIndex(); const stalled = st.listening && st.lastSpeech && Date.now()-st.lastSpeech>4500;
+  let html="", lastS=-1;
+  B.forEach((b,i)=>{
+    const s = b.cue? (B[i+1]?.s ?? lastS) : b.s;
+    if(!b.cue && s!==lastS){ html+=`<div class="sec">${esc(SECTIONS[s])}</div>`; lastS=s; }
+    if(b.cue){ html+=`<div class="cue${i===f?" focus":""}" data-i="${i}">▶ ${esc(b.cue)}</div>`; return; }
+    const cls=["beat"]; if(b.state) cls.push(b.state); if(i===f) cls.push("focus"); else if(i===nextBeat(f) || (B[f]?.cue && i===f+1)) cls.push("next");
+    let body;
+    if(i===f){ const words=fill(b.t).split(/(\s+)/); body=words.map(w=>{ if(/^\s+$/.test(w)) return w; const sm=stem(toks(w)[0]||""); return `<span class="w${sm&&b.hitW.has(sm)?" hit":""}">${esc(w)}</span>`; }).join("");
+      const partial = b.state!=="said" && (b.hitG.size>0) && coverage(b)<st.strict;
+      if(stalled || (partial && Date.now()-st.lastSpeech>2500 && st.lastSpeech)) body+=`<span class="try"><b>Try</b>${esc(fill(b.a))}</span>`;
+      if(b.note) body+=`<span class="try" style="color:var(--ink2)"><b style="color:var(--ink3)">Add</b>${esc(b.note)}</span>`; }
+    else body=esc(fill(b.t));
+    html+=`<button class="${cls.join(" ")}" data-i="${i}">${body}</button>`;
+  });
+  const stage=$("#stage"); stage.innerHTML=html;
+  stage.querySelectorAll("[data-i]").forEach(el=>el.onclick=()=>{ setCur(+el.dataset.i,true); st.lastSpeech=Date.now(); });
+  if(f!==lastFocus){ const el=stage.querySelector(`[data-i="${f}"]`); if(el){ const top=el.offsetTop - stage.clientHeight*0.2; stage.scrollTo({top, behavior: lastFocus<0?"auto":"smooth"}); } lastFocus=f; }
+  else { const el=stage.querySelector(`[data-i="${f}"]`); if(el){ const top=el.offsetTop - stage.clientHeight*0.2; if(Math.abs(stage.scrollTop-top)>40) stage.scrollTop=top; } }
+  // rail
+  const curSec = B[f].cue? (B[f+1]?.s??0) : B[f].s;
+  $("#rail").innerHTML = SECTIONS.map((n,si)=>{ const bs=B.filter(b=>!b.cue&&b.s===si); const done=bs.every(b=>b.state==="said"); const any=bs.some(b=>b.state); return `<button class="chip${si===curSec?" cur":""}${done?" done":any?" part":""}" data-s="${si}"><i></i>${esc(n)}</button>`; }).join("");
+  $("#rail").querySelectorAll("[data-s]").forEach(c=>c.onclick=()=>{ setCur(B.findIndex(b=>!b.cue&&b.s===+c.dataset.s),true); });
+  const cc=$("#rail .chip.cur"); if(cc) cc.scrollIntoView({inline:"center",block:"nearest",behavior:"smooth"});
+  // ticker
+  const fin=st.finals.join(" ").split(/\s+/).slice(-14).join(" ");
+  if(st.finals.length||st.interim) $("#ticker").innerHTML=`<span>${esc(fin)} <span class="live">${esc(st.interim)}</span></span>`;
+}
+function renderMissed(){
+  const box=$("#missed");
+  box.innerHTML = missedList.filter(i=>B[i].state!=="said").map(i=>{ const b=B[i]; return `<button class="mcard${b.state==="half"?" half":""}" data-i="${i}"><small>${b.state==="half"?"Half said":"Skipped"} · ${esc(SECTIONS[b.s])}</small>${esc(fill(b.a))}</button>`; }).join("");
+  box.querySelectorAll("[data-i]").forEach(el=>el.onclick=()=>{ const i=+el.dataset.i; B[i].state="said"; missedList=missedList.filter(x=>x!==i); renderMissed(); render(); });
+  box.hidden = !box.children.length;
+}
+
+/* ---------- speech ---------- */
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec=null, restartT=null;
+function status(t,err){ const s=$("#status"); s.textContent=t; s.className="status"+(err?" err":""); }
+function startRec(){
+  if(!SR){ status("This browser can't listen. On iPhone use Safari; on a laptop use Chrome.",true); return; }
+  rec=new SR(); rec.lang="en-US"; rec.continuous=true; rec.interimResults=true; rec.maxAlternatives=1;
+  let committed=0;
+  rec.onresult=e=>{
+    let interim="";
+    for(let i=e.resultIndex;i<e.results.length;i++){ const r=e.results[i]; const tx=r[0].transcript.trim(); if(!tx) continue;
+      if(r.isFinal){ if(i>=committed){ st.finals.push(tx); committed=i+1; } } else interim+=" "+tx; }
+    if(st.finals.length>60) st.finals=st.finals.slice(-40);
+    st.interim=interim.trim(); st.lastSpeech=Date.now(); schedule();
+  };
+  rec.onerror=e=>{ if(e.error==="not-allowed"||e.error==="service-not-allowed"){ st.listening=false; ui(); status("Microphone blocked. iPhone: Settings → Apps → Safari → Microphone → Allow, and turn on Siri & Dictation.",true); }
+    else if(e.error==="no-speech"||e.error==="aborted"){ /* restart on end */ }
+    else status("Listening hiccup ("+e.error+"). Restarting…"); };
+  rec.onend=()=>{ if(st.listening){ if(st.interim){ st.finals.push(st.interim); st.interim=""; } clearTimeout(restartT); restartT=setTimeout(()=>{ try{ startRec(); }catch{ status("Tap Start to resume listening.",true); st.listening=false; ui(); } },200); } };
+  rec.start(); status("Listening");
+}
+let schedT=null; function schedule(){ if(schedT) return; schedT=setTimeout(()=>{ schedT=null; update(); },180); }
+let wake=null;
+async function toggle(){
+  if(st.listening){ st.listening=false; try{ rec&&rec.stop(); }catch{} st.elapsed+=Date.now()-st.started; status("Paused"); try{ wake&&wake.release(); }catch{} wake=null; }
+  else { st.listening=true; st.started=Date.now(); st.lastSpeech=Date.now(); startRec(); try{ wake=await navigator.wakeLock?.request("screen"); }catch{} }
+  ui();
+}
+function ui(){ $("#micBtn").classList.toggle("on",st.listening); $("#micTxt").textContent=st.listening?"Listening":(st.elapsed?"Resume":"Start"); }
+document.addEventListener("visibilitychange",async()=>{ if(document.visibilityState==="visible" && st.listening){ try{ wake=await navigator.wakeLock?.request("screen"); }catch{} } });
+setInterval(()=>{ const ms=st.elapsed+(st.listening?Date.now()-st.started:0); const m=Math.floor(ms/60000), s=Math.floor(ms/1000)%60; const t=$("#timer"); t.textContent=`${m}:${String(s).padStart(2,"0")} / 6:00`; t.classList.toggle("over",ms>360000);
+  if(st.listening) render(); },1000);
+
+/* ---------- optional meaning model ---------- */
+let extractor=null, beatEmb=null;
+async function loadSem(){
+  const el=$("#semStatus"); el.textContent="Downloading the meaning model…";
+  try{
+    const { pipeline, env } = await import("https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2");
+    env.allowLocalModels=false;
+    extractor = await pipeline("feature-extraction","Xenova/all-MiniLM-L6-v2",{quantized:true});
+    beatEmb = [];
+    for(const b of B){ if(b.cue){ beatEmb.push(null); continue; } const o=await extractor([fill(b.t),fill(b.a)],{pooling:"mean",normalize:true}); const d=o.tolist(); beatEmb.push(d); }
+    el.textContent="Meaning matching is on."; st.sem=true;
+  }catch(err){ el.textContent="Couldn't load the meaning model, so matching uses key ideas only. That still works."; st.sem=false; $("#semIn").checked=false; SS("sem","0"); }
+}
+async function semUpdate(set){
+  if(!st.sem||!extractor||st.semBusy) return; st.semBusy=true;
+  try{ const txt=(st.finals.join(" ")+" "+st.interim).split(/\s+/).slice(-22).join(" "); const o=await extractor(txt,{pooling:"mean",normalize:true}); const v=o.tolist()[0];
+    const lo=Math.max(0,st.cur-3), hi=Math.min(B.length-1,st.cur+8); const out=new Array(B.length).fill(null);
+    for(let i=lo;i<=hi;i++){ const e=beatEmb[i]; if(!e) continue; const c=Math.max(...e.map(u=>u.reduce((a,x,k)=>a+x*v[k],0))); out[i]=Math.max(0,Math.min(1,(c-0.25)/0.5)); }
+    st.semScores=out; }
+  catch{} st.semBusy=false;
+}
+
+/* ---------- controls ---------- */
+$("#micBtn").onclick=toggle;
+$("#prevBtn").onclick=()=>{ let j=st.cur-1; while(j>0&&B[j].cue) j--; setCur(j,true); };
+$("#nextBtn").onclick=()=>{ const b=B[st.cur]; if(!b.cue && b.state!=="said"){ b.state = coverage(b)>0.25?"half":"miss"; if(!missedList.includes(b.i)) missedList.push(b.i); renderMissed(); } const n=nextBeat(st.cur); if(n!=null) setCur(n,true); };
+document.addEventListener("keydown",e=>{ if(e.target.tagName==="INPUT") return; if(e.key==="ArrowDown"||e.key==="PageDown"){ e.preventDefault(); $("#nextBtn").click(); } if(e.key==="ArrowUp"||e.key==="PageUp"){ e.preventDefault(); $("#prevBtn").click(); } if(e.key===" "){ e.preventDefault(); toggle(); } });
+const openSet=o=>{ $("#sheet").hidden=!o; $("#scrim").hidden=!o; };
+$("#setBtn").onclick=()=>openSet(true); $("#closeSet").onclick=()=>openSet(false); $("#scrim").onclick=()=>openSet(false);
+$("#xIn").value=st.X; $("#yIn").value=st.Y; $("#sizeIn").value=st.scale; $("#strictIn").value=st.strict; $("#semIn").checked=LS("sem")==="1";
+document.documentElement.style.setProperty("--scale",st.scale);
+$("#xIn").oninput=e=>{ st.X=e.target.value.trim(); SS("x",st.X); prep(); render(); };
+$("#yIn").oninput=e=>{ st.Y=e.target.value.trim(); SS("y",st.Y); prep(); render(); };
+$("#sizeIn").oninput=e=>{ st.scale=+e.target.value; SS("scale",st.scale); document.documentElement.style.setProperty("--scale",st.scale); lastFocus=-1; render(); };
+$("#strictIn").oninput=e=>{ st.strict=+e.target.value; SS("strict",st.strict); };
+$("#semIn").onchange=e=>{ SS("sem",e.target.checked?"1":"0"); if(e.target.checked) loadSem(); else { st.sem=false; st.semScores=null; $("#semStatus").textContent=""; } };
+$("#resetBtn").onclick=()=>{ st.finals=[]; st.interim=""; st.elapsed=0; st.started=Date.now(); missedList=[]; prep(); st.cur=firstBeat(0); lastFocus=-1; renderMissed(); render(); $("#ticker").innerHTML="<span>Starting over.</span>"; openSet(false); };
+if(LS("sem")==="1") loadSem();
+renderMissed(); render();
+if(!SR) status("This browser can't listen. On iPhone use Safari; on a laptop use Chrome.",true);
+})();
+</script>
+</body>
+</html>
