@@ -163,6 +163,7 @@ dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-conte
   <hr>
   <h3>Settings</h3>
   <label>Matching strictness<input id="inStrict" type="range" min="0.3" max="0.7" step="0.05"></label>
+  <label class="check"><input id="inRemote" type="checkbox"> Apple Watch / AirPods remote. Watch ⏭ = next line, ⏮ = back. Uses the Now Playing controls.</label>
   <label class="check"><input id="inOffline" type="checkbox"> Offline speech (Chrome or Edge on a laptop only). Downloads a speech model once, then works without Wi-Fi.</label>
   <label>Text size<input id="inSize" type="range" min="22" max="80" step="2"></label>
   <div class="row"><button id="restartBtn">Restart from top</button><button id="closeSetup">Done</button></div>
@@ -416,6 +417,7 @@ function render(){
   const missed=Object.keys(missFrom).map(Number).sort((a,b)=>a-b);
   $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(ACTIVE[items[i].si].name)}</span><span class="say">${esc(items[i].alt||autoAlt(i))}</span></button>`).join("") : `<p class="empty">Nothing skipped so far.</p>`;
   document.body.classList.toggle("notray",trayHidden);
+  if(typeof remoteMeta==="function" && remoteOn) remoteMeta();
   $("trayOpen").hidden=!trayHidden; $("trayOpen").textContent=missed.length?`Skipped (${missed.length})`:"Skipped";
   const T=heard(); if(T.length) $("heard").innerHTML=`<span>${esc(T.slice(-26).join(" "))}</span>`;
 }
@@ -520,6 +522,43 @@ $("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
 let trayHidden=false; try{ trayHidden=localStorage.getItem("lab3tray")==="0"; }catch(_){}
 function setTray(hide){ trayHidden=hide; try{ localStorage.setItem("lab3tray",hide?"0":"1"); }catch(_){} render(); }
 $("trayClose").onclick=()=>setTray(true); $("trayOpen").onclick=()=>setTray(false);
+
+
+/* ================= Watch / headphone remote (Media Session) ================= */
+let remoteOn=false, remoteAudio=null;
+function silentWav(){
+  const sr=8000, n=sr*2, buf=new ArrayBuffer(44+n), v=new DataView(buf);
+  const w=(o,s)=>{ for(let i=0;i<s.length;i++) v.setUint8(o+i,s.charCodeAt(i)); };
+  w(0,"RIFF"); v.setUint32(4,36+n,true); w(8,"WAVE"); w(12,"fmt "); v.setUint32(16,16,true); v.setUint16(20,1,true); v.setUint16(22,1,true);
+  v.setUint32(24,sr,true); v.setUint32(28,sr,true); v.setUint16(32,1,true); v.setUint16(34,8,true); w(36,"data"); v.setUint32(40,n,true);
+  for(let i=0;i<n;i++) v.setUint8(44+i,128);
+  return URL.createObjectURL(new Blob([buf],{type:"audio/wav"}));
+}
+function remoteMeta(){
+  if(!remoteOn || !("mediaSession" in navigator)) return;
+  const it=items[cur]; const line=it? (it.cue?"▶ "+it.cue:it.say) : "End of script";
+  try{ navigator.mediaSession.metadata=new MediaMetadata({title:line.slice(0,60), artist:(ACTIVE[it?.si]?.name)||"Lab 3", album:"Lab 3 Prompter"}); }catch(_){}
+}
+async function enableRemote(on){
+  remoteOn=on;
+  if(!("mediaSession" in navigator)){ setStatus("This browser doesn't support watch or headphone controls."); return; }
+  if(on){
+    if(!remoteAudio){ remoteAudio=new Audio(silentWav()); remoteAudio.loop=true; remoteAudio.setAttribute("playsinline",""); }
+    try{ await remoteAudio.play(); }catch(_){ setStatus("Tap the page once, then turn the watch remote on again."); remoteOn=false; $("inRemote").checked=false; return; }
+    const ms=navigator.mediaSession, keep=()=>{ remoteAudio.play().catch(()=>{}); };
+    const h={nexttrack:()=>{ manualNext(); remoteMeta(); }, previoustrack:()=>{ back(); remoteMeta(); },
+             seekforward:()=>{ manualNext(); remoteMeta(); }, seekbackward:()=>{ back(); remoteMeta(); },
+             pause:()=>{ keep(); manualNext(); remoteMeta(); }, play:keep};
+    for(const [k,f] of Object.entries(h)){ try{ ms.setActionHandler(k,f); }catch(_){} }
+    try{ ms.playbackState="playing"; }catch(_){}
+    remoteMeta(); setStatus("Watch remote on: ⏭ next line, ⏮ back.");
+  } else {
+    try{ remoteAudio&&remoteAudio.pause(); }catch(_){}
+    for(const k of ["nexttrack","previoustrack","seekforward","seekbackward","pause","play"]){ try{ navigator.mediaSession.setActionHandler(k,null); }catch(_){} }
+    setStatus("");
+  }
+}
+$("inRemote").onchange=e=>enableRemote(e.target.checked);
 
 /* ================= Settings & uploads ================= */
 function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
