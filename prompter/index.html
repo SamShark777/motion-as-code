@@ -31,6 +31,7 @@ header{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wra
 .chip.now{color:var(--bg);background:var(--key);border-color:var(--key);font-weight:700}
 .chip.hasmiss::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--miss);margin-left:6px;vertical-align:middle}
 .clock{font-family:var(--mono);font-size:15px;color:var(--dim);font-variant-numeric:tabular-nums}
+select{font:inherit;font-size:15px;color:var(--fg);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px;max-width:180px}
 #mic{display:flex;align-items:center;gap:8px;font-weight:700}
 #mic .dot{width:10px;height:10px;border-radius:50%;background:var(--faint)}
 #mic.on{border-color:var(--heard)}
@@ -74,7 +75,11 @@ dialog::backdrop{background:rgb(0 0 0 / .6)}
 dialog h3{margin:0 0 14px}
 dialog label{display:grid;gap:6px;margin-bottom:14px;font-size:14px;color:var(--dim)}
 dialog input[type=number],dialog input[type=text]{font:inherit;font-size:18px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
-dialog .row{display:flex;gap:10px;justify-content:flex-end}
+dialog textarea{font:inherit;font-size:15px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical}
+dialog hr{border:0;border-top:1px solid var(--line);margin:18px 0}
+dialog .msg{flex:1;font-size:13px;color:var(--dim);align-self:center}
+dialog{max-height:90vh;overflow:auto}
+dialog .row{flex-wrap:wrap;margin-bottom:8px;display:flex;gap:10px;justify-content:flex-end}
 
 .pad{display:none;gap:10px}
 .pad button{flex:1;padding:16px;font-size:18px;font-weight:700}
@@ -100,6 +105,7 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
 <body>
 <header>
   <button id="mic" title="Start or stop listening (M)"><span class="dot"></span><span id="micLabel">Start listening</span></button>
+  <select id="speaker" aria-label="Whose script"></select>
   <nav class="track" id="track"></nav>
   <span class="clock" id="clock">0:00 / ~5:30</span>
   <button id="setupBtn">Setup</button>
@@ -123,6 +129,13 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
 </footer>
 
 <dialog id="setup">
+  <h3>Load a teammate's script</h3>
+  <label>Name<input id="inName" type="text" placeholder="e.g. Nick"></label>
+  <label>Script file (PDF, Word .docx, or .txt)<input id="inFile" type="file" accept=".pdf,.docx,.txt,.md,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain"></label>
+  <label>…or paste the text<textarea id="inPaste" rows="4" placeholder="Paste script here"></textarea></label>
+  <div class="row"><span id="loadMsg" class="msg"></span><button id="loadBtn">Load script</button></div>
+  <div class="row" id="savedRow"></div>
+  <hr>
   <h3>Setup</h3>
   <label>Valid JSON score (X out of 10)<input id="inX" type="text" inputmode="numeric" placeholder="e.g. 9"></label>
   <label>Worked in sim (Y out of 10)<input id="inY" type="text" inputmode="numeric" placeholder="e.g. 4"></label>
@@ -251,12 +264,93 @@ function tokMatch(a,b){
 }
 
 let X="", Y="", strict=0.45;
-const beats=[];
-SCRIPT.forEach((sec,si)=>sec.beats.forEach(b=>{
-  const groups=[];
-  if(!b.cue){ const re=/\{([^}]+)\}/g; let m; while((m=re.exec(b.say))) groups.push(m[1].split("|").map(tokenize)); }
-  beats.push({...b,si,groups});
-}));
+let ACTIVE=SCRIPT, beats=[];
+function build(script){
+  ACTIVE=script; beats=[];
+  script.forEach((sec,si)=>sec.beats.forEach(b=>{
+    const groups=[];
+    if(!b.cue){ const re=/\{([^}]+)\}/g; let m; while((m=re.exec(b.say))) groups.push(m[1].split("|").map(tokenize)); }
+    beats.push({...b,si,groups});
+  }));
+}
+build(SCRIPT);
+
+/* ---------- Turning an uploaded script into prompter lines ---------- */
+const STOP=new Set("a an the and or but so if then than that this these those there here is are was were be been being am i im me my we our us you your he she it its they them their to of in on at for from with by as into onto about over under after before again just also very really can could will would should do did does done have has had not no yes what which who when where why how all any each every some more most other such only own same too now well like get got go going one two three".split(" "));
+function makeBeat(text){
+  text=text.replace(/[{}]/g,"").trim();
+  const words=text.match(/[A-Za-z0-9_']+/g)||[];
+  const seen=new Set(), cand=[];
+  words.forEach((w,i)=>{ const l=w.toLowerCase().replace(/'s$/,""); if(STOP.has(l)||(l.length<4&&!/\d/.test(l))||seen.has(l)) return; seen.add(l);
+    cand.push({w,i,score:l.length+(/^[A-Z]/.test(w)&&i>0?3:0)+(/\d/.test(l)?3:0)}); });
+  const k=Math.max(1,Math.min(4,Math.round(words.length/5)));
+  const pick=cand.sort((a,b)=>b.score-a.score).slice(0,k).sort((a,b)=>a.i-b.i);
+  let say=text;
+  for(const c of pick){ say=say.replace(new RegExp("\\b"+c.w.replace(/[^A-Za-z0-9_']/g,"")+"\\b"),"{"+c.w+"}"); }
+  return {say, alt:"Cover this: "+pick.map(c=>c.w).join(" · ")};
+}
+function parseText(raw){
+  const lines=raw.replace(/\r/g,"").split(/\n+/).map(l=>l.trim()).filter(Boolean);
+  const secs=[]; let sec=null;
+  const isHead=l=> l.length<=60 && (/^(#+|\d+[.)])\s+\S/.test(l) || (!/[.?!:;,"”)\]]$/.test(l) && l.split(/\s+/).length<=7));
+  for(const l of lines){
+    if(isHead(l)){ sec={name:l.replace(/^(#+|\d+[.)])\s*/,"").replace(/[*_]/g,"").slice(0,30),sub:"",beats:[]}; secs.push(sec); continue; }
+    if(!sec){ sec={name:"Start",sub:"",beats:[]}; secs.push(sec); }
+    for(const part of l.split(/(\[[^\]]+\])/)){
+      if(/^\[.*\]$/.test(part)){ sec.beats.push({cue:part.slice(1,-1)}); continue; }
+      const sents=part.replace(/[*"“”]/g,"").replace(/(?<!\w)_+|_+(?!\w)/g,"").match(/[^.!?]+[.!?]*/g)||[];
+      let buf="";
+      for(const raw2 of sents){ const t=raw2.trim(); if(!t) continue;
+        if(buf && (buf+" "+t).split(/\s+/).length>28){ sec.beats.push(makeBeat(buf)); buf=t; } else buf=buf?buf+" "+t:t;
+        if(buf.split(/\s+/).length>=14){ sec.beats.push(makeBeat(buf)); buf=""; } }
+      if(buf) sec.beats.push(makeBeat(buf));
+    }
+  }
+  let out=secs.filter(x=>x.beats.some(b=>!b.cue));
+  if(out.length===1 && out[0].beats.length>8){
+    const all=out[0].beats; out=[];
+    for(let i=0;i<all.length;i+=5) out.push({name:"Part "+(out.length+1),sub:"",beats:all.slice(i,i+5)});
+  }
+  return out;
+}
+function joinPdfLines(lines){
+  const out=[];
+  for(const raw of lines){ const l=raw.trim(); if(!l){ out.push(""); continue; }
+    const prev=out[out.length-1];
+    if(prev && !/[.?!:"”]$/.test(prev) && /^[a-z(,]/.test(l)) out[out.length-1]=prev+" "+l; else out.push(l); }
+  return out.join("\n");
+}
+function loadLib(src){ return new Promise((res,rej)=>{ const el=document.createElement("script"); el.src=src; el.onload=res; el.onerror=()=>rej(new Error("Could not load the file reader. Check your connection.")); document.head.appendChild(el); }); }
+async function fileToText(f){
+  const n=f.name.toLowerCase();
+  if(n.endsWith(".pdf")){
+    if(!window.pdfjsLib){ await loadLib("https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"); pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"; }
+    const pdf=await pdfjsLib.getDocument({data:await f.arrayBuffer()}).promise; const lines=[];
+    for(let i=1;i<=pdf.numPages;i++){
+      const c=await (await pdf.getPage(i)).getTextContent(); let line="", lastY=null;
+      for(const it of c.items){ const y=it.transform[5]; if(lastY!==null && Math.abs(y-lastY)>2){ lines.push(line); line=""; } line+=it.str; lastY=y; if(it.hasEOL){ lines.push(line); line=""; lastY=null; } }
+      lines.push(line); lines.push("");
+    }
+    return joinPdfLines(lines);
+  }
+  if(n.endsWith(".docx")){
+    if(!window.mammoth) await loadLib("https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js");
+    return (await mammoth.extractRawText({arrayBuffer:await f.arrayBuffer()})).value;
+  }
+  if(n.endsWith(".doc")) throw new Error("Old .doc files can't be read. Save it as .docx or PDF, or paste the text.");
+  return await f.text();
+}
+let saved=[];
+try{ saved=JSON.parse(localStorage.getItem("lab3scripts")||"[]"); }catch(_){}
+function persistScripts(){ try{ localStorage.setItem("lab3scripts",JSON.stringify(saved)); }catch(_){} }
+function fillSpeakers(sel){
+  $("speaker").innerHTML=`<option value="-1">Shivam (built in)</option>`+saved.map((x,i)=>`<option value="${i}">${esc(x.name)}</option>`).join("");
+  $("speaker").value=String(sel);
+}
+function useScript(idx){
+  build(idx<0?SCRIPT:saved[idx].secs); restart();
+  setStatus(idx<0 && (!X||!Y) ? "Add your real scores in Setup before presenting." : "");
+}
 
 function hits(i,toks){ return beats[i].groups.map(g=>g.some(alt=>alt.length && alt.every(t=>toks.some(w=>tokMatch(t,w))))); }
 function need(i,isAhead){
@@ -315,7 +409,7 @@ function render(){
   if(cur>=beats.length){
     stage.innerHTML=`<div class="where"><b>Done</b></div><div class="now-line">You've reached the end. ${Object.keys(missFrom).length?'Anything still listed on the right was not covered.':'Every point was covered.'}</div>`;
   } else {
-    const b=beats[cur], sec=SCRIPT[b.si];
+    const b=beats[cur], sec=ACTIVE[b.si];
     const secBeats=beats.map((x,i)=>i).filter(i=>beats[i].si===b.si);
     const pips=secBeats.map(i=>`<span class="pip ${i===cur?"now":status[i]==="done"?"done":status[i]==="missed"?"miss":""}"></span>`).join("");
     let html=`<div class="where"><b>${String(b.si+1).padStart(2,"0")} ${esc(sec.name)}</b><span>${esc(sec.sub)}</span><span class="pips">${pips}</span></div>`;
@@ -326,7 +420,7 @@ function render(){
     stage.innerHTML=html;
   }
   // track
-  $("track").innerHTML=SCRIPT.map((s,si)=>{
+  $("track").innerHTML=ACTIVE.map((s,si)=>{
     const idx=beats.map((x,i)=>i).filter(i=>beats[i].si===si);
     const isNow=cur<beats.length&&beats[cur].si===si;
     const allDone=idx.every(i=>status[i]!=="todo");
@@ -335,7 +429,7 @@ function render(){
   }).join("");
   // tray
   const missed=Object.keys(missFrom).map(Number).sort((a,b)=>a-b);
-  $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(SCRIPT[beats[i].si].name)}</span><span class="say">${esc(fill(beats[i].alt))}</span></button>`).join("")
+  $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(ACTIVE[beats[i].si].name)}</span><span class="say">${esc(fill(beats[i].alt))}</span></button>`).join("")
     : `<p class="empty">Nothing skipped so far.</p>`;
   // transcript
   const tail=words.slice(-24).join(" "), it=interim.join(" ");
@@ -407,6 +501,27 @@ $("closeSetup").onclick=()=>{ X=$("inX").value.trim(); Y=$("inY").value.trim(); 
 
 $("inSize").oninput=e=>{ document.documentElement.style.setProperty("--size",e.target.value+"px"); save(); };
 $("restartBtn").onclick=()=>{ restart(); $("setup").close(); };
+$("speaker").onchange=e=>useScript(+e.target.value);
+function renderSaved(){ $("savedRow").innerHTML = saved.length ? saved.map((x,i)=>`<button data-del="${i}" title="Remove">Remove ${esc(x.name)}</button>`).join("") : ""; }
+$("savedRow").onclick=e=>{ const b=e.target.closest("[data-del]"); if(!b) return; const i=+b.dataset.del; const cur=+$("speaker").value; saved.splice(i,1); persistScripts(); renderSaved(); fillSpeakers(cur===i?-1:cur>i?cur-1:cur); if(cur===i) useScript(-1); };
+$("loadBtn").onclick=async()=>{
+  const name=$("inName").value.trim()||"Teammate", f=$("inFile").files[0], pasted=$("inPaste").value.trim();
+  if(!f && !pasted){ $("loadMsg").textContent="Choose a file or paste the script first."; return; }
+  $("loadMsg").textContent="Reading…";
+  try{
+    const text=f? await fileToText(f) : pasted;
+    const secs=parseText(text);
+    const n=secs.reduce((a,x)=>a+x.beats.filter(b=>!b.cue).length,0);
+    if(!n){ $("loadMsg").textContent="No readable text found. A scanned PDF won't work; try the .docx or paste it."; return; }
+    const at=saved.findIndex(x=>x.name.toLowerCase()===name.toLowerCase());
+    if(at>=0) saved[at]={name,secs}; else saved.push({name,secs});
+    persistScripts(); const idx=at>=0?at:saved.length-1;
+    fillSpeakers(idx); useScript(idx); renderSaved();
+    $("loadMsg").textContent=`Loaded ${n} lines in ${secs.length} sections.`;
+    $("inFile").value=""; $("inPaste").value="";
+  }catch(err){ $("loadMsg").textContent=err.message||"Couldn't read that file."; }
+};
+fillSpeakers(-1); renderSaved();
 $("nextBtn").onclick=manualNext; $("backBtn").onclick=back;
 render();
 if(!X||!Y) setStatus("Add your real scores in Setup before presenting.");
