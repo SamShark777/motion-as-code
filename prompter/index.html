@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lab 3 Prompter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one dark stage. Current line huge, next line dim beneath, "say it now" tray on the right, live transcript along the bottom. */
+:root{
+  color-scheme: dark;
+  --bg:#0e1113; --panel:#161b1e; --line:#242b2f;
+  --fg:#f1efe8; --dim:#7d8783; --faint:#4b5450;
+  --key:#f4cf6e; --heard:#6fc3b2; --miss:#ff9b6a; --cue:#9db4ff;
+  --read:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --size:46px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--read);display:flex;flex-direction:column;padding-inline:20px;overflow:hidden}
+button{font:inherit;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer}
+button:hover{border-color:var(--dim)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--key);outline-offset:2px}
+
+header{display:flex;align-items:center;gap:14px;padding-block:14px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.track{display:flex;gap:6px;flex-wrap:wrap;flex:1;min-width:0}
+.chip{font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;border:1px solid var(--line);color:var(--dim);background:none}
+.chip.done{color:var(--heard);border-color:color-mix(in srgb,var(--heard) 40%,transparent)}
+.chip.now{color:var(--bg);background:var(--key);border-color:var(--key);font-weight:700}
+.chip.hasmiss::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--miss);margin-left:6px;vertical-align:middle}
+.clock{font-family:var(--mono);font-size:15px;color:var(--dim);font-variant-numeric:tabular-nums}
+#mic{display:flex;align-items:center;gap:8px;font-weight:700}
+#mic .dot{width:10px;height:10px;border-radius:50%;background:var(--faint)}
+#mic.on{border-color:var(--heard)}
+#mic.on .dot{background:#ff5a5a;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{opacity:.35}}
+
+main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,30%);gap:28px;padding-block:28px}
+.stage{min-width:0;display:flex;flex-direction:column;gap:22px;overflow:auto}
+.where{font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.where b{color:var(--fg)}
+.pips{display:flex;gap:5px}
+.pip{width:22px;height:5px;border-radius:3px;background:var(--line)}
+.pip.done{background:var(--heard)} .pip.miss{background:var(--miss)} .pip.now{background:var(--key)}
+.now-line{font-size:var(--size);line-height:1.28;font-weight:400;text-wrap:pretty;max-width:26ch}
+.kw{color:var(--key);font-weight:700;transition:color .25s}
+.kw.hit{color:var(--heard);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:.18em}
+.cue{display:inline-flex;align-items:center;gap:14px;font-size:calc(var(--size)*.85);font-weight:700;color:var(--cue);border:2px dashed color-mix(in srgb,var(--cue) 55%,transparent);border-radius:14px;padding:.35em .7em}
+.cue small{font-size:.42em;font-weight:400;color:var(--dim);display:block}
+.next{font-size:calc(var(--size)*.5);line-height:1.35;color:var(--faint);max-width:40ch}
+.next::before{content:"NEXT  ";font-size:.55em;letter-spacing:.12em;color:var(--dim)}
+.next .kw{color:var(--dim)}
+
+aside{min-width:0;display:flex;flex-direction:column;gap:12px;border-left:1px solid var(--line);padding-left:24px;overflow:auto}
+aside h2{margin:0;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--miss)}
+aside .empty{color:var(--faint);font-size:16px}
+.miss{background:color-mix(in srgb,var(--miss) 9%,var(--panel));border:1px solid color-mix(in srgb,var(--miss) 35%,transparent);border-radius:10px;padding:12px 14px;text-align:left;display:block;width:100%}
+.miss .from{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);display:block;margin-bottom:4px}
+.miss .say{font-size:calc(var(--size)*.46);line-height:1.3;color:var(--fg)}
+.miss.cleared{opacity:0;transform:translateX(20px);transition:.5s}
+
+footer{border-top:1px solid var(--line);padding-block:10px 14px;display:flex;flex-direction:column;gap:8px}
+.heard{font-family:var(--mono);font-size:15px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:rtl;text-align:left}
+.heard i{color:var(--faint)}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--faint)}
+.bar kbd{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:4px;padding:1px 6px;color:var(--dim)}
+.bar .sp{flex:1}
+#status{color:var(--miss)}
+
+dialog{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:22px;width:min(420px,90vw)}
+dialog::backdrop{background:rgb(0 0 0 / .6)}
+dialog h3{margin:0 0 14px}
+dialog label{display:grid;gap:6px;margin-bottom:14px;font-size:14px;color:var(--dim)}
+dialog input[type=number],dialog input[type=text]{font:inherit;font-size:18px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+dialog .row{display:flex;gap:10px;justify-content:flex-end}
+
+@media (max-width:760px){
+  main{grid-template-columns:1fr;overflow:auto}
+  aside{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}
+  :root{--size:32px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <button id="mic" title="Start or stop listening (M)"><span class="dot"></span><span id="micLabel">Start listening</span></button>
+  <nav class="track" id="track"></nav>
+  <span class="clock" id="clock">0:00 / ~5:30</span>
+  <button id="setupBtn">Setup</button>
+</header>
+
+<main>
+  <section class="stage" id="stage" aria-live="polite"></section>
+  <aside>
+    <h2>Say this before moving on</h2>
+    <div id="tray"></div>
+  </aside>
+</main>
+
+<footer>
+  <div class="heard" id="heard"><span>Transcript appears here once listening starts.</span></div>
+  <div class="bar">
+    <span><kbd>Space</kbd> next line</span><span><kbd>←</kbd> back</span><span><kbd>M</kbd> mic</span><span><kbd>+</kbd><kbd>−</kbd> text size</span><span><kbd>R</kbd> restart</span>
+    <span class="sp"></span><span id="status"></span>
+  </div>
+</footer>
+
+<dialog id="setup">
+  <h3>Setup</h3>
+  <label>Valid JSON score (X out of 10)<input id="inX" type="text" inputmode="numeric" placeholder="e.g. 9"></label>
+  <label>Worked in sim (Y out of 10)<input id="inY" type="text" inputmode="numeric" placeholder="e.g. 4"></label>
+  <label>Matching strictness<input id="inStrict" type="range" min="0.3" max="0.7" step="0.05"></label>
+  <div class="row"><button id="closeSetup">Done</button></div>
+</dialog>
+
+<script>
+/* ---------- Script ----------
+   {word|synonym|synonym} = a key idea. Shown as the first option, matched on any option.
+   cue: a stage direction with nothing to say. alt: a fresh rephrase used if you skip the line. */
+const SCRIPT = [
+ {name:"Record", sub:"Data & Policy Research", beats:[
+  {say:"Hi, I'm {Shivam}, {Data and Policy Research|data|policy|research} for {Team 2|team two|team}.",
+   alt:"Quick intro: Shivam, data and policy research on Team 2."},
+  {say:"Our question: can {Yotie|yoti|yodie|yotie's} hear a {classroom|class} {command|commands} and actually {do it|do|carry out|perform}?",
+   alt:"The lab tested whether Yotie can turn a spoken classroom command into a real action."},
+  {say:"When the robot {fails|fail|failed|wrong|messes up}, {data} tells us whether it was {Claude} or the {robot}.",
+   alt:"Logs settle whether a failure came from Claude's answer or from the robot."},
+  {say:"For every attempt I {record|log|logged|recorded} three things. First, {o_t|o t|observation|observations}: what the robot {saw|sees|see}, its {pose}, the {chair}, any {contact|collision|bump}.",
+   alt:"First thing I log is o_t, what the robot observes: its pose, where the chair is, any contact."},
+  {say:"Second, {a_t|a t|action}: what it was {told|commanded|sent}, a {walking speed|speed|velocity} or an {arm target|arm}.",
+   alt:"Second is a_t, the command we sent it: walking speed or an arm target."},
+  {say:"Third, the whole {episode}: the {command}, Claude's {answer|response|output}, and whether it {worked|work|success}.",
+   alt:"Third, each full episode: the command, what Claude returned, and the outcome."},
+ ]},
+ {name:"Works", sub:"What we observed", beats:[
+  {say:"What works: a {classroom scene|classroom|scene} in {Lucky Engine|lucky}, and the {G1|g one|gee one} takes {walking|walk} commands.",
+   alt:"Working today: the Lucky Engine classroom, and walking commands on the G1."},
+  {say:"Both {arms} run a full {motion graph|graph}, and the {targets|target} make the motion much more {natural|naturally|smooth|smoother}.",
+   alt:"The arm motion graph runs on both arms, and graph targets made the movement far less stiff."},
+  {say:"Still {open|unsolved|not solved}: {reliable|reliably} {contact|touching|pushing|push} with the {chair}.",
+   alt:"What's not reliable yet is actually making contact with the chair and pushing it."},
+  {say:"These are {observations|observed} from the {sim|simulation}, not {scored|score} results yet.",
+   alt:"Note these come from watching the sim; they aren't scored yet."},
+ ]},
+ {name:"Clips", sub:"Demo evidence", beats:[
+  {say:"We ran {three|3} {commands} in the {sim|simulation}.",
+   alt:"We picked three commands and ran each one in simulation."},
+  {say:"For each, watch {what we said|said|say}, what {Claude} {answered|answer|returned}, and what the {robot} {did|actually did|does}.",
+   alt:"Compare three things each time: the command, Claude's answer, and the robot's behavior."},
+ ]},
+ {name:"Walk", sub:"Clip 01", beats:[
+  {say:"Command one: {walk|walking} to the {chair}.",
+   alt:"First command was simply: walk to the chair."},
+  {say:"Claude answered {move_to|move to|moved to|move}, object {chair}, target {null|none|no target}. So: {go|approach|travel} to the chair.",
+   alt:"Claude returned move_to with the chair as the object and no target, meaning just go there."},
+  {cue:"Play clip 1"},
+  {say:"It {walks|walk|walked} over and {stops|stop|stopped} at the chair.",
+   alt:"The robot reaches the chair and stops there.", note:"Add: where it stopped, and whether it bumped anything."},
+ ]},
+ {name:"Point", sub:"Clip 02", beats:[
+  {say:"Command two: {point|pointing} at the {whiteboard|white board|board}.",
+   alt:"Second command: point at the whiteboard."},
+  {say:"Claude got it {exactly right|right|correct|perfect}: action {point}, object {whiteboard|white board|board}.",
+   alt:"Here Claude's JSON was correct: point, whiteboard."},
+  {cue:"Play clip 2"},
+  {say:"The {arm} {points|point|pointing} at the board, {holds|hold|holding}, and {returns|return|comes back|down} without losing {balance}.",
+   alt:"What to look for: the arm reaches the board, holds, and comes back down while the robot stays balanced."},
+  {say:"This is one of the {smoothest|smooth|cleanest|clean} {gestures|gesture} in our set.",
+   alt:"Of everything we ran, this gesture is one of the cleanest."},
+ ]},
+ {name:"Place", sub:"Clip 03", beats:[
+  {say:"Command three: {move|moving} the {chair} to the {front row|front|row}.",
+   alt:"Third command: move the chair to the front row."},
+  {say:"Claude answered {place|placed}, chair, front row.",
+   alt:"Claude chose the place action, with chair and front row."},
+  {say:"But {place} means putting down something {already held|already|held}. The robot isn't {holding|holds} anything.",
+   alt:"In our action list, place is for setting down an object the robot is already carrying, and it wasn't carrying anything."},
+  {say:"The right answer was {move_to|move to|move}.",
+   alt:"move_to was the correct action."},
+  {say:"{Valid JSON|valid|json|jason} and the {right answer|right|correct} are {two different|different|separate} tests.",
+   alt:"Key point: well-formed JSON can still be the wrong instruction."},
+  {cue:"Play clip 3"},
+  {say:"This is the {closest|close} we got: the robot {approaching|approach|approaches} the chair. A {partial} demo, not a {success}.",
+   alt:"What we have here is the approach only, so we count it as partial."},
+ ]},
+ {name:"Oops", sub:"Blooper", beats:[
+  {say:"{One more|another} clip before the {numbers|results|evaluation}.",
+   alt:"Before the results, one more clip."},
+  {cue:"Play blooper", note:"Let it run. Pause before speaking."},
+  {say:"The {arm controller|controller|arm} didn't {release|let go|hand back|give back} control after the {gesture}.",
+   alt:"After the gesture finished, the arm controller kept control instead of releasing it."},
+  {say:"So when the next {command} came in, the robot couldn't {walk|move|moving} normally.",
+   alt:"That's why the following command couldn't move the robot properly."},
+  {say:"In the sim that's a {bug|glitch|blooper}. Next to a real {student|person|people}, it's a {safety} problem.",
+   alt:"Harmless in simulation, but with a student nearby it would be a safety issue."},
+  {say:"The {fix|fixed}: after every gesture, the arms go to a {safe pose|safe|neutral} and hand control back to the {walking controller|walking|walk}.",
+   alt:"Our fix returns the arms to a safe pose after each gesture and gives control back to walking."},
+ ]},
+ {name:"Gap", sub:"Evaluation", beats:[
+  {say:"We wrote {10|ten} classroom commands: {7|seven} {specific} and {3|three} {vague} on purpose.",
+   alt:"The test set: ten commands, seven specific and three deliberately vague."},
+  {say:"We {scored|score} each one: {valid JSON|valid|json|jason}, right {action}, {object}, {target}, and whether it {worked|work} in the sim.",
+   alt:"Each was scored on valid JSON, correct action, object and target, plus whether the sim run succeeded."},
+  {say:"Claude produced {valid JSON|valid|json|jason} for %X% out of 10. In the {sim|simulation}, only %Y% actually {worked|work}.",
+   alt:"Scores: %X% of 10 were valid JSON, but only %Y% worked in simulation."},
+  {say:"The {vague} ones are the {weak|weakest|struggle|struggles|hardest} spot. Claude can't {see} the {room} or my {hand|gesture|pointing}, so it {guesses|guess|picks} the likeliest answer.",
+   alt:"Vague commands fail because Claude has no view of the room or of where I'm pointing, so it guesses."},
+  {say:"The {bigger|biggest} gap isn't {language}. It's what happens {after} the robot reaches the {chair}.",
+   alt:"Language isn't the main gap. The main gap starts once the robot gets to the chair."},
+ ]},
+ {name:"Nick", sub:"Handover", beats:[
+  {say:"Claude handles the {language} side. The hard part is {reach|reaching}, {contact}, and {grasp|grasping|grab}.",
+   alt:"The language part works; reach, contact and grasp are where the robot still struggles."},
+  {say:"That's {Nick|nick's|nicks}'s part. He's {breaking|break|splitting|split} each action into small {steps}: walk, approach, reach, grasp, {lift}.",
+   alt:"Nick is splitting each action into steps: walk, approach, reach, grasp, lift."},
+  {say:"Each step is {tested|test|testing} on its own, so when it fails we know {which step|which|exactly}.",
+   alt:"Testing every step separately tells us exactly where a failure happens."},
+  {say:"{Nick}, {over to you|over|yours|you}.",
+   alt:"Nick, over to you."},
+ ]},
+];
+
+/* ---------- Parsing & matching ---------- */
+const NUM = {zero:"0",one:"1",two:"2",three:"3",four:"4",five:"5",six:"6",seven:"7",eight:"8",nine:"9",ten:"10"};
+function tokenize(s){
+  return s.toLowerCase().replace(/[’']/g,"").replace(/[^a-z0-9_]+/g," ").split(/[\s_]+/).filter(Boolean).map(w=>NUM[w]||w);
+}
+function tokMatch(a,b){
+  if(a===b) return true;
+  const m=Math.min(a.length,b.length); if(m<4) return false;
+  let p=0; while(p<m && a[p]===b[p]) p++;
+  return p>=Math.max(4,m-2);
+}
+
+let X="", Y="", strict=0.45;
+const beats=[];
+SCRIPT.forEach((sec,si)=>sec.beats.forEach(b=>{
+  const groups=[];
+  if(!b.cue){ const re=/\{([^}]+)\}/g; let m; while((m=re.exec(b.say))) groups.push(m[1].split("|").map(tokenize)); }
+  beats.push({...b,si,groups});
+}));
+
+function hits(i,toks){ return beats[i].groups.map(g=>g.some(alt=>alt.length && alt.every(t=>toks.some(w=>tokMatch(t,w))))); }
+function need(i,isAhead){
+  const n=beats[i].groups.length; if(!n) return Infinity;
+  if(isAhead) return Math.min(n,Math.max(2,Math.ceil(n*(strict+0.15))));
+  return n<=2?1:Math.ceil(n*strict);
+}
+function covered(i,toks,isAhead){ return hits(i,toks).filter(Boolean).length>=need(i,isAhead); }
+
+/* ---------- State ---------- */
+let cur=0, status=beats.map(()=> "todo"), missFrom={}, words=[], interim=[], winStart=0, lastHits={};
+function heard(from){ return words.slice(Math.max(0,from)).concat(interim); }
+function advanceTo(j){ cur=Math.min(j,beats.length); winStart=words.length+interim.length; }
+function nextSpoken(i){ let j=i; while(j<beats.length && beats[j].cue) j++; return j; }
+
+function evaluate(){
+  if(cur>=beats.length) return checkMissed();
+  const toks=heard(winStart-6);
+  lastHits={};
+  for(let k=cur;k<Math.min(beats.length,cur+4);k++) if(!beats[k].cue) lastHits[k]=hits(k,toks);
+  const b=beats[cur];
+  if(b.cue){
+    const n=nextSpoken(cur);
+    if(n<beats.length && covered(n,toks,false)){ for(let k=cur;k<=n;k++) status[k]="done"; advanceTo(n+1); }
+  } else if(covered(cur,toks,false)){
+    status[cur]="done"; advanceTo(cur+1);
+  } else {
+    for(let k=cur+1;k<Math.min(beats.length,cur+4);k++){
+      if(beats[k].cue) continue;
+      if(covered(k,toks,true)){
+        for(let s=cur;s<k;s++){ if(beats[s].cue) status[s]="done"; else { status[s]="missed"; missFrom[s]=winStart-6; } }
+        status[k]="done"; advanceTo(k+1); break;
+      }
+    }
+  }
+  checkMissed();
+}
+function checkMissed(){
+  for(const i of Object.keys(missFrom)){
+    if(covered(+i,heard(missFrom[i]),false)){ status[i]="done"; delete missFrom[i]; flashCleared(+i); }
+  }
+}
+
+/* ---------- Rendering ---------- */
+const $=id=>document.getElementById(id);
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function fill(s){ return s.replace(/%X%/g, X||"[X]").replace(/%Y%/g, Y||"[Y]"); }
+function sayHTML(i,withHits){
+  const b=beats[i]; let g=0; const h=withHits?(lastHits[i]||[]):[];
+  return esc(fill(b.say)).replace(/\{([^}]+)\}/g,(_,inner)=>{ const hit=h[g++]; return `<span class="kw${hit?" hit":""}">${inner.split("|")[0]}</span>`; });
+}
+function cueHTML(b){ return `<div class="cue">▶ ${esc(b.cue)}${b.note?`<small>${esc(b.note)}</small>`:""}</div>`; }
+
+function render(){
+  const stage=$("stage");
+  if(cur>=beats.length){
+    stage.innerHTML=`<div class="where"><b>Done</b></div><div class="now-line">You've reached the end. ${Object.keys(missFrom).length?'Anything still listed on the right was not covered.':'Every point was covered.'}</div>`;
+  } else {
+    const b=beats[cur], sec=SCRIPT[b.si];
+    const secBeats=beats.map((x,i)=>i).filter(i=>beats[i].si===b.si);
+    const pips=secBeats.map(i=>`<span class="pip ${i===cur?"now":status[i]==="done"?"done":status[i]==="missed"?"miss":""}"></span>`).join("");
+    let html=`<div class="where"><b>${String(b.si+1).padStart(2,"0")} ${esc(sec.name)}</b><span>${esc(sec.sub)}</span><span class="pips">${pips}</span></div>`;
+    html+= b.cue ? cueHTML(b) : `<div class="now-line">${sayHTML(cur,true)}</div>`;
+    if(!b.cue && b.note) html+=`<div class="where" style="color:var(--cue);text-transform:none;letter-spacing:0;font-size:18px">${esc(b.note)}</div>`;
+    const n=cur+1;
+    if(n<beats.length) html+= beats[n].cue ? `<div class="next">${esc(beats[n].cue)}</div>` : `<div class="next">${sayHTML(n,false)}</div>`;
+    stage.innerHTML=html;
+  }
+  // track
+  $("track").innerHTML=SCRIPT.map((s,si)=>{
+    const idx=beats.map((x,i)=>i).filter(i=>beats[i].si===si);
+    const isNow=cur<beats.length&&beats[cur].si===si;
+    const allDone=idx.every(i=>status[i]!=="todo");
+    const miss=idx.some(i=>status[i]==="missed");
+    return `<button class="chip ${isNow?"now":allDone?"done":""} ${miss?"hasmiss":""}" data-sec="${si}">${esc(s.name)}</button>`;
+  }).join("");
+  // tray
+  const missed=Object.keys(missFrom).map(Number).sort((a,b)=>a-b);
+  $("tray").innerHTML = missed.length ? missed.map(i=>`<button class="miss" data-miss="${i}" title="Tap to dismiss"><span class="from">${esc(SCRIPT[beats[i].si].name)}</span><span class="say">${esc(fill(beats[i].alt))}</span></button>`).join("")
+    : `<p class="empty">Nothing skipped so far.</p>`;
+  // transcript
+  const tail=words.slice(-24).join(" "), it=interim.join(" ");
+  if(tail||it) $("heard").innerHTML=`<span>${esc(tail)} <i>${esc(it)}</i></span>`;
+}
+function flashCleared(i){ const el=document.querySelector(`[data-miss="${i}"]`); if(el) el.classList.add("cleared"); }
+
+/* ---------- Speech ---------- */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let rec=null, listening=false, t0=null, wake=null;
+function setStatus(s){ $("status").textContent=s; }
+function startMic(){
+  if(!SR){ setStatus("Voice tracking needs Chrome or Edge. Space still advances."); return; }
+  rec=new SR(); rec.continuous=true; rec.interimResults=true; rec.lang="en-US";
+  rec.onresult=e=>{
+    let tmp="";
+    for(let i=e.resultIndex;i<e.results.length;i++){
+      const r=e.results[i];
+      if(r.isFinal) words.push(...tokenize(r[0].transcript)); else tmp+=r[0].transcript+" ";
+    }
+    interim=tokenize(tmp);
+    evaluate(); render();
+  };
+  rec.onerror=e=>{
+    if(e.error==="not-allowed"||e.error==="service-not-allowed"){ listening=false; setStatus("Microphone blocked. Allow it from the icon in the address bar, then press M."); updMic(); }
+    else if(e.error==="network"){ setStatus("Speech service unreachable. Check Wi-Fi; Space still advances."); }
+  };
+  rec.onend=()=>{ if(listening) setTimeout(()=>{ try{rec.start()}catch(_){} },120); };
+  try{ rec.start(); listening=true; setStatus(""); if(!t0) t0=Date.now(); }catch(_){}
+  try{ navigator.wakeLock?.request("screen").then(w=>wake=w).catch(()=>{}); }catch(_){}
+  updMic();
+}
+function stopMic(){ listening=false; try{rec&&rec.stop()}catch(_){} interim=[]; updMic(); render(); }
+function updMic(){ $("mic").classList.toggle("on",listening); $("micLabel").textContent=listening?"Listening":"Start listening"; }
+$("mic").onclick=()=> listening?stopMic():startMic();
+
+setInterval(()=>{ if(!t0) return; const s=Math.floor((Date.now()-t0)/1000); $("clock").textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,"0")} / ~5:30`; },500);
+
+/* ---------- Controls ---------- */
+function manualNext(){
+  if(cur>=beats.length) return;
+  const b=beats[cur];
+  if(b.cue || (lastHits[cur]||[]).some(Boolean)) status[cur]="done";
+  else { status[cur]="missed"; missFrom[cur]=words.length; }
+  advanceTo(cur+1); render();
+}
+function back(){ if(cur===0) return; cur--; status[cur]="todo"; delete missFrom[cur]; winStart=words.length; lastHits={}; render(); }
+function jumpSection(si){ const i=beats.findIndex(b=>b.si===si); for(let k=i;k<beats.length;k++){ status[k]="todo"; delete missFrom[k]; } cur=i; winStart=words.length; lastHits={}; render(); }
+function restart(){ cur=0; status=beats.map(()=>"todo"); missFrom={}; words=[]; interim=[]; winStart=0; lastHits={}; t0=listening?Date.now():null; $("clock").textContent="0:00 / ~5:30"; $("heard").innerHTML="<span>Transcript cleared.</span>"; render(); }
+function size(d){ const v=parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"))+d; const c=Math.max(22,Math.min(90,v)); document.documentElement.style.setProperty("--size",c+"px"); save(); }
+
+$("track").onclick=e=>{ const c=e.target.closest("[data-sec]"); if(c) jumpSection(+c.dataset.sec); };
+$("tray").onclick=e=>{ const m=e.target.closest("[data-miss]"); if(m){ const i=+m.dataset.miss; status[i]="done"; delete missFrom[i]; render(); } };
+document.addEventListener("keydown",e=>{
+  if($("setup").open || e.target.tagName==="INPUT") return;
+  if(e.key===" "||e.key==="ArrowRight"||e.key==="PageDown"){ e.preventDefault(); manualNext(); }
+  else if(e.key==="ArrowLeft"||e.key==="PageUp"){ e.preventDefault(); back(); }
+  else if(e.key==="m"||e.key==="M"){ listening?stopMic():startMic(); }
+  else if(e.key==="+"||e.key==="="){ size(4); }
+  else if(e.key==="-"||e.key==="_"){ size(-4); }
+  else if(e.key==="r"||e.key==="R"){ restart(); }
+});
+
+/* ---------- Setup & saved prefs ---------- */
+function save(){ try{ localStorage.setItem("lab3prompter",JSON.stringify({X,Y,strict,size:getComputedStyle(document.documentElement).getPropertyValue("--size").trim()})); }catch(_){} }
+try{ const p=JSON.parse(localStorage.getItem("lab3prompter")||"{}"); X=p.X||""; Y=p.Y||""; if(p.strict) strict=+p.strict; if(p.size) document.documentElement.style.setProperty("--size",p.size); }catch(_){}
+$("setupBtn").onclick=()=>{ $("inX").value=X; $("inY").value=Y; $("inStrict").value=strict; $("setup").showModal(); };
+$("closeSetup").onclick=()=>{ X=$("inX").value.trim(); Y=$("inY").value.trim(); strict=+$("inStrict").value; save(); $("setup").close(); render(); };
+
+render();
+if(!X||!Y) setStatus("Add your real scores in Setup before presenting.");
+</script>
+</body>
+</html>
