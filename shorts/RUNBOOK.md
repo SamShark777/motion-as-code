@@ -1,37 +1,55 @@
 # Daily Shorts pipeline — runbook
 
-One psychology Short a day, made with the Motion as Code kit (vertical template + Shivam's pixel avatar),
-hosted on this public repo's `media` branch, scheduled through Metricool to YouTube Shorts,
-Instagram Reels and TikTok **the day before it posts** so Shivam can veto it.
+Up to **5 psychology Shorts a day** (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
+(vertical template + Shivam's pixel avatar, in Shivam's own cloned voice), posted to YouTube Shorts,
+Instagram Reels and TikTok through **Buffer (free plan)**, scheduled **the day before** so Shivam can veto.
 
-State lives in this repo on the **`shorts` branch** (main stays the original kit):
-- `shorts/Psychology_Shorts_Tracker.xlsx` — Shivam's 100 ideas + production and performance columns.
+Who does what:
+- **Claude — script writer** (scheduled task, every 2 days): researches and writes scripts ahead of time
+  (`shorts/<slug>/script.json`, tracker `Status=Scripted`). This is the only creative step.
+- **GitHub Actions — `Daily Shorts`** (`.github/workflows/daily-shorts.yml` on `main`, 09:17 PT daily): takes
+  the next `Scripted` rows (lowest Priority first), builds them in parallel (OmniVoice voice, render, SFX),
+  runs QA checks (1080×1920, 12–59.5 s, audible audio, not frozen), hosts them on the `media` branch
+  (`media/<date>/<slug>.mp4`, last 4 dates kept), schedules each on Buffer for tomorrow at the slots in
+  `SLOTS` (default 08:00, 11:00, 14:00, 17:00, 20:00 PT), sets the tracker (`Scheduled`, `Post date`,
+  `Metricool ID=buffer:youtube=…;instagram=…;tiktok=…`), and opens a GitHub issue with previews. It marks
+  earlier Buffer posts `Published`, or `Vetoed` when Shivam deleted them in Buffer. A failed build or QA
+  check marks the row `Failed` with the reason. Without the `BUFFER_API_KEY` secret it only dry-runs.
+  Secrets: `BUFFER_API_KEY`, `VOICE_REF_OPUS_B64` (Shivam's voice reference — never commit his voice).
+- **Claude — weekly review** (Sundays): stats, analysis, tuning (below).
+
+State lives in this repo on the **`shorts` branch** (main stays the original kit + the workflow):
+- `shorts/Psychology_Shorts_Tracker.xlsx` — ideas + production and performance columns.
   Always read and write it with `scripts/tracker.py` (never rebuild it), so formatting and formulas survive.
   Status flow: `Idea` → `Scripted` → `Scheduled` → `Published` | `Vetoed` | `Failed`.
-  `Priority`: the lowest number with Status `Idea` is made next.
-- `shorts/<slug>/script.json` — the script of each video (the build input).
+  `Priority`: the lowest number goes first. `tracker.py add "Theme=…" "Video idea=…" …` appends a new idea.
+- `shorts/<slug>/script.json` — the script of each video (the build input); `post.json` — what CI scheduled.
 - `shorts/reviews/<date>.md` — the weekly reviews.
 
-Metricool brand: `blogId 7365379` (timezone America/Los_Angeles).
-Video URL pattern: `https://raw.githubusercontent.com/SamShark777/motion-as-code/media/<slug>.mp4`
-(Metricool copies the video into its own storage when the post is scheduled, so the `media` branch
-only ever holds the newest video — it is force-pushed fresh each day and never grows.)
+Analytics still come from **Metricool** (brand `blogId 7365379`, same accounts connected; reading stats
+doesn't use its post quota). Rows No. 1, 11, 22 were posted through Metricool (numeric `Metricool ID`).
 
-## Daily run (≈ 45–60 min)
+## Script writer run (every 2 days, ≈ 30–60 min)
 
 1. **Setup.** Call `add_repo` (owner SamShark777, repo motion-as-code, access push), then
    `git clone --depth 1 --branch shorts https://github.com/SamShark777/motion-as-code` and `cd` into it.
-2. **Vetoes and go-lives.** `python3 scripts/tracker.py scheduled`. For each row, look its Metricool ID
-   (uuid) up with `getScheduledPosts` (range: its post date ± 1 day). Still pending and post date in the
-   future → leave it. Gone before its post date → Shivam vetoed it: `Status=Vetoed`. Post date passed →
-   `Status=Published`.
-3. **Stats.** `python3 scripts/tracker.py due` lists published rows that reached 7, 14 or 30 days without
-   numbers. Pull them with `getAnalyticsDataByMetrics` (YouTube "all videos": YTVV17 title, YTVV06 views,
-   YTVV08 avg view duration, YTVV09 likes, YTVV11 comments, YTVV12 shares; Instagram reels and TikTok
-   posts: find field ids with `getAnalyticsAvailableMetrics`), matching each video by its title, and write
-   them with `tracker.py set <No> "YT views d7=…" "YT avg view (s) d7=…" …` (d14 / d30: views only).
-4. **Pick the idea.** `python3 scripts/tracker.py next` (Idea text, opening hook, outline, theme).
-5. **Write the script** (`shorts/<slug>/script.json`, format below). Before writing, verify the core
+   `pip install --break-system-packages -q openpyxl`.
+2. **How much to write.** `python3 scripts/tracker.py counts`. Write scripts until `Scripted` reaches
+   **3 × SHORTS_PER_DAY** (15 at 5/day), at most 12 per run. Also read the latest `Daily Shorts` issue
+   (`gh api "repos/SamShark777/motion-as-code/issues?state=all&per_page=3"`): note failures and fallback
+   voices for the message to Shivam; for a row marked `Failed` by a QA check that a shorter or simpler
+   script would fix, fix the script and set it back to `Scripted` (once only).
+3. **Ideas running low.** If fewer than 20 rows are at `Status=Idea`, add 10 new ideas with `tracker.py add`
+   (Theme, Video idea, Opening hook, Content outline, Priority after the last, Template fit, Visual style
+   from the Looks sheet) — lean toward the themes, hooks and looks the reviews show winning; only topics
+   with well-established research.
+4. For each script: `python3 scripts/tracker.py next`, verify, write (rules below), then
+   `tracker.py set <No> "Status=Scripted" "Slug=<slug>" "Source checked=…" "Hook style=…"`.
+   (Don't build videos here — the workflow does that.)
+5. Commit "scripts: <n> new" and push to `shorts` (fetch + rebase on rejection; on an xlsx conflict,
+   re-apply your `set`/`add` calls on theirs).
+
+**Writing a script** (`shorts/<slug>/script.json`, format below). Before writing, verify the core
    finding with a web search; record the source in `Source checked`. Rules:
    - Only well-established findings. Name the researchers and year in `credit` exactly as published.
      If you can't find a solid source, set `Status=Failed` with the reason in `Lesson / notes` and take the next idea.
@@ -51,43 +69,22 @@ only ever holds the newest video — it is force-pushed fresh each day and never
      file, `game-show` like a quiz round, `crayon` gently) — the facts and structure rules stay the same.
    - Looks set in all caps (`terminal`, `spy-noir`, `pixel-quest`) fit fewer characters per line: keep
      their hook and takeaway lines short (≤ 9 words).
-6. **Build.** `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`.
-   The voice comes from `analysis/tts_vo.py`, engine set in `shorts/voice/voice.json` (OmniVoice — voice
-   cloning of the channel narrator in `shorts/voice/reference.wav`; Kokoro is the automatic fallback).
-   Read the build log: `ENGINE: omnivoice` is the normal case. On `FALLBACK: …` the video still gets made
-   with Kokoro — say so (with the reason) in the message to Shivam. The narrator is **Shivam's own
-   voice**: `reference.wav` is his recording (cleaned, 11 s) and `reference.txt` its transcript. Never
-   replace or delete them without his say. On the first video that comes out with `ENGINE: omnivoice`,
-   send Shivam the finished MP4 with a note that it's the first one in his cloned voice and he can
-   veto it in Metricool if the voice sounds off. (If reference.wav were ever missing, a voice gets
-   designed from `instruct` and `NEW_VOICE_REFERENCE` is printed — commit those files then.)
-   Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
-   Check the look really rendered (its ground, fonts and colours) and nothing is unreadable against the
-   ground; if a look fails, rebuild in `pixel-lab` and note it in `Lesson / notes`.
-7. **Host.** Push the video alone to the `media` branch (replacing what's there):
-   `M=$(mktemp -d) && cp shorts/<slug>/<slug>.mp4 $M && cd $M && git init -q && git checkout -q -b media && git add . && git -c commit.gpgsign=false commit -qm "media: <slug>" && git remote add origin https://github.com/SamShark777/motion-as-code.git && git push -q -f origin media && cd -`
-   Check `https://raw.githubusercontent.com/SamShark777/motion-as-code/media/<slug>.mp4` answers 200
-   (`curl -sL -o /dev/null -w "%{http_code}"`; retry for up to a minute — the CDN can lag).
-8. **Schedule** with Metricool `createScheduledPost` for **tomorrow 4:00 PM America/Los_Angeles**
-   (or the best slot from `getBestTimeToPostByNetwork` for youtube between 12:00 and 18:00 tomorrow):
-   - media: the raw media-branch URL; providers youtube, instagram, tiktok.
-   - Always post as a **Short** (Shivam's rule): youtubeData `type` must be `"short"`, never `"video"`,
-     and the video must be the vertical 1080×1920 build. Re-read the createScheduledPost response and fix it if not.
-   - youtubeData: `{type: "short", title: "<post.title>", privacy: "public", madeForKids: false, category: "EDUCATION", tags, isAiGeneratedContent: false}`
-   - instagramData: `{type: "REEL", showReelOnFeed: true}`; tiktokData: `{title: "<post.title>", privacyOption: "PUBLIC_TO_EVERYONE"}`
-   - text: the post description + 3–5 hashtags (#psychology #shorts + topic tags).
-9. **Record.** `tracker.py set <No> "Status=Scheduled" "Slug=…" "Post date=YYYY-MM-DD" "Hook style=…"
-   "Length (s)=…" "Title used=…" "Metricool ID=<uuid>"`. Commit "short: <slug>" and push to `shorts`
-   (fetch + rebase first if the push is rejected; on an xlsx conflict, re-apply your `set` calls on theirs).
-10. **Tell Shivam** (push notification / message): the title, post time, preview.jpg, the planner link and
-    "Delete it in Metricool before 4 PM tomorrow to veto."
 
-If any step fails, don't schedule a half-made video: set `Status=Failed` with the reason in
-`Lesson / notes`, push, and tell Shivam what broke.
+## Building one locally (debugging only)
+
+`bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`. The voice comes from
+`analysis/tts_vo.py` (engine in `shorts/voice/voice.json`: OmniVoice cloning `shorts/voice/reference.wav`,
+Kokoro fallback). In CI the reference is decoded from the `VOICE_REF_OPUS_B64` secret; it is gitignored and
+must never be committed (the repo is public). Test the workflow on existing scripts with
+`gh api -X POST repos/SamShark777/motion-as-code/actions/workflows/daily-shorts.yml/dispatches -f ref=main -f 'inputs[only_slugs]=<slug>,<slug>'` (always a dry run).
 
 ## Weekly review (Sundays)
 
-`python3 scripts/tracker.py dump > /tmp/t.csv` and analyse the published vertical Shorts (skip No. 1, the
+Rows posted through Metricool (numeric `Metricool ID`) still at `Scheduled` past their post date → `Published` (check with Metricool `getScheduledPosts` whether they went out). First fill due stats: `python3 scripts/tracker.py due` lists published rows that reached 7, 14 or 30 days
+without numbers. Pull them from Metricool with `getAnalyticsDataByMetrics` (YouTube "all videos": YTVV17 title,
+YTVV06 views, YTVV08 avg view duration, YTVV09 likes, YTVV11 comments, YTVV12 shares; Instagram reels and
+TikTok: find field ids with `getAnalyticsAvailableMetrics`), matching each video by its title, and write them
+with `tracker.py set <No> "YT views d7=…" …`. Then `python3 scripts/tracker.py dump > /tmp/t.csv` and analyse the published vertical Shorts (skip No. 1, the
 horizontal pilot): total views and engagement at d7 (d14/d30 when present), YouTube retention (avg view ÷
 length) — compared across theme, visual style, hook style, length, title wording, opening-hook type (question vs claim),
 template fit and weekday. Then:
