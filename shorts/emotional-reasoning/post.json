@@ -1,0 +1,16 @@
+{
+ "no": 42,
+ "slug": "emotional-reasoning",
+ "date": "2026-10-14",
+ "slot": "11:00",
+ "due": "2026-10-14T18:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-14/emotional-reasoning.mp4",
+ "buffer": {
+  "youtube": "6ace86e1eaea728d3cae7fdc",
+  "instagram": "6ace86e11bdf729a2aa961ae",
+  "tiktok": "6ace86e29abb1755a4728c48"
+ },
+ "errors": {},
+ "engine": "omnivoice",
+ "duration": 45.8
+}

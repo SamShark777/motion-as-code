@@ -1,0 +1,16 @@
+{
+ "no": 61,
+ "slug": "conformity",
+ "date": "2026-10-14",
+ "slot": "17:00",
+ "due": "2026-10-15T00:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-14/conformity.mp4",
+ "buffer": {
+  "youtube": "6ace86e5cb3665561f63522d",
+  "instagram": "6ace86e69abb1755a4728d1c",
+  "tiktok": "6ace86e6134248a197845adc"
+ },
+ "errors": {},
+ "engine": "omnivoice",
+ "duration": 39.8
+}

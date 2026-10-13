@@ -1,0 +1,16 @@
+{
+ "no": 32,
+ "slug": "if-then-plans",
+ "date": "2026-10-14",
+ "slot": "08:00",
+ "due": "2026-10-14T15:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-14/if-then-plans.mp4",
+ "buffer": {
+  "youtube": "6ace86df1bdf729a2aa960ff",
+  "instagram": "6ace86df4a3bafcd13007dde",
+  "tiktok": "6ace86dfeaea728d3cae7f6c"
+ },
+ "errors": {},
+ "engine": "omnivoice",
+ "duration": 41.5
+}

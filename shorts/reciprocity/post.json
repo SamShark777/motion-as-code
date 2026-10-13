@@ -1,0 +1,16 @@
+{
+ "no": 58,
+ "slug": "reciprocity",
+ "date": "2026-10-14",
+ "slot": "14:00",
+ "due": "2026-10-14T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-14/reciprocity.mp4",
+ "buffer": {
+  "youtube": "6ace86e34a3bafcd13007ef2",
+  "instagram": "6ace86e49abb1755a4728ccf",
+  "tiktok": "6ace86e4cb3665561f6351fe"
+ },
+ "errors": {},
+ "engine": "omnivoice",
+ "duration": 42.0
+}
