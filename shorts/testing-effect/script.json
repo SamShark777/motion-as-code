@@ -1,0 +1,70 @@
+{
+  "slug": "testing-effect",
+  "no": 12,
+  "look": "whiteboard",
+  "title": [
+    "TESTING",
+    "EFFECT"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "effect.",
+  "credit": "Roediger & Karpicke · 2006",
+  "stat": {
+    "unit": "%",
+    "a": {
+      "label": "Reread",
+      "value": 40,
+      "cue": "forty"
+    },
+    "b": {
+      "label": "Self-tested",
+      "value": 61,
+      "cue": "sixty"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Can a mini quiz beat another reread?"
+    },
+    {
+      "sec": "name",
+      "text": "It can. It's called the testing effect."
+    },
+    {
+      "sec": "study",
+      "text": "Students learned short passages."
+    },
+    {
+      "sec": "study",
+      "text": "Some reread them again and again. Others mostly tested themselves."
+    },
+    {
+      "sec": "stat",
+      "text": "A week later, the rereaders remembered forty percent."
+    },
+    {
+      "sec": "stat",
+      "text": "The self-testers remembered sixty-one percent."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Rereading feels easier, so it feels like learning."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Close the book and quiz yourself. That's where memory gets built."
+    }
+  ],
+  "post": {
+    "title": "Stop Rereading. Do This Instead. #shorts",
+    "description": "Quizzing yourself beats rereading. In Roediger & Karpicke (2006), students who repeatedly tested themselves recalled 61% of a passage a week later, versus 40% for students who kept rereading. That's the testing effect. #psychology #studytips #memory",
+    "tags": [
+      "testing effect",
+      "retrieval practice",
+      "study tips",
+      "psychology"
+    ]
+  }
+}

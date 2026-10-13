@@ -1,0 +1,65 @@
+{
+  "slug": "confirmation-bias",
+  "no": 2,
+  "look": "keynote",
+  "title": [
+    "CONFIRMATION",
+    "BIAS"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "bias.",
+  "credit": "Lord, Ross & Lepper · 1979",
+  "stat": {
+    "a": {
+      "label": "Students",
+      "value": 48,
+      "display": "48",
+      "cue": "forty"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Why does every article you read seem to prove you right?"
+    },
+    {
+      "sec": "name",
+      "text": "Psychologists call it confirmation bias."
+    },
+    {
+      "sec": "study",
+      "text": "Students for and against the death penalty read the same two studies."
+    },
+    {
+      "sec": "study",
+      "text": "One supported their view. One challenged it."
+    },
+    {
+      "sec": "stat",
+      "text": "All forty-eight read identical evidence, yet each side rated the study that agreed with them as stronger."
+    },
+    {
+      "sec": "stat",
+      "text": "Then both sides walked away more sure than before."
+    },
+    {
+      "sec": "takeaway",
+      "text": "The same evidence didn't settle the debate. It split it wider."
+    },
+    {
+      "sec": "takeaway",
+      "text": "So when something proves you right, read it twice."
+    }
+  ],
+  "post": {
+    "title": "Why Everything Seems to Prove You Right #shorts",
+    "description": "Same evidence, opposite conclusions. In Lord, Ross & Lepper (1979), 48 students for and against the death penalty read the same two studies; each side rated the one that agreed with them as more convincing, and both became more sure of their view. That's confirmation bias. #psychology #cognitivebias #criticalthinking",
+    "tags": [
+      "confirmation bias",
+      "cognitive bias",
+      "critical thinking",
+      "psychology"
+    ]
+  }
+}

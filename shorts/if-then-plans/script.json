@@ -1,0 +1,70 @@
+{
+  "slug": "if-then-plans",
+  "no": 32,
+  "look": "whiteboard",
+  "title": [
+    "IF-THEN",
+    "PLANS"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "plan.",
+  "credit": "Gollwitzer & Brandstätter · 1997",
+  "stat": {
+    "unit": "%",
+    "a": {
+      "label": "No plan",
+      "value": 32,
+      "cue": "third"
+    },
+    "b": {
+      "label": "If-then plan",
+      "value": 71,
+      "cue": "seventy"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "What will you do when your usual excuse shows up?"
+    },
+    {
+      "sec": "name",
+      "text": "The fix has a name: an if-then plan."
+    },
+    {
+      "sec": "study",
+      "text": "Students had to write a report about how they spent Christmas Eve."
+    },
+    {
+      "sec": "study",
+      "text": "Some also wrote down exactly when and where they'd start."
+    },
+    {
+      "sec": "stat",
+      "text": "Without that plan, only about a third finished within two days."
+    },
+    {
+      "sec": "stat",
+      "text": "With it? Seventy-one percent did."
+    },
+    {
+      "sec": "takeaway",
+      "text": "So don't just set a goal. Say: if it's after dinner, then I open the laptop."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Give your excuse a plan that's already waiting."
+    }
+  ],
+  "post": {
+    "title": "The 10-Second Plan That Beats Procrastination #shorts",
+    "description": "Don't just set a goal, plan the moment. In Gollwitzer & Brandstätter (1997), students who wrote down when and where they'd write a holiday report finished it within two days 71% of the time, versus 32% without a plan. That's an if-then plan (implementation intention). #psychology #productivity #habits",
+    "tags": [
+      "if-then plans",
+      "implementation intentions",
+      "procrastination",
+      "psychology"
+    ]
+  }
+}

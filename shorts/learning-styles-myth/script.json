@@ -1,0 +1,57 @@
+{
+  "slug": "learning-styles-myth",
+  "no": 91,
+  "look": "whiteboard",
+  "title": [
+    "LEARNING",
+    "MYTH"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "myth.",
+  "credit": "Dekker et al. · 2012",
+  "stat": {
+    "unit": "%",
+    "a": {
+      "label": "UK teachers",
+      "value": 93,
+      "cue": "ninety"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Does preferring videos mean you only learn visually?"
+    },
+    {
+      "sec": "name",
+      "text": "That idea is the learning styles myth."
+    },
+    {
+      "sec": "study",
+      "text": "Researchers surveyed teachers in the UK and the Netherlands."
+    },
+    {
+      "sec": "stat",
+      "text": "In the UK, ninety-three percent believed students learn better in their preferred style."
+    },
+    {
+      "sec": "takeaway",
+      "text": "But reviews of the research found little evidence that matching lessons to a style helps."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Match the method to the material, not to a label."
+    }
+  ],
+  "post": {
+    "title": "The Learning Styles Myth Most Teachers Believe #shorts",
+    "description": "Being a 'visual learner' is mostly a myth. Dekker et al. (2012) found 93% of UK teachers believed students learn better in their preferred learning style, but a major review (Pashler et al., 2008) found little evidence that matching teaching to a style improves learning. #psychology #studytips #learning",
+    "tags": [
+      "learning styles",
+      "neuromyths",
+      "study tips",
+      "psychology"
+    ]
+  }
+}

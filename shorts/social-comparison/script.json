@@ -1,0 +1,71 @@
+{
+  "slug": "social-comparison",
+  "no": 71,
+  "look": "data-story",
+  "title": [
+    "COMPARISON",
+    "SOCIAL"
+  ],
+  "hookStyle": "eyes",
+  "titleCue": "comparison.",
+  "credit": "Morse & Gergen · 1970",
+  "stat": {
+    "a": {
+      "label": "Polished rival",
+      "value": 0,
+      "display": "DOWN",
+      "cue": "dropped."
+    },
+    "b": {
+      "label": "Sloppy rival",
+      "value": 1,
+      "display": "UP",
+      "cue": "rose."
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Who are you using as your measuring stick?"
+    },
+    {
+      "sec": "name",
+      "text": "Psychologists call it social comparison."
+    },
+    {
+      "sec": "study",
+      "text": "Job applicants rated their self-esteem while another candidate waited in the room."
+    },
+    {
+      "sec": "study",
+      "text": "Sometimes he was polished and sharp. Sometimes, messy and unprepared."
+    },
+    {
+      "sec": "stat",
+      "text": "Next to the polished rival, their self-esteem dropped."
+    },
+    {
+      "sec": "stat",
+      "text": "Next to the sloppy one, it rose."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Same person. Same skills. Only the comparison changed."
+    },
+    {
+      "sec": "takeaway",
+      "text": "So choose your measuring stick on purpose."
+    }
+  ],
+  "post": {
+    "title": "Why You Feel Worse Next to Certain People #shorts",
+    "description": "Your self-esteem depends on who's in the room. In Morse & Gergen (1970), job applicants' self-esteem dropped when a polished, well-prepared rival sat nearby and rose next to a sloppy one. That's social comparison. #psychology #selfesteem #confidence",
+    "tags": [
+      "social comparison",
+      "self-esteem",
+      "confidence",
+      "psychology"
+    ]
+  }
+}

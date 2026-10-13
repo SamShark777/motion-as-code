@@ -1,0 +1,61 @@
+{
+  "slug": "reward-learning",
+  "no": 82,
+  "look": "game-show",
+  "title": [
+    "REWARD",
+    "LEARNING"
+  ],
+  "hookStyle": "eyes",
+  "titleCue": "learning.",
+  "credit": "Lindström et al. · 2021",
+  "stat": {
+    "a": {
+      "label": "Posts studied",
+      "value": 1000000,
+      "display": "1M+",
+      "cue": "million"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Bonus round: why does posting again feel so tempting after a few likes?"
+    },
+    {
+      "sec": "name",
+      "text": "That pull is called reward learning."
+    },
+    {
+      "sec": "study",
+      "text": "Researchers tracked more than four thousand people on Instagram and other sites."
+    },
+    {
+      "sec": "stat",
+      "text": "Across over a million posts, when likes came in fast, people posted more often."
+    },
+    {
+      "sec": "stat",
+      "text": "When likes dried up, they posted less."
+    },
+    {
+      "sec": "takeaway",
+      "text": "It's the same learning that keeps a lab rat pressing a lever for food."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Your feed is training you. Notice who's holding the treats."
+    }
+  ],
+  "post": {
+    "title": "Why Likes Make You Want to Post Again #shorts",
+    "description": "Likes work like treats. Lindström et al. (2021, Nature Communications) analyzed over a million posts from 4,000+ users on Instagram and other sites: people posted more often when likes came in fast and less when they dried up, the same reward learning seen in animals seeking food. #psychology #socialmedia #digitalwellbeing",
+    "tags": [
+      "reward learning",
+      "social media psychology",
+      "likes",
+      "psychology"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "reciprocity",
+  "no": 58,
+  "look": "game-show",
+  "title": [
+    "RECIPROCITY",
+    "RULE"
+  ],
+  "hookStyle": "eyes",
+  "titleCue": "reciprocity.",
+  "credit": "Regan · 1971",
+  "stat": {
+    "a": {
+      "label": "No drink",
+      "value": 1,
+      "display": "1x",
+      "cue": "nothing,"
+    },
+    "b": {
+      "label": "Free Coke",
+      "value": 2,
+      "display": "2x",
+      "cue": "twice"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Quick round: why does a tiny favor make you feel like you owe someone?"
+    },
+    {
+      "sec": "name",
+      "text": "Psychologists call it the rule of reciprocity."
+    },
+    {
+      "sec": "study",
+      "text": "In one study, a stranger brought people a Coke they never asked for."
+    },
+    {
+      "sec": "study",
+      "text": "Later, he asked them to buy raffle tickets."
+    },
+    {
+      "sec": "stat",
+      "text": "Compared with people who got nothing, those with the free Coke bought about twice as many tickets."
+    },
+    {
+      "sec": "takeaway",
+      "text": "The favor worked even when they didn't like him much."
+    },
+    {
+      "sec": "takeaway",
+      "text": "So when a freebie feels like a debt, ask who set the price."
+    }
+  ],
+  "post": {
+    "title": "Why a Free Gift Makes You Feel Like You Owe #shorts",
+    "description": "A small favor creates a big sense of debt. In Regan (1971), people who got an unrequested Coke from a stranger later bought about twice as many raffle tickets from him, whether or not they liked him. That's the rule of reciprocity. #psychology #persuasion #socialpsychology",
+    "tags": [
+      "reciprocity",
+      "persuasion",
+      "social psychology",
+      "psychology"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "multitasking-myth",
+  "no": 24,
+  "look": "terminal",
+  "title": [
+    "MULTITASKING",
+    "MYTH"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "myth.",
+  "credit": "Strayer & Johnston · 2001",
+  "stat": {
+    "a": {
+      "label": "Driving only",
+      "value": 1,
+      "display": "1x",
+      "cue": "missed"
+    },
+    "b": {
+      "label": "On the phone",
+      "value": 2,
+      "display": "2x+",
+      "cue": "doubled."
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Try reading this while counting backward."
+    },
+    {
+      "sec": "name",
+      "text": "Struggling? That's the multitasking myth."
+    },
+    {
+      "sec": "study",
+      "text": "In a driving simulator, people had to brake for red lights."
+    },
+    {
+      "sec": "study",
+      "text": "Then they did it again while chatting on a phone."
+    },
+    {
+      "sec": "stat",
+      "text": "The red lights they missed more than doubled."
+    },
+    {
+      "sec": "stat",
+      "text": "Hands-free was no better. Listening to the radio barely mattered."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Your brain doesn't multitask. It switches."
+    },
+    {
+      "sec": "takeaway",
+      "text": "And every switch has a cost."
+    }
+  ],
+  "post": {
+    "title": "Your Brain Can't Actually Multitask #shorts",
+    "description": "Talking while driving isn't harmless multitasking. In Strayer & Johnston (2001), people in a driving simulator missed more than twice as many red lights while on a phone call, hands-free or not, while listening to the radio didn't reliably hurt. #psychology #multitasking #focus",
+    "tags": [
+      "multitasking",
+      "attention",
+      "focus",
+      "psychology"
+    ]
+  }
+}

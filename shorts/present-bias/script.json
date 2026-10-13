@@ -1,0 +1,61 @@
+{
+  "slug": "present-bias",
+  "no": 35,
+  "look": "pixel-quest",
+  "title": [
+    "PRESENT",
+    "BIAS"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "bias.",
+  "credit": "Read & van Leeuwen · 1998",
+  "stat": {
+    "a": {
+      "label": "Workers tested",
+      "value": 200,
+      "display": "200",
+      "cue": "hundred"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Why does tomorrow-you get all the hard work?"
+    },
+    {
+      "sec": "name",
+      "text": "Economists call it present bias."
+    },
+    {
+      "sec": "study",
+      "text": "Office workers picked a snack to get a week later: fruit, or chocolate and chips."
+    },
+    {
+      "sec": "study",
+      "text": "When the day came, they could choose again."
+    },
+    {
+      "sec": "stat",
+      "text": "Across two hundred workers, far more grabbed the junk food in the moment than had planned to."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Future-you is always healthier, on paper."
+    },
+    {
+      "sec": "takeaway",
+      "text": "So decide now, then make switching hard."
+    }
+  ],
+  "post": {
+    "title": "Why Future You Always Gets the Hard Work #shorts",
+    "description": "We plan like saints and choose like snackers. In Read & van Leeuwen (1998), 200 office workers chose far more unhealthy snacks when picking for right now than when picking a week ahead. That's present bias. #psychology #habits #selfcontrol",
+    "tags": [
+      "present bias",
+      "self control",
+      "habits",
+      "psychology"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "conformity",
+  "no": 61,
+  "look": "dossier",
+  "title": [
+    "CONFORMITY",
+    "CASE"
+  ],
+  "hookStyle": "eyes",
+  "titleCue": "conformity.",
+  "credit": "Solomon Asch · 1951",
+  "stat": {
+    "unit": "%",
+    "a": {
+      "label": "Alone",
+      "value": 1,
+      "display": "<1%",
+      "lit": 0,
+      "cue": "alone,"
+    },
+    "b": {
+      "label": "In a group",
+      "value": 75,
+      "cue": "four"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Would you give a wrong answer just because everyone else did?"
+    },
+    {
+      "sec": "name",
+      "text": "Case file: conformity."
+    },
+    {
+      "sec": "study",
+      "text": "Students had to say which of three lines matched a fourth."
+    },
+    {
+      "sec": "study",
+      "text": "Everyone else in the room was an actor, giving the same wrong answer."
+    },
+    {
+      "sec": "stat",
+      "text": "Tested alone, almost nobody got it wrong."
+    },
+    {
+      "sec": "stat",
+      "text": "In the group, about three in four went along at least once."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Verdict: it wasn't their eyes. It was the room."
+    },
+    {
+      "sec": "takeaway",
+      "text": "Next time you're the odd one out, say what you see."
+    }
+  ],
+  "post": {
+    "title": "Would You Give a Wrong Answer to Fit In? #shorts",
+    "description": "In Solomon Asch's line studies (1951), people judging line lengths alone almost never erred (under 1%), but with a group of actors all giving the same wrong answer, about three in four went along at least once. That's conformity. #psychology #socialpsychology #conformity",
+    "tags": [
+      "conformity",
+      "asch experiment",
+      "social pressure",
+      "psychology"
+    ]
+  }
+}

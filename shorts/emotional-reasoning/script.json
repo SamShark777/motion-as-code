@@ -1,0 +1,65 @@
+{
+  "slug": "emotional-reasoning",
+  "no": 42,
+  "look": "one-line",
+  "title": [
+    "EMOTIONAL",
+    "REASONING"
+  ],
+  "hookStyle": "thoughts",
+  "titleCue": "reasoning.",
+  "credit": "Arntz, Rauner & van den Hout · 1995",
+  "stat": {
+    "a": {
+      "label": "People tested",
+      "value": 186,
+      "display": "186",
+      "cue": "hundred"
+    }
+  },
+  "cta": "Follow for more psychology",
+  "lines": [
+    {
+      "sec": "hook",
+      "text": "Does feeling rejected prove you were rejected?"
+    },
+    {
+      "sec": "name",
+      "text": "Treating a feeling as proof is called emotional reasoning."
+    },
+    {
+      "sec": "study",
+      "text": "Researchers gave people short stories about everyday situations."
+    },
+    {
+      "sec": "study",
+      "text": "Some stories added one detail: the person in them felt anxious."
+    },
+    {
+      "sec": "stat",
+      "text": "Of one hundred eighty-six people, those with anxiety disorders saw more danger just because of that feeling."
+    },
+    {
+      "sec": "stat",
+      "text": "The others judged by the facts alone."
+    },
+    {
+      "sec": "takeaway",
+      "text": "A feeling is real information about you."
+    },
+    {
+      "sec": "takeaway",
+      "text": "It just isn't always proof about the world."
+    }
+  ],
+  "post": {
+    "title": "Your Feelings Aren't Always Facts #shorts",
+    "description": "Feeling it doesn't make it true. Arntz, Rauner & van den Hout (1995) found people with anxiety disorders rated situations as more dangerous when the story said the person felt anxious, even when the facts said safe; people without anxiety disorders went by the facts. Psychologists call it emotional reasoning. #psychology #emotions #mentalhealth",
+    "tags": [
+      "emotional reasoning",
+      "feelings vs facts",
+      "cognitive distortions",
+      "psychology"
+    ]
+  }
+}
