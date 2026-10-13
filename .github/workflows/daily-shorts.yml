@@ -27,7 +27,7 @@ on:
         default: false
 
 concurrency:
-  group: daily-shorts
+  group: daily-shorts-${{ inputs.buffer_check && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
