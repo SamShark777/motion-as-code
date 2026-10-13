@@ -21,6 +21,10 @@ on:
         description: "Build and host, but don't schedule on Buffer"
         type: boolean
         default: false
+      buffer_check:
+        description: "Only check the Buffer connection (lists channels + post schema), build nothing"
+        type: boolean
+        default: false
 
 concurrency:
   group: daily-shorts
@@ -36,7 +40,20 @@ env:
   ONLY_SLUGS: ${{ inputs.only_slugs }}
 
 jobs:
+  buffer-check:
+    if: inputs.buffer_check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          python3 scripts/buffer.py channels
+          python3 scripts/buffer.py schema
+
   plan:
+    if: ${{ !inputs.buffer_check }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
@@ -115,7 +132,7 @@ jobs:
 
   publish:
     needs: [plan, build]
-    if: always() && needs.plan.outputs.count != '0'
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.count != '0'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
