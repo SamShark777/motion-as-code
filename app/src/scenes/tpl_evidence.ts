@@ -9,7 +9,7 @@ import { font, measure } from '../engine/type';
 import { type Line, type Word } from '../engine/lyrics';
 import { ease, prog, pulse, noise1, hash } from '../engine/util';
 import { Cam2D, drawKaraoke, setWorld, type KWord } from './_vo';
-import { drawAvatar, blinkAt, drawPerson, lipsync } from './_spot';
+import { drawAvatar, blinkAt, drawPerson, lipsync, drawWave } from './_spot';
 import { loadScriptLook, secLines, centredRows, fitRows, findWord, litOf, LIT_ORDER, karaokeOpts, setNow, drawChrome, type Script, type Stat } from './_tpl';
 import { groundPass, setGround, lookPost, kwBox, drawPanel, type Look } from './_looks';
 
@@ -131,7 +131,8 @@ export default class TplEvidence extends Scene {
     }
     // the avatar watches from below
     const done = this.wb ? t > this.wb.end : this.wa ? t > this.wa.end + 0.3 : false;
-    drawAvatar(ctx, c, 0, AY, AS, {
+    if (this.S.presenter === 'wave') drawWave(ctx, c, 0, AY - 140, 12, lipsync(this.ctx.audio, t), t, { main: Lk.accent, glow: Lk.hot });
+    else drawAvatar(ctx, c, 0, AY, AS, {
       talk: lipsync(this.ctx.audio, t),
       blink: blinkAt(t, 1.3),
       look: [0, -1],

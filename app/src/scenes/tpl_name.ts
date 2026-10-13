@@ -7,7 +7,7 @@ import { Layer2D } from '../engine/gl';
 import { type Word } from '../engine/lyrics';
 import { ease, prog, pulse, noise1 } from '../engine/util';
 import { Cam2D, drawKaraoke, setWorld, type KWord } from './_vo';
-import { drawAvatar, lipsync, blinkAt, drawCone, lightOn } from './_spot';
+import { drawAvatar, lipsync, blinkAt, drawCone, lightOn, drawWave } from './_spot';
 import { loadScriptLook, secLines, centredRows, fitRows, findWord, drawTitleV, karaokeOpts, setNow, drawChrome, type Script } from './_tpl';
 import { groundPass, setGround, lookPost, kwBox, drawPanel, type Look } from './_looks';
 
@@ -47,8 +47,10 @@ export default class TplName extends Scene {
     this.grid.render(renderer, out);
     const U = this.ui; U.clear();
     const ctx = U.ctx;
-    drawCone(ctx, c, 0, -960, AY - 40, 140, 900, light);
-    drawAvatar(ctx, c, 0, AY, AS, {
+    const wave = this.S.presenter === 'wave';
+    drawCone(ctx, c, 0, -960, wave ? AY - 300 : AY - 40, 140, 900, light);
+    if (wave) drawWave(ctx, c, 0, AY - 300, 26, lipsync(this.ctx.audio, t), t, { main: L.accent, glow: L.hot });
+    else drawAvatar(ctx, c, 0, AY, AS, {
       talk: lipsync(this.ctx.audio, t),
       blink: blinkAt(t, 0.9),
       brow: t > tL && t < tL + 0.6 ? 1 : 0,

@@ -18,6 +18,8 @@ export interface Script {
   look?: string;
   title: [string, string];
   hookStyle?: 'eyes' | 'thoughts';
+  /** 'avatar' (pixel Shivam, default) or 'wave' (faceless: voice bars). */
+  presenter?: 'avatar' | 'wave';
   titleCue?: string;
   credit?: string;
   stat?: { unit?: string; a: Stat; b?: Stat };

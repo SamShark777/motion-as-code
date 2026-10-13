@@ -8,7 +8,7 @@ import { font, measure } from '../engine/type';
 import { type Word } from '../engine/lyrics';
 import { ease, prog, pulse, noise1 } from '../engine/util';
 import { Cam2D, drawKaraoke, setWorld, type KWord } from './_vo';
-import { drawAvatar, lipsync, blinkAt, drawCone, lightOn } from './_spot';
+import { drawAvatar, lipsync, blinkAt, drawCone, lightOn, drawWave } from './_spot';
 import { loadScriptLook, secLines, centredRows, fitRows, drawTitleV, karaokeOpts, setNow, drawChrome, type Script } from './_tpl';
 import { groundPass, setGround, lookPost, paperFade, kwBox, drawPanel, type Look } from './_looks';
 
@@ -49,7 +49,9 @@ export default class TplOutro extends Scene {
     const rise = ease.outBack(prog(t, this.ctx.start + 0.02, this.ctx.start + 0.45));
     const tl = lightOn(t, this.ctx.start + 0.25);
     drawCone(ctx, c, 0, -960, AY - 40, 140, 900, tl * 0.6 * (1 - prog(t, this.endT, this.endT + 0.6)));
-    if (rise > 0.002) drawAvatar(ctx, c, 0, AY + (1 - rise) * 900, AS, {
+    const wave = this.S.presenter === 'wave';
+    if (wave && rise > 0.002) drawWave(ctx, c, 0, AY - 300 + (1 - rise) * 900, 26, lipsync(this.ctx.audio, t), t, { main: L.accent, glow: L.hot });
+    else if (rise > 0.002) drawAvatar(ctx, c, 0, AY + (1 - rise) * 900, AS, {
       talk: lipsync(this.ctx.audio, t),
       happy: t > this.first.start && t < this.first.end + 0.5 ? 1 : 0,
       wink: t > this.last.start + 0.08 && t < this.last.end + 0.6 ? 1 : 0,

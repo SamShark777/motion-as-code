@@ -6,7 +6,7 @@ import { F, font, measure } from '../engine/type';
 import { clamp, ease, lerp, prog, noise1 } from '../engine/util';
 import type { Word } from '../engine/lyrics';
 import type { AudioData } from '../engine/audio';
-import { placeRow, setWorld, type Cam, type KWord } from './_vo';
+import { placeRow, setWorld, w2s, type Cam, type KWord } from './_vo';
 import { duotone, type Look } from './_looks';
 
 /** The active look (vertical template); null = the house colours of the original plates. */
@@ -468,3 +468,33 @@ export function wrapRows(words: Word[], x: number, y: number, size: number, fam:
 }
 
 export { lerp, prog };
+
+/** Faceless presenter: a row of rounded bars that dance with the voice (script `presenter: "wave"`).
+ *  Centre (x, y), bar unit s (≈ the avatar scale), level 0–1 from lipsync, colours from the look. */
+export function drawWave(ctx: CanvasRenderingContext2D, c: Cam, x: number, y: number, s: number, level: number, t: number,
+                         col: { main: string; glow: string }, alpha = 1) {
+  const N = 11, bw = s * 0.9, gap = s * 0.55;
+  const w = N * bw + (N - 1) * gap;
+  const [sx, sy] = w2s(c, x, y);
+  const k = c.z;
+  ctx.save();
+  ctx.setTransform(k, 0, 0, k, sx, sy);
+  ctx.globalAlpha = alpha * (0.18 + 0.22 * level);
+  const g = ctx.createRadialGradient(0, 0, 0, 0, 0, w * 0.85);
+  g.addColorStop(0, col.glow); g.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = g;
+  ctx.fillRect(-w, -w, w * 2, w * 2);
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = col.main;
+  for (let i = 0; i < N; i++) {
+    const u = i / (N - 1) - 0.5;
+    const env = Math.cos(u * Math.PI * 0.95);              // taller in the middle
+    const wob = 0.55 + 0.45 * Math.sin(t * 9 + i * 1.7) * Math.sin(t * 5.3 + i * 0.9);
+    const h = s * (1.1 + env * (0.6 + level * 9 * wob));
+    const bx = -w / 2 + i * (bw + gap);
+    ctx.beginPath();
+    ctx.roundRect(bx, -h / 2, bw, h, bw / 2);
+    ctx.fill();
+  }
+  ctx.restore();
+}

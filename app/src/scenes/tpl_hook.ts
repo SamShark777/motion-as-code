@@ -6,7 +6,7 @@ import { Scene, type Frame, type PostOverrides } from '../engine/scene';
 import { Layer2D } from '../engine/gl';
 import { clamp, ease, prog, pulse, noise1, hash } from '../engine/util';
 import { Cam2D, drawKaraoke, setWorld, type KWord } from './_vo';
-import { drawAvatar, avatarHead, lipsync, blinkAt, drawEyePair } from './_spot';
+import { drawAvatar, avatarHead, lipsync, blinkAt, drawEyePair, drawWave } from './_spot';
 import { loadScriptLook, secLines, centredRows, fitRows, drawQ, karaokeOpts, setNow, drawChrome, type Script } from './_tpl';
 import { groundPass, setGround, lookPost, paperFade, kwBox, drawPanel, type Look } from './_looks';
 
@@ -47,7 +47,8 @@ export default class TplHook extends Scene {
     this.grid.render(renderer, out);
     const U = this.ui; U.clear();
     const ctx = U.ctx;
-    const [hx, hy] = avatarHead(0, AY, AS);
+    const wave = this.S.presenter === 'wave';
+    const [hx, hy] = wave ? [0, AY - 300] : avatarHead(0, AY, AS);
     const thoughts = this.S.hookStyle === 'thoughts';
     if (thoughts) {
       QS.forEach(([x, y], i) => {
@@ -65,7 +66,8 @@ export default class TplHook extends Scene {
     }
     const pop = ease.outBack(prog(t, this.ctx.start + 0.02, this.ctx.start + 0.45));
     const worry = prog(t, this.t0 + 0.6, this.t0 + 0.7);
-    drawAvatar(ctx, c, worry * 2 * noise1(t * 30, 2), AY + (1 - pop) * 900, AS, {
+    if (wave) drawWave(ctx, c, 0, AY - 300 + (1 - pop) * 900, 26, lipsync(this.ctx.audio, t), t, { main: L.accent, glow: L.hot });
+    else drawAvatar(ctx, c, worry * 2 * noise1(t * 30, 2), AY + (1 - pop) * 900, AS, {
       talk: lipsync(this.ctx.audio, t),
       blink: blinkAt(t, 0.2),
       look: thoughts ? [Math.floor(t * 1.5) % 2 ? 1 : -1, 0] : [Math.floor(t * 3.2) % 2 ? 1 : -1, 0],
