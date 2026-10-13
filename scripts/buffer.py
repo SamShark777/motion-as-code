@@ -82,7 +82,7 @@ def create(channel_id, service, post, url, due):
     elif service == "tiktok":
         asset["video"]["metadata"] = {"thumbnailOffset": 1500}
     inp = {"channelId": channel_id, "text": text_for(post),
-           "schedulingType": "automatic", "mode": "customScheduled", "dueAt": due, "assets": [asset], "aiAssisted": False}
+           "schedulingType": "automatic", "mode": "customScheduled", "dueAt": due, "assets": [asset], "aiAssisted": False, "needsApproval": False}
     if meta:
         inp["metadata"] = meta
     d = gql("""mutation($input: CreatePostInput!) { createPost(input: $input) {
