@@ -46,8 +46,15 @@ only ever holds the newest video — it is force-pushed fresh each day and never
    - `hookStyle`: `eyes` for social/being-watched topics, `thoughts` for thinking/memory/decision topics.
    - Add `say` with a phonetic spelling when TTS would misread a word (e.g. "T-shirt" → "tee shirt").
    - Apply the "Rules from reviews" section below (the weekly review keeps it current).
+   - Set `"no"` to the idea's `No.` and `"look"` to its `Visual style` from the tracker (see shorts/LOOKS.md;
+     empty → `pixel-lab`). Write the lines so they suit the look's voice (e.g. `dossier` reads like a case
+     file, `game-show` like a quiz round, `crayon` gently) — the facts and structure rules stay the same.
+   - Looks set in all caps (`terminal`, `spy-noir`, `pixel-quest`) fit fewer characters per line: keep
+     their hook and takeaway lines short (≤ 9 words).
 6. **Build.** `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`.
    Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
+   Check the look really rendered (its ground, fonts and colours) and nothing is unreadable against the
+   ground; if a look fails, rebuild in `pixel-lab` and note it in `Lesson / notes`.
 7. **Host.** Push the video alone to the `media` branch (replacing what's there):
    `M=$(mktemp -d) && cp shorts/<slug>/<slug>.mp4 $M && cd $M && git init -q && git checkout -q -b media && git add . && git -c commit.gpgsign=false commit -qm "media: <slug>" && git remote add origin https://github.com/SamShark777/motion-as-code.git && git push -q -f origin media && cd -`
    Check `https://raw.githubusercontent.com/SamShark777/motion-as-code/media/<slug>.mp4` answers 200
@@ -73,10 +80,13 @@ If any step fails, don't schedule a half-made video: set `Status=Failed` with th
 
 `python3 scripts/tracker.py dump > /tmp/t.csv` and analyse the published vertical Shorts (skip No. 1, the
 horizontal pilot): total views and engagement at d7 (d14/d30 when present), YouTube retention (avg view ÷
-length) — compared across theme, hook style, length, title wording, opening-hook type (question vs claim),
+length) — compared across theme, visual style, hook style, length, title wording, opening-hook type (question vs claim),
 template fit and weekday. Then:
 - Write `shorts/reviews/<date>.md`: what worked, what didn't, with the numbers.
 - Fill `Lesson / notes` on reviewed rows with a one-line takeaway.
+- **Tune the looks:** once a look has ≥ 3 Shorts past day 7, reassign the `Visual style` of upcoming ideas
+  away from clearly losing looks toward winning ones that fit the topic (keep at least 4 looks in rotation
+  so the comparison stays alive). Say which changed and why.
 - **Tune the queue:** renumber `Priority` on upcoming `Idea` rows to move the patterns that win forward,
   and rewrite weak `Opening hook`s of upcoming ideas in the winning style (keep the old hook in
   `Lesson / notes` as "was: …"). Add or update up to 5 bullet rules under "Rules from reviews" below.

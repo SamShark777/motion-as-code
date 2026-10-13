@@ -1,0 +1,4 @@
+All fonts in this folder are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org),
+obtained from the Fontsource npm packages (@fontsource/*, v5.3.0), latin subsets:
+Architects Daughter, Caveat, Patrick Hand, Newsreader, Fredoka, Bagel Fat One, JetBrains Mono, VT323,
+Silkscreen, League Spartan, Bricolage Grotesque, Inter, Sacramento.

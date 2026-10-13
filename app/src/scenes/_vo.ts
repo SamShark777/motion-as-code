@@ -475,6 +475,12 @@ export interface KaraokeOpts {
   pop?: number;
   /** Override the per-glyph progress (e.g. one glyph per syllable). */
   progress?: (kw: KWord, gi: number, t: number) => number | null;
+  /** Look overrides (any CSS colour / hex): unsaid outline, word being said, said word. */
+  ghost?: string; hot?: string; done?: string;
+  /** Offset shadow under said glyphs (world px) — misregistration / overprint. */
+  shadow?: [number, number, string];
+  /** Stroke painted under the fill: colour and width as a fraction of the font size (telop). */
+  stroke?: [string, number];
 }
 /**
  * Karaoke in world space. Unsaid: hairline outline (ash). Being said: a left-to-right wipe in
@@ -507,17 +513,20 @@ export function drawKaraoke(ctx: CanvasRenderingContext2D, c: Cam, t: number, kw
       const custom = o.progress ? o.progress(kw, g.i, t) : null;
       const gp = custom ?? clamp(p * n - g.i);
       if (gp < 1 && (o.outline ?? true) && kw.outline !== false) {
-        ctx.lineWidth = (1.1 * 100) / px;
-        ctx.strokeStyle = o.paper ? rgba('ink', 0.3 * ant * ga) : rgba('ash', 0.45 * ant * ga);
+        ctx.lineWidth = ((o.ghost ? 2 : 1.1) * 100) / px;
+        ctx.strokeStyle = o.ghost ? rgba(o.ghost, 0.95 * ant * ga) : o.paper ? rgba('ink', 0.3 * ant * ga) : rgba('ash', 0.45 * ant * ga);
         ctx.strokeText(g.ch, 0, 0);
       }
       if (gp > 0) {
         ctx.save();
         if (gp < 1) { ctx.beginPath(); ctx.rect(-20, -130, g.w * gp + 20, 190); ctx.clip(); }
-        const hot = kw.hot ?? (o.paper ? 'signal' : 'signal');
-        const fin = kw.done ?? (o.paper ? 'ink' : 'bone');
-        ctx.fillStyle = done < 1 ? mixCss(hot, fin, done) : rgba(fin, 1);
+        const hot = kw.hot ?? o.hot ?? (o.paper ? 'signal' : 'signal');
+        const fin = kw.done ?? o.done ?? (o.paper ? 'ink' : 'bone');
         ctx.globalAlpha = ga;
+        const k = 100 / kw.size;
+        if (o.shadow) { ctx.fillStyle = o.shadow[2]; ctx.fillText(g.ch, o.shadow[0] * k, o.shadow[1] * k); }
+        if (o.stroke) { ctx.lineJoin = 'round'; ctx.lineWidth = o.stroke[1] * 100 * 2; ctx.strokeStyle = o.stroke[0]; ctx.strokeText(g.ch, 0, 0); }
+        ctx.fillStyle = done < 1 ? mixCss(hot, fin, done) : rgba(fin, 1);
         ctx.fillText(g.ch, 0, 0);
         ctx.restore();
       }

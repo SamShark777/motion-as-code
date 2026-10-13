@@ -22,6 +22,11 @@ for (const wt of [400, 600]) {
 for (const [n, f] of [['300', 'Light'], ['400', 'Regular'], ['500', 'Medium'], ['600', 'SemiBold'], ['700', 'Bold']] as const)
   DEFS.push({ family: `Plex-${n}`, file: `src/IBMPlexMono-${f}.ttf` });
 DEFS.push({ family: 'PlexItalic-400', file: 'src/IBMPlexMono-Italic.ttf' });
+// extra OFL faces for the Shorts "looks" (fonts/ext, latin woff2 from Fontsource)
+for (const n of ['ArchitectsDaughter-400', 'Caveat-600', 'Caveat-700', 'PatrickHand-400', 'Newsreader-400', 'Newsreader-700',
+  'Fredoka-600', 'Fredoka-700', 'BagelFatOne-400', 'JetBrainsMono-500', 'JetBrainsMono-800', 'VT323-400', 'Silkscreen-400',
+  'Silkscreen-700', 'LeagueSpartan-600', 'LeagueSpartan-800', 'Bricolage-800', 'Inter-500', 'Inter-800', 'Sacramento-400'])
+  DEFS.push({ family: n, file: `ext/${n}.woff2` });
 
 /** Convenience family names. */
 export const F = {

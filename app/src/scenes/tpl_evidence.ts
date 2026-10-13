@@ -5,20 +5,21 @@
 import type * as THREE from 'three';
 import { Scene, type Frame, type PostOverrides } from '../engine/scene';
 import { Layer2D } from '../engine/gl';
-import { rgba } from '../engine/palette';
-import { F, font, measure } from '../engine/type';
+import { font, measure } from '../engine/type';
 import { type Line, type Word } from '../engine/lyrics';
 import { ease, prog, pulse, noise1, hash } from '../engine/util';
-import { Cam2D, gridPass, setGrid, drawKaraoke, label, setWorld, type KWord } from './_vo';
+import { Cam2D, drawKaraoke, setWorld, type KWord } from './_vo';
 import { drawAvatar, blinkAt, drawPerson, lipsync } from './_spot';
-import { loadScript, secLines, centredRows, fitRows, findWord, litOf, LIT_ORDER, type Script, type Stat } from './_tpl';
+import { loadScriptLook, secLines, centredRows, fitRows, findWord, litOf, LIT_ORDER, karaokeOpts, setNow, drawChrome, type Script, type Stat } from './_tpl';
+import { groundPass, setGround, lookPost, kwBox, drawPanel, type Look } from './_looks';
 
 const COLS = 5, ROWS = 4, CW = 190, CY0 = -330, CH = 175, PS = 10;
 const AY = 990, AS = 9;
 
 export default class TplEvidence extends Scene {
   cam = new Cam2D();
-  grid = gridPass(24, 96);
+  grid = groundPass();
+  Lk!: Look;
   ui = new Layer2D();
   kw: KWord[] = [];
   S!: Script;
@@ -27,12 +28,13 @@ export default class TplEvidence extends Scene {
   litA = 0; litB = 0;
 
   override async init() {
-    this.S = await loadScript();
+    const { S, L } = await loadScriptLook();
+    this.S = S; this.Lk = L;
     this.L = secLines(this.ctx.lyrics, ['study', 'stat']);
-    const fam = F.archivo(90, 800);
+    const fam = L.fonts.body;
     this.L.forEach((l, i) => {
-      const size = fitRows(l.words, fam, 980, 3, 74, 44);
-      this.kw.push(...centredRows(l.words, -820, size, fam, `l${i}`, 980, 1.08).words);
+      const size = fitRows(l.words, fam, 960, 3, 74 * (L.fonts.headScale ?? 1), 44, L.upper);
+      this.kw.push(...centredRows(l.words, -755, size, fam, `l${i}`, 960, 1.08, 0.25, L.upper).words);
     });
     const st = this.S.stat;
     if (st) {
@@ -59,9 +61,10 @@ export default class TplEvidence extends Scene {
 
   override render(f: Frame, out: THREE.WebGLRenderTarget): PostOverrides {
     const { renderer, comp } = this.ctx;
-    const t = f.t;
+    const t = f.t, Lk = this.Lk;
+    setNow(t);
     const c = this.cam.at(t);
-    setGrid(this.grid, c, { reveal: [0, 0, 1e5], ink: 0.8 });
+    setGround(this.grid, Lk, c, t);
     this.grid.render(renderer, out);
     const U = this.ui; U.clear();
     const ctx = U.ctx;
@@ -71,8 +74,10 @@ export default class TplEvidence extends Scene {
       const a = prog(t, t0 + 0.3, t0 + 0.7);
       const txt = this.S.credit.toUpperCase();
       setWorld(ctx, c, 0, 0);
-      const w = measure(txt, F.mono(500), 17, 3);
-      label(ctx, txt.slice(0, Math.floor(a * txt.length)), -w / 2, -540, { size: 17, col: rgba('ash', 0.95) });
+      const w = measure(txt, Lk.fonts.mono, 22, 3);
+      ctx.font = font(Lk.fonts.mono, 22); ctx.letterSpacing = '3px'; ctx.fillStyle = Lk.muted;
+      ctx.fillText(txt.slice(0, Math.floor(a * txt.length)), -w / 2, -505);
+      ctx.letterSpacing = '0px';
       ctx.setTransform(1, 0, 0, 1, 0, 0);
     }
     // the room
@@ -101,15 +106,21 @@ export default class TplEvidence extends Scene {
         if (k <= 0) return;
         setWorld(ctx, c, 0, 0);
         ctx.globalAlpha = k;
-        const lw = measure(s.label.toUpperCase(), F.mono(500), 20, 3);
-        label(ctx, s.label.toUpperCase(), x - lw / 2, 360, { size: 20, col: hot ? rgba('signal', 1) : rgba('ash', 1) });
+        const lab = s.label.toUpperCase();
+        const lw = measure(lab, Lk.fonts.mono, 26, 3);
+        ctx.font = font(Lk.fonts.mono, 26); ctx.letterSpacing = '3px'; ctx.fillStyle = hot ? Lk.hot : Lk.muted;
+        ctx.fillText(lab, x - lw / 2, 360);
+        ctx.letterSpacing = '0px';
         const v = s.display ? 0 : from + (s.value - from) * prog(t, t1, t1 + 0.6, ease.outCubic);
         const txt = s.display && t < t1 + 0.3 ? (hash(Math.floor(t * 20), 4) * 99).toFixed(0) : fmt(s, v);
-        ctx.font = font(F.archivo(80, 900), 150);
-        const tw = measure(txt, F.archivo(80, 900), 150);
-        ctx.fillStyle = rgba(hot ? 'signal' : 'bone', 1);
+        const nf = Lk.fonts.title, ns = 150 * Math.min(1.2, Lk.fonts.headScale ?? 1);
+        ctx.font = font(nf, ns);
+        const tw = measure(txt, nf, ns);
+        if (Lk.shadow) { ctx.fillStyle = Lk.shadow[2]; ctx.fillText(txt, x - tw / 2 + Lk.shadow[0], 510 + Lk.shadow[1]); }
+        if (Lk.stroke) { ctx.lineJoin = 'round'; ctx.lineWidth = Lk.stroke[1] * ns * 2; ctx.strokeStyle = Lk.stroke[0]; ctx.strokeText(txt, x - tw / 2, 510); }
+        ctx.fillStyle = hot ? Lk.hot : Lk.ink;
         ctx.fillText(txt, x - tw / 2, 510);
-        if (strike > 0) { ctx.fillStyle = rgba('signal', 1); ctx.fillRect(x - tw / 2 - 10, 455, (tw + 20) * strike, 12); }
+        if (strike > 0) { ctx.fillStyle = Lk.accent; ctx.fillRect(x - tw / 2 - 10, 510 - ns * 0.36, (tw + 20) * strike, 12); }
         ctx.globalAlpha = 1;
         ctx.setTransform(1, 0, 0, 1, 0, 0);
       };
@@ -127,13 +138,17 @@ export default class TplEvidence extends Scene {
       sweat: t > ta && !done ? 1 : 0,
       happy: done && t < this.ctx.end - 0.1 ? 1 : 0,
     });
-    drawKaraoke(ctx, c, t, this.kw, { alpha: (g, tt) => this.groupAlpha(g, tt) });
+    if (Lk.panel) this.L.forEach((_, i) => {
+      const ks = this.kw.filter((k) => k.group === `l${i}`);
+      if (ks.length) drawPanel(ctx, Lk, c, kwBox(ks), this.groupAlpha(`l${i}`, t), setWorld);
+    });
+    drawKaraoke(ctx, c, t, this.kw, karaokeOpts(Lk, { alpha: (g, tt) => this.groupAlpha(g, tt) }));
+    drawChrome(ctx, Lk, { t, p: t / this.ctx.audio.duration, no: this.S.no ?? 0, title: this.S.title.join(' '), credit: this.S.credit, sec: t >= (this.wa?.start ?? 1e9) - 0.5 ? 'stat' : 'study' });
     comp.draw(renderer, U.upload(), out);
     const hit = 0.6 * pulse(t, ta, 0.1) + 0.6 * pulse(t, tb, 0.1);
-    return {
-      bloom: 0.6, bloomThreshold: 0.84, vignette: 0.42, grain: 0.06,
+    return lookPost(Lk, {
       zoom: 1 + 0.02 * hit,
       shake: [noise1(t * 50, 4) * 5 * hit, noise1(t * 50, 5) * 5 * hit],
-    };
+    });
   }
 }

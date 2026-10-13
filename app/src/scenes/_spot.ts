@@ -7,6 +7,12 @@ import { clamp, ease, lerp, prog, noise1 } from '../engine/util';
 import type { Word } from '../engine/lyrics';
 import type { AudioData } from '../engine/audio';
 import { placeRow, setWorld, type Cam, type KWord } from './_vo';
+import { duotone, type Look } from './_looks';
+
+/** The active look (vertical template); null = the house colours of the original plates. */
+let LK: Look | null = null;
+export function setSpotLook(l: Look | null) { LK = l; }
+const hexA = (h: string, a: number) => { const n = parseInt(h.replace('#', ''), 16); return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`; };
 
 // ================================================================== colours
 const COL: Record<string, string> = {
@@ -173,13 +179,14 @@ export function drawAvatar(ctx: CanvasRenderingContext2D, c: Cam, x: number, y: 
   for (let yy = 0; yy < AH + 2; yy++) for (let xx = 0; xx < AW + 4; xx++) {
     const r = OUT[yy]![xx]!;
     if (!r) continue;
-    ctx.fillStyle = r === 1 ? COL.K! : COL.X!;
+    ctx.fillStyle = r === 1 ? (LK?.avatar.ring1 ?? COL.K!) : (LK?.avatar.ring2 ?? COL.X!);
     ctx.fillRect(ox + (xx - 2) * s, oy + (yy - 2) * s, s + ov, s + ov);
   }
   for (let yy = 0; yy < AH; yy++) for (let xx = 0; xx < AW; xx++) {
     const ch = g[yy]![xx]!;
     if (ch === '.') continue;
-    ctx.fillStyle = COL[ch] ?? '#f0f';
+    const base = COL[ch] ?? '#f0f';
+    ctx.fillStyle = LK?.avatar.tint ? duotone(base, LK.avatar.tint[0], LK.avatar.tint[1]) : base;
     ctx.fillRect(ox + xx * s, oy + yy * s, s + ov, s + ov);
   }
   ctx.globalAlpha = 1;
@@ -246,20 +253,65 @@ export function drawPerson(ctx: CanvasRenderingContext2D, c: Cam, i: number, x: 
   const ov = 0.6 / (c.z * sc);
   const ox = -6 * s, oy = -PHT * s;
   const hot = st.hot ?? 0;
+  const kind = LK?.crowd.kind ?? 'figure';
+  const accent = LK?.crowd.hot ?? LK?.accent ?? COL.O!;
+  const shirts = LK?.crowd.shirts;
+  const shirt = shirts ? shirts[i % shirts.length]! : look.shirt;
+  if (kind === 'unit' || kind === 'pictogram') {
+    const col = hot > 0.5 ? accent : shirt;
+    if (kind === 'unit') {
+      const w = 10 * s;
+      ctx.fillStyle = col;
+      ctx.fillRect(-w / 2, -w - 2 * s, w, w);
+      if (hot > 0.5) { ctx.strokeStyle = LK!.crowd.outline; ctx.lineWidth = 1.5 / (c.z * sc); ctx.strokeRect(-w / 2, -w - 2 * s, w, w); }
+    } else {
+      ctx.fillStyle = col;
+      ctx.beginPath(); ctx.arc(0, -11.2 * s, 2.7 * s, 0, Math.PI * 2); ctx.fill();
+      rr(ctx, -4 * s, -7.6 * s, 8 * s, 7.6 * s, 2.6 * s); ctx.fill();
+      if (st.mode === 'phone' && hot <= 0.5) { ctx.fillStyle = LK!.crowd.outline; ctx.globalAlpha = a * 0.8; ctx.fillRect(-2 * s, -4.4 * s, 4 * s, 1.2 * s); ctx.globalAlpha = a; }
+    }
+    if (hot > 0.01) {
+      ctx.globalAlpha = a * clamp(hot * 1.5);
+      ctx.fillStyle = accent;
+      ctx.fillRect(-0.6 * s, -21 * s, 1.4 * s, 4 * s); ctx.fillRect(-0.6 * s, -16 * s, 1.4 * s, 1.4 * s);
+    }
+    ctx.globalAlpha = 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    return;
+  }
   const filled = (xx: number, yy: number) => yy >= 0 && yy < PHT && xx >= 0 && xx < PWD && g[yy]![xx] !== '.';
   // outline (ink, or signal when noticed)
-  ctx.fillStyle = hot > 0.5 ? COL.O! : COL.K!;
-  for (let yy = -1; yy < PHT; yy++) for (let xx = -1; xx <= PWD; xx++) {
-    if (filled(xx, yy)) continue;
-    let n = false;
-    for (let j = -1; j <= 1 && !n; j++) for (let k = -1; k <= 1; k++) if (filled(xx + k, yy + j)) { n = true; break; }
-    if (n) ctx.fillRect(ox + xx * s, oy + yy * s, s + ov, s + ov);
+  const ring = hot > 0.5 ? accent : (LK?.crowd.outline ?? COL.K!);
+  if (!(kind === 'silhouette' && hot <= 0.5)) {
+    ctx.fillStyle = ring;
+    for (let yy = -1; yy < PHT; yy++) for (let xx = -1; xx <= PWD; xx++) {
+      if (filled(xx, yy)) continue;
+      let n = false;
+      for (let j = -1; j <= 1 && !n; j++) for (let k = -1; k <= 1; k++) if (filled(xx + k, yy + j)) { n = true; break; }
+      if (n) ctx.fillRect(ox + xx * s, oy + yy * s, s + ov, s + ov);
+    }
   }
-  for (let yy = 0; yy < PHT; yy++) for (let xx = 0; xx < PWD; xx++) {
+  if (kind !== 'outline') for (let yy = 0; yy < PHT; yy++) for (let xx = 0; xx < PWD; xx++) {
     const k = g[yy]![xx]!;
     if (k === '.') continue;
-    ctx.fillStyle = (look as any)[k];
+    ctx.fillStyle = kind === 'silhouette' ? shirt : k === 'shirt' ? shirt : (look as any)[k];
     ctx.fillRect(ox + xx * s, oy + yy * s, s + ov, s + ov);
+  }
+  if (kind === 'silhouette' || kind === 'outline') {
+    if (st.mode !== 'phone') {
+      const d = (st.dir ?? 0) >= 0 ? 1 : 0;
+      ctx.fillStyle = hot > 0.5 ? accent : (LK?.crowd.outline ?? COL.K!);
+      for (const x0 of [3, 7]) ctx.fillRect(ox + (x0 + d) * s, oy + 5 * s, s + ov, s + ov);
+    }
+    if (hot > 0.01) {
+      ctx.globalAlpha = a * clamp(hot * 1.5);
+      ctx.fillStyle = accent;
+      for (const yy of [-6, -5, -4]) ctx.fillRect(ox + 5 * s, oy + yy * s, s + ov, s + ov);
+      ctx.fillRect(ox + 5 * s, oy - 2.5 * s, s + ov, s + ov);
+    }
+    ctx.globalAlpha = 1;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    return;
   }
   // eyes
   const px = (xx: number, yy: number, col: string) => { ctx.fillStyle = col; ctx.fillRect(ox + xx * s, oy + yy * s, s + ov, s + ov); };
@@ -271,15 +323,15 @@ export function drawPerson(ctx: CanvasRenderingContext2D, c: Cam, i: number, x: 
     px(3, 13, look.skin); px(8, 13, look.skin);
   } else {
     const d = (st.dir ?? 0) >= 0 ? 1 : 0;
-    for (const x0 of [3, 7]) { px(x0, 5, COL.E!); px(x0 + 1, 5, COL.E!); px(x0 + d, 5, hot > 0.5 ? COL.O! : COL.P!); }
+    for (const x0 of [3, 7]) { px(x0, 5, COL.E!); px(x0 + 1, 5, COL.E!); px(x0 + d, 5, hot > 0.5 ? accent : COL.P!); }
   }
   if (hot > 0.01) {
     // '!' above the head
     ctx.globalAlpha = a * clamp(hot * 1.5);
     const bx = 5.5 * s - 0.5 * s;
-    for (const yy of [-6, -5, -4]) px(5.5 - 0.5, yy, COL.O!);
+    for (const yy of [-6, -5, -4]) px(5.5 - 0.5, yy, accent);
     void bx;
-    px(5, -2.5, COL.O!);
+    px(5, -2.5, accent);
   }
   ctx.globalAlpha = 1;
   ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -295,11 +347,12 @@ export function drawEyePair(ctx: CanvasRenderingContext2D, c: Cam, x: number, y:
   for (const side of [-1, 1]) {
     const ex = side * 3.2 * s - 2 * s;
     ctx.globalAlpha = alpha;
-    ctx.fillStyle = rgba('bone', 0.92);
     const r0 = 1.5 - rows / 2;
+    if (LK?.light) { ctx.fillStyle = LK.eyes.outline; ctx.fillRect(ex - s * 0.6, (r0 - 1.5) * s - s * 0.6, 5.2 * s, rows * s + 1.2 * s); }
+    ctx.fillStyle = LK ? LK.eyes.white : rgba('bone', 0.92);
     ctx.fillRect(ex, (r0 - 1.5) * s, 4 * s, rows * s);
     if (rows >= 2) {
-      ctx.fillStyle = rgba('signal', 1);
+      ctx.fillStyle = LK ? LK.eyes.pupil : rgba('signal', 1);
       const pxp = dx > 0 ? 2.5 : 0;
       const pyp = rows === 3 ? 1 + dy * 0.5 : 0.5;
       ctx.fillRect(ex + pxp * s, (r0 - 1.5 + Math.min(rows - 1, Math.max(0, Math.round(pyp)))) * s, s * 1.5, s);
@@ -315,7 +368,11 @@ export function drawCone(ctx: CanvasRenderingContext2D, c: Cam, x: number, top: 
   if (k <= 0.005) return;
   setWorld(ctx, c, 0, 0);
   const gr = ctx.createLinearGradient(0, top, 0, floorY);
-  const col = (a: number) => warm ? `rgba(255,214,170,${a})` : `rgba(238,233,223,${a})`;
+  const cone = LK?.cone;
+  if (LK && !cone) { ctx.setTransform(1, 0, 0, 1, 0, 0); return; }
+  const col = (a: number) => cone ? hexA(cone.col, Math.min(1, a * cone.alpha / 0.26)) : warm ? `rgba(255,214,170,${a})` : `rgba(238,233,223,${a})`;
+  const prevOp = ctx.globalCompositeOperation;
+  if (cone) ctx.globalCompositeOperation = cone.op;
   gr.addColorStop(0, col(0.26 * k));
   gr.addColorStop(0.6, col(0.09 * k));
   gr.addColorStop(1, col(0.14 * k));
@@ -328,6 +385,7 @@ export function drawCone(ctx: CanvasRenderingContext2D, c: Cam, x: number, top: 
   pg.addColorStop(0, col(0.4 * k)); pg.addColorStop(1, col(0));
   ctx.fillStyle = pg;
   ctx.save(); ctx.translate(x, floorY); ctx.scale(1, 0.22); ctx.beginPath(); ctx.arc(0, 0, w1 * 0.6, 0, Math.PI * 2); ctx.restore(); ctx.fill();
+  ctx.globalCompositeOperation = prevOp;
   ctx.setTransform(1, 0, 0, 1, 0, 0);
 }
 /** Light switching on: two flickers then steady. */
