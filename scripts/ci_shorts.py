@@ -219,8 +219,9 @@ def publish(dist):
         ok = {s: i for s, i in res.items() if s != "errors"}
         errs = res.get("errors", {})
         if not ok:
-            tracker("set", str(b["no"]), "Status=Failed", f"Lesson / notes=Buffer rejected: {json.dumps(errs)[:200]}")
-            lines.append(head + f"❌ **Buffer rejected it** — {json.dumps(errs)}\n")
+            # keep it Scripted so tomorrow's run retries it (a Buffer/API problem isn't the script's fault)
+            tracker("set", str(b["no"]), f"Lesson / notes=Buffer rejected {dt.date.today()}: {json.dumps(errs)[:200]}")
+            lines.append(head + f"❌ **Buffer rejected it** (will retry tomorrow) — {json.dumps(errs)}\n")
             continue
         tracker("set", str(b["no"]), "Status=Scheduled", f"Slug={b['slug']}", f"Post date={b['date']}", f"Length (s)={round(meta['duration'])}",
                 f"Title used={title}", f"Hook style={S.get('hookStyle', '')}",
