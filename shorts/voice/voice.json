@@ -1,0 +1,8 @@
+{
+  "engine": "omnivoice",
+  "model": "k2-fsa/OmniVoice",
+  "instruct": "male, middle-aged, low pitch, american accent",
+  "num_step": 16,
+  "speed": null,
+  "seed": 7
+}

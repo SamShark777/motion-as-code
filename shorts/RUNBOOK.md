@@ -52,6 +52,13 @@ only ever holds the newest video — it is force-pushed fresh each day and never
    - Looks set in all caps (`terminal`, `spy-noir`, `pixel-quest`) fit fewer characters per line: keep
      their hook and takeaway lines short (≤ 9 words).
 6. **Build.** `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`.
+   The voice comes from `analysis/tts_vo.py`, engine set in `shorts/voice/voice.json` (OmniVoice — voice
+   cloning of the channel narrator in `shorts/voice/reference.wav`; Kokoro is the automatic fallback).
+   Read the build log: `ENGINE: omnivoice` is the normal case. On `FALLBACK: …` the video still gets made
+   with Kokoro — say so (with the reason) in the message to Shivam. On `NEW_VOICE_REFERENCE` (first
+   OmniVoice run) commit `shorts/voice/reference.wav` + `reference.txt` and send Shivam the reference
+   clip: every later video clones that voice. To use his own voice instead, he replaces those two files
+   with a 5–10 s clean recording and its exact transcript.
    Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
    Check the look really rendered (its ground, fonts and colours) and nothing is unreadable against the
    ground; if a look fails, rebuild in `pixel-lab` and note it in `Lesson / notes`.

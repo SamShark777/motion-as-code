@@ -1,31 +1,33 @@
 """Voiceover for the vertical template: data/script.json -> audio/voiceover.mp3 + data/lyrics.json.
 
-Kokoro TTS (offline ONNX, voice am_michael) speaks each script line; lines are joined with short
-pauses (longer between sections). Word timings are spread over each line's detected speech span
-by syllable weight (good enough for the karaoke wipe and the cuts). Each lyrics line keeps its
-`sec` (hook / name / study / stat / takeaway) for the template timeline.
+Engines (shorts/voice/voice.json picks one; --engine overrides):
+  omnivoice  OmniVoice (k2-fsa, Apache-2.0) — zero-shot voice cloning. The narrator is one fixed voice:
+             shorts/voice/reference.wav + reference.txt. If they don't exist yet, a voice is *designed*
+             once from `instruct` (e.g. "male, middle-aged, low pitch, american accent") and saved there,
+             so every later video clones the same voice. Commit those two files when they appear.
+             Weights (~3.3 GB) come from Hugging Face; needs huggingface.co and its CDN reachable.
+  kokoro     Kokoro (offline ONNX, voice am_michael) — the fallback when OmniVoice is unavailable.
 
-    python3 analysis/tts_vo.py [--voice am_michael] [--speed 0.92]
-Models are fetched once into ~/.cache/kokoro (GitHub releases of kokoro-onnx).
+Each script line is spoken separately and lines are joined with short pauses (longer between
+sections). Word timings are spread over each line's detected speech span by syllable weight (good
+enough for the karaoke wipe and the cuts). Each lyrics line keeps its `sec` for the template timeline.
+
+    python3 analysis/tts_vo.py [--engine omnivoice|kokoro] [--voice am_michael] [--speed 0.92]
+Prints "ENGINE: <name>" (and "FALLBACK: <reason>" if it fell back) for the pipeline log.
 """
-import argparse, json, re, subprocess, sys
+import argparse, json, os, re, subprocess, sys, time
 from pathlib import Path
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
+VOICE_DIR = ROOT / "shorts" / "voice"
 CACHE = Path.home() / ".cache" / "kokoro"
 MODELS = {
     "kokoro.onnx": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.int8.onnx",
     "voices.bin": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin",
 }
-
-
-def ensure_models():
-    CACHE.mkdir(parents=True, exist_ok=True)
-    for name, url in MODELS.items():
-        p = CACHE / name
-        if not p.exists() or p.stat().st_size < 1_000_000:
-            subprocess.run(["curl", "-sSL", "-o", str(p), url], check=True)
+REF_SENTENCE = ("Here is something most people never notice about their own mind. "
+                "Once you see it, you will start spotting it everywhere.")
 
 
 def syl(w):
@@ -41,23 +43,106 @@ def speech_span(x, sr):
     return on[0] * 0.01, (on[-1] + 1) * 0.01
 
 
+# ------------------------------------------------------------------ engines
+def kokoro_lines(texts, voice, speed):
+    CACHE.mkdir(parents=True, exist_ok=True)
+    for name, url in MODELS.items():
+        p = CACHE / name
+        if not p.exists() or p.stat().st_size < 1_000_000:
+            subprocess.run(["curl", "-sSL", "-o", str(p), url], check=True)
+    from kokoro_onnx import Kokoro
+    k = Kokoro(str(CACHE / "kokoro.onnx"), str(CACHE / "voices.bin"))
+    out = []
+    for t in texts:
+        a, sr = k.create(t, voice=voice, speed=speed, lang="en-us")
+        out.append((a.astype(np.float32), sr))
+    return out
+
+
+def ensure_omnivoice():
+    try:
+        import omnivoice  # noqa: F401
+        return
+    except ImportError:
+        pass
+    # CPU torch first (the default Linux wheel drags in ~3 GB of CUDA libraries)
+    has_cuda = subprocess.run(["bash", "-lc", "command -v nvidia-smi"], capture_output=True).returncode == 0
+    pip = [sys.executable, "-m", "pip", "install", "-q", "--break-system-packages"]
+    if not has_cuda:
+        r = subprocess.run(pip + ["torch", "torchaudio", "--index-url", "https://download.pytorch.org/whl/cpu"], capture_output=True)
+        if r.returncode != 0:
+            subprocess.run(pip + ["torch", "torchaudio"], check=True)
+    subprocess.run(pip + ["omnivoice"], check=True)
+
+
+def hf_reachable():
+    r = subprocess.run(["curl", "-s", "-o", "/dev/null", "-m", "15", "-w", "%{http_code}", "https://huggingface.co/api/models/k2-fsa/OmniVoice"],
+                       capture_output=True, text=True)
+    return r.stdout.strip() == "200"
+
+
+def omnivoice_lines(texts, cfg):
+    if not os.environ.get("HF_HUB_OFFLINE") and not hf_reachable():
+        raise RuntimeError("huggingface.co is not reachable from this environment (network allowlist)")
+    ensure_omnivoice()
+    import torch
+    import soundfile as sf
+    from omnivoice import OmniVoice, OmniVoiceGenerationConfig
+    cuda = torch.cuda.is_available()
+    torch.set_num_threads(max(1, os.cpu_count() or 1))
+    t0 = time.time()
+    model = OmniVoice.from_pretrained(cfg.get("model", "k2-fsa/OmniVoice"), device_map="cuda:0" if cuda else "cpu",
+                                      dtype=torch.float16 if cuda else torch.float32)
+    print(f"omnivoice loaded in {time.time() - t0:.0f}s on {'cuda' if cuda else 'cpu'}")
+    gc = OmniVoiceGenerationConfig(num_step=int(cfg.get("num_step", 16)))
+    ref_wav, ref_txt = VOICE_DIR / "reference.wav", VOICE_DIR / "reference.txt"
+    if not ref_wav.exists():
+        # design the narrator once, then clone it so every video has the same voice
+        torch.manual_seed(int(cfg.get("seed", 7)))
+        a = model.generate(text=REF_SENTENCE, instruct=cfg.get("instruct", "male, middle-aged, low pitch, american accent"),
+                           language="English", generation_config=OmniVoiceGenerationConfig(num_step=32))[0]
+        VOICE_DIR.mkdir(parents=True, exist_ok=True)
+        sf.write(str(ref_wav), a, model.sampling_rate)
+        ref_txt.write_text(REF_SENTENCE, encoding="utf-8")
+        print(f"NEW_VOICE_REFERENCE: designed from '{cfg.get('instruct')}' -> {ref_wav} (commit it)")
+    prompt = model.create_voice_clone_prompt(ref_audio=str(ref_wav), ref_text=ref_txt.read_text(encoding="utf-8").strip())
+    torch.manual_seed(int(cfg.get("seed", 7)))
+    t0 = time.time()
+    outs = model.generate(text=texts, voice_clone_prompt=prompt, language="English", speed=cfg.get("speed"), generation_config=gc)
+    print(f"omnivoice generated {len(texts)} lines in {time.time() - t0:.0f}s")
+    return [(np.asarray(a, dtype=np.float32), model.sampling_rate) for a in outs]
+
+
+# ------------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--engine", default=None)
     ap.add_argument("--voice", default="am_michael")
     ap.add_argument("--speed", type=float, default=0.92)
     a = ap.parse_args()
-    ensure_models()
+    cfg_path = VOICE_DIR / "voice.json"
+    cfg = json.loads(cfg_path.read_text()) if cfg_path.exists() else {}
+    engine = a.engine or cfg.get("engine", "kokoro")
     import soundfile as sf
-    from kokoro_onnx import Kokoro
-    k = Kokoro(str(CACHE / "kokoro.onnx"), str(CACHE / "voices.bin"))
     script = json.loads((ROOT / "data" / "script.json").read_text(encoding="utf-8"))
     lines = script["lines"]
+    texts = [ln.get("say") or ln["text"] for ln in lines]
+    rendered = None
+    if engine == "omnivoice":
+        try:
+            rendered = omnivoice_lines(texts, cfg)
+        except Exception as e:  # never lose a day's video to the voice step
+            print(f"FALLBACK: omnivoice failed ({type(e).__name__}: {str(e)[:300]}) -> kokoro", file=sys.stderr)
+            print(f"FALLBACK: {type(e).__name__}: {str(e)[:300]}")
+            engine = "kokoro"
+    if rendered is None:
+        rendered = kokoro_lines(texts, a.voice, a.speed)
+    print(f"ENGINE: {engine}")
+
     LEAD, TAIL = 0.35, 1.9
-    chunks, out_lines, t, sr0 = [], [], 0.0, 24000
-    for i, ln in enumerate(lines):
-        audio, sr = k.create(ln.get("say") or ln["text"], voice=a.voice, speed=a.speed, lang="en-us")
-        sr0 = sr
-        audio = audio.astype(np.float32)
+    sr0 = rendered[0][1]
+    chunks, out_lines, t = [], [], 0.0
+    for i, (ln, (audio, sr)) in enumerate(zip(lines, rendered)):
         s0, s1 = speech_span(audio, sr)
         audio = audio[int(s0 * sr): int(s1 * sr) + int(0.04 * sr)]
         dur = len(audio) / sr
@@ -81,6 +166,8 @@ def main():
     sf.write(str(wav), full, sr0)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-b:a", "192k", str(ROOT / "audio" / "voiceover.mp3")], check=True)
     (ROOT / "data" / "lyrics.json").write_text(json.dumps({"lines": out_lines}, indent=1), encoding="utf-8")
+    (ROOT / "out").mkdir(exist_ok=True)
+    (ROOT / "out" / "tts_engine.txt").write_text(engine)
     print(f"voiceover {len(full) / sr0:.2f}s, {len(out_lines)} lines")
     if len(full) / sr0 > 59:
         print("WARNING: longer than 59 s — too long for a Short; trim the script", file=sys.stderr)
