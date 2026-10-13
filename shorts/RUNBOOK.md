@@ -55,10 +55,12 @@ only ever holds the newest video — it is force-pushed fresh each day and never
    The voice comes from `analysis/tts_vo.py`, engine set in `shorts/voice/voice.json` (OmniVoice — voice
    cloning of the channel narrator in `shorts/voice/reference.wav`; Kokoro is the automatic fallback).
    Read the build log: `ENGINE: omnivoice` is the normal case. On `FALLBACK: …` the video still gets made
-   with Kokoro — say so (with the reason) in the message to Shivam. On `NEW_VOICE_REFERENCE` (first
-   OmniVoice run) commit `shorts/voice/reference.wav` + `reference.txt` and send Shivam the reference
-   clip: every later video clones that voice. To use his own voice instead, he replaces those two files
-   with a 5–10 s clean recording and its exact transcript.
+   with Kokoro — say so (with the reason) in the message to Shivam. The narrator is **Shivam's own
+   voice**: `reference.wav` is his recording (cleaned, 11 s) and `reference.txt` its transcript. Never
+   replace or delete them without his say. On the first video that comes out with `ENGINE: omnivoice`,
+   send Shivam the finished MP4 with a note that it's the first one in his cloned voice and he can
+   veto it in Metricool if the voice sounds off. (If reference.wav were ever missing, a voice gets
+   designed from `instruct` and `NEW_VOICE_REFERENCE` is printed — commit those files then.)
    Look at `preview.jpg`. If text overflows or overlaps, shorten the lines and rebuild once.
    Check the look really rendered (its ground, fonts and colours) and nothing is unreadable against the
    ground; if a look fails, rebuild in `pixel-lab` and note it in `Lesson / notes`.

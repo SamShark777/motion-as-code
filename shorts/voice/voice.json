@@ -1,8 +1,9 @@
 {
-  "engine": "omnivoice",
-  "model": "k2-fsa/OmniVoice",
-  "instruct": "male, middle-aged, low pitch, american accent",
-  "num_step": 16,
-  "speed": null,
-  "seed": 7
+ "engine": "omnivoice",
+ "model": "k2-fsa/OmniVoice",
+ "instruct": "male, middle-aged, low pitch, american accent",
+ "num_step": 16,
+ "speed": null,
+ "seed": 7,
+ "narrator": "Shivam's own voice (reference.wav recorded 2026-10-12); instruct only used if reference.wav is deleted"
 }
