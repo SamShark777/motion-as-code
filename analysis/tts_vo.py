@@ -82,6 +82,8 @@ def hf_reachable():
 
 
 def omnivoice_lines(texts, cfg):
+    if not (VOICE_DIR / "reference.wav").exists() and os.environ.get("NO_VOICE_DESIGN"):
+        raise RuntimeError("no voice reference (shorts/voice/reference.wav); in CI it comes from the VOICE_REF_OPUS_B64 secret")
     if not os.environ.get("HF_HUB_OFFLINE") and not hf_reachable():
         raise RuntimeError("huggingface.co is not reachable from this environment (network allowlist)")
     ensure_omnivoice()
