@@ -25,9 +25,13 @@ on:
         description: "Only check the Buffer connection (lists channels + post schema), build nothing"
         type: boolean
         default: false
+      voice_test:
+        description: "Only make a voice comparison (A/B MP3s on the voice-tests branch) from this slug's first lines"
+        required: false
+        default: ""
 
 concurrency:
-  group: daily-shorts-${{ inputs.buffer_check && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -56,8 +60,66 @@ jobs:
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
           exit $code
 
+  voice-test:
+    if: ${{ inputs.voice_test != '' && inputs.voice_test != null }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      NO_VOICE_DESIGN: "1"
+      HF_HUB_DISABLE_PROGRESS_BARS: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: Cache models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/kokoro
+          key: voice-models-v1
+      - name: Python packages
+        run: |
+          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -q omnivoice kokoro-onnx soundfile numpy
+      - name: Voice reference
+        env:
+          VOICE: ${{ secrets.VOICE_REF_OPUS_B64 }}
+          VOICE_V2_A: ${{ secrets.VOICE_REF_V2_A }}
+          VOICE_V2_B: ${{ secrets.VOICE_REF_V2_B }}
+        run: |
+          # v2 (20 s recording, two secrets because of GitHub's 48 KB limit) wins when present
+          if [ -n "$VOICE_V2_A" ] && [ -n "$VOICE_V2_B" ]; then
+            printf '%s%s' "$VOICE_V2_A" "$VOICE_V2_B" | base64 -d > /tmp/ref.opus
+            cp shorts/voice/reference_v2.txt shorts/voice/reference.txt
+            echo "voice: v2"
+          elif [ -n "$VOICE" ]; then
+            printf '%s' "$VOICE" | base64 -d > /tmp/ref.opus
+            echo "voice: v1"
+          else
+            echo "::warning::voice secrets not set — this video uses the fallback (Kokoro) voice"
+          fi
+          if [ -f /tmp/ref.opus ]; then
+            ffmpeg -v error -y -i /tmp/ref.opus -ac 1 -ar 24000 shorts/voice/reference.wav
+            echo "voice reference: $(ffprobe -v error -show_entries format=duration -of csv=p=0 shorts/voice/reference.wav)s"
+          fi
+      - name: Generate A/B
+        run: python3 scripts/voice_test.py "${{ inputs.voice_test }}"
+      - name: Publish to voice-tests branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          D=$(mktemp -d); cp out/voice_A.mp3 out/voice_B.mp3 "$D"; cd "$D"
+          git init -q && git checkout -q -b voice-tests && git add . 
+          git -c user.name=shorts-bot -c user.email=shorts-bot@users.noreply.github.com commit -qm "voice test ${{ inputs.voice_test }}"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
+          for f in voice_A voice_B; do echo "::notice::https://raw.githubusercontent.com/${{ github.repository }}/voice-tests/$f.mp3"; done
+
   plan:
-    if: ${{ !inputs.buffer_check }}
+    if: ${{ !inputs.buffer_check && !inputs.voice_test }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
