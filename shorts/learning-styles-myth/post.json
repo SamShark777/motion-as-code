@@ -1,0 +1,16 @@
+{
+ "no": 91,
+ "slug": "learning-styles-myth",
+ "date": "2026-10-15",
+ "slot": "11:00",
+ "due": "2026-10-15T18:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-15/learning-styles-myth.mp4",
+ "buffer": {
+  "youtube": "6acfed2d68efdf6f76c4354c",
+  "instagram": "6acfed2ed7ed7764890a8dc5",
+  "tiktok": "6acfed2e68efdf6f76c43581"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 24.4
+}

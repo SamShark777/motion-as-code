@@ -1,0 +1,16 @@
+{
+ "no": 12,
+ "slug": "testing-effect",
+ "date": "2026-10-15",
+ "slot": "17:00",
+ "due": "2026-10-16T00:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-15/testing-effect.mp4",
+ "buffer": {
+  "youtube": "6acfed31102b7fd4a48ef6cc",
+  "instagram": "6acfed31ad454aea56cdfb2b",
+  "tiktok": "6acfed3268efdf6f76c436db"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 27.6
+}

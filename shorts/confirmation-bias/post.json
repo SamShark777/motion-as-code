@@ -1,0 +1,16 @@
+{
+ "no": 2,
+ "slug": "confirmation-bias",
+ "date": "2026-10-15",
+ "slot": "14:00",
+ "due": "2026-10-15T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-15/confirmation-bias.mp4",
+ "buffer": {
+  "youtube": "6acfed2f102b7fd4a48ef5db",
+  "instagram": "6acfed30384901ac08409c3c",
+  "tiktok": "6acfed30384901ac08409c67"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 31.6
+}

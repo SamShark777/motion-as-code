@@ -1,0 +1,16 @@
+{
+ "no": 24,
+ "slug": "multitasking-myth",
+ "date": "2026-10-15",
+ "slot": "20:00",
+ "due": "2026-10-16T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-15/multitasking-myth.mp4",
+ "buffer": {
+  "youtube": "6acfed33d7ed7764890a8f2b",
+  "instagram": "6acfed33ad454aea56cdfbf1",
+  "tiktok": "6acfed34d7ed7764890a8f69"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 25.6
+}

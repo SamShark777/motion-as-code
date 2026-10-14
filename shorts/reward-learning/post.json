@@ -1,0 +1,16 @@
+{
+ "no": 82,
+ "slug": "reward-learning",
+ "date": "2026-10-15",
+ "slot": "08:00",
+ "due": "2026-10-15T15:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-15/reward-learning.mp4",
+ "buffer": {
+  "youtube": "6acfed2bd7ed7764890a8cb7",
+  "instagram": "6acfed2b384901ac08409b26",
+  "tiktok": "6acfed2cd7ed7764890a8d15"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 28.5
+}
