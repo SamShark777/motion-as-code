@@ -115,6 +115,19 @@ def omnivoice_lines(texts, cfg):
     return [(np.asarray(a, dtype=np.float32), model.sampling_rate) for a in outs]
 
 
+# ------------------------------------------------------------------ polish
+# Light "broadcast" chain for cloned voices: rumble cut, less mud, a little presence, tame
+# sibilance, gentle compression, then level. No delay-adding filters, so word timings hold.
+POLISH = ("highpass=f=75,equalizer=f=250:t=q:w=1.0:g=-2.5,equalizer=f=3200:t=q:w=1.2:g=2.5,"
+          "equalizer=f=9000:t=h:w=0.7:g=1.5,deesser=i=0.35,"
+          "acompressor=threshold=-21dB:ratio=2.5:attack=6:release=80:makeup=2,"
+          "alimiter=limit=0.89:level=false")
+
+
+def polish(src, dst):
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(src), "-af", POLISH, "-ar", "24000", str(dst)], check=True)
+
+
 # ------------------------------------------------------------------ main
 def main():
     ap = argparse.ArgumentParser()
@@ -166,6 +179,11 @@ def main():
     full = full / max(1e-6, np.abs(full).max()) * 0.89
     wav = ROOT / "audio" / "voiceover.wav"
     sf.write(str(wav), full, sr0)
+    if engine == "omnivoice" and cfg.get("polish", True):
+        tmp = wav.with_suffix(".raw.wav")
+        wav.rename(tmp)
+        polish(tmp, wav)
+        tmp.unlink()
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-b:a", "192k", str(ROOT / "audio" / "voiceover.mp3")], check=True)
     (ROOT / "data" / "lyrics.json").write_text(json.dumps({"lines": out_lines}, indent=1), encoding="utf-8")
     (ROOT / "out").mkdir(exist_ok=True)

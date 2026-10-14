@@ -2,8 +2,9 @@
  "engine": "omnivoice",
  "model": "k2-fsa/OmniVoice",
  "instruct": "male, middle-aged, low pitch, american accent",
- "num_step": 16,
+ "num_step": 32,
  "speed": null,
  "seed": 7,
- "narrator": "Shivam's own voice (reference.wav recorded 2026-10-12); instruct only used if reference.wav is deleted"
+ "narrator": "Shivam's own voice (reference from the VOICE_REF_V2_A/B secrets in CI, 20 s recording 2026-10-13); instruct only used if no reference",
+ "polish": true
 }
