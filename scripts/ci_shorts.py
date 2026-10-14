@@ -58,8 +58,13 @@ def plan():
         if len(batch) >= n:
             break
         slot = SLOTS[(taken + len(batch)) % len(SLOTS)]
-        due = dt.datetime.combine(day, dt.time.fromisoformat(slot), TZ)
-        batch.append({"no": r["No."], "slug": slug, "date": day.isoformat(), "slot": slot,
+        d = day
+        at = [x.strip() for x in (os.environ.get("SCHEDULE_AT") or "").split(",") if x.strip()]
+        if override and len(at) > len(batch):  # re-make: explicit PT times, e.g. 2026-10-14T17:00
+            when = dt.datetime.fromisoformat(at[len(batch)])
+            d, slot = when.date(), when.strftime("%H:%M")
+        due = dt.datetime.combine(d, dt.time.fromisoformat(slot), TZ)
+        batch.append({"no": r["No."], "slug": slug, "date": d.isoformat(), "slot": slot,
                       "due": due.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")})
     counts = json.loads(tracker("counts"))
     print(json.dumps({"day": day.isoformat(), "already": taken, "batch": batch, "scripted_left": counts.get("Scripted", 0) - len(batch)}, indent=1), file=sys.stderr)
@@ -191,7 +196,7 @@ def publish(dist):
     dist = Path(dist)
     batch = json.loads((ROOT / "plan.json").read_text()) if (ROOT / "plan.json").exists() else []
     have_key = bool(os.environ.get("BUFFER_API_KEY"))
-    dry = not have_key or os.environ.get("DRY_RUN") == "1" or bool(os.environ.get("ONLY_SLUGS"))
+    dry = not have_key or os.environ.get("DRY_RUN") == "1" or (bool(os.environ.get("ONLY_SLUGS")) and not os.environ.get("SCHEDULE_AT"))
     lines = []
     rec = [] if os.environ.get("ONLY_SLUGS") else reconcile(have_key)
     host(dist, batch)
@@ -201,7 +206,10 @@ def publish(dist):
         S = json.loads((ROOT / "shorts" / b["slug"] / "script.json").read_text())
         title = S["post"]["title"]
         want = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text()).get("engine", "kokoro")
-        voice = f"voice: {meta.get('engine')}" if meta.get("engine") == want and not meta.get("fallback") else f"⚠️ fallback voice ({meta.get('engine')}): {meta.get('fallback', '')}"
+        names = {"bf_emma": "Emma (British)", "bm_george": "George (British)", "bm_fable": "Fable (British)", "bf_isabella": "Isabella (British)"}
+        vcfg = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text())
+        label = names.get(vcfg.get("kokoro_voice"), vcfg.get("kokoro_voice")) if meta.get("engine") == "kokoro" else meta.get("engine")
+        voice = f"voice: {label}" if meta.get("engine") == want and not meta.get("fallback") else f"⚠️ fallback voice ({meta.get('engine')}): {meta.get('fallback', '')}"
         head = f"### {b['slot']} PT — {title}\n"
         if not meta["ok"]:
             lines.append(head + f"❌ **Not scheduled** — {'; '.join(meta['problems'])}\n")
