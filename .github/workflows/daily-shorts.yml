@@ -107,13 +107,23 @@ jobs:
       - name: Voice reference
         env:
           VOICE: ${{ secrets.VOICE_REF_OPUS_B64 }}
+          VOICE_V2_A: ${{ secrets.VOICE_REF_V2_A }}
+          VOICE_V2_B: ${{ secrets.VOICE_REF_V2_B }}
         run: |
-          if [ -n "$VOICE" ]; then
+          # v2 (20 s recording, two secrets because of GitHub's 48 KB limit) wins when present
+          if [ -n "$VOICE_V2_A" ] && [ -n "$VOICE_V2_B" ]; then
+            printf '%s%s' "$VOICE_V2_A" "$VOICE_V2_B" | base64 -d > /tmp/ref.opus
+            cp shorts/voice/reference_v2.txt shorts/voice/reference.txt
+            echo "voice: v2"
+          elif [ -n "$VOICE" ]; then
             printf '%s' "$VOICE" | base64 -d > /tmp/ref.opus
+            echo "voice: v1"
+          else
+            echo "::warning::voice secrets not set — this video uses the fallback (Kokoro) voice"
+          fi
+          if [ -f /tmp/ref.opus ]; then
             ffmpeg -v error -y -i /tmp/ref.opus -ac 1 -ar 24000 shorts/voice/reference.wav
             echo "voice reference: $(ffprobe -v error -show_entries format=duration -of csv=p=0 shorts/voice/reference.wav)s"
-          else
-            echo "::warning::VOICE_REF_OPUS_B64 secret not set — this video uses the fallback (Kokoro) voice"
           fi
       - name: App dependencies
         run: cd app && bun install
