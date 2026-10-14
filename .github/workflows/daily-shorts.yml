@@ -17,6 +17,10 @@ on:
         description: "Test: build only these slugs (comma-separated). Always a dry run."
         required: false
         default: ""
+      schedule_at:
+        description: "With only_slugs: post them for real at these PT times, comma-separated (e.g. 2026-10-14T17:00,2026-10-14T20:00)"
+        required: false
+        default: ""
       dry_run:
         description: "Build and host, but don't schedule on Buffer"
         type: boolean
@@ -42,6 +46,7 @@ env:
   SHORTS_PER_DAY: ${{ vars.SHORTS_PER_DAY || '5' }}
   SLOTS: ${{ vars.SLOTS || '08:00,11:00,14:00,17:00,20:00' }}
   ONLY_SLUGS: ${{ inputs.only_slugs }}
+  SCHEDULE_AT: ${{ inputs.schedule_at }}
 
 jobs:
   buffer-check:
