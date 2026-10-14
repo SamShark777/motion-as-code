@@ -44,7 +44,7 @@ def speech_span(x, sr):
 
 
 # ------------------------------------------------------------------ engines
-def kokoro_lines(texts, voice, speed):
+def kokoro_lines(texts, voice, speed, lang="en-us"):
     CACHE.mkdir(parents=True, exist_ok=True)
     for name, url in MODELS.items():
         p = CACHE / name
@@ -54,7 +54,7 @@ def kokoro_lines(texts, voice, speed):
     k = Kokoro(str(CACHE / "kokoro.onnx"), str(CACHE / "voices.bin"))
     out = []
     for t in texts:
-        a, sr = k.create(t, voice=voice, speed=speed, lang="en-us")
+        a, sr = k.create(t, voice=voice, speed=speed, lang=lang)
         out.append((a.astype(np.float32), sr))
     return out
 
@@ -151,7 +151,9 @@ def main():
             print(f"FALLBACK: {type(e).__name__}: {str(e)[:300]}")
             engine = "kokoro"
     if rendered is None:
-        rendered = kokoro_lines(texts, a.voice, a.speed)
+        kv = cfg.get("kokoro_voice") or a.voice
+        rendered = kokoro_lines(texts, kv, float(cfg.get("kokoro_speed") or a.speed),
+                                cfg.get("kokoro_lang") or ("en-gb" if kv[:1] == "b" else "en-us"))
     print(f"ENGINE: {engine}")
 
     LEAD, TAIL = 0.35, 1.9

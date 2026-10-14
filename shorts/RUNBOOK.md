@@ -1,7 +1,7 @@
 # Daily Shorts pipeline — runbook
 
 Up to **5 psychology Shorts a day** (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
-(vertical template + Shivam's pixel avatar, in Shivam's own cloned voice), posted to YouTube Shorts,
+(vertical template + Shivam's pixel avatar, narrated by a British TTS voice — Kokoro `bf_emma`, set in `shorts/voice/voice.json`; Shivam rejected his cloned voice as mechanical, don't switch back without asking), posted to YouTube Shorts,
 Instagram Reels and TikTok through **Buffer (free plan)**, scheduled **the day before** so Shivam can veto.
 
 Who does what:

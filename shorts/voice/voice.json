@@ -1,10 +1,13 @@
 {
- "engine": "omnivoice",
+ "engine": "kokoro",
  "model": "k2-fsa/OmniVoice",
  "instruct": "male, middle-aged, low pitch, american accent",
  "num_step": 32,
  "speed": null,
  "seed": 7,
- "narrator": "Shivam's own voice (reference from the VOICE_REF_V2_A/B secrets in CI, 20 s recording 2026-10-13); instruct only used if no reference",
- "polish": true
+ "narrator": "British narrator: Kokoro bf_emma (Shivam 2026-10-14: his cloned voice sounded mechanical \u2014 don't use it). OmniVoice settings kept below but unused.",
+ "polish": true,
+ "kokoro_voice": "bf_emma",
+ "kokoro_lang": "en-gb",
+ "kokoro_speed": 1.0
 }

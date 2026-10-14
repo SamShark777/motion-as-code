@@ -200,7 +200,8 @@ def publish(dist):
         meta = json.loads((src / "meta.json").read_text()) if (src / "meta.json").exists() else {"ok": False, "problems": ["build job failed (no output) — see the run log"]}
         S = json.loads((ROOT / "shorts" / b["slug"] / "script.json").read_text())
         title = S["post"]["title"]
-        voice = "your voice (OmniVoice)" if meta.get("engine") == "omnivoice" else f"⚠️ fallback voice ({meta.get('engine')}): {meta.get('fallback', '')}"
+        want = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text()).get("engine", "kokoro")
+        voice = f"voice: {meta.get('engine')}" if meta.get("engine") == want and not meta.get("fallback") else f"⚠️ fallback voice ({meta.get('engine')}): {meta.get('fallback', '')}"
         head = f"### {b['slot']} PT — {title}\n"
         if not meta["ok"]:
             lines.append(head + f"❌ **Not scheduled** — {'; '.join(meta['problems'])}\n")
