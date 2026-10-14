@@ -6,11 +6,11 @@
  "due": "2026-10-15T03:00:00.000Z",
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-14/social-comparison.mp4",
  "buffer": {
-  "youtube": "6ace86e7eaea728d3cae81a8",
-  "instagram": "6ace86e8cb3665561f6352f0",
-  "tiktok": "6ace86e8eaea728d3cae8207"
+  "youtube": "6acff96a38b78c67c8fec2aa",
+  "instagram": "6acff96b68bd56434b7c651d",
+  "tiktok": "6acff96b90e61174bee1ea47"
  },
  "errors": {},
- "engine": "omnivoice",
- "duration": 42.4
+ "engine": "kokoro",
+ "duration": 29.5
 }
