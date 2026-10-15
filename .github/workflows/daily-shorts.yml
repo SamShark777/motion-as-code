@@ -263,7 +263,8 @@ jobs:
           git config user.name shorts-bot
           git config user.email shorts-bot@users.noreply.github.com
           git add shorts/Psychology_Shorts_Tracker.xlsx
-          git add shorts/*/post.json shorts/long/*/post.json 2>/dev/null || true
+          git add shorts/*/post.json 2>/dev/null || true
+          git add shorts/long/*/post.json 2>/dev/null || true
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
           git commit -qm "ci: scheduled $(date -u +%F)"
           for i in 1 2 3; do git pull -q --rebase origin shorts && git push -q origin shorts && exit 0; sleep 5; done
