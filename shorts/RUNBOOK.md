@@ -101,19 +101,20 @@ a deep male narrator (Kokoro `am_onyx`, fast, short pauses) over a dark synth be
   `"sec": "ted"`. `title`, `credit`, `post` as usual; no `stat` or `hookStyle`.
 - Example: shorts/reappraisal/script.json.
 
-## Claude Design style (format `cdesign`) — current Shorts format (from 2026-10-14 evening)
+## Ted type 2 — Claude Design style (format `cdesign`) — current Shorts format (from 2026-10-14 evening)
 
 Shivam designed this look in Claude Design ("Rename Your Nerves Short") and wants it instead of the
-LottieFiles version of Ted type 1. **All new Ted type 1 Shorts use `format: "cdesign"`** (the 10-video
-experiment continues in this look; set `Visual style=ted1` as before). Convert any still-Scripted
-`ted1` (Lottie) script to this format when you next write.
+LottieFiles version of Ted type 1, and named it **Ted type 2**. **All new Shorts in the 10-video
+experiment are Ted type 2** (`format: "cdesign"`, `look: "ted2"`, tracker `Visual style=ted2`); the
+experiment counts ted1 + ted2 rows together toward 10. Convert any still-Scripted `ted1` (Lottie)
+script to Ted type 2 when you next write.
 
 How it renders: `scripts/design_build.py` voices the script (deep Onyx narrator), times every caption
 chunk to the words, writes `shorts/<slug>/index.html` (Claude Design runtime in shorts/design_kit/ +
 `engine.jsx`) and captures it frame by frame. **You write two files per video:**
 
 1. `shorts/<slug>/script.json` — `format: "cdesign"`, `handle: "@aroundthestrangeai"`, `title`, `credit`,
-   `post`, `no`, `look: "ted1"`, and `lines` = one per scene (6–8 scenes, 25–40 s total):
+   `post`, `no`, `look: "ted2"`, and `lines` = one per scene (6–8 scenes, 25–40 s total):
    `{"scene": "Calm", "color": "#1F3B73", "light": false, "art": "ArtNervous",
      "chunks": [["Nervous before"], ["a big moment?"], ["Don't tell"], ["yourself to"],
                 ["CALM down.", {"emph": "CALM", "fx": "doodle", "doodle": "❌"}]]}`
