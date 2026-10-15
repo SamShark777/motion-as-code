@@ -124,6 +124,30 @@ def main():
                 errs[s] = str(e)[:300]
         res["errors"] = errs
         print(json.dumps(res))
+    elif cmd == "post-long":
+        slug, due, url, thumb, desc = sys.argv[2:7]
+        S = json.loads((ROOT / "shorts" / "long" / slug / "script.json").read_text())
+        post = S["post"]
+        _, m = channel_map()
+        res, errs = {}, {}
+        if "youtube" not in m:
+            errs["youtube"] = "channel not connected in Buffer"
+        else:
+            inp = {"channelId": m["youtube"]["id"], "text": desc, "schedulingType": "automatic", "mode": "customScheduled", "dueAt": due,
+                   "assets": [{"video": {"url": url, "thumbnailUrl": thumb}}], "aiAssisted": False, "needsApproval": False,
+                   "metadata": {"youtube": {"title": post["title"][:100], "categoryId": "27", "privacy": "public", "madeForKids": False}}}
+            try:
+                d = gql("""mutation($input: CreatePostInput!) { createPost(input: $input) {
+                    __typename ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }""", {"input": inp})
+                r = d["createPost"]
+                if r.get("post"):
+                    res["youtube"] = r["post"]["id"]
+                else:
+                    errs["youtube"] = r.get("message")
+            except Exception as e:
+                errs["youtube"] = str(e)[:300]
+        res["errors"] = errs
+        print(json.dumps(res))
     elif cmd == "posts":
         oid, m = channel_map()
         ids = [c["id"] for c in m.values()]

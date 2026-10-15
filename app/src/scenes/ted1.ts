@@ -12,8 +12,12 @@ import { type Word } from '../engine/lyrics';
 import { clamp, ease, prog } from '../engine/util';
 import { loadScript } from './_tpl';
 
-const CW = 960, CH = 1560, CX = 60, CY = 180, R = 54;
 const SZ = 900;
+// layout per orientation: vertical Shorts (1080x1920) or long-form landscape (1920x1080)
+function layout(W: number, H: number) {
+  if (W >= H) return { W, H, CX: 150, CY: 70, CW: W - 300, CH: H - 140, R: 46, imgW: (H - 140) * 1.02, imgY: 0.56, capY: 0.83, capMax: 78, capW: W - 520, handleSz: 17 };
+  return { W, H, CX: 60, CY: 180, CW: 960, CH: 1560, R: 54, imgW: 960 * 0.98, imgY: 0.6, capY: 0.3, capMax: 84, capW: 840, handleSz: 17 };
+}
 const CAP_FONT = 'Inter-800';
 
 interface Shot { start: number; end: number; anim: AnimationItem | null; canvas: HTMLCanvasElement | null; bg: string; frames: number; fr: number; }
@@ -23,10 +27,12 @@ export default class Ted1 extends Scene {
   shots: Shot[] = [];
   chunks: { words: Word[]; start: number; end: number; text: string }[] = [];
   handle = '';
+  L = layout(1080, 1920);
 
   override async init() {
     const S: any = await loadScript();
     this.handle = S.handle ?? '';
+    this.L = layout(this.ctx.W, this.ctx.H);
     const lines = this.ctx.lyrics.lines;
     for (let i = 0; i < lines.length; i++) {
       const L = lines[i]!, meta = S.lines[i] ?? {};
@@ -72,25 +78,26 @@ export default class Ted1 extends Scene {
     const U = this.ui; U.clear();
     const ctx = U.ctx;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.fillStyle = '#000'; ctx.fillRect(0, 0, 1080, 1920);
+    const { W, H, CX, CY, CW, CH, R } = this.L, MX = W / 2;
+    ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H);
     const k = this.shotAt(t), s = this.shots[k]!;
     const lt = t - s.start, dur = Math.max(0.5, s.end - s.start);
     const pop = 1 + 0.035 * (1 - ease.outCubic(clamp(lt / 0.25)));
     const push = 1 + 0.06 * clamp(lt / dur);
     // card
     ctx.save();
-    ctx.translate(540, CY + CH / 2); ctx.scale(pop, pop); ctx.translate(-540, -(CY + CH / 2));
+    ctx.translate(MX, CY + CH / 2); ctx.scale(pop, pop); ctx.translate(-MX, -(CY + CH / 2));
     ctx.beginPath(); ctx.roundRect(CX, CY, CW, CH, R); ctx.clip();
     ctx.fillStyle = s.bg; ctx.fillRect(CX, CY, CW, CH);
     if (s.anim && s.canvas) {
       const fi = ((lt * s.fr) % s.frames + s.frames) % s.frames;
       s.anim.goToAndStop(fi, true);
-      const sc = (CW * 0.98 / SZ) * push;
-      const dw = SZ * sc, dh = SZ * sc;
-      ctx.drawImage(s.canvas, 540 - dw / 2, CY + CH * 0.6 - dh / 2, dw, dh);
+      const d = this.L.imgW * push;
+      ctx.drawImage(s.canvas, MX - d / 2, CY + CH * this.L.imgY - d / 2, d, d);
     }
     // vignette
-    const g = ctx.createRadialGradient(540, CY + CH * 0.52, CW * 0.3, 540, CY + CH * 0.52, CH * 0.75);
+    const vr = Math.max(CW, CH);
+    const g = ctx.createRadialGradient(MX, CY + CH * 0.52, Math.min(CW, CH) * 0.3, MX, CY + CH * 0.52, vr * 0.75);
     g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(0.65, 'rgba(0,0,0,0.25)'); g.addColorStop(1, 'rgba(0,0,0,0.85)');
     ctx.fillStyle = g; ctx.fillRect(CX, CY, CW, CH);
     // handle watermark
@@ -100,7 +107,7 @@ export default class Ted1 extends Scene {
       ctx.strokeStyle = '#fff'; ctx.lineWidth = 4;
       ctx.beginPath(); ctx.roundRect(hx - 34, hy - 34, 34, 34, 10); ctx.stroke();
       ctx.beginPath(); ctx.arc(hx - 17, hy - 17, 8, 0, Math.PI * 2); ctx.stroke();
-      ctx.font = font('Inter-800', 17); ctx.fillStyle = '#fff'; ctx.textAlign = 'right';
+      ctx.font = font('Inter-800', this.L.handleSz); ctx.fillStyle = '#fff'; ctx.textAlign = 'right';
       ctx.fillText(this.handle.toUpperCase(), hx, hy + 30);
       ctx.textAlign = 'left'; ctx.globalAlpha = 1;
     }
@@ -109,17 +116,17 @@ export default class Ted1 extends Scene {
     const c = this.chunks.find((ch) => t >= ch.start - 0.05 && t < ch.end + 0.12) ?? null;
     if (c) {
       const a = prog(t, c.start - 0.05, c.start + 0.05);
-      const size = Math.min(84, (CW - 120) / Math.max(1, measure(c.text, CAP_FONT, 1)));
+      const size = Math.min(this.L.capMax, this.L.capW / Math.max(1, measure(c.text, CAP_FONT, 1)));
       const w = measure(c.text, CAP_FONT, size);
-      const y = CY + CH * 0.3;
+      const y = CY + CH * this.L.capY;
       ctx.font = font(CAP_FONT, size);
       ctx.globalAlpha = a;
       ctx.shadowColor = 'rgba(0,0,0,0.85)'; ctx.shadowBlur = 18; ctx.shadowOffsetY = 4;
       ctx.lineJoin = 'round'; ctx.lineWidth = size * 0.12; ctx.strokeStyle = 'rgba(0,0,0,0.75)';
-      ctx.strokeText(c.text, 540 - w / 2, y);
+      ctx.strokeText(c.text, MX - w / 2, y);
       ctx.shadowBlur = 0; ctx.shadowOffsetY = 0;
       ctx.fillStyle = '#fff';
-      ctx.fillText(c.text, 540 - w / 2, y);
+      ctx.fillText(c.text, MX - w / 2, y);
       ctx.globalAlpha = 1;
     }
     comp.draw(renderer, U.upload(), out);

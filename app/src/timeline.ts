@@ -15,6 +15,7 @@ const scene = (name: string) => () => {
 };
 
 export function makeTimeline(ly: Lyrics, au: AudioData): TimelineEntry[] {
+  if (ly.lines.length && ly.lines.every((l) => (l as any).sec === 'ted')) return [{ id: 'ted1', load: scene('ted1'), start: 0, end: au.duration }];
   if (VERTICAL) return templateTimeline(ly, au);
   /** Cut in the pause before the line containing q: 0.18 s before its first word (less if the pause is short). */
   const cut = (q: string, nth = 0) => {
