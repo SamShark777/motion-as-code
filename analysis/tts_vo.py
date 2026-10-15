@@ -140,6 +140,9 @@ def main():
     engine = a.engine or cfg.get("engine", "kokoro")
     import soundfile as sf
     script = json.loads((ROOT / "data" / "script.json").read_text(encoding="utf-8"))
+    cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
+    if script.get("voice", {}).get("engine"):
+        engine = script["voice"]["engine"]
     lines = script["lines"]
     texts = [ln.get("say") or ln["text"] for ln in lines]
     rendered = None
@@ -156,7 +159,7 @@ def main():
                                 cfg.get("kokoro_lang") or ("en-gb" if kv[:1] == "b" else "en-us"))
     print(f"ENGINE: {engine}")
 
-    LEAD, TAIL = 0.35, 1.9
+    LEAD, TAIL = (0.15, 1.0) if script.get("format") == "ted1" else (0.35, 1.9)
     sr0 = rendered[0][1]
     chunks, out_lines, t = [], [], 0.0
     for i, (ln, (audio, sr)) in enumerate(zip(lines, rendered)):
@@ -175,6 +178,8 @@ def main():
         out_lines.append({"text": ln["text"], "sec": ln["sec"], "start": round(st, 3), "end": round(st + dur, 3), "words": ws})
         nxt = lines[i + 1]["sec"] if i + 1 < len(lines) else None
         pause = 0.0 if nxt is None else (0.68 if nxt != ln["sec"] else 0.5)
+        if ln["sec"] == "ted" and nxt is not None:
+            pause = 0.24  # fast, continuous narration
         chunks += [audio, np.zeros(int(pause * sr), np.float32)]
         t += dur + pause
     full = np.concatenate([np.zeros(int(LEAD * sr0), np.float32)] + chunks + [np.zeros(int(TAIL * sr0), np.float32)])

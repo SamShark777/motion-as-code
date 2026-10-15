@@ -20,13 +20,19 @@ if [ -z "${CHROME_PATH:-}" ]; then
 fi
 
 cp "$DIR/script.json" "$ROOT/data/script.json"
+FORMAT=$(python3 -c "import json;print(json.load(open('$DIR/script.json')).get('format','tpl'))")
+if [ "$FORMAT" = "ted1" ]; then
+  mkdir -p "$ROOT/data/lottie"
+  cp "$DIR"/lottie/*.json "$ROOT/data/lottie/" 2>/dev/null || true
+  [ -d "$ROOT/shorts/lottie" ] && cp "$ROOT"/shorts/lottie/*.json "$ROOT/data/lottie/" 2>/dev/null || true
+fi
 python3 "$ROOT/analysis/tts_vo.py"
 python3 "$ROOT/analysis/audio_vo.py"
 
 cd "$ROOT/app"
 bun scripts/render.ts video --vertical --samples 1 --crf 18 --noaudio --out "$ROOT/out/$SLUG.raw.mp4"
 cd "$ROOT"
-TPL=1 python3 analysis/sfx_mix.py
+if [ "$FORMAT" = "ted1" ]; then python3 analysis/ted_music.py; else TPL=1 python3 analysis/sfx_mix.py; fi
 ffmpeg -v error -y -i "out/$SLUG.raw.mp4" -i out/mix.wav -map 0:v -map 1:a \
   -c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart \
   "$DIR/$SLUG.mp4"

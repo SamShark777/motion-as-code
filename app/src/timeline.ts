@@ -39,6 +39,8 @@ export function makeTimeline(ly: Lyrics, au: AudioData): TimelineEntry[] {
 
 /** The vertical script-driven template: one plate per section (lines carry `sec` from tts_vo.py). */
 function templateTimeline(ly: Lyrics, au: AudioData): TimelineEntry[] {
+  // "Ted type 1": one card-montage plate for the whole video
+  if (ly.lines.length && ly.lines.every((l) => (l as any).sec === 'ted')) return [{ id: 'ted1', load: scene('ted1'), start: 0, end: au.duration }];
   const first = (secs: string[]) => ly.lines.findIndex((l) => secs.includes((l as any).sec));
   const cutAt = (i: number) => {
     const l = ly.lines[i]!, prev = ly.lines[i - 1];

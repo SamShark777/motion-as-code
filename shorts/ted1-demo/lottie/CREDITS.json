@@ -1,0 +1,65 @@
+{
+ "brain_bulb": {
+  "name": "brain",
+  "id": "82062",
+  "url": "https://assets-v2.lottiefiles.com/a/37f1257e-1173-11ee-8e68-4f9a3fb9dea0/FSJdgqhp9f.json",
+  "author": {
+   "username": "/81xsbdo7ikulqk26",
+   "firstName": "Yanir Danino"
+  }
+ },
+ "friends": {
+  "name": "friendships",
+  "id": "27230",
+  "url": "https://assets-v2.lottiefiles.com/a/62f6015a-1163-11ee-b958-b30f2c83f07c/bzEOHHjQfS.json",
+  "author": {
+   "username": "/jt0ahkuf8hdba5y4",
+   "firstName": "Paul"
+  }
+ },
+ "helping_hand": {
+  "name": "orange helping hand",
+  "id": "147242",
+  "url": "https://assets-v2.lottiefiles.com/a/099d1642-118c-11ee-a59d-9b7ca22bb25d/VOHE6hsDTf.json",
+  "author": {
+   "username": "/5qc2s32xq0amje1u",
+   "firstName": "Samuel"
+  }
+ },
+ "thinking_man": {
+  "name": "Thinking",
+  "id": "86047",
+  "url": "https://assets-v2.lottiefiles.com/a/929553a0-1174-11ee-9d92-3f224f714b1f/EN2CiakJNL.json",
+  "author": {
+   "username": "/rkaizk1iac",
+   "firstName": "Arslan Sid"
+  }
+ },
+ "two_talking": {
+  "name": "communication",
+  "id": "83605",
+  "url": "https://assets-v2.lottiefiles.com/a/c9044c44-1173-11ee-a88b-8b8dd17ab145/2BYMiZh2nS.json",
+  "author": {
+   "username": "/vag1syuxxz",
+   "firstName": "joshua dias"
+  }
+ },
+ "three_talking": {
+  "name": "friends",
+  "id": "75531",
+  "url": "https://assets-v2.lottiefiles.com/a/19a3f490-1171-11ee-a4b2-6fae2fb639bc/ej36qYscn8.json",
+  "author": {
+   "username": "/lizatawaf",
+   "firstName": "liza tawaf"
+  }
+ },
+ "portrait": {
+  "name": "thinking",
+  "id": "1050407",
+  "url": "https://assets-v2.lottiefiles.com/a/34fbf646-55c8-11f0-abba-fb961e43bb9d/PWp2BGKJnM.json",
+  "author": {
+   "username": "/9hsyuz7hkbfke537",
+   "firstName": "Maria"
+  }
+ }
+}

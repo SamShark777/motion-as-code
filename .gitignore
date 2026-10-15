@@ -26,3 +26,6 @@ shorts/drive_uploader.gs
 # voice reference is private (GitHub secret VOICE_REF_OPUS_B64), never commit it
 shorts/voice/reference.wav
 shorts/voice/*.opus
+data/lottie/
+shorts/*/lottie/*.json
+!shorts/*/lottie/CREDITS.json

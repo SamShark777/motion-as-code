@@ -1,0 +1,65 @@
+{
+ "slug": "ted1-demo",
+ "format": "ted1",
+ "title": [
+  "Cheat Codes",
+  "Psychology"
+ ],
+ "credit": "Jecker & Landy 1969 \u00b7 Chartrand & Bargh 1999",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "ted",
+   "text": "Two psychology tricks that work like cheat codes.",
+   "shot": "brain_bulb",
+   "bg": "#E8C547"
+  },
+  {
+   "sec": "ted",
+   "text": "Want someone to like you more?",
+   "shot": "friends",
+   "bg": "#E9E4D8"
+  },
+  {
+   "sec": "ted",
+   "text": "Ask them for a small favour.",
+   "shot": "helping_hand",
+   "bg": "#B3202A"
+  },
+  {
+   "sec": "ted",
+   "text": "Helping you makes their brain decide they must like you. It's called the Ben Franklin effect.",
+   "shot": "thinking_man",
+   "bg": "#F1ECE2"
+  },
+  {
+   "sec": "ted",
+   "text": "Two. Quietly mirror their posture.",
+   "shot": "two_talking",
+   "bg": "#E07A2E"
+  },
+  {
+   "sec": "ted",
+   "text": "In experiments, people who were mimicked liked their partner more.",
+   "shot": "three_talking",
+   "bg": "#2B6E7A"
+  },
+  {
+   "sec": "ted",
+   "text": "Follow for more.",
+   "shot": "portrait",
+   "bg": "#ECE7DD"
+  }
+ ],
+ "post": {
+  "title": "2 Psychology Tricks That Work Like Cheat Codes #shorts",
+  "description": "Demo.",
+  "tags": []
+ },
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.08
+ }
+}
