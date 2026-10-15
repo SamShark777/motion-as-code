@@ -1,0 +1,240 @@
+{
+ "slug": "rename-nerves",
+ "format": "cdesign",
+ "title": [
+  "I Am",
+  "Excited"
+ ],
+ "credit": "Brooks · 2014",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Calm",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtNervous",
+   "chunks": [
+    [
+     "Nervous before"
+    ],
+    [
+     "a big moment?"
+    ],
+    [
+     "Don't tell"
+    ],
+    [
+     "yourself to"
+    ],
+    [
+     "CALM down.",
+     {
+      "emph": "CALM",
+      "fx": "doodle",
+      "doodle": "❌"
+     }
+    ]
+   ],
+   "text": "Nervous before a big moment? Don't tell yourself to CALM down."
+  },
+  {
+   "sec": "cd",
+   "scene": "Excited",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtCheer",
+   "chunks": [
+    [
+     "Say three"
+    ],
+    [
+     "words instead."
+    ],
+    [
+     "I am EXCITED.",
+     {
+      "emph": "EXCITED",
+      "fx": "stamp",
+      "block": "#E0262F"
+     }
+    ]
+   ],
+   "text": "Say three words instead. I am EXCITED."
+  },
+  {
+   "sec": "cd",
+   "scene": "Karaoke",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtSinger",
+   "chunks": [
+    [
+     "Harvard researcher"
+    ],
+    [
+     "Alison Brooks"
+    ],
+    [
+     "had people"
+    ],
+    [
+     "say it"
+    ],
+    [
+     "before singing"
+    ],
+    [
+     "KARAOKE",
+     {
+      "emph": "KARAOKE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "or giving"
+    ],
+    [
+     "a speech."
+    ]
+   ],
+   "text": "Harvard researcher Alison Brooks had people say it before singing KARAOKE or giving a speech."
+  },
+  {
+   "sec": "cd",
+   "scene": "Better",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtSpeaker",
+   "chunks": [
+    [
+     "They performed"
+    ],
+    [
+     "BETTER",
+     {
+      "emph": "BETTER",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "than people"
+    ],
+    [
+     "who tried"
+    ],
+    [
+     "to calm down."
+    ]
+   ],
+   "text": "They performed BETTER than people who tried to calm down."
+  },
+  {
+   "sec": "cd",
+   "scene": "Same",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtHeart",
+   "chunks": [
+    [
+     "Anxiety and"
+    ],
+    [
+     "excitement feel"
+    ],
+    [
+     "almost the"
+    ],
+    [
+     "SAME",
+     {
+      "emph": "SAME",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "in your body."
+    ]
+   ],
+   "text": "Anxiety and excitement feel almost the SAME in your body."
+  },
+  {
+   "sec": "cd",
+   "scene": "Rename",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtBrain",
+   "chunks": [
+    [
+     "So don't"
+    ],
+    [
+     "fight the"
+    ],
+    [
+     "feeling."
+    ],
+    [
+     "RENAME it.",
+     {
+      "emph": "RENAME",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "So don't fight the feeling. RENAME it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Interview",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtHandshake",
+   "chunks": [
+    [
+     "Save this"
+    ],
+    [
+     "for your next"
+    ],
+    [
+     "INTERVIEW",
+     {
+      "emph": "INTERVIEW",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ],
+    [
+     "and follow,"
+    ],
+    [
+     "because tomorrow's"
+    ],
+    [
+     "trick works"
+    ],
+    [
+     "on other people."
+    ]
+   ],
+   "text": "Save this for your next INTERVIEW and follow, because tomorrow's trick works on other people."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Say These 3 Words Before Anything Scary #shorts",
+  "description": "Brooks (2014): people who said \"I am excited\" before singing or public speaking performed better than those who tried to calm down. #psychology #shorts #anxiety #confidence",
+  "tags": [
+   "reappraisal",
+   "anxiety",
+   "psychology"
+  ]
+ }
+}

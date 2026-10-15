@@ -101,6 +101,39 @@ a deep male narrator (Kokoro `am_onyx`, fast, short pauses) over a dark synth be
   `"sec": "ted"`. `title`, `credit`, `post` as usual; no `stat` or `hookStyle`.
 - Example: shorts/reappraisal/script.json.
 
+## Claude Design style (format `cdesign`) — current Shorts format (from 2026-10-14 evening)
+
+Shivam designed this look in Claude Design ("Rename Your Nerves Short") and wants it instead of the
+LottieFiles version of Ted type 1. **All new Ted type 1 Shorts use `format: "cdesign"`** (the 10-video
+experiment continues in this look; set `Visual style=ted1` as before). Convert any still-Scripted
+`ted1` (Lottie) script to this format when you next write.
+
+How it renders: `scripts/design_build.py` voices the script (deep Onyx narrator), times every caption
+chunk to the words, writes `shorts/<slug>/index.html` (Claude Design runtime in shorts/design_kit/ +
+`engine.jsx`) and captures it frame by frame. **You write two files per video:**
+
+1. `shorts/<slug>/script.json` — `format: "cdesign"`, `handle: "@aroundthestrangeai"`, `title`, `credit`,
+   `post`, `no`, `look: "ted1"`, and `lines` = one per scene (6–8 scenes, 25–40 s total):
+   `{"scene": "Calm", "color": "#1F3B73", "light": false, "art": "ArtNervous",
+     "chunks": [["Nervous before"], ["a big moment?"], ["Don't tell"], ["yourself to"],
+                ["CALM down.", {"emph": "CALM", "fx": "doodle", "doodle": "❌"}]]}`
+   - The narration is the chunks joined; each chunk 1–3 words, in reading order.
+   - Exactly ONE emphasis chunk per scene; its word is in CAPS in the chunk text and in `emph`.
+     Vary `fx` across scenes: `pop`, `circle` (+`mark` colour), `underline` (+`mark`), `stamp`
+     (+`block` colour), `type`, `glitch` (numbers, surprising facts), `doodle` (+ one emoji).
+   - `color` rotates #1F3B73 #E9E4D8 #B3202A #E8C547 #2B6E7A #E07A2E #6A3FA0; `light: true` on light colours.
+   - Same writing rules as Ted type 1: hook first, situation → move → why (study named), a real outro.
+2. `shorts/<slug>/art.jsx` — one animated SVG illustration component per scene, drawn in a 972×1728
+   viewBox (the card), as pure functions of time `T` (seconds, global) and `t` (seconds into the scene):
+   no state, no effects, no timers, no Math.random (use the `hsh` helper). Flat vector style like the
+   example: bold shapes, ink #141821, skin tones, a big soft circle behind the subject, characters with
+   blinking eyes / small loops (sway, bob, confetti, sweat drops). Keep the subject in the lower 60%
+   (captions sit in the top third). Copy the helper block (MOTION, INK, SKIN…, osc, blink, hsh, tw, Eye)
+   from `shorts/rename-nerves/art.jsx` — the reference for quality and style — and end the file with
+   `Object.assign(window, { ArtA, ArtB, … })` exporting every `art` named in the script.
+3. Check before pushing: `npm i --prefix /tmp/babel @babel/standalone` once, then
+   `cd scripts && BABEL=/tmp/babel/node_modules/@babel/standalone node check_art.mjs <slug>` must print ok.
+
 ## Long-form (Ted type 1, 16:9, YouTube, twice a week)
 
 Shivam asked for long-form Ted type 1 videos twice a week alongside the Shorts.

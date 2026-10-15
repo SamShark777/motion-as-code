@@ -19,6 +19,14 @@ if [ -z "${CHROME_PATH:-}" ]; then
   export CHROME_PATH
 fi
 
+FORMAT0=$(python3 -c "import json;print(json.load(open('$DIR/script.json')).get('format','tpl'))")
+if [ "$FORMAT0" = "cdesign" ]; then
+  # Claude Design style: React/SVG scenes captured frame by frame (scripts/design_build.py)
+  ( cd "$ROOT/app" && [ -d node_modules ] || bun install )
+  [ -n "${CHROME_PATH:-}" ] || export CHROME_PATH="$(ls -d /opt/pw-browsers/chromium-*/chrome-linux/chrome 2>/dev/null | head -1 || command -v google-chrome)"
+  python3 "$ROOT/scripts/design_build.py" "$SLUG"
+  exit 0
+fi
 cp "$DIR/script.json" "$ROOT/data/script.json"
 FORMAT=$(python3 -c "import json;print(json.load(open('$DIR/script.json')).get('format','tpl'))")
 if [ "$FORMAT" = "ted1" ]; then
