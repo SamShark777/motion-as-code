@@ -12,5 +12,10 @@
  },
  "errors": {},
  "engine": "omnivoice",
- "duration": 41.5
+ "duration": 41.5,
+ "links": {
+  "youtube": "https://www.youtube.com/shorts/9lFR6jU7wlw",
+  "instagram": "https://www.instagram.com/reel/DeeqMdJAV7D/",
+  "tiktok": "https://tiktok.com/@shivam.sharma85/video/7696539115663150350"
+ }
 }

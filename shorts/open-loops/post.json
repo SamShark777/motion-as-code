@@ -1,0 +1,16 @@
+{
+ "no": 101,
+ "slug": "open-loops",
+ "date": "2026-10-15",
+ "slot": "21:15",
+ "due": "2026-10-16T04:15:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-15/open-loops.mp4",
+ "buffer": {
+  "youtube": "6ad0715a8b6f374826e2018a",
+  "instagram": "6ad0715b8886414c963c3815",
+  "tiktok": "6ad0715b0ad4869c077e294a"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 40.9
+}
