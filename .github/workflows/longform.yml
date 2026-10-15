@@ -60,15 +60,19 @@ jobs:
       - uses: actions/cache@v4
         with: { path: ~/.cache/kokoro, key: kokoro-v1 }
       - run: pip install -q kokoro-onnx soundfile numpy pillow openpyxl
-      - name: Illustrations
-        run: python3 scripts/lottie_pick.py "long/$SLUG"
-      - name: Voice + audio analysis
+      - name: Voice, timing, scenes
         run: |
           mkdir -p data/lottie out
-          cp shorts/long/$SLUG/lottie/*.json data/lottie/
-          cp shorts/long/$SLUG/script.json data/script.json
-          python3 analysis/tts_vo.py
-          python3 analysis/audio_vo.py
+          FORMAT=$(python3 -c "import json;print(json.load(open('shorts/long/$SLUG/script.json')).get('format','ted1'))")
+          if [ "$FORMAT" = "cdesign" ]; then
+            python3 scripts/design_build.py "long/$SLUG" --stage prep      # Ted type 2: voice + caption timing + index.html
+          else
+            python3 scripts/lottie_pick.py "long/$SLUG"                     # Ted type 1 (Lottie)
+            cp shorts/long/$SLUG/lottie/*.json data/lottie/
+            cp shorts/long/$SLUG/script.json data/script.json
+            python3 analysis/tts_vo.py
+            python3 analysis/audio_vo.py
+          fi
       - id: c
         run: python3 scripts/ci_long.py chunks
       - uses: actions/upload-artifact@v4
@@ -102,8 +106,14 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome
         run: |
           mkdir -p chunks
-          cd app && bun scripts/render.ts video --samples 1 --fps 30 --crf 20 --from ${{ matrix.from }} --to ${{ matrix.to }} --noaudio --out ../chunks/chunk_${{ matrix.k }}.mp4 2>&1 | tr '\r' '\n' | grep -v "frames  " || true
-          test -s ../chunks/chunk_${{ matrix.k }}.mp4
+          SLUG="${{ needs.plan.outputs.slug }}"
+          FORMAT=$(python3 -c "import json;print(json.load(open('shorts/long/$SLUG/script.json')).get('format','ted1'))")
+          if [ "$FORMAT" = "cdesign" ]; then
+            python3 scripts/design_build.py "long/$SLUG" --stage capture --from ${{ matrix.from }} --to ${{ matrix.to }} --out "$PWD/chunks/chunk_${{ matrix.k }}.mp4" 2>&1 | tr '\r' '\n' | grep -v " fps " || true
+          else
+            (cd app && bun scripts/render.ts video --samples 1 --fps 30 --crf 20 --from ${{ matrix.from }} --to ${{ matrix.to }} --noaudio --out ../chunks/chunk_${{ matrix.k }}.mp4 2>&1 | tr '\r' '\n' | grep -v "frames  " || true)
+          fi
+          test -s chunks/chunk_${{ matrix.k }}.mp4
       - uses: actions/upload-artifact@v4
         with: { name: "chunk-${{ matrix.k }}", path: "chunks/chunk_${{ matrix.k }}.mp4", retention-days: 3 }
 
