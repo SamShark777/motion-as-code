@@ -1,0 +1,298 @@
+{
+ "slug": "fomo",
+ "no": 85,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Missing Out",
+  "FOMO"
+ ],
+ "credit": "Przybylski et al. · 2013",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Imagine",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtFoPhone",
+   "chunks": [
+    [
+     "What do you"
+    ],
+    [
+     "IMAGINE",
+     {
+      "emph": "IMAGINE",
+      "fx": "doodle",
+      "doodle": "💭"
+     }
+    ],
+    [
+     "happening"
+    ],
+    [
+     "while you're"
+    ],
+    [
+     "offline?"
+    ]
+   ],
+   "text": "What do you IMAGINE happening while you're offline?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Party",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtFoParty",
+   "chunks": [
+    [
+     "A party,"
+    ],
+    [
+     "a joke,"
+    ],
+    [
+     "a plan,"
+    ],
+    [
+     "all without you."
+    ],
+    [
+     "So you keep"
+    ],
+    [
+     "CHECKING.",
+     {
+      "emph": "CHECKING",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "A party, a joke, a plan, all without you. So you keep CHECKING."
+  },
+  {
+   "sec": "cd",
+   "scene": "Scale",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtFoScale",
+   "chunks": [
+    [
+     "That's fear"
+    ],
+    [
+     "of missing out."
+    ],
+    [
+     "Andrew Przybylski"
+    ],
+    [
+     "and colleagues"
+    ],
+    [
+     "built the"
+    ],
+    [
+     "FIRST",
+     {
+      "emph": "FIRST",
+      "fx": "pop"
+     }
+    ],
+    [
+     "scale for it."
+    ]
+   ],
+   "text": "That's fear of missing out. Andrew Przybylski and colleagues built the FIRST scale for it.",
+   "say": "That's fear of missing out. Andrew Shuh-bill-skee and colleagues built the First scale for it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Mood",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtFoMood",
+   "chunks": [
+    [
+     "People higher"
+    ],
+    [
+     "in FOMO"
+    ],
+    [
+     "tended to have"
+    ],
+    [
+     "lower"
+    ],
+    [
+     "MOOD",
+     {
+      "emph": "MOOD",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "and life"
+    ],
+    [
+     "satisfaction."
+    ]
+   ],
+   "text": "People higher in FOMO tended to have lower MOOD and life satisfaction."
+  },
+  {
+   "sec": "cd",
+   "scene": "Driving",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtFoDriving",
+   "chunks": [
+    [
+     "They used"
+    ],
+    [
+     "social media more,"
+    ],
+    [
+     "and checked it"
+    ],
+    [
+     "in lectures,"
+    ],
+    [
+     "even while"
+    ],
+    [
+     "DRIVING.",
+     {
+      "emph": "DRIVING",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "They used social media more, and checked it in lectures, even while DRIVING."
+  },
+  {
+   "sec": "cd",
+   "scene": "Link",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtFoLink",
+   "chunks": [
+    [
+     "That's a"
+    ],
+    [
+     "LINK,",
+     {
+      "emph": "LINK",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "not proof"
+    ],
+    [
+     "that FOMO"
+    ],
+    [
+     "causes it."
+    ]
+   ],
+   "text": "That's a LINK, not proof that FOMO causes it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Purpose",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtFoChoose",
+   "chunks": [
+    [
+     "So notice"
+    ],
+    [
+     "the imagined party"
+    ],
+    [
+     "in your head."
+    ],
+    [
+     "Then pick"
+    ],
+    [
+     "what's in front"
+    ],
+    [
+     "of you on"
+    ],
+    [
+     "PURPOSE.",
+     {
+      "emph": "PURPOSE",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "So notice the imagined party in your head. Then pick what's in front of you on PURPOSE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Hour",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtFoHour",
+   "chunks": [
+    [
+     "Turn notifications"
+    ],
+    [
+     "off for one"
+    ],
+    [
+     "HOUR",
+     {
+      "emph": "HOUR",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "today, and follow"
+    ],
+    [
+     "to win back"
+    ],
+    [
+     "more of"
+    ],
+    [
+     "your attention."
+    ]
+   ],
+   "text": "Turn notifications off for one HOUR today, and follow to win back more of your attention."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "What Your Brain Imagines When You're Offline #shorts",
+  "description": "Przybylski et al. (2013) built the first fear-of-missing-out scale: people higher in FOMO tended to report lower mood and life satisfaction, used social media more, and were more likely to check it in lectures and while driving (a correlation, not proof of cause). #psychology #shorts #fomo #socialmedia",
+  "tags": [
+   "fomo",
+   "social media",
+   "attention",
+   "psychology"
+  ]
+ }
+}

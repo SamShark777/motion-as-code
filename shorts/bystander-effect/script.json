@@ -1,0 +1,270 @@
+{
+ "slug": "bystander-effect",
+ "no": 65,
+ "format": "cdesign",
+ "title": [
+  "Someone Else",
+  "Bystander"
+ ],
+ "credit": "Darley & Latané · 1968",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Crowd",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtByCrowd",
+   "chunks": [
+    [
+     "What changes"
+    ],
+    [
+     "when everyone thinks"
+    ],
+    [
+     "SOMEONE else",
+     {
+      "emph": "SOMEONE",
+      "fx": "doodle",
+      "doodle": "👀"
+     }
+    ],
+    [
+     "will act?"
+    ]
+   ],
+   "text": "What changes when everyone thinks SOMEONE else will act?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Intercom",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtByIntercom",
+   "chunks": [
+    [
+     "John Darley and"
+    ],
+    [
+     "Bibb Latané"
+    ],
+    [
+     "had students talk"
+    ],
+    [
+     "over an INTERCOM.",
+     {
+      "emph": "INTERCOM",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "John Darley and Bibb Latané had students talk over an INTERCOM."
+  },
+  {
+   "sec": "cd",
+   "scene": "Seizure",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtBySeizure",
+   "chunks": [
+    [
+     "Then one voice"
+    ],
+    [
+     "seemed to have"
+    ],
+    [
+     "a SEIZURE.",
+     {
+      "emph": "SEIZURE",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "Then one voice seemed to have a SEIZURE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Alone",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtByAlone",
+   "chunks": [
+    [
+     "Students who thought"
+    ],
+    [
+     "they were"
+    ],
+    [
+     "the only listener?"
+    ],
+    [
+     "EIGHTY-FIVE percent",
+     {
+      "emph": "EIGHTY-FIVE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "went for help"
+    ],
+    [
+     "before it ended."
+    ]
+   ],
+   "text": "Students who thought they were the only listener? EIGHTY-FIVE percent went for help before it ended."
+  },
+  {
+   "sec": "cd",
+   "scene": "Group",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtByGroup",
+   "chunks": [
+    [
+     "Thought four others"
+    ],
+    [
+     "could hear too?"
+    ],
+    [
+     "Only THIRTY-ONE",
+     {
+      "emph": "THIRTY-ONE",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "percent did."
+    ]
+   ],
+   "text": "Thought four others could hear too? Only THIRTY-ONE percent did."
+  },
+  {
+   "sec": "cd",
+   "scene": "Diffusion",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtByDiffusion",
+   "chunks": [
+    [
+     "Everyone assumes"
+    ],
+    [
+     "someone else"
+    ],
+    [
+     "has it. That's"
+    ],
+    [
+     "DIFFUSION of",
+     {
+      "emph": "DIFFUSION",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "responsibility."
+    ]
+   ],
+   "text": "Everyone assumes someone else has it. That's DIFFUSION of responsibility."
+  },
+  {
+   "sec": "cd",
+   "scene": "One",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtByOne",
+   "chunks": [
+    [
+     "Need help"
+    ],
+    [
+     "in a crowd?"
+    ],
+    [
+     "Pick ONE person.",
+     {
+      "emph": "ONE",
+      "fx": "type"
+     }
+    ],
+    [
+     "Give them"
+    ],
+    [
+     "a specific job."
+    ]
+   ],
+   "text": "Need help in a crowd? Pick ONE person. Give them a specific job."
+  },
+  {
+   "sec": "cd",
+   "scene": "Jacket",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtByJacket",
+   "chunks": [
+    [
+     "You in the"
+    ],
+    [
+     "red jacket,"
+    ],
+    [
+     "call an AMBULANCE.",
+     {
+      "emph": "AMBULANCE",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "Save this"
+    ],
+    [
+     "for the day"
+    ],
+    [
+     "it matters,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for psychology"
+    ],
+    [
+     "that works"
+    ],
+    [
+     "in real life."
+    ]
+   ],
+   "text": "You in the red jacket, call an AMBULANCE. Save this for the day it matters, and follow for psychology that works in real life."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Nobody Helps When Everyone Is Watching #shorts",
+  "description": "Darley & Latané (1968): 85% of students who thought they alone heard a seizure over an intercom went for help before it ended, vs 31% who thought four others heard too. #psychology #shorts #bystandereffect #safety",
+  "tags": [
+   "bystander effect",
+   "diffusion of responsibility",
+   "emergency",
+   "psychology"
+  ]
+ },
+ "look": "ted2"
+}

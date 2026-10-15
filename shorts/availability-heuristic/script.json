@@ -1,0 +1,275 @@
+{
+ "slug": "availability-heuristic",
+ "no": 4,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Availability",
+  "Heuristic"
+ ],
+ "credit": "Lichtenstein et al. · 1978",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Headline",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtAvHeadline",
+   "chunks": [
+    [
+     "Why can"
+    ],
+    [
+     "a scary headline"
+    ],
+    [
+     "feel like"
+    ],
+    [
+     "a COMMON event?",
+     {
+      "emph": "COMMON",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Why can a scary headline feel like a COMMON event?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Forty-one",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtAvSurvey",
+   "chunks": [
+    [
+     "Sarah Lichtenstein,"
+    ],
+    [
+     "Paul Slovic"
+    ],
+    [
+     "and colleagues"
+    ],
+    [
+     "asked people"
+    ],
+    [
+     "how often"
+    ],
+    [
+     "FORTY-ONE causes",
+     {
+      "emph": "FORTY-ONE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "of death"
+    ],
+    [
+     "happen in America."
+    ]
+   ],
+   "text": "Sarah Lichtenstein, Paul Slovic and colleagues asked people how often FORTY-ONE causes of death happen in America."
+  },
+  {
+   "sec": "cd",
+   "scene": "Dramatic",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtAvStorm",
+   "chunks": [
+    [
+     "People overestimated"
+    ],
+    [
+     "dramatic ones:"
+    ],
+    [
+     "tornadoes, floods,"
+    ],
+    [
+     "homicide, ACCIDENTS.",
+     {
+      "emph": "ACCIDENTS",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ]
+   ],
+   "text": "People overestimated dramatic ones: tornadoes, floods, homicide, ACCIDENTS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Quiet",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtAvQuiet",
+   "chunks": [
+    [
+     "And underestimated"
+    ],
+    [
+     "QUIET killers",
+     {
+      "emph": "QUIET",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "like diabetes,"
+    ],
+    [
+     "stroke and"
+    ],
+    [
+     "stomach cancer."
+    ]
+   ],
+   "text": "And underestimated QUIET killers like diabetes, stroke and stomach cancer."
+  },
+  {
+   "sec": "cd",
+   "scene": "Heuristic",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtAvNames",
+   "chunks": [
+    [
+     "Amos Tversky"
+    ],
+    [
+     "and Daniel Kahneman"
+    ],
+    [
+     "described why:"
+    ],
+    [
+     "the AVAILABILITY heuristic.",
+     {
+      "emph": "AVAILABILITY",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Amos Tversky and Daniel Kahneman described why: the AVAILABILITY heuristic."
+  },
+  {
+   "sec": "cd",
+   "scene": "Easily",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtAvMind",
+   "chunks": [
+    [
+     "We judge"
+    ],
+    [
+     "how common"
+    ],
+    [
+     "something is"
+    ],
+    [
+     "by how EASILY",
+     {
+      "emph": "EASILY",
+      "fx": "type"
+     }
+    ],
+    [
+     "examples come"
+    ],
+    [
+     "to mind."
+    ]
+   ],
+   "text": "We judge how common something is by how EASILY examples come to mind."
+  },
+  {
+   "sec": "cd",
+   "scene": "Recall",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtAvNews",
+   "chunks": [
+    [
+     "News makes"
+    ],
+    [
+     "rare, dramatic events"
+    ],
+    [
+     "easy to RECALL.",
+     {
+      "emph": "RECALL",
+      "fx": "doodle",
+      "doodle": "📺"
+     }
+    ]
+   ],
+   "text": "News makes rare, dramatic events easy to RECALL."
+  },
+  {
+   "sec": "cd",
+   "scene": "Check",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtAvCheck",
+   "chunks": [
+    [
+     "When a headline"
+    ],
+    [
+     "scares you, ask:"
+    ],
+    [
+     "how often"
+    ],
+    [
+     "does this ACTUALLY",
+     {
+      "emph": "ACTUALLY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "happen? Then"
+    ],
+    [
+     "check the number."
+    ],
+    [
+     "Follow, and fear"
+    ],
+    [
+     "fewer of"
+    ],
+    [
+     "the wrong things."
+    ]
+   ],
+   "text": "When a headline scares you, ask: how often does this ACTUALLY happen? Then check the number. Follow, and fear fewer of the wrong things."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Scary Headlines Feel More Common Than They Are #shorts",
+  "description": "Lichtenstein, Slovic et al. (1978): people judging 41 causes of death overestimated dramatic ones like tornadoes and homicide and underestimated quiet killers like diabetes and stroke, the availability heuristic (Tversky & Kahneman, 1973). #psychology #shorts #cognitivebias #news",
+  "tags": [
+   "availability heuristic",
+   "risk perception",
+   "cognitive bias",
+   "psychology"
+  ]
+ }
+}

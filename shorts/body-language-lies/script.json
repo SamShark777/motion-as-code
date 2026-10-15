@@ -1,0 +1,294 @@
+{
+ "slug": "body-language-lies",
+ "no": 94,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Crossed Arms",
+  "Myth"
+ ],
+ "credit": "Bond & DePaulo · 2006",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Arms",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtBlArms",
+   "chunks": [
+    [
+     "Can crossed"
+    ],
+    [
+     "ARMS",
+     {
+      "emph": "ARMS",
+      "fx": "doodle",
+      "doodle": "🙅"
+     }
+    ],
+    [
+     "prove someone"
+    ],
+    [
+     "is lying?"
+    ]
+   ],
+   "text": "Can crossed ARMS prove someone is lying?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Habit",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtBlReasons",
+   "chunks": [
+    [
+     "Maybe they're cold."
+    ],
+    [
+     "Or comfy."
+    ],
+    [
+     "Or tired."
+    ],
+    [
+     "Or it's just"
+    ],
+    [
+     "a"
+    ],
+    [
+     "HABIT.",
+     {
+      "emph": "HABIT",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Maybe they're cold. Or comfy. Or tired. Or it's just a HABIT."
+  },
+  {
+   "sec": "cd",
+   "scene": "Studies",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtBlStudies",
+   "chunks": [
+    [
+     "Charles Bond"
+    ],
+    [
+     "and Bella DePaulo"
+    ],
+    [
+     "combined 206"
+    ],
+    [
+     "STUDIES",
+     {
+      "emph": "STUDIES",
+      "fx": "pop"
+     }
+    ],
+    [
+     "with about"
+    ],
+    [
+     "twenty-four thousand"
+    ],
+    [
+     "people judging"
+    ],
+    [
+     "truths and lies."
+    ]
+   ],
+   "text": "Charles Bond and Bella DePaulo combined 206 STUDIES with about twenty-four thousand people judging truths and lies."
+  },
+  {
+   "sec": "cd",
+   "scene": "Right",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtBlScore",
+   "chunks": [
+    [
+     "On average,"
+    ],
+    [
+     "people were right"
+    ],
+    [
+     "FIFTY-FOUR",
+     {
+      "emph": "FIFTY-FOUR",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "percent"
+    ],
+    [
+     "of the time."
+    ]
+   ],
+   "text": "On average, people were right FIFTY-FOUR percent of the time."
+  },
+  {
+   "sec": "cd",
+   "scene": "Coin",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtBlCoin",
+   "chunks": [
+    [
+     "A coin flip"
+    ],
+    [
+     "gets"
+    ],
+    [
+     "FIFTY.",
+     {
+      "emph": "FIFTY",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "That's barely"
+    ],
+    [
+     "any better."
+    ]
+   ],
+   "text": "A coin flip gets FIFTY. That's barely any better."
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtBlGesture",
+   "chunks": [
+    [
+     "One gesture"
+    ],
+    [
+     "has too many"
+    ],
+    [
+     "explanations."
+    ],
+    [
+     "So never"
+    ],
+    [
+     "treat it"
+    ],
+    [
+     "as"
+    ],
+    [
+     "PROOF.",
+     {
+      "emph": "PROOF",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "One gesture has too many explanations. So never treat it as PROOF."
+  },
+  {
+   "sec": "cd",
+   "scene": "Check",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtBlDetective",
+   "chunks": [
+    [
+     "Ask questions"
+    ],
+    [
+     "and"
+    ],
+    [
+     "CHECK",
+     {
+      "emph": "CHECK",
+      "fx": "type"
+     }
+    ],
+    [
+     "the facts"
+    ],
+    [
+     "instead."
+    ],
+    [
+     "That beats"
+    ],
+    [
+     "any gesture."
+    ]
+   ],
+   "text": "Ask questions and CHECK the facts instead. That beats any gesture."
+  },
+  {
+   "sec": "cd",
+   "scene": "Myths",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtBlMyths",
+   "chunks": [
+    [
+     "Follow for"
+    ],
+    [
+     "more"
+    ],
+    [
+     "MYTHS",
+     {
+      "emph": "MYTHS",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "that sound smart"
+    ],
+    [
+     "but fall apart"
+    ],
+    [
+     "when scientists"
+    ],
+    [
+     "test them."
+    ]
+   ],
+   "text": "Follow for more MYTHS that sound smart but fall apart when scientists test them."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Can Crossed Arms Really Reveal a Liar? #shorts",
+  "description": "Bond & DePaulo (2006) combined 206 studies with about 24,000 people judging truths and lies: on average they were right 54% of the time, barely better than a 50% coin flip. #psychology #shorts #bodylanguage #lying",
+  "tags": [
+   "lie detection",
+   "body language",
+   "myths",
+   "psychology"
+  ]
+ }
+}

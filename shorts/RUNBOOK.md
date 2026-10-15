@@ -1,5 +1,13 @@
 # Daily Shorts pipeline — runbook
 
+> **2026-10-15 — Shivam: Ted type 2 is the only Shorts format.** The 8-bit pixel-avatar videos (all the
+> Motion-as-Code "looks": pixel-lab, keynote, whiteboard, terminal, game-show, dossier, …) and Ted type 1
+> (Lottie) are retired — never write a new script in them. Every new Short is Ted type 2 (`format: "cdesign"`,
+> `look: "ted2"`, tracker `Visual style=ted2`), whatever the idea's old Visual style says. Their remaining
+> scheduled Buffer posts were cancelled (rows set to `Vetoed`). The 10-video experiment below is over.
+> To cancel scheduled posts: run the Daily Shorts workflow with input `buffer_cancel=<slug>,<slug>`
+> (`scripts/buffer.py cancel`), then set those rows to `Vetoed`.
+
 Up to **5 psychology Shorts a day** (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
 (vertical template + Shivam's pixel avatar, narrated by a British TTS voice — Kokoro `bf_emma`, set in `shorts/voice/voice.json`; Shivam rejected his cloned voice as mechanical, don't switch back without asking), posted to YouTube Shorts,
 Instagram Reels and TikTok through **Buffer (free plan)**, scheduled **the day before** so Shivam can veto.
@@ -70,7 +78,7 @@ doesn't use its post quota). Rows No. 1, 11, 22 were posted through Metricool (n
    - Looks set in all caps (`terminal`, `spy-noir`, `pixel-quest`) fit fewer characters per line: keep
      their hook and takeaway lines short (≤ 9 words).
 
-## Current experiment: Ted type 1 (started 2026-10-14)
+## (Ended) Ted type 1 experiment (2026-10-14) — superseded, kept for history
 
 Shivam's call: the **next 10 videos are all Ted type 1** (format `ted1`), kept consistent so their
 numbers can be compared with the earlier pixel-avatar Shorts. Videos No. 35 and 43 are the first two.

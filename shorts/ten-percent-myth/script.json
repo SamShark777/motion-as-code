@@ -1,0 +1,269 @@
+{
+ "slug": "ten-percent-myth",
+ "no": 93,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "10% Brain",
+  "Myth"
+ ],
+ "credit": "Beyerstein · 1999",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Unused",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtTpHook",
+   "chunks": [
+    [
+     "Do we really"
+    ],
+    [
+     "leave most"
+    ],
+    [
+     "of our brain"
+    ],
+    [
+     "UNUSED?",
+     {
+      "emph": "UNUSED",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Do we really leave most of our brain UNUSED?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Pill",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtTpPill",
+   "chunks": [
+    [
+     "Movies love it:"
+    ],
+    [
+     "one pill"
+    ],
+    [
+     "unlocks the hidden"
+    ],
+    [
+     "NINETY percent.",
+     {
+      "emph": "NINETY",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Movies love it: one pill unlocks the hidden NINETY percent."
+  },
+  {
+   "sec": "cd",
+   "scene": "Scans",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtTpScan",
+   "chunks": [
+    [
+     "But brain scans"
+    ],
+    [
+     "show activity"
+    ],
+    [
+     "across virtually"
+    ],
+    [
+     "ALL regions",
+     {
+      "emph": "ALL",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "over a day."
+    ],
+    [
+     "No silent"
+    ],
+    [
+     "ninety percent."
+    ]
+   ],
+   "text": "But brain scans show activity across virtually ALL regions over a day. No silent ninety percent."
+  },
+  {
+   "sec": "cd",
+   "scene": "Damage",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtTpDamage",
+   "chunks": [
+    [
+     "Damage to almost"
+    ],
+    [
+     "any small area"
+    ],
+    [
+     "causes SOME",
+     {
+      "emph": "SOME",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "loss of function."
+    ]
+   ],
+   "text": "Damage to almost any small area causes SOME loss of function."
+  },
+  {
+   "sec": "cd",
+   "scene": "Energy",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtTpEnergy",
+   "chunks": [
+    [
+     "Your brain is"
+    ],
+    [
+     "about two percent"
+    ],
+    [
+     "of your weight"
+    ],
+    [
+     "but burns about"
+    ],
+    [
+     "TWENTY percent",
+     {
+      "emph": "TWENTY",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "of your energy."
+    ]
+   ],
+   "text": "Your brain is about two percent of your weight but burns about TWENTY percent of your energy."
+  },
+  {
+   "sec": "cd",
+   "scene": "Idle",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtTpIdle",
+   "chunks": [
+    [
+     "That's far too"
+    ],
+    [
+     "costly to keep"
+    ],
+    [
+     "mostly IDLE.",
+     {
+      "emph": "IDLE",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "That's far too costly to keep mostly IDLE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Debunked",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtTpDebunk",
+   "chunks": [
+    [
+     "Psychologist"
+    ],
+    [
+     "Barry Beyerstein"
+    ],
+    [
+     "traced the myth"
+    ],
+    [
+     "and DEBUNKED it",
+     {
+      "emph": "DEBUNKED",
+      "fx": "doodle",
+      "doodle": "💥"
+     }
+    ],
+    [
+     "back in"
+    ],
+    [
+     "nineteen ninety-nine."
+    ]
+   ],
+   "text": "Psychologist Barry Beyerstein traced the myth and DEBUNKED it back in nineteen ninety-nine."
+  },
+  {
+   "sec": "cd",
+   "scene": "Train",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtTpTrain",
+   "chunks": [
+    [
+     "You already use"
+    ],
+    [
+     "ALL of it.",
+     {
+      "emph": "ALL",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Train it with"
+    ],
+    [
+     "sleep and practice,"
+    ],
+    [
+     "and follow before"
+    ],
+    [
+     "someone sells you"
+    ],
+    [
+     "a brain pill."
+    ]
+   ],
+   "text": "You already use ALL of it. Train it with sleep and practice, and follow before someone sells you a brain pill."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Do You Really Use Only 10% of Your Brain? #shorts",
+  "description": "Beyerstein (1999) traced and debunked the 10% myth: brain scans show activity across virtually all regions over a day, small injuries almost anywhere cost some function, and the brain uses about 20% of the body's energy at about 2% of its weight. #psychology #shorts #brain #myths",
+  "tags": [
+   "ten percent myth",
+   "brain",
+   "neuromyths",
+   "psychology"
+  ]
+ }
+}

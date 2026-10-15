@@ -1,0 +1,309 @@
+{
+ "slug": "social-proof",
+ "no": 64,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Follow The",
+  "Crowd"
+ ],
+ "credit": "Goldstein, Cialdini & Griskevicius · 2008",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Line",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtSoLine",
+   "chunks": [
+    [
+     "Does a long"
+    ],
+    [
+     "line"
+    ],
+    [
+     "PROVE",
+     {
+      "emph": "PROVE",
+      "fx": "doodle",
+      "doodle": "🤔"
+     }
+    ],
+    [
+     "the food"
+    ],
+    [
+     "is better?"
+    ]
+   ],
+   "text": "Does a long line PROVE the food is better?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Clue",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtSoClue",
+   "chunks": [
+    [
+     "We treat"
+    ],
+    [
+     "what others do"
+    ],
+    [
+     "as a"
+    ],
+    [
+     "CLUE",
+     {
+      "emph": "CLUE",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "to what's right."
+    ],
+    [
+     "That's social proof."
+    ]
+   ],
+   "text": "We treat what others do as a CLUE to what's right. That's social proof."
+  },
+  {
+   "sec": "cd",
+   "scene": "Hotel",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtSoHotel",
+   "chunks": [
+    [
+     "Researchers Goldstein,"
+    ],
+    [
+     "Cialdini and"
+    ],
+    [
+     "Griskevicius put"
+    ],
+    [
+     "cards in"
+    ],
+    [
+     "hotel rooms"
+    ],
+    [
+     "asking guests"
+    ],
+    [
+     "to"
+    ],
+    [
+     "REUSE",
+     {
+      "emph": "REUSE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "their towels."
+    ]
+   ],
+   "text": "Researchers Goldstein, Cialdini and Griskevicius put cards in hotel rooms asking guests to REUSE their towels."
+  },
+  {
+   "sec": "cd",
+   "scene": "Planet",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtSoCard",
+   "chunks": [
+    [
+     "The usual"
+    ],
+    [
+     "save-the-planet"
+    ],
+    [
+     "card got"
+    ],
+    [
+     "THIRTY-FIVE",
+     {
+      "emph": "THIRTY-FIVE",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "percent to"
+    ],
+    [
+     "reuse them."
+    ]
+   ],
+   "text": "The usual save-the-planet card got THIRTY-FIVE percent to reuse them."
+  },
+  {
+   "sec": "cd",
+   "scene": "Room",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtSoRoom",
+   "chunks": [
+    [
+     "Saying most"
+    ],
+    [
+     "guests reused"
+    ],
+    [
+     "theirs got"
+    ],
+    [
+     "forty-four percent."
+    ],
+    [
+     "Most guests"
+    ],
+    [
+     "in this room?"
+    ],
+    [
+     "FORTY-NINE.",
+     {
+      "emph": "FORTY-NINE",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Saying most guests reused theirs got forty-four percent. Most guests in this room? FORTY-NINE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Slow",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtSoSlow",
+   "chunks": [
+    [
+     "But popularity"
+    ],
+    [
+     "is a cue,"
+    ],
+    [
+     "not proof."
+    ],
+    [
+     "A long line"
+    ],
+    [
+     "might just mean"
+    ],
+    [
+     "SLOW",
+     {
+      "emph": "SLOW",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "service."
+    ]
+   ],
+   "text": "But popularity is a cue, not proof. A long line might just mean SLOW service."
+  },
+  {
+   "sec": "cd",
+   "scene": "Know",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtSoThink",
+   "chunks": [
+    [
+     "Next time"
+    ],
+    [
+     "you follow"
+    ],
+    [
+     "the crowd,"
+    ],
+    [
+     "ask: do they"
+    ],
+    [
+     "KNOW",
+     {
+      "emph": "KNOW",
+      "fx": "type"
+     }
+    ],
+    [
+     "something"
+    ],
+    [
+     "I don't?"
+    ]
+   ],
+   "text": "Next time you follow the crowd, ask: do they KNOW something I don't?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Spot",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtSoSpot",
+   "chunks": [
+    [
+     "Follow, and"
+    ],
+    [
+     "the next time"
+    ],
+    [
+     "a crowd"
+    ],
+    [
+     "pulls you in,"
+    ],
+    [
+     "you'll"
+    ],
+    [
+     "SPOT",
+     {
+      "emph": "SPOT",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "it first."
+    ]
+   ],
+   "text": "Follow, and the next time a crowd pulls you in, you'll SPOT it first."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Does a Long Line Really Mean Better Food? #shorts",
+  "description": "Goldstein, Cialdini & Griskevicius (2008): a hotel card saying most guests reused their towels got 44% to reuse them vs 35% for the standard environmental card, and 49% when it said most guests in that same room did. #psychology #shorts #socialproof #persuasion",
+  "tags": [
+   "social proof",
+   "persuasion",
+   "conformity",
+   "psychology"
+  ]
+ }
+}

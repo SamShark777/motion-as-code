@@ -1,0 +1,263 @@
+{
+ "slug": "interleaving",
+ "no": 14,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Shuffle Your",
+  "Practice"
+ ],
+ "credit": "Rohrer & Taylor · 2007",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Mix",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtIlMix",
+   "chunks": [
+    [
+     "Why should you"
+    ],
+    [
+     "MIX problem types",
+     {
+      "emph": "MIX",
+      "fx": "pop"
+     }
+    ],
+    [
+     "while studying?"
+    ]
+   ],
+   "text": "Why should you MIX problem types while studying?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Solids",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtIlSolids",
+   "chunks": [
+    [
+     "Doug Rohrer"
+    ],
+    [
+     "and Kelli Taylor"
+    ],
+    [
+     "taught students"
+    ],
+    [
+     "to find"
+    ],
+    [
+     "the volume"
+    ],
+    [
+     "of four kinds"
+    ],
+    [
+     "of geometric SOLIDS.",
+     {
+      "emph": "SOLIDS",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Doug Rohrer and Kelli Taylor taught students to find the volume of four kinds of geometric SOLIDS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Blocks",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtIlBlocks",
+   "chunks": [
+    [
+     "One group"
+    ],
+    [
+     "practiced in BLOCKS:",
+     {
+      "emph": "BLOCKS",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "all one type,"
+    ],
+    [
+     "then the next."
+    ]
+   ],
+   "text": "One group practiced in BLOCKS: all one type, then the next."
+  },
+  {
+   "sec": "cd",
+   "scene": "Shuffled",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtIlShuffle",
+   "chunks": [
+    [
+     "The other"
+    ],
+    [
+     "got the same"
+    ],
+    [
+     "problems, SHUFFLED.",
+     {
+      "emph": "SHUFFLED",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "The other got the same problems, SHUFFLED."
+  },
+  {
+   "sec": "cd",
+   "scene": "Practice",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtIlPractice",
+   "chunks": [
+    [
+     "During practice,"
+    ],
+    [
+     "blocking looked better:"
+    ],
+    [
+     "eighty-nine percent"
+    ],
+    [
+     "versus SIXTY.",
+     {
+      "emph": "SIXTY",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "During practice, blocking looked better: eighty-nine percent versus SIXTY."
+  },
+  {
+   "sec": "cd",
+   "scene": "Week later",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtIlTest",
+   "chunks": [
+    [
+     "But a week"
+    ],
+    [
+     "later, the shufflers"
+    ],
+    [
+     "scored sixty-three"
+    ],
+    [
+     "percent. The blockers?"
+    ],
+    [
+     "Just TWENTY.",
+     {
+      "emph": "TWENTY",
+      "fx": "doodle",
+      "doodle": "📉"
+     }
+    ]
+   ],
+   "text": "But a week later, the shufflers scored sixty-three percent. The blockers? Just TWENTY."
+  },
+  {
+   "sec": "cd",
+   "scene": "Choose",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtIlChoose",
+   "chunks": [
+    [
+     "Mixing forces you"
+    ],
+    [
+     "to CHOOSE",
+     {
+      "emph": "CHOOSE",
+      "fx": "type"
+     }
+    ],
+    [
+     "the method,"
+    ],
+    [
+     "not just"
+    ],
+    [
+     "repeat it."
+    ]
+   ],
+   "text": "Mixing forces you to CHOOSE the method, not just repeat it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Shuffle",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtIlDeck",
+   "chunks": [
+    [
+     "Shuffle your"
+    ],
+    [
+     "flashcards and"
+    ],
+    [
+     "problems across"
+    ],
+    [
+     "topics tonight,"
+    ],
+    [
+     "and follow for"
+    ],
+    [
+     "study habits that"
+    ],
+    [
+     "feel wrong"
+    ],
+    [
+     "but WORK.",
+     {
+      "emph": "WORK",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Shuffle your flashcards and problems across topics tonight, and follow for study habits that feel wrong but WORK."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The Study Trick That Looks Worse but Wins a Week Later #shorts",
+  "description": "Rohrer & Taylor (2007): students who practised volume problems shuffled scored 63% on a test a week later, versus 20% for those who practised in blocks, even though blocked practice looked better at first (89% vs 60%). #psychology #shorts #studytips #learning",
+  "tags": [
+   "interleaving",
+   "study tips",
+   "learning",
+   "psychology"
+  ]
+ }
+}

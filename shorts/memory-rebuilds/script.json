@@ -1,0 +1,282 @@
+{
+ "slug": "memory-rebuilds",
+ "no": 15,
+ "format": "cdesign",
+ "title": [
+  "Your Memory",
+  "Rebuilds"
+ ],
+ "credit": "Loftus & Palmer · 1974",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Honest",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMrHonest",
+   "chunks": [
+    [
+     "Can two"
+    ],
+    [
+     "honest people"
+    ],
+    [
+     "remember the"
+    ],
+    [
+     "same event"
+    ],
+    [
+     "DIFFERENTLY?",
+     {
+      "emph": "DIFFERENTLY",
+      "fx": "doodle",
+      "doodle": "🤔"
+     }
+    ]
+   ],
+   "text": "Can two honest people remember the same event DIFFERENTLY?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Films",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtMrFilms",
+   "chunks": [
+    [
+     "Elizabeth Loftus"
+    ],
+    [
+     "and John Palmer"
+    ],
+    [
+     "showed people"
+    ],
+    [
+     "films of"
+    ],
+    [
+     "CAR crashes.",
+     {
+      "emph": "CAR",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Elizabeth Loftus and John Palmer showed people films of CAR crashes."
+  },
+  {
+   "sec": "cd",
+   "scene": "Smashed",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtMrWord",
+   "chunks": [
+    [
+     "Then they asked:"
+    ],
+    [
+     "how fast were"
+    ],
+    [
+     "the cars going"
+    ],
+    [
+     "when they"
+    ],
+    [
+     "SMASHED into",
+     {
+      "emph": "SMASHED",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "each other?"
+    ]
+   ],
+   "text": "Then they asked: how fast were the cars going when they SMASHED into each other?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Speed",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtMrSpeed",
+   "chunks": [
+    [
+     "Hearing smashed:"
+    ],
+    [
+     "about forty-one"
+    ],
+    [
+     "miles an hour."
+    ],
+    [
+     "Hearing hit:"
+    ],
+    [
+     "about THIRTY-FOUR.",
+     {
+      "emph": "THIRTY-FOUR",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Hearing smashed: about forty-one miles an hour. Hearing hit: about THIRTY-FOUR."
+  },
+  {
+   "sec": "cd",
+   "scene": "Glass",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtMrGlass",
+   "chunks": [
+    [
+     "A week later:"
+    ],
+    [
+     "did you see"
+    ],
+    [
+     "broken GLASS?",
+     {
+      "emph": "GLASS",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "There was none."
+    ]
+   ],
+   "text": "A week later: did you see broken GLASS? There was none."
+  },
+  {
+   "sec": "cd",
+   "scene": "Yes",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtMrYes",
+   "chunks": [
+    [
+     "Thirty-two percent"
+    ],
+    [
+     "of the smashed"
+    ],
+    [
+     "group said YES.",
+     {
+      "emph": "YES",
+      "fx": "underline",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "Only fourteen percent"
+    ],
+    [
+     "of the hit"
+    ],
+    [
+     "group did."
+    ]
+   ],
+   "text": "Thirty-two percent of the smashed group said YES. Only fourteen percent of the hit group did."
+  },
+  {
+   "sec": "cd",
+   "scene": "Rebuild",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtMrRebuild",
+   "chunks": [
+    [
+     "Memory doesn't"
+    ],
+    [
+     "replay a video."
+    ],
+    [
+     "It REBUILDS",
+     {
+      "emph": "REBUILDS",
+      "fx": "type"
+     }
+    ],
+    [
+     "the scene"
+    ],
+    [
+     "every time."
+    ]
+   ],
+   "text": "Memory doesn't replay a video. It REBUILDS the scene every time."
+  },
+  {
+   "sec": "cd",
+   "scene": "Write",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMrWrite",
+   "chunks": [
+    [
+     "Write important"
+    ],
+    [
+     "things down soon."
+    ],
+    [
+     "When memories clash,"
+    ],
+    [
+     "nobody has"
+    ],
+    [
+     "to be LYING.",
+     {
+      "emph": "LYING",
+      "fx": "stamp",
+      "block": "#E07A2E"
+     }
+    ],
+    [
+     "Follow to catch"
+    ],
+    [
+     "how else"
+    ],
+    [
+     "your brain"
+    ],
+    [
+     "edits the past."
+    ]
+   ],
+   "text": "Write important things down soon. When memories clash, nobody has to be LYING. Follow to catch how else your brain edits the past."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Two Honest People, Two Different Memories #shorts",
+  "description": "Loftus & Palmer (1974): people asked how fast cars \"smashed\" guessed about 41 mph vs 34 mph for \"hit\", and a week later 32% vs 14% recalled broken glass that was never there. #psychology #shorts #memory #brain",
+  "tags": [
+   "false memory",
+   "eyewitness memory",
+   "Elizabeth Loftus",
+   "psychology"
+  ]
+ },
+ "look": "ted2"
+}

@@ -1,0 +1,272 @@
+{
+ "slug": "highlight-reel",
+ "no": 84,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Highlight",
+  "Reel"
+ ],
+ "credit": "Jordan et al. · 2011",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Highlight",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtHrCouch",
+   "chunks": [
+    [
+     "Are you comparing"
+    ],
+    [
+     "your whole day"
+    ],
+    [
+     "with someone's"
+    ],
+    [
+     "HIGHLIGHT?",
+     {
+      "emph": "HIGHLIGHT",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Are you comparing your whole day with someone's HIGHLIGHT?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Frame",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtHrFrame",
+   "chunks": [
+    [
+     "A polished post"
+    ],
+    [
+     "shows one moment."
+    ],
+    [
+     "The boring parts"
+    ],
+    [
+     "and bad days"
+    ],
+    [
+     "stay OUTSIDE",
+     {
+      "emph": "OUTSIDE",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "the frame."
+    ]
+   ],
+   "text": "A polished post shows one moment. The boring parts and bad days stay OUTSIDE the frame."
+  },
+  {
+   "sec": "cd",
+   "scene": "Stanford",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtHrCampus",
+   "chunks": [
+    [
+     "Stanford researcher"
+    ],
+    [
+     "Alexander Jordan"
+    ],
+    [
+     "and colleagues"
+    ],
+    [
+     "asked STUDENTS",
+     {
+      "emph": "STUDENTS",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "about their peers."
+    ]
+   ],
+   "text": "Stanford researcher Alexander Jordan and colleagues asked STUDENTS about their peers."
+  },
+  {
+   "sec": "cd",
+   "scene": "Less",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtHrClouds",
+   "chunks": [
+    [
+     "They guessed"
+    ],
+    [
+     "peers felt sad,"
+    ],
+    [
+     "lonely or rejected"
+    ],
+    [
+     "LESS often",
+     {
+      "emph": "LESS",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "than peers"
+    ],
+    [
+     "really did."
+    ]
+   ],
+   "text": "They guessed peers felt sad, lonely or rejected LESS often than peers really did."
+  },
+  {
+   "sec": "cd",
+   "scene": "More",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtHrParty",
+   "chunks": [
+    [
+     "And they pictured"
+    ],
+    [
+     "peers' good times"
+    ],
+    [
+     "happening MORE",
+     {
+      "emph": "MORE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "than they did."
+    ]
+   ],
+   "text": "And they pictured peers' good times happening MORE than they did."
+  },
+  {
+   "sec": "cd",
+   "scene": "Lonelier",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtHrBench",
+   "chunks": [
+    [
+     "The students who"
+    ],
+    [
+     "missed others'"
+    ],
+    [
+     "bad moments"
+    ],
+    [
+     "felt LONELIER",
+     {
+      "emph": "LONELIER",
+      "fx": "type"
+     }
+    ],
+    [
+     "and less satisfied"
+    ],
+    [
+     "with their lives."
+    ]
+   ],
+   "text": "The students who missed others' bad moments felt LONELIER and less satisfied with their lives."
+  },
+  {
+   "sec": "cd",
+   "scene": "One thing",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtHrOutside",
+   "chunks": [
+    [
+     "Next time"
+    ],
+    [
+     "you scroll,"
+    ],
+    [
+     "name ONE thing",
+     {
+      "emph": "ONE",
+      "fx": "doodle",
+      "doodle": "🖼️"
+     }
+    ],
+    [
+     "that post"
+    ],
+    [
+     "left out"
+    ],
+    [
+     "of the frame."
+    ]
+   ],
+   "text": "Next time you scroll, name ONE thing that post left out of the frame."
+  },
+  {
+   "sec": "cd",
+   "scene": "Follow",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtHrScroll",
+   "chunks": [
+    [
+     "Follow for"
+    ],
+    [
+     "one real study"
+    ],
+    [
+     "every day"
+    ],
+    [
+     "and a LIGHTER",
+     {
+      "emph": "LIGHTER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "scroll."
+    ]
+   ],
+   "text": "Follow for one real study every day and a LIGHTER scroll."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Everyone Else's Life Looks Better Online #shorts",
+  "description": "Jordan et al. (2011, Personality and Social Psychology Bulletin): Stanford students underestimated how often peers felt sad, lonely or rejected and overestimated their good times; those who underestimated others' bad moments felt lonelier and less satisfied with life. #psychology #shorts #socialmedia #comparison",
+  "tags": [
+   "social comparison",
+   "social media",
+   "loneliness",
+   "psychology"
+  ]
+ }
+}

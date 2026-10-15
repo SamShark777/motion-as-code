@@ -1,0 +1,270 @@
+{
+ "slug": "sunk-cost",
+ "no": 5,
+ "format": "cdesign",
+ "title": [
+  "Already Paid",
+  "Trap"
+ ],
+ "credit": "Arkes & Blumer · 1985",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Movie",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtScMovie",
+   "chunks": [
+    [
+     "Would you"
+    ],
+    [
+     "keep watching"
+    ],
+    [
+     "a TERRIBLE movie",
+     {
+      "emph": "TERRIBLE",
+      "fx": "doodle",
+      "doodle": "🍿"
+     }
+    ],
+    [
+     "just because"
+    ],
+    [
+     "you paid?"
+    ]
+   ],
+   "text": "Would you keep watching a TERRIBLE movie just because you paid?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Trips",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtScTrips",
+   "chunks": [
+    [
+     "Hal Arkes and"
+    ],
+    [
+     "Catherine Blumer"
+    ],
+    [
+     "had students imagine"
+    ],
+    [
+     "buying TWO",
+     {
+      "emph": "TWO",
+      "fx": "pop"
+     }
+    ],
+    [
+     "ski trips."
+    ]
+   ],
+   "text": "Hal Arkes and Catherine Blumer had students imagine buying TWO ski trips."
+  },
+  {
+   "sec": "cd",
+   "scene": "Prices",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtScPrices",
+   "chunks": [
+    [
+     "A hundred dollars"
+    ],
+    [
+     "for Michigan."
+    ],
+    [
+     "Fifty for Wisconsin,"
+    ],
+    [
+     "which they'd"
+    ],
+    [
+     "enjoy MORE.",
+     {
+      "emph": "MORE",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "A hundred dollars for Michigan. Fifty for Wisconsin, which they'd enjoy MORE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Clash",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtScClash",
+   "chunks": [
+    [
+     "Then the catch:"
+    ],
+    [
+     "same weekend,"
+    ],
+    [
+     "and NON-REFUNDABLE.",
+     {
+      "emph": "NON-REFUNDABLE",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Then the catch: same weekend, and NON-REFUNDABLE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Choice",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtScChoice",
+   "chunks": [
+    [
+     "FIFTY-FOUR percent",
+     {
+      "emph": "FIFTY-FOUR",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "picked Michigan,"
+    ],
+    [
+     "the trip"
+    ],
+    [
+     "they'd enjoy less."
+    ]
+   ],
+   "text": "FIFTY-FOUR percent picked Michigan, the trip they'd enjoy less."
+  },
+  {
+   "sec": "cd",
+   "scene": "Sunk",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtScSunk",
+   "chunks": [
+    [
+     "That's the"
+    ],
+    [
+     "SUNK cost trap.",
+     {
+      "emph": "SUNK",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "Money already spent"
+    ],
+    [
+     "pulls on"
+    ],
+    [
+     "your next choice."
+    ]
+   ],
+   "text": "That's the SUNK cost trap. Money already spent pulls on your next choice."
+  },
+  {
+   "sec": "cd",
+   "scene": "Ask",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtScAsk",
+   "chunks": [
+    [
+     "So ask:"
+    ],
+    [
+     "if I hadn't"
+    ],
+    [
+     "paid ANYTHING,",
+     {
+      "emph": "ANYTHING",
+      "fx": "type"
+     }
+    ],
+    [
+     "would I still"
+    ],
+    [
+     "choose this"
+    ],
+    [
+     "right now?"
+    ]
+   ],
+   "text": "So ask: if I hadn't paid ANYTHING, would I still choose this right now?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Quit",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtScQuit",
+   "chunks": [
+    [
+     "Try it on"
+    ],
+    [
+     "whatever you're finishing"
+    ],
+    [
+     "only because"
+    ],
+    [
+     "you PAID,",
+     {
+      "emph": "PAID",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "to spot"
+    ],
+    [
+     "the next trap"
+    ],
+    [
+     "your brain sets."
+    ]
+   ],
+   "text": "Try it on whatever you're finishing only because you PAID, and follow to spot the next trap your brain sets."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why You Finish Things You Don’t Even Enjoy #shorts",
+  "description": "Arkes & Blumer (1985): students who had paid $100 for one ski trip and $50 for a better one on the same weekend — 54% chose the pricier trip they’d enjoy less. That’s the sunk cost effect. #psychology #shorts #sunkcost #decisions",
+  "tags": [
+   "sunk cost fallacy",
+   "decision making",
+   "cognitive bias",
+   "psychology"
+  ]
+ },
+ "look": "ted2"
+}

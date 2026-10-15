@@ -1,0 +1,258 @@
+{
+ "slug": "loss-framing",
+ "no": 86,
+ "format": "cdesign",
+ "title": [
+  "Same Facts",
+  "Frame"
+ ],
+ "credit": "Tversky & Kahneman · 1981",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Miss",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtLfMiss",
+   "chunks": [
+    [
+     "Why does"
+    ],
+    [
+     "\"don't miss out\""
+    ],
+    [
+     "feel different"
+    ],
+    [
+     "from \"you"
+    ],
+    [
+     "could GAIN\"?",
+     {
+      "emph": "GAIN",
+      "fx": "doodle",
+      "doodle": "🎁"
+     }
+    ]
+   ],
+   "text": "Why does \"don't miss out\" feel different from \"you could GAIN\"?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Disease",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtLfDisease",
+   "chunks": [
+    [
+     "Amos Tversky and"
+    ],
+    [
+     "Daniel Kahneman"
+    ],
+    [
+     "described an unusual"
+    ],
+    [
+     "DISEASE expected",
+     {
+      "emph": "DISEASE",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "to kill"
+    ],
+    [
+     "six hundred people."
+    ]
+   ],
+   "text": "Amos Tversky and Daniel Kahneman described an unusual DISEASE expected to kill six hundred people."
+  },
+  {
+   "sec": "cd",
+   "scene": "Saved",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtLfSaved",
+   "chunks": [
+    [
+     "One plan"
+    ],
+    [
+     "was described as:"
+    ],
+    [
+     "two hundred people"
+    ],
+    [
+     "will be SAVED.",
+     {
+      "emph": "SAVED",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "One plan was described as: two hundred people will be SAVED."
+  },
+  {
+   "sec": "cd",
+   "scene": "Seventy",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtLfVote",
+   "chunks": [
+    [
+     "SEVENTY-TWO percent",
+     {
+      "emph": "SEVENTY-TWO",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "chose it."
+    ]
+   ],
+   "text": "SEVENTY-TWO percent chose it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Die",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtLfDie",
+   "chunks": [
+    [
+     "The exact same"
+    ],
+    [
+     "outcome, worded as:"
+    ],
+    [
+     "four hundred"
+    ],
+    [
+     "people will DIE.",
+     {
+      "emph": "DIE",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "The exact same outcome, worded as: four hundred people will DIE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Frame",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtLfFrame",
+   "chunks": [
+    [
+     "Only twenty-two"
+    ],
+    [
+     "percent chose it."
+    ],
+    [
+     "Same facts,"
+    ],
+    [
+     "different FRAME.",
+     {
+      "emph": "FRAME",
+      "fx": "type"
+     }
+    ],
+    [
+     "Losses loom larger."
+    ]
+   ],
+   "text": "Only twenty-two percent chose it. Same facts, different FRAME. Losses loom larger."
+  },
+  {
+   "sec": "cd",
+   "scene": "Ads",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtLfAds",
+   "chunks": [
+    [
+     "Ads love it:"
+    ],
+    [
+     "\"don't MISS out.\"",
+     {
+      "emph": "MISS",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Not everyone"
+    ],
+    [
+     "falls for it"
+    ],
+    [
+     "the same way."
+    ]
+   ],
+   "text": "Ads love it: \"don't MISS out.\" Not everyone falls for it the same way."
+  },
+  {
+   "sec": "cd",
+   "scene": "Flip",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtLfFlip",
+   "chunks": [
+    [
+     "So flip it:"
+    ],
+    [
+     "\"I could gain…\""
+    ],
+    [
+     "Still WANT it?",
+     {
+      "emph": "WANT",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "Follow to see"
+    ],
+    [
+     "through the next"
+    ],
+    [
+     "sales trick."
+    ]
+   ],
+   "text": "So flip it: \"I could gain…\" Still WANT it? Follow to see through the next sales trick."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why “Don’t Miss Out” Works Better Than It Should #shorts",
+  "description": "Tversky & Kahneman (1981): 72% chose a plan where \"200 people will be saved\", but only 22% chose the same outcome worded as \"400 people will die\". Same facts, different frame. #psychology #shorts #framing #marketing",
+  "tags": [
+   "framing effect",
+   "loss aversion",
+   "marketing psychology",
+   "psychology"
+  ]
+ },
+ "look": "ted2"
+}

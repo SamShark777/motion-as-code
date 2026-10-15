@@ -1,0 +1,297 @@
+{
+ "slug": "immediate-rewards",
+ "no": 37,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Treat It",
+  "Now"
+ ],
+ "credit": "Woolley & Fishbach · 2018",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Now",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtIrClock",
+   "chunks": [
+    [
+     "Why might"
+    ],
+    [
+     "a small reward"
+    ],
+    [
+     "matter more"
+    ],
+    [
+     "when it comes"
+    ],
+    [
+     "right NOW?",
+     {
+      "emph": "NOW",
+      "fx": "doodle",
+      "doodle": "⏰"
+     }
+    ]
+   ],
+   "text": "Why might a small reward matter more when it comes right NOW?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Later",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtIrCalendar",
+   "chunks": [
+    [
+     "Most of us"
+    ],
+    [
+     "save the treat"
+    ],
+    [
+     "for the END",
+     {
+      "emph": "END",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "of the week,"
+    ],
+    [
+     "after all"
+    ],
+    [
+     "the work."
+    ]
+   ],
+   "text": "Most of us save the treat for the END of the week, after all the work."
+  },
+  {
+   "sec": "cd",
+   "scene": "Researchers",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtIrLab",
+   "chunks": [
+    [
+     "Researchers Kaitlin"
+    ],
+    [
+     "Woolley of Cornell"
+    ],
+    [
+     "and Ayelet Fishbach"
+    ],
+    [
+     "of Chicago"
+    ],
+    [
+     "ran several"
+    ],
+    [
+     "EXPERIMENTS.",
+     {
+      "emph": "EXPERIMENTS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Researchers Kaitlin Woolley of Cornell and Ayelet Fishbach of Chicago ran several EXPERIMENTS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Timing",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtIrTwoGroups",
+   "chunks": [
+    [
+     "Some people"
+    ],
+    [
+     "got a small"
+    ],
+    [
+     "reward right away"
+    ],
+    [
+     "for a task."
+    ],
+    [
+     "Others got"
+    ],
+    [
+     "the same reward"
+    ],
+    [
+     "LATER.",
+     {
+      "emph": "LATER",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ]
+   ],
+   "text": "Some people got a small reward right away for a task. Others got the same reward LATER."
+  },
+  {
+   "sec": "cd",
+   "scene": "Interesting",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtIrEngaged",
+   "chunks": [
+    [
+     "The right-away"
+    ],
+    [
+     "group found"
+    ],
+    [
+     "the task more"
+    ],
+    [
+     "INTERESTING",
+     {
+      "emph": "INTERESTING",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "and kept going"
+    ],
+    [
+     "longer,"
+    ]
+   ],
+   "text": "The right-away group found the task more INTERESTING and kept going longer,"
+  },
+  {
+   "sec": "cd",
+   "scene": "Stopped",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtIrKeepGoing",
+   "chunks": [
+    [
+     "even after"
+    ],
+    [
+     "the rewards"
+    ],
+    [
+     "STOPPED.",
+     {
+      "emph": "STOPPED",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "even after the rewards STOPPED."
+  },
+  {
+   "sec": "cd",
+   "scene": "Itself",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtIrTask",
+   "chunks": [
+    [
+     "The timing"
+    ],
+    [
+     "made the task"
+    ],
+    [
+     "ITSELF",
+     {
+      "emph": "ITSELF",
+      "fx": "type"
+     }
+    ],
+    [
+     "feel more"
+    ],
+    [
+     "rewarding."
+    ]
+   ],
+   "text": "The timing made the task ITSELF feel more rewarding."
+  },
+  {
+   "sec": "cd",
+   "scene": "Snack",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtIrSong",
+   "chunks": [
+    [
+     "So when you"
+    ],
+    [
+     "finish a"
+    ],
+    [
+     "study block,"
+    ],
+    [
+     "play a song"
+    ],
+    [
+     "or grab a"
+    ],
+    [
+     "SNACK",
+     {
+      "emph": "SNACK",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "right away,"
+    ],
+    [
+     "not days later."
+    ],
+    [
+     "Follow for"
+    ],
+    [
+     "tiny tweaks"
+    ],
+    [
+     "that make"
+    ],
+    [
+     "hard work easier."
+    ]
+   ],
+   "text": "So when you finish a study block, play a song or grab a SNACK right away, not days later. Follow for tiny tweaks that make hard work easier."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why a Small Reward Right Away Works Better #shorts",
+  "description": "Woolley & Fishbach (2018): across several experiments, people who got a small reward right away for a task, rather than the same reward later, found it more interesting and kept going longer, even after the rewards stopped. #psychology #shorts #motivation #studytips",
+  "tags": [
+   "immediate rewards",
+   "motivation",
+   "study tips",
+   "psychology"
+  ]
+ }
+}
