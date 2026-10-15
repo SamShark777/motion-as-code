@@ -13,6 +13,7 @@ GQL = "https://graphql.lottiefiles.com/2022-08"
 UA = {"User-Agent": "Mozilla/5.0 (motion-as-code)", "Accept": "application/json"}
 BAD = re.compile(r"load|spinner|icon|button|logo|emoji|text|arrow|check|tick|success|error|404|toggle|switch|menu|"
                  r"notification|badge|progress|swipe|scroll|bar|ui\b|app\b|website|banner|christmas|xmas|halloween", re.I)
+LANDSCAPE = False
 FALLBACK = ["person thinking", "people talking", "brain", "idea", "man", "woman"]
 
 
@@ -47,14 +48,17 @@ def score(node, j):
     if any(a.get("p") and not str(a.get("p", "")).startswith("data:") and a.get("u") is not None for a in j.get("assets", []) or []):
         return -1  # external images we can't load
     ar = h / max(1, w)
-    if ar < 0.55 or ar > 2.2:
+    lo = 0.55 if LANDSCAPE else 0.8  # vertical cards: wide clips leave a band (often with their own backdrop)
+    if ar < lo or ar > 2.2:
         return -1
     s = min(count_layers(j), 60) + (10 if w >= 800 else 0) + (5 if frames >= 60 else 0)
     return s
 
 
 def main():
+    global LANDSCAPE
     slug = sys.argv[1]
+    LANDSCAPE = slug.startswith("long/")
     sp = ROOT / "shorts" / slug / "script.json"
     S = json.loads(sp.read_text())
     out = ROOT / "shorts" / slug / "lottie"
