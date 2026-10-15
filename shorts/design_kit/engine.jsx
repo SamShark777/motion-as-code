@@ -27,6 +27,7 @@ function MissingArt() {
 }
 
 function Card({ r, T }) {
+  if (window.SCRIPT.orientation === 'landscape') return <CardLandscape r={r} T={T} />;
   const t = T - r.start, dur = r.end - r.start;
   const pop = 1.04 - 0.04 * EMOTION.pop(clamp(t / 0.3, 0, 1));
   const push = 1 + 0.06 * EMOTION.push(clamp(t / dur, 0, 1));
@@ -58,6 +59,44 @@ function Card({ r, T }) {
   );
 }
 
+// Long-form (16:9): same scene art (972x1728 portrait drawings) in a panel on the right half of a
+// 1728x972 card, big kinetic captions on the left.
+function CardLandscape({ r, T }) {
+  const t = T - r.start, dur = r.end - r.start;
+  const pop = 1.03 - 0.03 * EMOTION.pop(clamp(t / 0.3, 0, 1));
+  const push = 1 + 0.05 * EMOTION.push(clamp(t / dur, 0, 1));
+  const Art = window[r.art] || MissingArt;
+  const S = window.SCRIPT;
+  const AH = 1060, AW = AH * 972 / 1728;
+  return (
+    <div style={{ position: 'absolute', left: 96, top: 54, width: 1728, height: 972, borderRadius: 46, overflow: 'hidden',
+      background: r.color, transform: `scale(${pop})`, boxShadow: '0 40px 140px rgba(0,0,0,.9)' }}>
+      <div style={{ position: 'absolute', right: 70, top: -40, width: AW, height: AH, transform: `scale(${push})`, transformOrigin: '50% 70%' }}>
+        <svg width={AW} height={AH} viewBox="0 340 972 1388" preserveAspectRatio="xMidYMax meet" style={{ display: 'block', overflow: 'visible' }}>
+          <Art T={T} t={t} dur={dur} />
+        </svg>
+      </div>
+      <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(90deg, rgba(0,0,0,${r.light ? 0.55 : 0.4}) 0%, rgba(0,0,0,0) 55%)` }}></div>
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 80% 75% at 55% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,.55) 80%, rgba(0,0,0,.88) 100%)' }}></div>
+      <div style={{ position: 'absolute', inset: 0, borderRadius: 46, boxShadow: 'inset 0 0 140px 30px rgba(0,0,0,.5)' }}></div>
+      {r.chapter && (
+        <div style={{ position: 'absolute', left: 90, top: 70, fontFamily: "'Montserrat', sans-serif", fontWeight: 800, fontSize: 30,
+          letterSpacing: '0.12em', textTransform: 'uppercase', color: '#FFD23F', opacity: 0.95, textShadow: '0 2px 10px rgba(0,0,0,.5)' }}>{r.chapter}</div>
+      )}
+      {S.handle && (
+        <div style={{ position: 'absolute', top: 44, right: 50, display: 'flex', alignItems: 'center', gap: 10,
+          fontFamily: "'Montserrat', sans-serif", fontWeight: 700, fontSize: 24, color: '#fff', opacity: 0.9, textShadow: '0 2px 10px rgba(0,0,0,.5)' }}>
+          <IgGlyph />
+          <span>{S.handle}</span>
+        </div>
+      )}
+      <div style={{ position: 'absolute', left: 90, width: 900, top: 150, height: 700, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <CaptionTrack T={T} chunks={r.abs} fontSize={S.captionSize || 118} uppercase={false} style={{ width: '100%' }} />
+      </div>
+    </div>
+  );
+}
+
 function Piece() {
   const { T } = useComposition();
   const S = window.SCRIPT, TM = window.TIMING;
@@ -66,7 +105,9 @@ function Piece() {
     const abs = ln.chunks.map((c, j) => ({
       at: TM.chunks[i][j], until: j === ln.chunks.length - 1 ? end : TM.chunks[i][j + 1], text: c[0], ...(c[1] || {}),
     }));
-    return { name: ln.scene, color: ln.color, light: !!ln.light, art: ln.art, start, end, abs };
+    let chapter = null;
+    for (let k = i; k >= 0; k--) if (S.lines[k].chapter) { chapter = S.lines[k].chapter; break; }
+    return { name: ln.scene, color: ln.color, light: !!ln.light, art: ln.art, start, end, abs, chapter };
   });
   return (
     <div style={{ position: 'absolute', inset: 0, background: '#000', overflow: 'hidden' }}>
@@ -82,7 +123,7 @@ function Piece() {
 function DesignShortApp() {
   return (
     <div style={{ position: 'fixed', inset: 0, background: '#000' }}>
-      <CompositionStage width={1080} height={1920} scenes={window.OM_SCENES} playback={window.OM_PLAYBACK} bg="#000">
+      <CompositionStage width={window.SCRIPT.orientation === 'landscape' ? 1920 : 1080} height={window.SCRIPT.orientation === 'landscape' ? 1080 : 1920} scenes={window.OM_SCENES} playback={window.OM_PLAYBACK} bg="#000">
         <Piece />
       </CompositionStage>
     </div>

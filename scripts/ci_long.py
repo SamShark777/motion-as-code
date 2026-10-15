@@ -64,11 +64,9 @@ def plan(slug=None):
 
 
 def chunks():
-    d = json.loads((ROOT / "data" / "audio.json").read_text()).get("duration") or 0
-    if not d:
-        import soundfile as sf
-        info = sf.info(str(ROOT / "audio" / "voiceover.wav"))
-        d = info.frames / info.samplerate
+    import soundfile as sf
+    info = sf.info(str(ROOT / "audio" / "voiceover.wav"))
+    d = info.frames / info.samplerate
     n = max(1, int(-(-d // CHUNK_S)))
     m = [{"k": k, "from": k * CHUNK_S, "to": min(d, (k + 1) * CHUNK_S)} for k in range(n)]
     out("matrix", json.dumps({"include": m}))

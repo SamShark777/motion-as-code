@@ -18,8 +18,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
     ap.add_argument("--max", type=float, default=0)
+    ap.add_argument("--stage", default="all", choices=["all", "prep", "capture"])
+    ap.add_argument("--from", dest="frm", type=float, default=0)
+    ap.add_argument("--to", type=float, default=0)
+    ap.add_argument("--out", default="")
     a = ap.parse_args()
     d = ROOT / "shorts" / a.slug
+    kit = "../" * (len(Path(a.slug).parts)) + "design_kit"
+    S0 = json.loads((d / "script.json").read_text())
+    land = S0.get("orientation") == "landscape"
+    W, H = (1920, 1080) if land else (1080, 1920)
+    if a.stage == "capture":
+        return capture(a.slug, Path(a.out), a.frm, a.to, W, H)
     S = json.loads((d / "script.json").read_text())
     # the voice reads normal case; captions keep the CAPS emphasis words
     for ln in S["lines"]:
@@ -61,7 +71,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="../design_kit/support.js"></script>
+<script src="{kit}/support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -74,7 +84,7 @@ def main():
 <script>window.SCRIPT = JSON.parse({js(S)}); window.TIMING = JSON.parse({js(timing)});</script>
 </helmet>
 <div style="position:fixed;inset:0;background:#000">
-<x-import component-from-global-scope="DesignShortApp" from="../design_kit/animations-v3.jsx ../design_kit/caption-system.jsx ./art.jsx ../design_kit/engine.jsx" hint-size="100%,100%"></x-import>
+<x-import component-from-global-scope="DesignShortApp" from="{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/engine.jsx" hint-size="100%,100%"></x-import>
 </div>
 </x-dc>
 </body>
@@ -82,18 +92,17 @@ def main():
 """
     (d / "index.html").write_text(html)
     (ROOT / "out").mkdir(exist_ok=True)
-    raw = ROOT / "out" / f"{a.slug}.raw.mp4"
-    args = ["node", str(ROOT / "scripts" / "cap_design.mjs"), str(ROOT / "shorts"), f"{a.slug}/index.html", str(raw), "30"]
-    if a.max:
-        args.append(str(a.max))
-    run(*args, cwd=str(ROOT / "scripts"))
+    if a.stage == "prep":
+        return
+    raw = ROOT / "out" / f"{Path(a.slug).name}.raw.mp4"
+    capture(a.slug, raw, 0, a.max, W, H)
     run(sys.executable, str(ROOT / "analysis" / "ted_music.py"))
-    mp4 = d / f"{a.slug}.mp4"
+    mp4 = d / f"{Path(a.slug).name}.mp4"
     run("ffmpeg", "-v", "error", "-y", "-i", str(raw), "-i", str(ROOT / "out" / "mix.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "libx264",
         "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(mp4))
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp4)], capture_output=True, text=True).stdout)
     from PIL import Image
-    W, H = 270, 480
+    W, H = (480, 270) if land else (270, 480)
     sheet = Image.new("RGB", (W * 6, H))
     for i in range(6):
         t = dur * (i + 0.5) / 6
@@ -103,6 +112,15 @@ def main():
     raw.unlink(missing_ok=True)
     print(f"built {mp4} ({dur:.1f}s)")
     print("ENGINE:", (ROOT / "out" / "tts_engine.txt").read_text() if (ROOT / "out" / "tts_engine.txt").exists() else "?")
+
+
+def capture(slug, out, frm, to, W, H):
+    import os
+    env = dict(os.environ, CAP_W=str(W), CAP_H=str(H), CAP_FROM=str(frm or 0))
+    args = ["node", str(ROOT / "scripts" / "cap_design.mjs"), str(ROOT / "shorts"), f"{slug}/index.html", str(out), "30"]
+    if to:
+        args.append(str(to))
+    run(*args, cwd=str(ROOT / "scripts"), env=env)
 
 
 if __name__ == "__main__":

@@ -9,6 +9,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 const [dir, file, out, fpsArg, maxArg] = process.argv.slice(2);
 const fps = +(fpsArg || 30);
+const SW = +(process.env.CAP_W || 1080), SH = +(process.env.CAP_H || 1920);
+const FROM = +(process.env.CAP_FROM || 0);
 const NM = process.env.LOCAL_NM || '';
 const local = {
   'https://unpkg.com/react@18.3.1/umd/react.production.min.js': `${NM}/react/umd/react.production.min.js`,
@@ -21,7 +23,7 @@ const srv = http.createServer((req, res) => {
   res.writeHead(200); fs.createReadStream(p).pipe(res);
 }).listen(8799);
 const b = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--disable-web-security'] });
-const ctx = await b.newContext({ viewport: { width: 1084, height: 1965 }, deviceScaleFactor: 1 });
+const ctx = await b.newContext({ viewport: { width: SW + 4, height: SH + 45 }, deviceScaleFactor: 1 });
 const offline = !!process.env.LOCAL_NM;
 if (offline) {
   await ctx.route('**/*', async (route) => {
@@ -44,15 +46,16 @@ const sel = '[data-om-exportable-video-with-duration-secs]';
 await page.waitForSelector(sel, { timeout: 60000 });
 await page.evaluate(() => document.fonts.ready);
 await page.waitForTimeout(800);
-const dur = Math.min(+(maxArg || 1e9), +(await page.getAttribute(sel, 'data-om-exportable-video-with-duration-secs')));
+const total = +(await page.getAttribute(sel, 'data-om-exportable-video-with-duration-secs'));
+const dur = Math.min(+(maxArg || 1e9), total) - FROM;
 const el = await page.$(sel);
 const bb = await el.boundingBox();
 console.log('duration', dur, 'box', bb);
-const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-', '-vf', 'scale=1080:1920:flags=lanczos,format=yuv420p', '-c:v', 'libx264', '-crf', '18', '-preset', 'medium', out], { stdio: ['pipe', 'inherit', 'inherit'] });
+const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(fps), '-i', '-', '-vf', `scale=${SW}:${SH}:flags=lanczos,format=yuv420p`, '-c:v', 'libx264', '-crf', '18', '-preset', 'medium', out], { stdio: ['pipe', 'inherit', 'inherit'] });
 const n = Math.round(dur * fps);
 const t0 = Date.now();
 for (let i = 0; i < n; i++) {
-  await page.evaluate(([s, t]) => { const e = document.querySelector(s); e.dispatchEvent(new CustomEvent('data-om-seek-to-time-frame', { detail: { time: t, sync: true } })); }, [sel, i / fps]);
+  await page.evaluate(([s, t]) => { const e = document.querySelector(s); e.dispatchEvent(new CustomEvent('data-om-seek-to-time-frame', { detail: { time: t, sync: true } })); }, [sel, FROM + i / fps]);
   const buf = await page.screenshot({ type: 'jpeg', quality: 95, clip: bb });
   if (!ff.stdin.write(buf)) await new Promise((r) => ff.stdin.once('drain', r));
   if (i % 60 === 0) process.stdout.write(`\r${i}/${n} ${(i / ((Date.now() - t0) / 1000)).toFixed(1)} fps   `);

@@ -138,9 +138,16 @@ chunk to the words, writes `shorts/<slug>/index.html` (Claude Design runtime in 
 ## Long-form (Ted type 1, 16:9, YouTube, twice a week)
 
 Shivam asked for long-form Ted type 1 videos twice a week alongside the Shorts.
+- **Format: Ted type 2 in 16:9** (Shivam, 2026-10-14): `format: "cdesign"`, `orientation: "landscape"`,
+  written exactly like a Ted type 2 Short (script.json lines with `scene`/`color`/`light`/`art`/`chunks`
+  + `shorts/long/<slug>/art.jsx`). The engine shows the same 972×1728 portrait drawings in a panel on
+  the right of the 16:9 card with big captions on the left and the current chapter title on top, so
+  draw art the same way (subject in the lower part of the 972×1728 viewBox). Lines may reuse one art
+  component (8–14 arts per video is plenty; vary `color` so reused art still feels new). Any long-form
+  script still in the old `ted1` (Lottie) format must be converted before its build (e.g.
+  seven-tricks-liked → rewrite its lines into chunks + draw its art).
 - **Queue:** the tracker's **"Long form"** sheet (Status Idea → Scripted → Scheduled → Published).
-  Scripts live in `shorts/long/<slug>/script.json` — same format as Ted type 1 Shorts (`format: ted1`,
-  lines with `sec: "ted"`, `q`, `bg`), plus `"chapter": "<title>"` on the first line of each chapter
+  Scripts live in `shorts/long/<slug>/script.json`, plus `"chapter": "<title>"` on the first line of each chapter
   (becomes YouTube chapters), optional `"thumb_text"` (2–4 punchy words for the thumbnail) and
   `"thumb_at"` (seconds into the video for the thumbnail frame). Example: shorts/long/seven-tricks-liked.
 - **Build:** the "Long-form" workflow (`.github/workflows/longform.yml` on main) runs Mon & Thu, builds
@@ -156,7 +163,7 @@ Shivam asked for long-form Ted type 1 videos twice a week alongside the Shorts.
     what they did, what they found, in plain words) → how to use it today.
   - Every claim checked against a real source (web search); list the studies in `post.description`
     with authors and years; `credit` lists them briefly.
-  - Lines of 8–30 words; every line gets a concrete `q` for its illustration; rotate `bg` colours.
+  - Each line is a scene of 1–3-word chunks with one emphasis chunk (see Ted type 2); check with check_art.mjs before pushing.
   - Outro: recap the moves in one line, give a small challenge ("try one this week"), then a reason to
     subscribe that names the schedule (new videos every Tuesday and Friday). Never a bare "subscribe".
   - `post.title`: curiosity + promise, ≤ 70 characters, no #shorts. Set the row to Scripted with its Slug.
