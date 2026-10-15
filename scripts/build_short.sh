@@ -20,6 +20,14 @@ if [ -z "${CHROME_PATH:-}" ]; then
 fi
 
 FORMAT0=$(python3 -c "import json;print(json.load(open('$DIR/script.json')).get('format','tpl'))")
+if [ "$FORMAT0" = "prebuilt" ]; then
+  # finished elsewhere (e.g. a Claude Design export that Claude voiced and scored): just copy it + preview strip
+  cp "$DIR/source/final.mp4" "$DIR/$SLUG.mp4"
+  DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$DIR/$SLUG.mp4")
+  ffmpeg -v error -y -i "$DIR/$SLUG.mp4" -vf "fps=6/$DUR,scale=270:480,tile=6x1" -frames:v 1 "$DIR/preview.jpg"
+  echo "ENGINE: kokoro"
+  exit 0
+fi
 if [ "$FORMAT0" = "cdesign" ]; then
   # Claude Design style: React/SVG scenes captured frame by frame (scripts/design_build.py)
   ( cd "$ROOT/app" && [ -d node_modules ] || bun install )

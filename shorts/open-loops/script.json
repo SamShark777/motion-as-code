@@ -1,0 +1,13 @@
+{
+ "slug": "open-loops",
+ "no": 101,
+ "format": "prebuilt",
+ "look": "nova",
+ "voice": {"engine": "kokoro", "kokoro_voice": "am_michael"},
+ "note": "Made in Claude Design by Shivam (silent); dialogue (Kokoro am_michael = Ash, af_heart = Nova), calm_music.py bed and mix added by Claude. Source: source/final.mp4, lines: source/dialogue.json.",
+ "post": {
+  "title": "Why Your Brain Replays Your To-Do List at Night #shorts",
+  "description": "Zeigarnik (1927): unfinished tasks stay more active in memory than finished ones. Masicampo & Baumeister (2011): writing a specific plan for the next step reduced intrusive thoughts about unfinished goals. Write the next step, then close the laptop. #psychology #shorts #sleep #productivity",
+  "tags": ["zeigarnik effect", "sleep", "psychology", "productivity", "open loops"]
+ }
+}
