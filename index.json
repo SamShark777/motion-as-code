@@ -1,0 +1,1028 @@
+{
+ "brain": [
+  {
+   "file": "out/lottie/brain/0_1503606.json",
+   "name": "brain",
+   "id": "1503606",
+   "url": "https://assets-v2.lottiefiles.com/a/31c9f48c-6cb0-4aee-8a90-2064ec11a425/kpQbjAnbli.json",
+   "author": {
+    "username": "/ncz5kwed0ya9r2kn",
+    "firstName": "Dimitrios Ploutarchos"
+   },
+   "w": 250,
+   "h": 250,
+   "fr": 30,
+   "frames": 150
+  },
+  {
+   "file": "out/lottie/brain/1_1045712.json",
+   "name": "brain",
+   "id": "1045712",
+   "url": "https://assets-v2.lottiefiles.com/a/c073df1a-fca7-11ef-9759-cbdbe38f509c/Mfe5i8heT0.json",
+   "author": {
+    "username": "/i0vrp7l9gcksh21x",
+    "firstName": "vaishnavi"
+   },
+   "w": 400,
+   "h": 400,
+   "fr": 30,
+   "frames": 168
+  },
+  {
+   "file": "out/lottie/brain/2_139079.json",
+   "name": "brain",
+   "id": "139079",
+   "url": "https://assets-v2.lottiefiles.com/a/e160bd18-1187-11ee-a629-bb7e777e369e/gDPgDfZRUr.json",
+   "author": {
+    "username": "/ypey3cqfzwcgwlzd",
+    "firstName": "Kan"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 60,
+   "frames": 331
+  },
+  {
+   "file": "out/lottie/brain/3_143887.json",
+   "name": "brain",
+   "id": "143887",
+   "url": "https://assets-v2.lottiefiles.com/a/4296157c-118a-11ee-af32-3f1f4ded9537/RhYiVlzYSe.json",
+   "author": {
+    "username": "/jx9tzwblzru2v3vu",
+    "firstName": "Ritesh"
+   },
+   "w": 1748,
+   "h": 2160,
+   "fr": 29.9700012207031,
+   "frames": 597.000024316308
+  },
+  {
+   "file": "out/lottie/brain/4_82062.json",
+   "name": "brain",
+   "id": "82062",
+   "url": "https://assets-v2.lottiefiles.com/a/37f1257e-1173-11ee-8e68-4f9a3fb9dea0/FSJdgqhp9f.json",
+   "author": {
+    "username": "/81xsbdo7ikulqk26",
+    "firstName": "Yanir Danino"
+   },
+   "w": 1645,
+   "h": 1707,
+   "fr": 60,
+   "frames": 120
+  },
+  {
+   "file": "out/lottie/brain/5_1500342.json",
+   "name": "Sherpa",
+   "id": "1500342",
+   "url": "https://assets-v2.lottiefiles.com/a/aafd9522-7959-476a-b89e-fec178165ac1/V4iwo48Cqm.json",
+   "author": {
+    "username": "/mx8u2fwvpbmplou6",
+    "firstName": "Gabriela"
+   },
+   "w": 264,
+   "h": 215,
+   "fr": 100,
+   "frames": 220
+  }
+ ],
+ "conversation": [
+  {
+   "file": "out/lottie/conversation/0_1502470.json",
+   "name": "conversation",
+   "id": "1502470",
+   "url": "https://assets-v2.lottiefiles.com/a/21bfde33-998b-489b-8295-4109c10e42c9/g4iG5iKkxH.json",
+   "author": {
+    "username": "/g8ef6tvcagwkkfrp",
+    "firstName": "Duy Hung"
+   },
+   "w": 300,
+   "h": 300,
+   "fr": 25,
+   "frames": 50
+  },
+  {
+   "file": "out/lottie/conversation/1_1501713.json",
+   "name": "conversation",
+   "id": "1501713",
+   "url": "https://assets-v2.lottiefiles.com/a/82bb48e5-387e-478f-b004-11a4127abdc7/N0XgYL7ltw.json",
+   "author": {
+    "username": "/qivk6hld4carrspx",
+    "firstName": "Nguyen"
+   },
+   "w": 1000,
+   "h": 1000,
+   "fr": 25,
+   "frames": 60
+  },
+  {
+   "file": "out/lottie/conversation/2_1035710.json",
+   "name": "conversation",
+   "id": "1035710",
+   "url": "https://assets-v2.lottiefiles.com/a/7cd34e66-0f55-11ef-a362-8f9f340816a3/BpGtG9CiUB.json",
+   "author": {
+    "username": "/e1w8nmklo87apwmo",
+    "firstName": "dubydu"
+   },
+   "w": 375,
+   "h": 325,
+   "fr": 29.9700012207031,
+   "frames": 180.00000733155
+  },
+  {
+   "file": "out/lottie/conversation/3_61436.json",
+   "name": "conversation",
+   "id": "61436",
+   "url": "https://assets-v2.lottiefiles.com/a/a2d68c82-116c-11ee-90be-3fcb2a7b7bd9/wz21PRkEB0.json",
+   "author": null,
+   "w": 2400,
+   "h": 2400,
+   "fr": 60,
+   "frames": 182
+  },
+  {
+   "file": "out/lottie/conversation/4_61294.json",
+   "name": "conversation",
+   "id": "61294",
+   "url": "https://assets-v2.lottiefiles.com/a/a25e334a-116c-11ee-9050-e74114b056a3/nEwE076FCf.json",
+   "author": null,
+   "w": 500,
+   "h": 500,
+   "fr": 60,
+   "frames": 126
+  },
+  {
+   "file": "out/lottie/conversation/5_1049594.json",
+   "name": "chatting",
+   "id": "1049594",
+   "url": "https://assets-v2.lottiefiles.com/a/cd7091ba-484a-11f0-affb-032fd6ac6dbd/7UVX5Cqekj.json",
+   "author": {
+    "username": "/4vb3vlz1c361uylk",
+    "firstName": "My"
+   },
+   "w": 1920,
+   "h": 1080,
+   "fr": 24,
+   "frames": 124
+  }
+ ],
+ "eye contact": [
+  {
+   "file": "out/lottie/eye_contact/0_65076.json",
+   "name": "connect",
+   "id": "65076",
+   "url": "https://assets-v2.lottiefiles.com/a/c0ba9800-116d-11ee-b63f-6fd1cd19192c/TYIvsT7yoG.json",
+   "author": {
+    "username": "/vuzkfsrqve",
+    "firstName": "The Zesh"
+   },
+   "w": 500,
+   "h": 500,
+   "fr": 24,
+   "frames": 144
+  },
+  {
+   "file": "out/lottie/eye_contact/1_1524240.json",
+   "name": "eyes",
+   "id": "1524240",
+   "url": "https://assets-v2.lottiefiles.com/a/79ebc67e-795e-43cd-8976-cf11c64a11b5/vzv1FdVovD.json",
+   "author": {
+    "username": "/8q8aqvcbdia5cva3",
+    "firstName": "Hi\u1ebfu"
+   },
+   "w": 1800,
+   "h": 1800,
+   "fr": 60,
+   "frames": 360
+  },
+  {
+   "file": "out/lottie/eye_contact/2_1524177.json",
+   "name": "eyes",
+   "id": "1524177",
+   "url": "https://assets-v2.lottiefiles.com/a/1bc19a87-b32e-4270-9567-f1049f1cd642/dtGC1nbCN8.json",
+   "author": {
+    "username": "/wpy0l52ipd2854qo",
+    "firstName": "Y"
+   },
+   "w": 300,
+   "h": 300,
+   "fr": 60,
+   "frames": 60
+  },
+  {
+   "file": "out/lottie/eye_contact/3_1030128.json",
+   "name": "eyes",
+   "id": "1030128",
+   "url": "https://assets-v2.lottiefiles.com/a/16c7d954-acac-11ee-ab68-c36ab2074c76/2EiGFm9eDN.json",
+   "author": {
+    "username": "/gv1hjuptr4x92tdn",
+    "firstName": "\u9ad8\u6a4b \u82b1\u78a7"
+   },
+   "w": 67,
+   "h": 62,
+   "fr": 60,
+   "frames": 132
+  },
+  {
+   "file": "out/lottie/eye_contact/4_147989.json",
+   "name": "eyes",
+   "id": "147989",
+   "url": "https://assets-v2.lottiefiles.com/a/ca772d44-1808-11ee-a222-dff2f9c37545/gNVSBxxlYU.json",
+   "author": {
+    "username": "/jmmb9mn5zn3a9k8r",
+    "firstName": "Kazunori"
+   },
+   "w": 1000,
+   "h": 1000,
+   "fr": 25,
+   "frames": 51
+  },
+  {
+   "file": "out/lottie/eye_contact/5_1022217.json",
+   "name": "eyee",
+   "id": "1022217",
+   "url": "https://assets-v2.lottiefiles.com/a/4208cf1a-1ff8-11ee-a944-230990f1bf8c/bInYG2jabq.json",
+   "author": {
+    "username": "/ae699dafd7be8elj",
+    "firstName": "Vinzenz"
+   },
+   "w": 2000,
+   "h": 2000,
+   "fr": 60,
+   "frames": 80
+  }
+ ],
+ "silence": [
+  {
+   "file": "out/lottie/silence/0_103060.json",
+   "name": "private",
+   "id": "103060",
+   "url": "https://assets-v2.lottiefiles.com/a/fa6941ee-1179-11ee-9c4e-f3c7a3da8bbd/5k7euswSXg.json",
+   "author": {
+    "username": "/i2e3j8tx53",
+    "firstName": "The Global Company Sales"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 60,
+   "frames": 120
+  },
+  {
+   "file": "out/lottie/silence/1_1508746.json",
+   "name": "sound",
+   "id": "1508746",
+   "url": "https://assets-v2.lottiefiles.com/a/cc973c06-bbd6-42b6-b9c0-1dba1058726a/mUGFjduyfE.json",
+   "author": {
+    "username": "/vs3lk71ya5p2krw0",
+    "firstName": "\u5148\u68ee"
+   },
+   "w": 18,
+   "h": 18,
+   "fr": 60,
+   "frames": 54
+  },
+  {
+   "file": "out/lottie/silence/2_1041182.json",
+   "name": "sound",
+   "id": "1041182",
+   "url": "https://assets-v2.lottiefiles.com/a/ef5dd3a6-8008-11ef-9c56-1fe5eeb392f1/wq0QzsIvhx.json",
+   "author": {
+    "username": "/jzxgtw157cz9c5pj",
+    "firstName": "hj"
+   },
+   "w": 69,
+   "h": 69,
+   "fr": 60,
+   "frames": 54.18
+  },
+  {
+   "file": "out/lottie/silence/3_121760.json",
+   "name": "sound",
+   "id": "121760",
+   "url": "https://assets-v2.lottiefiles.com/a/9e4cc33e-1180-11ee-8974-0b6c7b4b0dc4/FULlFiSCrv.json",
+   "author": {
+    "username": "/p0zdbo2l0d6uci6j",
+    "firstName": "Vlad"
+   },
+   "w": 700,
+   "h": 300,
+   "fr": 60,
+   "frames": 120
+  },
+  {
+   "file": "out/lottie/silence/4_106775.json",
+   "name": "sound",
+   "id": "106775",
+   "url": "https://assets-v2.lottiefiles.com/a/2903bc04-117b-11ee-ab61-4b10cf2a17cc/6IxvyIUtvy.json",
+   "author": {
+    "username": "/1ovnasczin",
+    "firstName": "Daniel Teixeira"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 60,
+   "frames": 180
+  },
+  {
+   "file": "out/lottie/silence/5_18614.json",
+   "name": "sound",
+   "id": "18614",
+   "url": "https://assets-v2.lottiefiles.com/a/29beb7bc-1161-11ee-bd79-37e5be81475b/9BO1kkOd9b.json",
+   "author": {
+    "username": "/d783rk26raxashqs",
+    "firstName": "wallisrita"
+   },
+   "w": 132,
+   "h": 54,
+   "fr": 60,
+   "frames": 120
+  }
+ ],
+ "secret": [
+  {
+   "file": "out/lottie/secret/0_103883.json",
+   "name": "secret",
+   "id": "103883",
+   "url": "https://assets-v2.lottiefiles.com/a/480fa9ce-117a-11ee-b593-83398b59aef6/uoa13DU7WC.json",
+   "author": {
+    "username": "/p0gjj3u377",
+    "firstName": "Naved Tamboli"
+   },
+   "w": 3840,
+   "h": 2160,
+   "fr": 60,
+   "frames": 600
+  },
+  {
+   "file": "out/lottie/secret/1_113063.json",
+   "name": "eating love",
+   "id": "113063",
+   "url": "https://assets-v2.lottiefiles.com/a/5a14cbb0-117d-11ee-a183-3f9d553f06c6/7KxF5pAk4J.json",
+   "author": {
+    "username": "/anwar",
+    "firstName": "Anwar Hossain"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 30,
+   "frames": 32
+  },
+  {
+   "file": "out/lottie/secret/2_129253.json",
+   "name": "samplesecret",
+   "id": "129253",
+   "url": "https://assets-v2.lottiefiles.com/a/980acacc-1183-11ee-bed4-a73f43cddafe/LJhO2YguLj.json",
+   "author": {
+    "username": "/opjieksmu9",
+    "firstName": "Jaya Marie Pablo"
+   },
+   "w": 800,
+   "h": 800,
+   "fr": 30,
+   "frames": 301
+  },
+  {
+   "file": "out/lottie/secret/3_1508820.json",
+   "name": "hidden",
+   "id": "1508820",
+   "url": "https://assets-v2.lottiefiles.com/a/c8e57f31-2bb0-4fcd-bb6b-af6bad6d47ef/jzIlLeuh7T.json",
+   "author": {
+    "username": "/actinver",
+    "firstName": "Actinver"
+   },
+   "w": 1080,
+   "h": 1080,
+   "fr": 24,
+   "frames": 72
+  },
+  {
+   "file": "out/lottie/secret/4_38582.json",
+   "name": "EXPRVL",
+   "id": "38582",
+   "url": "https://assets-v2.lottiefiles.com/a/6c7b16e0-1166-11ee-a776-2f4759d43990/Kfk1Sn37zI.json",
+   "author": {
+    "username": "/k0bhtg0bwxopiluy",
+    "firstName": "Flippy Westside"
+   },
+   "w": 500,
+   "h": 500,
+   "fr": 60,
+   "frames": 180
+  },
+  {
+   "file": "out/lottie/secret/5_10480.json",
+   "name": "LOADING ANIMATION SECRET",
+   "id": "10480",
+   "url": "https://assets-v2.lottiefiles.com/a/914befe4-1152-11ee-be10-ff86df2fa231/ndH2UcJ7V6.json",
+   "author": {
+    "username": "/0tlq4buu1rlma1up",
+    "firstName": "John Wethington"
+   },
+   "w": 340,
+   "h": 340,
+   "fr": 30,
+   "frames": 90
+  }
+ ],
+ "talking": [
+  {
+   "file": "out/lottie/talking/0_65212.json",
+   "name": "talk",
+   "id": "65212",
+   "url": "https://assets-v2.lottiefiles.com/a/d7634c3c-116d-11ee-b4af-df1a1a35a33c/awzY953Nmo.json",
+   "author": {
+    "username": "/hanzwang",
+    "firstName": "Hanz Wang"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 29.9700012207031,
+   "frames": 60.0000024438501
+  },
+  {
+   "file": "out/lottie/talking/1_1522264.json",
+   "name": "talking",
+   "id": "1522264",
+   "url": "https://assets-v2.lottiefiles.com/a/e952998a-eea5-444b-b884-36b5a34328cb/UvqUmX1D1T.json",
+   "author": {
+    "username": "/jgd2i142renxtau2",
+    "firstName": "Syed Ali"
+   },
+   "w": 1024,
+   "h": 1024,
+   "fr": 30,
+   "frames": 150
+  },
+  {
+   "file": "out/lottie/talking/2_134150.json",
+   "name": "share",
+   "id": "134150",
+   "url": "https://assets-v2.lottiefiles.com/a/a7ba5fb2-1185-11ee-8a84-071396cd76bf/fUUgaNHJtG.json",
+   "author": {
+    "username": "/4xov3svqon",
+    "firstName": "Joao Lucas"
+   },
+   "w": 1000,
+   "h": 700,
+   "fr": 30,
+   "frames": 300
+  },
+  {
+   "file": "out/lottie/talking/3_7230.json",
+   "name": "Talk",
+   "id": "7230",
+   "url": "https://assets-v2.lottiefiles.com/a/c3673b4c-1151-11ee-9746-c3f24a69680b/anJnW6j8zB.json",
+   "author": {
+    "username": "/rhc78z9rsfzlzrua",
+    "firstName": "\u67f3\u7f8e\u5a1f"
+   },
+   "w": 420,
+   "h": 420,
+   "fr": 25,
+   "frames": 75
+  },
+  {
+   "file": "out/lottie/talking/4_1023825.json",
+   "name": "talk",
+   "id": "1023825",
+   "url": "https://assets-v2.lottiefiles.com/a/b3694680-4186-11ee-9b55-cb7a303b3d4d/Zy6VEbp2v7.json",
+   "author": {
+    "username": "/ha4mivbyun9aj9ey",
+    "firstName": "Xinran"
+   },
+   "w": 360,
+   "h": 560,
+   "fr": 25,
+   "frames": 50
+  },
+  {
+   "file": "out/lottie/talking/5_83605.json",
+   "name": "communication",
+   "id": "83605",
+   "url": "https://assets-v2.lottiefiles.com/a/c9044c44-1173-11ee-a88b-8b8dd17ab145/2BYMiZh2nS.json",
+   "author": {
+    "username": "/vag1syuxxz",
+    "firstName": "joshua dias"
+   },
+   "w": 700,
+   "h": 500,
+   "fr": 30,
+   "frames": 150
+  }
+ ],
+ "favor": [
+  {
+   "file": "out/lottie/favor/0_70074.json",
+   "name": "favorite",
+   "id": "70074",
+   "url": "https://assets-v2.lottiefiles.com/a/4f0d0894-116f-11ee-9a10-036ee9009d9d/2Wzemrd4gI.json",
+   "author": {
+    "username": "/jgn9fetg31ep0xqu",
+    "firstName": "\u4f60\u559c\u6b22\u5403\u9752\u6912\u4e48\uff1f"
+   },
+   "w": 300,
+   "h": 300,
+   "fr": 24,
+   "frames": 12
+  },
+  {
+   "file": "out/lottie/favor/1_2395.json",
+   "name": "favorite",
+   "id": "2395",
+   "url": "https://assets-v2.lottiefiles.com/a/d5ca9f14-1150-11ee-833c-7b3f8e11973e/7rh2IY8LZZ.json",
+   "author": {
+    "username": "/luizgama",
+    "firstName": " Luiz Gustavo Freire Gama"
+   },
+   "w": 256,
+   "h": 256,
+   "fr": 60,
+   "frames": 110
+  },
+  {
+   "file": "out/lottie/favor/2_99403.json",
+   "name": "love",
+   "id": "99403",
+   "url": "https://assets-v2.lottiefiles.com/a/b812c834-1178-11ee-ab9a-8748e477e363/aOfQMvXKQY.json",
+   "author": {
+    "username": "/xys43uwxzs",
+    "firstName": "EthemElmas"
+   },
+   "w": 210,
+   "h": 160,
+   "fr": 29.9700012207031,
+   "frames": 30.0000012219251
+  },
+  {
+   "file": "out/lottie/favor/3_45908.json",
+   "name": "Favour Heart",
+   "id": "45908",
+   "url": "https://assets-v2.lottiefiles.com/a/68c6bf0c-1168-11ee-8ed0-0727b994ce25/QzbEg73Fvg.json",
+   "author": {
+    "username": "/paulwoodward",
+    "firstName": "Paul Woodward"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 30,
+   "frames": 61
+  },
+  {
+   "file": "out/lottie/favor/4_2968.json",
+   "name": "prathikfav",
+   "id": "2968",
+   "url": "https://assets-v2.lottiefiles.com/a/e3f1fb5a-1150-11ee-9dfd-2772979763ac/Map8CXEwvw.json",
+   "author": {
+    "username": "/c6xfubtt6q8b37sp",
+    "firstName": "manasa hegde"
+   },
+   "w": 400,
+   "h": 600,
+   "fr": 29.9700012207031,
+   "frames": 100.000004073084
+  },
+  {
+   "file": "out/lottie/favor/5_84112.json",
+   "name": "favorite",
+   "id": "84112",
+   "url": "https://assets-v2.lottiefiles.com/a/e044690c-1173-11ee-b12f-7743092aa2f8/TFhcIMPi96.json",
+   "author": {
+    "username": "/4mzk9okvx3",
+    "firstName": "Mervin Paul"
+   },
+   "w": 640,
+   "h": 640,
+   "fr": 10,
+   "frames": 30
+  }
+ ],
+ "helping hand": [
+  {
+   "file": "out/lottie/helping_hand/0_147241.json",
+   "name": "hand",
+   "id": "147241",
+   "url": "https://assets-v2.lottiefiles.com/a/099b625c-118c-11ee-a59c-b790493b20a3/Dc5pJnHgfh.json",
+   "author": {
+    "username": "/5qc2s32xq0amje1u",
+    "firstName": "Samuel"
+   },
+   "w": 350,
+   "h": 204,
+   "fr": 60,
+   "frames": 121
+  },
+  {
+   "file": "out/lottie/helping_hand/1_147242.json",
+   "name": "orange helping hand",
+   "id": "147242",
+   "url": "https://assets-v2.lottiefiles.com/a/099d1642-118c-11ee-a59d-9b7ca22bb25d/VOHE6hsDTf.json",
+   "author": {
+    "username": "/5qc2s32xq0amje1u",
+    "firstName": "Samuel"
+   },
+   "w": 350,
+   "h": 204,
+   "fr": 60,
+   "frames": 121
+  },
+  {
+   "file": "out/lottie/helping_hand/2_6542.json",
+   "name": "handup",
+   "id": "6542",
+   "url": "https://assets-v2.lottiefiles.com/a/a64edb82-1151-11ee-b282-0759058274f5/nw9F43YvSx.json",
+   "author": {
+    "username": "/rgs4k2z7266kljgv",
+    "firstName": "Joffy Wong"
+   },
+   "w": 400,
+   "h": 400,
+   "fr": 25,
+   "frames": 99
+  },
+  {
+   "file": "out/lottie/helping_hand/3_30858.json",
+   "name": "helping",
+   "id": "30858",
+   "url": "https://assets-v2.lottiefiles.com/a/6e86b13a-1164-11ee-b6fd-eb7ad0e8d45d/yHOUtH31zE.json",
+   "author": {
+    "username": "/ssguf6yb034j5mwr",
+    "firstName": "Chai Jit Ted"
+   },
+   "w": 800,
+   "h": 800,
+   "fr": 29.9700012207031,
+   "frames": 61.0000024845809
+  },
+  {
+   "file": "out/lottie/helping_hand/4_99782.json",
+   "name": "help",
+   "id": "99782",
+   "url": "https://assets-v2.lottiefiles.com/a/d6db3a08-1178-11ee-8d7c-83f82e7016e3/OltiZoYEYU.json",
+   "author": {
+    "username": "/vn5pgzeh5fpjbgcz",
+    "firstName": "cscribbles"
+   },
+   "w": 1630,
+   "h": 1510,
+   "fr": 60,
+   "frames": 247
+  },
+  {
+   "file": "out/lottie/helping_hand/5_102735.json",
+   "name": "help",
+   "id": "102735",
+   "url": "https://assets-v2.lottiefiles.com/a/e15cc432-1179-11ee-b7d3-5f9bbb6e1c11/quUPgJdzBS.json",
+   "author": {
+    "username": "/7jlpla6mdi",
+    "firstName": "coach ma"
+   },
+   "w": 750,
+   "h": 500,
+   "fr": 30,
+   "frames": 91
+  }
+ ],
+ "friendship": [
+  {
+   "file": "out/lottie/friendship/0_27230.json",
+   "name": "friendships",
+   "id": "27230",
+   "url": "https://assets-v2.lottiefiles.com/a/62f6015a-1163-11ee-b958-b30f2c83f07c/bzEOHHjQfS.json",
+   "author": {
+    "username": "/jt0ahkuf8hdba5y4",
+    "firstName": "Paul"
+   },
+   "w": 500,
+   "h": 500,
+   "fr": 60,
+   "frames": 122
+  },
+  {
+   "file": "out/lottie/friendship/1_136418.json",
+   "name": "friends",
+   "id": "136418",
+   "url": "https://assets-v2.lottiefiles.com/a/ca9bbdae-1186-11ee-b5ca-b3d847f28449/8Fzc8FYobW.json",
+   "author": {
+    "username": "/rztczitlxw",
+    "firstName": "chaya esther Goldman"
+   },
+   "w": 406,
+   "h": 246,
+   "fr": 60,
+   "frames": 64
+  },
+  {
+   "file": "out/lottie/friendship/2_1028697.json",
+   "name": "friends",
+   "id": "1028697",
+   "url": "https://assets-v2.lottiefiles.com/a/4e2d2e00-9594-11ee-93c4-5f64d935213e/CwwgC7LKis.json",
+   "author": {
+    "username": "/rhnt520nnif2rhvs",
+    "firstName": "Hiuhei"
+   },
+   "w": 81,
+   "h": 81,
+   "fr": 25,
+   "frames": 25
+  },
+  {
+   "file": "out/lottie/friendship/3_75531.json",
+   "name": "friends",
+   "id": "75531",
+   "url": "https://assets-v2.lottiefiles.com/a/19a3f490-1171-11ee-a4b2-6fae2fb639bc/ej36qYscn8.json",
+   "author": {
+    "username": "/lizatawaf",
+    "firstName": "liza tawaf"
+   },
+   "w": 1000,
+   "h": 700,
+   "fr": 60,
+   "frames": 181
+  },
+  {
+   "file": "out/lottie/friendship/4_27325.json",
+   "name": "friends",
+   "id": "27325",
+   "url": "https://assets-v2.lottiefiles.com/a/793cd538-1163-11ee-a148-07a9b720d7dc/e2SxhRZngV.json",
+   "author": {
+    "username": "/jt0ahkuf8hdba5y4",
+    "firstName": "Paul"
+   },
+   "w": 500,
+   "h": 500,
+   "fr": 60,
+   "frames": 122
+  },
+  {
+   "file": "out/lottie/friendship/5_88702.json",
+   "name": "Final version",
+   "id": "88702",
+   "url": "https://assets-v2.lottiefiles.com/a/5b38f672-1175-11ee-a262-534dc83fb139/tdT0Tzk20B.json",
+   "author": {
+    "username": "/48ylu1ovzj",
+    "firstName": "Nilufar Suleymanzade"
+   },
+   "w": 320,
+   "h": 240,
+   "fr": 24,
+   "frames": 47
+  }
+ ],
+ "lightbulb": [
+  {
+   "file": "out/lottie/lightbulb/0_140103.json",
+   "name": "lightbulb",
+   "id": "140103",
+   "url": "https://assets-v2.lottiefiles.com/a/6a804d02-1188-11ee-beca-838b7c9b75e6/IkjiDhtySK.json",
+   "author": {
+    "username": "/yghr2ht6gt44ymgr",
+    "firstName": "Jaedster"
+   },
+   "w": 500,
+   "h": 500,
+   "fr": 30,
+   "frames": 79
+  },
+  {
+   "file": "out/lottie/lightbulb/1_27334.json",
+   "name": "lightbulb",
+   "id": "27334",
+   "url": "https://assets-v2.lottiefiles.com/a/79483298-1163-11ee-a150-e33dbe6ffb91/fhyZpg8q6t.json",
+   "author": {
+    "username": "/c1endxad206tvu9t",
+    "firstName": "john bingham"
+   },
+   "w": 1707,
+   "h": 1452,
+   "fr": 30,
+   "frames": 241
+  },
+  {
+   "file": "out/lottie/lightbulb/2_33464.json",
+   "name": "lighting lightbulb",
+   "id": "33464",
+   "url": "https://assets-v2.lottiefiles.com/a/1b03da50-1165-11ee-824b-3f02928e3c14/D7gwzaUYk2.json",
+   "author": {
+    "username": "/ky34ycxf39ya3aek",
+    "firstName": "Agnes Alpar"
+   },
+   "w": 600,
+   "h": 600,
+   "fr": 30,
+   "frames": 102
+  },
+  {
+   "file": "out/lottie/lightbulb/3_123071.json",
+   "name": "Idea",
+   "id": "123071",
+   "url": "https://assets-v2.lottiefiles.com/a/11516cd6-1181-11ee-97b8-8b18d632df5c/OwveqvxkH7.json",
+   "author": {
+    "username": "/jznhq6yilk",
+    "firstName": "\u00c1d\u00e1m Pusztai"
+   },
+   "w": 200,
+   "h": 200,
+   "fr": 30,
+   "frames": 200
+  },
+  {
+   "file": "out/lottie/lightbulb/4_8965.json",
+   "name": "lightbulb",
+   "id": "8965",
+   "url": "https://assets-v2.lottiefiles.com/a/44bb42d8-1152-11ee-b295-1389476340a6/aNQDP9ujOv.json",
+   "author": {
+    "username": "/znyqpy3evhdbd33q",
+    "firstName": "Mario Ramos"
+   },
+   "w": 226,
+   "h": 224,
+   "fr": 29.9700012207031,
+   "frames": 150.000006109625
+  },
+  {
+   "file": "out/lottie/lightbulb/5_1038162.json",
+   "name": "light bulb",
+   "id": "1038162",
+   "url": "https://assets-v2.lottiefiles.com/a/ad30f6b0-3d6f-11ef-ac08-bbfd8ff46c73/xADse6Y4Ib.json",
+   "author": {
+    "username": "/o9wujypo2p337uao",
+    "firstName": "Nkhangweleni"
+   },
+   "w": 1200,
+   "h": 1200,
+   "fr": 24,
+   "frames": 72
+  }
+ ],
+ "thinking": [
+  {
+   "file": "out/lottie/thinking/0_1050407.json",
+   "name": "thinking",
+   "id": "1050407",
+   "url": "https://assets-v2.lottiefiles.com/a/34fbf646-55c8-11f0-abba-fb961e43bb9d/PWp2BGKJnM.json",
+   "author": {
+    "username": "/9hsyuz7hkbfke537",
+    "firstName": "Maria"
+   },
+   "w": 1024,
+   "h": 1024,
+   "fr": 30,
+   "frames": 150
+  },
+  {
+   "file": "out/lottie/thinking/1_1512191.json",
+   "name": "thinking new",
+   "id": "1512191",
+   "url": "https://assets-v2.lottiefiles.com/a/806693da-483f-4fac-b121-34216a0137cb/IxZA0fBn2c.json",
+   "author": {
+    "username": "/0bxgyu9ke5m81lwm",
+    "firstName": "ruyu"
+   },
+   "w": 500,
+   "h": 500,
+   "fr": 30,
+   "frames": 61
+  },
+  {
+   "file": "out/lottie/thinking/2_143588.json",
+   "name": "thinking",
+   "id": "143588",
+   "url": "https://assets-v2.lottiefiles.com/a/205475a8-118a-11ee-81b9-cf6c518ca94f/u8gTpoZnAf.json",
+   "author": {
+    "username": "/dtx12ndzfe0bosq0",
+    "firstName": "Sheila"
+   },
+   "w": 1920,
+   "h": 1080,
+   "fr": 29.9700012207031,
+   "frames": 151.000006150356
+  },
+  {
+   "file": "out/lottie/thinking/3_1501407.json",
+   "name": "thinking",
+   "id": "1501407",
+   "url": "https://assets-v2.lottiefiles.com/a/c9c2da23-0f0b-43a6-a3b7-a68ad8209791/ZjTDsnhSvK.json",
+   "author": {
+    "username": "/rthnwr4wn06rtgbb",
+    "firstName": "Uday"
+   },
+   "w": 96,
+   "h": 96,
+   "fr": 60,
+   "frames": 120.12
+  },
+  {
+   "file": "out/lottie/thinking/4_86047.json",
+   "name": "Thinking",
+   "id": "86047",
+   "url": "https://assets-v2.lottiefiles.com/a/929553a0-1174-11ee-9d92-3f224f714b1f/EN2CiakJNL.json",
+   "author": {
+    "username": "/rkaizk1iac",
+    "firstName": "Arslan Sid"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 60,
+   "frames": 301
+  },
+  {
+   "file": "out/lottie/thinking/5_1517395.json",
+   "name": "thinking",
+   "id": "1517395",
+   "url": "https://assets-v2.lottiefiles.com/a/c9a26377-866f-42b5-abb9-6912f949f789/b4eAwadeCn.json",
+   "author": {
+    "username": "/u8re55hwuf67rtll",
+    "firstName": "Muhammed Naeem"
+   },
+   "w": 45,
+   "h": 45,
+   "fr": 60,
+   "frames": 235.45
+  }
+ ],
+ "mind": [
+  {
+   "file": "out/lottie/mind/0_143887.json",
+   "name": "brain",
+   "id": "143887",
+   "url": "https://assets-v2.lottiefiles.com/a/4296157c-118a-11ee-af32-3f1f4ded9537/RhYiVlzYSe.json",
+   "author": {
+    "username": "/jx9tzwblzru2v3vu",
+    "firstName": "Ritesh"
+   },
+   "w": 1748,
+   "h": 2160,
+   "fr": 29.9700012207031,
+   "frames": 597.000024316308
+  },
+  {
+   "file": "out/lottie/mind/1_1503606.json",
+   "name": "brain",
+   "id": "1503606",
+   "url": "https://assets-v2.lottiefiles.com/a/31c9f48c-6cb0-4aee-8a90-2064ec11a425/kpQbjAnbli.json",
+   "author": {
+    "username": "/ncz5kwed0ya9r2kn",
+    "firstName": "Dimitrios Ploutarchos"
+   },
+   "w": 250,
+   "h": 250,
+   "fr": 30,
+   "frames": 150
+  },
+  {
+   "file": "out/lottie/mind/2_1045712.json",
+   "name": "brain",
+   "id": "1045712",
+   "url": "https://assets-v2.lottiefiles.com/a/c073df1a-fca7-11ef-9759-cbdbe38f509c/Mfe5i8heT0.json",
+   "author": {
+    "username": "/i0vrp7l9gcksh21x",
+    "firstName": "vaishnavi"
+   },
+   "w": 400,
+   "h": 400,
+   "fr": 30,
+   "frames": 168
+  },
+  {
+   "file": "out/lottie/mind/3_139079.json",
+   "name": "brain",
+   "id": "139079",
+   "url": "https://assets-v2.lottiefiles.com/a/e160bd18-1187-11ee-a629-bb7e777e369e/gDPgDfZRUr.json",
+   "author": {
+    "username": "/ypey3cqfzwcgwlzd",
+    "firstName": "Kan"
+   },
+   "w": 512,
+   "h": 512,
+   "fr": 60,
+   "frames": 331
+  },
+  {
+   "file": "out/lottie/mind/4_133184.json",
+   "name": "text",
+   "id": "133184",
+   "url": "https://assets-v2.lottiefiles.com/a/4c44aef8-1185-11ee-ad3a-572ef6b5b380/hhAS0HeMKL.json",
+   "author": {
+    "username": "/f26btqdm1az8sfq8",
+    "firstName": "\u957f\u901a"
+   },
+   "w": 1000,
+   "h": 470,
+   "fr": 60,
+   "frames": 243
+  },
+  {
+   "file": "out/lottie/mind/5_82062.json",
+   "name": "brain",
+   "id": "82062",
+   "url": "https://assets-v2.lottiefiles.com/a/37f1257e-1173-11ee-8e68-4f9a3fb9dea0/FSJdgqhp9f.json",
+   "author": {
+    "username": "/81xsbdo7ikulqk26",
+    "firstName": "Yanir Danino"
+   },
+   "w": 1645,
+   "h": 1707,
+   "fr": 60,
+   "frames": 120
+  }
+ ]
+}
