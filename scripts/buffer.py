@@ -109,6 +109,8 @@ def main():
             print(json.dumps(d["__type"]))
         d = gql("{ __schema { queryType { fields { name args { name type { name kind ofType { name } } } } } } }")
         print(json.dumps([f for f in d["__schema"]["queryType"]["fields"] if "post" in f["name"].lower()]))
+        d = gql('{ __type(name: "Post") { fields { name type { name kind ofType { name } } } } }')
+        print("Post fields:", json.dumps([f["name"] for f in d["__type"]["fields"]]))
     elif cmd == "post":
         slug, due, url = sys.argv[2], sys.argv[3], sys.argv[4]
         S = json.loads((ROOT / "shorts" / slug / "script.json").read_text())
@@ -151,10 +153,16 @@ def main():
     elif cmd == "posts":
         oid, m = channel_map()
         ids = [c["id"] for c in m.values()]
+        # the public link of a sent post (YouTube/Instagram/TikTok URL), if this API version exposes one
+        try:
+            have = {f["name"] for f in gql('{ __type(name: "Post") { fields { name } } }')["__type"]["fields"]}
+        except Exception:
+            have = set()
+        extra = " ".join(f for f in ("externalLink", "sentAt") if f in have)
         out, after = [], None
         for _ in range(10):
             d = gql("""query($o: OrganizationId!, $c: [ChannelId!], $a: String) { posts(first: 50, after: $a, input: {organizationId: $o, filter: {channelIds: $c}}) {
-                edges { node { id dueAt status channelId } } pageInfo { hasNextPage endCursor } } }""", {"o": oid, "c": ids, "a": after})
+                edges { node { id dueAt status channelId %s } } pageInfo { hasNextPage endCursor } } }""" % extra, {"o": oid, "c": ids, "a": after})
             p = d["posts"]
             out += [e["node"] for e in p["edges"]]
             if not p["pageInfo"]["hasNextPage"]:
