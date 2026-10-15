@@ -1,0 +1,16 @@
+{
+ "no": 43,
+ "slug": "reappraisal",
+ "date": "2026-10-14",
+ "slot": "21:15",
+ "due": "2026-10-15T04:15:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-14/reappraisal.mp4",
+ "buffer": {
+  "youtube": "6ad04e620d0df6a75bc21aba",
+  "instagram": "6ad04e6278f377d888aeff2b",
+  "tiktok": "6ad04e63e09e6bdb27e11075"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 27.4
+}
