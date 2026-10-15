@@ -1,0 +1,17 @@
+{
+ "no": 59,
+ "slug": "mere-exposure",
+ "date": "2026-10-16",
+ "slot": "11:00",
+ "due": "2026-10-16T18:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-16/mere-exposure.mp4",
+ "buffer": {
+  "youtube": "6ad131032aec0f0a6da4b49c",
+  "tiktok": "6ad131044fd04e4eb3ab0df1"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 30.7
+}

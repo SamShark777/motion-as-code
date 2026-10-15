@@ -1,0 +1,17 @@
+{
+ "no": 35,
+ "slug": "present-bias",
+ "date": "2026-10-16",
+ "slot": "08:00",
+ "due": "2026-10-16T15:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-16/present-bias.mp4",
+ "buffer": {
+  "youtube": "6ad131005063ce0336b55163",
+  "tiktok": "6ad13101b4510d553d75dea0"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 30.3
+}
