@@ -1,0 +1,278 @@
+{
+ "slug": "left-right-brain-myth",
+ "no": 92,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Left Brain?",
+  "Myth"
+ ],
+ "credit": "Nielsen et al. · 2013",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Quiz",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtBrainQuiz",
+   "chunks": [
+    [
+     "Can a quiz"
+    ],
+    [
+     "really split people"
+    ],
+    [
+     "into two"
+    ],
+    [
+     "BRAIN types?",
+     {
+      "emph": "BRAIN",
+      "fx": "doodle",
+      "doodle": "🧠"
+     }
+    ]
+   ],
+   "text": "Can a quiz really split people into two BRAIN types?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Split",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtSplitHead",
+   "chunks": [
+    [
+     "Left-brained means"
+    ],
+    [
+     "logical."
+    ],
+    [
+     "Right-brained means"
+    ],
+    [
+     "CREATIVE.",
+     {
+      "emph": "CREATIVE",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "Sounds neat."
+    ]
+   ],
+   "text": "Left-brained means logical. Right-brained means CREATIVE. Sounds neat."
+  },
+  {
+   "sec": "cd",
+   "scene": "Scans",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtScanStack",
+   "chunks": [
+    [
+     "University of Utah"
+    ],
+    [
+     "researchers led by"
+    ],
+    [
+     "Jared Nielsen"
+    ],
+    [
+     "checked brain scans"
+    ],
+    [
+     "from over"
+    ],
+    [
+     "one THOUSAND",
+     {
+      "emph": "THOUSAND",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "people aged"
+    ],
+    [
+     "seven to twenty-nine."
+    ]
+   ],
+   "text": "University of Utah researchers led by Jared Nielsen checked brain scans from over one THOUSAND people aged seven to twenty-nine."
+  },
+  {
+   "sec": "cd",
+   "scene": "Side",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtLanguage",
+   "chunks": [
+    [
+     "Some jobs"
+    ],
+    [
+     "do lean"
+    ],
+    [
+     "to one SIDE:",
+     {
+      "emph": "SIDE",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "language mostly left,"
+    ],
+    [
+     "some attention right."
+    ]
+   ],
+   "text": "Some jobs do lean to one SIDE: language mostly left, some attention right."
+  },
+  {
+   "sec": "cd",
+   "scene": "Stronger",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtBalance",
+   "chunks": [
+    [
+     "But people"
+    ],
+    [
+     "didn't have"
+    ],
+    [
+     "a STRONGER",
+     {
+      "emph": "STRONGER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "left or right"
+    ],
+    [
+     "side overall."
+    ]
+   ],
+   "text": "But people didn't have a STRONGER left or right side overall."
+  },
+  {
+   "sec": "cd",
+   "scene": "Both",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtBothSides",
+   "chunks": [
+    [
+     "No sign of"
+    ],
+    [
+     "logical left-brainers"
+    ],
+    [
+     "or creative"
+    ],
+    [
+     "right-brainers."
+    ],
+    [
+     "You use"
+    ],
+    [
+     "BOTH sides.",
+     {
+      "emph": "BOTH",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "No sign of logical left-brainers or creative right-brainers. You use BOTH sides."
+  },
+  {
+   "sec": "cd",
+   "scene": "Stuck",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtQuizTrash",
+   "chunks": [
+    [
+     "So ignore"
+    ],
+    [
+     "the quiz label."
+    ],
+    [
+     "You're not"
+    ],
+    [
+     "STUCK with",
+     {
+      "emph": "STUCK",
+      "fx": "type"
+     }
+    ],
+    [
+     "one kind"
+    ],
+    [
+     "of thinking."
+    ]
+   ],
+   "text": "So ignore the quiz label. You're not STUCK with one kind of thinking."
+  },
+  {
+   "sec": "cd",
+   "scene": "Myth",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMythPop",
+   "chunks": [
+    [
+     "Follow, because"
+    ],
+    [
+     "the next"
+    ],
+    [
+     "MYTH might",
+     {
+      "emph": "MYTH",
+      "fx": "doodle",
+      "doodle": "💥"
+     }
+    ],
+    [
+     "be one"
+    ],
+    [
+     "you still believe."
+    ]
+   ],
+   "text": "Follow, because the next MYTH might be one you still believe."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Left-Brained or Right-Brained? 1,000 Brain Scans Say #shorts",
+  "description": "Nielsen et al. (2013, PLOS ONE) analysed brain scans of more than 1,000 people aged 7 to 29: some functions lean to one side, but nobody had a stronger left or right hemisphere network overall. #psychology #shorts #brain #myths",
+  "tags": [
+   "left brain right brain",
+   "brain myths",
+   "psychology"
+  ]
+ }
+}

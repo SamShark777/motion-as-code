@@ -1,0 +1,289 @@
+{
+ "slug": "impostor-feelings",
+ "no": 73,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Feel Like A",
+  "Fraud?"
+ ],
+ "credit": "Clance & Imes · 1978",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Undeserved",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtImpTrophy",
+   "chunks": [
+    [
+     "Why can"
+    ],
+    [
+     "success still"
+    ],
+    [
+     "feel UNDESERVED?",
+     {
+      "emph": "UNDESERVED",
+      "fx": "doodle",
+      "doodle": "🏆"
+     }
+    ],
+    [
+     "Even when"
+    ],
+    [
+     "you earned it?"
+    ]
+   ],
+   "text": "Why can success still feel UNDESERVED? Even when you earned it?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtImpStudy",
+   "chunks": [
+    [
+     "In 1978,"
+    ],
+    [
+     "psychologists Pauline"
+    ],
+    [
+     "Clance and"
+    ],
+    [
+     "Suzanne Imes"
+    ],
+    [
+     "studied over 150"
+    ],
+    [
+     "highly SUCCESSFUL",
+     {
+      "emph": "SUCCESSFUL",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "women."
+    ]
+   ],
+   "text": "In 1978, psychologists Pauline Clance and Suzanne Imes studied over 150 highly SUCCESSFUL women."
+  },
+  {
+   "sec": "cd",
+   "scene": "Fooled",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtImpGrad",
+   "chunks": [
+    [
+     "PhDs."
+    ],
+    [
+     "Respected professionals."
+    ],
+    [
+     "Many believed"
+    ],
+    [
+     "they weren't"
+    ],
+    [
+     "really smart"
+    ],
+    [
+     "and had"
+    ],
+    [
+     "FOOLED everyone.",
+     {
+      "emph": "FOOLED",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "PhDs. Respected professionals. Many believed they weren't really smart and had FOOLED everyone."
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtImpMirror",
+   "chunks": [
+    [
+     "They called it"
+    ],
+    [
+     "the impostor"
+    ],
+    [
+     "PHENOMENON.",
+     {
+      "emph": "PHENOMENON",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "They called it the impostor PHENOMENON."
+  },
+  {
+   "sec": "cd",
+   "scene": "Range",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtImpRange",
+   "chunks": [
+    [
+     "A 2020 review"
+    ],
+    [
+     "of 62 studies"
+    ],
+    [
+     "found rates"
+    ],
+    [
+     "from 9%"
+    ],
+    [
+     "to 82%,",
+     {
+      "emph": "82%",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "depending on"
+    ],
+    [
+     "the group"
+    ],
+    [
+     "and measure."
+    ]
+   ],
+   "text": "A 2020 review of 62 studies found rates from 9% to 82%, depending on the group and measure."
+  },
+  {
+   "sec": "cd",
+   "scene": "Feeling",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtImpCloud",
+   "chunks": [
+    [
+     "So it's common."
+    ],
+    [
+     "It's a feeling,"
+    ],
+    [
+     "NOT a diagnosis",
+     {
+      "emph": "NOT",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "or a disorder."
+    ]
+   ],
+   "text": "So it's common. It's a feeling, NOT a diagnosis or a disorder."
+  },
+  {
+   "sec": "cd",
+   "scene": "Evidence",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtImpNotebook",
+   "chunks": [
+    [
+     "When it hits,"
+    ],
+    [
+     "write down"
+    ],
+    [
+     "the evidence"
+    ],
+    [
+     "next to it."
+    ],
+    [
+     "Results. Feedback."
+    ],
+    [
+     "Feelings aren't"
+    ],
+    [
+     "FACTS.",
+     {
+      "emph": "FACTS",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "When it hits, write down the evidence next to it. Results. Feedback. Feelings aren't FACTS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Keep",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtImpPhone",
+   "chunks": [
+    [
+     "Keep that list"
+    ],
+    [
+     "on your phone,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for studies"
+    ],
+    [
+     "that help you"
+    ],
+    [
+     "OUT-THINK",
+     {
+      "emph": "OUT-THINK",
+      "fx": "pop"
+     }
+    ],
+    [
+     "your own head."
+    ]
+   ],
+   "text": "Keep that list on your phone, and follow for studies that help you OUT-THINK your own head."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Success Can Still Feel Like You're Faking It #shorts",
+  "description": "Clance & Imes (1978) found many highly successful women believed they had fooled everyone; a 2020 review by Bravata et al. of 62 studies found rates from 9% to 82%. It's a common feeling, not a diagnosis. #psychology #shorts #impostersyndrome #selfdoubt",
+  "tags": [
+   "impostor phenomenon",
+   "self-doubt",
+   "psychology"
+  ]
+ }
+}

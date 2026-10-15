@@ -1,61 +1,259 @@
 {
  "slug": "present-bias",
  "no": 35,
- "format": "ted1",
- "look": "ted1",
+ "format": "cdesign",
+ "look": "ted2",
  "title": [
   "Present",
   "Bias"
  ],
- "credit": "Read & van Leeuwen \u00b7 1998",
+ "credit": "Read & van Leeuwen · 1998",
  "handle": "@aroundthestrangeai",
  "lines": [
   {
-   "sec": "ted",
-   "text": "Your future self is a stranger you keep making promises for.",
-   "q": "man thinking, mirror reflection, person",
-   "bg": "#1F3B73"
+   "sec": "cd",
+   "scene": "Stranger",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPromise",
+   "chunks": [
+    [
+     "Your future self"
+    ],
+    [
+     "is a STRANGER",
+     {
+      "emph": "STRANGER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "you keep"
+    ],
+    [
+     "making promises for."
+    ]
+   ],
+   "text": "Your future self is a STRANGER you keep making promises for."
   },
   {
-   "sec": "ted",
-   "text": "In one study, office workers picked a snack they'd get a week later.",
-   "q": "office worker, office, desk work",
-   "bg": "#E9E4D8"
+   "sec": "cd",
+   "scene": "Office",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtOffice",
+   "chunks": [
+    [
+     "Researchers Read"
+    ],
+    [
+     "and van Leeuwen"
+    ],
+    [
+     "had office workers"
+    ],
+    [
+     "pick a snack"
+    ],
+    [
+     "for next WEEK.",
+     {
+      "emph": "WEEK",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Researchers Read and van Leeuwen had office workers pick a snack for next WEEK."
   },
   {
-   "sec": "ted",
-   "text": "Most chose fruit.",
-   "q": "fruit, apple, healthy food",
-   "bg": "#3E8E5A"
+   "sec": "cd",
+   "scene": "Fruit",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtFruit",
+   "chunks": [
+    [
+     "About"
+    ],
+    [
+     "SEVENTY-FOUR percent",
+     {
+      "emph": "SEVENTY-FOUR",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "picked fruit."
+    ]
+   ],
+   "text": "About SEVENTY-FOUR percent picked fruit."
   },
   {
-   "sec": "ted",
-   "text": "But when the snack was for right now, most grabbed chocolate.",
-   "q": "chocolate, candy, dessert",
-   "bg": "#6B2D1F"
+   "sec": "cd",
+   "scene": "Chocolate",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtChocolate",
+   "chunks": [
+    [
+     "But for"
+    ],
+    [
+     "a snack"
+    ],
+    [
+     "right now,"
+    ],
+    [
+     "about seventy"
+    ],
+    [
+     "percent grabbed"
+    ],
+    [
+     "CHOCOLATE.",
+     {
+      "emph": "CHOCOLATE",
+      "fx": "doodle",
+      "doodle": "🍫"
+     }
+    ]
+   ],
+   "text": "But for a snack right now, about seventy percent grabbed CHOCOLATE."
   },
   {
-   "sec": "ted",
-   "text": "Psychologists call it present bias. Now always feels bigger than later.",
-   "q": "clock, hourglass, time",
-   "bg": "#E8C547"
+   "sec": "cd",
+   "scene": "Bias",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtScale",
+   "chunks": [
+    [
+     "That's called"
+    ],
+    [
+     "present"
+    ],
+    [
+     "BIAS.",
+     {
+      "emph": "BIAS",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "To your brain,"
+    ],
+    [
+     "now always"
+    ],
+    [
+     "feels bigger"
+    ],
+    [
+     "than later."
+    ]
+   ],
+   "text": "That's called present BIAS. To your brain, now always feels bigger than later."
   },
   {
-   "sec": "ted",
-   "text": "So here's the trick. Make the good choice in advance, before temptation is in the room.",
-   "q": "planning, calendar, shopping list",
-   "bg": "#2B6E7A"
+   "sec": "cd",
+   "scene": "Decide",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtList",
+   "chunks": [
+    [
+     "So here's"
+    ],
+    [
+     "the move."
+    ],
+    [
+     "DECIDE",
+     {
+      "emph": "DECIDE",
+      "fx": "type"
+     }
+    ],
+    [
+     "in advance,"
+    ],
+    [
+     "before temptation"
+    ],
+    [
+     "is in"
+    ],
+    [
+     "the room."
+    ],
+    [
+     "Let the plan"
+    ],
+    [
+     "do the work."
+    ]
+   ],
+   "text": "So here's the move. DECIDE in advance, before temptation is in the room. Let the plan do the work."
   },
   {
-   "sec": "ted",
-   "text": "Your future self will thank you. Follow for one new trick your brain plays on you, every day.",
-   "q": "happy man, celebration, success",
-   "bg": "#B3202A"
+   "sec": "cd",
+   "scene": "Tonight",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtLunchbox",
+   "chunks": [
+    [
+     "Pack tomorrow's"
+    ],
+    [
+     "snack"
+    ],
+    [
+     "TONIGHT,",
+     {
+      "emph": "TONIGHT",
+      "fx": "stamp",
+      "block": "#E07A2E"
+     }
+    ],
+    [
+     "before you're"
+    ],
+    [
+     "hungry,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "to outsmart"
+    ],
+    [
+     "one more"
+    ],
+    [
+     "brain shortcut"
+    ],
+    [
+     "every day."
+    ]
+   ],
+   "text": "Pack tomorrow's snack TONIGHT, before you're hungry, and follow to outsmart one more brain shortcut every day."
   }
  ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
  "post": {
   "title": "Why You Always Choose Now Over Later #shorts",
-  "description": "Present bias: in Read & van Leeuwen's 1998 study, office workers choosing a snack for next week mostly picked fruit, but for right now most picked chocolate. Decide in advance. #psychology #shorts #selfcontrol #habits",
+  "description": "Present bias: in Read & van Leeuwen's 1998 study, about 74% of office workers picked fruit for a snack a week away, but about 70% picked chocolate for right now. Decide in advance. #psychology #shorts #selfcontrol #habits",
   "tags": [
    "present bias",
    "psychology",

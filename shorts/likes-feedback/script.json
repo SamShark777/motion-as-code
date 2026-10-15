@@ -1,0 +1,285 @@
+{
+ "slug": "likes-feedback",
+ "no": 83,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Hidden",
+  "Likes"
+ ],
+ "credit": "Sherman et al. · 2016",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hidden",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPostHidden",
+   "chunks": [
+    [
+     "Would you"
+    ],
+    [
+     "post it"
+    ],
+    [
+     "if the likes"
+    ],
+    [
+     "were HIDDEN?",
+     {
+      "emph": "HIDDEN",
+      "fx": "doodle",
+      "doodle": "🙈"
+     }
+    ]
+   ],
+   "text": "Would you post it if the likes were HIDDEN?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Good",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtLikeCompare",
+   "chunks": [
+    [
+     "That little number"
+    ],
+    [
+     "changes what"
+    ],
+    [
+     "you think"
+    ],
+    [
+     "is GOOD.",
+     {
+      "emph": "GOOD",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "That little number changes what you think is GOOD."
+  },
+  {
+   "sec": "cd",
+   "scene": "Scanner",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtScanner",
+   "chunks": [
+    [
+     "UCLA researchers"
+    ],
+    [
+     "led by"
+    ],
+    [
+     "Lauren Sherman"
+    ],
+    [
+     "scanned the brains"
+    ],
+    [
+     "of THIRTY-TWO teens",
+     {
+      "emph": "THIRTY-TWO",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "scrolling an"
+    ],
+    [
+     "Instagram-style feed."
+    ]
+   ],
+   "text": "UCLA researchers led by Lauren Sherman scanned the brains of THIRTY-TWO teens scrolling an Instagram-style feed."
+  },
+  {
+   "sec": "cd",
+   "scene": "More",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtLikeTap",
+   "chunks": [
+    [
+     "Photos shown"
+    ],
+    [
+     "with lots"
+    ],
+    [
+     "of likes"
+    ],
+    [
+     "got MORE likes",
+     {
+      "emph": "MORE",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "from the teens,"
+    ],
+    [
+     "even risky ones."
+    ]
+   ],
+   "text": "Photos shown with lots of likes got MORE likes from the teens, even risky ones."
+  },
+  {
+   "sec": "cd",
+   "scene": "Few",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtFewLikes",
+   "chunks": [
+    [
+     "The exact"
+    ],
+    [
+     "same photo"
+    ],
+    [
+     "with FEW likes?",
+     {
+      "emph": "FEW",
+      "fx": "pop"
+     }
+    ],
+    [
+     "They liked it"
+    ],
+    [
+     "less."
+    ]
+   ],
+   "text": "The exact same photo with FEW likes? They liked it less."
+  },
+  {
+   "sec": "cd",
+   "scene": "Reward",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtReward",
+   "chunks": [
+    [
+     "And seeing"
+    ],
+    [
+     "their own photo"
+    ],
+    [
+     "with lots"
+    ],
+    [
+     "of likes"
+    ],
+    [
+     "lit up"
+    ],
+    [
+     "a REWARD region",
+     {
+      "emph": "REWARD",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ],
+    [
+     "called the"
+    ],
+    [
+     "nucleus accumbens."
+    ]
+   ],
+   "text": "And seeing their own photo with lots of likes lit up a REWARD region called the nucleus accumbens."
+  },
+  {
+   "sec": "cd",
+   "scene": "Before",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtHideToggle",
+   "chunks": [
+    [
+     "So judge"
+    ],
+    [
+     "a post"
+    ],
+    [
+     "BEFORE you",
+     {
+      "emph": "BEFORE",
+      "fx": "type"
+     }
+    ],
+    [
+     "look at"
+    ],
+    [
+     "the number,"
+    ],
+    [
+     "or hide"
+    ],
+    [
+     "the counts."
+    ]
+   ],
+   "text": "So judge a post BEFORE you look at the number, or hide the counts."
+  },
+  {
+   "sec": "cd",
+   "scene": "Follow",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtFollowLens",
+   "chunks": [
+    [
+     "Follow for"
+    ],
+    [
+     "more studies"
+    ],
+    [
+     "on the numbers"
+    ],
+    [
+     "quietly STEERING",
+     {
+      "emph": "STEERING",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "your choices."
+    ]
+   ],
+   "text": "Follow for more studies on the numbers quietly STEERING your choices."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Would You Still Post It If Likes Were Hidden? #shorts",
+  "description": "Sherman et al. (2016, Psychological Science): in a brain scanner, teens liked photos more when they already showed many likes, and seeing their own photos with many likes activated the brain's reward circuitry (nucleus accumbens). #psychology #shorts #socialmedia #brain",
+  "tags": [
+   "social media",
+   "likes",
+   "teen brain",
+   "psychology"
+  ]
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "slug": "procrastination-feelings",
+ "no": 36,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Name the",
+  "Feeling"
+ ],
+ "credit": "Tice & Baumeister · 1997",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Avoid",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPfCouch",
+   "chunks": [
+    [
+     "What feeling"
+    ],
+    [
+     "are you"
+    ],
+    [
+     "AVOIDING",
+     {
+      "emph": "AVOIDING",
+      "fx": "pop"
+     }
+    ],
+    [
+     "when you"
+    ],
+    [
+     "put off"
+    ],
+    [
+     "a task?"
+    ]
+   ],
+   "text": "What feeling are you AVOIDING when you put off a task?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Semester",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtPfSemester",
+   "chunks": [
+    [
+     "Dianne Tice"
+    ],
+    [
+     "and Roy Baumeister"
+    ],
+    [
+     "tracked college"
+    ],
+    [
+     "students for"
+    ],
+    [
+     "a whole SEMESTER.",
+     {
+      "emph": "SEMESTER",
+      "fx": "underline",
+      "mark": "#2B6E7A"
+     }
+    ]
+   ],
+   "text": "Dianne Tice and Roy Baumeister tracked college students for a whole SEMESTER."
+  },
+  {
+   "sec": "cd",
+   "scene": "Early",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtPfHammock",
+   "chunks": [
+    [
+     "Early on,"
+    ],
+    [
+     "procrastinators reported"
+    ],
+    [
+     "LESS stress",
+     {
+      "emph": "LESS",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "and fewer"
+    ],
+    [
+     "symptoms of"
+    ],
+    [
+     "illness."
+    ]
+   ],
+   "text": "Early on, procrastinators reported LESS stress and fewer symptoms of illness."
+  },
+  {
+   "sec": "cd",
+   "scene": "Late",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtPfCrunch",
+   "chunks": [
+    [
+     "But by"
+    ],
+    [
+     "the end"
+    ],
+    [
+     "of term,"
+    ],
+    [
+     "they had"
+    ],
+    [
+     "MORE stress,",
+     {
+      "emph": "MORE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "more illness,"
+    ],
+    [
+     "and lower grades"
+    ],
+    [
+     "on their papers."
+    ]
+   ],
+   "text": "But by the end of term, they had MORE stress, more illness, and lower grades on their papers."
+  },
+  {
+   "sec": "cd",
+   "scene": "Mood",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtPfMood",
+   "chunks": [
+    [
+     "Many researchers"
+    ],
+    [
+     "see one"
+    ],
+    [
+     "likely driver:"
+    ],
+    [
+     "quick MOOD repair.",
+     {
+      "emph": "MOOD",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Many researchers see one likely driver: quick MOOD repair."
+  },
+  {
+   "sec": "cd",
+   "scene": "Dodge",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtPfCloud",
+   "chunks": [
+    [
+     "Often, you're"
+    ],
+    [
+     "not dodging"
+    ],
+    [
+     "the task."
+    ],
+    [
+     "You're dodging"
+    ],
+    [
+     "the bad FEELING",
+     {
+      "emph": "FEELING",
+      "fx": "type"
+     }
+    ],
+    [
+     "it brings."
+    ]
+   ],
+   "text": "Often, you're not dodging the task. You're dodging the bad FEELING it brings."
+  },
+  {
+   "sec": "cd",
+   "scene": "Two",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtPfTimer",
+   "chunks": [
+    [
+     "So name"
+    ],
+    [
+     "the feeling."
+    ],
+    [
+     "Bored? Anxious?"
+    ],
+    [
+     "Then do"
+    ],
+    [
+     "just the"
+    ],
+    [
+     "first TWO",
+     {
+      "emph": "TWO",
+      "fx": "doodle",
+      "doodle": "⏱️"
+     }
+    ],
+    [
+     "minutes."
+    ]
+   ],
+   "text": "So name the feeling. Bored? Anxious? Then do just the first TWO minutes."
+  },
+  {
+   "sec": "cd",
+   "scene": "Today",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPfCheck",
+   "chunks": [
+    [
+     "Try it"
+    ],
+    [
+     "on the task"
+    ],
+    [
+     "you're dodging"
+    ],
+    [
+     "TODAY,",
+     {
+      "emph": "TODAY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for small moves"
+    ],
+    [
+     "that outsmart"
+    ],
+    [
+     "your own brain."
+    ]
+   ],
+   "text": "Try it on the task you're dodging TODAY, and follow for small moves that outsmart your own brain."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The Hidden Feeling Behind Your Procrastination #shorts",
+  "description": "Tice & Baumeister (1997): student procrastinators had less stress early in the semester but more stress, more illness and lower paper grades by its end. Researchers such as Sirois & Pychyl (2013) describe procrastination as short-term mood repair. #psychology #shorts #procrastination #productivity",
+  "tags": [
+   "procrastination",
+   "productivity",
+   "emotions",
+   "psychology"
+  ]
+ }
+}

@@ -1,0 +1,288 @@
+{
+ "slug": "informational-influence",
+ "no": 62,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Unsure?",
+  "Influence"
+ ],
+ "credit": "Muzafer Sherif · 1935",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Unsure",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtCrowd",
+   "chunks": [
+    [
+     "When you're"
+    ],
+    [
+     "UNSURE,",
+     {
+      "emph": "UNSURE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "do you"
+    ],
+    [
+     "copy everyone"
+    ],
+    [
+     "around you?"
+    ]
+   ],
+   "text": "When you're UNSURE, do you copy everyone around you?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Dark",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtDarkRoom",
+   "chunks": [
+    [
+     "In 1935,"
+    ],
+    [
+     "Muzafer Sherif"
+    ],
+    [
+     "sat people"
+    ],
+    [
+     "in a"
+    ],
+    [
+     "PITCH-DARK room",
+     {
+      "emph": "PITCH-DARK",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "with one"
+    ],
+    [
+     "still dot"
+    ],
+    [
+     "of light."
+    ]
+   ],
+   "text": "In 1935, Muzafer Sherif sat people in a PITCH-DARK room with one still dot of light."
+  },
+  {
+   "sec": "cd",
+   "scene": "Move",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtDot",
+   "chunks": [
+    [
+     "In the dark,"
+    ],
+    [
+     "the dot"
+    ],
+    [
+     "seems to MOVE.",
+     {
+      "emph": "MOVE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "It doesn't."
+    ]
+   ],
+   "text": "In the dark, the dot seems to MOVE. It doesn't."
+  },
+  {
+   "sec": "cd",
+   "scene": "Alone",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtGuesses",
+   "chunks": [
+    [
+     "Alone,"
+    ],
+    [
+     "people's guesses"
+    ],
+    [
+     "of how far"
+    ],
+    [
+     "it moved"
+    ],
+    [
+     "varied a LOT.",
+     {
+      "emph": "LOT",
+      "fx": "stamp",
+      "block": "#1F3B73"
+     }
+    ]
+   ],
+   "text": "Alone, people's guesses of how far it moved varied a LOT."
+  },
+  {
+   "sec": "cd",
+   "scene": "Group",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtHuddle",
+   "chunks": [
+    [
+     "But in"
+    ],
+    [
+     "small groups,"
+    ],
+    [
+     "saying guesses"
+    ],
+    [
+     "out loud,"
+    ],
+    [
+     "they drifted to"
+    ],
+    [
+     "ONE",
+     {
+      "emph": "ONE",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "shared answer."
+    ]
+   ],
+   "text": "But in small groups, saying guesses out loud, they drifted to ONE shared answer."
+  },
+  {
+   "sec": "cd",
+   "scene": "Kept",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtKept",
+   "chunks": [
+    [
+     "Tested alone"
+    ],
+    [
+     "again later,"
+    ],
+    [
+     "they"
+    ],
+    [
+     "KEPT",
+     {
+      "emph": "KEPT",
+      "fx": "doodle",
+      "doodle": "📌"
+     }
+    ],
+    [
+     "the group's answer."
+    ]
+   ],
+   "text": "Tested alone again later, they KEPT the group's answer."
+  },
+  {
+   "sec": "cd",
+   "scene": "Information",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtSigns",
+   "chunks": [
+    [
+     "When things"
+    ],
+    [
+     "are unclear,"
+    ],
+    [
+     "we use others"
+    ],
+    [
+     "as INFORMATION.",
+     {
+      "emph": "INFORMATION",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "When things are unclear, we use others as INFORMATION."
+  },
+  {
+   "sec": "cd",
+   "scene": "Check",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtCheck",
+   "chunks": [
+    [
+     "New and unsure?"
+    ],
+    [
+     "Copying is fine."
+    ],
+    [
+     "Just check"
+    ],
+    [
+     "the crowd"
+    ],
+    [
+     "really"
+    ],
+    [
+     "KNOWS more.",
+     {
+      "emph": "KNOWS",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Follow to"
+    ],
+    [
+     "catch your mind"
+    ],
+    [
+     "in the act."
+    ]
+   ],
+   "text": "New and unsure? Copying is fine. Just check the crowd really KNOWS more. Follow to catch your mind in the act."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why You Copy Others When You're Unsure #shorts",
+  "description": "Informational social influence: in Muzafer Sherif's 1935 autokinetic study, people's guesses of a light's movement converged in groups and stayed that way when tested alone. #psychology #shorts #conformity #socialpsychology",
+  "tags": [
+   "informational social influence",
+   "conformity",
+   "psychology",
+   "Sherif"
+  ]
+ }
+}

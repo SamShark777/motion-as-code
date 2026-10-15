@@ -1,0 +1,275 @@
+{
+ "slug": "suppression",
+ "no": 47,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "The Cost Of",
+  "Hiding"
+ ],
+ "credit": "Butler et al. · 2003",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hide",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtSupHide",
+   "chunks": [
+    [
+     "What happens"
+    ],
+    [
+     "when someone"
+    ],
+    [
+     "HIDES",
+     {
+      "emph": "HIDES",
+      "fx": "doodle",
+      "doodle": "🙈"
+     }
+    ],
+    [
+     "every reaction?"
+    ]
+   ],
+   "text": "What happens when someone HIDES every reaction?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Film",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtSupFilm",
+   "chunks": [
+    [
+     "Psychologists Emily"
+    ],
+    [
+     "Butler and"
+    ],
+    [
+     "James Gross"
+    ],
+    [
+     "paired up women"
+    ],
+    [
+     "to watch"
+    ],
+    [
+     "an upsetting"
+    ],
+    [
+     "war documentary,"
+    ],
+    [
+     "then TALK",
+     {
+      "emph": "TALK",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "about it."
+    ]
+   ],
+   "text": "Psychologists Emily Butler and James Gross paired up women to watch an upsetting war documentary, then TALK about it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Secret",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtSupSecret",
+   "chunks": [
+    [
+     "One woman"
+    ],
+    [
+     "in each pair"
+    ],
+    [
+     "was SECRETLY",
+     {
+      "emph": "SECRETLY",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "told to hide"
+    ],
+    [
+     "her emotions."
+    ],
+    [
+     "It's called"
+    ],
+    [
+     "expressive suppression."
+    ]
+   ],
+   "text": "One woman in each pair was SECRETLY told to hide her emotions. It's called expressive suppression."
+  },
+  {
+   "sec": "cd",
+   "scene": "Pressure",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtSupPressure",
+   "chunks": [
+    [
+     "Her partner's"
+    ],
+    [
+     "blood pressure"
+    ],
+    [
+     "ROSE",
+     {
+      "emph": "ROSE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "more than"
+    ],
+    [
+     "partners of women"
+    ],
+    [
+     "who acted naturally."
+    ]
+   ],
+   "text": "Her partner's blood pressure ROSE more than partners of women who acted naturally."
+  },
+  {
+   "sec": "cd",
+   "scene": "Friends",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtSupApart",
+   "chunks": [
+    [
+     "They also"
+    ],
+    [
+     "felt less"
+    ],
+    [
+     "connected, and"
+    ],
+    [
+     "were less willing"
+    ],
+    [
+     "to become"
+    ],
+    [
+     "FRIENDS.",
+     {
+      "emph": "FRIENDS",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "They also felt less connected, and were less willing to become FRIENDS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Close",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtSupBalance",
+   "chunks": [
+    [
+     "Hiding a reaction"
+    ],
+    [
+     "can still help"
+    ],
+    [
+     "in some moments."
+    ],
+    [
+     "The cost"
+    ],
+    [
+     "shows up mostly"
+    ],
+    [
+     "in CLOSE",
+     {
+      "emph": "CLOSE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "conversations."
+    ]
+   ],
+   "text": "Hiding a reaction can still help in some moments. The cost shows up mostly in CLOSE conversations."
+  },
+  {
+   "sec": "cd",
+   "scene": "Show",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtSupShow",
+   "chunks": [
+    [
+     "So when"
+    ],
+    [
+     "a talk matters,"
+    ],
+    [
+     "let a little"
+    ],
+    [
+     "of the feeling"
+    ],
+    [
+     "SHOW.",
+     {
+      "emph": "SHOW",
+      "fx": "type"
+     }
+    ],
+    [
+     "Then follow"
+    ],
+    [
+     "for small studies"
+    ],
+    [
+     "that make"
+    ],
+    [
+     "close talks easier."
+    ]
+   ],
+   "text": "So when a talk matters, let a little of the feeling SHOW. Then follow for small studies that make close talks easier."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "What Hiding Your Feelings Does to the Other Person #shorts",
+  "description": "Butler, Gross and colleagues (2003): when one woman secretly hid her emotions while discussing an upsetting film, her partner's blood pressure rose more and she felt less rapport than partners of women who acted naturally. #psychology #shorts #emotions #relationships",
+  "tags": [
+   "expressive suppression",
+   "emotions",
+   "psychology"
+  ]
+ }
+}

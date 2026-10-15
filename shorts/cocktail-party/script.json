@@ -1,0 +1,269 @@
+{
+ "slug": "cocktail-party",
+ "no": 25,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Hear Your",
+  "Name"
+ ],
+ "credit": "Neville Moray · 1959",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Noisy",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtCpParty",
+   "chunks": [
+    [
+     "How do you"
+    ],
+    [
+     "hear your NAME",
+     {
+      "emph": "NAME",
+      "fx": "pop"
+     }
+    ],
+    [
+     "in a"
+    ],
+    [
+     "noisy room?"
+    ]
+   ],
+   "text": "How do you hear your NAME in a noisy room?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Ears",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtCpHeadphones",
+   "chunks": [
+    [
+     "In nineteen fifty-nine,"
+    ],
+    [
+     "Neville Moray"
+    ],
+    [
+     "played two"
+    ],
+    [
+     "DIFFERENT messages,",
+     {
+      "emph": "DIFFERENT",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "one into"
+    ],
+    [
+     "each ear."
+    ]
+   ],
+   "text": "In nineteen fifty-nine, Neville Moray played two DIFFERENT messages, one into each ear."
+  },
+  {
+   "sec": "cd",
+   "scene": "Repeat",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtCpRepeat",
+   "chunks": [
+    [
+     "People repeated"
+    ],
+    [
+     "only one"
+    ],
+    [
+     "out loud."
+    ],
+    [
+     "Afterwards, they"
+    ],
+    [
+     "remembered almost"
+    ],
+    [
+     "NOTHING",
+     {
+      "emph": "NOTHING",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "from the"
+    ],
+    [
+     "ignored ear."
+    ]
+   ],
+   "text": "People repeated only one out loud. Afterwards, they remembered almost NOTHING from the ignored ear."
+  },
+  {
+   "sec": "cd",
+   "scene": "Loop",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtCpLoop",
+   "chunks": [
+    [
+     "Not even"
+    ],
+    [
+     "a word list"
+    ],
+    [
+     "played"
+    ],
+    [
+     "THIRTY-FIVE times.",
+     {
+      "emph": "THIRTY-FIVE",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Not even a word list played THIRTY-FIVE times."
+  },
+  {
+   "sec": "cd",
+   "scene": "Third",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtCpThird",
+   "chunks": [
+    [
+     "But when"
+    ],
+    [
+     "their own name"
+    ],
+    [
+     "slipped into"
+    ],
+    [
+     "that ear,"
+    ],
+    [
+     "about a THIRD",
+     {
+      "emph": "THIRD",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "of people"
+    ],
+    [
+     "noticed it."
+    ]
+   ],
+   "text": "But when their own name slipped into that ear, about a THIRD of people noticed it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Radar",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtCpRadar",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the cocktail"
+    ],
+    [
+     "party effect."
+    ],
+    [
+     "Your brain"
+    ],
+    [
+     "keeps quietly"
+    ],
+    [
+     "SCANNING",
+     {
+      "emph": "SCANNING",
+      "fx": "type"
+     }
+    ],
+    [
+     "for what's"
+    ],
+    [
+     "about you."
+    ]
+   ],
+   "text": "It's called the cocktail party effect. Your brain keeps quietly SCANNING for what's about you."
+  },
+  {
+   "sec": "cd",
+   "scene": "Call",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtCpCall",
+   "chunks": [
+    [
+     "Need attention"
+    ],
+    [
+     "somewhere loud?"
+    ],
+    [
+     "Start with"
+    ],
+    [
+     "their NAME.",
+     {
+      "emph": "NAME",
+      "fx": "doodle",
+      "doodle": "👋"
+     }
+    ],
+    [
+     "Follow, because"
+    ],
+    [
+     "your brain"
+    ],
+    [
+     "has more"
+    ],
+    [
+     "hidden habits"
+    ],
+    [
+     "like this."
+    ]
+   ],
+   "text": "Need attention somewhere loud? Start with their NAME. Follow, because your brain has more hidden habits like this."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why You Hear Your Name in a Noisy Room #shorts",
+  "description": "Moray (1959): people repeating one message remembered almost nothing from the ignored ear, yet about a third noticed their own name slipped into it. #psychology #shorts #attention #brain",
+  "tags": [
+   "cocktail party effect",
+   "attention",
+   "psychology"
+  ]
+ }
+}

@@ -1,0 +1,295 @@
+{
+ "slug": "normative-influence",
+ "no": 63,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Just To",
+  "Fit In"
+ ],
+ "credit": "Solomon Asch · 1956",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Agree",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtNormNod",
+   "chunks": [
+    [
+     "Would you"
+    ],
+    [
+     "say you AGREE",
+     {
+      "emph": "AGREE",
+      "fx": "doodle",
+      "doodle": "👍"
+     }
+    ],
+    [
+     "just to"
+    ],
+    [
+     "fit in?"
+    ]
+   ],
+   "text": "Would you say you AGREE just to fit in?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Lines",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtNormLines",
+   "chunks": [
+    [
+     "In Solomon"
+    ],
+    [
+     "Asch's line tests,"
+    ],
+    [
+     "a group"
+    ],
+    [
+     "of actors"
+    ],
+    [
+     "all gave"
+    ],
+    [
+     "the same"
+    ],
+    [
+     "obviously WRONG",
+     {
+      "emph": "WRONG",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "answer."
+    ]
+   ],
+   "text": "In Solomon Asch's line tests, a group of actors all gave the same obviously WRONG answer."
+  },
+  {
+   "sec": "cd",
+   "scene": "Along",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtNormAlong",
+   "chunks": [
+    [
+     "And many"
+    ],
+    [
+     "real participants"
+    ],
+    [
+     "went ALONG",
+     {
+      "emph": "ALONG",
+      "fx": "pop"
+     }
+    ],
+    [
+     "with them,"
+    ],
+    [
+     "out loud."
+    ]
+   ],
+   "text": "And many real participants went ALONG with them, out loud."
+  },
+  {
+   "sec": "cd",
+   "scene": "Write",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtNormWrite",
+   "chunks": [
+    [
+     "But in"
+    ],
+    [
+     "one version,"
+    ],
+    [
+     "they could"
+    ],
+    [
+     "WRITE",
+     {
+      "emph": "WRITE",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "their answer"
+    ],
+    [
+     "down privately"
+    ],
+    [
+     "instead of"
+    ],
+    [
+     "saying it"
+    ],
+    [
+     "to the group."
+    ]
+   ],
+   "text": "But in one version, they could WRITE their answer down privately instead of saying it to the group."
+  },
+  {
+   "sec": "cd",
+   "scene": "Drop",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtNormDrop",
+   "chunks": [
+    [
+     "Same lines."
+    ],
+    [
+     "Same group."
+    ],
+    [
+     "Conformity dropped"
+    ],
+    [
+     "SHARPLY.",
+     {
+      "emph": "SHARPLY",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Same lines. Same group. Conformity dropped SHARPLY."
+  },
+  {
+   "sec": "cd",
+   "scene": "Fit",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtNormMask",
+   "chunks": [
+    [
+     "That's normative"
+    ],
+    [
+     "social influence."
+    ],
+    [
+     "Going along"
+    ],
+    [
+     "to FIT in,",
+     {
+      "emph": "FIT",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "not because"
+    ],
+    [
+     "you believe it."
+    ]
+   ],
+   "text": "That's normative social influence. Going along to FIT in, not because you believe it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Ballot",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtNormBallot",
+   "chunks": [
+    [
+     "Want honest"
+    ],
+    [
+     "opinions in"
+    ],
+    [
+     "a meeting?"
+    ],
+    [
+     "Collect them"
+    ],
+    [
+     "in writing"
+    ],
+    [
+     "before anyone"
+    ],
+    [
+     "SPEAKS.",
+     {
+      "emph": "SPEAKS",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "Want honest opinions in a meeting? Collect them in writing before anyone SPEAKS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Follow",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtNormFollow",
+   "chunks": [
+    [
+     "Try it"
+    ],
+    [
+     "this week,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for more ways"
+    ],
+    [
+     "groups quietly"
+    ],
+    [
+     "SHAPE",
+     {
+      "emph": "SHAPE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "your choices."
+    ]
+   ],
+   "text": "Try it this week, and follow for more ways groups quietly SHAPE your choices."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why People Agree Out Loud but Not on Paper #shorts",
+  "description": "Asch (1956): people often went along with a group's obviously wrong answer out loud, but conformity dropped sharply when they could write their answer privately. #psychology #shorts #conformity #socialinfluence",
+  "tags": [
+   "normative social influence",
+   "Asch conformity",
+   "psychology"
+  ]
+ }
+}

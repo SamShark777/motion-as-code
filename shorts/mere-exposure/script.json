@@ -1,0 +1,278 @@
+{
+ "slug": "mere-exposure",
+ "no": 59,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Familiar",
+  "Exposure"
+ ],
+ "credit": "Moreland & Beach · 1992",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Around",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtWave",
+   "chunks": [
+    [
+     "Can just"
+    ],
+    [
+     "being AROUND",
+     {
+      "emph": "AROUND",
+      "fx": "pop"
+     }
+    ],
+    [
+     "make people"
+    ],
+    [
+     "like you more?"
+    ]
+   ],
+   "text": "Can just being AROUND make people like you more?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Lecture",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtLecture",
+   "chunks": [
+    [
+     "Moreland and Beach"
+    ],
+    [
+     "had four"
+    ],
+    [
+     "similar-looking women"
+    ],
+    [
+     "pose as students"
+    ],
+    [
+     "in a university"
+    ],
+    [
+     "LECTURE course.",
+     {
+      "emph": "LECTURE",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Moreland and Beach had four similar-looking women pose as students in a university LECTURE course."
+  },
+  {
+   "sec": "cd",
+   "scene": "Classes",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtCalendar",
+   "chunks": [
+    [
+     "They attended"
+    ],
+    [
+     "zero, five,"
+    ],
+    [
+     "ten or"
+    ],
+    [
+     "FIFTEEN classes,",
+     {
+      "emph": "FIFTEEN",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "and never"
+    ],
+    [
+     "talked to anyone."
+    ]
+   ],
+   "text": "They attended zero, five, ten or FIFTEEN classes, and never talked to anyone."
+  },
+  {
+   "sec": "cd",
+   "scene": "Photos",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtPhotos",
+   "chunks": [
+    [
+     "At the end,"
+    ],
+    [
+     "students rated"
+    ],
+    [
+     "PHOTOS",
+     {
+      "emph": "PHOTOS",
+      "fx": "stamp",
+      "block": "#1F3B73"
+     }
+    ],
+    [
+     "of each woman."
+    ]
+   ],
+   "text": "At the end, students rated PHOTOS of each woman."
+  },
+  {
+   "sec": "cd",
+   "scene": "Likeable",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtHearts",
+   "chunks": [
+    [
+     "The more"
+    ],
+    [
+     "she'd shown up,"
+    ],
+    [
+     "the more"
+    ],
+    [
+     "LIKEABLE",
+     {
+      "emph": "LIKEABLE",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "and attractive"
+    ],
+    [
+     "she seemed."
+    ]
+   ],
+   "text": "The more she'd shown up, the more LIKEABLE and attractive she seemed."
+  },
+  {
+   "sec": "cd",
+   "scene": "Remember",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtForget",
+   "chunks": [
+    [
+     "Even though"
+    ],
+    [
+     "they barely"
+    ],
+    [
+     "REMEMBERED her.",
+     {
+      "emph": "REMEMBERED",
+      "fx": "doodle",
+      "doodle": "🤷"
+     }
+    ],
+    [
+     "That's the"
+    ],
+    [
+     "mere-exposure effect."
+    ]
+   ],
+   "text": "Even though they barely REMEMBERED her. That's the mere-exposure effect."
+  },
+  {
+   "sec": "cd",
+   "scene": "Regularly",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtCoffee",
+   "chunks": [
+    [
+     "It won't"
+    ],
+    [
+     "spark love."
+    ],
+    [
+     "But showing up"
+    ],
+    [
+     "REGULARLY",
+     {
+      "emph": "REGULARLY",
+      "fx": "type"
+     }
+    ],
+    [
+     "helps people"
+    ],
+    [
+     "warm to you."
+    ]
+   ],
+   "text": "It won't spark love. But showing up REGULARLY helps people warm to you."
+  },
+  {
+   "sec": "cd",
+   "scene": "Follow",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtDoor",
+   "chunks": [
+    [
+     "So keep"
+    ],
+    [
+     "showing up,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for small"
+    ],
+    [
+     "EDGES",
+     {
+      "emph": "EDGES",
+      "fx": "pop"
+     }
+    ],
+    [
+     "backed by"
+    ],
+    [
+     "real studies."
+    ]
+   ],
+   "text": "So keep showing up, and follow for small EDGES backed by real studies."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why People Like You More Without Knowing Why #shorts",
+  "description": "Mere-exposure effect: in Moreland & Beach (1992), women who silently attended more lecture classes were rated more likeable and attractive by students who barely remembered them. #psychology #shorts #socialskills #familiarity",
+  "tags": [
+   "mere exposure effect",
+   "psychology",
+   "social skills",
+   "familiarity"
+  ]
+ }
+}

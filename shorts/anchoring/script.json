@@ -1,0 +1,285 @@
+{
+ "slug": "anchoring",
+ "no": 3,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "First Price",
+  "Anchor"
+ ],
+ "credit": "Tversky & Kahneman · 1974",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Stick",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPricePin",
+   "chunks": [
+    [
+     "Why does"
+    ],
+    [
+     "the first price"
+    ],
+    [
+     "you see"
+    ],
+    [
+     "STICK in",
+     {
+      "emph": "STICK",
+      "fx": "doodle",
+      "doodle": "📌"
+     }
+    ],
+    [
+     "your head?"
+    ]
+   ],
+   "text": "Why does the first price you see STICK in your head?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Cheap",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtShirts",
+   "chunks": [
+    [
+     "A forty-dollar"
+    ],
+    [
+     "shirt alone"
+    ],
+    [
+     "feels pricey."
+    ],
+    [
+     "Next to"
+    ],
+    [
+     "a hundred-dollar one,"
+    ],
+    [
+     "it feels CHEAP.",
+     {
+      "emph": "CHEAP",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "A forty-dollar shirt alone feels pricey. Next to a hundred-dollar one, it feels CHEAP."
+  },
+  {
+   "sec": "cd",
+   "scene": "Wheel",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtWheel",
+   "chunks": [
+    [
+     "Psychologists Amos"
+    ],
+    [
+     "Tversky and"
+    ],
+    [
+     "Daniel Kahneman"
+    ],
+    [
+     "spun a rigged"
+    ],
+    [
+     "WHEEL",
+     {
+      "emph": "WHEEL",
+      "fx": "pop"
+     }
+    ],
+    [
+     "that stopped"
+    ],
+    [
+     "on ten"
+    ],
+    [
+     "or sixty-five."
+    ]
+   ],
+   "text": "Psychologists Amos Tversky and Daniel Kahneman spun a rigged WHEEL that stopped on ten or sixty-five."
+  },
+  {
+   "sec": "cd",
+   "scene": "Percent",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtUNQuiz",
+   "chunks": [
+    [
+     "Then they asked"
+    ],
+    [
+     "what PERCENT",
+     {
+      "emph": "PERCENT",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "of African countries"
+    ],
+    [
+     "are in"
+    ],
+    [
+     "the United Nations?"
+    ]
+   ],
+   "text": "Then they asked what PERCENT of African countries are in the United Nations?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Guesses",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtTwoGuesses",
+   "chunks": [
+    [
+     "The typical guess"
+    ],
+    [
+     "after ten:"
+    ],
+    [
+     "twenty-five percent."
+    ],
+    [
+     "After sixty-five:"
+    ],
+    [
+     "FORTY-FIVE.",
+     {
+      "emph": "FORTY-FIVE",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "The typical guess after ten: twenty-five percent. After sixty-five: FORTY-FIVE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Anchor",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtAnchorDrop",
+   "chunks": [
+    [
+     "A random number"
+    ],
+    [
+     "moved their answer."
+    ],
+    [
+     "That's the"
+    ],
+    [
+     "ANCHORING effect.",
+     {
+      "emph": "ANCHORING",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "A random number moved their answer. That's the ANCHORING effect."
+  },
+  {
+   "sec": "cd",
+   "scene": "Was",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtWasPrice",
+   "chunks": [
+    [
+     "Stores use it:"
+    ],
+    [
+     "a crossed-out"
+    ],
+    [
+     "\"was\" price"
+    ],
+    [
+     "makes the"
+    ],
+    [
+     "real one"
+    ],
+    [
+     "look SMALL.",
+     {
+      "emph": "SMALL",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "Stores use it: a crossed-out \"was\" price makes the real one look SMALL."
+  },
+  {
+   "sec": "cd",
+   "scene": "Yours",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtOwnNumber",
+   "chunks": [
+    [
+     "Before you see"
+    ],
+    [
+     "any price,"
+    ],
+    [
+     "pick YOUR",
+     {
+      "emph": "YOUR",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "number first."
+    ],
+    [
+     "Follow to dodge"
+    ],
+    [
+     "the next"
+    ],
+    [
+     "sneaky nudge."
+    ]
+   ],
+   "text": "Before you see any price, pick YOUR number first. Follow to dodge the next sneaky nudge."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why the First Price You See Sticks in Your Head #shorts",
+  "description": "Tversky & Kahneman (1974): after a rigged wheel stopped on 10 or 65, people's median guesses of the share of African countries in the UN were 25% vs 45%. That's the anchoring effect. #psychology #shorts #anchoring #money",
+  "tags": [
+   "anchoring effect",
+   "pricing",
+   "cognitive bias",
+   "psychology"
+  ]
+ }
+}

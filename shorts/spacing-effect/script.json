@@ -1,0 +1,261 @@
+{
+ "slug": "spacing-effect",
+ "no": 13,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Space Your",
+  "Study"
+ ],
+ "credit": "Cepeda et al. · 2006",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Spread",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtSpWeek",
+   "chunks": [
+    [
+     "What happens"
+    ],
+    [
+     "when you"
+    ],
+    [
+     "SPREAD studying",
+     {
+      "emph": "SPREAD",
+      "fx": "pop"
+     }
+    ],
+    [
+     "across the week?"
+    ],
+    [
+     "Same hours,"
+    ],
+    [
+     "better memory."
+    ]
+   ],
+   "text": "What happens when you SPREAD studying across the week? Same hours, better memory."
+  },
+  {
+   "sec": "cd",
+   "scene": "Cram",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtSpCram",
+   "chunks": [
+    [
+     "Most of us"
+    ],
+    [
+     "cram it all"
+    ],
+    [
+     "into one"
+    ],
+    [
+     "LONG night",
+     {
+      "emph": "LONG",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "before the test."
+    ]
+   ],
+   "text": "Most of us cram it all into one LONG night before the test."
+  },
+  {
+   "sec": "cd",
+   "scene": "Split",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtSpSplit",
+   "chunks": [
+    [
+     "Instead, split"
+    ],
+    [
+     "one three-hour"
+    ],
+    [
+     "cram into"
+    ],
+    [
+     "THREE one-hour",
+     {
+      "emph": "THREE",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "sessions on"
+    ],
+    [
+     "different days."
+    ]
+   ],
+   "text": "Instead, split one three-hour cram into THREE one-hour sessions on different days."
+  },
+  {
+   "sec": "cd",
+   "scene": "Review",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtSpReview",
+   "chunks": [
+    [
+     "Nicholas Cepeda"
+    ],
+    [
+     "and colleagues"
+    ],
+    [
+     "reviewed"
+    ],
+    [
+     "317",
+     {
+      "emph": "317",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "experiments on"
+    ],
+    [
+     "learning."
+    ]
+   ],
+   "text": "Nicholas Cepeda and colleagues reviewed 317 experiments on learning."
+  },
+  {
+   "sec": "cd",
+   "scene": "Better",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtSpBetter",
+   "chunks": [
+    [
+     "Same total"
+    ],
+    [
+     "study time."
+    ],
+    [
+     "But spaced"
+    ],
+    [
+     "sessions led"
+    ],
+    [
+     "to BETTER",
+     {
+      "emph": "BETTER",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "long-term recall"
+    ],
+    [
+     "than cramming."
+    ]
+   ],
+   "text": "Same total study time. But spaced sessions led to BETTER long-term recall than cramming."
+  },
+  {
+   "sec": "cd",
+   "scene": "Gaps",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtSpGaps",
+   "chunks": [
+    [
+     "The longer"
+    ],
+    [
+     "you need"
+    ],
+    [
+     "to remember it,"
+    ],
+    [
+     "the bigger"
+    ],
+    [
+     "the GAPS",
+     {
+      "emph": "GAPS",
+      "fx": "type"
+     }
+    ],
+    [
+     "between sessions."
+    ]
+   ],
+   "text": "The longer you need to remember it, the bigger the GAPS between sessions."
+  },
+  {
+   "sec": "cd",
+   "scene": "Plan",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtSpPlan",
+   "chunks": [
+    [
+     "Book three"
+    ],
+    [
+     "short sessions"
+    ],
+    [
+     "this week,"
+    ],
+    [
+     "and FOLLOW",
+     {
+      "emph": "FOLLOW",
+      "fx": "doodle",
+      "doodle": "📅"
+     }
+    ],
+    [
+     "for study tricks"
+    ],
+    [
+     "backed by"
+    ],
+    [
+     "real research."
+    ]
+   ],
+   "text": "Book three short sessions this week, and FOLLOW for study tricks backed by real research."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Cramming Loses to This Simple Schedule #shorts",
+  "description": "Cepeda et al. (2006) reviewed 317 experiments: with the same total study time, spreading practice across separate sessions led to better long-term recall than cramming. #psychology #shorts #studytips #learning",
+  "tags": [
+   "spacing effect",
+   "study tips",
+   "memory",
+   "psychology"
+  ]
+ }
+}

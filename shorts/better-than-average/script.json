@@ -1,0 +1,287 @@
+{
+ "slug": "better-than-average",
+ "no": 72,
+ "format": "cdesign",
+ "look": "ted2",
+ "title": [
+  "Above Average",
+  "Effect"
+ ],
+ "credit": "Ola Svenson · 1981",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Everyone",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPodium",
+   "chunks": [
+    [
+     "Can almost"
+    ],
+    [
+     "EVERYONE",
+     {
+      "emph": "EVERYONE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "be above average?"
+    ]
+   ],
+   "text": "Can almost EVERYONE be above average?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Driver",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtDriver",
+   "chunks": [
+    [
+     "Quick,"
+    ],
+    [
+     "how good"
+    ],
+    [
+     "a"
+    ],
+    [
+     "DRIVER",
+     {
+      "emph": "DRIVER",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "are you,"
+    ],
+    [
+     "compared with"
+    ],
+    [
+     "everyone else?"
+    ]
+   ],
+   "text": "Quick, how good a DRIVER are you, compared with everyone else?"
+  },
+  {
+   "sec": "cd",
+   "scene": "Room",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtClassroom",
+   "chunks": [
+    [
+     "In 1981,"
+    ],
+    [
+     "Ola Svenson"
+    ],
+    [
+     "asked students"
+    ],
+    [
+     "to rate"
+    ],
+    [
+     "their driving"
+    ],
+    [
+     "against others"
+    ],
+    [
+     "in the ROOM.",
+     {
+      "emph": "ROOM",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ]
+   ],
+   "text": "In 1981, Ola Svenson asked students to rate their driving against others in the ROOM."
+  },
+  {
+   "sec": "cd",
+   "scene": "American",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtBars",
+   "chunks": [
+    [
+     "NINETY-THREE percent",
+     {
+      "emph": "NINETY-THREE",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "of American students"
+    ],
+    [
+     "put themselves"
+    ],
+    [
+     "in the more"
+    ],
+    [
+     "skilled half."
+    ]
+   ],
+   "text": "NINETY-THREE percent of American students put themselves in the more skilled half."
+  },
+  {
+   "sec": "cd",
+   "scene": "Swedish",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtSweden",
+   "chunks": [
+    [
+     "Among Swedish"
+    ],
+    [
+     "students,"
+    ],
+    [
+     "it was"
+    ],
+    [
+     "SIXTY-NINE",
+     {
+      "emph": "SIXTY-NINE",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "percent."
+    ]
+   ],
+   "text": "Among Swedish students, it was SIXTY-NINE percent."
+  },
+  {
+   "sec": "cd",
+   "scene": "Half",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtMedian",
+   "chunks": [
+    [
+     "But only"
+    ],
+    [
+     "HALF",
+     {
+      "emph": "HALF",
+      "fx": "doodle",
+      "doodle": "🤯"
+     }
+    ],
+    [
+     "can be"
+    ],
+    [
+     "above the median."
+    ],
+    [
+     "That's the"
+    ],
+    [
+     "better-than-average effect."
+    ]
+   ],
+   "text": "But only HALF can be above the median. That's the better-than-average effect."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outside",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtMirror",
+   "chunks": [
+    [
+     "So don't"
+    ],
+    [
+     "trust your"
+    ],
+    [
+     "self-rating."
+    ],
+    [
+     "Ask for"
+    ],
+    [
+     "an"
+    ],
+    [
+     "OUTSIDE",
+     {
+      "emph": "OUTSIDE",
+      "fx": "type"
+     }
+    ],
+    [
+     "score or"
+    ],
+    [
+     "honest feedback."
+    ]
+   ],
+   "text": "So don't trust your self-rating. Ask for an OUTSIDE score or honest feedback."
+  },
+  {
+   "sec": "cd",
+   "scene": "Comment",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtComment",
+   "chunks": [
+    [
+     "Rate yourself"
+    ],
+    [
+     "below,"
+    ],
+    [
+     "then follow"
+    ],
+    [
+     "to find"
+    ],
+    [
+     "your next"
+    ],
+    [
+     "BLIND spot.",
+     {
+      "emph": "BLIND",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Rate yourself below, then follow to find your next BLIND spot."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "93% Rated Their Driving Above Average. You? #shorts",
+  "description": "Better-than-average effect: in Ola Svenson's 1981 study, 93% of American and 69% of Swedish students rated their driving skill above the median of their group. #psychology #shorts #selfawareness #bias",
+  "tags": [
+   "better than average effect",
+   "psychology",
+   "self awareness",
+   "cognitive bias"
+  ]
+ }
+}
