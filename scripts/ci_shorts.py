@@ -192,6 +192,27 @@ def reconcile(have_key):
     return notes
 
 
+def refresh_links(have_key):
+    """Write each sent post's public links (YouTube/Instagram/TikTok) into shorts/<slug>/post.json — Studio Control reads them."""
+    if not have_key:
+        return
+    try:
+        live = {p["id"]: p for p in buffer("posts")}
+    except Exception as e:
+        print(f"links skipped: {e}", file=sys.stderr)
+        return
+    for pj in list((ROOT / "shorts").glob("*/post.json")) + list((ROOT / "shorts" / "long").glob("*/post.json")):
+        d = json.loads(pj.read_text())
+        links = dict(d.get("links") or {})
+        for svc, pid in (d.get("buffer") or {}).items():
+            p = live.get(pid)
+            if p and p.get("externalLink"):
+                links[svc] = p["externalLink"]
+        if links != (d.get("links") or {}):
+            d["links"] = links
+            pj.write_text(json.dumps(d, indent=1))
+
+
 def publish(dist):
     dist = Path(dist)
     batch = json.loads((ROOT / "plan.json").read_text()) if (ROOT / "plan.json").exists() else []
@@ -199,6 +220,7 @@ def publish(dist):
     dry = not have_key or os.environ.get("DRY_RUN") == "1" or (bool(os.environ.get("ONLY_SLUGS")) and not os.environ.get("SCHEDULE_AT"))
     lines = []
     rec = [] if os.environ.get("ONLY_SLUGS") else reconcile(have_key)
+    refresh_links(have_key)
     host(dist, batch)
     for b in batch:
         src = dist / b["slug"]
