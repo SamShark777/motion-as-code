@@ -26,6 +26,25 @@ def urls_in(o, acc):
     return acc
 
 
+GQL = "https://graphql.lottiefiles.com/2022-08"
+
+
+def gql(query, variables=None):
+    body = json.dumps({"query": query, "variables": variables or {}}).encode()
+    req = urllib.request.Request(GQL, data=body, headers={**UA, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.loads(r.read())
+
+
+def search(kw, n):
+    q = """query($q: String!, $n: Int) { searchPublicAnimations(query: $q, first: $n) {
+      edges { node { id name jsonUrl lottieUrl gifUrl imageUrl createdBy { username firstName } } } } }"""
+    r = gql(q, {"q": kw, "n": n})
+    if r.get("errors"):
+        raise RuntimeError(json.dumps(r["errors"])[:500])
+    return [e["node"] for e in r["data"]["searchPublicAnimations"]["edges"]]
+
+
 def main():
     kws = [k.strip() for k in sys.argv[1].split(",") if k.strip()]
     n = int(sys.argv[2]) if len(sys.argv) > 2 else 6
@@ -34,15 +53,19 @@ def main():
     for kw in kws:
         d = OUT / kw.replace(" ", "_")
         d.mkdir(exist_ok=True)
-        q = urllib.parse.urlencode({"query": kw, "page": 1, "limit": 20, "format": "json"})
         try:
-            raw = json.loads(get(f"https://lottiefiles.com/api/search/get-animations?{q}"))
+            items = search(kw, 12)
         except Exception as e:
             index[kw] = {"error": str(e)}
             print(kw, "ERROR", e)
+            if kw == kws[0]:  # dump the schema's query fields once, to fix the query
+                try:
+                    sch = gql("{ __schema { queryType { fields { name args { name } } } } }")
+                    (OUT / "_schema.json").write_text(json.dumps(sch, indent=1))
+                except Exception as e2:
+                    (OUT / "_schema.json").write_text(str(e2))
             continue
-        items = raw.get("data", {}).get("data", []) if isinstance(raw.get("data"), dict) else raw.get("data", [])
-        (d / "_search.json").write_text(json.dumps(raw)[:200000])
+        (d / "_search.json").write_text(json.dumps(items, indent=1))
         got = []
         for it in items:
             if len(got) >= n:
