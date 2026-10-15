@@ -29,13 +29,17 @@ on:
         description: "Only check the Buffer connection (lists channels + post schema), build nothing"
         type: boolean
         default: false
+      lottie_fetch:
+        description: "Only fetch free LottieFiles animations for these comma-separated keywords (pushed to the assets-lottie branch)"
+        required: false
+        default: ""
       voice_test:
         description: "Only make a voice comparison (A/B MP3s on the voice-tests branch) from this slug's first lines"
         required: false
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -64,6 +68,21 @@ jobs:
           # annotations are readable through the API (the raw log isn't, from Claude's side)
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
           exit $code
+
+  lottie-fetch:
+    if: ${{ inputs.lottie_fetch != '' && inputs.lottie_fetch != null }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - run: python3 scripts/lottie_fetch.py "${{ inputs.lottie_fetch }}" 6
+      - name: Publish to assets-lottie branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out/lottie && git init -q && git checkout -q -b assets-lottie && git add .
+          git -c user.name=shorts-bot -c user.email=shorts-bot@users.noreply.github.com commit -qm "lottie: ${{ inputs.lottie_fetch }}"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" assets-lottie
 
   voice-test:
     if: ${{ inputs.voice_test != '' && inputs.voice_test != null }}
@@ -124,7 +143,7 @@ jobs:
           for f in voice_A voice_B; do echo "::notice::https://raw.githubusercontent.com/${{ github.repository }}/voice-tests/$f.mp3"; done
 
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.voice_test }}
+    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
