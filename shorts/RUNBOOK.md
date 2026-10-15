@@ -101,6 +101,32 @@ a deep male narrator (Kokoro `am_onyx`, fast, short pauses) over a dark synth be
   `"sec": "ted"`. `title`, `credit`, `post` as usual; no `stat` or `hookStyle`.
 - Example: shorts/reappraisal/script.json.
 
+## Long-form (Ted type 1, 16:9, YouTube, twice a week)
+
+Shivam asked for long-form Ted type 1 videos twice a week alongside the Shorts.
+- **Queue:** the tracker's **"Long form"** sheet (Status Idea → Scripted → Scheduled → Published).
+  Scripts live in `shorts/long/<slug>/script.json` — same format as Ted type 1 Shorts (`format: ted1`,
+  lines with `sec: "ted"`, `q`, `bg`), plus `"chapter": "<title>"` on the first line of each chapter
+  (becomes YouTube chapters), optional `"thumb_text"` (2–4 punchy words for the thumbnail) and
+  `"thumb_at"` (seconds into the video for the thumbnail frame). Example: shorts/long/seven-tricks-liked.
+- **Build:** the "Long-form" workflow (`.github/workflows/longform.yml` on main) runs Mon & Thu, builds
+  the lowest-Priority Scripted row in ~75 s chunks in parallel, adds the music bed, thumbnail and
+  chapters, and schedules it on Buffer (YouTube only) for the next day 12:00 PT (Tue & Fri). It opens a
+  GitHub issue "Long-form: <slug>" for the veto.
+- **Writing (Claude, "Long-form script writer" task, Sun & Wed):** keep at least one long-form row
+  Scripted ahead of each build. Pick the next Idea row (or add new ones in the same spirit — practical
+  psychology people can use, listicle or "why you…" angles that won on Shorts). Rules:
+  - 1,100–1,500 spoken words (about 7–10 minutes; over 8 minutes allows mid-roll ads).
+  - Hook in the first 15 seconds that promises the payoff ("…and the last one changes how you'll see
+    every conversation"); then 5–8 chapters, one idea each: the move → the study (researchers + year,
+    what they did, what they found, in plain words) → how to use it today.
+  - Every claim checked against a real source (web search); list the studies in `post.description`
+    with authors and years; `credit` lists them briefly.
+  - Lines of 8–30 words; every line gets a concrete `q` for its illustration; rotate `bg` colours.
+  - Outro: recap the moves in one line, give a small challenge ("try one this week"), then a reason to
+    subscribe that names the schedule (new videos every Tuesday and Friday). Never a bare "subscribe".
+  - `post.title`: curiosity + promise, ≤ 70 characters, no #shorts. Set the row to Scripted with its Slug.
+
 ## Building one locally (debugging only)
 
 `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`. The voice comes from
