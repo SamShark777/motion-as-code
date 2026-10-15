@@ -213,6 +213,12 @@ jobs:
           fi
       - name: App dependencies
         run: cd app && bun install
+      - name: Pick illustrations (Ted type 1)
+        run: |
+          if python3 -c "import json,sys;sys.exit(0 if json.load(open('shorts/${{ matrix.slug }}/script.json')).get('format')=='ted1' else 1)"; then
+            python3 scripts/lottie_pick.py "${{ matrix.slug }}"
+            mkdir -p dist/${{ matrix.slug }} && cp shorts/${{ matrix.slug }}/lottie/CREDITS.json dist/${{ matrix.slug }}/ || true
+          fi
       - name: Build ${{ matrix.slug }}
         env:
           CHROME_PATH: /usr/bin/google-chrome
