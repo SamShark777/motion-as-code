@@ -140,6 +140,8 @@ def main():
     engine = a.engine or cfg.get("engine", "kokoro")
     import soundfile as sf
     script = json.loads((ROOT / "data" / "script.json").read_text(encoding="utf-8"))
+    if script.get("format") == "ted1" and not script.get("voice"):
+        script["voice"] = {"engine": "kokoro", "kokoro_voice": "am_onyx", "kokoro_lang": "en-us", "kokoro_speed": 1.08}
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
     if script.get("voice", {}).get("engine"):
         engine = script["voice"]["engine"]

@@ -1,61 +1,66 @@
 {
-  "slug": "present-bias",
-  "no": 35,
-  "look": "pixel-quest",
-  "title": [
-    "PRESENT",
-    "BIAS"
-  ],
-  "hookStyle": "thoughts",
-  "titleCue": "bias.",
-  "credit": "Read & van Leeuwen · 1998",
-  "stat": {
-    "a": {
-      "label": "Workers tested",
-      "value": 200,
-      "display": "200",
-      "cue": "hundred"
-    }
+ "slug": "present-bias",
+ "no": 35,
+ "format": "ted1",
+ "look": "ted1",
+ "title": [
+  "Present",
+  "Bias"
+ ],
+ "credit": "Read & van Leeuwen \u00b7 1998",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "ted",
+   "text": "Your future self is a stranger you keep making promises for.",
+   "q": "man thinking, mirror reflection, person",
+   "bg": "#1F3B73"
   },
-  "cta": "Follow for more psychology",
-  "lines": [
-    {
-      "sec": "hook",
-      "text": "Why does tomorrow-you get all the hard work?"
-    },
-    {
-      "sec": "name",
-      "text": "Economists call it present bias."
-    },
-    {
-      "sec": "study",
-      "text": "Office workers picked a snack to get a week later: fruit, or chocolate and chips."
-    },
-    {
-      "sec": "study",
-      "text": "When the day came, they could choose again."
-    },
-    {
-      "sec": "stat",
-      "text": "Across two hundred workers, far more grabbed the junk food in the moment than had planned to."
-    },
-    {
-      "sec": "takeaway",
-      "text": "Future-you is always healthier, on paper."
-    },
-    {
-      "sec": "takeaway",
-      "text": "So decide now, then make switching hard."
-    }
-  ],
-  "post": {
-    "title": "Why Future You Always Gets the Hard Work #shorts",
-    "description": "We plan like saints and choose like snackers. In Read & van Leeuwen (1998), 200 office workers chose far more unhealthy snacks when picking for right now than when picking a week ahead. That's present bias. #psychology #habits #selfcontrol",
-    "tags": [
-      "present bias",
-      "self control",
-      "habits",
-      "psychology"
-    ]
+  {
+   "sec": "ted",
+   "text": "In one study, office workers picked a snack they'd get a week later.",
+   "q": "office worker, office, desk work",
+   "bg": "#E9E4D8"
+  },
+  {
+   "sec": "ted",
+   "text": "Most chose fruit.",
+   "q": "fruit, apple, healthy food",
+   "bg": "#3E8E5A"
+  },
+  {
+   "sec": "ted",
+   "text": "But when the snack was for right now, most grabbed chocolate.",
+   "q": "chocolate, candy, dessert",
+   "bg": "#6B2D1F"
+  },
+  {
+   "sec": "ted",
+   "text": "Psychologists call it present bias. Now always feels bigger than later.",
+   "q": "clock, hourglass, time",
+   "bg": "#E8C547"
+  },
+  {
+   "sec": "ted",
+   "text": "So here's the trick. Make the good choice in advance, before temptation is in the room.",
+   "q": "planning, calendar, shopping list",
+   "bg": "#2B6E7A"
+  },
+  {
+   "sec": "ted",
+   "text": "Your future self will thank you. Follow for one new trick your brain plays on you, every day.",
+   "q": "happy man, celebration, success",
+   "bg": "#B3202A"
   }
+ ],
+ "post": {
+  "title": "Why You Always Choose Now Over Later #shorts",
+  "description": "Present bias: in Read & van Leeuwen's 1998 study, office workers choosing a snack for next week mostly picked fruit, but for right now most picked chocolate. Decide in advance. #psychology #shorts #selfcontrol #habits",
+  "tags": [
+   "present bias",
+   "psychology",
+   "self control",
+   "habits"
+  ]
+ }
 }

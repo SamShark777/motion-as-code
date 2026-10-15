@@ -1,61 +1,66 @@
 {
-  "slug": "reappraisal",
-  "no": 43,
-  "look": "riso",
-  "title": [
-    "REAPPRAISAL",
-    "REFRAME"
-  ],
-  "hookStyle": "thoughts",
-  "titleCue": "reappraisal.",
-  "credit": "Jamieson et al. · 2010",
-  "stat": {
-    "a": {
-      "label": "Points higher",
-      "value": 64,
-      "display": "+64",
-      "cue": "sixty"
-    }
+ "slug": "reappraisal",
+ "no": 43,
+ "format": "ted1",
+ "look": "ted1",
+ "title": [
+  "I Am",
+  "Excited"
+ ],
+ "credit": "Brooks \u00b7 2014",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "ted",
+   "text": "Nervous before a big moment? Don't tell yourself to calm down.",
+   "q": "nervous man, anxiety, stress",
+   "bg": "#1F3B73"
   },
-  "cta": "Follow for more psychology",
-  "lines": [
-    {
-      "sec": "hook",
-      "text": "Can the same nerves mean two different things?"
-    },
-    {
-      "sec": "name",
-      "text": "Changing what a feeling means is called reappraisal."
-    },
-    {
-      "sec": "study",
-      "text": "Before a big grad school exam, some students were told one thing:"
-    },
-    {
-      "sec": "study",
-      "text": "a racing heart can actually help you perform."
-    },
-    {
-      "sec": "stat",
-      "text": "On the real math test, they scored over sixty points higher than students who weren't told."
-    },
-    {
-      "sec": "takeaway",
-      "text": "The nerves didn't go away. Their meaning changed."
-    },
-    {
-      "sec": "takeaway",
-      "text": "So next time your heart races, call it fuel."
-    }
-  ],
-  "post": {
-    "title": "Turn Nerves Into Fuel With One Thought #shorts",
-    "description": "Same nerves, different meaning. In Jamieson, Mendes, Blackstock & Schmader (2010), students told that a racing heart can help performance scored about 64 points higher on the real GRE math section than students who weren't (a small study of 28 score reports). That's reappraisal. #psychology #anxiety #mindset",
-    "tags": [
-      "reappraisal",
-      "test anxiety",
-      "stress",
-      "psychology"
-    ]
+  {
+   "sec": "ted",
+   "text": "Say three words instead. I am excited.",
+   "q": "excited person, cheering, celebration",
+   "bg": "#E07A2E"
+  },
+  {
+   "sec": "ted",
+   "text": "Harvard researcher Alison Brooks had people say it out loud before singing karaoke or giving a speech.",
+   "q": "singing, microphone, karaoke",
+   "bg": "#6A3FA0"
+  },
+  {
+   "sec": "ted",
+   "text": "They performed better than the people who tried to calm down.",
+   "q": "public speaking, presentation, speech",
+   "bg": "#E9E4D8"
+  },
+  {
+   "sec": "ted",
+   "text": "Anxiety and excitement feel almost the same in your body. Racing heart, fast breathing.",
+   "q": "heart, heartbeat, running",
+   "bg": "#B3202A"
+  },
+  {
+   "sec": "ted",
+   "text": "So don't fight the feeling. Rename it.",
+   "q": "brain, lightbulb, idea",
+   "bg": "#E8C547"
+  },
+  {
+   "sec": "ted",
+   "text": "Save this for your next interview. And follow, because tomorrow's trick works on other people.",
+   "q": "job interview, handshake, business meeting",
+   "bg": "#2B6E7A"
   }
+ ],
+ "post": {
+  "title": "Say These 3 Words Before Anything Scary #shorts",
+  "description": "Brooks (2014): people who said \"I am excited\" before singing or public speaking performed better than those who tried to calm down. Reframe anxiety as excitement. #psychology #shorts #anxiety #confidence",
+  "tags": [
+   "reappraisal",
+   "anxiety",
+   "psychology",
+   "confidence"
+  ]
+ }
 }

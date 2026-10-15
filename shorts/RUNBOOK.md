@@ -70,6 +70,37 @@ doesn't use its post quota). Rows No. 1, 11, 22 were posted through Metricool (n
    - Looks set in all caps (`terminal`, `spy-noir`, `pixel-quest`) fit fewer characters per line: keep
      their hook and takeaway lines short (≤ 9 words).
 
+## Current experiment: Ted type 1 (started 2026-10-14)
+
+Shivam's call: the **next 10 videos are all Ted type 1** (format `ted1`), kept consistent so their
+numbers can be compared with the earlier pixel-avatar Shorts. Videos No. 35 and 43 are the first two.
+Write every new script in this format until 10 `ted1` rows exist (count rows with `Visual style=ted1`),
+then go back to the normal template and say so in the message to Shivam; the weekly review decides
+which format wins. Set `Visual style=ted1` on each of these rows.
+
+**What it is:** modelled on faceless dark-psychology tip channels. A flat illustration clip per
+line (free LottieFiles animations, picked automatically in CI from each line's `q`) in a rounded card
+on black with a vignette, hard cuts on every line, 2–3-word white captions, the handle in the corner,
+a deep male narrator (Kokoro `am_onyx`, fast, short pauses) over a dark synth bed.
+
+**Script rules (on top of the accuracy rules above):**
+- 7–9 lines, 85–115 spoken words (about 30–40 s). Short, punchy, second person ("you").
+- Line 1 is the hook: a tip that sounds like a secret or a surprising claim, no throat-clearing.
+- Structure: situation → the move → why it works (name the effect and the study in a few words:
+  "Harvard researcher Alison Brooks had people…"). One or two tips per video; number the second
+  ("Two.") when there are two.
+- The **last line or two are a real outro, never just "Follow for more"**: tell them what to do with the
+  trick and give a reason to follow, e.g. "Save this for your next interview. And follow, because
+  tomorrow's trick works on other people." Vary the wording every video.
+- Every line has `"q"`: 2–3 comma-separated search words for a **concrete picture** of that line
+  (people, objects, actions: "job interview, handshake", "chocolate, dessert"), most specific first.
+  Avoid abstract words (bias, effect, psychology) and words that return UI icons.
+- Every line has `"bg"`: the card colour behind the illustration. Alternate dark and light, rotating
+  through #1F3B73 #E9E4D8 #B3202A #E8C547 #2B6E7A #E07A2E #6A3FA0 #3E8E5A #F1ECE2 #6B2D1F.
+- Script fields: `"format": "ted1"`, `"look": "ted1"`, `"handle": "@aroundthestrangeai"`, every line
+  `"sec": "ted"`. `title`, `credit`, `post` as usual; no `stat` or `hookStyle`.
+- Example: shorts/reappraisal/script.json.
+
 ## Building one locally (debugging only)
 
 `bash scripts/build_short.sh <slug>` → `shorts/<slug>/<slug>.mp4` + `preview.jpg`. The voice comes from
