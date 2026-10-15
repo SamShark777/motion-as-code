@@ -7,6 +7,7 @@ Free plan: 3 channels, 10 queued posts per channel, 3,000 API requests / 30 days
     python3 scripts/buffer.py schema                          # print the post input types (introspection)
     python3 scripts/buffer.py post <slug> <dueAt ISO> <url>   # schedule one video on YouTube + Instagram + TikTok
     python3 scripts/buffer.py posts                           # scheduled + sent posts of the three channels (JSON)
+    python3 scripts/buffer.py cancel <slug>[,<slug>...]       # delete those videos' still-scheduled Buffer posts (ids from the tracker)
 
 `post` reads shorts/<slug>/script.json (post.title / description / tags) and prints JSON
 {"youtube": id, "instagram": id, "tiktok": id, "errors": {...}}.
@@ -93,6 +94,83 @@ def create(channel_id, service, post, url, due):
     raise RuntimeError(r.get("message") or json.dumps(r))
 
 
+def _delete_field():
+    """Find Buffer's delete-post mutation and how its argument is shaped (the API is young; introspect instead of guessing)."""
+    d = gql("{ __schema { mutationType { fields { name args { name type { name kind ofType { name kind } } } } } } }")
+    fields = d["__schema"]["mutationType"]["fields"]
+    cands = [f for f in fields if "delete" in f["name"].lower() and "post" in f["name"].lower()]
+    if not cands:
+        raise RuntimeError("no delete-post mutation; mutations: " + ", ".join(f["name"] for f in fields))
+    f = next((c for c in cands if c["name"] == "deletePost"), cands[0])
+    arg = f["args"][0]
+    t = arg["type"]
+    tname = t.get("name") or (t.get("ofType") or {}).get("name")
+    kind = t.get("kind") if t.get("name") else (t.get("ofType") or {}).get("kind")
+    key = None
+    if kind == "INPUT_OBJECT":
+        it = gql("query($n: String!) { __type(name: $n) { inputFields { name } } }", {"n": tname})["__type"]["inputFields"]
+        names = [x["name"] for x in it]
+        key = next((n for n in ("id", "postId") if n in names), names[0])
+    return f["name"], arg["name"], tname, key
+
+
+def cancel(slugs):
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import tracker
+    wb, ws, H, rows = tracker.load()
+    want = {}
+    for r in rows.values():
+        slug = ws.cell(r, H["Slug"]).value
+        mid = str(ws.cell(r, H["Metricool ID"]).value or "")
+        if slug in slugs and mid.startswith("buffer:"):
+            want[slug] = dict(kv.split("=", 1) for kv in mid[len("buffer:"):].split(";") if "=" in kv)
+    name, argname, tname, key = _delete_field()
+    oid, m = channel_map()
+    live = {}
+    try:
+        d = gql("""query($o: OrganizationId!, $c: [ChannelId!]) { posts(first: 100, input: {organizationId: $o, filter: {channelIds: $c}}) {
+            edges { node { id status dueAt } } } }""", {"o": oid, "c": [c["id"] for c in m.values()]})
+        live = {e["node"]["id"]: e["node"] for e in d["posts"]["edges"]}
+    except Exception as e:
+        print("could not list posts:", e)
+    res = {"mutation": name, "missing_in_tracker": [s for s in slugs if s not in want], "deleted": {}, "skipped": {}, "errors": {}}
+    for slug, ids in want.items():
+        for svc, pid in ids.items():
+            st = (live.get(pid) or {}).get("status")
+            if st and st.lower() in ("sent", "published", "sending"):
+                res["skipped"][f"{slug}/{svc}"] = f"already {st}"; continue
+            val = {key: pid} if key else pid
+            sels = ["{ __typename ... on MutationError { message } }", "{ __typename }", ""]
+            last = None
+            for sel in sels:
+                q = "mutation($v: %s!) { %s(%s: $v) %s }" % (tname, name, argname, sel)
+                try:
+                    r = gql(q, {"v": val})[name]
+                except Exception as e:
+                    last = str(e)[:300]
+                    if "Buffer GraphQL" in last and ("selection" in last.lower() or "fragment" in last.lower() or "subfield" in last.lower() or "MutationError" in last):
+                        continue
+                    break
+                last = None
+                if isinstance(r, dict) and r.get("message"):
+                    last = r["message"]
+                elif r is False:
+                    last = "returned false"
+                break
+            if last:
+                res["errors"][f"{slug}/{svc}"] = last
+            else:
+                res["deleted"][f"{slug}/{svc}"] = pid
+    try:
+        d = gql("""query($o: OrganizationId!, $c: [ChannelId!]) { posts(first: 100, input: {organizationId: $o, filter: {channelIds: $c}}) {
+            edges { node { id status } } } }""", {"o": oid, "c": [c["id"] for c in m.values()]})
+        now = {e["node"]["id"]: e["node"]["status"] for e in d["posts"]["edges"]}
+        res["still_listed"] = {k: now[v] for k, v in res["deleted"].items() if v in now}
+    except Exception as e:
+        res["still_listed"] = f"could not re-list: {e}"[:200]
+    return res
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "channels"
     if cmd == "channels":
@@ -169,6 +247,8 @@ def main():
                 break
             after = p["pageInfo"]["endCursor"]
         print(json.dumps(out))
+    elif cmd == "cancel":
+        print(json.dumps(cancel([x.strip() for x in sys.argv[2].split(",") if x.strip()])))
     else:
         sys.exit(__doc__)
 
