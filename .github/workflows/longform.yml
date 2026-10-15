@@ -1,0 +1,146 @@
+# Long-form Ted type 1 (16:9, ~8–10 min) for YouTube, twice a week.
+# Mon & Thu: builds the next "Scripted" row of the tracker's "Long form" sheet (script in
+# shorts/long/<slug>/script.json on branch `shorts`), renders it in parallel chunks, adds music,
+# thumbnail and chapters, and schedules it on Buffer (YouTube) for the next day at 12:00 PT.
+# Opens an issue so Shivam can veto (delete in Buffer).
+name: Long-form
+
+on:
+  schedule:
+    - cron: "23 17 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Build this long-form slug (default: next Scripted row)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Build and host, but don't schedule on Buffer"
+        type: boolean
+        default: false
+
+concurrency:
+  group: longform
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      slug: ${{ steps.p.outputs.slug }}
+      no: ${{ steps.p.outputs.no }}
+      date: ${{ steps.p.outputs.date }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q openpyxl
+      - id: p
+        run: python3 scripts/ci_long.py plan "${{ inputs.slug }}"
+
+  prep:
+    needs: plan
+    if: needs.plan.outputs.slug != ''
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.c.outputs.matrix }}
+    env:
+      SLUG: ${{ needs.plan.outputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/cache@v4
+        with: { path: ~/.cache/kokoro, key: kokoro-v1 }
+      - run: pip install -q kokoro-onnx soundfile numpy pillow openpyxl
+      - name: Illustrations
+        run: python3 scripts/lottie_pick.py "long/$SLUG"
+      - name: Voice + audio analysis
+        run: |
+          mkdir -p data/lottie out
+          cp shorts/long/$SLUG/lottie/*.json data/lottie/
+          cp shorts/long/$SLUG/script.json data/script.json
+          python3 analysis/tts_vo.py
+          python3 analysis/audio_vo.py
+      - id: c
+        run: python3 scripts/ci_long.py chunks
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prep
+          path: |
+            data/
+            audio/voiceover.wav
+            audio/voiceover.mp3
+            shorts/long/${{ env.SLUG }}/
+          retention-days: 5
+
+  render:
+    needs: [plan, prep]
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    strategy:
+      fail-fast: true
+      max-parallel: 12
+      matrix: ${{ fromJson(needs.prep.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: oven-sh/setup-bun@v2
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/download-artifact@v4
+        with: { name: prep, path: . }
+      - run: cd app && bun install
+      - name: Render ${{ matrix.from }}–${{ matrix.to }} s
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: |
+          mkdir -p chunks
+          cd app && bun scripts/render.ts video --samples 1 --fps 30 --crf 20 --from ${{ matrix.from }} --to ${{ matrix.to }} --noaudio --out ../chunks/chunk_${{ matrix.k }}.mp4 2>&1 | tr '\r' '\n' | grep -v "frames  " || true
+          test -s ../chunks/chunk_${{ matrix.k }}.mp4
+      - uses: actions/upload-artifact@v4
+        with: { name: "chunk-${{ matrix.k }}", path: "chunks/chunk_${{ matrix.k }}.mp4", retention-days: 3 }
+
+  finalize:
+    needs: [plan, prep, render]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - run: pip install -q openpyxl pillow fonttools brotli soundfile numpy
+      - uses: actions/download-artifact@v4
+        with: { name: prep, path: . }
+      - uses: actions/download-artifact@v4
+        with: { pattern: "chunk-*", path: chunks, merge-multiple: true }
+      - name: Assemble, host, schedule
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: mkdir -p out && python3 scripts/ci_long.py finalize "${{ needs.plan.outputs.slug }}" "${{ needs.plan.outputs.date }}" "${{ needs.plan.outputs.no }}"
+      - name: Commit tracker
+        run: |
+          git config user.name shorts-bot
+          git config user.email shorts-bot@users.noreply.github.com
+          git add shorts/Psychology_Shorts_Tracker.xlsx
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -qm "ci: long-form scheduled $(date -u +%F)"
+          for i in 1 2 3; do git pull -q --rebase origin shorts && git push -q origin shorts && exit 0; sleep 5; done
+          exit 1
+      - name: Issue for Shivam
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -f issue.md ] || echo "Long-form run failed — see ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > issue.md
+          echo "" >> issue.md; echo "[Run log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> issue.md
+          gh issue create -R "${{ github.repository }}" --title "Long-form: ${{ needs.plan.outputs.slug }} (${{ needs.plan.outputs.date }})" --body-file issue.md
