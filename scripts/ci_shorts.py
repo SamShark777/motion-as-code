@@ -228,7 +228,7 @@ def publish(dist):
         S = json.loads((ROOT / "shorts" / b["slug"] / "script.json").read_text())
         title = S["post"]["title"]
         vj = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text())
-        want = (S.get("voice") or {}).get("engine") or (("elevenlabs" if vj.get("ted_eleven_voice") else "kokoro") if S.get("format") in ("ted1", "cdesign") else vj.get("engine", "kokoro"))
+        want = ("elevenlabs" if S.get("format") in ("ted1", "cdesign") and vj.get("ted_eleven_voice") else None) or (S.get("voice") or {}).get("engine") or ("kokoro" if S.get("format") in ("ted1", "cdesign") else vj.get("engine", "kokoro"))
         names = {"bf_emma": "Emma (British)", "bm_george": "George (British)", "bm_fable": "Fable (British)", "bf_isabella": "Isabella (British)", "am_onyx": "Onyx (deep male)", "am_michael": "Michael + Heart (dialogue)"}
         vcfg = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text())
         vcfg.update(S.get("voice") or ({"kokoro_voice": "am_onyx"} if S.get("format") in ("ted1", "cdesign") else {}))

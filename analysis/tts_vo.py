@@ -174,8 +174,9 @@ def main():
         # Ted narrator: ElevenLabs "River" for Shorts (falls back to Kokoro Onyx when the key/credits run out);
         # long-form (landscape) stays on Kokoro so it doesn't burn the monthly ElevenLabs characters
         script["voice"] = {"engine": "kokoro", "kokoro_voice": "am_onyx", "kokoro_lang": "en-us", "kokoro_speed": 1.08}
-        if script.get("orientation") != "landscape" and cfg.get("ted_eleven_voice"):
-            script["voice"].update({"engine": "elevenlabs", "eleven_voice": cfg["ted_eleven_voice"]})
+    if script.get("format") in ("ted1", "cdesign") and script.get("orientation") != "landscape" and cfg.get("ted_eleven_voice"):
+        # overrides the scripts' own Kokoro setting, which stays as the fallback
+        script["voice"] = {**script["voice"], "engine": "elevenlabs", "eleven_voice": cfg["ted_eleven_voice"]}
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
     if script.get("voice", {}).get("engine"):
         engine = script["voice"]["engine"]
