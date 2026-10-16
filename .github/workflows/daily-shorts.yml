@@ -37,6 +37,10 @@ on:
         description: "Only fetch free LottieFiles animations for these comma-separated keywords (pushed to the assets-lottie branch)"
         required: false
         default: ""
+      chatterbox_test:
+        description: "Only make Chatterbox voice samples from these Kokoro reference voices, comma-separated (MP3s on the voice-tests branch)"
+        required: false
+        default: ""
       eleven_test:
         description: "Only make ElevenLabs voice samples: voice_id:label,... (MP3s on the voice-tests branch)"
         required: false
@@ -47,7 +51,7 @@ on:
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -167,6 +171,41 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
           for f in voice_A voice_B; do echo "::notice::https://raw.githubusercontent.com/${{ github.repository }}/voice-tests/$f.mp3"; done
 
+  chatterbox-test:
+    if: ${{ inputs.chatterbox_test != '' && inputs.chatterbox_test != null }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/kokoro
+          key: chatterbox-v1
+      - name: Install (CPU torch)
+        run: |
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts kokoro-onnx soundfile numpy
+      - name: Generate samples
+        run: |
+          set +e
+          python3 scripts/chatterbox_test.py "${{ inputs.chatterbox_test }}" > res.txt 2>&1; code=$?
+          tail -c 3000 res.txt | grep -v -E "^\s*$|it/s|s/it" | tail -12 | while IFS= read -r line; do echo "::notice::${line:0:600}"; done
+          exit $code
+      - name: Publish to voice-tests branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          D=$(mktemp -d); cp out/chatterbox/*.mp3 "$D"; cd "$D"
+          git init -q && git checkout -q -b voice-tests && git add .
+          git -c user.name=shorts-bot -c user.email=shorts-bot@users.noreply.github.com commit -qm "chatterbox samples"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
+
   eleven-test:
     if: ${{ inputs.eleven_test != '' && inputs.eleven_test != null }}
     runs-on: ubuntu-latest
@@ -191,7 +230,7 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
 
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.buffer_cancel && !inputs.eleven_test }}
+    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
