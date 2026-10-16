@@ -1,0 +1,13 @@
+{
+ "slug": "one-more",
+ "no": 102,
+ "format": "prebuilt",
+ "look": "editorial",
+ "voice": {"engine": "kokoro", "kokoro_voice": "af_heart"},
+ "note": "Shivam's Claude Design export 'One More Never Enough', built with Remotion in a browser session (narration Kokoro af_heart, synthesised SFX + pad bed). Square 1080x1080 padded to 1080x1920 white.",
+ "post": {
+  "title": "Why One More Scroll Never Feels Like Enough #shorts",
+  "description": "Dopamine isn't the enemy: it helps your brain learn what's worth pursuing. Uncertain rewards, like checking for something interesting, can keep you coming back. Start small: mute nonessential alerts, put the phone out of reach, and choose one thing you meant to do. #psychology #shorts #dopamine #habits",
+  "tags": ["dopamine", "habits", "psychology", "phone", "scrolling"]
+ }
+}
