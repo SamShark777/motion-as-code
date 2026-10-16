@@ -37,13 +37,17 @@ on:
         description: "Only fetch free LottieFiles animations for these comma-separated keywords (pushed to the assets-lottie branch)"
         required: false
         default: ""
+      eleven_test:
+        description: "Only make ElevenLabs voice samples: voice_id:label,... (MP3s on the voice-tests branch)"
+        required: false
+        default: ""
       voice_test:
         description: "Only make a voice comparison (A/B MP3s on the voice-tests branch) from this slug's first lines"
         required: false
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.buffer_cancel != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -163,8 +167,31 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
           for f in voice_A voice_B; do echo "::notice::https://raw.githubusercontent.com/${{ github.repository }}/voice-tests/$f.mp3"; done
 
+  eleven-test:
+    if: ${{ inputs.eleven_test != '' && inputs.eleven_test != null }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - name: Generate samples
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: |
+          set +e
+          python3 scripts/eleven_test.py "${{ inputs.eleven_test }}" > res.txt 2>&1; code=$?
+          while IFS= read -r line; do echo "::notice::${line:0:900}"; done < res.txt
+          exit $code
+      - name: Publish to voice-tests branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          D=$(mktemp -d); cp out/eleven/*.mp3 "$D"; cd "$D"
+          git init -q && git checkout -q -b voice-tests && git add .
+          git -c user.name=shorts-bot -c user.email=shorts-bot@users.noreply.github.com commit -qm "elevenlabs samples"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
+
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.buffer_cancel }}
+    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.buffer_cancel && !inputs.eleven_test }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
