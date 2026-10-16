@@ -1,0 +1,17 @@
+{
+ "no": 36,
+ "slug": "procrastination-feelings",
+ "date": "2026-10-17",
+ "slot": "19:00",
+ "due": "2026-10-18T02:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-17/procrastination-feelings.mp4",
+ "buffer": {
+  "youtube": "6ad27e00346e510ac44f4fd1",
+  "tiktok": "6ad27e005720e82b418e1bb9"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 36.7
+}

@@ -1,0 +1,17 @@
+{
+ "no": 13,
+ "slug": "spacing-effect",
+ "date": "2026-10-17",
+ "slot": "09:00",
+ "due": "2026-10-17T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-17/spacing-effect.mp4",
+ "buffer": {
+  "youtube": "6ad27dfc346e510ac44f4f11",
+  "tiktok": "6ad27dfd5720e82b418e1add"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 34.2
+}

@@ -1,0 +1,17 @@
+{
+ "no": 25,
+ "slug": "cocktail-party",
+ "date": "2026-10-17",
+ "slot": "14:00",
+ "due": "2026-10-17T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-17/cocktail-party.mp4",
+ "buffer": {
+  "youtube": "6ad27dfe5720e82b418e1b51",
+  "tiktok": "6ad27dfe346e510ac44f4f9b"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 34.1
+}
