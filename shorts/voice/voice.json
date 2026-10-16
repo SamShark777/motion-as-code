@@ -11,5 +11,10 @@
  "kokoro_lang": "en-gb",
  "kokoro_speed": 1.0,
  "ted_eleven_voice": "SAz9YHcvj6GT2YYXdXww",
- "ted_eleven_voice_name": "River (ElevenLabs)"
+ "ted_eleven_voice_name": "River (ElevenLabs)",
+ "ted_engine": "chatterbox",
+ "ted_engine_name": "Chatterbox built-in (calm)",
+ "cb_exaggeration": 0.35,
+ "cb_cfg_weight": 0.5,
+ "cb_seed": 3
 }

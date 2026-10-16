@@ -89,6 +89,25 @@ def eleven_lines(texts, cfg):
     return out
 
 
+def chatterbox_lines(texts, cfg):
+    """Chatterbox (free, open-source) via scripts/cb_render.py in its own venv; raises so the caller falls back."""
+    import soundfile as sf, tempfile
+    py = os.environ.get("CHATTERBOX_PY") or sys.executable
+    d = Path(tempfile.mkdtemp())
+    job = {"texts": texts, "exaggeration": cfg.get("cb_exaggeration", 0.35), "cfg_weight": cfg.get("cb_cfg_weight", 0.5),
+           "seed": cfg.get("cb_seed", 3), "ref": cfg.get("cb_ref")}
+    (d / "job.json").write_text(json.dumps(job))
+    r = subprocess.run([py, str(ROOT / "scripts" / "cb_render.py"), str(d / "job.json"), str(d / "out")], capture_output=True, text=True)
+    print(r.stdout[-1500:])
+    if r.returncode != 0:
+        raise RuntimeError("chatterbox failed: " + r.stderr[-400:])
+    out = []
+    for i in range(len(texts)):
+        a, sr = sf.read(str(d / "out" / f"{i:03d}.wav"), dtype="float32")
+        out.append((a if a.ndim == 1 else a.mean(1), sr))
+    return out
+
+
 def ensure_omnivoice():
     try:
         import omnivoice  # noqa: F401
@@ -174,9 +193,12 @@ def main():
         # Ted narrator: ElevenLabs "River" for Shorts (falls back to Kokoro Onyx when the key/credits run out);
         # long-form (landscape) stays on Kokoro so it doesn't burn the monthly ElevenLabs characters
         script["voice"] = {"engine": "kokoro", "kokoro_voice": "am_onyx", "kokoro_lang": "en-us", "kokoro_speed": 1.08}
-    if script.get("format") in ("ted1", "cdesign") and script.get("orientation") != "landscape" and cfg.get("ted_eleven_voice"):
+    ted_engine = cfg.get("ted_engine") or ("elevenlabs" if cfg.get("ted_eleven_voice") else None)
+    if script.get("format") in ("ted1", "cdesign") and script.get("orientation") != "landscape" and ted_engine:
         # overrides the scripts' own Kokoro setting, which stays as the fallback
-        script["voice"] = {**script["voice"], "engine": "elevenlabs", "eleven_voice": cfg["ted_eleven_voice"]}
+        script["voice"] = {**script["voice"], "engine": ted_engine}
+        if ted_engine == "elevenlabs":
+            script["voice"]["eleven_voice"] = cfg["ted_eleven_voice"]
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
     if script.get("voice", {}).get("engine"):
         engine = script["voice"]["engine"]
@@ -189,6 +211,13 @@ def main():
         except Exception as e:  # never lose a day's video to the voice step
             print(f"FALLBACK: omnivoice failed ({type(e).__name__}: {str(e)[:300]}) -> kokoro", file=sys.stderr)
             print(f"FALLBACK: {type(e).__name__}: {str(e)[:300]}")
+            engine = "kokoro"
+    if engine == "chatterbox":
+        try:
+            rendered = chatterbox_lines(texts, cfg)
+        except Exception as e:
+            print(f"FALLBACK: chatterbox failed ({str(e)[:300]}) -> kokoro", file=sys.stderr)
+            print(f"FALLBACK: {str(e)[:300]}")
             engine = "kokoro"
     if engine == "elevenlabs":
         try:
