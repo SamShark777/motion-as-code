@@ -9,8 +9,12 @@
 > (`scripts/buffer.py cancel`), then set those rows to `Vetoed` — **only when Shivam asks for it in chat.**
 
 > **2026-10-15 evening — Shivam's plan (standing rules until he changes them):**
-> 1. **Format freeze until 2026-10-30:** every Short is Ted type 2, narrated by the **Chatterbox built-in voice,
->    calm** (`voice.json` `ted_engine`, Kokoro Onyx fallback). Change only topics, hooks and titles — no new
+> 1. **Format freeze until 2026-10-31** (restarted with the new audio, first Shorts Sat 2026-10-17): every Short
+>    is Ted type 2 with the **One More Never Enough audio**: narrator Kokoro `af_heart`, full-precision model
+>    (`voice.json` `ted_voice`), scene-timed sound effects + the F-major pad bed ducked under the voice
+>    (`analysis/ted2_audio.py`, sounds in `analysis/sfx_lib.py`). Optional per-line `"sfx": [[sound, offset_s, volume]]`
+>    overrides the automatic cues (sounds: swipe, whoosh, pop, tick, chime, chime-bright, rising, notification,
+>    flip, flip-dull, lightning, airy, card-slide, settle, toggle, drawer, page-turn, wood-tap). Change only topics, hooks and titles — no new
 >    formats, looks, voices, music or pacing changes, so the numbers stay comparable.
 > 2. **3 Shorts a day** at 09:00, 14:00, 19:00 PT (`SHORTS_PER_DAY=3`). Quality over volume: YouTube limits
 >    monetization of mass-produced, repetitive content, so every script needs a specific, surprising hook and
