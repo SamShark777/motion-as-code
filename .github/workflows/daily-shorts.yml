@@ -272,11 +272,18 @@ jobs:
           path: |
             ~/.cache/huggingface
             ~/.cache/kokoro
-          key: voice-models-v1
+            ~/cbenv
+          key: voice-models-v2-cb
       - name: Python packages
         run: |
           pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install -q omnivoice kokoro-onnx soundfile pillow numpy openpyxl
+      - name: Chatterbox (own venv, Ted narrator)
+        run: |
+          [ -x ~/cbenv/bin/python ] || python -m venv ~/cbenv
+          ~/cbenv/bin/pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          ~/cbenv/bin/pip install -q chatterbox-tts
+          echo "CHATTERBOX_PY=$HOME/cbenv/bin/python" >> "$GITHUB_ENV"
       - name: Voice reference
         env:
           VOICE: ${{ secrets.VOICE_REF_OPUS_B64 }}
