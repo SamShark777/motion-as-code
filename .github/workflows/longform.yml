@@ -6,8 +6,9 @@
 name: Long-form
 
 on:
-  schedule:
-    - cron: "23 17 * * 1,4"
+  # paused 2026-10-15 (Shivam): long-form waits until Shorts show traction; run it by hand meanwhile
+  # schedule:
+  #   - cron: "23 17 * * 1,4"
   workflow_dispatch:
     inputs:
       slug:

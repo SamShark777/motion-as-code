@@ -5,7 +5,7 @@
 #
 # Secrets:   BUFFER_API_KEY      (Buffer → Settings → API; without it the run is a dry run)
 #            VOICE_REF_OPUS_B64  (Shivam's voice reference, base64 Opus; without it: Kokoro voice)
-# Variables: SHORTS_PER_DAY (default 5), SLOTS (default 08:00,11:00,14:00,17:00,20:00, America/Los_Angeles)
+# Variables: SHORTS_PER_DAY (default 3), SLOTS (default 09:00,14:00,19:00, America/Los_Angeles)
 name: Daily Shorts
 
 on:
@@ -59,8 +59,8 @@ permissions:
   issues: write
 
 env:
-  SHORTS_PER_DAY: ${{ vars.SHORTS_PER_DAY || '5' }}
-  SLOTS: ${{ vars.SLOTS || '08:00,11:00,14:00,17:00,20:00' }}
+  SHORTS_PER_DAY: ${{ vars.SHORTS_PER_DAY || '3' }}
+  SLOTS: ${{ vars.SLOTS || '09:00,14:00,19:00' }}
   ONLY_SLUGS: ${{ inputs.only_slugs }}
   SCHEDULE_AT: ${{ inputs.schedule_at }}
 
