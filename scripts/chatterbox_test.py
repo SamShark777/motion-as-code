@@ -16,7 +16,6 @@ SETTINGS = {"calm": dict(exaggeration=0.35, cfg_weight=0.5), "expressive": dict(
 
 def main():
     import numpy as np, soundfile as sf, torch, torchaudio
-    from tts_vo import kokoro_lines
     from chatterbox.tts import ChatterboxTTS
     out = ROOT / "out" / "chatterbox"
     out.mkdir(parents=True, exist_ok=True)
@@ -26,9 +25,7 @@ def main():
     print(f"loaded in {time.time() - t0:.0f}s")
     jobs = [("default", None)]
     for v in [x.strip() for x in sys.argv[1].split(",") if x.strip()]:
-        (a, sr), = kokoro_lines([REF_TEXT], v, 0.95, "en-gb" if v[0] == "b" else "en-us")
-        ref = out / f"ref_{v}.wav"
-        sf.write(str(ref), a, sr)
+        ref = ROOT / "shorts" / "voice" / "refs" / f"{v}.wav"  # made with Kokoro (REF_TEXT), committed
         jobs.append((v, ref))
     for name, ref in jobs:
         for tag, kw in SETTINGS.items():
