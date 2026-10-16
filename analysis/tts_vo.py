@@ -15,7 +15,7 @@ enough for the karaoke wipe and the cuts). Each lyrics line keeps its `sec` for 
     python3 analysis/tts_vo.py [--engine omnivoice|kokoro] [--voice am_michael] [--speed 0.92]
 Prints "ENGINE: <name>" (and "FALLBACK: <reason>" if it fell back) for the pipeline log.
 """
-import argparse, json, os, re, subprocess, sys, time
+import argparse, urllib.error, json, os, re, subprocess, sys, time
 from pathlib import Path
 import numpy as np
 
@@ -56,6 +56,36 @@ def kokoro_lines(texts, voice, speed, lang="en-us"):
     for t in texts:
         a, sr = k.create(t, voice=voice, speed=speed, lang=lang)
         out.append((a.astype(np.float32), sr))
+    return out
+
+
+def eleven_lines(texts, cfg):
+    """ElevenLabs TTS, one request per line (with neighbouring text for natural flow). Raises on any
+    API problem (no key, out of credits, voice locked) so the caller falls back to Kokoro."""
+    import urllib.request
+    key = os.environ.get("ELEVENLABS_API_KEY", "").strip()
+    if not key:
+        raise RuntimeError("ELEVENLABS_API_KEY not set")
+    sr = 24000
+    out = []
+    for i, t in enumerate(texts):
+        body = {"text": t, "model_id": cfg.get("eleven_model", "eleven_multilingual_v2"),
+                "voice_settings": {"stability": float(cfg.get("eleven_stability", 0.45)), "similarity_boost": 0.8,
+                                   "style": float(cfg.get("eleven_style", 0.25)), "use_speaker_boost": True,
+                                   "speed": float(cfg.get("eleven_speed", 1.0))}}
+        if i > 0:
+            body["previous_text"] = texts[i - 1]
+        if i + 1 < len(texts):
+            body["next_text"] = texts[i + 1]
+        req = urllib.request.Request(
+            f"https://api.elevenlabs.io/v1/text-to-speech/{cfg['eleven_voice']}?output_format=pcm_{sr}",
+            data=json.dumps(body).encode(), headers={"xi-api-key": key, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                pcm = r.read()
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"ElevenLabs HTTP {e.code}: {e.read()[:200].decode(errors='replace')}")
+        out.append((np.frombuffer(pcm, dtype="<i2").astype(np.float32) / 32768.0, sr))
     return out
 
 
@@ -141,7 +171,11 @@ def main():
     import soundfile as sf
     script = json.loads((ROOT / "data" / "script.json").read_text(encoding="utf-8"))
     if script.get("format") in ("ted1", "cdesign") and not script.get("voice"):
+        # Ted narrator: ElevenLabs "River" for Shorts (falls back to Kokoro Onyx when the key/credits run out);
+        # long-form (landscape) stays on Kokoro so it doesn't burn the monthly ElevenLabs characters
         script["voice"] = {"engine": "kokoro", "kokoro_voice": "am_onyx", "kokoro_lang": "en-us", "kokoro_speed": 1.08}
+        if script.get("orientation") != "landscape" and cfg.get("ted_eleven_voice"):
+            script["voice"].update({"engine": "elevenlabs", "eleven_voice": cfg["ted_eleven_voice"]})
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
     if script.get("voice", {}).get("engine"):
         engine = script["voice"]["engine"]
@@ -154,6 +188,13 @@ def main():
         except Exception as e:  # never lose a day's video to the voice step
             print(f"FALLBACK: omnivoice failed ({type(e).__name__}: {str(e)[:300]}) -> kokoro", file=sys.stderr)
             print(f"FALLBACK: {type(e).__name__}: {str(e)[:300]}")
+            engine = "kokoro"
+    if engine == "elevenlabs":
+        try:
+            rendered = eleven_lines(texts, cfg)
+        except Exception as e:
+            print(f"FALLBACK: elevenlabs failed ({str(e)[:300]}) -> kokoro", file=sys.stderr)
+            print(f"FALLBACK: {str(e)[:300]}")
             engine = "kokoro"
     if rendered is None:
         kv = cfg.get("kokoro_voice") or a.voice

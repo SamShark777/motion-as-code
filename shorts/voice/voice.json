@@ -9,5 +9,7 @@
  "polish": true,
  "kokoro_voice": "bf_emma",
  "kokoro_lang": "en-gb",
- "kokoro_speed": 1.0
+ "kokoro_speed": 1.0,
+ "ted_eleven_voice": "SAz9YHcvj6GT2YYXdXww",
+ "ted_eleven_voice_name": "River (ElevenLabs)"
 }
