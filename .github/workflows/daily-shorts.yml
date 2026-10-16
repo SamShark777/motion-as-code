@@ -270,6 +270,7 @@ jobs:
       - name: Build ${{ matrix.slug }}
         env:
           CHROME_PATH: /usr/bin/google-chrome
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: |
           mkdir -p out
           set -o pipefail
