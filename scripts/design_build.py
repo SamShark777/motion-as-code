@@ -65,6 +65,8 @@ def main():
         names.append(nm if seen[nm] == 1 else f"{nm} {seen[nm]}")
     om = [{"name": names[i], "dur": round(end[i] - start[i], 3), "desc": ln.get("text", "")[:80]} for i, ln in enumerate(S["lines"])]
     timing = {"start": start, "end": end, "chunks": chunks}
+    (ROOT / "out").mkdir(exist_ok=True)
+    (ROOT / "out" / "timing.json").write_text(json.dumps(timing))
     js = lambda o: json.dumps(json.dumps(o, ensure_ascii=False), ensure_ascii=False)
     html = f"""<!DOCTYPE html>
 <html>
@@ -96,7 +98,7 @@ def main():
         return
     raw = ROOT / "out" / f"{Path(a.slug).name}.raw.mp4"
     capture(a.slug, raw, 0, a.max, W, H)
-    run(sys.executable, str(ROOT / "analysis" / "ted_music.py"))
+    run(sys.executable, str(ROOT / "analysis" / "ted2_audio.py"), str(ROOT / "data" / "script.json"), str(ROOT / "out" / "timing.json"))
     mp4 = d / f"{Path(a.slug).name}.mp4"
     run("ffmpeg", "-v", "error", "-y", "-i", str(raw), "-i", str(ROOT / "out" / "mix.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "libx264",
         "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(mp4))

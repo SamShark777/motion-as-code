@@ -30,3 +30,4 @@ data/lottie/
 shorts/*/lottie/*.json
 !shorts/*/lottie/CREDITS.json
 shorts/*/index.html
+data/sfx/

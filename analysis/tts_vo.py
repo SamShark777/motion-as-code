@@ -44,14 +44,21 @@ def speech_span(x, sr):
 
 
 # ------------------------------------------------------------------ engines
-def kokoro_lines(texts, voice, speed, lang="en-us"):
+FP32_URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx"
+
+
+def kokoro_lines(texts, voice, speed, lang="en-us", model="int8"):
+    """model "fp32" = the full-precision Kokoro (what the One More Never Enough build used; warmer, cleaner)."""
     CACHE.mkdir(parents=True, exist_ok=True)
-    for name, url in MODELS.items():
+    files = dict(MODELS)
+    if model == "fp32":
+        files["kokoro-fp32.onnx"] = FP32_URL
+    for name, url in files.items():
         p = CACHE / name
         if not p.exists() or p.stat().st_size < 1_000_000:
             subprocess.run(["curl", "-sSL", "-o", str(p), url], check=True)
     from kokoro_onnx import Kokoro
-    k = Kokoro(str(CACHE / "kokoro.onnx"), str(CACHE / "voices.bin"))
+    k = Kokoro(str(CACHE / ("kokoro-fp32.onnx" if model == "fp32" else "kokoro.onnx")), str(CACHE / "voices.bin"))
     out = []
     for t in texts:
         a, sr = k.create(t, voice=voice, speed=speed, lang=lang)
@@ -197,6 +204,8 @@ def main():
     if script.get("format") in ("ted1", "cdesign") and script.get("orientation") != "landscape" and ted_engine:
         # overrides the scripts' own Kokoro setting, which stays as the fallback
         script["voice"] = {**script["voice"], "engine": ted_engine}
+        if cfg.get("ted_voice"):  # e.g. {"kokoro_voice": "af_heart", "kokoro_speed": 1.0, "kokoro_model": "fp32"}
+            script["voice"].update(cfg["ted_voice"])
         if ted_engine == "elevenlabs":
             script["voice"]["eleven_voice"] = cfg["ted_eleven_voice"]
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
@@ -229,7 +238,7 @@ def main():
     if rendered is None:
         kv = cfg.get("kokoro_voice") or a.voice
         rendered = kokoro_lines(texts, kv, float(cfg.get("kokoro_speed") or a.speed),
-                                cfg.get("kokoro_lang") or ("en-gb" if kv[:1] == "b" else "en-us"))
+                                cfg.get("kokoro_lang") or ("en-gb" if kv[:1] == "b" else "en-us"), cfg.get("kokoro_model", "int8"))
     print(f"ENGINE: {engine}")
 
     LEAD, TAIL = (0.15, 1.0) if script.get("format") in ("ted1", "cdesign") else (0.35, 1.9)
@@ -252,7 +261,7 @@ def main():
         nxt = lines[i + 1]["sec"] if i + 1 < len(lines) else None
         pause = 0.0 if nxt is None else (0.68 if nxt != ln["sec"] else 0.5)
         if ln["sec"] in ("ted", "cd") and nxt is not None:
-            pause = 0.24  # fast, continuous narration
+            pause = float(cfg.get("ted_pause", 0.24))  # continuous narration
         chunks += [audio, np.zeros(int(pause * sr), np.float32)]
         t += dur + pause
     full = np.concatenate([np.zeros(int(LEAD * sr0), np.float32)] + chunks + [np.zeros(int(TAIL * sr0), np.float32)])
