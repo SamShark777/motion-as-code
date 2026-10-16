@@ -196,12 +196,12 @@ def main():
     engine = a.engine or cfg.get("engine", "kokoro")
     import soundfile as sf
     script = json.loads((ROOT / "data" / "script.json").read_text(encoding="utf-8"))
-    if script.get("format") in ("ted1", "cdesign") and not script.get("voice"):
+    if script.get("format") in ("ted1", "cdesign", "story") and not script.get("voice"):
         # Ted narrator: ElevenLabs "River" for Shorts (falls back to Kokoro Onyx when the key/credits run out);
         # long-form (landscape) stays on Kokoro so it doesn't burn the monthly ElevenLabs characters
         script["voice"] = {"engine": "kokoro", "kokoro_voice": "am_onyx", "kokoro_lang": "en-us", "kokoro_speed": 1.08}
     ted_engine = cfg.get("ted_engine") or ("elevenlabs" if cfg.get("ted_eleven_voice") else None)
-    if script.get("format") in ("ted1", "cdesign") and script.get("orientation") != "landscape" and ted_engine:
+    if script.get("format") in ("ted1", "cdesign", "story") and script.get("orientation") != "landscape" and ted_engine:
         # overrides the scripts' own Kokoro setting, which stays as the fallback
         script["voice"] = {**script["voice"], "engine": ted_engine}
         if cfg.get("ted_voice"):  # e.g. {"kokoro_voice": "af_heart", "kokoro_speed": 1.0, "kokoro_model": "fp32"}
@@ -241,7 +241,7 @@ def main():
                                 cfg.get("kokoro_lang") or ("en-gb" if kv[:1] == "b" else "en-us"), cfg.get("kokoro_model", "int8"))
     print(f"ENGINE: {engine}")
 
-    LEAD, TAIL = (0.15, 1.0) if script.get("format") in ("ted1", "cdesign") else (0.35, 1.9)
+    LEAD, TAIL = (0.15, 1.0) if script.get("format") in ("ted1", "cdesign", "story") else (0.35, 1.9)
     sr0 = rendered[0][1]
     chunks, out_lines, t = [], [], 0.0
     for i, (ln, (audio, sr)) in enumerate(zip(lines, rendered)):
@@ -262,6 +262,8 @@ def main():
         pause = 0.0 if nxt is None else (0.68 if nxt != ln["sec"] else 0.5)
         if ln["sec"] in ("ted", "cd") and nxt is not None:
             pause = float(cfg.get("ted_pause", 0.24))  # continuous narration
+        if ln.get("pause_after") is not None and nxt is not None:
+            pause = float(ln["pause_after"])  # story scripts: a deliberate beat after this line
         chunks += [audio, np.zeros(int(pause * sr), np.float32)]
         t += dur + pause
     full = np.concatenate([np.zeros(int(LEAD * sr0), np.float32)] + chunks + [np.zeros(int(TAIL * sr0), np.float32)])

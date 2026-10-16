@@ -1,5 +1,5 @@
 // Deterministic capture of a Claude Design (OM CompositionStage) page: seek every frame, screenshot, pipe to ffmpeg.
-// node scripts/cap_design.mjs <serveDir> <page.html> <out.mp4> [fps] [maxSeconds]   (LOCAL_NM=<node_modules> serves React/Babel/fonts offline)
+// node scripts/cap_design.mjs <serveDir> <page.html> <out.mp4> [fps] [maxSeconds]   (LOCAL_NM=<node_modules> serves React/Babel and Google Fonts from @fontsource/* offline)
 
 
 import { chromium } from '../app/node_modules/playwright-core/index.mjs';
@@ -30,11 +30,18 @@ if (offline) {
     const u = route.request().url();
     if (local[u]) return route.fulfill({ path: local[u], contentType: 'application/javascript' });
     if (u.startsWith('https://fonts.googleapis.com/css')) {
-      const css = [700, 800, 900].map((w) => `@font-face{font-family:'Montserrat';font-weight:${w};font-style:normal;src:url(/__font/${w}.woff2) format('woff2');}`).join('\n');
-      return route.fulfill({ body: css, contentType: 'text/css' });
+      // Google Fonts CSS -> @font-face rules pointing at the matching @fontsource package (npm i @fontsource/<family>)
+      const css = [];
+      for (const [, fam, spec] of new URL(u).search.matchAll(/family=([^:&]+)(?::[a-z,]*@([\d;.,]+))?/g)) {
+        const name = decodeURIComponent(fam.replace(/\+/g, ' ')), pkg = name.toLowerCase().replace(/ /g, '-');
+        for (const w of (spec || '400').split(/[;,]/).filter((x) => /^\d+$/.test(x))) {
+          const f = `${NM}/@fontsource/${pkg}/files/${pkg}-latin-${w}-normal.woff2`;
+          if (fs.existsSync(f))  // inlined: separately routed font files can stay pending and stall document.fonts.ready
+            css.push(`@font-face{font-family:'${name}';font-weight:${w};font-style:normal;src:url(data:font/woff2;base64,${fs.readFileSync(f).toString('base64')}) format('woff2');}`);
+        }
+      }
+      return route.fulfill({ body: css.join('\n'), contentType: 'text/css' });
     }
-    const m = /\/__font\/(\d+)\.woff2/.exec(u);
-    if (m) return route.fulfill({ path: `${NM}/@fontsource/montserrat/files/montserrat-latin-${m[1]}-normal.woff2`, contentType: 'font/woff2' });
     if (u.startsWith('http://localhost:8799')) return route.continue();
     return route.abort();
   });
@@ -44,7 +51,9 @@ page.on('pageerror', (e) => console.error('PAGEERR', e.message));
 await page.goto(`http://localhost:8799/${encodeURI(file)}`);
 const sel = '[data-om-exportable-video-with-duration-secs]';
 await page.waitForSelector(sel, { timeout: 60000 });
-await page.evaluate(() => document.fonts.ready);
+// document.fonts.ready can stay pending forever when the page re-injects its stylesheet; don't hang on it
+const fontsOk = await page.evaluate(() => Promise.race([document.fonts.ready.then(() => true), new Promise((r) => setTimeout(() => r(false), 15000))]));
+if (!fontsOk) console.error('WARN fonts not all ready after 15 s:', await page.evaluate(() => [...document.fonts].filter((f) => f.status !== 'loaded').map((f) => `${f.family} ${f.weight} ${f.status}`).join(', ')));
 await page.waitForTimeout(800);
 const total = +(await page.getAttribute(sel, 'data-om-exportable-video-with-duration-secs'));
 const dur = Math.min(+(maxArg || 1e9), total) - FROM;

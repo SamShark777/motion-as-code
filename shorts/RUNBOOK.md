@@ -162,6 +162,53 @@ chunk to the words, writes `shorts/<slug>/index.html` (Claude Design runtime in 
 3. Check before pushing: `npm i --prefix /tmp/babel @babel/standalone` once, then
    `cd scripts && BABEL=/tmp/babel/node_modules/@babel/standalone node check_art.mjs <slug>` must print ok.
 
+## Story Shorts — fully art-directed from the tracker (format `story`) — built now, posted from 2026-11-01
+
+Shivam (2026-10-16): rows can describe the whole video in the tracker. A row with **`Format=story`** is made as a
+story Short: the One More Never Enough layout made vertical (animated headline on top, a rounded 980×980
+illustration stage, the narration line as a caption below), drawn and animated per video from the row's STORY
+columns, with the One More audio (Kokoro `af_heart`, the sound effects of `analysis/sfx_lib.py`, the F-major pad bed).
+Rows without `Format` (or `ted2`) are Ted type 2 as before.
+
+**Freeze:** story Shorts don't count toward the freeze and don't change the Ted type 2 rules. Until **2026-11-01**
+(`STORY_FROM` in `scripts/ci_shorts.py`) the daily plan **holds** Scripted story rows (log line "hold No.…"), so they
+are never posted before then. Build one for review any time with the Daily Shorts workflow input `only_slugs=<slug>`
+(a dry run; the issue shows the preview). From 2026-11-01 they post in Priority order with everything else.
+
+**The tracker columns** (sheet "Shorts ideas", group STORY; `scripts/add_story_columns.py` added them):
+`Format` (ted2 | story), `Animation style`, `Storyboard`, `Palette & type`, `Characters`, `Sound cues`, plus the usual
+`Theme`, `Video idea`, `Opening hook`, `Content outline`, `Visual / filming idea`. Whatever Shivam wrote there is the
+brief: follow it closely; fill gaps yourself. Empty Storyboard → plan 5–7 scenes from the hook and outline.
+
+**Script writer run:** write story rows as well as Ted type 2 rows (same accuracy rules: verify with a web search,
+name the researchers and year, record `Source checked`). Story rows **don't count toward the Scripted target**
+(3 × SHORTS_PER_DAY) before 2026-11-01. Per story row write three things, then `tracker.py set <No> "Status=Scripted" "Slug=<slug>" …`:
+
+1. `shorts/<slug>/script.json`:
+   `format: "story"`, `look: "story"`, `slug`, `no`, `title`, `credit`, `handle: "@aroundthestrangeai"`, `post`
+   (as Ted type 2), `"auto_sfx": false` when every line carries its own sound cues, and
+   - `style`: `stage` (`square` 980×980, or `tall` 980×1180), `bg`, `head` / `body` (any Google Font family),
+     `headSize` (≈ 90–110), optional `stageBg`, `stageRadius`, `captions: false`, and `palette` with keys
+     ink, accent, accentDark, hot, cool, deep, pop, soft, paper, skin, skinShade, hair (hex) — from Palette & type.
+   - `lines`: one narration line each, `{"art": "SceneHook", "text": "…", "headline"?: "…", "sfx"?: [[sound, offset_s, volume]],
+     "pause_after"?: seconds, "say"?: "phonetic text", "caption"?: "shorter on-screen text", "cut"?: true}`.
+     Consecutive lines with the same `art` are one scene (5–7 scenes). `headline` sets the big text above the stage
+     until the next one: `*words*` in the accent colour, `==words==` with the highlighter. Sounds: swipe, whoosh,
+     pop, tick, chime, chime-bright, rising, notification, flip, flip-dull, lightning, airy, card-slide, settle,
+     toggle, drawer, page-turn, wood-tap (volumes 0.2–0.4; offsets in seconds from the line's start, may be
+     negative). Without `sfx`, a whoosh/swipe plays where the scene changes (unless `auto_sfx: false`).
+   - 80–130 spoken words (about 35–55 s; QA fails anything over 59.5 s). Hook line first, a real outro last.
+2. `shorts/<slug>/scenes.jsx`: one component per `art`, drawing the 980×W stage in SVG as a **pure function of
+   time** (no state, effects, timers, Math.random — use `SK.hsh`). Props: `t` (s since the scene started), `T`,
+   `dur`, `beats` (each line's start within the scene — key the action to these so it lands on the words), `ends`,
+   `W`, `H`, `P` (palette). Use the kit in `shorts/design_kit/story-kit.jsx`: timing helpers on `SK`
+   (K, L, E, win, kf, camT, lerpCam, ellPts, burst, sc, md, hsh) and the One More drawing kit (StoryBust, StoryArm,
+   StoryHand, StoryMini, StoryPhone, StoryCard, StoryToggle, StoryBell, StoryTag, StoryBox), or draw your own
+   to match the row's Animation style. Every scene should keep moving (camera push, bobbing, pops on beats).
+   End with `Object.assign(window, { SceneA, … })`. Reference: `shorts/stroop-ink/` (row 21).
+3. Check: `cd scripts && BABEL=/tmp/babel/node_modules/@babel/standalone node check_art.mjs <slug>` must print ok.
+   If you can, build it (`python3 scripts/design_build.py <slug>`) and look at `shorts/<slug>/preview.jpg`.
+
 ## Long-form (Ted type 1, 16:9, YouTube, twice a week)
 
 Shivam asked for long-form Ted type 1 videos twice a week alongside the Shorts.

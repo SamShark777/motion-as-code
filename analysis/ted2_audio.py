@@ -20,6 +20,20 @@ FX_SOUND = {"pop": ("pop", 0.38), "circle": ("chime", 0.24), "underline": ("tick
 MUSIC_VOLUME, MUSIC_DUCKED, DUCK_RAMP = 0.5, 0.39, 0.25
 
 
+def story_cues(S, TM):
+    """Story Shorts: a soft transition sound where the scene (art) changes, plus each line's own
+    "sfx": [[sound, offset_s from the line start, volume], ...] (from the tracker's Sound cues). "auto_sfx": false
+    on the script turns the transition sounds off."""
+    cues, prev = [], None
+    for i, ln in enumerate(S["lines"]):
+        st = TM["start"][i]
+        if S.get("auto_sfx", True) and ln.get("art") != prev and not ln.get("sfx"):
+            cues.append((max(0.0, st - 0.05), "whoosh" if i == 0 or len(cues) % 2 else "swipe", 0.3))
+        prev = ln.get("art")
+        cues += [(max(0.0, st + float(o)), snd, float(vol)) for snd, o, vol in ln.get("sfx") or []]
+    return cues
+
+
 def main():
     S = json.loads(Path(sys.argv[1]).read_text())
     TM = json.loads(Path(sys.argv[2]).read_text())
@@ -33,6 +47,9 @@ def main():
     # cues: scene transitions alternate swipe/whoosh, one accent on each scene's emphasis, a bright chime to close
     cues = []
     lines = S["lines"]
+    if S.get("format") == "story":
+        cues = story_cues(S, TM)
+        lines = []  # story cues replace the Ted type 2 automatic ones
     for i, ln in enumerate(lines):
         st = TM["start"][i]
         if ln.get("sfx"):

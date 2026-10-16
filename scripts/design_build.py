@@ -31,8 +31,13 @@ def main():
     if a.stage == "capture":
         return capture(a.slug, Path(a.out), a.frm, a.to, W, H)
     S = json.loads((d / "script.json").read_text())
+    story = S.get("format") == "story"
+    if story:  # one caption per narration line; the line's text is what the voice reads
+        for ln in S["lines"]:
+            ln["chunks"] = [[ln["text"]]]
+            ln["sec"] = "cd"
     # the voice reads normal case; captions keep the CAPS emphasis words
-    for ln in S["lines"]:
+    for ln in S["lines"] if not story else []:
         ln["text"] = " ".join(c[0] for c in ln["chunks"])
         if not ln.get("say"):
             ln["say"] = re.sub(r"\b([A-Z]{2,})\b", lambda m: m.group(1).capitalize() if m.group(1) not in ("I",) else m.group(1), ln["text"])
@@ -60,7 +65,7 @@ def main():
         chunks.append(ats)
     names, seen = [], {}
     for ln in S["lines"]:
-        nm = ln.get("scene") or "Scene"
+        nm = ln.get("scene") or ln.get("art") or "Scene"
         seen[nm] = seen.get(nm, 0) + 1
         names.append(nm if seen[nm] == 1 else f"{nm} {seen[nm]}")
     om = [{"name": names[i], "dur": round(end[i] - start[i], 3), "desc": ln.get("text", "")[:80]} for i, ln in enumerate(S["lines"])]
@@ -68,6 +73,18 @@ def main():
     (ROOT / "out").mkdir(exist_ok=True)
     (ROOT / "out" / "timing.json").write_text(json.dumps(timing))
     js = lambda o: json.dumps(json.dumps(o, ensure_ascii=False), ensure_ascii=False)
+    if story:
+        st = S.get("style") or {}
+        fams = []
+        for fam, wts in ((st.get("head", "Barlow Condensed"), "600;700;800"), (st.get("body", "Barlow"), "400;500;600;700")):
+            q = f"family={fam.replace(' ', '+')}:wght@{wts}"
+            if q not in fams:
+                fams.append(q)
+        fonts = "https://fonts.googleapis.com/css2?" + "&".join(fams) + "&display=swap"
+        files, app = f"{kit}/animations-v3.jsx {kit}/story-kit.jsx ./scenes.jsx {kit}/story-engine.jsx", "StoryShortApp"
+    else:
+        fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
+        files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/engine.jsx", "DesignShortApp"
     html = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -79,14 +96,14 @@ def main():
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="{fonts}" rel="stylesheet">
 <style>html,body{{margin:0;background:#000;height:100%;overflow:hidden}}</style>
 <script>window.OM_SCENES = {js(om)};</script>
 <script>window.OM_PLAYBACK = '{{"mode":"loop"}}';</script>
 <script>window.SCRIPT = JSON.parse({js(S)}); window.TIMING = JSON.parse({js(timing)});</script>
 </helmet>
 <div style="position:fixed;inset:0;background:#000">
-<x-import component-from-global-scope="DesignShortApp" from="{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/engine.jsx" hint-size="100%,100%"></x-import>
+<x-import component-from-global-scope="{app}" from="{files}" hint-size="100%,100%"></x-import>
 </div>
 </x-dc>
 </body>

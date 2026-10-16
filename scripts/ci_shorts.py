@@ -17,6 +17,9 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "SamShark777/motion-as-code")
 N = int(os.environ.get("SHORTS_PER_DAY") or 3)
 SLOTS = [s.strip() for s in (os.environ.get("SLOTS") or "09:00,14:00,19:00").split(",") if s.strip()]
 KEEP_DAYS = 4  # media branch keeps this many post dates (Buffer needs the URL until the post goes out)
+# Story Shorts (format "story") are built only by manual test runs (only_slugs) until this post date:
+# Shivam's format freeze runs to 2026-10-31. Override with a STORY_FROM env var (e.g. in the workflow).
+STORY_FROM = os.environ.get("STORY_FROM") or "2026-11-01"
 
 
 def sh(*a, **k):
@@ -54,6 +57,9 @@ def plan():
         slug = r.get("Slug")
         if not slug or not (ROOT / "shorts" / slug / "script.json").exists():
             print(f"skip No.{r['No.']}: Scripted but no shorts/<slug>/script.json", file=sys.stderr)
+            continue
+        if not override and day.isoformat() < STORY_FROM and json.loads((ROOT / "shorts" / slug / "script.json").read_text()).get("format") == "story":
+            print(f"hold No.{r['No.']}: story Short, not posted before {STORY_FROM}", file=sys.stderr)
             continue
         if len(batch) >= n:
             break
