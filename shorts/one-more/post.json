@@ -1,0 +1,17 @@
+{
+ "no": 102,
+ "slug": "one-more",
+ "date": "2026-10-16",
+ "slot": "21:15",
+ "due": "2026-10-17T04:15:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-16/one-more.mp4",
+ "buffer": {
+  "youtube": "6ad1a654a82f34dbe1464882",
+  "tiktok": "6ad1a654fb64fffcf1b41af2"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 58.0
+}
