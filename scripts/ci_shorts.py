@@ -14,8 +14,8 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent.parent
 TZ = ZoneInfo("America/Los_Angeles")
 REPO = os.environ.get("GITHUB_REPOSITORY", "SamShark777/motion-as-code")
-N = int(os.environ.get("SHORTS_PER_DAY") or 5)
-SLOTS = [s.strip() for s in (os.environ.get("SLOTS") or "08:00,11:00,14:00,17:00,20:00").split(",") if s.strip()]
+N = int(os.environ.get("SHORTS_PER_DAY") or 3)
+SLOTS = [s.strip() for s in (os.environ.get("SLOTS") or "09:00,14:00,19:00").split(",") if s.strip()]
 KEEP_DAYS = 4  # media branch keeps this many post dates (Buffer needs the URL until the post goes out)
 
 

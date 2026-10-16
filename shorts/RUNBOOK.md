@@ -6,9 +6,24 @@
 > `look: "ted2"`, tracker `Visual style=ted2`), whatever the idea's old Visual style says. Their remaining
 > scheduled Buffer posts were cancelled (rows set to `Vetoed`). The 10-video experiment below is over.
 > To cancel scheduled posts: run the Daily Shorts workflow with input `buffer_cancel=<slug>,<slug>`
-> (`scripts/buffer.py cancel`), then set those rows to `Vetoed`.
+> (`scripts/buffer.py cancel`), then set those rows to `Vetoed` — **only when Shivam asks for it in chat.**
 
-Up to **5 psychology Shorts a day** (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
+> **2026-10-15 evening — Shivam's plan (standing rules until he changes them):**
+> 1. **Format freeze until 2026-10-30:** every Short is Ted type 2, narrated by the **Chatterbox built-in voice,
+>    calm** (`voice.json` `ted_engine`, Kokoro Onyx fallback). Change only topics, hooks and titles — no new
+>    formats, looks, voices, music or pacing changes, so the numbers stay comparable.
+> 2. **3 Shorts a day** at 09:00, 14:00, 19:00 PT (`SHORTS_PER_DAY=3`). Quality over volume: YouTube limits
+>    monetization of mass-produced, repetitive content, so every script needs a specific, surprising hook and
+>    a distinct idea — no near-duplicates of recent videos.
+> 3. **Measure:** the weekly review pulls views, average view duration / retention and swipe-away data per Short
+>    and judges hooks on that.
+> 4. **Nova dialogue series** (Ash + robot Nova) is planned as a 3-a-week signature series once Shivam's
+>    Claude Design export of the style is plugged in; until then don't write Nova scripts.
+> 5. **Long-form is paused** (workflow schedule off) until Shorts show traction; don't write long-form scripts.
+> 6. **Background runs never cancel, delete or reschedule posts**, and never change formats, voices or the
+>    posting plan. They write scripts, build, and report. Anything else goes to Shivam in chat.
+
+**3 psychology Shorts a day** (was up to 5) (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
 (vertical template + Shivam's pixel avatar, narrated by a British TTS voice — Kokoro `bf_emma`, set in `shorts/voice/voice.json`; Shivam rejected his cloned voice as mechanical, don't switch back without asking), posted to YouTube Shorts,
 Instagram Reels and TikTok through **Buffer (free plan)**, scheduled **the day before** so Shivam can veto.
 
@@ -19,7 +34,7 @@ Who does what:
   the next `Scripted` rows (lowest Priority first), builds them in parallel (OmniVoice voice, render, SFX),
   runs QA checks (1080×1920, 12–59.5 s, audible audio, not frozen), hosts them on the `media` branch
   (`media/<date>/<slug>.mp4`, last 4 dates kept), schedules each on Buffer for tomorrow at the slots in
-  `SLOTS` (default 08:00, 11:00, 14:00, 17:00, 20:00 PT), sets the tracker (`Scheduled`, `Post date`,
+  `SLOTS` (default 09:00, 14:00, 19:00 PT), sets the tracker (`Scheduled`, `Post date`,
   `Metricool ID=buffer:youtube=…;instagram=…;tiktok=…`), and opens a GitHub issue with previews. It marks
   earlier Buffer posts `Published`, or `Vetoed` when Shivam deleted them in Buffer. A failed build or QA
   check marks the row `Failed` with the reason. Without the `BUFFER_API_KEY` secret it only dry-runs.
