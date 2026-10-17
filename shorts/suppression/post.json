@@ -1,0 +1,17 @@
+{
+ "no": 47,
+ "slug": "suppression",
+ "date": "2026-10-18",
+ "slot": "09:00",
+ "due": "2026-10-18T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-18/suppression.mp4",
+ "buffer": {
+  "youtube": "6ad3c111e272c4918f997f66",
+  "tiktok": "6ad3c1120b0d72757aedb6ef"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 38.3
+}

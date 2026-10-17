@@ -1,0 +1,17 @@
+{
+ "no": 63,
+ "slug": "normative-influence",
+ "date": "2026-10-18",
+ "slot": "14:00",
+ "due": "2026-10-18T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-18/normative-influence.mp4",
+ "buffer": {
+  "youtube": "6ad3c114ae173d6e00cc5d2c",
+  "tiktok": "6ad3c114938409f1d09b2e54"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 35.9
+}

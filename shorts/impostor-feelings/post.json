@@ -1,0 +1,17 @@
+{
+ "no": 73,
+ "slug": "impostor-feelings",
+ "date": "2026-10-18",
+ "slot": "19:00",
+ "due": "2026-10-19T02:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-18/impostor-feelings.mp4",
+ "buffer": {
+  "youtube": "6ad3c116938409f1d09b2eb1",
+  "tiktok": "6ad3c117ae173d6e00cc5da0"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 44.1
+}
