@@ -1,0 +1,50 @@
+{
+ "slug": "halo-warm",
+ "no": 6,
+ "format": "story",
+ "look": "story",
+ "title": ["Halo", "Effect"],
+ "credit": "Nisbett & Wilson · 1977",
+ "handle": "@aroundthestrangeai",
+ "style": {
+  "stage": "square",
+  "bg": "#2D1B69",
+  "ink": "#FFF4E6",
+  "accent": "#FFD66B",
+  "highlight": "#C2477A",
+  "stageBg": "#3A2580",
+  "head": "Playfair Display",
+  "headCase": "none",
+  "body": "Barlow",
+  "headSize": 96,
+  "palette": {"ink": "#1A1033", "accent": "#FFB38A", "accentDark": "#D9825C", "hot": "#FFD66B", "cool": "#FFF4E6",
+              "deep": "#2D1B69", "pop": "#FFD66B", "soft": "#6B4FB8", "paper": "#FFF4E6", "skin": "#FFD9C2",
+              "skinShade": "#E8A98A", "hair": "#3B1F4F"}
+ },
+ "lines": [
+  {"art": "SceneHook", "text": "Can one good trait change how you see everything else about a person?",
+   "headline": "One trait. *Everything else.*", "sfx": [["whoosh", -0.05, 0.3], ["chime", 1.2, 0.3]]},
+  {"art": "SceneTwins", "text": "In 1977, Richard Nisbett and Timothy Wilson showed students a filmed interview with one college teacher.",
+   "headline": "*One* teacher, *two* versions.", "sfx": [["page-turn", 0.0, 0.3], ["card-slide", 1.4, 0.22]]},
+  {"art": "SceneTwins", "text": "Half saw him warm and friendly. Half saw him cold and strict.",
+   "sfx": [["chime", 0.3, 0.24], ["flip", 1.7, 0.34]]},
+  {"art": "SceneRate", "text": "Then they rated his looks, his mannerisms and his accent.",
+   "headline": "Now rate his ==looks.==", "sfx": [["swipe", -0.05, 0.3], ["pop", 1.2, 0.3], ["pop", 1.9, 0.3], ["pop", 2.8, 0.3]]},
+  {"art": "SceneRate", "text": "Warm version? Most found his looks appealing. Cold version? Most found the exact same features irritating.",
+   "sfx": [["rising", 0.2, 0.22], ["flip-dull", 3.0, 0.32]]},
+  {"art": "SceneBlind", "text": "And most insisted that liking him had nothing to do with it.",
+   "headline": "They *didn't notice.*", "sfx": [["whoosh", -0.05, 0.3], ["tick", 1.6, 0.3]]},
+  {"art": "SceneWhy", "text": "That's the halo effect. One strong impression glows over everything else.",
+   "headline": "The ==halo effect.==", "sfx": [["chime-bright", 0.4, 0.26], ["airy", 1.8, 0.2]]},
+  {"art": "SceneTakeaway", "text": "So when someone dazzles you, or rubs you the wrong way, judge each trait on its own.",
+   "headline": "One trait *at a time.*", "sfx": [["swipe", -0.05, 0.3], ["settle", 2.6, 0.3]]},
+  {"art": "SceneTakeaway", "text": "Save this for your next interview, on either side of the desk.",
+   "sfx": [["wood-tap", 0.3, 0.32], ["wood-tap", 0.8, 0.3], ["wood-tap", 1.3, 0.3]]}
+ ],
+ "auto_sfx": false,
+ "post": {
+  "title": "Same Teacher, Two Personalities: Students Rated His Looks Differently #shorts",
+  "description": "The halo effect: in 1977 Richard Nisbett and Timothy Wilson showed 118 students a filmed interview with the same college teacher acting either warm or cold. Students who saw him warm mostly rated his appearance and mannerisms appealing; those who saw him cold mostly rated the very same features (and his accent) irritating, and they denied that liking him affected those ratings. Nisbett, R. E., & Wilson, T. D. (1977). The halo effect: Evidence for unconscious alteration of judgments. Journal of Personality and Social Psychology, 35(4), 250-256. #psychology #shorts #haloeffect #firstimpressions",
+  "tags": ["halo effect", "psychology", "first impressions", "cognitive bias", "judgment"]
+ }
+}

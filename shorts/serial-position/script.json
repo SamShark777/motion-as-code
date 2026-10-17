@@ -1,0 +1,44 @@
+{
+ "slug": "serial-position",
+ "no": 18,
+ "format": "story",
+ "look": "story",
+ "title": ["Serial", "Position"],
+ "credit": "Murdock · 1962",
+ "handle": "@aroundthestrangeai",
+ "style": {"stage": "square", "bg": "#4B2AA5", "ink": "#FFFFFF", "accent": "#FFD23F", "highlight": "#FF4FA3", "stageBg": "#3A1F86", "head": "Baloo 2", "body": "Nunito", "headSize": 100, "palette": {"ink": "#1B0F3B", "accent": "#FF4FA3", "accentDark": "#C42E7D", "hot": "#FFD23F", "cool": "#FFFFFF", "deep": "#4B2AA5", "pop": "#FFD23F", "soft": "#7E62D6", "paper": "#FFFFFF", "skin": "#FFD9C7", "skinShade": "#F2A98F", "hair": "#2A174F"}},
+ "lines": [
+  {"art": "SceneHook", "text": "Quick memory test. Twelve words. Ready?", "headline": "Remember ==these.==", "sfx": [["whoosh", -0.05, 0.3], ["pop", 1.1, 0.32], ["chime", 2.0, 0.22]], "pause_after": 0.3},
+  {"art": "SceneList", "text": "Apple.", "headline": "*12* words", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "River.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Candle.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Tiger.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Jacket.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Mirror.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Pencil.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Garden.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Rocket.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Button.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Pillow.", "sfx": [["flip", 0.0, 0.26]]},
+  {"art": "SceneList", "text": "Window.", "sfx": [["flip", 0.0, 0.26]], "pause_after": 0.5},
+  {"art": "SceneRecall", "text": "Which ones stuck? For most people, the first few and the last few.", "headline": "Which ones *stuck?*", "sfx": [["swipe", -0.05, 0.3], ["chime-bright", 2.2, 0.22], ["chime-bright", 3.4, 0.22]]},
+  {"art": "SceneStudy", "text": "In 1962, Bennet Murdock had people study lists of words, then recall as many as they could, in any order.", "headline": "*Murdock,* 1962", "sfx": [["page-turn", 0.0, 0.3], ["card-slide", 1.2, 0.22], ["tick", 3.6, 0.26], ["tick", 4.0, 0.26]]},
+  {"art": "SceneCurve", "text": "Plot what they remembered, and you get a U.", "headline": "The ==U-curve.==", "sfx": [["swipe", -0.05, 0.3], ["rising", 0.4, 0.22]]},
+  {"art": "SceneCurve", "text": "The first words win. That's primacy. The last words win too. That's recency. The middle sinks.", "sfx": [["pop", 0.6, 0.3], ["pop", 2.6, 0.3], ["flip-dull", 4.6, 0.3]]},
+  {"art": "SceneWhy", "text": "Early words get rehearsed the most. The last ones are still echoing in your head.", "headline": "Why the *middle* sinks", "sfx": [["whoosh", -0.05, 0.3], ["airy", 2.4, 0.22]]},
+  {"art": "SceneTakeaway", "text": "So in a pitch, a talk or a text, put your key point first, or last.", "headline": "First or ==last.==", "sfx": [["swipe", -0.05, 0.3], ["card-slide", 2.2, 0.26], ["chime-bright", 3.4, 0.26]]},
+  {"art": "SceneTakeaway", "text": "Never bury it in the middle. Try the list on a friend.", "sfx": [["lightning", 0.6, 0.22], ["wood-tap", 1.9, 0.32], ["wood-tap", 2.4, 0.3], ["wood-tap", 2.9, 0.3]]}
+ ],
+ "auto_sfx": false,
+ "post": {
+   "title": "Try This 12-Word Memory Test (Your Brain Skips the Middle) #shorts",
+   "description": "The serial-position effect: in 1962 Bennet Murdock had people study lists of words and recall them in any order. Recall made a U-shaped curve: the first words (primacy) and the last words (recency) were remembered best, the middle worst. Early words get more rehearsal; the last ones are still in short-term memory. Put your key point first or last. Murdock, B. B., Jr. (1962). The serial position effect of free recall. Journal of Experimental Psychology, 64(5), 482-488. #psychology #shorts #memory #serialposition",
+   "tags": [
+     "serial position effect",
+     "psychology",
+     "memory",
+     "primacy effect",
+     "recency effect"
+   ]
+ }
+}
