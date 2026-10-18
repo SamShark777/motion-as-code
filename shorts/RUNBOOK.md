@@ -27,6 +27,12 @@
 > 6. **Background runs never cancel, delete or reschedule posts**, and never change formats, voices or the
 >    posting plan. They write scripts, build, and report. Anything else goes to Shivam in chat.
 
+> **Thumbnails (2026-10-18, Shivam):** every vertical Ted type 2 / story Short ends with a **title cover**
+> (`shorts/design_kit/cover.jsx`, last 0.55 s, during the silent tail). Instagram and TikTok get it as the
+> thumbnail (`thumbnailOffset`, set by ci_shorts). Write `"thumb_text"` (3–6 punchy words that say what the
+> title promises, e.g. "Why Likes Hook You") and `"thumb_emph"` (the 1–2 words to highlight) in every
+> script.json. YouTube picks Shorts thumbnails itself; Buffer can't set them.
+
 **3 psychology Shorts a day** (was up to 5) (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
 (vertical template + Shivam's pixel avatar, narrated by a British TTS voice — Kokoro `bf_emma`, set in `shorts/voice/voice.json`; Shivam rejected his cloned voice as mechanical, don't switch back without asking), posted to YouTube Shorts,
 Instagram Reels and TikTok through **Buffer (free plan)**, scheduled **the day before** so Shivam can veto.
