@@ -287,7 +287,12 @@ def main():
         except Exception as e:
             posts, failed = [], {"all": str(e)}
         sent = [p for p in posts if str(p.get("status", "")).lower() in ("sent", "published")]
-        print(json.dumps({"metric_fields": want, "failed": failed, "sent": sent}))
+        if "--json" in sys.argv:
+            print(json.dumps({"metric_fields": want, "failed": failed, "sent": sent})); return
+        print("STATS_FAILED " + json.dumps(failed))
+        for p in sent:  # one short line per post (GitHub annotations are capped at ~4k chars)
+            ms = ",".join(f"{x['type']}={x['value']}" for x in (p.get("metrics") or []))
+            print(f"STAT {p['id']}|{p.get('service')}|{str(p.get('sentAt'))[:16]}|{ms}")
     elif cmd == "cancel":
         print(json.dumps(cancel([x.strip() for x in sys.argv[2].split(",") if x.strip()])))
     else:
