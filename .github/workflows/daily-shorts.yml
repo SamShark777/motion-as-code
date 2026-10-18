@@ -98,7 +98,7 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: |
           set +e
-          { python3 scripts/buffer.py channels | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d))"; python3 scripts/buffer.py posts | python3 -c "import json,sys; P=json.load(sys.stdin); L=[p['id']+'|'+p['status']+'|'+str(p.get('dueAt'))[:16]+'|'+str(p.get('externalLink') or '') for p in P]; [print(' '.join(L[i:i+30])) for i in range(0,len(L),30)]"; } > out.txt 2>&1
+          { python3 scripts/buffer.py channels | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d))"; python3 scripts/buffer.py posts | python3 -c "import json,sys; P=json.load(sys.stdin); L=[p['id']+'|'+p['status']+'|'+str(p.get('dueAt'))[:16]+'|'+str(p.get('externalLink') or '') for p in P]; [print(' '.join(L[i:i+30])) for i in range(0,len(L),30)]"; python3 scripts/buffer.py stats; } > out.txt 2>&1
           code=$?
           # annotations are readable through the API (the raw log isn't, from Claude's side)
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
