@@ -13,5 +13,9 @@
   "instagram": "Account is not allowed to perform this action"
  },
  "engine": "kokoro",
- "duration": 30.6
+ "duration": 30.6,
+ "links": {
+  "youtube": "https://www.youtube.com/shorts/BavVTWRpZeY",
+  "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7697419943997951245?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ }
 }
