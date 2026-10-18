@@ -265,7 +265,9 @@ def publish(dist):
         if dry:
             lines.append(head + "🧪 **Dry run — not scheduled** (no Buffer key yet)\n\n" + info)
             continue
-        res = buffer("post", b["slug"], b["due"], vurl)
+        cover = S.get("format") in ("cdesign", "story") and S.get("orientation") != "landscape" and S.get("cover") is not False
+        thumb_ms = int(max(0.0, float(meta["duration"]) - 0.25) * 1000) if cover else 1500  # title cover sits in the last 0.55 s
+        res = buffer("post", b["slug"], b["due"], vurl, str(thumb_ms))
         ok = {s: i for s, i in res.items() if s != "errors"}
         errs = res.get("errors", {})
         if not ok:

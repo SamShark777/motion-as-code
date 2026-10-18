@@ -81,10 +81,10 @@ def main():
             if q not in fams:
                 fams.append(q)
         fonts = "https://fonts.googleapis.com/css2?" + "&".join(fams) + "&display=swap"
-        files, app = f"{kit}/animations-v3.jsx {kit}/story-kit.jsx ./scenes.jsx {kit}/story-engine.jsx", "StoryShortApp"
+        files, app = f"{kit}/animations-v3.jsx {kit}/story-kit.jsx ./scenes.jsx {kit}/cover.jsx {kit}/story-engine.jsx", "StoryShortApp"
     else:
         fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
-        files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/engine.jsx", "DesignShortApp"
+        files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/cover.jsx {kit}/engine.jsx", "DesignShortApp"
     html = f"""<!DOCTYPE html>
 <html>
 <head>

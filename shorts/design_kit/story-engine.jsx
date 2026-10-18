@@ -102,6 +102,7 @@
         {S.handle && (
           <div style={{ position: 'absolute', top: 54, left: 0, right: 0, textAlign: 'center', font: `600 30px '${st.body}', sans-serif`, color: st.ink, opacity: 0.55 }}>{S.handle}</div>
         )}
+        {window.TitleCover && <window.TitleCover T={T} />}
       </div>
     );
   }

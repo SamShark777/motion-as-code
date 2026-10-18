@@ -116,6 +116,7 @@ function Piece() {
           <Card r={r} T={T} />
         </Shot>
       ))}
+      {window.TitleCover && <window.TitleCover T={T} />}
     </div>
   );
 }

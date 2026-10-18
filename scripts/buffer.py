@@ -94,7 +94,7 @@ def text_for(post):
     return d if "#" in d else (d + "\n\n#psychology #shorts").strip()
 
 
-def create(channel_id, service, post, url, due):
+def create(channel_id, service, post, url, due, thumb_ms=1500):
     meta = None
     asset = {"video": {"url": url}}
     if service == "youtube":
@@ -102,9 +102,9 @@ def create(channel_id, service, post, url, due):
         meta = {"youtube": {"title": title, "categoryId": "27", "privacy": "public", "madeForKids": False}}
     elif service == "instagram":
         meta = {"instagram": {"type": "reel", "shouldShareToFeed": True}}
-        asset["video"]["metadata"] = {"thumbnailOffset": 1500}
+        asset["video"]["metadata"] = {"thumbnailOffset": int(thumb_ms)}
     elif service == "tiktok":
-        asset["video"]["metadata"] = {"thumbnailOffset": 1500}
+        asset["video"]["metadata"] = {"thumbnailOffset": int(thumb_ms)}
     inp = {"channelId": channel_id, "text": text_for(post),
            "schedulingType": "automatic", "mode": "customScheduled", "dueAt": due, "assets": [asset], "aiAssisted": False, "needsApproval": False}
     if meta:
@@ -209,6 +209,7 @@ def main():
         print("Post fields:", json.dumps([f["name"] for f in d["__type"]["fields"]]))
     elif cmd == "post":
         slug, due, url = sys.argv[2], sys.argv[3], sys.argv[4]
+        thumb_ms = int(sys.argv[5]) if len(sys.argv) > 5 else 1500  # the title-cover frame (end of the video)
         S = json.loads((ROOT / "shorts" / slug / "script.json").read_text())
         post = S["post"]
         _, m = channel_map()
@@ -217,7 +218,7 @@ def main():
             if s not in m:
                 errs[s] = "channel not connected in Buffer"; continue
             try:
-                res[s] = create(m[s]["id"], s, post, url, due)
+                res[s] = create(m[s]["id"], s, post, url, due, thumb_ms)
             except Exception as e:
                 errs[s] = str(e)[:300]
         res["errors"] = errs
