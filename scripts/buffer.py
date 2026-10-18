@@ -6,6 +6,7 @@ Free plan: 3 channels, 10 queued posts per channel, 3,000 API requests / 30 days
     python3 scripts/buffer.py channels                       # organisation + connected channels (JSON)
     python3 scripts/buffer.py schema                          # print the post input types (introspection)
     python3 scripts/buffer.py post <slug> <dueAt ISO> <url>   # schedule one video on YouTube + Instagram + TikTok
+    python3 scripts/buffer.py stats                          # per-post analytics Buffer exposes (introspected) for sent posts
     python3 scripts/buffer.py posts [--meta]                  # scheduled + sent posts of the three channels (JSON; --meta adds unreadable channels)
     python3 scripts/buffer.py cancel <slug>[,<slug>...]       # delete those videos' still-scheduled Buffer posts (ids from the tracker)
 
@@ -257,6 +258,36 @@ def main():
         posts, failed = list_posts(oid, m, "id dueAt status channelId " + extra)
         # `posts --meta` also says which channels couldn't be read (reconcile needs that to tell "deleted" from "unreadable")
         print(json.dumps({"posts": posts, "failed": failed} if "--meta" in sys.argv else posts))
+    elif cmd == "stats":
+        # whatever per-post analytics this Buffer API version exposes (introspected, since the API is young)
+        def tfields(name):
+            t = gql('query($n: String!) { __type(name: $n) { fields { name type { name kind ofType { name kind ofType { name kind } } } } } }', {"n": name})["__type"]
+            return (t or {}).get("fields") or []
+        def base(t):
+            while t.get("ofType"): t = t["ofType"]
+            return t
+        pf = tfields("Post")
+        print("POST_FIELDS " + " ".join(f["name"] for f in pf))
+        want = []
+        for f in pf:
+            b = base(f["type"])
+            if any(k in f["name"].lower() for k in ("stat", "metric", "insight", "analytic", "engagement", "interaction")):
+                if b["kind"] == "OBJECT":
+                    sub = [x["name"] for x in tfields(b["name"]) if base(x["type"])["kind"] in ("SCALAR", "ENUM")]
+                    print(f"METRIC_TYPE {f['name']}:{b['name']} " + " ".join(sub))
+                    want.append(f"{f['name']} {{ {' '.join(sub)} }}" if sub else None)
+                elif b["kind"] in ("SCALAR", "ENUM"):
+                    want.append(f["name"])
+        want = [w for w in want if w]
+        oid, m = channel_map()
+        have = {f["name"] for f in pf}
+        extra = " ".join(x for x in ("externalLink", "sentAt") if x in have)
+        try:
+            posts, failed = list_posts(oid, m, "id dueAt status channelId " + extra + " " + " ".join(want))
+        except Exception as e:
+            posts, failed = [], {"all": str(e)}
+        sent = [p for p in posts if str(p.get("status", "")).lower() in ("sent", "published")]
+        print(json.dumps({"metric_fields": want, "failed": failed, "sent": sent}))
     elif cmd == "cancel":
         print(json.dumps(cancel([x.strip() for x in sys.argv[2].split(",") if x.strip()])))
     else:
