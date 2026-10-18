@@ -44,5 +44,7 @@ export function makeTimeline(ly: Lyrics, au: AudioData): TimelineEntry[] {
     E('pipeline', 'pipeline', b.pipeline, b.edits),
     E('edits', 'edits', b.edits, b.verdict),
     E('verdict', 'verdict', b.verdict, b.end),
+    // children's-story style tests: 3 s each, after the explainer
+    ...['soft', 'clay', 'mini', 'paper', 'felt', 'wood'].map((k, i) => E(`kid_${k}`, `kid_${k}`, 100 + i * 3, 103 + i * 3)),
   ];
 }

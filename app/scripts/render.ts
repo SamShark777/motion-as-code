@@ -48,9 +48,9 @@ async function ensureServer(): Promise<{ url: string; stop: () => void }> {
 
 async function openPage(url: string) {
   const browser = await chromium.launch({
-    channel: process.env.BROWSER_CHANNEL ?? 'chrome',
+    ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: process.env.BROWSER_CHANNEL ?? 'chrome' }),
     headless: !flag('headed'),
-    args: [process.platform === 'win32' ? '--use-angle=d3d11' : '--use-angle=metal', '--enable-gpu-rasterization', '--ignore-gpu-blocklist', '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows'],
+    args: [process.platform === 'win32' ? '--use-angle=d3d11' : process.platform === 'linux' ? '--use-angle=swiftshader' : '--use-angle=metal', '--enable-unsafe-swiftshader', '--enable-gpu-rasterization', '--ignore-gpu-blocklist', '--disable-background-timer-throttling', '--disable-renderer-backgrounding', '--disable-backgrounding-occluded-windows'],
   });
   const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   const logs: string[] = [];
