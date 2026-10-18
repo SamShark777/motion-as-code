@@ -6,7 +6,7 @@ Free plan: 3 channels, 10 queued posts per channel, 3,000 API requests / 30 days
     python3 scripts/buffer.py channels                       # organisation + connected channels (JSON)
     python3 scripts/buffer.py schema                          # print the post input types (introspection)
     python3 scripts/buffer.py post <slug> <dueAt ISO> <url>   # schedule one video on YouTube + Instagram + TikTok
-    python3 scripts/buffer.py posts                           # scheduled + sent posts of the three channels (JSON)
+    python3 scripts/buffer.py posts [--meta]                  # scheduled + sent posts of the three channels (JSON; --meta adds unreadable channels)
     python3 scripts/buffer.py cancel <slug>[,<slug>...]       # delete those videos' still-scheduled Buffer posts (ids from the tracker)
 
 `post` reads shorts/<slug>/script.json (post.title / description / tags) and prints JSON
@@ -64,6 +64,28 @@ def channel_map():
         if s in SERVICES and s not in m:
             m[s] = c
     return oid, m
+
+
+def list_posts(oid, m, fields="id dueAt status channelId"):
+    """Posts of each connected channel, queried one channel at a time so a locked/disconnected channel
+    (Buffer: "Actor can not access the specified channels") can't break the lookup for the others.
+    Returns (posts, failed) — every post gets a `service` key; failed maps service -> error."""
+    out, failed = [], {}
+    for svc, c in m.items():
+        after = None
+        try:
+            for _ in range(10):
+                d = gql("""query($o: OrganizationId!, $c: [ChannelId!], $a: String) { posts(first: 50, after: $a, input: {organizationId: $o, filter: {channelIds: $c}}) {
+                    edges { node { %s } } pageInfo { hasNextPage endCursor } } }""" % fields, {"o": oid, "c": [c["id"]], "a": after})
+                p = d["posts"]
+                out += [{**e["node"], "service": svc} for e in p["edges"]]
+                if not p["pageInfo"]["hasNextPage"]:
+                    break
+                after = p["pageInfo"]["endCursor"]
+        except Exception as e:
+            failed[svc] = str(e)[:200]
+            print(f"posts: {svc} skipped: {e}", file=sys.stderr)
+    return out, failed
 
 
 def text_for(post):
@@ -126,13 +148,10 @@ def cancel(slugs):
             want[slug] = dict(kv.split("=", 1) for kv in mid[len("buffer:"):].split(";") if "=" in kv)
     name, argname, tname, key = _delete_field()
     oid, m = channel_map()
-    live = {}
-    try:
-        d = gql("""query($o: OrganizationId!, $c: [ChannelId!]) { posts(first: 100, input: {organizationId: $o, filter: {channelIds: $c}}) {
-            edges { node { id status dueAt } } } }""", {"o": oid, "c": [c["id"] for c in m.values()]})
-        live = {e["node"]["id"]: e["node"] for e in d["posts"]["edges"]}
-    except Exception as e:
-        print("could not list posts:", e)
+    posts, failed = list_posts(oid, m, "id status dueAt")
+    live = {p["id"]: p for p in posts}
+    if failed:
+        print("could not list posts for:", failed)
     res = {"mutation": name, "missing_in_tracker": [s for s in slugs if s not in want], "deleted": {}, "skipped": {}, "errors": {}}
     for slug, ids in want.items():
         for svc, pid in ids.items():
@@ -162,9 +181,7 @@ def cancel(slugs):
             else:
                 res["deleted"][f"{slug}/{svc}"] = pid
     try:
-        d = gql("""query($o: OrganizationId!, $c: [ChannelId!]) { posts(first: 100, input: {organizationId: $o, filter: {channelIds: $c}}) {
-            edges { node { id status } } } }""", {"o": oid, "c": [c["id"] for c in m.values()]})
-        now = {e["node"]["id"]: e["node"]["status"] for e in d["posts"]["edges"]}
+        now = {p["id"]: p["status"] for p in list_posts(oid, m, "id status")[0]}
         res["still_listed"] = {k: now[v] for k, v in res["deleted"].items() if v in now}
     except Exception as e:
         res["still_listed"] = f"could not re-list: {e}"[:200]
@@ -237,16 +254,9 @@ def main():
         except Exception:
             have = set()
         extra = " ".join(f for f in ("externalLink", "sentAt") if f in have)
-        out, after = [], None
-        for _ in range(10):
-            d = gql("""query($o: OrganizationId!, $c: [ChannelId!], $a: String) { posts(first: 50, after: $a, input: {organizationId: $o, filter: {channelIds: $c}}) {
-                edges { node { id dueAt status channelId %s } } pageInfo { hasNextPage endCursor } } }""" % extra, {"o": oid, "c": ids, "a": after})
-            p = d["posts"]
-            out += [e["node"] for e in p["edges"]]
-            if not p["pageInfo"]["hasNextPage"]:
-                break
-            after = p["pageInfo"]["endCursor"]
-        print(json.dumps(out))
+        posts, failed = list_posts(oid, m, "id dueAt status channelId " + extra)
+        # `posts --meta` also says which channels couldn't be read (reconcile needs that to tell "deleted" from "unreadable")
+        print(json.dumps({"posts": posts, "failed": failed} if "--meta" in sys.argv else posts))
     elif cmd == "cancel":
         print(json.dumps(cancel([x.strip() for x in sys.argv[2].split(",") if x.strip()])))
     else:

@@ -178,23 +178,34 @@ def buffer(*a):
 
 
 def reconcile(have_key):
-    """Scheduled Buffer rows whose post date has passed -> Published, or Vetoed if Shivam deleted them in Buffer."""
+    """Scheduled Buffer rows whose post date has passed -> Published, or Vetoed if Shivam deleted them in Buffer.
+    Buffer is read channel by channel: a channel Buffer won't let us read (locked/disconnected) never counts as
+    "deleted"; a row whose channels are all unreadable is marked Published (it was scheduled fine) with a note."""
     today = dt.datetime.now(TZ).date().isoformat()
     due = [r for r in json.loads(tracker("scheduled")) if r.get("Post date") and r["Post date"] < today and str(r.get("Metricool ID") or "").startswith("buffer:")]
     if not due or not have_key:
         return []
     try:
-        live = {p["id"]: p for p in buffer("posts")}
+        res = buffer("posts", "--meta")
+        live, failed = {p["id"]: p for p in res["posts"]}, res.get("failed") or {}
     except Exception as e:
         print(f"reconcile skipped: {e}", file=sys.stderr)
-        return []
+        return [f"⚠️ Couldn't read Buffer, so {len(due)} past posts stay Scheduled until the next run ({str(e)[:150]})"]
     notes = []
+    if failed:
+        notes.append("⚠️ Buffer wouldn't list posts for: " + ", ".join(f"{s} ({e[:80]})" for s, e in failed.items()))
     for r in due:
         ids = dict(kv.split("=", 1) for kv in str(r["Metricool ID"])[7:].split(";") if "=" in kv)
-        alive = [s for s, i in ids.items() if i in live]
-        st = "Published" if alive else "Vetoed"
+        readable = {s: i for s, i in ids.items() if s not in failed}
+        alive = [s for s, i in readable.items() if i in live]
+        if alive:
+            st, why = "Published", ""
+        elif readable:
+            st, why = "Vetoed", " (deleted in Buffer)"
+        else:
+            st, why = "Published", " (not verified: Buffer channel unreadable)"
         tracker("set", str(r["No."]), f"Status={st}")
-        notes.append(f"No.{r['No.']} {r['Slug']}: {st}" + ("" if alive else " (deleted in Buffer)"))
+        notes.append(f"No.{r['No.']} {r['Slug']}: {st}{why}")
     return notes
 
 
