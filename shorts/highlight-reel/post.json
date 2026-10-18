@@ -1,0 +1,17 @@
+{
+ "no": 84,
+ "slug": "highlight-reel",
+ "date": "2026-10-19",
+ "slot": "09:00",
+ "due": "2026-10-19T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-19/highlight-reel.mp4",
+ "buffer": {
+  "youtube": "6ad51440769b457934d63ba1",
+  "tiktok": "6ad51440938409f1d0e23dff"
+ },
+ "errors": {
+  "instagram": "Account is not allowed to perform this action"
+ },
+ "engine": "kokoro",
+ "duration": 35.8
+}
