@@ -290,9 +290,18 @@ def main():
         if "--json" in sys.argv:
             print(json.dumps({"metric_fields": want, "failed": failed, "sent": sent})); return
         print("STATS_FAILED " + json.dumps(failed))
-        for p in sent:  # one short line per post (GitHub annotations are capped at ~4k chars)
-            ms = ",".join(f"{x['type']}={x['value']}" for x in (p.get("metrics") or []))
-            print(f"STAT {p['id']}|{p.get('service')}|{str(p.get('sentAt'))[:16]}|{ms}")
+        since = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--since=")), "2026-10-10")
+        keys = ("views", "reach", "averageTimeWatched", "reactions", "comments", "shares", "saves")
+        print("STATCOLS id|service|sentAt|" + "|".join(keys))
+        toks = []
+        for p in sent:
+            if str(p.get("sentAt") or "") < since:
+                continue
+            m = {x["type"]: x["value"] for x in (p.get("metrics") or [])}
+            toks.append(f"{p['id']}|{(p.get('service') or '')[:2]}|{str(p.get('sentAt'))[5:16]}|" + "|".join(str(m.get(k, "")) for k in keys))
+        # packed many per line: GitHub keeps only ~10 annotation lines per step, ~4k chars each
+        for i in range(0, len(toks), 40):
+            print("STAT " + " ".join(toks[i:i + 40]))
     elif cmd == "cancel":
         print(json.dumps(cancel([x.strip() for x in sys.argv[2].split(",") if x.strip()])))
     else:
