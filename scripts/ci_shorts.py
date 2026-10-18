@@ -279,12 +279,22 @@ def publish(dist):
         (ROOT / "shorts" / b["slug"] / "post.json").write_text(json.dumps({**b, "url": vurl, "buffer": ok, "errors": errs, "engine": meta.get("engine"), "duration": meta.get("duration")}, indent=1))
         warn = f"\n⚠️ Not on: {', '.join(f'{s} ({e})' for s, e in errs.items())}\n" if errs else ""
         lines.append(head + f"✅ Scheduled on {', '.join(ok)}{warn}\n" + info)
+    ig = []
+    if not dry:
+        try:
+            sys.path.insert(0, str(ROOT / "scripts"))
+            import ig_catchup
+            ig = ig_catchup.run()
+        except Exception as e:
+            ig = [f"⚠️ Instagram catch-up failed: {str(e)[:200]}"]
     counts = json.loads(tracker("counts"))
     body = [f"**{len(batch)} Shorts for {batch[0]['date'] if batch else tomorrow()}** "
             + ("(dry run: Buffer key not set, nothing scheduled)" if dry else "— to veto one, delete it in [Buffer](https://publish.buffer.com) before its time."), ""]
     body += lines
     if rec:
         body += ["### Earlier posts", *[f"- {x}" for x in rec], ""]
+    if ig:
+        body += ["### Instagram catch-up", *[f"- {x}" for x in ig], ""]
     left = counts.get("Scripted", 0)
     body.append(f"Scripts ready for later days: **{left}**" + (" — ⚠️ running low, Claude's script writer should top this up." if left < N * 2 else ""))
     (ROOT / "issue.md").write_text("\n".join(body))
