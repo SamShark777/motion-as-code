@@ -7,11 +7,14 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-19/ten-percent-myth.mp4",
  "buffer": {
   "youtube": "6ad51441769b457934d63c00",
-  "tiktok": "6ad514430a208cb32379c33b"
+  "tiktok": "6ad514430a208cb32379c33b",
+  "instagram": "6ad5279c938409f1d0e61830"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
- "duration": 36.7
+ "duration": 36.7,
+ "instagram_catchup": {
+  "due": "2026-10-19T21:00:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-19/ten-percent-myth.mp4"
+ }
 }

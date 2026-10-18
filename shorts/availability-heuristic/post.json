@@ -7,11 +7,14 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-19/availability-heuristic.mp4",
  "buffer": {
   "youtube": "6ad514440a208cb32379c365",
-  "tiktok": "6ad51445938409f1d0e23e43"
+  "tiktok": "6ad51445938409f1d0e23e43",
+  "instagram": "6ad5279dae173d6e0017d665"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
- "duration": 43.0
+ "duration": 43.0,
+ "instagram_catchup": {
+  "due": "2026-10-20T02:00:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-19/availability-heuristic.mp4"
+ }
 }
