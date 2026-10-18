@@ -6,7 +6,7 @@ import * as K from './_kid';
 
 export const CLIPS: [string, number, Record<string, number>][] = [
   ['Idle', 2, {}], ['Walk', 2, {}], ['Wave', 2, { smile: 1 }], ['LookUp', 1.5, { browUp: 1, mouthOpen: 0.6 }],
-  ['Point', 1.5, { smile: 0.6 }], ['Happy', 2, { smile: 1, blink: 0 }],
+  ['Point', 1.5, { smile: 0.6 }], ['Happy', 2, { smile: 1, blink: 0 }], ['Crouch', 1.5, {}], ['Think', 2.5, {}],
 ];
 export default class KidRig extends Scene {
   s = new THREE.Scene(); cam = new THREE.PerspectiveCamera(30, 1920 / 1080, 0.01, 100);

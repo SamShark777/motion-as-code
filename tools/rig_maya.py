@@ -192,6 +192,29 @@ def happy(t):
     q['LowerLeg.L'] = rot('LowerLeg.L', X, 0.22 * b); q['LowerLeg.R'] = rot('LowerLeg.R', X, 0.22 * b)
     q['Head'] = rot('Head', Y, 0.08 * math.sin(w))
     return q, {'Hips': Vector((0, -0.03 * b + 0.05 * max(0, math.sin(w)) ** 2, 0))}
+def crouch(t):
+    k = min(1, t / 0.7); k = k * k * (3 - 2 * k)
+    q = base({}, 1 - 0.4 * k)
+    for n in ('L', 'R'):
+        q[f'UpperLeg.{n}'] = rot(f'UpperLeg.{n}', X, -1.15 * k)
+        q[f'LowerLeg.{n}'] = rot(f'LowerLeg.{n}', X, 1.95 * k)
+        q[f'Foot.{n}'] = rot(f'Foot.{n}', X, -0.8 * k)
+    q['Spine'] = rot('Spine', X, 0.25 * k); q['Chest'] = rot('Chest', X, 0.15 * k)
+    q['Head'] = rot('Head', X, 0.25 * k)
+    q['UpperArm.L'] = mul(rot('UpperArm.L', X, -0.7 * k), q['UpperArm.L']); q['UpperArm.R'] = mul(rot('UpperArm.R', X, -0.7 * k), q['UpperArm.R'])
+    q['LowerArm.L'] = rot('LowerArm.L', X, -0.15 - 0.5 * k); q['LowerArm.R'] = rot('LowerArm.R', X, -0.15 - 0.5 * k)
+    return q, {'Hips': Vector((0, -0.2 * k, 0.02 * k))}
+def think(t):
+    k = min(1, t / 0.6); k = k * k * (3 - 2 * k)
+    q = base({})
+    q['UpperArm.R'] = mul(rot('UpperArm.R', X, -0.55 * k), mul(rot('UpperArm.R', Y, -0.15 * k), q['UpperArm.R']))
+    q['LowerArm.R'] = mul(rot('LowerArm.R', Y, -1.0 * k), rot('LowerArm.R', X, -0.15 - 1.9 * k))
+    q['UpperArm.L'] = mul(rot('UpperArm.L', X, -0.25 * k), q['UpperArm.L'])
+    q['LowerArm.L'] = mul(rot('LowerArm.L', Y, 1.25 * k), rot('LowerArm.L', X, -0.15 - 0.7 * k))
+    sway = 0.04 * math.sin(TAU * t / 2.5) * k
+    q['Head'] = mul(rot('Head', Y, (0.18 * k) + sway), rot('Head', X, -0.12 * k))
+    return q, {}
+make('Crouch', 30, crouch, False); make('Think', 75, think, False)
 make('Idle', 120, idle); make('Walk', 30, walk); make('Wave', 60, wave, False)
 make('LookUp', 45, lookup, False); make('Point', 45, point, False); make('Happy', 24, happy)
 for p in pb: p.rotation_quaternion = Quaternion(); p.location = Vector()
