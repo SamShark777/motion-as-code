@@ -1,0 +1,16 @@
+{
+ "no": 37,
+ "slug": "immediate-rewards",
+ "date": "2026-10-20",
+ "slot": "14:00",
+ "due": "2026-10-20T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-20/immediate-rewards.mp4",
+ "buffer": {
+  "youtube": "6ad6883d7b002f7cbe4fb9ca",
+  "instagram": "6ad6883d52bb7ebd605f358e",
+  "tiktok": "6ad6883ee61f3ff983517640"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 39.3
+}

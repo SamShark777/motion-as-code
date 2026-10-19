@@ -1,0 +1,16 @@
+{
+ "no": 14,
+ "slug": "interleaving",
+ "date": "2026-10-20",
+ "slot": "09:00",
+ "due": "2026-10-20T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-20/interleaving.mp4",
+ "buffer": {
+  "youtube": "6ad6883a4d4b435031506c2c",
+  "instagram": "6ad6883a46c9e2453ba0b1e9",
+  "tiktok": "6ad6883b7b002f7cbe4fb96a"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 36.6
+}
