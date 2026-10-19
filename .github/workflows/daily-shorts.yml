@@ -340,6 +340,8 @@ jobs:
         env:
           CHROME_PATH: /usr/bin/google-chrome
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          COVER_DATE: ${{ matrix.date }}
+          COVER_SLOT: ${{ matrix.slot }}
         run: |
           mkdir -p out
           set -o pipefail
