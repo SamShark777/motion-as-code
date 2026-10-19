@@ -32,6 +32,10 @@
 > thumbnail (`thumbnailOffset`, set by ci_shorts). Write `"thumb_text"` (3–6 punchy words that say what the
 > title promises, e.g. "Why Likes Hook You") and `"thumb_emph"` (the 1–2 words to highlight) in every
 > script.json. YouTube picks Shorts thumbnails itself; Buffer can't set them.
+> The cover shows an **original character** (flat One More style) picked from the slug — every Short gets a
+> different person. Set `"thumb_mood"` to match the title: curious | shocked | smug | worried | happy | thinking.
+> Optional `"cover_char"`: {"hair": curls|short|long|bun|buzz|ponytail|spiky, "outfit": collar|tee|hoodie,
+> "glasses": true|false, "skin": 0–5}.
 
 **3 psychology Shorts a day** (was up to 5) (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
 (vertical template + Shivam's pixel avatar, narrated by a British TTS voice — Kokoro `bf_emma`, set in `shorts/voice/voice.json`; Shivam rejected his cloned voice as mechanical, don't switch back without asking), posted to YouTube Shorts,
