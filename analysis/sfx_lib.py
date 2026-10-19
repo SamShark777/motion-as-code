@@ -341,34 +341,116 @@ def _lead(kind, f, d):
     return tone(f, d, ((1, 1), (2, 0.25), (3, 0.06))) * env_ad(m, 0.005, 1.1, 4)  # e-piano pluck
 
 
-def music(total: float, seed=None) -> np.ndarray:
-    """Calm pad bed of any length. seed=None reproduces the original One More bed; any other seed (e.g. the
-    slug) picks a different key, progression, tempo, lead, motif and texture. Thins over the last ~14 s,
-    settles on the tonic for the last ~7 s and fades out."""
+MINOR_PROGS = {
+    "shadow": [[0, 3, 7, 10], [8, 12, 15, 19], [3, 7, 10, 14], [10, 14, 17, 21]],    # i VI III VII
+    "search": [[0, 3, 7, 10, 14], [5, 8, 12, 15], [8, 12, 15, 19], [7, 11, 14, 17]], # i iv VI V
+    "edge":   [[0, 3, 7, 10], [1, 5, 8, 12], [0, 3, 7, 10], [7, 10, 14, 17]],         # i bII i v
+    "haze":   [[0, 3, 7, 10, 14], [10, 14, 17, 21], [8, 12, 15, 19], [5, 8, 12, 15]], # i VII VI iv
+}
+JAZZ_PROGS = {
+    "late":   [[2, 5, 9, 12, 16], [7, 11, 14, 17, 21], [0, 4, 7, 11, 14], [9, 12, 16, 19]],  # ii7 V9 Imaj9 vi7
+    "window": [[0, 4, 7, 11, 14], [9, 12, 16, 19, 23], [2, 5, 9, 12], [7, 10, 14, 17]],      # Imaj9 vi9 ii7 V7sus
+}
+MINOR_MOTIFS = [[12, 10, 7, 10, 12, 15], [7, 8, 7, 3, 5, 7], [15, 14, 12, 10, 12, 7], [12, 15, 14, 10, 12, 8]]
+# vibe -> (progression sets, bar seconds, leads, drums, pad brightness, low-pass, motif density (notes per bar))
+VIBES = {
+    "calm":      ([PROGS], [3.6, 4.0, 4.4, 5.0], ["epiano", "glass", "bell"], None, (0.6, 1.0), [1800, 2200, 2600], 2),
+    "uplifting": ([PROGS], [2.4, 2.8, 3.2], ["marimba", "bell", "epiano"], "pop", (1.0, 1.3), [2600, 3000, 3400], 4),
+    "playful":   ([PROGS], [2.4, 2.6, 2.8], ["marimba", "pizz"], "bounce", (0.9, 1.2), [2600, 3000], 8),
+    "mystery":   ([MINOR_PROGS], [3.6, 4.0, 4.4], ["glass", "bell"], "tick", (0.6, 0.9), [1600, 2000, 2400], 2),
+    "tense":     ([MINOR_PROGS], [3.0, 3.2, 3.6], ["glass"], "pulse", (0.7, 1.0), [1500, 1900], 1),
+    "lofi":      ([JAZZ_PROGS], [3.2, 3.4, 3.6], ["epiano"], "lofi", (0.7, 0.9), [1400, 1700, 2000], 2),
+}
+MOOD_VIBE = {"shocked": "tense", "worried": "mystery", "smug": "playful", "happy": "uplifting", "thinking": "lofi", "curious": "calm"}
+
+
+def _kick(d=0.28):
+    m = int(d * SR)
+    return tone(np.geomspace(120, 45, m), d) * env_ad(m, 0.002, 0.2, 5)
+
+
+def _snare(d=0.14):
+    m = int(d * SR)
+    return svf(noise(d), 1800, q=0.9) * env_ad(m, 0.001, 0.08, 6) + 0.3 * tone(190, d) * env_ad(m, 0.001, 0.05, 6)
+
+
+def _hat(d=0.045):
+    m = int(d * SR)
+    x = noise(d)
+    return (x - onepole_lp(x, 6000)) * env_ad(m, 0.0005, 0.025, 6)
+
+
+def _drums(kind, n, bar, until):
+    """16th-note grid patterns per bar; returns a mono track (quiet; the mixer ducks it with the bed)."""
+    out = np.zeros(n)
+    K, S_, H = _kick(), _snare(), _hat()
+    pats = {  # (kick steps, snare steps, hat steps, hat vol)
+        "pop":    ([0, 8], [4, 12], list(range(0, 16, 2)), 0.25),
+        "bounce": ([0, 6, 8], [4, 12], list(range(0, 16, 2)), 0.2),
+        "lofi":   ([0, 7, 10], [4, 12], [0, 2, 4, 6, 8, 10, 12, 14], 0.18),
+        "tick":   ([], [], list(range(0, 16, 2)), 0.12),
+        "pulse":  (list(range(0, 16, 2)), [], [], 0.0),
+    }
+    if kind not in pats:
+        return out
+    kick, snare, hat, hv = pats[kind]
+    step = bar / 16
+    b = 0
+    while b * bar < until:
+        for st in range(16):
+            t = b * bar + st * step + (step * 0.18 if kind == "lofi" and st % 2 else 0)  # swing for lofi
+            s0 = int(t * SR)
+            if s0 >= n or t >= until:
+                break
+            for hit, x, vol in ((st in kick, K, 0.55 if kind != "pulse" else 0.35), (st in snare, S_, 0.3), (st in hat, H, hv)):
+                if hit and vol:
+                    e = min(n, s0 + len(x))
+                    out[s0:e] += vol * x[: e - s0]
+        b += 1
+    if kind == "lofi":
+        rng2 = np.random.default_rng(5)
+        out += (rng2.random(n) > 0.9997).astype(float) * rng2.uniform(0.02, 0.06, n)  # vinyl crackle
+    return out
+
+
+def pick_vibe(S) -> str:
+    v = (S.get("music_vibe") or "").lower()
+    return v if v in VIBES else MOOD_VIBE.get((S.get("thumb_mood") or "").lower(), "calm")
+
+
+def music(total: float, seed=None, vibe="calm") -> np.ndarray:
+    """Pad-led bed of any length in one of several vibes (calm, uplifting, playful, mystery, tense, lofi).
+    seed=None reproduces the original One More bed; a seed (the slug) picks key, progression, tempo, lead,
+    motif and texture within the vibe. Thins over the last ~14 s, settles on the tonic, fades out."""
     n = int(total * SR)
     out = np.zeros(n)
+    minor = False
+    drums = None
     if seed is None:
-        key, prog, bar, lead, motif, bright, pulse, lp = 41, "lift", 4.0, "epiano", MOTIFS[0], 1.0, False, 2400
+        key, bar, lead, motif, bright, lp, dens = 41, 4.0, "epiano", MOTIFS[0], 1.0, 2400, 2
         prog_chords = [[41, 53, 57, 60, 64], [45, 52, 57, 60, 64], [38, 50, 57, 60, 65], [46, 53, 57, 62, 65],
                        [41, 53, 57, 60, 64], [45, 52, 57, 60, 64], [43, 50, 58, 62, 65], [48, 52, 55, 60, 67]]
     else:
-        r = np.random.default_rng(abs(hash_seed(seed)))
-        key = int(r.choice([36, 37, 38, 39, 40, 41, 42, 43]))          # C .. G (low root)
-        prog = str(r.choice(list(PROGS)))
-        bar = float(r.choice([3.2, 3.6, 4.0, 4.4, 5.0]))
-        lead = str(r.choice(["epiano", "bell", "marimba", "glass"]))
-        motif = MOTIFS[int(r.integers(len(MOTIFS)))]
-        bright = float(r.uniform(0.6, 1.2))
-        pulse = bool(r.random() < 0.5)
-        lp = float(r.choice([1800, 2200, 2600, 3000]))
-        prog_chords = [[key + 12 + d if j else key + d for j, d in enumerate(ch)] for ch in PROGS[prog]]
+        sets, bars, leads, drums, (b0, b1), lps, dens = VIBES.get(vibe, VIBES["calm"])
+        r = np.random.default_rng(hash_seed(str(seed) + vibe))
+        key = int(r.choice([36, 37, 38, 39, 40, 41, 42, 43]))
+        pset = sets[int(r.integers(len(sets)))]
+        minor = pset is MINOR_PROGS
+        prog = pset[str(r.choice(list(pset)))]
+        bar = float(r.choice(bars))
+        lead = str(r.choice(leads))
+        motif = (MINOR_MOTIFS if minor else MOTIFS)[int(r.integers(len(MINOR_MOTIFS if minor else MOTIFS)))]
+        bright = float(r.uniform(b0, b1))
+        lp = float(r.choice(lps))
+        prog_chords = [[key + 12 + d if j else key + d for j, d in enumerate(ch)] for ch in prog]
     thin, settle = max(bar, total - 14.0), max(6.0, total - 7.0)
     chords, t, i = [], 0.0, 0
     while t < thin:
         chords.append((t, bar + 0.6, prog_chords[i % len(prog_chords)], bright))
         t += bar
         i += 1
-    tonic = [key, key + 12, key + 16, key + 19]
+    third = 15 if minor else 16
+    tonic = [key, key + 12, key + third, key + 19]
     chords.append((thin, settle - thin + 0.6, tonic[:3], 0.6 * bright))
     chords.append((settle, total - settle, tonic, 0.4 * bright))
     for start, dur, notes, br in chords:
@@ -381,30 +463,35 @@ def music(total: float, seed=None) -> np.ndarray:
         voice = sum(pad_voice(midi(p), dur, br) / (1 + 0.15 * k) for k, p in enumerate(notes))
         s0 = int(start * SR)
         out[s0:s0 + m] += voice[: n - s0] * env[: n - s0]
+    if vibe == "tense" and seed is not None:  # low eighth-note ostinato on the root
+        k, st8 = 0, bar / 8
+        while k * st8 < thin:
+            d = 0.22
+            m = int(d * SR)
+            x = tone(midi(key - 12 + (7 if k % 8 in (3, 7) else 0)), d, ((1, 1), (2, 0.3))) * env_ad(m, 0.003, 0.15, 5)
+            s0 = int(k * st8 * SR)
+            e = min(n, s0 + m)
+            out[s0:e] += 0.5 * x[: e - s0]
+            k += 1
     out = onepole_lp(out, lp)
-    # lead motif (in key), every half bar
-    step = bar / 2
+    step = bar / dens
     k = 0
     while 2.0 + k * step < thin:
         at = 2.0 + k * step
         deg = motif[k % len(motif)]
         f = midi(key + 24 + deg)
-        d = 1.6
-        pl = _lead(lead, f, d)
-        s0 = int(at * SR)
-        e = min(n, s0 + len(pl))
-        out[s0:e] += 0.22 * pl[: e - s0]
-        k += 1
-    if pulse:  # very soft low heartbeat on each bar
-        k = 0
-        while k * bar < thin:
-            s0 = int(k * bar * SR)
+        if lead == "pizz":
             d = 0.35
             m = int(d * SR)
-            th = 0.35 * tone(np.geomspace(midi(key + 12), midi(key), m), d) * env_ad(m, 0.004, 0.25, 5)
-            e = min(n, s0 + m)
-            out[s0:e] += th[: e - s0]
-            k += 1
+            pl = tone(f, d, ((1, 1), (2, 0.4), (3, 0.15))) * env_ad(m, 0.002, 0.18, 6)
+        else:
+            pl = _lead(lead, f, 1.6 if dens <= 4 else 0.6)
+        s0 = int(at * SR)
+        e = min(n, s0 + len(pl))
+        out[s0:e] += (0.22 if dens <= 4 else 0.16) * pl[: e - s0]
+        k += 1
+    if drums:
+        out += _drums(drums, n, bar, thin)
     tt = np.arange(n) / SR
     g = np.interp(tt, [0, 1.5, thin, settle, max(settle + 0.1, total - 2.5), total], [0, 1, 1, 0.7, 0.7, 0])
     return norm(out * g, 0.8)
@@ -417,10 +504,13 @@ def hash_seed(x) -> int:
     return h
 
 
-def describe(seed) -> str:
-    r = np.random.default_rng(abs(hash_seed(seed)))
+def describe(seed, vibe="calm") -> str:
+    sets, bars, leads, drums, _, _, _ = VIBES.get(vibe, VIBES["calm"])
+    r = np.random.default_rng(hash_seed(str(seed) + vibe))
     names = ["C", "C#", "D", "D#", "E", "F", "F#", "G"]
     key = names[int(r.choice([36, 37, 38, 39, 40, 41, 42, 43])) - 36]
-    prog = str(r.choice(list(PROGS))); bar = float(r.choice([3.2, 3.6, 4.0, 4.4, 5.0]))
-    lead = str(r.choice(["epiano", "bell", "marimba", "glass"]))
-    return f"{key} major, {prog}, {60 * 4 / bar:.0f} bpm, {lead}"
+    pset = sets[int(r.integers(len(sets)))]
+    prog = str(r.choice(list(pset)))
+    bar = float(r.choice(bars))
+    lead = str(r.choice(leads))
+    return f"{vibe}: {key} {'minor' if pset is MINOR_PROGS else 'major'}, {prog}, {60 * 4 / bar:.0f} bpm, {lead}{', ' + drums + ' drums' if drums else ''}"

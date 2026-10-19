@@ -78,8 +78,9 @@ def main():
         sfx[s:e] += x[: e - s]
     # bed, ducked under each narration line
     seed = S.get("music_seed") or S.get("slug") or Path(sys.argv[1]).parent.name
-    m = L.music(total, seed).astype(np.float32)[:n]
-    print("music:", L.describe(seed))
+    vibe = L.pick_vibe(S)
+    m = L.music(total, seed, vibe).astype(np.float32)[:n]
+    print("music:", L.describe(seed, vibe))
     m = np.pad(m, (0, n - len(m)))
     spans = [(ln["start"], ln["end"]) for ln in json.loads((ROOT / "data" / "lyrics.json").read_text())["lines"]]
     t = np.arange(n) / SR

@@ -36,6 +36,10 @@
 > posting order (`CAST` in cover.jsx; `cover_index` from the post date + slot). Set `"thumb_mood"` to match the title: curious | shocked | smug | worried | happy | thinking.
 > Optional `"cover_char"`: {"hair": curls|short|long|bun|buzz|ponytail|spiky, "outfit": collar|tee|hoodie,
 > "glasses": true|false, "skin": 0–5}.
+> **Music (2026-10-19, Shivam):** every Short gets its own generated bed (analysis/sfx_lib.py `music`), never the
+> same twice. Set `"music_vibe"` to fit the video: calm | uplifting | playful | mystery | tense | lofi
+> (myth-busting / "you've been fooled" → mystery or tense; tips and wins → uplifting; quirky effects → playful;
+> reflective habits / study → lofi or calm). Without it the vibe follows `thumb_mood`.
 
 > **3-act scripts (2026-10-18, Shivam — applies now, overrides the "change only topics, hooks and titles" part of the
 > freeze; only the visual format stays locked):** every new or still-`Scripted` (not yet built) Short follows the
