@@ -18,20 +18,26 @@
    "art": "ArtIlMix",
    "chunks": [
     [
-     "Why should you"
+     "Students who"
     ],
     [
-     "MIX problem types",
+     "practised the"
+    ],
+    [
+     "MESSY way",
      {
-      "emph": "MIX",
+      "emph": "MESSY",
       "fx": "pop"
      }
     ],
     [
-     "while studying?"
+     "scored three"
+    ],
+    [
+     "times higher."
     ]
    ],
-   "text": "Why should you MIX problem types while studying?"
+   "text": "Students who practised the MESSY way scored three times higher."
   },
   {
    "sec": "cd",
@@ -128,10 +134,16 @@
    "art": "ArtIlPractice",
    "chunks": [
     [
-     "During practice,"
+     "But during"
     ],
     [
-     "blocking looked better:"
+     "practice,"
+    ],
+    [
+     "blocking looked"
+    ],
+    [
+     "better:"
     ],
     [
      "eighty-nine percent"
@@ -144,7 +156,7 @@
      }
     ]
    ],
-   "text": "During practice, blocking looked better: eighty-nine percent versus SIXTY."
+   "text": "But during practice, blocking looked better: eighty-nine percent versus SIXTY."
   },
   {
    "sec": "cd",

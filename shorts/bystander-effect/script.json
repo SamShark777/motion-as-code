@@ -17,24 +17,30 @@
    "art": "ArtByCrowd",
    "chunks": [
     [
-     "What changes"
+     "In an"
     ],
     [
-     "when everyone thinks"
+     "emergency,"
     ],
     [
-     "SOMEONE else",
+     "a crowd"
+    ],
+    [
+     "can be the"
+    ],
+    [
+     "WORST place",
      {
-      "emph": "SOMEONE",
+      "emph": "WORST",
       "fx": "doodle",
       "doodle": "👀"
      }
     ],
     [
-     "will act?"
+     "to be."
     ]
    ],
-   "text": "What changes when everyone thinks SOMEONE else will act?"
+   "text": "In an emergency, a crowd can be the WORST place to be."
   },
   {
    "sec": "cd",
@@ -126,10 +132,13 @@
    "art": "ArtByGroup",
    "chunks": [
     [
-     "Thought four others"
+     "But if they"
     ],
     [
-     "could hear too?"
+     "thought four others"
+    ],
+    [
+     "could hear?"
     ],
     [
      "Only THIRTY-ONE",
@@ -143,7 +152,7 @@
      "percent did."
     ]
    ],
-   "text": "Thought four others could hear too? Only THIRTY-ONE percent did."
+   "text": "But if they thought four others could hear? Only THIRTY-ONE percent did."
   },
   {
    "sec": "cd",

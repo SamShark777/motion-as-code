@@ -18,19 +18,19 @@
    "art": "ArtIrClock",
    "chunks": [
     [
-     "Why might"
+     "The best time"
     ],
     [
-     "a small reward"
+     "for a reward"
     ],
     [
-     "matter more"
+     "isn't after"
     ],
     [
-     "when it comes"
+     "the work."
     ],
     [
-     "right NOW?",
+     "It's NOW.",
      {
       "emph": "NOW",
       "fx": "doodle",
@@ -38,7 +38,7 @@
      }
     ]
    ],
-   "text": "Why might a small reward matter more when it comes right NOW?"
+   "text": "The best time for a reward isn't after the work. It's NOW."
   },
   {
    "sec": "cd",
@@ -166,13 +166,13 @@
      }
     ],
     [
-     "and kept going"
+     "and kept"
     ],
     [
-     "longer,"
+     "going longer."
     ]
    ],
-   "text": "The right-away group found the task more INTERESTING and kept going longer,"
+   "text": "The right-away group found the task more INTERESTING and kept going longer."
   },
   {
    "sec": "cd",
@@ -182,10 +182,13 @@
    "art": "ArtIrKeepGoing",
    "chunks": [
     [
-     "even after"
+     "But the twist:"
     ],
     [
-     "the rewards"
+     "they kept going"
+    ],
+    [
+     "after the rewards"
     ],
     [
      "STOPPED.",
@@ -195,7 +198,7 @@
      }
     ]
    ],
-   "text": "even after the rewards STOPPED."
+   "text": "But the twist: they kept going after the rewards STOPPED."
   },
   {
    "sec": "cd",

@@ -37,6 +37,17 @@
 > Optional `"cover_char"`: {"hair": curls|short|long|bun|buzz|ponytail|spiky, "outfit": collar|tee|hoodie,
 > "glasses": true|false, "skin": 0–5}.
 
+> **3-act scripts (2026-10-18, Shivam — applies now, overrides the "change only topics, hooks and titles" part of the
+> freeze; only the visual format stays locked):** every new or still-`Scripted` (not yet built) Short follows the
+> 3-act arc. Starting point: the tracker's **3-Act Scripts** sheet (7 beats per idea: Hook 0–3 s → Setup → Evidence →
+> Escalation → **Turn** ("But…") → Payoff (name the effect) → Outro with a concrete action). Its studies and numbers
+> were written from memory: verify every "Claim to verify" with a web search as usual, keep what checks out, fix or
+> replace the rest, then expand to the format's word count. Map the beats onto the format's scenes/lines (Ted type 2:
+> 6–8 scenes; story: its lines). Hook rules: a bold claim, result-first number or "you" callout beats a soft question;
+> on-screen text and voice say the hook together in the first frame. Record the hook formula in the tracker column
+> `Hook formula (3-act)` (already filled for all 102 ideas) so the weekly review can compare formulas.
+> Never rewrite rows that are already `Scheduled` or `Published`.
+
 **3 psychology Shorts a day** (was up to 5) (repo variable `SHORTS_PER_DAY`), made with the Motion as Code kit
 (vertical template + Shivam's pixel avatar, narrated by a British TTS voice — Kokoro `bf_emma`, set in `shorts/voice/voice.json`; Shivam rejected his cloned voice as mechanical, don't switch back without asking), posted to YouTube Shorts,
 Instagram Reels and TikTok through **Buffer (free plan)**, scheduled **the day before** so Shivam can veto.
@@ -91,6 +102,7 @@ doesn't use its post quota). Rows No. 1, 11, 22 were posted through Metricool (n
    - Only well-established findings. Name the researchers and year in `credit` exactly as published.
      If you can't find a solid source, set `Status=Failed` with the reason in `Lesson / notes` and take the next idea.
    - Start from Shivam's `Opening hook` and `Content outline`; tighten them for the format.
+   - Structure: the 3-act arc from the **3-Act Scripts** sheet (see the 2026-10-18 note at the top).
    - 55–85 spoken words → 22–35 s. Short sentences.
    - Sections in order: `hook` (1 line, a question or surprising claim to the viewer), `name`
      (1 line ending in the concept's name), `study` (1–2 lines), `stat` (1–2 lines carrying the numbers),
@@ -161,6 +173,7 @@ chunk to the words, writes `shorts/<slug>/index.html` (Claude Design runtime in 
      (+`block` colour), `type`, `glitch` (numbers, surprising facts), `doodle` (+ one emoji).
    - `color` rotates #1F3B73 #E9E4D8 #B3202A #E8C547 #2B6E7A #E07A2E #6A3FA0; `light: true` on light colours.
    - Same writing rules as Ted type 1: hook first, situation → move → why (study named), a real outro.
+   - Follow the 3-act arc (3-Act Scripts sheet): hook scene → setup → study → escalation → a "But…" turn scene → payoff → outro.
 2. `shorts/<slug>/art.jsx` — one animated SVG illustration component per scene, drawn in a 972×1728
    viewBox (the card), as pure functions of time `T` (seconds, global) and `t` (seconds into the scene):
    no state, no effects, no timers, no Math.random (use the `hsh` helper). Flat vector style like the
@@ -207,7 +220,7 @@ name the researchers and year, record `Source checked`). Story rows **don't coun
      pop, tick, chime, chime-bright, rising, notification, flip, flip-dull, lightning, airy, card-slide, settle,
      toggle, drawer, page-turn, wood-tap (volumes 0.2–0.4; offsets in seconds from the line's start, may be
      negative). Without `sfx`, a whoosh/swipe plays where the scene changes (unless `auto_sfx: false`).
-   - 80–130 spoken words (about 35–55 s; QA fails anything over 59.5 s). Hook line first, a real outro last.
+   - 80–130 spoken words (about 35–55 s; QA fails anything over 59.5 s). Hook line first, a real outro last. Follow the 3-act arc (3-Act Scripts sheet), with a "But…" turn line.
 2. `shorts/<slug>/scenes.jsx`: one component per `art`, drawing the 980×W stage in SVG as a **pure function of
    time** (no state, effects, timers, Math.random — use `SK.hsh`). Props: `t` (s since the scene started), `T`,
    `dur`, `beats` (each line's start within the scene — key the action to these so it lands on the words), `ends`,

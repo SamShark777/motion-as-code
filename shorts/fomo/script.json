@@ -18,27 +18,27 @@
    "art": "ArtFoPhone",
    "chunks": [
     [
-     "What do you"
+     "The party"
     ],
     [
-     "IMAGINE",
+     "you're missing"
+    ],
+    [
+     "online?"
+    ],
+    [
+     "You probably"
+    ],
+    [
+     "IMAGINED it.",
      {
-      "emph": "IMAGINE",
+      "emph": "IMAGINED",
       "fx": "doodle",
       "doodle": "💭"
      }
-    ],
-    [
-     "happening"
-    ],
-    [
-     "while you're"
-    ],
-    [
-     "offline?"
     ]
    ],
-   "text": "What do you IMAGINE happening while you're offline?"
+   "text": "The party you're missing online? You probably IMAGINED it."
   },
   {
    "sec": "cd",
@@ -185,10 +185,10 @@
    "art": "ArtFoLink",
    "chunks": [
     [
-     "That's a"
+     "But that's"
     ],
     [
-     "LINK,",
+     "a LINK,",
      {
       "emph": "LINK",
       "fx": "underline",
@@ -199,13 +199,10 @@
      "not proof"
     ],
     [
-     "that FOMO"
-    ],
-    [
-     "causes it."
+     "FOMO causes it."
     ]
    ],
-   "text": "That's a LINK, not proof that FOMO causes it."
+   "text": "But that's a LINK, not proof FOMO causes it."
   },
   {
    "sec": "cd",

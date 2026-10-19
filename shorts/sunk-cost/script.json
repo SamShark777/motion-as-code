@@ -17,10 +17,10 @@
    "art": "ArtScMovie",
    "chunks": [
     [
-     "Would you"
+     "Plenty of people"
     ],
     [
-     "keep watching"
+     "sit through"
     ],
     [
      "a TERRIBLE movie",
@@ -34,10 +34,10 @@
      "just because"
     ],
     [
-     "you paid?"
+     "they paid."
     ]
    ],
-   "text": "Would you keep watching a TERRIBLE movie just because you paid?"
+   "text": "Plenty of people sit through a TERRIBLE movie just because they paid."
   },
   {
    "sec": "cd",
@@ -130,11 +130,14 @@
    "art": "ArtScChoice",
    "chunks": [
     [
-     "FIFTY-FOUR percent",
+     "But FIFTY-FOUR",
      {
       "emph": "FIFTY-FOUR",
       "fx": "glitch"
      }
+    ],
+    [
+     "percent still"
     ],
     [
      "picked Michigan,"
@@ -146,7 +149,7 @@
      "they'd enjoy less."
     ]
    ],
-   "text": "FIFTY-FOUR percent picked Michigan, the trip they'd enjoy less."
+   "text": "But FIFTY-FOUR percent still picked Michigan, the trip they'd enjoy less."
   },
   {
    "sec": "cd",

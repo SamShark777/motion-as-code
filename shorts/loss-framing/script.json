@@ -17,19 +17,16 @@
    "art": "ArtLfMiss",
    "chunks": [
     [
-     "Why does"
+     "\"Don't miss out\""
     ],
     [
-     "\"don't miss out\""
+     "sells better"
     ],
     [
-     "feel different"
+     "than \"you"
     ],
     [
-     "from \"you"
-    ],
-    [
-     "could GAIN\"?",
+     "could GAIN.\"",
      {
       "emph": "GAIN",
       "fx": "doodle",
@@ -37,7 +34,7 @@
      }
     ]
    ],
-   "text": "Why does \"don't miss out\" feel different from \"you could GAIN\"?"
+   "text": "\"Don't miss out\" sells better than \"you could GAIN.\""
   },
   {
    "sec": "cd",
@@ -126,10 +123,13 @@
    "art": "ArtLfDie",
    "chunks": [
     [
-     "The exact same"
+     "But the"
     ],
     [
-     "outcome, worded as:"
+     "exact same outcome,"
+    ],
+    [
+     "worded as:"
     ],
     [
      "four hundred"
@@ -143,7 +143,7 @@
      }
     ]
    ],
-   "text": "The exact same outcome, worded as: four hundred people will DIE."
+   "text": "But the exact same outcome, worded as: four hundred people will DIE."
   },
   {
    "sec": "cd",

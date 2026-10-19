@@ -18,10 +18,7 @@
    "art": "ArtBlArms",
    "chunks": [
     [
-     "Can crossed"
-    ],
-    [
-     "ARMS",
+     "Crossed ARMS",
      {
       "emph": "ARMS",
       "fx": "doodle",
@@ -29,13 +26,13 @@
      }
     ],
     [
-     "prove someone"
+     "don't mean"
     ],
     [
-     "is lying?"
+     "they're lying."
     ]
    ],
-   "text": "Can crossed ARMS prove someone is lying?"
+   "text": "Crossed ARMS don't mean they're lying."
   },
   {
    "sec": "cd",
@@ -146,13 +143,10 @@
    "art": "ArtBlCoin",
    "chunks": [
     [
-     "A coin flip"
+     "But a coin flip"
     ],
     [
-     "gets"
-    ],
-    [
-     "FIFTY.",
+     "gets FIFTY.",
      {
       "emph": "FIFTY",
       "fx": "glitch"
@@ -165,7 +159,7 @@
      "any better."
     ]
    ],
-   "text": "A coin flip gets FIFTY. That's barely any better."
+   "text": "But a coin flip gets FIFTY. That's barely any better."
   },
   {
    "sec": "cd",
@@ -246,10 +240,19 @@
    "art": "ArtBlMyths",
    "chunks": [
     [
-     "Follow for"
+     "Save this"
     ],
     [
-     "more"
+     "for the next"
+    ],
+    [
+     "\"they're lying\""
+    ],
+    [
+     "moment, and follow"
+    ],
+    [
+     "for more"
     ],
     [
      "MYTHS",
@@ -260,19 +263,10 @@
      }
     ],
     [
-     "that sound smart"
-    ],
-    [
-     "but fall apart"
-    ],
-    [
-     "when scientists"
-    ],
-    [
-     "test them."
+     "that fall apart."
     ]
    ],
-   "text": "Follow for more MYTHS that sound smart but fall apart when scientists test them."
+   "text": "Save this for the next \"they're lying\" moment, and follow for more MYTHS that fall apart."
   }
  ],
  "voice": {

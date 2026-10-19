@@ -18,13 +18,10 @@
    "art": "ArtSoLine",
    "chunks": [
     [
-     "Does a long"
+     "A long line"
     ],
     [
-     "line"
-    ],
-    [
-     "PROVE",
+     "doesn't PROVE",
      {
       "emph": "PROVE",
       "fx": "doodle",
@@ -35,10 +32,10 @@
      "the food"
     ],
     [
-     "is better?"
+     "is better."
     ]
    ],
-   "text": "Does a long line PROVE the food is better?"
+   "text": "A long line doesn't PROVE the food is better."
   },
   {
    "sec": "cd",

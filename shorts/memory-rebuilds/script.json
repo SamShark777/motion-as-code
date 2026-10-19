@@ -17,27 +17,27 @@
    "art": "ArtMrHonest",
    "chunks": [
     [
-     "Can two"
+     "Two honest"
     ],
     [
-     "honest people"
+     "people,"
     ],
     [
-     "remember the"
+     "one crash,"
     ],
     [
-     "same event"
-    ],
-    [
-     "DIFFERENTLY?",
+     "two DIFFERENT",
      {
-      "emph": "DIFFERENTLY",
+      "emph": "DIFFERENT",
       "fx": "doodle",
       "doodle": "🤔"
      }
+    ],
+    [
+     "memories."
     ]
    ],
-   "text": "Can two honest people remember the same event DIFFERENTLY?"
+   "text": "Two honest people, one crash, two DIFFERENT memories."
   },
   {
    "sec": "cd",
@@ -138,7 +138,7 @@
    "art": "ArtMrGlass",
    "chunks": [
     [
-     "A week later:"
+     "But a week later:"
     ],
     [
      "did you see"
@@ -155,7 +155,7 @@
      "There was none."
     ]
    ],
-   "text": "A week later: did you see broken GLASS? There was none."
+   "text": "But a week later: did you see broken GLASS? There was none."
   },
   {
    "sec": "cd",
