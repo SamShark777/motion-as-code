@@ -29,7 +29,15 @@
 
   function hash(str) { let h = 2166136261; for (const c of String(str)) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
 
+  // The fixed cast Shivam approved (2026-10-18); Shorts cycle through it in posting order
+  // (design_build sets script.cover_index from the post date + slot).
+  const CAST = [{"skin": 2, "hairColor": "#C2185B", "hair": "short", "shirt": ["#EA43E8", "#B32DB1"], "accent": "#FFFFFF", "outfit": "hoodie", "glasses": false}, {"skin": 4, "hairColor": "#E2B04A", "hair": "curls", "shirt": ["#1750C9", "#0F3A94"], "accent": "#FFFFFF", "outfit": "hoodie", "glasses": false}, {"skin": 3, "hairColor": "#1E1A1A", "hair": "short", "shirt": ["#2C2C3A", "#1A1A24"], "accent": "#FFFFFF", "outfit": "collar", "glasses": false}, {"skin": 1, "hairColor": "#A0522D", "hair": "buzz", "shirt": ["#F2B705", "#C99400"], "accent": "#FFD23F", "outfit": "tee", "glasses": false}, {"skin": 3, "hairColor": "#1E1A1A", "hair": "spiky", "shirt": ["#18A07A", "#0F7458"], "accent": "#FFFFFF", "outfit": "tee", "glasses": false}, {"skin": 1, "hairColor": "#1E1A1A", "hair": "long", "shirt": ["#18A07A", "#0F7458"], "accent": "#7FFF45", "outfit": "tee", "glasses": true}, {"skin": 2, "hairColor": "#1E1A1A", "hair": "ponytail", "shirt": ["#1750C9", "#0F3A94"], "accent": "#FFFFFF", "outfit": "collar", "glasses": false}, {"skin": 0, "hairColor": "#C2185B", "hair": "ponytail", "shirt": ["#E85D3A", "#B8432A"], "accent": "#FFFFFF", "outfit": "tee", "glasses": true}];
+
   function pickChar(S) {
+    if (S.cover_index != null && !S.cover_char) {
+      const k = CAST[((S.cover_index % CAST.length) + CAST.length) % CAST.length];
+      return { skin: SKINS[k.skin], hairC: k.hairColor, hair: k.hair, shirt: k.shirt, accent: k.accent, outfit: k.outfit, glasses: k.glasses };
+    }
     const h = hash(S.slug || (S.post && S.post.title) || 'x');
     const pick = (arr, k) => arr[(h >>> k) % arr.length];
     const c = { skin: pick(SKINS, 0), hairC: pick(HAIRC, 3), hair: pick(HAIRS, 7), shirt: pick(SHIRTS, 11),

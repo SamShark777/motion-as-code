@@ -42,6 +42,13 @@ def main():
         if not ln.get("say"):
             ln["say"] = re.sub(r"\b([A-Z]{2,})\b", lambda m: m.group(1).capitalize() if m.group(1) not in ("I",) else m.group(1), ln["text"])
         ln["sec"] = "cd"
+    # cover character: cycle through the cast in posting order (3 slots a day), from the CI matrix date/slot
+    import datetime as _dt, os as _os
+    _d, _slot = _os.environ.get("COVER_DATE"), _os.environ.get("COVER_SLOT")
+    if _d and _slot and S.get("cover_index") is None:
+        _slots = [x.strip() for x in (_os.environ.get("SLOTS") or "09:00,14:00,19:00").split(",") if x.strip()]
+        _k = _slots.index(_slot) if _slot in _slots else 0
+        S["cover_index"] = _dt.date.fromisoformat(_d).toordinal() * len(_slots) + _k
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "script.json").write_text(json.dumps(S, ensure_ascii=False))
     run(sys.executable, str(ROOT / "analysis" / "tts_vo.py"))
