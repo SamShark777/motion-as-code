@@ -3,7 +3,10 @@
  "no": 66,
  "format": "story",
  "look": "story",
- "title": ["Social", "Loafing"],
+ "title": [
+  "Social",
+  "Loafing"
+ ],
  "credit": "Latané, Williams & Harkins · 1979",
  "handle": "@aroundthestrangeai",
  "style": {
@@ -16,35 +19,241 @@
   "head": "Rubik",
   "body": "Rubik",
   "headSize": 96,
-  "palette": {"ink": "#14213D", "accent": "#FF48B0", "accentDark": "#C42A86", "hot": "#FF48B0", "cool": "#7FC4EA",
-              "deep": "#0078BF", "pop": "#FFE45C", "soft": "#BFDDF0", "paper": "#F4EEE2", "skin": "#FFD4C4",
-              "skinShade": "#F2A3B8", "hair": "#14213D"}
+  "palette": {
+   "ink": "#14213D",
+   "accent": "#FF48B0",
+   "accentDark": "#C42A86",
+   "hot": "#FF48B0",
+   "cool": "#7FC4EA",
+   "deep": "#0078BF",
+   "pop": "#FFE45C",
+   "soft": "#BFDDF0",
+   "paper": "#F4EEE2",
+   "skin": "#FFD4C4",
+   "skinShade": "#F2A3B8",
+   "hair": "#14213D"
+  }
  },
  "lines": [
-  {"art": "SceneHook", "text": "Group project. Five names on the cover. So who actually did the work?",
-   "headline": "Five names. *One worker?*", "sfx": [["whoosh", -0.05, 0.3], ["pop", 0.9, 0.3], ["pop", 2.9, 0.34]]},
-  {"art": "SceneRope", "text": "Put one person on a rope, and they pull hard. Add more people, and each one quietly pulls less.",
-   "headline": "More hands, ==less pull.==", "sfx": [["swipe", -0.05, 0.3], ["whoosh", 2.6, 0.26], ["whoosh", 3.2, 0.26], ["whoosh", 3.8, 0.26], ["whoosh", 4.4, 0.26], ["airy", 4.9, 0.22]]},
-  {"art": "SceneStudy", "text": "In 1979, Bibb Latané, Kipling Williams and Stephen Harkins had students shout and clap as loud as they could, alone or in groups.",
+  {
+   "art": "SceneHook",
+   "text": "Group project. Five names on the cover. So who actually did the work?",
+   "headline": "Five names. *One worker?*",
+   "sfx": [
+    [
+     "whoosh",
+     -0.05,
+     0.3
+    ],
+    [
+     "pop",
+     0.9,
+     0.3
+    ],
+    [
+     "pop",
+     2.9,
+     0.34
+    ]
+   ]
+  },
+  {
+   "art": "SceneRope",
+   "text": "Put one person on a rope, and they pull hard. Add more people, and each one quietly pulls less.",
+   "headline": "More hands, ==less pull.==",
+   "sfx": [
+    [
+     "swipe",
+     -0.05,
+     0.3
+    ],
+    [
+     "whoosh",
+     2.6,
+     0.26
+    ],
+    [
+     "whoosh",
+     3.2,
+     0.26
+    ],
+    [
+     "whoosh",
+     3.8,
+     0.26
+    ],
+    [
+     "whoosh",
+     4.4,
+     0.26
+    ],
+    [
+     "airy",
+     4.9,
+     0.22
+    ]
+   ]
+  },
+  {
+   "art": "SceneStudy",
+   "text": "In 1979, Bibb Latané, Kipling Williams and Stephen Harkins had students shout and clap as loud as they could, alone or in groups.",
    "say": "In 1979, Bibb Lah-tah-nay, Kipling Williams and Stephen Harkins had students shout and clap as loud as they could, alone or in groups.",
-   "headline": "*Latané, Williams & Harkins,* 1979", "sfx": [["page-turn", 0.0, 0.3], ["pop", 3.4, 0.28], ["pop", 4.0, 0.28]]},
-  {"art": "SceneStat", "text": "In pairs, each person made only seventy-one percent of their solo noise.",
-   "headline": "Noise ==per person.==", "sfx": [["swipe", -0.05, 0.3], ["rising", 0.6, 0.2]]},
-  {"art": "SceneStat", "text": "In groups of six? Just forty percent.",
-   "sfx": [["rising", 0.3, 0.2], ["airy", 1.6, 0.22]]},
-  {"art": "SceneWhy", "text": "Even blindfolded, when they only believed others were shouting along, they eased off.",
-   "headline": "Effort *hides in a crowd.*", "sfx": [["whoosh", -0.05, 0.3], ["airy", 2.6, 0.22]]},
-  {"art": "SceneWhy", "text": "When nobody can tell who did what, effort quietly disappears.",
-   "sfx": [["airy", 1.2, 0.2], ["settle", 2.6, 0.26]]},
-  {"art": "SceneTakeaway", "text": "So split the work into named jobs. When each part is visible, everyone pulls.",
-   "headline": "Make each part ==visible.==", "sfx": [["swipe", -0.05, 0.3], ["tick", 1.6, 0.3], ["tick", 2.0, 0.3], ["tick", 2.4, 0.3], ["chime-bright", 3.8, 0.24]]},
-  {"art": "SceneTakeaway", "text": "Send this to your group chat. You know who it's for.",
-   "sfx": [["notification", 0.2, 0.28], ["wood-tap", 1.6, 0.32], ["wood-tap", 2.1, 0.3], ["wood-tap", 2.6, 0.3]]}
+   "headline": "*Latané, Williams & Harkins,* 1979",
+   "sfx": [
+    [
+     "page-turn",
+     0.0,
+     0.3
+    ],
+    [
+     "pop",
+     3.4,
+     0.28
+    ],
+    [
+     "pop",
+     4.0,
+     0.28
+    ]
+   ]
+  },
+  {
+   "art": "SceneStat",
+   "text": "In pairs, each person made only seventy-one percent of their solo noise.",
+   "headline": "Noise ==per person.==",
+   "sfx": [
+    [
+     "swipe",
+     -0.05,
+     0.3
+    ],
+    [
+     "rising",
+     0.6,
+     0.2
+    ]
+   ]
+  },
+  {
+   "art": "SceneStat",
+   "text": "In groups of six? Just forty percent.",
+   "sfx": [
+    [
+     "rising",
+     0.3,
+     0.2
+    ],
+    [
+     "airy",
+     1.6,
+     0.22
+    ]
+   ]
+  },
+  {
+   "art": "SceneWhy",
+   "text": "Even blindfolded, when they only believed others were shouting along, they eased off.",
+   "headline": "Effort *hides in a crowd.*",
+   "sfx": [
+    [
+     "whoosh",
+     -0.05,
+     0.3
+    ],
+    [
+     "airy",
+     2.6,
+     0.22
+    ]
+   ]
+  },
+  {
+   "art": "SceneWhy",
+   "text": "When nobody can tell who did what, effort quietly disappears.",
+   "sfx": [
+    [
+     "airy",
+     1.2,
+     0.2
+    ],
+    [
+     "settle",
+     2.6,
+     0.26
+    ]
+   ]
+  },
+  {
+   "art": "SceneTakeaway",
+   "text": "So split the work into named jobs. When each part is visible, everyone pulls.",
+   "headline": "Make each part ==visible.==",
+   "sfx": [
+    [
+     "swipe",
+     -0.05,
+     0.3
+    ],
+    [
+     "tick",
+     1.6,
+     0.3
+    ],
+    [
+     "tick",
+     2.0,
+     0.3
+    ],
+    [
+     "tick",
+     2.4,
+     0.3
+    ],
+    [
+     "chime-bright",
+     3.8,
+     0.24
+    ]
+   ]
+  },
+  {
+   "art": "SceneTakeaway",
+   "text": "Send this to your group chat. You know who it's for.",
+   "sfx": [
+    [
+     "notification",
+     0.2,
+     0.28
+    ],
+    [
+     "wood-tap",
+     1.6,
+     0.32
+    ],
+    [
+     "wood-tap",
+     2.1,
+     0.3
+    ],
+    [
+     "wood-tap",
+     2.6,
+     0.3
+    ]
+   ]
+  }
  ],
  "auto_sfx": false,
  "post": {
   "title": "Why Group Projects Always Have One Person Doing Everything #shorts",
   "description": "Social loafing: in 1979 Bibb Latané, Kipling Williams and Stephen Harkins had students shout and clap as loudly as they could, alone or in groups. In pairs each person produced 71% of their solo noise; in groups of six, just 40%. Even blindfolded people who only believed others were shouting with them eased off. Make each person's part visible and identifiable. Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: The causes and consequences of social loafing. Journal of Personality and Social Psychology, 37(6), 822-832. #psychology #shorts #socialloafing #groupwork",
-  "tags": ["social loafing", "psychology", "group projects", "teamwork", "social psychology"]
- }
+  "tags": [
+   "social loafing",
+   "psychology",
+   "group projects",
+   "teamwork",
+   "social psychology"
+  ]
+ },
+ "thumb_mood": "smug",
+ "music_vibe": "playful"
 }

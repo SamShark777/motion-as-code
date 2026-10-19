@@ -3,7 +3,10 @@
  "no": 21,
  "format": "story",
  "look": "story",
- "title": ["Stroop", "Effect"],
+ "title": [
+  "Stroop",
+  "Effect"
+ ],
  "credit": "Stroop · 1935",
  "handle": "@aroundthestrangeai",
  "style": {
@@ -12,38 +15,243 @@
   "head": "Barlow Condensed",
   "body": "Barlow",
   "headSize": 100,
-  "palette": {"ink": "#210B3D", "accent": "#7624CE", "accentDark": "#4F1691", "hot": "#EA43E8", "cool": "#59EAF3",
-              "deep": "#1750C9", "pop": "#7FFF45", "soft": "#E8C7FF", "paper": "#FFFFFF", "skin": "#F3D6FB",
-              "skinShade": "#C995EC", "hair": "#2B1052"}
+  "palette": {
+   "ink": "#210B3D",
+   "accent": "#7624CE",
+   "accentDark": "#4F1691",
+   "hot": "#EA43E8",
+   "cool": "#59EAF3",
+   "deep": "#1750C9",
+   "pop": "#7FFF45",
+   "soft": "#E8C7FF",
+   "paper": "#FFFFFF",
+   "skin": "#F3D6FB",
+   "skinShade": "#C995EC",
+   "hair": "#2B1052"
+  }
  },
  "lines": [
-  {"art": "SceneHook", "text": "Say the color of this word. Not the word. The color.",
-   "headline": "Say the ink color, *not the word.*", "sfx": [["whoosh", -0.05, 0.3], ["pop", 0.25, 0.4]]},
-  {"art": "SceneHook", "text": "Feel that tiny stall?", "pause_after": 0.6,
-   "sfx": [["lightning", 0.0, 0.3]]},
-  {"art": "SceneTry", "text": "Try these. Out loud. Fast.",
-   "headline": "Out loud. ==Fast.==", "sfx": [["swipe", -0.05, 0.3], ["pop", 0.3, 0.36], ["pop", 0.75, 0.36], ["pop", 1.2, 0.36], ["tick", 1.6, 0.3], ["tick", 2.1, 0.3], ["tick", 2.6, 0.3]]},
-  {"art": "SceneStudy", "text": "In 1935, psychologist John Ridley Stroop timed a hundred college students doing exactly this.",
-   "headline": "*Stroop,* 1935", "sfx": [["page-turn", 0.0, 0.3], ["card-slide", 0.9, 0.2], ["card-slide", 1.6, 0.2]]},
-  {"art": "SceneStat", "text": "Naming the colors of plain squares took about sixty-three seconds.",
-   "headline": "The clash ==costs time.==", "sfx": [["swipe", -0.05, 0.3], ["rising", 0.6, 0.2]]},
-  {"art": "SceneStat", "text": "When the ink fought the word, it took a hundred and ten. About seventy-four percent longer.",
-   "sfx": [["rising", 0.4, 0.2], ["chime-bright", 3.3, 0.28]]},
-  {"art": "SceneWhy", "text": "Reading is so practiced, it happens automatically.",
-   "headline": "Reading *wins the race.*", "sfx": [["whoosh", -0.05, 0.32], ["airy", 0.5, 0.2]]},
-  {"art": "SceneWhy", "text": "Your brain has to brake that habit before it can answer.",
-   "sfx": [["settle", 0.9, 0.36], ["chime", 2.2, 0.22]]},
-  {"art": "SceneTakeaway", "text": "That's the Stroop effect.",
-   "headline": "Strong habit? ==Slow down.==", "sfx": [["swipe", -0.05, 0.3]]},
-  {"art": "SceneTakeaway", "text": "When a strong habit shouts the wrong answer, pause for one beat, and check.",
-   "sfx": [["toggle", 2.4, 0.36], ["chime-bright", 3.4, 0.24]]},
-  {"art": "SceneTakeaway", "text": "Save this, and try it on a friend.",
-   "sfx": [["wood-tap", 0.3, 0.34], ["wood-tap", 0.8, 0.3], ["wood-tap", 1.3, 0.3]]}
+  {
+   "art": "SceneHook",
+   "text": "Say the color of this word. Not the word. The color.",
+   "headline": "Say the ink color, *not the word.*",
+   "sfx": [
+    [
+     "whoosh",
+     -0.05,
+     0.3
+    ],
+    [
+     "pop",
+     0.25,
+     0.4
+    ]
+   ]
+  },
+  {
+   "art": "SceneHook",
+   "text": "Feel that tiny stall?",
+   "pause_after": 0.6,
+   "sfx": [
+    [
+     "lightning",
+     0.0,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneTry",
+   "text": "Try these. Out loud. Fast.",
+   "headline": "Out loud. ==Fast.==",
+   "sfx": [
+    [
+     "swipe",
+     -0.05,
+     0.3
+    ],
+    [
+     "pop",
+     0.3,
+     0.36
+    ],
+    [
+     "pop",
+     0.75,
+     0.36
+    ],
+    [
+     "pop",
+     1.2,
+     0.36
+    ],
+    [
+     "tick",
+     1.6,
+     0.3
+    ],
+    [
+     "tick",
+     2.1,
+     0.3
+    ],
+    [
+     "tick",
+     2.6,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneStudy",
+   "text": "In 1935, psychologist John Ridley Stroop timed a hundred college students doing exactly this.",
+   "headline": "*Stroop,* 1935",
+   "sfx": [
+    [
+     "page-turn",
+     0.0,
+     0.3
+    ],
+    [
+     "card-slide",
+     0.9,
+     0.2
+    ],
+    [
+     "card-slide",
+     1.6,
+     0.2
+    ]
+   ]
+  },
+  {
+   "art": "SceneStat",
+   "text": "Naming the colors of plain squares took about sixty-three seconds.",
+   "headline": "The clash ==costs time.==",
+   "sfx": [
+    [
+     "swipe",
+     -0.05,
+     0.3
+    ],
+    [
+     "rising",
+     0.6,
+     0.2
+    ]
+   ]
+  },
+  {
+   "art": "SceneStat",
+   "text": "When the ink fought the word, it took a hundred and ten. About seventy-four percent longer.",
+   "sfx": [
+    [
+     "rising",
+     0.4,
+     0.2
+    ],
+    [
+     "chime-bright",
+     3.3,
+     0.28
+    ]
+   ]
+  },
+  {
+   "art": "SceneWhy",
+   "text": "Reading is so practiced, it happens automatically.",
+   "headline": "Reading *wins the race.*",
+   "sfx": [
+    [
+     "whoosh",
+     -0.05,
+     0.32
+    ],
+    [
+     "airy",
+     0.5,
+     0.2
+    ]
+   ]
+  },
+  {
+   "art": "SceneWhy",
+   "text": "Your brain has to brake that habit before it can answer.",
+   "sfx": [
+    [
+     "settle",
+     0.9,
+     0.36
+    ],
+    [
+     "chime",
+     2.2,
+     0.22
+    ]
+   ]
+  },
+  {
+   "art": "SceneTakeaway",
+   "text": "That's the Stroop effect.",
+   "headline": "Strong habit? ==Slow down.==",
+   "sfx": [
+    [
+     "swipe",
+     -0.05,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneTakeaway",
+   "text": "When a strong habit shouts the wrong answer, pause for one beat, and check.",
+   "sfx": [
+    [
+     "toggle",
+     2.4,
+     0.36
+    ],
+    [
+     "chime-bright",
+     3.4,
+     0.24
+    ]
+   ]
+  },
+  {
+   "art": "SceneTakeaway",
+   "text": "Save this, and try it on a friend.",
+   "sfx": [
+    [
+     "wood-tap",
+     0.3,
+     0.34
+    ],
+    [
+     "wood-tap",
+     0.8,
+     0.3
+    ],
+    [
+     "wood-tap",
+     1.3,
+     0.3
+    ]
+   ]
+  }
  ],
  "auto_sfx": false,
  "post": {
   "title": "Say the Color, Not the Word (Your Brain Will Stall) #shorts",
   "description": "The Stroop effect: in 1935 J. Ridley Stroop found that naming the ink color of a clashing color word took about 74% longer than naming plain color squares (about 110 s vs 63 s per sheet). Reading is automatic, so your brain has to brake it first. Stroop, J. R. (1935). Studies of interference in serial verbal reactions. Journal of Experimental Psychology, 18, 643-662. #psychology #shorts #brain #stroopeffect",
-  "tags": ["stroop effect", "psychology", "brain", "attention", "habits"]
- }
+  "tags": [
+   "stroop effect",
+   "psychology",
+   "brain",
+   "attention",
+   "habits"
+  ]
+ },
+ "thumb_mood": "shocked",
+ "music_vibe": "playful"
 }
