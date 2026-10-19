@@ -314,44 +314,113 @@ def music_fixed() -> np.ndarray:
 
 
 
-def music(total: float) -> np.ndarray:
-    """The One More bed stretched to any length: F-major pads changing every 4 s with a sparse keys motif;
-    thins out over the last ~14 s, settles on F for the last ~7 s and fades out."""
+# Per-video variation (Shivam 2026-10-19: one identical bed on every Short can read as repetitive content).
+# Same calm family, but each video gets its own key, chord progression, tempo, lead instrument, motif,
+# pad colour and optional soft pulse, all chosen from a seed (the slug).
+PROGS = {  # chord roots as scale degrees in a major key, with 7th/9th colour
+    "lift":   [[0, 4, 7, 11, 14], [9, 12, 16, 19], [5, 9, 12, 16], [7, 11, 14, 17]],      # I vi IV V
+    "drift":  [[0, 4, 7, 11], [5, 9, 12, 16], [9, 12, 16, 19], [7, 11, 14, 17]],         # I IV vi V
+    "night":  [[9, 12, 16, 19], [5, 9, 12, 16], [0, 4, 7, 11], [7, 11, 14, 17]],         # vi IV I V
+    "float":  [[0, 4, 7, 11, 14], [2, 5, 9, 12], [5, 9, 12, 16], [0, 4, 7, 11]],         # I ii IV I
+    "dusk":   [[9, 12, 16, 19], [2, 5, 9, 12], [7, 11, 14, 17], [0, 4, 7, 11]],          # vi ii V I
+    "glide":  [[0, 4, 7, 11], [4, 7, 11, 14], [5, 9, 12, 16], [5, 8, 12, 15]],           # I iii IV iv
+}
+MOTIFS = [[12, 9, 7, 9, 12, 14, 12, 7], [7, 9, 12, 14, 12, 9], [16, 14, 12, 9, 7, 9], [12, 14, 16, 19, 16, 14, 12, 9],
+          [7, 12, 9, 14, 12, 16], [19, 16, 14, 12, 14, 16]]
+SCALE = [0, 2, 4, 5, 7, 9, 11]
+
+
+def _lead(kind, f, d):
+    m = int(d * SR)
+    if kind == "bell":
+        return tone(f, d, ((1, 1), (2.76, 0.25), (5.4, 0.07))) * env_ad(m, 0.003, 1.3, 4)
+    if kind == "marimba":
+        return tone(f, d, ((1, 1), (4, 0.18), (9.2, 0.04))) * env_ad(m, 0.002, 0.45, 5)
+    if kind == "glass":
+        return tone(f, d, ((1, 1), (2, 0.08), (3, 0.04))) * env_ad(m, 0.05, 1.4, 3) * (1 + 0.15 * np.sin(2 * np.pi * 5 * np.arange(m) / SR))
+    return tone(f, d, ((1, 1), (2, 0.25), (3, 0.06))) * env_ad(m, 0.005, 1.1, 4)  # e-piano pluck
+
+
+def music(total: float, seed=None) -> np.ndarray:
+    """Calm pad bed of any length. seed=None reproduces the original One More bed; any other seed (e.g. the
+    slug) picks a different key, progression, tempo, lead, motif and texture. Thins over the last ~14 s,
+    settles on the tonic for the last ~7 s and fades out."""
     n = int(total * SR)
     out = np.zeros(n)
-    F, Am, Dm, Bb, C, Gm = ([41, 53, 57, 60, 64], [45, 52, 57, 60, 64], [38, 50, 57, 60, 65],
-                            [46, 53, 57, 62, 65], [48, 52, 55, 60, 67], [43, 50, 58, 62, 65])
-    prog = [F, Am, Dm, Bb, F, Am, Gm, C]
-    thin, settle = max(4.0, total - 14.0), max(6.0, total - 7.0)
+    if seed is None:
+        key, prog, bar, lead, motif, bright, pulse, lp = 41, "lift", 4.0, "epiano", MOTIFS[0], 1.0, False, 2400
+        prog_chords = [[41, 53, 57, 60, 64], [45, 52, 57, 60, 64], [38, 50, 57, 60, 65], [46, 53, 57, 62, 65],
+                       [41, 53, 57, 60, 64], [45, 52, 57, 60, 64], [43, 50, 58, 62, 65], [48, 52, 55, 60, 67]]
+    else:
+        r = np.random.default_rng(abs(hash_seed(seed)))
+        key = int(r.choice([36, 37, 38, 39, 40, 41, 42, 43]))          # C .. G (low root)
+        prog = str(r.choice(list(PROGS)))
+        bar = float(r.choice([3.2, 3.6, 4.0, 4.4, 5.0]))
+        lead = str(r.choice(["epiano", "bell", "marimba", "glass"]))
+        motif = MOTIFS[int(r.integers(len(MOTIFS)))]
+        bright = float(r.uniform(0.6, 1.2))
+        pulse = bool(r.random() < 0.5)
+        lp = float(r.choice([1800, 2200, 2600, 3000]))
+        prog_chords = [[key + 12 + d if j else key + d for j, d in enumerate(ch)] for ch in PROGS[prog]]
+    thin, settle = max(bar, total - 14.0), max(6.0, total - 7.0)
     chords, t, i = [], 0.0, 0
     while t < thin:
-        chords.append((t, 4.6, prog[i % len(prog)], 1.0))
-        t += 4.0
+        chords.append((t, bar + 0.6, prog_chords[i % len(prog_chords)], bright))
+        t += bar
         i += 1
-    chords.append((thin, settle - thin + 0.6, [46, 53, 57], 0.6))
-    chords.append((settle, total - settle, [41, 53, 57, 60], 0.4))
-    for start, dur, notes, bright in chords:
+    tonic = [key, key + 12, key + 16, key + 19]
+    chords.append((thin, settle - thin + 0.6, tonic[:3], 0.6 * bright))
+    chords.append((settle, total - settle, tonic, 0.4 * bright))
+    for start, dur, notes, br in chords:
         dur = min(dur, total - start)
         if dur <= 0.05:
             continue
         m = int(dur * SR)
         attack = 0.9 if start < settle else 1.4
         env = np.clip(np.arange(m) / (attack * SR), 0, 1) * np.clip((m - np.arange(m)) / (0.9 * SR), 0, 1)
-        voice = sum(pad_voice(midi(p), dur, bright) / (1 + 0.15 * k) for k, p in enumerate(notes))
-        s = int(start * SR)
-        out[s:s + m] += voice[: n - s] * env[: n - s]
-    out = onepole_lp(out, 2400)
-    motif = [72, 69, 67, 69, 72, 74, 72, 67]
+        voice = sum(pad_voice(midi(p), dur, br) / (1 + 0.15 * k) for k, p in enumerate(notes))
+        s0 = int(start * SR)
+        out[s0:s0 + m] += voice[: n - s0] * env[: n - s0]
+    out = onepole_lp(out, lp)
+    # lead motif (in key), every half bar
+    step = bar / 2
     k = 0
-    while 2.0 + k * 2.0 < thin:
-        at = 2.0 + k * 2.0
+    while 2.0 + k * step < thin:
+        at = 2.0 + k * step
+        deg = motif[k % len(motif)]
+        f = midi(key + 24 + deg)
         d = 1.6
-        m = int(d * SR)
-        pluck = tone(midi(motif[k % len(motif)]), d, ((1, 1), (2, 0.25), (3, 0.06))) * env_ad(m, 0.005, 1.1, 4)
-        s = int(at * SR)
-        e = min(n, s + m)
-        out[s:e] += 0.22 * pluck[: e - s]
+        pl = _lead(lead, f, d)
+        s0 = int(at * SR)
+        e = min(n, s0 + len(pl))
+        out[s0:e] += 0.22 * pl[: e - s0]
         k += 1
+    if pulse:  # very soft low heartbeat on each bar
+        k = 0
+        while k * bar < thin:
+            s0 = int(k * bar * SR)
+            d = 0.35
+            m = int(d * SR)
+            th = 0.35 * tone(np.geomspace(midi(key + 12), midi(key), m), d) * env_ad(m, 0.004, 0.25, 5)
+            e = min(n, s0 + m)
+            out[s0:e] += th[: e - s0]
+            k += 1
     tt = np.arange(n) / SR
     g = np.interp(tt, [0, 1.5, thin, settle, max(settle + 0.1, total - 2.5), total], [0, 1, 1, 0.7, 0.7, 0])
     return norm(out * g, 0.8)
+
+
+def hash_seed(x) -> int:
+    h = 2166136261
+    for c in str(x):
+        h = ((h ^ ord(c)) * 16777619) & 0xFFFFFFFF
+    return h
+
+
+def describe(seed) -> str:
+    r = np.random.default_rng(abs(hash_seed(seed)))
+    names = ["C", "C#", "D", "D#", "E", "F", "F#", "G"]
+    key = names[int(r.choice([36, 37, 38, 39, 40, 41, 42, 43])) - 36]
+    prog = str(r.choice(list(PROGS))); bar = float(r.choice([3.2, 3.6, 4.0, 4.4, 5.0]))
+    lead = str(r.choice(["epiano", "bell", "marimba", "glass"]))
+    return f"{key} major, {prog}, {60 * 4 / bar:.0f} bpm, {lead}"

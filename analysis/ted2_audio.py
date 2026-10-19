@@ -67,15 +67,19 @@ def main():
                 snd, vol = FX_SOUND.get(fx, ("pop", 0.34))
                 cues.append((TM["chunks"][i][j] + 0.05, snd, vol))
     sfx = np.zeros(n, np.float32)
+    rate = 0.94 + (L.hash_seed(str(S.get("slug")) + "sfx") % 1000) / 1000 * 0.12  # per-video pitch of the effects (0.94-1.06)
     for k, (at, snd, vol) in enumerate(sorted(cues)):
         x = L.get(snd) * vol
+        x = np.interp(np.arange(0, len(x) - 1, rate), np.arange(len(x)), x).astype(np.float32)
         s = int(at * SR)
         if s >= n:
             continue
         e = min(n, s + len(x))
         sfx[s:e] += x[: e - s]
     # bed, ducked under each narration line
-    m = L.music(total).astype(np.float32)[:n]
+    seed = S.get("music_seed") or S.get("slug") or Path(sys.argv[1]).parent.name
+    m = L.music(total, seed).astype(np.float32)[:n]
+    print("music:", L.describe(seed))
     m = np.pad(m, (0, n - len(m)))
     spans = [(ln["start"], ln["end"]) for ln in json.loads((ROOT / "data" / "lyrics.json").read_text())["lines"]]
     t = np.arange(n) / SR
