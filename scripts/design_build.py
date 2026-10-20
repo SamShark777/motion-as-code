@@ -126,6 +126,14 @@ def main():
     mp4 = d / f"{Path(a.slug).name}.mp4"
     run("ffmpeg", "-v", "error", "-y", "-i", str(raw), "-i", str(ROOT / "out" / "mix.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "libx264",
         "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(mp4))
+    # same picture, different music per platform (Instagram/TikTok each get their own bed so no two posts share audio)
+    import os as _os2
+    for variant in ("instagram", "tiktok"):
+        mix_v = ROOT / "out" / f"mix.{variant}.wav"
+        env = dict(_os2.environ, MUSIC_VARIANT=variant, MIX_OUT=str(mix_v))
+        run(sys.executable, str(ROOT / "analysis" / "ted2_audio.py"), str(ROOT / "data" / "script.json"), str(ROOT / "out" / "timing.json"), env=env)
+        run("ffmpeg", "-v", "error", "-y", "-i", str(mp4), "-i", str(mix_v), "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+            "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(d / f"{Path(a.slug).name}.{variant}.mp4"))
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp4)], capture_output=True, text=True).stdout)
     from PIL import Image
     W, H = (480, 270) if land else (270, 480)

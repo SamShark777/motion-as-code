@@ -120,6 +120,8 @@ def check(slug):
         if len(set(sig)) < 2:
             meta["problems"].append("video looks frozen")
         shutil.copy(mp4, out / mp4.name)
+        for v in d.glob(f"{slug}.*.mp4"):  # per-platform music variants
+            shutil.copy(v, out / v.name)
         if (d / "preview.jpg").exists():
             shutil.copy(d / "preview.jpg", out / "preview.jpg")
     meta["ok"] = not meta["problems"]
@@ -149,6 +151,8 @@ def host(dist, batch):
             dd = tmp / "new" / b["date"]
             dd.mkdir(parents=True, exist_ok=True)
             shutil.copy(src / f"{b['slug']}.mp4", dd / f"{b['slug']}.mp4")
+            for v in src.glob(f"{b['slug']}.*.mp4"):
+                shutil.copy(v, dd / v.name)
             if (src / "preview.jpg").exists():
                 shutil.copy(src / "preview.jpg", dd / f"{b['slug']}.jpg")
     (tmp / "new" / "README.md").write_text("Hosting for the scheduled Shorts (Buffer fetches the videos from here). Rewritten daily; keeps the last few days.\n")
@@ -267,7 +271,15 @@ def publish(dist):
             continue
         cover = S.get("format") in ("cdesign", "story") and S.get("orientation") != "landscape" and S.get("cover") is not False
         thumb_ms = int(max(0.0, float(meta["duration"]) - 0.25) * 1000) if cover else 1500  # title cover sits in the last 0.55 s
+        urls = {}
+        for svc in ("instagram", "tiktok"):
+            if (src / f"{b['slug']}.{svc}.mp4").exists():
+                u = raw(b["date"], f"{b['slug']}.{svc}.mp4")
+                if wait_url(u):
+                    urls[svc] = u
+        os.environ["BUFFER_URLS"] = json.dumps(urls)
         res = buffer("post", b["slug"], b["due"], vurl, str(thumb_ms))
+        os.environ.pop("BUFFER_URLS", None)
         ok = {s: i for s, i in res.items() if s != "errors"}
         errs = res.get("errors", {})
         if not ok:

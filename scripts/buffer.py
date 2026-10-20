@@ -210,6 +210,7 @@ def main():
     elif cmd == "post":
         slug, due, url = sys.argv[2], sys.argv[3], sys.argv[4]
         thumb_ms = int(sys.argv[5]) if len(sys.argv) > 5 else 1500  # the title-cover frame (end of the video)
+        urls = json.loads(os.environ.get("BUFFER_URLS") or "{}")  # per-platform files (own music each)
         S = json.loads((ROOT / "shorts" / slug / "script.json").read_text())
         post = S["post"]
         _, m = channel_map()
@@ -218,7 +219,7 @@ def main():
             if s not in m:
                 errs[s] = "channel not connected in Buffer"; continue
             try:
-                res[s] = create(m[s]["id"], s, post, url, due, thumb_ms)
+                res[s] = create(m[s]["id"], s, post, urls.get(s, url), due, thumb_ms)
             except Exception as e:
                 errs[s] = str(e)[:300]
         res["errors"] = errs

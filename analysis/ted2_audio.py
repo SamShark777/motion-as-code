@@ -5,7 +5,7 @@ Inputs: audio/voiceover.wav (tts_vo), data/lyrics.json (line spans), the script 
 per-line "sfx": [[sound, offset_s, volume], ...]) and the scene/chunk timing from design_build.
 Levels follow that build: voice peaks at -1 dBFS (~-17.5 LUFS), bed at 0.5, ducked to 0.39 under speech
 (~-24 LUFS), effects 0.25-0.4."""
-import json, sys
+import json, os, sys
 from pathlib import Path
 import numpy as np
 import soundfile as sf
@@ -67,7 +67,7 @@ def main():
                 snd, vol = FX_SOUND.get(fx, ("pop", 0.34))
                 cues.append((TM["chunks"][i][j] + 0.05, snd, vol))
     sfx = np.zeros(n, np.float32)
-    rate = 0.94 + (L.hash_seed(str(S.get("slug")) + "sfx") % 1000) / 1000 * 0.12  # per-video pitch of the effects (0.94-1.06)
+    rate = 0.94 + (L.hash_seed(str(S.get("slug")) + "sfx" + os.environ.get("MUSIC_VARIANT", "")) % 1000) / 1000 * 0.12  # per-video pitch of the effects (0.94-1.06)
     for k, (at, snd, vol) in enumerate(sorted(cues)):
         x = L.get(snd) * vol
         x = np.interp(np.arange(0, len(x) - 1, rate), np.arange(len(x)), x).astype(np.float32)
@@ -77,7 +77,8 @@ def main():
         e = min(n, s + len(x))
         sfx[s:e] += x[: e - s]
     # bed, ducked under each narration line
-    seed = S.get("music_seed") or S.get("slug") or Path(sys.argv[1]).parent.name
+    variant = os.environ.get("MUSIC_VARIANT", "")  # per-platform music (youtube = "", instagram, tiktok)
+    seed = (S.get("music_seed") or S.get("slug") or Path(sys.argv[1]).parent.name) + (":" + variant if variant else "")
     vibe = L.pick_vibe(S)
     m = L.music(total, seed, vibe).astype(np.float32)[:n]
     print("music:", L.describe(seed, vibe))
@@ -95,7 +96,7 @@ def main():
     if peak > 0.89:
         mix *= 0.89 / peak
     (ROOT / "out").mkdir(exist_ok=True)
-    sf.write(str(ROOT / "out" / "mix.wav"), np.stack([mix, mix], 1), SR)
+    sf.write(os.environ.get("MIX_OUT") or str(ROOT / "out" / "mix.wav"), np.stack([mix, mix], 1), SR)
     print(f"ted2 mix: {total:.1f}s, {len(cues)} sound cues")
 
 
