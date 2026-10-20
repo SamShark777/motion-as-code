@@ -1,0 +1,16 @@
+{
+ "no": 85,
+ "slug": "fomo",
+ "date": "2026-10-21",
+ "slot": "09:00",
+ "due": "2026-10-21T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-21/fomo.mp4",
+ "buffer": {
+  "youtube": "6ad7ca15028de2f3133ebe32",
+  "instagram": "6ad7ca15ed28fb758abb6e31",
+  "tiktok": "6ad7ca16c7c690a98f8decce"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 35.3
+}

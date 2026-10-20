@@ -1,0 +1,16 @@
+{
+ "no": 5,
+ "slug": "sunk-cost",
+ "date": "2026-10-21",
+ "slot": "19:00",
+ "due": "2026-10-22T02:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-21/sunk-cost.mp4",
+ "buffer": {
+  "youtube": "6ad7ca19ad4f0ba79c527d4e",
+  "instagram": "6ad7ca1a028de2f3133ebf18",
+  "tiktok": "6ad7ca1a028de2f3133ebf46"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "duration": 36.4
+}
