@@ -1,0 +1,250 @@
+{
+ "slug": "frequency-illusion",
+ "no": 28,
+ "format": "cdesign",
+ "title": [
+  "Everywhere?",
+  "Frequency"
+ ],
+ "credit": "Arnold Zwicky · 2005",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtFiWord",
+   "chunks": [
+    [
+     "You learn"
+    ],
+    [
+     "a new word,"
+    ],
+    [
+     "and suddenly"
+    ],
+    [
+     "it's EVERYWHERE.",
+     {
+      "emph": "EVERYWHERE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "You learn a new word, and suddenly it's EVERYWHERE."
+  },
+  {
+   "sec": "cd",
+   "scene": "RedCar",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtFiCars",
+   "chunks": [
+    [
+     "You buy"
+    ],
+    [
+     "a red car."
+    ],
+    [
+     "Now every"
+    ],
+    [
+     "other car"
+    ],
+    [
+     "looks RED.",
+     {
+      "emph": "RED",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "You buy a red car. Now every other car looks RED."
+  },
+  {
+   "sec": "cd",
+   "scene": "Zwicky",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtFiLinguist",
+   "chunks": [
+    [
+     "In 2005,"
+    ],
+    [
+     "linguist"
+    ],
+    [
+     "Arnold Zwicky"
+    ],
+    [
+     "named it"
+    ],
+    [
+     "the frequency"
+    ],
+    [
+     "ILLUSION.",
+     {
+      "emph": "ILLUSION",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ]
+   ],
+   "text": "In 2005, linguist Arnold Zwicky named it the frequency ILLUSION."
+  },
+  {
+   "sec": "cd",
+   "scene": "TwoBugs",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtFiFilter",
+   "chunks": [
+    [
+     "Two glitches"
+    ],
+    [
+     "team up."
+    ],
+    [
+     "SELECTIVE attention",
+     {
+      "emph": "SELECTIVE",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "flags the word,"
+    ],
+    [
+     "then confirmation bias"
+    ],
+    [
+     "counts every hit"
+    ],
+    [
+     "and forgets"
+    ],
+    [
+     "the misses."
+    ]
+   ],
+   "text": "Two glitches team up. SELECTIVE attention flags the word, then confirmation bias counts every hit and forgets the misses."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtFiAlways",
+   "chunks": [
+    [
+     "But nothing"
+    ],
+    [
+     "actually changed."
+    ],
+    [
+     "It was ALWAYS",
+     {
+      "emph": "ALWAYS",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "there."
+    ]
+   ],
+   "text": "But nothing actually changed. It was ALWAYS there."
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtFiBrain",
+   "chunks": [
+    [
+     "You just"
+    ],
+    [
+     "started noticing."
+    ],
+    [
+     "Your brain changed,"
+    ],
+    [
+     "not the"
+    ],
+    [
+     "WORLD.",
+     {
+      "emph": "WORLD",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "You just started noticing. Your brain changed, not the WORLD."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtFiEyes",
+   "chunks": [
+    [
+     "Watch: you'll"
+    ],
+    [
+     "spot this"
+    ],
+    [
+     "all WEEK.",
+     {
+      "emph": "WEEK",
+      "fx": "doodle",
+      "doodle": "👀"
+     }
+    ],
+    [
+     "Comment when"
+    ],
+    [
+     "it happens,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for more"
+    ],
+    [
+     "brain glitches."
+    ]
+   ],
+   "text": "Watch: you'll spot this all WEEK. Comment when it happens, and follow for more brain glitches."
+  }
+ ],
+ "post": {
+  "title": "Why a New Word Suddenly Shows Up Everywhere #shorts",
+  "description": "Linguist Arnold Zwicky named it the frequency illusion (2005): selective attention plus confirmation bias make something you just noticed seem to appear everywhere. Also called the Baader-Meinhof phenomenon. #psychology #shorts #frequencyillusion #baadermeinhof",
+  "tags": [
+   "frequency illusion",
+   "baader-meinhof phenomenon",
+   "selective attention",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why It's Suddenly Everywhere",
+ "thumb_emph": "Everywhere",
+ "thumb_mood": "curious",
+ "music_vibe": "mystery"
+}

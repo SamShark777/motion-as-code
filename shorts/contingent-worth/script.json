@@ -1,0 +1,238 @@
+{
+ "slug": "contingent-worth",
+ "no": 75,
+ "format": "cdesign",
+ "title": [
+  "One Grade",
+  "Worth"
+ ],
+ "credit": "Crocker, Sommers & Luhtanen · 2002",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtCwGrade",
+   "chunks": [
+    [
+     "If one grade"
+    ],
+    [
+     "decides your worth,"
+    ],
+    [
+     "every rejection"
+    ],
+    [
+     "hits"
+    ],
+    [
+     "HARDER.",
+     {
+      "emph": "HARDER",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "If one grade decides your worth, every rejection hits HARDER."
+  },
+  {
+   "sec": "cd",
+   "scene": "GradSchool",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtCwLetters",
+   "chunks": [
+    [
+     "Jennifer Crocker's team"
+    ],
+    [
+     "followed students"
+    ],
+    [
+     "applying to"
+    ],
+    [
+     "GRAD school",
+     {
+      "emph": "GRAD",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "as the letters"
+    ],
+    [
+     "arrived."
+    ]
+   ],
+   "text": "Jennifer Crocker's team followed students applying to GRAD school as the letters arrived."
+  },
+  {
+   "sec": "cd",
+   "scene": "Crash",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtCwCrash",
+   "chunks": [
+    [
+     "The more"
+    ],
+    [
+     "their worth"
+    ],
+    [
+     "rode on grades,"
+    ],
+    [
+     "the more"
+    ],
+    [
+     "self-esteem"
+    ],
+    [
+     "CRASHED",
+     {
+      "emph": "CRASHED",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "on rejection days."
+    ]
+   ],
+   "text": "The more their worth rode on grades, the more self-esteem CRASHED on rejection days."
+  },
+  {
+   "sec": "cd",
+   "scene": "Spike",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtCwCoaster",
+   "chunks": [
+    [
+     "And"
+    ],
+    [
+     "SPIKED",
+     {
+      "emph": "SPIKED",
+      "fx": "pop"
+     }
+    ],
+    [
+     "on acceptance days."
+    ],
+    [
+     "A rollercoaster."
+    ]
+   ],
+   "text": "And SPIKED on acceptance days. A rollercoaster."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtCwDeck",
+   "chunks": [
+    [
+     "But a result"
+    ],
+    [
+     "is one card,"
+    ],
+    [
+     "not the whole"
+    ],
+    [
+     "DECK.",
+     {
+      "emph": "DECK",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "But a result is one card, not the whole DECK."
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtCwStrings",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "CONTINGENT self-worth.",
+     {
+      "emph": "CONTINGENT",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "Psychologists call it CONTINGENT self-worth."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtCwList",
+   "chunks": [
+    [
+     "Write down"
+    ],
+    [
+     "three things"
+    ],
+    [
+     "no grade"
+    ],
+    [
+     "MEASURES.",
+     {
+      "emph": "MEASURES",
+      "fx": "doodle",
+      "doodle": "📝"
+     }
+    ],
+    [
+     "Save this"
+    ],
+    [
+     "for results day,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for more."
+    ]
+   ],
+   "text": "Write down three things no grade MEASURES. Save this for results day, and follow for more."
+  }
+ ],
+ "post": {
+  "title": "When One Grade Decides Your Whole Worth #shorts",
+  "description": "Crocker, Sommers & Luhtanen (2002) followed students applying to graduate school: the more their self-worth depended on academics, the more their self-esteem dropped on rejection days and rose on acceptance days. #psychology #shorts #selfesteem #students",
+  "tags": [
+   "contingent self-worth",
+   "self-esteem",
+   "rejection",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "One Grade ≠ Your Worth",
+ "thumb_emph": "Worth",
+ "thumb_mood": "worried",
+ "music_vibe": "calm"
+}

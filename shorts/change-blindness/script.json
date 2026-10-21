@@ -1,0 +1,212 @@
+{
+ "slug": "change-blindness",
+ "no": 23,
+ "format": "story",
+ "look": "story",
+ "title": [
+  "Change",
+  "Blindness"
+ ],
+ "credit": "Simons & Levin · 1998",
+ "handle": "@aroundthestrangeai",
+ "style": {
+  "stage": "square",
+  "bg": "#8FD3FF",
+  "head": "Fredoka",
+  "body": "Nunito",
+  "headSize": 100,
+  "stageBg": "#BFE7FF",
+  "palette": {
+   "ink": "#1D1D2C",
+   "accent": "#FF6B5B",
+   "accentDark": "#D94A3B",
+   "hot": "#FF6B5B",
+   "cool": "#8FD3FF",
+   "deep": "#1D1D2C",
+   "pop": "#FFD447",
+   "soft": "#FFF4C7",
+   "paper": "#FFFFFF",
+   "skin": "#F7C9A5",
+   "skinShade": "#D99A72",
+   "hair": "#3A2A20"
+  }
+ },
+ "auto_sfx": false,
+ "lines": [
+  {
+   "art": "SceneFlicker",
+   "text": "Half the people in this study didn't notice they were talking to a different person.",
+   "headline": "A *different* person?",
+   "sfx": [
+    [
+     "flip",
+     0.0,
+     0.34
+    ],
+    [
+     "flip",
+     0.9,
+     0.34
+    ],
+    [
+     "flip",
+     1.8,
+     0.34
+    ],
+    [
+     "pop",
+     3.4,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneAsk",
+   "text": "In 1998, Daniel Simons and Daniel Levin had a stranger with a map stop people on campus to ask for directions.",
+   "headline": "Simons & Levin, *1998*",
+   "sfx": [
+    [
+     "page-turn",
+     0.0,
+     0.3
+    ],
+    [
+     "wood-tap",
+     1.8,
+     0.24
+    ],
+    [
+     "wood-tap",
+     2.2,
+     0.24
+    ]
+   ]
+  },
+  {
+   "art": "SceneDoor",
+   "text": "Mid-chat, two workers carried a door right between them.",
+   "headline": "Watch the *door*",
+   "sfx": [
+    [
+     "wood-tap",
+     0.2,
+     0.24
+    ],
+    [
+     "whoosh",
+     1.4,
+     0.36
+    ]
+   ]
+  },
+  {
+   "art": "SceneDoor",
+   "text": "Behind it, the stranger swapped places with someone else.",
+   "sfx": [
+    [
+     "swipe",
+     0.6,
+     0.3
+    ],
+    [
+     "pop",
+     2.0,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneStat",
+   "text": "Of fifteen people, eight kept giving directions to a brand-new person.",
+   "headline": "==8 of 15== missed it",
+   "sfx": [
+    [
+     "rising",
+     0.0,
+     0.24
+    ],
+    [
+     "settle",
+     2.4,
+     0.32
+    ]
+   ]
+  },
+  {
+   "art": "SceneGist",
+   "text": "But that's not stupidity. Your brain doesn't save the whole scene, just the gist: a guy, a map, a question.",
+   "headline": "Your brain saves *the gist*",
+   "sfx": [
+    [
+     "airy",
+     0.0,
+     0.26
+    ],
+    [
+     "pop",
+     3.6,
+     0.3
+    ],
+    [
+     "pop",
+     4.2,
+     0.3
+    ],
+    [
+     "pop",
+     4.8,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneGist",
+   "text": "It's called change blindness.",
+   "headline": "==Change blindness==",
+   "sfx": [
+    [
+     "chime-bright",
+     0.1,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneOutro",
+   "text": "So when details matter, a name, a number, a face, check them twice. And follow to test your eyes again.",
+   "headline": "Would *you* notice?",
+   "sfx": [
+    [
+     "flip",
+     0.5,
+     0.3
+    ],
+    [
+     "flip",
+     1.2,
+     0.3
+    ],
+    [
+     "chime",
+     3.6,
+     0.3
+    ]
+   ]
+  }
+ ],
+ "post": {
+  "title": "Half of People Didn't Notice They Were Talking to Someone New #shorts",
+  "description": "Simons & Levin (1998): a stranger asked pedestrians for directions; two workers carried a door between them and a different person took his place. Only 7 of 15 noticed the swap. The brain keeps the gist, not the details: change blindness. #psychology #shorts #changeblindness #attention",
+  "tags": [
+   "change blindness",
+   "attention",
+   "perception",
+   "door study",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Would You Notice the Swap?",
+ "thumb_emph": "Swap",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful"
+}

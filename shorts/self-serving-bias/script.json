@@ -1,0 +1,238 @@
+{
+ "slug": "self-serving-bias",
+ "no": 76,
+ "format": "cdesign",
+ "title": [
+  "Skill or Ref?",
+  "Self-Serving"
+ ],
+ "credit": "Lau & Russell · 1980",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtSsScore",
+   "chunks": [
+    [
+     "When you win,"
+    ],
+    [
+     "it's skill."
+    ],
+    [
+     "When you lose,"
+    ],
+    [
+     "it's the"
+    ],
+    [
+     "REFEREE.",
+     {
+      "emph": "REFEREE",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ]
+   ],
+   "text": "When you win, it's skill. When you lose, it's the REFEREE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Pages",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtSsPaper",
+   "chunks": [
+    [
+     "In 1980,"
+    ],
+    [
+     "Richard Lau"
+    ],
+    [
+     "and Dan Russell"
+    ],
+    [
+     "combed the"
+    ],
+    [
+     "SPORTS pages.",
+     {
+      "emph": "SPORTS",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "In 1980, Richard Lau and Dan Russell combed the SPORTS pages."
+  },
+  {
+   "sec": "cd",
+   "scene": "Quotes",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtSsMic",
+   "chunks": [
+    [
+     "They coded"
+    ],
+    [
+     "what players"
+    ],
+    [
+     "and coaches"
+    ],
+    [
+     "said after"
+    ],
+    [
+     "GAMES.",
+     {
+      "emph": "GAMES",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "They coded what players and coaches said after GAMES."
+  },
+  {
+   "sec": "cd",
+   "scene": "Winners",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtSsTrophy",
+   "chunks": [
+    [
+     "Winners mostly"
+    ],
+    [
+     "credited their own"
+    ],
+    [
+     "TALENT and effort.",
+     {
+      "emph": "TALENT",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Winners mostly credited their own TALENT and effort."
+  },
+  {
+   "sec": "cd",
+   "scene": "Losers",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtSsRain",
+   "chunks": [
+    [
+     "Losers were"
+    ],
+    [
+     "far more likely"
+    ],
+    [
+     "to blame"
+    ],
+    [
+     "OUTSIDE stuff.",
+     {
+      "emph": "OUTSIDE",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Losers were far more likely to blame OUTSIDE stuff."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtSsYou",
+   "chunks": [
+    [
+     "But it's not"
+    ],
+    [
+     "just athletes."
+    ],
+    [
+     "YOU do it",
+     {
+      "emph": "YOU",
+      "fx": "type"
+     }
+    ],
+    [
+     "at work"
+    ],
+    [
+     "and in exams."
+    ],
+    [
+     "It's the"
+    ],
+    [
+     "self-serving bias."
+    ]
+   ],
+   "text": "But it's not just athletes. YOU do it at work and in exams. It's the self-serving bias."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtSsClover",
+   "chunks": [
+    [
+     "After a win,"
+    ],
+    [
+     "name one"
+    ],
+    [
+     "LUCKY break.",
+     {
+      "emph": "LUCKY",
+      "fx": "doodle",
+      "doodle": "🍀"
+     }
+    ],
+    [
+     "After a loss,"
+    ],
+    [
+     "one thing"
+    ],
+    [
+     "you controlled."
+    ],
+    [
+     "Follow for more."
+    ]
+   ],
+   "text": "After a win, name one LUCKY break. After a loss, one thing you controlled. Follow for more."
+  }
+ ],
+ "post": {
+  "title": "Win? It Was Skill. Lose? Blame the Ref #shorts",
+  "description": "Lau & Russell (1980) coded what players and coaches told the sports pages: wins were explained by their own ability and effort far more than losses, which were blamed more on outside factors. The self-serving bias. #psychology #shorts #selfservingbias #sports",
+  "tags": [
+   "self-serving bias",
+   "attribution",
+   "sports psychology",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Win = Skill, Loss = Ref?",
+ "thumb_emph": "Ref",
+ "thumb_mood": "smug",
+ "music_vibe": "playful"
+}

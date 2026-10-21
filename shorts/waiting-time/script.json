@@ -1,0 +1,250 @@
+{
+ "slug": "waiting-time",
+ "no": 29,
+ "format": "cdesign",
+ "title": [
+  "Walk Longer",
+  "Waiting"
+ ],
+ "credit": "Houston airport (NYT 2012) · Maister · 1985",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtWtAirport",
+   "chunks": [
+    [
+     "An airport"
+    ],
+    [
+     "cut complaints"
+    ],
+    [
+     "by making people"
+    ],
+    [
+     "walk"
+    ],
+    [
+     "LONGER.",
+     {
+      "emph": "LONGER",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "An airport cut complaints by making people walk LONGER."
+  },
+  {
+   "sec": "cd",
+   "scene": "Bags",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtWtCarousel",
+   "chunks": [
+    [
+     "In Houston,"
+    ],
+    [
+     "passengers kept"
+    ],
+    [
+     "complaining about"
+    ],
+    [
+     "waiting for"
+    ],
+    [
+     "BAGS.",
+     {
+      "emph": "BAGS",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "In Houston, passengers kept complaining about waiting for BAGS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Handlers",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtWtHandlers",
+   "chunks": [
+    [
+     "More baggage handlers"
+    ],
+    [
+     "cut the wait"
+    ],
+    [
+     "to eight minutes."
+    ],
+    [
+     "Complaints"
+    ],
+    [
+     "DIDN'T budge.",
+     {
+      "emph": "DIDN'T",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ]
+   ],
+   "text": "More baggage handlers cut the wait to eight minutes. Complaints DIDN'T budge."
+  },
+  {
+   "sec": "cd",
+   "scene": "Walk",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtWtWalk",
+   "chunks": [
+    [
+     "So they moved"
+    ],
+    [
+     "arrival gates"
+    ],
+    [
+     "farther away:"
+    ],
+    [
+     "SIX times",
+     {
+      "emph": "SIX",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "more walking."
+    ]
+   ],
+   "text": "So they moved arrival gates farther away: SIX times more walking."
+  },
+  {
+   "sec": "cd",
+   "scene": "Zero",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtWtZero",
+   "chunks": [
+    [
+     "Complaints dropped"
+    ],
+    [
+     "to almost"
+    ],
+    [
+     "ZERO.",
+     {
+      "emph": "ZERO",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "Complaints dropped to almost ZERO."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtWtClock",
+   "chunks": [
+    [
+     "But nothing"
+    ],
+    [
+     "got faster."
+    ],
+    [
+     "David Maister"
+    ],
+    [
+     "explained it"
+    ],
+    [
+     "in 1985:"
+    ],
+    [
+     "EMPTY time",
+     {
+      "emph": "EMPTY",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "feels longer"
+    ],
+    [
+     "than busy time."
+    ]
+   ],
+   "text": "But nothing got faster. David Maister explained it in 1985: EMPTY time feels longer than busy time."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtWtPuzzle",
+   "chunks": [
+    [
+     "Stuck waiting?"
+    ],
+    [
+     "Give your brain"
+    ],
+    [
+     "a small"
+    ],
+    [
+     "TASK.",
+     {
+      "emph": "TASK",
+      "fx": "doodle",
+      "doodle": "🧩"
+     }
+    ],
+    [
+     "Save this"
+    ],
+    [
+     "for the"
+    ],
+    [
+     "next line,"
+    ],
+    [
+     "and follow"
+    ],
+    [
+     "for more."
+    ]
+   ],
+   "text": "Stuck waiting? Give your brain a small TASK. Save this for the next line, and follow for more."
+  }
+ ],
+ "post": {
+  "title": "Why an Airport Made People Walk Farther On Purpose #shorts",
+  "description": "Houston airport (reported in The New York Times, 2012): cutting the bag wait to 8 minutes didn't stop complaints; moving gates so passengers walked six times longer dropped them to near zero. David Maister (1985): occupied time feels shorter than unoccupied time. #psychology #shorts #waiting #timeperception",
+  "tags": [
+   "time perception",
+   "psychology of waiting",
+   "queues",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why Waiting Feels Longer",
+ "thumb_emph": "Waiting",
+ "thumb_mood": "smug",
+ "music_vibe": "playful"
+}

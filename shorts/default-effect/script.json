@@ -1,0 +1,215 @@
+{
+ "slug": "default-effect",
+ "no": 9,
+ "format": "story",
+ "look": "story",
+ "title": [
+  "Default",
+  "Effect"
+ ],
+ "credit": "Johnson & Goldstein · 2003",
+ "handle": "@aroundthestrangeai",
+ "style": {
+  "stage": "square",
+  "bg": "#FFFFFF",
+  "head": "Inter Tight",
+  "body": "Inter",
+  "headSize": 100,
+  "stageBg": "#F4F4F4",
+  "palette": {
+   "ink": "#111111",
+   "accent": "#E30613",
+   "accentDark": "#A8040E",
+   "hot": "#E30613",
+   "cool": "#D9D9D9",
+   "deep": "#111111",
+   "pop": "#E30613",
+   "soft": "#EDEDED",
+   "paper": "#FFFFFF",
+   "skin": "#F2F2F2",
+   "skinShade": "#CFCFCF",
+   "hair": "#111111"
+  }
+ },
+ "auto_sfx": false,
+ "lines": [
+  {
+   "art": "SceneHook",
+   "text": "Almost every Austrian is an organ donor. In Germany, only about twelve percent are.",
+   "headline": "==99.98%== vs *12%*",
+   "sfx": [
+    [
+     "whoosh",
+     -0.05,
+     0.3
+    ],
+    [
+     "toggle",
+     0.3,
+     0.4
+    ],
+    [
+     "card-slide",
+     3.2,
+     0.28
+    ]
+   ]
+  },
+  {
+   "art": "SceneNeighbours",
+   "text": "Two neighbours, with similar culture, wealth and values.",
+   "headline": "Same *neighbours*",
+   "sfx": [
+    [
+     "card-slide",
+     0.0,
+     0.3
+    ],
+    [
+     "card-slide",
+     0.8,
+     0.26
+    ]
+   ]
+  },
+  {
+   "art": "SceneStudy",
+   "text": "In 2003, Eric Johnson and Daniel Goldstein showed the gap came down to one checkbox.",
+   "headline": "Johnson & Goldstein, *2003*",
+   "sfx": [
+    [
+     "page-turn",
+     0.0,
+     0.3
+    ],
+    [
+     "toggle",
+     3.9,
+     0.38
+    ]
+   ]
+  },
+  {
+   "art": "SceneForms",
+   "text": "In Austria, you're a donor unless you opt out.",
+   "headline": "Opt *out*",
+   "sfx": [
+    [
+     "card-slide",
+     0.0,
+     0.3
+    ],
+    [
+     "toggle",
+     1.1,
+     0.4
+    ]
+   ]
+  },
+  {
+   "art": "SceneForms",
+   "text": "In Germany, you have to tick the box to opt in.",
+   "headline": "Opt *in*",
+   "sfx": [
+    [
+     "card-slide",
+     0.0,
+     0.3
+    ],
+    [
+     "tick",
+     1.6,
+     0.34
+    ]
+   ]
+  },
+  {
+   "art": "SceneBars",
+   "text": "Across Europe, opt-out countries sat near the top. Opt-in countries, far below.",
+   "headline": "The *default* wins",
+   "sfx": [
+    [
+     "rising",
+     0.0,
+     0.26
+    ],
+    [
+     "settle",
+     2.6,
+     0.32
+    ]
+   ]
+  },
+  {
+   "art": "SceneWhy",
+   "text": "But nobody was forced. Doing nothing is easy, and a ticked box feels like advice.",
+   "headline": "Nobody was *forced*",
+   "sfx": [
+    [
+     "wood-tap",
+     0.0,
+     0.3
+    ],
+    [
+     "toggle",
+     3.0,
+     0.36
+    ]
+   ]
+  },
+  {
+   "art": "SceneWhy",
+   "text": "That's the default effect.",
+   "headline": "==The default effect==",
+   "sfx": [
+    [
+     "chime-bright",
+     0.1,
+     0.3
+    ]
+   ]
+  },
+  {
+   "art": "SceneOutro",
+   "text": "Check your settings, subscriptions and auto-renewals today. And follow for more choices that were never really yours.",
+   "headline": "Check your *defaults*",
+   "sfx": [
+    [
+     "tick",
+     0.4,
+     0.34
+    ],
+    [
+     "tick",
+     1.2,
+     0.34
+    ],
+    [
+     "tick",
+     2.2,
+     0.34
+    ],
+    [
+     "settle",
+     4.0,
+     0.3
+    ]
+   ]
+  }
+ ],
+ "post": {
+  "title": "Why Austria Has 99.98% Organ Donors and Germany 12% #shorts",
+  "description": "Johnson & Goldstein (2003, Science, 'Do Defaults Save Lives?'): in opt-out Austria 99.98% were organ donors vs about 12% in opt-in Germany. Nobody was forced; people kept whatever was pre-selected. The default effect. #psychology #shorts #defaulteffect #nudge",
+  "tags": [
+   "default effect",
+   "nudge",
+   "organ donation",
+   "choice architecture",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Did You Really Choose It?",
+ "thumb_emph": "Choose",
+ "thumb_mood": "shocked",
+ "music_vibe": "mystery"
+}

@@ -1,0 +1,244 @@
+{
+ "slug": "perfectionism-start",
+ "no": 74,
+ "format": "cdesign",
+ "title": [
+  "Not Starting",
+  "Perfect"
+ ],
+ "credit": "Sirois, Molnar & Hirsch · 2017",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPsBlank",
+   "chunks": [
+    [
+     "Perfectionists aren't"
+    ],
+    [
+     "great at finishing."
+    ],
+    [
+     "They're great"
+    ],
+    [
+     "at"
+    ],
+    [
+     "NOT starting.",
+     {
+      "emph": "NOT",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Perfectionists aren't great at finishing. They're great at NOT starting."
+  },
+  {
+   "sec": "cd",
+   "scene": "Flawless",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtPsCursor",
+   "chunks": [
+    [
+     "The first draft"
+    ],
+    [
+     "has to be"
+    ],
+    [
+     "FLAWLESS,",
+     {
+      "emph": "FLAWLESS",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "so it"
+    ],
+    [
+     "never gets written."
+    ]
+   ],
+   "text": "The first draft has to be FLAWLESS, so it never gets written."
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtPsData",
+   "chunks": [
+    [
+     "In 2017,"
+    ],
+    [
+     "Fuschia Sirois's team"
+    ],
+    [
+     "pooled data"
+    ],
+    [
+     "from about"
+    ],
+    [
+     "TEN thousand",
+     {
+      "emph": "TEN",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "people."
+    ]
+   ],
+   "text": "In 2017, Fuschia Sirois's team pooled data from about TEN thousand people."
+  },
+  {
+   "sec": "cd",
+   "scene": "Worry",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtPsWorry",
+   "chunks": [
+    [
+     "Perfectionistic"
+    ],
+    [
+     "WORRY,",
+     {
+      "emph": "WORRY",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "fear of mistakes,"
+    ],
+    [
+     "went with"
+    ],
+    [
+     "more procrastination."
+    ]
+   ],
+   "text": "Perfectionistic WORRY, fear of mistakes, went with more procrastination."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtPsStairs",
+   "chunks": [
+    [
+     "But high standards"
+    ],
+    [
+     "weren't the problem."
+    ],
+    [
+     "Striving went with"
+    ],
+    [
+     "LESS delay.",
+     {
+      "emph": "LESS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "But high standards weren't the problem. Striving went with LESS delay."
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtPsDraft",
+   "chunks": [
+    [
+     "The trap"
+    ],
+    [
+     "is the fear."
+    ],
+    [
+     "A rough draft"
+    ],
+    [
+     "beats a"
+    ],
+    [
+     "PERFECT one",
+     {
+      "emph": "PERFECT",
+      "fx": "type"
+     }
+    ],
+    [
+     "that doesn't exist."
+    ]
+   ],
+   "text": "The trap is the fear. A rough draft beats a PERFECT one that doesn't exist."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtPsTimer",
+   "chunks": [
+    [
+     "Set a timer."
+    ],
+    [
+     "Write the"
+    ],
+    [
+     "WORST draft",
+     {
+      "emph": "WORST",
+      "fx": "doodle",
+      "doodle": "✏️"
+     }
+    ],
+    [
+     "for ten minutes."
+    ],
+    [
+     "Follow for more"
+    ],
+    [
+     "ways to"
+    ],
+    [
+     "get unstuck."
+    ]
+   ],
+   "text": "Set a timer. Write the WORST draft for ten minutes. Follow for more ways to get unstuck."
+  }
+ ],
+ "post": {
+  "title": "Perfectionists Aren't Bad at Finishing. They Can't Start #shorts",
+  "description": "Sirois, Molnar & Hirsch (2017) meta-analysis of ~10,000 people: perfectionistic concerns (fear of mistakes) were linked to more procrastination, while perfectionistic strivings were linked to less. #psychology #shorts #perfectionism #procrastination",
+  "tags": [
+   "perfectionism",
+   "procrastination",
+   "fear of failure",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why Perfectionists Never Start",
+ "thumb_emph": "Never Start",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi"
+}

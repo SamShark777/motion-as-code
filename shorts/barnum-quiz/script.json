@@ -1,0 +1,250 @@
+{
+ "slug": "barnum-quiz",
+ "no": 95,
+ "format": "cdesign",
+ "title": [
+  "Same Reading",
+  "Barnum"
+ ],
+ "credit": "Bertram Forer · 1949",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtBqClass",
+   "chunks": [
+    [
+     "A professor"
+    ],
+    [
+     "gave every student"
+    ],
+    [
+     "the"
+    ],
+    [
+     "SAME reading.",
+     {
+      "emph": "SAME",
+      "fx": "stamp",
+      "block": "#E8C547"
+     }
+    ],
+    [
+     "They rated it"
+    ],
+    [
+     "four point three"
+    ],
+    [
+     "out of five."
+    ]
+   ],
+   "text": "A professor gave every student the SAME reading. They rated it four point three out of five."
+  },
+  {
+   "sec": "cd",
+   "scene": "Test",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtBqTest",
+   "chunks": [
+    [
+     "In 1948,"
+    ],
+    [
+     "Bertram Forer"
+    ],
+    [
+     "gave his class"
+    ],
+    [
+     "a personality"
+    ],
+    [
+     "TEST.",
+     {
+      "emph": "TEST",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "In 1948, Bertram Forer gave his class a personality TEST."
+  },
+  {
+   "sec": "cd",
+   "scene": "Identical",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtBqCopies",
+   "chunks": [
+    [
+     "Each got"
+    ],
+    [
+     "a \"personal\" profile."
+    ],
+    [
+     "Every one was"
+    ],
+    [
+     "IDENTICAL.",
+     {
+      "emph": "IDENTICAL",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Each got a \"personal\" profile. Every one was IDENTICAL."
+  },
+  {
+   "sec": "cd",
+   "scene": "Line",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtBqQuote",
+   "chunks": [
+    [
+     "Lines like:"
+    ],
+    [
+     "\"You have"
+    ],
+    [
+     "a great"
+    ],
+    [
+     "NEED",
+     {
+      "emph": "NEED",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "for other people"
+    ],
+    [
+     "to like"
+    ],
+    [
+     "and admire you.\""
+    ]
+   ],
+   "text": "Lines like: \"You have a great NEED for other people to like and admire you.\""
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtBqFits",
+   "chunks": [
+    [
+     "But vague lines"
+    ],
+    [
+     "fit almost"
+    ],
+    [
+     "EVERYONE,",
+     {
+      "emph": "EVERYONE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "so they feel"
+    ],
+    [
+     "made for you."
+    ]
+   ],
+   "text": "But vague lines fit almost EVERYONE, so they feel made for you."
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtBqStars",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "BARNUM effect,",
+     {
+      "emph": "BARNUM",
+      "fx": "type"
+     }
+    ],
+    [
+     "why horoscopes"
+    ],
+    [
+     "and quizzes"
+    ],
+    [
+     "feel so accurate."
+    ]
+   ],
+   "text": "It's the BARNUM effect, why horoscopes and quizzes feel so accurate."
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtBqFriend",
+   "chunks": [
+    [
+     "Next quiz,"
+    ],
+    [
+     "ask: would"
+    ],
+    [
+     "this fit"
+    ],
+    [
+     "my"
+    ],
+    [
+     "FRIEND too?",
+     {
+      "emph": "FRIEND",
+      "fx": "doodle",
+      "doodle": "🤔"
+     }
+    ],
+    [
+     "Follow for more"
+    ],
+    [
+     "mind tricks."
+    ]
+   ],
+   "text": "Next quiz, ask: would this fit my FRIEND too? Follow for more mind tricks."
+  }
+ ],
+ "post": {
+  "title": "Why Personality Quizzes Feel Scarily Accurate #shorts",
+  "description": "Bertram Forer (1948 experiment, published 1949) gave every student the same 'personal' profile; they rated its accuracy 4.26 out of 5 on average. Vague statements fit almost everyone: the Barnum (Forer) effect. #psychology #shorts #barnumeffect #horoscopes",
+  "tags": [
+   "barnum effect",
+   "forer effect",
+   "personality quiz",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why Quizzes Feel So Accurate",
+ "thumb_emph": "Accurate",
+ "thumb_mood": "shocked",
+ "music_vibe": "mystery"
+}
