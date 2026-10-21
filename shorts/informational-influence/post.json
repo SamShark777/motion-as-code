@@ -7,15 +7,18 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-16/informational-influence.mp4",
  "buffer": {
   "youtube": "6ad1310584453eae6f32ec7f",
-  "tiktok": "6ad131064fd04e4eb3ab0eb3"
+  "tiktok": "6ad131064fd04e4eb3ab0eb3",
+  "instagram": "6ad91e75b945508d3f85a09d"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
  "duration": 31.5,
  "links": {
   "youtube": "https://www.youtube.com/shorts/TZ92K55wgpI",
   "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7697373603775532301?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ },
+ "instagram_catchup": {
+  "due": "2026-10-22T18:30:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/ig-backlog/informational-influence.mp4"
  }
 }
