@@ -18,6 +18,7 @@ SR = L.SR
 FX_SOUND = {"pop": ("pop", 0.38), "circle": ("chime", 0.24), "underline": ("tick", 0.32), "stamp": ("wood-tap", 0.36),
             "type": ("tick", 0.26), "glitch": ("lightning", 0.28), "doodle": ("page-turn", 0.26)}
 MUSIC_VOLUME, MUSIC_DUCKED, DUCK_RAMP = 0.5, 0.39, 0.25
+LIB_VOLUME, LIB_DUCKED = 0.42, 0.2  # real tracks (normalised to -20 LUFS): ~-27 LUFS between lines, ~-34 under the voice
 
 
 def story_cues(S, TM):
@@ -80,9 +81,31 @@ def main():
     variant = os.environ.get("MUSIC_VARIANT", "")  # per-platform music (youtube = "", instagram, tiktok)
     seed = (S.get("music_seed") or S.get("slug") or Path(sys.argv[1]).parent.name) + (":" + variant if variant else "")
     vibe = L.pick_vibe(S)
-    m = L.music(total, seed, vibe).astype(np.float32)[:n]
-    print("music:", L.describe(seed, vibe))
-    m = np.pad(m, (0, n - len(m)))
+    import music_lib as ML, subprocess, tempfile
+    idx = S.get("cover_index")
+    if idx is None:
+        idx = L.hash_seed(str(S.get("slug"))) % 100000
+    tr = ML.pick(vibe, idx, variant)
+    lo, hi = MUSIC_VOLUME, MUSIC_DUCKED
+    info = {"vibe": vibe, "generated": True}
+    if tr:  # a real track from the library (music branch); level it under the voice
+        with tempfile.TemporaryDirectory() as td:
+            w = Path(td) / "m.wav"
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(ML.LIB / tr["file"]), "-t", f"{total:.2f}", "-ac", "1", "-ar", str(SR), str(w)], check=True)
+            m, _ = sf.read(str(w), dtype="float32")
+        if m.ndim > 1:
+            m = m.mean(1)
+        fo = min(len(m), int(1.5 * SR))
+        m[len(m) - fo:] *= np.linspace(1, 0, fo, dtype=np.float32)
+        lo, hi = LIB_VOLUME, LIB_DUCKED
+        info = {"vibe": vibe, "title": tr["title"], "credit": tr["credit"]}
+        print("music:", tr["title"], f"({vibe})")
+    else:
+        m = L.music(total, seed, vibe).astype(np.float32)
+        print("music:", L.describe(seed, vibe))
+    m = np.pad(m[:n], (0, max(0, n - len(m))))
+    (ROOT / "out").mkdir(exist_ok=True)
+    (ROOT / "out" / f"music.{variant or 'youtube'}.json").write_text(json.dumps(info))
     spans = [(ln["start"], ln["end"]) for ln in json.loads((ROOT / "data" / "lyrics.json").read_text())["lines"]]
     t = np.arange(n) / SR
     duck = np.zeros(n, np.float32)
@@ -90,7 +113,7 @@ def main():
         up = np.clip((t - (a - DUCK_RAMP)) / DUCK_RAMP, 0, 1)
         down = np.clip(((b + DUCK_RAMP) - t) / DUCK_RAMP, 0, 1)
         duck = np.maximum(duck, np.minimum(up, down))
-    vol = MUSIC_VOLUME + (MUSIC_DUCKED - MUSIC_VOLUME) * duck
+    vol = lo + (hi - lo) * duck
     mix = v + m * vol + sfx
     peak = np.abs(mix).max()
     if peak > 0.89:

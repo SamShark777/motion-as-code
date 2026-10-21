@@ -105,7 +105,8 @@ def create(channel_id, service, post, url, due, thumb_ms=1500):
         asset["video"]["metadata"] = {"thumbnailOffset": int(thumb_ms)}
     elif service == "tiktok":
         asset["video"]["metadata"] = {"thumbnailOffset": int(thumb_ms)}
-    inp = {"channelId": channel_id, "text": text_for(post),
+    _cr = json.loads(os.environ.get("BUFFER_CREDITS") or "{}").get(service)  # CC BY music credit for this platform's track
+    inp = {"channelId": channel_id, "text": text_for(post) + (f"\n\n{_cr}" if _cr else ""),
            "schedulingType": "automatic", "mode": "customScheduled", "dueAt": due, "assets": [asset], "aiAssisted": False, "needsApproval": False}
     if meta:
         inp["metadata"] = meta

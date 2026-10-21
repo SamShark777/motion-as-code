@@ -122,6 +122,8 @@ def check(slug):
         shutil.copy(mp4, out / mp4.name)
         for v in d.glob(f"{slug}.*.mp4"):  # per-platform music variants
             shutil.copy(v, out / v.name)
+        if (d / "music.json").exists():
+            shutil.copy(d / "music.json", out / "music.json")
         if (d / "preview.jpg").exists():
             shutil.copy(d / "preview.jpg", out / "preview.jpg")
     meta["ok"] = not meta["problems"]
@@ -278,8 +280,12 @@ def publish(dist):
                 if wait_url(u):
                     urls[svc] = u
         os.environ["BUFFER_URLS"] = json.dumps(urls)
+        mj = src / "music.json"
+        mus = json.loads(mj.read_text()) if mj.exists() else {}
+        os.environ["BUFFER_CREDITS"] = json.dumps({k: v["credit"] for k, v in mus.items() if v.get("credit")})
         res = buffer("post", b["slug"], b["due"], vurl, str(thumb_ms))
         os.environ.pop("BUFFER_URLS", None)
+        os.environ.pop("BUFFER_CREDITS", None)
         ok = {s: i for s, i in res.items() if s != "errors"}
         errs = res.get("errors", {})
         if not ok:
