@@ -37,6 +37,10 @@ on:
         description: "Only cancel: delete the still-scheduled Buffer posts of these slugs (comma-separated), build nothing"
         required: false
         default: ""
+      music_fetch:
+        description: "Only (re)build the real-music library (Kevin MacLeod, CC BY) on the music branch"
+        type: boolean
+        default: false
       lottie_fetch:
         description: "Only fetch free LottieFiles animations for these comma-separated keywords (pushed to the assets-lottie branch)"
         required: false
@@ -55,7 +59,7 @@ on:
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -121,6 +125,22 @@ jobs:
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
           exit $code
 
+  music-fetch:
+    if: inputs.music_fetch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - run: python3 analysis/music_lib.py fetch out/music | tee out.txt; while IFS= read -r l; do echo "::notice::$l"; done < <(grep -E "^(calm|uplifting|playful|mystery|tense|lofi|library|[0-9]+ pieces)" out.txt)
+      - name: Publish to music branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out/music && git init -q && git checkout -q -b music && git add .
+          git -c user.name=shorts-bot -c user.email=shorts-bot@users.noreply.github.com commit -qm "music library"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" music
+
   lottie-fetch:
     if: ${{ inputs.lottie_fetch != '' && inputs.lottie_fetch != null }}
     runs-on: ubuntu-latest
@@ -146,6 +166,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { ref: shorts }
+      - name: Music library (real tracks; falls back to generated beds if missing)
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with: { ref: music, path: music }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: System packages
@@ -253,7 +277,7 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
 
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
+    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
