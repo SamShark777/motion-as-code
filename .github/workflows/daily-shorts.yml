@@ -37,6 +37,10 @@ on:
         description: "Only cancel: delete the still-scheduled Buffer posts of these slugs (comma-separated), build nothing"
         required: false
         default: ""
+      channel_scan:
+        description: "Only study these YouTube channels (names separated by |); results go to the research branch"
+        required: false
+        default: ""
       music_fetch:
         description: "Only (re)build the real-music library (Kevin MacLeod, CC BY) on the music branch"
         type: boolean
@@ -59,7 +63,7 @@ on:
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.channel_scan != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -124,6 +128,22 @@ jobs:
           code=$?
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
           exit $code
+
+  channel-scan:
+    if: ${{ inputs.channel_scan != '' && inputs.channel_scan != null }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && pip install -q -U yt-dlp
+      - run: python3 scripts/channel_scan.py "${{ inputs.channel_scan }}" out/research 2>&1 | tee out.txt; grep -E "^(SCAN|yt-dlp failed|ERROR)" out.txt | head -20 | while IFS= read -r l; do echo "::notice::${l:0:3900}"; done
+      - name: Publish to research branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out/research && git init -q && git checkout -q -b research && git add .
+          git -c user.name=shorts-bot -c user.email=shorts-bot@users.noreply.github.com commit -qm "channel scan"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" research
 
   music-fetch:
     if: inputs.music_fetch
@@ -277,7 +297,7 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
 
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
+    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.channel_scan && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
