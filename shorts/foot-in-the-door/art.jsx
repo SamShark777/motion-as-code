@@ -100,7 +100,7 @@ function ArtFdNo({ T, t }) {
           <text y="16" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="40" fill={on ? INK : 'rgba(255,255,255,.5)'}>{on ? '✓' : '✕'}</text>
         </g>);
       })}
-      <FdBig x={486} y={1660} t={t} to={17} suffix="%" size={200} fill="#fff" />
+      <FdBig x={486} y={1570} t={t} to={17} suffix="%" size={200} fill="#fff" />
     </g>
   );
 }
@@ -117,7 +117,7 @@ function ArtFdSticker({ T, t }) {
         <text y="-6" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="26" fill={INK}>BE A SAFE</text>
         <text y="28" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="26" fill={INK}>DRIVER</text>
       </g>
-      <FdPill x={486} y={1620} w={300} text="tiny" fill={INK} />
+      <FdPill x={486} y={1570} w={300} text="tiny" fill={INK} />
     </g>
   );
 }
@@ -134,7 +134,7 @@ function ArtFdYes({ T, t }) {
           <text y="16" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="40" fill={on ? INK : 'rgba(255,255,255,.5)'}>{on ? '✓' : '✕'}</text>
         </g>);
       })}
-      <FdBig x={486} y={1660} t={t} to={76} suffix="%" size={200} fill="#fff" />
+      <FdBig x={486} y={1570} t={t} to={76} suffix="%" size={200} fill="#fff" />
     </g>
   );
 }

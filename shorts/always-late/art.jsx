@@ -102,7 +102,7 @@ function ArtPlWorst({ T, t }) {
         <path d="M0 -260 L270 210 L-270 210 Z" fill="#E8C547" stroke={INK} strokeWidth="14" strokeLinejoin="round" />
         <text y="150" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="230" fill={INK}>!</text>
       </g>
-      <PlBig x={486} y={1600} t={t} to={49} suffix=" days" size={150} fill="#fff" />
+      <PlBig x={486} y={1590} t={t} to={49} suffix=" days" size={150} fill="#fff" />
     </g>
   );
 }
@@ -137,7 +137,7 @@ function ArtPlThird({ T, t }) {
           <circle r="26" fill={made ? '#2B6E7A' : 'rgba(20,24,33,.35)'} />
         </g>);
       })}
-      <PlPill x={486} y={1660} w={300} text="30%" fill={INK} />
+      <PlPill x={486} y={1570} w={300} text="30%" fill={INK} />
     </g>
   );
 }

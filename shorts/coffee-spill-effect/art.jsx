@@ -110,7 +110,7 @@ function ArtPfLess({ T, t }) {
     <rect x="386" y="840" width="200" height="720" rx="100" fill="#fff" stroke={INK} strokeWidth="10" />
     <rect x="406" y={860 + 680 * (1 - v)} width="160" height={680 * v} rx="80" fill="#B3202A" />
     <path d="M250 1000 L250 1300 M200 1240 L250 1300 L300 1240" fill="none" stroke="#fff" strokeWidth="20" strokeLinecap="round" strokeLinejoin="round" />
-    <PfPill x={486} y={1660} w={360} text="average" fill="#fff" ink={INK} />
+    <PfPill x={486} y={1570} w={360} text="average" fill="#fff" ink={INK} />
   </g>);
 }
 

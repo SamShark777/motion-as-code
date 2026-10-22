@@ -72,7 +72,7 @@ function ArtRhDoors({ T, t }) {
           <circle cx="0" cy="-60" r="26" fill={SKIN} /><path d="M-30 30 C-30 -20 -18 -30 0 -30 C18 -30 30 -20 30 30 Z" fill={i % 2 ? '#E8C547' : '#E07A2E'} />
         </g>);
       })}
-      <RhPill x={486} y={1660} w={420} text="ADMITTED" fill="#B3202A" />
+      <RhPill x={486} y={1570} w={420} text="ADMITTED" fill="#B3202A" />
     </g>
   );
 }
@@ -101,7 +101,7 @@ function ArtRhNormal({ T, t }) {
         <line x1="0" y1="-60" x2="0" y2="120" stroke={INK} strokeWidth="6" />
         {[0, 1, 2, 3].map((k) => <g key={k}><line x1="-190" y1={-40 + k * 34} x2="-40" y2={-30 + k * 34} stroke="#B0A99A" strokeWidth="10" strokeLinecap="round" /><line x1="40" y1={-30 + k * 34} x2="190" y2={-40 + k * 34} stroke="#B0A99A" strokeWidth="10" strokeLinecap="round" /></g>)}
       </g>
-      <RhPill x={486} y={1620} w={360} text="NORMAL" fill={INK} />
+      <RhPill x={486} y={1570} w={360} text="NORMAL" fill={INK} />
     </g>
   );
 }
@@ -120,7 +120,7 @@ function ArtRhDays({ T, t }) {
         return (<g key={i}><rect x={216 + c * 80} y={1050 + r * 110} width="62" height="80" rx="10" fill="#F1ECE0" />
           {i < shown && <path d={`M${226 + c * 80} ${1062 + r * 110} l42 56 M${268 + c * 80} ${1062 + r * 110} l-42 56`} stroke="#B3202A" strokeWidth="9" strokeLinecap="round" />}</g>);
       })}
-      <RhBig x={486} y={1720} t={t} to={19} suffix=" days" size={150} />
+      <RhBig x={486} y={1590} t={t} to={19} suffix=" days" size={150} />
     </g>
   );
 }
@@ -133,12 +133,12 @@ function ArtRhPatients({ T, t }) {
       {Array.from({ length: 118 }).map((_, i) => {
         const c = i % 11, r = Math.floor(i / 11);
         const sus = ((i * 37) % 118) < lit;
-        return (<g key={i} transform={`translate(${136 + c * 70} ${820 + r * 74 + osc(T, 1.6, hsh(i)) * 3})`}>
+        return (<g key={i} transform={`translate(${136 + c * 70} ${760 + r * 66 + osc(T, 1.6, hsh(i)) * 3})`}>
           <circle cx="0" cy="-12" r="14" fill={sus ? '#E8C547' : 'rgba(255,255,255,.45)'} />
           <path d="M-18 26 C-18 6 -10 2 0 2 C10 2 18 6 18 26 Z" fill={sus ? '#E8C547' : 'rgba(255,255,255,.45)'} />
         </g>);
       })}
-      <RhBig x={486} y={1720} t={t} to={35} suffix=" / 118" size={120} fill="#fff" s={0.4} d={1.4} />
+      <RhBig x={486} y={1590} t={t} to={35} suffix=" / 118" size={120} fill="#fff" s={0.4} d={1.4} />
     </g>
   );
 }
@@ -155,8 +155,8 @@ function ArtRhFiles({ T, t }) {
         </g>
       ))}
       <g transform={`translate(486 1520) rotate(-12) scale(${pop(t, 0.6)})`}>
-        <rect x="-230" y="-70" width="460" height="140" rx="16" fill="none" stroke="#fff" strokeWidth="12" />
-        <text y="26" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="80" fill="#fff">DOESN'T MATCH</text>
+        <rect x="-250" y="-62" width="500" height="124" rx="16" fill="none" stroke="#fff" strokeWidth="12" />
+        <text y="26" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="62" fill="#fff">DOESN'T MATCH</text>
       </g>
     </g>
   );

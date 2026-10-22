@@ -74,7 +74,7 @@ function ArtCsLungs({ T, t }) {
     <g>
       <CsLungsShape v={0.5 + 0.5 * osc(T, 4)} />
       <g transform={`translate(760 880) scale(${pop(t, 0.4)})`}><path d="M-60 -60 h120 v40 c0 60 -40 80 -60 80 c-20 0 -60 -20 -60 -80 Z" fill="#E8C547" /><rect x="-14" y="60" width="28" height="40" fill="#E8C547" /><rect x="-50" y="100" width="100" height="24" rx="8" fill="#E8C547" /></g>
-      <CsPill x={486} y={1640} w={300} text="5 min" fill="#fff" ink={INK} />
+      <CsPill x={486} y={1570} w={300} text="5 min" fill="#fff" ink={INK} />
     </g>
   );
 }
@@ -84,7 +84,7 @@ function ArtCsIn({ T, t }) {
   const v = tw(t, 0.1, 2.4) * 0.75;
   return (<g><CsLungsShape v={v} />
     {[0, 1, 2].map((k) => { const p = ((T * 0.5 + k / 3) % 1); return <path key={k} d={`M${300 + k * 180} ${760 + p * 200} q30 40 0 80`} fill="none" stroke="#6FA8C9" strokeWidth="12" strokeLinecap="round" opacity={1 - p} />; })}
-    <CsPill x={486} y={1640} w={340} text="IN…" fill={INK} /></g>);
+    <CsPill x={486} y={1570} w={340} text="IN…" fill={INK} /></g>);
 }
 
 /* 3 — the second top-up inhale */
@@ -92,7 +92,7 @@ function ArtCsTop({ T, t }) {
   const v = 0.75 + 0.25 * pop(t, 0.3);
   return (<g><CsLungsShape v={v} />
     <g transform={`translate(780 880) scale(${pop(t, 0.3)})`}><circle r="70" fill={INK} /><text y="28" textAnchor="middle" fontFamily={FONT} fontWeight="900" fontSize="80" fill="#E8C547">+1</text></g>
-    <CsPill x={486} y={1640} w={340} text="+ in" fill={INK} /></g>);
+    <CsPill x={486} y={1570} w={340} text="+ in" fill={INK} /></g>);
 }
 
 /* 4 — the long exhale */
@@ -100,7 +100,7 @@ function ArtCsOut({ T, t }) {
   const v = 1 - tw(t, 0.1, 2.8);
   return (<g><CsLungsShape v={v} />
     {[0, 1, 2, 3].map((k) => { const p = ((T * 0.35 + k / 4) % 1); return <path key={k} d={`M${486 - 200 + p * 40} ${820 - p * 60} q${200} ${-40} ${400} 0`} fill="none" stroke="#fff" strokeWidth="12" strokeLinecap="round" opacity={(1 - p) * 0.8} />; })}
-    <CsPill x={486} y={1640} w={420} text="OUT……" fill="#fff" ink={INK} /></g>);
+    <CsPill x={486} y={1570} w={420} text="OUT……" fill="#fff" ink={INK} /></g>);
 }
 
 /* 5 — a month of check marks */
@@ -110,7 +110,7 @@ function ArtCsMonth({ T, t }) {
     <rect x="186" y="880" width="600" height="600" rx="30" fill="#fff" />
     {Array.from({ length: 28 }).map((_, i) => { const c = i % 7, r = Math.floor(i / 7); return (<g key={i}><rect x={216 + c * 80} y={920 + r * 130} width="62" height="100" rx="10" fill="#F1ECE0" />
       {i < shown && <path d={`M${230 + c * 80} ${972 + r * 130} l14 16 l24 -34`} fill="none" stroke="#2B6E7A" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round" />}</g>); })}
-    <CsPill x={486} y={1620} w={360} text="5 min/day" fill={INK} /></g>);
+    <CsPill x={486} y={1570} w={360} text="5 min/day" fill={INK} /></g>);
 }
 
 /* 6 — two mood bars: both up, sighing higher */
@@ -127,7 +127,7 @@ function ArtCsWin({ T, t }) {
 /* 7 — two calm breaths, a smiling person */
 function ArtCsTry({ T, t }) {
   return (<g><CsPerson x={486} y={1100} T={T} shirt="#E8C547" mouth="smile" s={0.95} />
-    <g transform={`translate(486 1560) scale(${1 + 0.05 * osc(T, 4)})`}><CsPill x={0} y={0} w={420} text="× 2  NOW" fill={INK} /></g></g>);
+    <g transform={`translate(486 1540) scale(${1 + 0.05 * osc(T, 4)})`}><CsPill x={0} y={0} w={420} text="× 2  NOW" fill={INK} /></g></g>);
 }
 
 Object.assign(window, { ArtCsIn, ArtCsLungs, ArtCsMonth, ArtCsOut, ArtCsTop, ArtCsTry, ArtCsWin });
