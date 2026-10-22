@@ -37,6 +37,14 @@ def main():
     out = Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)
     summary = []
     for name in names:
+        if name.startswith("search:"):  # what wins for a topic: top results of a YouTube search
+            q = name[7:]
+            r = ytj("--flat-playlist", f"ytsearch80:{q}")
+            ents = [{"title": e.get("title"), "views": e.get("view_count"), "dur": e.get("duration"), "channel": e.get("channel"),
+                     "url": e.get("url")} for e in (r or {}).get("entries") or []]
+            (out / f"search-{slug(q)}.json").write_text(json.dumps(ents, indent=1))
+            summary.append({"search": q, "n": len(ents)})
+            continue
         url = find_channel(name)
         print(f"{name}: {url}")
         if not url:
