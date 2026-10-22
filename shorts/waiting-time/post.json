@@ -1,0 +1,17 @@
+{
+ "no": 29,
+ "slug": "waiting-time",
+ "date": "2026-10-23",
+ "slot": "09:00",
+ "due": "2026-10-23T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-23/waiting-time.mp4",
+ "buffer": {
+  "youtube": "6ada6f979a872e8621a0587c",
+  "instagram": "6ada6f9880b62e657504c1c2",
+  "tiktok": "6ada6f9843a2d9ebee17a318"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 32.0
+}
