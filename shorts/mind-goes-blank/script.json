@@ -1,0 +1,238 @@
+{
+ "slug": "mind-goes-blank",
+ "no": 106,
+ "format": "cdesign",
+ "title": [
+  "Mind Goes",
+  "Blank"
+ ],
+ "credit": "Radvansky 2011 · Brenner 1973 · Sparrow 2011",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Three",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMfThree",
+   "chunks": [
+    [
+     "Three reasons your"
+    ],
+    [
+     "mind goes BLANK.",
+     {
+      "emph": "BLANK",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "Number two happens"
+    ],
+    [
+     "daily."
+    ]
+   ],
+   "text": "Three reasons your mind goes BLANK. Number two happens daily."
+  },
+  {
+   "sec": "cd",
+   "scene": "Door",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtMfDoor",
+   "chunks": [
+    [
+     "One: doorways."
+    ],
+    [
+     "Walking into a"
+    ],
+    [
+     "new room makes"
+    ],
+    [
+     "you forget MORE",
+     {
+      "emph": "MORE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "than walking the"
+    ],
+    [
+     "same distance."
+    ]
+   ],
+   "text": "One: doorways. Walking into a new room makes you forget MORE than walking the same distance."
+  },
+  {
+   "sec": "cd",
+   "scene": "Event",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtMfEvent",
+   "chunks": [
+    [
+     "Your brain files"
+    ],
+    [
+     "each room as"
+    ],
+    [
+     "a new EVENT.",
+     {
+      "emph": "EVENT",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "Your brain files each room as a new EVENT."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtMfTurn",
+   "chunks": [
+    [
+     "Two:"
+    ],
+    [
+     "you forget what"
+    ],
+    [
+     "someone said right"
+    ],
+    [
+     "before your TURN.",
+     {
+      "emph": "TURN",
+      "fx": "circle"
+     }
+    ],
+    [
+     "You were rehearsing"
+    ],
+    [
+     "your line."
+    ]
+   ],
+   "text": "Two: you forget what someone said right before your TURN. You were rehearsing your line."
+  },
+  {
+   "sec": "cd",
+   "scene": "Saved",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtMfPhone",
+   "chunks": [
+    [
+     "Three:"
+    ],
+    [
+     "expect a fact"
+    ],
+    [
+     "to stay SAVED",
+     {
+      "emph": "SAVED",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "on your computer,"
+    ],
+    [
+     "and you remember"
+    ],
+    [
+     "it less."
+    ]
+   ],
+   "text": "Three: expect a fact to stay SAVED on your computer, and you remember it less."
+  },
+  {
+   "sec": "cd",
+   "scene": "Space",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtMfSpace",
+   "chunks": [
+    [
+     "But that's not"
+    ],
+    [
+     "a broken memory."
+    ],
+    [
+     "Your brain is"
+    ],
+    [
+     "SAVING effort.",
+     {
+      "emph": "SAVING",
+      "fx": "doodle",
+      "doodle": "🧠"
+     }
+    ]
+   ],
+   "text": "But that's not a broken memory. Your brain is SAVING effort."
+  },
+  {
+   "sec": "cd",
+   "scene": "Say",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMfSay",
+   "chunks": [
+    [
+     "So say the"
+    ],
+    [
+     "thing out LOUD",
+     {
+      "emph": "LOUD",
+      "fx": "pop"
+     }
+    ],
+    [
+     "before you stand"
+    ],
+    [
+     "up."
+    ],
+    [
+     "Follow for more."
+    ]
+   ],
+   "text": "So say the thing out LOUD before you stand up. Follow for more."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "3 Reasons Your Mind Goes Blank #shorts",
+  "description": "1) Radvansky et al. (2011): walking through a doorway causes more forgetting than the same distance within a room (an event boundary). 2) Brenner (1973), the next-in-line effect: people recall least of what was said just before their own turn. 3) Sparrow et al. (2011): people who expected information to be saved on a computer remembered it less. #psychology #shorts #memory",
+  "tags": [
+   "doorway effect",
+   "memory",
+   "why you forget",
+   "psychology facts"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why Your Mind Goes Blank",
+ "thumb_emph": "Goes Blank",
+ "thumb_mood": "thinking",
+ "music_vibe": "playful",
+ "pattern": "Numbered facts"
+}

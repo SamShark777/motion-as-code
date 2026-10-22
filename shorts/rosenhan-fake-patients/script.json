@@ -1,0 +1,224 @@
+{
+ "slug": "rosenhan-fake-patients",
+ "no": 103,
+ "format": "cdesign",
+ "title": [
+  "The Fake",
+  "Patients"
+ ],
+ "credit": "Rosenhan · Science 1973",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Admitted",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtRhDoors",
+   "chunks": [
+    [
+     "Eight people faked"
+    ],
+    [
+     "ONE symptom,",
+     {
+      "emph": "ONE",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "and every hospital"
+    ],
+    [
+     "admitted them."
+    ]
+   ],
+   "text": "Eight people faked ONE symptom, and every hospital admitted them."
+  },
+  {
+   "sec": "cd",
+   "scene": "Thud",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtRhThud",
+   "chunks": [
+    [
+     "In 1973,"
+    ],
+    [
+     "they told psychiatrists"
+    ],
+    [
+     "a voice kept"
+    ],
+    [
+     "saying: THUD.",
+     {
+      "emph": "THUD",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "In 1973, they told psychiatrists a voice kept saying: THUD."
+  },
+  {
+   "sec": "cd",
+   "scene": "Normal",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtRhNormal",
+   "chunks": [
+    [
+     "Once inside,"
+    ],
+    [
+     "they acted completely"
+    ],
+    [
+     "normal.",
+     {
+      "emph": "normal",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Once inside, they acted completely normal."
+  },
+  {
+   "sec": "cd",
+   "scene": "Days",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtRhDays",
+   "chunks": [
+    [
+     "They were still"
+    ],
+    [
+     "held an average"
+    ],
+    [
+     "of NINETEEN days.",
+     {
+      "emph": "NINETEEN",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "They were still held an average of NINETEEN days."
+  },
+  {
+   "sec": "cd",
+   "scene": "Patients",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtRhPatients",
+   "chunks": [
+    [
+     "No staff member"
+    ],
+    [
+     "caught them."
+    ],
+    [
+     "But thirty-five real"
+    ],
+    [
+     "PATIENTS did.",
+     {
+      "emph": "PATIENTS",
+      "fx": "circle"
+     }
+    ]
+   ],
+   "text": "No staff member caught them. But thirty-five real PATIENTS did."
+  },
+  {
+   "sec": "cd",
+   "scene": "Doubt",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtRhFiles",
+   "chunks": [
+    [
+     "But a journalist"
+    ],
+    [
+     "later found records"
+    ],
+    [
+     "that didn't match."
+    ],
+    [
+     "Maybe the study"
+    ],
+    [
+     "itself was FAKED.",
+     {
+      "emph": "FAKED",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "But a journalist later found records that didn't match. Maybe the study itself was FAKED."
+  },
+  {
+   "sec": "cd",
+   "scene": "Label",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtRhLabel",
+   "chunks": [
+    [
+     "Either way:"
+    ],
+    [
+     "once you're labeled,"
+    ],
+    [
+     "people see the"
+    ],
+    [
+     "LABEL.",
+     {
+      "emph": "LABEL",
+      "fx": "doodle",
+      "doodle": "🏷️"
+     }
+    ],
+    [
+     "Follow for more"
+    ],
+    [
+     "experiments."
+    ]
+   ],
+   "text": "Either way: once you're labeled, people see the LABEL. Follow for more experiments."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The Experiment That Fooled Psychiatrists #shorts",
+  "description": "Rosenhan (1973, Science): 8 pseudopatients reported hearing a voice say \"thud\", were admitted to 12 hospitals and held 7 to 52 days (19 on average); 35 of 118 patients suspected them, staff didn't. Journalist Susannah Cahalan (The Great Pretender, 2019) later found records that didn't match the paper. #psychology #shorts #experiment",
+  "tags": [
+   "rosenhan experiment",
+   "psychology experiment",
+   "being sane in insane places",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "The Experiment That Fooled Doctors",
+ "thumb_emph": "Fooled Doctors",
+ "thumb_mood": "shocked",
+ "music_vibe": "mystery",
+ "pattern": "Experiment story"
+}

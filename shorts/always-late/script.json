@@ -1,0 +1,223 @@
+{
+ "slug": "always-late",
+ "no": 105,
+ "format": "cdesign",
+ "title": [
+  "Always",
+  "Late?"
+ ],
+ "credit": "Buehler, Griffin & Ross · 1994",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Late",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtPlClock",
+   "chunks": [
+    [
+     "Psychology of people"
+    ],
+    [
+     "who are ALWAYS",
+     {
+      "emph": "ALWAYS",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "late:"
+    ],
+    [
+     "it's usually not"
+    ],
+    [
+     "laziness."
+    ]
+   ],
+   "text": "Psychology of people who are ALWAYS late: it's usually not laziness."
+  },
+  {
+   "sec": "cd",
+   "scene": "Guess",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtPlGuess",
+   "chunks": [
+    [
+     "Students guessed how"
+    ],
+    [
+     "long their thesis"
+    ],
+    [
+     "would take:"
+    ],
+    [
+     "about thirty-four days.",
+     {
+      "emph": "thirty-four",
+      "fx": "circle"
+     }
+    ]
+   ],
+   "text": "Students guessed how long their thesis would take: about thirty-four days."
+  },
+  {
+   "sec": "cd",
+   "scene": "Worst",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPlWorst",
+   "chunks": [
+    [
+     "Even their WORST",
+     {
+      "emph": "WORST",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "case was forty-nine."
+    ]
+   ],
+   "text": "Even their WORST case was forty-nine."
+  },
+  {
+   "sec": "cd",
+   "scene": "Actual",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtPlActual",
+   "chunks": [
+    [
+     "It actually took"
+    ],
+    [
+     "FIFTY-FIVE.",
+     {
+      "emph": "FIFTY-FIVE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "It actually took FIFTY-FIVE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Third",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtPlThird",
+   "chunks": [
+    [
+     "Only about thirty",
+     {
+      "emph": "thirty",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "percent finished when"
+    ],
+    [
+     "they said they"
+    ],
+    [
+     "would."
+    ]
+   ],
+   "text": "Only about thirty percent finished when they said they would."
+  },
+  {
+   "sec": "cd",
+   "scene": "Fallacy",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtPlDream",
+   "chunks": [
+    [
+     "It's the planning"
+    ],
+    [
+     "fallacy:"
+    ],
+    [
+     "we picture the"
+    ],
+    [
+     "PERFECT run,",
+     {
+      "emph": "PERFECT",
+      "fx": "doodle",
+      "doodle": "✨"
+     }
+    ],
+    [
+     "not the usual"
+    ],
+    [
+     "one."
+    ]
+   ],
+   "text": "It's the planning fallacy: we picture the PERFECT run, not the usual one."
+  },
+  {
+   "sec": "cd",
+   "scene": "Fix",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtPlFix",
+   "chunks": [
+    [
+     "So ask how"
+    ],
+    [
+     "long it took"
+    ],
+    [
+     "LAST time,",
+     {
+      "emph": "LAST",
+      "fx": "pop"
+     }
+    ],
+    [
+     "and plan for"
+    ],
+    [
+     "that."
+    ],
+    [
+     "Follow for more."
+    ]
+   ],
+   "text": "So ask how long it took LAST time, and plan for that. Follow for more."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Psychology Of People Who Are Always Late #shorts",
+  "description": "Buehler, Griffin & Ross (1994): students predicted their thesis would take 33.9 days (worst case 48.6); it took 55.5, and only about 30% finished by their own estimate. The planning fallacy. Fix: base plans on how long it took last time. #psychology #shorts #productivity",
+  "tags": [
+   "planning fallacy",
+   "always late",
+   "time management",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why You're Always Late",
+ "thumb_emph": "Always Late",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "Psychology of people who"
+}

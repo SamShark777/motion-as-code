@@ -1,0 +1,229 @@
+{
+ "slug": "foot-in-the-door",
+ "no": 104,
+ "format": "cdesign",
+ "title": [
+  "The Tiny",
+  "Yes"
+ ],
+ "credit": "Freedman & Fraser · 1966",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Tiny",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtFdTiny",
+   "chunks": [
+    [
+     "If someone asks"
+    ],
+    [
+     "you for something"
+    ],
+    [
+     "TINY first,",
+     {
+      "emph": "TINY",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "watch out."
+    ]
+   ],
+   "text": "If someone asks you for something TINY first, watch out."
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtFdSign",
+   "chunks": [
+    [
+     "In 1966,"
+    ],
+    [
+     "researchers asked homeowners"
+    ],
+    [
+     "to put a"
+    ],
+    [
+     "huge,"
+    ],
+    [
+     "ugly sign in",
+     {
+      "emph": "ugly",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "their front yard."
+    ]
+   ],
+   "text": "In 1966, researchers asked homeowners to put a huge, ugly sign in their front yard."
+  },
+  {
+   "sec": "cd",
+   "scene": "Seventeen",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtFdNo",
+   "chunks": [
+    [
+     "Only SEVENTEEN percent",
+     {
+      "emph": "SEVENTEEN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "said yes."
+    ]
+   ],
+   "text": "Only SEVENTEEN percent said yes."
+  },
+  {
+   "sec": "cd",
+   "scene": "Sticker",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtFdSticker",
+   "chunks": [
+    [
+     "But some had"
+    ],
+    [
+     "already agreed to"
+    ],
+    [
+     "a tiny window",
+     {
+      "emph": "tiny",
+      "fx": "circle"
+     }
+    ],
+    [
+     "sign about safe"
+    ],
+    [
+     "driving."
+    ]
+   ],
+   "text": "But some had already agreed to a tiny window sign about safe driving."
+  },
+  {
+   "sec": "cd",
+   "scene": "Seventy",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtFdYes",
+   "chunks": [
+    [
+     "SEVENTY-SIX percent of",
+     {
+      "emph": "SEVENTY-SIX",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "them said yes."
+    ]
+   ],
+   "text": "SEVENTY-SIX percent of them said yes."
+  },
+  {
+   "sec": "cd",
+   "scene": "Self",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtFdMirror",
+   "chunks": [
+    [
+     "The small yes"
+    ],
+    [
+     "changed how they"
+    ],
+    [
+     "saw THEMSELVES.",
+     {
+      "emph": "THEMSELVES",
+      "fx": "doodle",
+      "doodle": "🪞"
+     }
+    ],
+    [
+     "It's called the"
+    ],
+    [
+     "foot in the"
+    ],
+    [
+     "door."
+    ]
+   ],
+   "text": "The small yes changed how they saw THEMSELVES. It's called the foot in the door."
+  },
+  {
+   "sec": "cd",
+   "scene": "Judge",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtFdJudge",
+   "chunks": [
+    [
+     "So judge every"
+    ],
+    [
+     "big ask on"
+    ],
+    [
+     "its OWN.",
+     {
+      "emph": "OWN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Your past yes"
+    ],
+    [
+     "doesn't owe anyone"
+    ],
+    [
+     "a bigger one."
+    ]
+   ],
+   "text": "So judge every big ask on its OWN. Your past yes doesn't owe anyone a bigger one."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The Tiny Yes Trick People Use On You #shorts",
+  "description": "Freedman & Fraser (1966): only 17% of homeowners agreed to a big \"Drive Carefully\" yard sign, but 76% agreed after first saying yes to a small \"Be a Safe Driver\" window sign. The foot-in-the-door technique. #psychology #shorts #persuasion #manipulation",
+  "tags": [
+   "foot in the door",
+   "persuasion",
+   "manipulation tactics",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "The Tiny Yes Trick",
+ "thumb_emph": "Tiny Yes",
+ "thumb_mood": "worried",
+ "music_vibe": "tense",
+ "pattern": "Protect yourself"
+}

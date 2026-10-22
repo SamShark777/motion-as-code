@@ -1,0 +1,226 @@
+{
+ "slug": "coffee-spill-effect",
+ "no": 108,
+ "format": "cdesign",
+ "title": [
+  "The Coffee",
+  "Spill"
+ ],
+ "credit": "Aronson, Willerman & Floyd · 1966",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Spill",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtPfSpill",
+   "chunks": [
+    [
+     "The most likable"
+    ],
+    [
+     "person in the"
+    ],
+    [
+     "room might be"
+    ],
+    [
+     "the one who"
+    ],
+    [
+     "SPILLS their coffee.",
+     {
+      "emph": "SPILLS",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "The most likable person in the room might be the one who SPILLS their coffee."
+  },
+  {
+   "sec": "cd",
+   "scene": "Quiz",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtPfQuiz",
+   "chunks": [
+    [
+     "In 1966,"
+    ],
+    [
+     "students listened to"
+    ],
+    [
+     "a quiz contestant"
+    ],
+    [
+     "get almost EVERY",
+     {
+      "emph": "EVERY",
+      "fx": "circle"
+     }
+    ],
+    [
+     "answer right."
+    ]
+   ],
+   "text": "In 1966, students listened to a quiz contestant get almost EVERY answer right."
+  },
+  {
+   "sec": "cd",
+   "scene": "Oops",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtPfOops",
+   "chunks": [
+    [
+     "Then he spilled"
+    ],
+    [
+     "coffee all over",
+     {
+      "emph": "coffee",
+      "fx": "doodle",
+      "doodle": "☕"
+     }
+    ],
+    [
+     "himself."
+    ]
+   ],
+   "text": "Then he spilled coffee all over himself."
+  },
+  {
+   "sec": "cd",
+   "scene": "More",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtPfMore",
+   "chunks": [
+    [
+     "Listeners liked him"
+    ],
+    [
+     "MORE.",
+     {
+      "emph": "MORE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Listeners liked him MORE."
+  },
+  {
+   "sec": "cd",
+   "scene": "Less",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtPfLess",
+   "chunks": [
+    [
+     "But when an"
+    ],
+    [
+     "average contestant did"
+    ],
+    [
+     "the same thing?"
+    ],
+    [
+     "They liked him"
+    ],
+    [
+     "LESS.",
+     {
+      "emph": "LESS",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "But when an average contestant did the same thing? They liked him LESS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Human",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtPfHuman",
+   "chunks": [
+    [
+     "A slip makes"
+    ],
+    [
+     "an impressive person"
+    ],
+    [
+     "feel HUMAN.",
+     {
+      "emph": "HUMAN",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "It's called the"
+    ],
+    [
+     "pratfall effect."
+    ]
+   ],
+   "text": "A slip makes an impressive person feel HUMAN. It's called the pratfall effect."
+  },
+  {
+   "sec": "cd",
+   "scene": "Flaws",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtPfFlaws",
+   "chunks": [
+    [
+     "So be good"
+    ],
+    [
+     "first,"
+    ],
+    [
+     "then stop hiding"
+    ],
+    [
+     "small FLAWS.",
+     {
+      "emph": "FLAWS",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Follow for more."
+    ]
+   ],
+   "text": "So be good first, then stop hiding small FLAWS. Follow for more."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Small Mistakes Make People Like You More #shorts",
+  "description": "Aronson, Willerman & Floyd (1966): students heard a taped quiz contestant who answered 92% of questions right; when he spilled coffee on himself he was rated more likable. An average contestant who spilled was rated less likable. The pratfall effect. #psychology #shorts #likability #relationships",
+  "tags": [
+   "pratfall effect",
+   "how to be likable",
+   "social psychology",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why Mistakes Make You Likable",
+ "thumb_emph": "Likable",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Relationships & likability"
+}

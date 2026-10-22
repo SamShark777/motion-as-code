@@ -1,0 +1,214 @@
+{
+ "slug": "five-minute-sigh",
+ "no": 107,
+ "format": "cdesign",
+ "title": [
+  "The 5-Minute",
+  "Sigh"
+ ],
+ "credit": "Balban et al. · Cell Reports Medicine 2023",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Breath",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtCsLungs",
+   "chunks": [
+    [
+     "This five-minute breath"
+    ],
+    [
+     "lifted mood MORE",
+     {
+      "emph": "MORE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "than mindfulness in"
+    ],
+    [
+     "a Stanford study."
+    ]
+   ],
+   "text": "This five-minute breath lifted mood MORE than mindfulness in a Stanford study."
+  },
+  {
+   "sec": "cd",
+   "scene": "Inhale",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtCsIn",
+   "chunks": [
+    [
+     "Breathe in slowly"
+    ],
+    [
+     "through your nose.",
+     {
+      "emph": "nose",
+      "fx": "circle"
+     }
+    ]
+   ],
+   "text": "Breathe in slowly through your nose."
+  },
+  {
+   "sec": "cd",
+   "scene": "Second",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtCsTop",
+   "chunks": [
+    [
+     "Then sneak in"
+    ],
+    [
+     "a SECOND short",
+     {
+      "emph": "SECOND",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "inhale to fill"
+    ],
+    [
+     "up."
+    ]
+   ],
+   "text": "Then sneak in a SECOND short inhale to fill up."
+  },
+  {
+   "sec": "cd",
+   "scene": "Exhale",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtCsOut",
+   "chunks": [
+    [
+     "Now a long,"
+    ],
+    [
+     "slow EXHALE through",
+     {
+      "emph": "EXHALE",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "your mouth."
+    ]
+   ],
+   "text": "Now a long, slow EXHALE through your mouth."
+  },
+  {
+   "sec": "cd",
+   "scene": "Month",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtCsMonth",
+   "chunks": [
+    [
+     "Volunteers did it"
+    ],
+    [
+     "five minutes a"
+    ],
+    [
+     "day for a"
+    ],
+    [
+     "MONTH.",
+     {
+      "emph": "MONTH",
+      "fx": "doodle",
+      "doodle": "📅"
+     }
+    ]
+   ],
+   "text": "Volunteers did it five minutes a day for a MONTH."
+  },
+  {
+   "sec": "cd",
+   "scene": "Win",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtCsWin",
+   "chunks": [
+    [
+     "Both groups felt"
+    ],
+    [
+     "less anxious."
+    ],
+    [
+     "But the sighers"
+    ],
+    [
+     "felt BETTER every",
+     {
+      "emph": "BETTER",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "day."
+    ]
+   ],
+   "text": "Both groups felt less anxious. But the sighers felt BETTER every day."
+  },
+  {
+   "sec": "cd",
+   "scene": "Try",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtCsTry",
+   "chunks": [
+    [
+     "Try two right"
+    ],
+    [
+     "now.",
+     {
+      "emph": "now",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Then follow for"
+    ],
+    [
+     "more calm."
+    ]
+   ],
+   "text": "Try two right now. Then follow for more calm."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "A 5-Minute Breath That Beat Mindfulness #shorts",
+  "description": "Balban et al. (2023, Cell Reports Medicine, Stanford): 5 minutes a day of cyclic sighing (inhale, second short inhale, long exhale) for a month raised daily positive mood more than mindfulness meditation; both reduced anxiety. Not medical advice. #psychology #shorts #anxiety #breathing",
+  "tags": [
+   "cyclic sighing",
+   "breathing exercise",
+   "anxiety tip",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "The 5-Minute Calm Breath",
+ "thumb_emph": "Calm Breath",
+ "thumb_mood": "happy",
+ "music_vibe": "calm",
+ "pattern": "Therapist tip"
+}
