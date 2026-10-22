@@ -41,6 +41,20 @@
 > (myth-busting / "you've been fooled" → mystery or tense; tips and wins → uplifting; quirky effects → playful;
 > reflective habits / study → lofi or calm). Without it the vibe follows `thumb_mood`.
 
+> **Pattern test (2026-10-22, Shivam — overrides older topic rules):** the old idea queue was shelved (rows `Vetoed`,
+> note "replaced by the pattern test"). The **Ideas** are now 30 rows built on 10 patterns taken from the top
+> psychology Shorts (tracker `Theme` = `Pattern: …`, also in `Hook formula (3-act)`): Experiment story · Protect
+> yourself · Psychology of people who · Numbered facts · Therapist tip · Relationships & likability · Strange named
+> effect · Quiz / test yourself · Presence & influence rules · Psychology says (15 s loop). `Priority` 1–30 orders them
+> so **each day's 3 Shorts are 3 different patterns** (day 1 = patterns 1-3, day 2 = 4-6, …); write scripts strictly
+> in Priority order and never reorder. Each row's `Opening hook` and `Content outline` (with sources) is the
+> starting point — verify every number as usual. Script rules for the test: **25–32 s** (≈70–85 words; the "Psychology
+> says" loop 12–18 s), 6–7 scenes, the hook speaks to the viewer ("you") in the first line, plain-language titles (no
+> jargon in the title), the 3-act Turn ("But…") stays. Add `"pattern": "<pattern name>"` to script.json. After the 30,
+> the weekly review ranks patterns by views and retention and Shivam picks what continues.
+> Examples: shorts/rosenhan-fake-patients, foot-in-the-door, always-late, mind-goes-blank, five-minute-sigh,
+> coffee-spill-effect.
+
 > **3-act scripts (2026-10-18, Shivam — applies now, overrides the "change only topics, hooks and titles" part of the
 > freeze; only the visual format stays locked):** every new or still-`Scripted` (not yet built) Short follows the
 > 3-act arc. Starting point: the tracker's **3-Act Scripts** sheet (7 beats per idea: Hook 0–3 s → Setup → Evidence →
