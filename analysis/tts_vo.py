@@ -76,14 +76,18 @@ def eleven_lines(texts, cfg):
     sr = 24000
     out = []
     for i, t in enumerate(texts):
-        body = {"text": t, "model_id": cfg.get("eleven_model", "eleven_multilingual_v2"),
-                "voice_settings": {"stability": float(cfg.get("eleven_stability", 0.45)), "similarity_boost": 0.8,
-                                   "style": float(cfg.get("eleven_style", 0.25)), "use_speaker_boost": True,
-                                   "speed": float(cfg.get("eleven_speed", 1.0))}}
-        if i > 0:
-            body["previous_text"] = texts[i - 1]
-        if i + 1 < len(texts):
-            body["next_text"] = texts[i + 1]
+        model = cfg.get("eleven_model", "eleven_multilingual_v2")
+        if model == "eleven_v3":  # most expressive model: only stability 0 / 0.5 / 1, no text stitching
+            body = {"text": t, "model_id": model, "voice_settings": {"stability": 0.5, "similarity_boost": 0.8}}
+        else:
+            body = {"text": t, "model_id": model,
+                    "voice_settings": {"stability": float(cfg.get("eleven_stability", 0.45)), "similarity_boost": 0.8,
+                                       "style": float(cfg.get("eleven_style", 0.25)), "use_speaker_boost": True,
+                                       "speed": float(cfg.get("eleven_speed", 1.0))}}
+            if i > 0:
+                body["previous_text"] = texts[i - 1]
+            if i + 1 < len(texts):
+                body["next_text"] = texts[i + 1]
         req = urllib.request.Request(
             f"https://api.elevenlabs.io/v1/text-to-speech/{cfg['eleven_voice']}?output_format=pcm_{sr}",
             data=json.dumps(body).encode(), headers={"xi-api-key": key, "Content-Type": "application/json"})
@@ -208,6 +212,16 @@ def main():
             script["voice"].update(cfg["ted_voice"])
         if ted_engine == "elevenlabs":
             script["voice"]["eleven_voice"] = cfg["ted_eleven_voice"]
+    # daily ElevenLabs experiment: one posting slot a day gets an expressive ElevenLabs voice (alternating by day)
+    # so the weekly review can compare it against Heart; falls back to Heart when the free credits run out
+    exp = cfg.get("eleven_experiment") or {}
+    voice_name = None
+    if (exp.get("voices") and os.environ.get("COVER_SLOT") == exp.get("slot") and os.environ.get("COVER_DATE")
+            and script.get("format") in ("ted1", "cdesign", "story") and script.get("orientation") != "landscape"):
+        import datetime as _dt
+        voice_name, vid = exp["voices"][_dt.date.fromisoformat(os.environ["COVER_DATE"]).toordinal() % len(exp["voices"])]
+        script["voice"] = {**(script.get("voice") or {}), "engine": "elevenlabs", "eleven_voice": vid,
+                           "eleven_model": exp.get("model", "eleven_v3")}
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
     if script.get("voice", {}).get("engine"):
         engine = script["voice"]["engine"]
@@ -240,6 +254,8 @@ def main():
         rendered = kokoro_lines(texts, kv, float(cfg.get("kokoro_speed") or a.speed),
                                 cfg.get("kokoro_lang") or ("en-gb" if kv[:1] == "b" else "en-us"), cfg.get("kokoro_model", "int8"))
     print(f"ENGINE: {engine}")
+    if engine == "elevenlabs" and voice_name:
+        print(f"VOICE_NAME: ElevenLabs {voice_name}")
 
     LEAD, TAIL = (0.15, 1.0) if script.get("format") in ("ted1", "cdesign", "story") else (0.35, 1.9)
     sr0 = rendered[0][1]
@@ -279,6 +295,7 @@ def main():
     (ROOT / "data" / "lyrics.json").write_text(json.dumps({"lines": out_lines}, indent=1), encoding="utf-8")
     (ROOT / "out").mkdir(exist_ok=True)
     (ROOT / "out" / "tts_engine.txt").write_text(engine)
+    (ROOT / "out" / "tts_voice_name.txt").write_text(f"ElevenLabs {voice_name}" if engine == "elevenlabs" and voice_name else "")
     print(f"voiceover {len(full) / sr0:.2f}s, {len(out_lines)} lines")
     if len(full) / sr0 > 59:
         print("WARNING: longer than 59 s — too long for a Short; trim the script", file=sys.stderr)

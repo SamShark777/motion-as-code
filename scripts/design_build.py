@@ -152,6 +152,9 @@ def main():
     raw.unlink(missing_ok=True)
     print(f"built {mp4} ({dur:.1f}s)")
     print("ENGINE:", (ROOT / "out" / "tts_engine.txt").read_text() if (ROOT / "out" / "tts_engine.txt").exists() else "?")
+    _vn = ROOT / "out" / "tts_voice_name.txt"
+    if _vn.exists() and _vn.read_text().strip():
+        print("VOICE_NAME:", _vn.read_text().strip())
 
 
 def capture(slug, out, frm, to, W, H):

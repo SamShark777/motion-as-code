@@ -4,7 +4,7 @@ Prints one line per voice (ok / the API's error) so the workflow can show it as 
 import json, os, sys, urllib.error, urllib.request
 from pathlib import Path
 
-TEXT = ("That's not insomnia. That's your brain keeping the open loops... open. "
+TEXT = os.environ.get("ELEVEN_TEXT") or ("That's not insomnia. That's your brain keeping the open loops... open. "
         "Write the next step, then close the laptop. "
         "Nova... my brain won't let me sleep. It keeps replaying my unfinished to-do list.")
 MODEL = os.environ.get("ELEVEN_MODEL", "eleven_multilingual_v2")
@@ -14,7 +14,8 @@ def tts(voice_id, text, key):
     req = urllib.request.Request(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_44100_128",
         data=json.dumps({"text": text, "model_id": MODEL,
-                         "voice_settings": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True}}).encode(),
+                         "voice_settings": {"stability": 0.5, "similarity_boost": 0.8} if MODEL == "eleven_v3" else
+                         {"stability": 0.4, "similarity_boost": 0.8, "style": 0.3, "use_speaker_boost": True}}).encode(),
         headers={"xi-api-key": key, "Content-Type": "application/json", "Accept": "audio/mpeg"})
     with urllib.request.urlopen(req, timeout=120) as r:
         return r.read()

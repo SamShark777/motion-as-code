@@ -90,6 +90,9 @@ def check(slug):
     log = (ROOT / "out" / "build.log").read_text(errors="replace") if (ROOT / "out" / "build.log").exists() else ""
     m = re.search(r"^ENGINE: (\w+)", log, re.M)
     meta["engine"] = m.group(1) if m else "?"
+    vn = re.search(r"^VOICE_NAME: (.+)$", log, re.M)
+    if vn:
+        meta["voice_name"] = vn.group(1).strip()
     fb = re.search(r"^FALLBACK: (.+)$", log, re.M)
     if fb:
         meta["fallback"] = fb.group(1)[:300]
@@ -256,6 +259,8 @@ def publish(dist):
         vcfg = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text())
         vcfg.update(S.get("voice") or ({"kokoro_voice": "am_onyx"} if S.get("format") in ("ted1", "cdesign") else {}))
         label = (vj.get("ted_engine_name") or meta.get("engine")) if S.get("format") in ("ted1", "cdesign") and meta.get("engine") == vj.get("ted_engine") and not meta.get("fallback") else (vj.get("ted_engine_name") or "Chatterbox") if meta.get("engine") == "chatterbox" else (vj.get("ted_eleven_voice_name") or "ElevenLabs") if meta.get("engine") == "elevenlabs" else names.get(vcfg.get("kokoro_voice"), vcfg.get("kokoro_voice")) if meta.get("engine") == "kokoro" else meta.get("engine")
+        if meta.get("voice_name"):
+            label, want = meta["voice_name"], meta.get("engine")  # daily ElevenLabs experiment slot
         voice = f"voice: {label}" if meta.get("engine") == want and not meta.get("fallback") else f"⚠️ fallback voice ({meta.get('engine')}): {meta.get('fallback', '')}"
         head = f"### {b['slot']} PT — {title}\n"
         if not meta["ok"]:
@@ -296,7 +301,7 @@ def publish(dist):
         tracker("set", str(b["no"]), "Status=Scheduled", f"Slug={b['slug']}", f"Post date={b['date']}", f"Length (s)={round(meta['duration'])}",
                 f"Title used={title}", f"Hook style={S.get('hookStyle', '')}",
                 "Metricool ID=buffer:" + ";".join(f"{s}={i}" for s, i in ok.items()))
-        (ROOT / "shorts" / b["slug"] / "post.json").write_text(json.dumps({**b, "url": vurl, "buffer": ok, "errors": errs, "engine": meta.get("engine"), "duration": meta.get("duration")}, indent=1))
+        (ROOT / "shorts" / b["slug"] / "post.json").write_text(json.dumps({**b, "url": vurl, "buffer": ok, "errors": errs, "engine": meta.get("engine"), "voice_name": meta.get("voice_name"), "duration": meta.get("duration")}, indent=1))
         warn = f"\n⚠️ Not on: {', '.join(f'{s} ({e})' for s, e in errs.items())}\n" if errs else ""
         lines.append(head + f"✅ Scheduled on {', '.join(ok)}{warn}\n" + info)
     ig = []

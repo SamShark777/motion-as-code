@@ -23,5 +23,20 @@
   "kokoro_lang": "en-us",
   "kokoro_model": "fp32"
  },
- "ted_pause": 0.32
+ "ted_pause": 0.32,
+ "eleven_experiment": {
+  "slot": "14:00",
+  "model": "eleven_v3",
+  "voices": [
+   [
+    "Jessica",
+    "cgSgspJ2msm6clMCkdW9"
+   ],
+   [
+    "Brian",
+    "nPczCjzI2devNBz1zQrb"
+   ]
+  ],
+  "note": "2pm Short each day alternates Jessica (expressive, warm) / Brian (deep narrator) on eleven_v3; 9am and 7pm stay Heart for comparison"
+ }
 }
