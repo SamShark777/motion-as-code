@@ -186,10 +186,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { ref: shorts }
-      - name: Music library (real tracks; falls back to generated beds if missing)
-        uses: actions/checkout@v4
-        continue-on-error: true
-        with: { ref: music, path: music }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - name: System packages
@@ -328,6 +324,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { ref: shorts }
+      - name: Music library (real tracks; falls back to generated beds if missing)
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with: { ref: music, path: music }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - uses: oven-sh/setup-bun@v2
