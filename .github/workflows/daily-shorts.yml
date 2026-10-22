@@ -278,6 +278,7 @@ jobs:
       - name: Generate samples
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVEN_MODEL: eleven_v3
         run: |
           set +e
           python3 scripts/eleven_test.py "${{ inputs.eleven_test }}" > res.txt 2>&1; code=$?
