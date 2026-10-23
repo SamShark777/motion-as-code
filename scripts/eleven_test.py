@@ -28,6 +28,21 @@ def main():
         sys.exit(1)
     out = Path("out/eleven")
     out.mkdir(parents=True, exist_ok=True)
+    if sys.argv[1].strip() == "list":  # the account's own voices (clones/designs), plus subscription/credits
+        for path in ("/v1/voices", "/v1/user/subscription"):
+            req = urllib.request.Request("https://api.elevenlabs.io" + path, headers={"xi-api-key": key})
+            try:
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    d = json.loads(r.read())
+            except urllib.error.HTTPError as e:
+                print(f"{path}: HTTP {e.code} {e.read()[:200].decode(errors='replace')}"); continue
+            if "voices" in d:
+                for v in d["voices"]:
+                    if v.get("category") != "premade":
+                        print(f"VOICE {v.get('name')} | {v.get('voice_id')} | {v.get('category')}")
+            else:
+                print(f"PLAN {d.get('tier')} | used {d.get('character_count')} of {d.get('character_limit')} | resets {d.get('next_character_count_reset_unix')} | clone {d.get('can_use_instant_voice_cloning')}")
+        sys.exit(0)
     ok = 0
     for item in [x.strip() for x in sys.argv[1].split(",") if x.strip()]:
         vid, _, label = item.partition(":")
