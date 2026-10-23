@@ -1,0 +1,220 @@
+{
+ "slug": "mirroring-tips",
+ "no": 111,
+ "format": "cdesign",
+ "title": [
+  "Say It",
+  "Back"
+ ],
+ "credit": "van Baaren et al. · 2003",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "One",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtMiTray",
+   "chunks": [
+    [
+     "Waiters who did"
+    ],
+    [
+     "ONE simple thing",
+     {
+      "emph": "ONE",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ],
+    [
+     "almost doubled their"
+    ],
+    [
+     "tips."
+    ]
+   ],
+   "text": "Waiters who did ONE simple thing almost doubled their tips."
+  },
+  {
+   "sec": "cd",
+   "scene": "Coming",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtMiComing",
+   "chunks": [
+    [
+     "In a Dutch"
+    ],
+    [
+     "restaurant,"
+    ],
+    [
+     "a waitress sometimes"
+    ],
+    [
+     "just said:"
+    ],
+    [
+     "COMING right up.",
+     {
+      "emph": "COMING",
+      "fx": "circle"
+     }
+    ]
+   ],
+   "text": "In a Dutch restaurant, a waitress sometimes just said: COMING right up."
+  },
+  {
+   "sec": "cd",
+   "scene": "Repeat",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMiRepeat",
+   "chunks": [
+    [
+     "Other times,"
+    ],
+    [
+     "she repeated the"
+    ],
+    [
+     "order back,"
+    ],
+    [
+     "WORD for word.",
+     {
+      "emph": "WORD",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Other times, she repeated the order back, WORD for word."
+  },
+  {
+   "sec": "cd",
+   "scene": "Twice",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtMiTips",
+   "chunks": [
+    [
+     "Those tables tipped"
+    ],
+    [
+     "almost TWICE as",
+     {
+      "emph": "TWICE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "much."
+    ]
+   ],
+   "text": "Those tables tipped almost TWICE as much."
+  },
+  {
+   "sec": "cd",
+   "scene": "Understood",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtMiUnderstood",
+   "chunks": [
+    [
+     "But it's not"
+    ],
+    [
+     "a trick."
+    ],
+    [
+     "Being copied feels"
+    ],
+    [
+     "like being HEARD.",
+     {
+      "emph": "HEARD",
+      "fx": "doodle",
+      "doodle": "🤝"
+     }
+    ]
+   ],
+   "text": "But it's not a trick. Being copied feels like being HEARD."
+  },
+  {
+   "sec": "cd",
+   "scene": "Mirroring",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtMiMirror",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "mirroring."
+    ],
+    [
+     "It works.",
+     {
+      "emph": "works",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Psychologists call it mirroring. It works."
+  },
+  {
+   "sec": "cd",
+   "scene": "Try",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtMiTry",
+   "chunks": [
+    [
+     "So next time,"
+    ],
+    [
+     "repeat their key"
+    ],
+    [
+     "words back before"
+    ],
+    [
+     "you answer."
+    ],
+    [
+     "Follow for MORE.",
+     {
+      "emph": "MORE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "So next time, repeat their key words back before you answer. Follow for MORE."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The One Thing That Almost Doubled Waiters' Tips #shorts",
+  "description": "van Baaren, Holland, Steenaert & van Knippenberg (2003): in a restaurant in the Netherlands, a waitress who repeated customers' orders back word for word received almost twice the tip she got when she only said things like \"coming right up\". Verbal mimicry (mirroring) builds rapport. #psychology #shorts #communication #rapport",
+  "tags": [
+   "mirroring",
+   "mimicry",
+   "rapport",
+   "communication psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "The Trick That Doubled Tips",
+ "thumb_emph": "Doubled Tips",
+ "thumb_mood": "smug",
+ "music_vibe": "uplifting",
+ "pattern": "Presence & influence rules"
+}

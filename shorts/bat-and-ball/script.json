@@ -1,0 +1,232 @@
+{
+ "slug": "bat-and-ball",
+ "no": 110,
+ "format": "cdesign",
+ "title": [
+  "Bat &",
+  "Ball"
+ ],
+ "credit": "Frederick 2005 · Cognitive Reflection Test",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Wrong",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtBbTitle",
+   "chunks": [
+    [
+     "A bat and"
+    ],
+    [
+     "a ball cost"
+    ],
+    [
+     "one dollar ten."
+    ],
+    [
+     "Most top students"
+    ],
+    [
+     "get this WRONG.",
+     {
+      "emph": "WRONG",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "A bat and a ball cost one dollar ten. Most top students get this WRONG."
+  },
+  {
+   "sec": "cd",
+   "scene": "More",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtBbMore",
+   "chunks": [
+    [
+     "The bat costs"
+    ],
+    [
+     "one dollar MORE",
+     {
+      "emph": "MORE",
+      "fx": "circle"
+     }
+    ],
+    [
+     "than the ball."
+    ]
+   ],
+   "text": "The bat costs one dollar MORE than the ball."
+  },
+  {
+   "sec": "cd",
+   "scene": "Seconds",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtBbTimer",
+   "chunks": [
+    [
+     "How much is"
+    ],
+    [
+     "the ball?"
+    ],
+    [
+     "You have three"
+    ],
+    [
+     "SECONDS.",
+     {
+      "emph": "SECONDS",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "How much is the ball? You have three SECONDS."
+  },
+  {
+   "sec": "cd",
+   "scene": "Ten",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtBbTen",
+   "chunks": [
+    [
+     "Ten cents?"
+    ],
+    [
+     "Then the bat"
+    ],
+    [
+     "is a dollar"
+    ],
+    [
+     "ten,"
+    ],
+    [
+     "and together they"
+    ],
+    [
+     "cost a dollar"
+    ],
+    [
+     "TWENTY.",
+     {
+      "emph": "TWENTY",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Ten cents? Then the bat is a dollar ten, and together they cost a dollar TWENTY."
+  },
+  {
+   "sec": "cd",
+   "scene": "Five",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtBbFive",
+   "chunks": [
+    [
+     "The real answer"
+    ],
+    [
+     "is FIVE cents.",
+     {
+      "emph": "FIVE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "The real answer is FIVE cents."
+  },
+  {
+   "sec": "cd",
+   "scene": "Fast",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtBbFast",
+   "chunks": [
+    [
+     "More than half"
+    ],
+    [
+     "of Harvard,"
+    ],
+    [
+     "MIT and Princeton"
+    ],
+    [
+     "students said ten."
+    ],
+    [
+     "Your fast brain"
+    ],
+    [
+     "answers before your"
+    ],
+    [
+     "SLOW one checks.",
+     {
+      "emph": "SLOW",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "More than half of Harvard, MIT and Princeton students said ten. Your fast brain answers before your SLOW one checks."
+  },
+  {
+   "sec": "cd",
+   "scene": "Comment",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtBbScore",
+   "chunks": [
+    [
+     "Got it right?"
+    ],
+    [
+     "Comment your answer,"
+    ],
+    [
+     "and follow for"
+    ],
+    [
+     "the next TEST.",
+     {
+      "emph": "TEST",
+      "fx": "doodle",
+      "doodle": "✅"
+     }
+    ]
+   ],
+   "text": "Got it right? Comment your answer, and follow for the next TEST."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Most Ivy League Students Get This Wrong. Can You? #shorts",
+  "description": "The bat-and-ball question from Shane Frederick's Cognitive Reflection Test (2005): a bat and a ball cost $1.10 together and the bat costs $1 more than the ball. The intuitive answer (10 cents) is wrong; the ball costs 5 cents. More than half of students at Harvard, MIT and Princeton gave the intuitive answer (as reported by Kahneman, Thinking, Fast and Slow). #psychology #shorts #brainteaser #quiz",
+  "tags": [
+   "bat and ball problem",
+   "cognitive reflection test",
+   "brain teaser",
+   "psychology quiz"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Can You Solve This in 3 Seconds?",
+ "thumb_emph": "3 Seconds",
+ "thumb_mood": "thinking",
+ "music_vibe": "playful",
+ "pattern": "Quiz / test yourself"
+}

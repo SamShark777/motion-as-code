@@ -1,0 +1,226 @@
+{
+ "slug": "tetris-effect",
+ "no": 109,
+ "format": "cdesign",
+ "title": [
+  "Tetris",
+  "Dreams"
+ ],
+ "credit": "Stickgold et al. · Science 2000",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Asleep",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtTeBed",
+   "chunks": [
+    [
+     "Play a game"
+    ],
+    [
+     "for hours,"
+    ],
+    [
+     "and your brain"
+    ],
+    [
+     "keeps playing it"
+    ],
+    [
+     "as you fall"
+    ],
+    [
+     "ASLEEP.",
+     {
+      "emph": "ASLEEP",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Play a game for hours, and your brain keeps playing it as you fall ASLEEP."
+  },
+  {
+   "sec": "cd",
+   "scene": "Play",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtTePlay",
+   "chunks": [
+    [
+     "Harvard researchers had"
+    ],
+    [
+     "people play Tetris",
+     {
+      "emph": "Tetris",
+      "fx": "circle"
+     }
+    ],
+    [
+     "for hours over"
+    ],
+    [
+     "three days."
+    ]
+   ],
+   "text": "Harvard researchers had people play Tetris for hours over three days."
+  },
+  {
+   "sec": "cd",
+   "scene": "Sixty",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtTeSixty",
+   "chunks": [
+    [
+     "More than SIXTY",
+     {
+      "emph": "SIXTY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "percent saw falling"
+    ],
+    [
+     "blocks as they"
+    ],
+    [
+     "drifted off."
+    ]
+   ],
+   "text": "More than SIXTY percent saw falling blocks as they drifted off."
+  },
+  {
+   "sec": "cd",
+   "scene": "Amnesia",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtTeAmnesia",
+   "chunks": [
+    [
+     "But the strangest"
+    ],
+    [
+     "part:"
+    ],
+    [
+     "patients with amnesia"
+    ],
+    [
+     "saw them TOO.",
+     {
+      "emph": "TOO",
+      "fx": "stamp",
+      "block": "#141821"
+     }
+    ]
+   ],
+   "text": "But the strangest part: patients with amnesia saw them TOO."
+  },
+  {
+   "sec": "cd",
+   "scene": "Replay",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtTeReplay",
+   "chunks": [
+    [
+     "They couldn't remember"
+    ],
+    [
+     "playing."
+    ],
+    [
+     "Their brain still"
+    ],
+    [
+     "REPLAYED it.",
+     {
+      "emph": "REPLAYED",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "They couldn't remember playing. Their brain still REPLAYED it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Effect",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtTeEffect",
+   "chunks": [
+    [
+     "It's the Tetris"
+    ],
+    [
+     "effect:"
+    ],
+    [
+     "whatever you repeat,"
+    ],
+    [
+     "your brain REHEARSES.",
+     {
+      "emph": "REHEARSES",
+      "fx": "doodle",
+      "doodle": "🧠"
+     }
+    ]
+   ],
+   "text": "It's the Tetris effect: whatever you repeat, your brain REHEARSES."
+  },
+  {
+   "sec": "cd",
+   "scene": "Feed",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtTeFeed",
+   "chunks": [
+    [
+     "So before bed,"
+    ],
+    [
+     "feed it something"
+    ],
+    [
+     "worth REPLAYING.",
+     {
+      "emph": "REPLAYING",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Follow for more."
+    ]
+   ],
+   "text": "So before bed, feed it something worth REPLAYING. Follow for more."
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Your Brain Replays Games As You Fall Asleep #shorts",
+  "description": "Stickgold et al. (2000, Science): after playing Tetris for hours over three days, more than 60% of players (17 of 27) saw falling blocks at sleep onset, including 3 of 5 amnesic patients who couldn't remember playing. The Tetris effect. #psychology #shorts #sleep #brain",
+  "tags": [
+   "tetris effect",
+   "sleep",
+   "dreams",
+   "psychology"
+  ]
+ },
+ "look": "ted2",
+ "thumb_text": "Why Your Brain Replays Games",
+ "thumb_emph": "Replays",
+ "thumb_mood": "curious",
+ "music_vibe": "mystery",
+ "pattern": "Strange named effect"
+}
