@@ -138,14 +138,36 @@
     const o = Math.min(1, (T - t0) / 0.12);
     const words = coverWords(S);
     const n = words.reduce((a, x) => a + x.w.length + 1, 0);
-    const size = n > 44 ? 104 : n > 32 ? 118 : n > 22 ? 134 : 150;
+    const longest = words.reduce((m, x) => Math.max(m, x.w.length), 1);
+    // fit: by total length, and so the longest word never overflows the 908 px text column (~0.8 em per caps letter)
+    const size = Math.min(n > 44 ? 100 : n > 32 ? 112 : 128, Math.floor(908 / (longest * 0.8)));
+    // the video's own illustration (hook scene, or script "thumb_scene" index) so the cover shows what the title promises
+    const si = Math.max(0, Math.min((S.lines || []).length - 1, S.thumb_scene || 0));
+    const ln = (S.lines || [])[si] || {};
+    const SceneArt = ln.art && window[ln.art];
     return (
       <div style={{ position: 'absolute', inset: 0, opacity: o, zIndex: 50, overflow: 'hidden',
         background: 'radial-gradient(120% 80% at 50% 30%, #2a2f6b 0%, #14163a 55%, #0b0c1f 100%)' }}>
         <svg width="1080" height="1920" viewBox="0 0 1080 1920" style={{ position: 'absolute', inset: 0 }}>
-          <circle cx="540" cy="1560" r="430" fill="#FFD23F" opacity="0.12" />
-          <circle cx="540" cy="1560" r="300" fill="#FFD23F" opacity="0.14" />
-          <Person x={540} y={1700} s={2.55} c={pickChar(S)} mood={S.thumb_mood || 'curious'} />
+          {SceneArt ? (
+            <g>
+              <defs><clipPath id="tcClip"><rect x="96" y="940" width="888" height="900" rx="56" /></clipPath></defs>
+              <rect x="96" y="940" width="888" height="900" rx="56" fill={ln.color || '#1F3B73'} />
+              <g clipPath="url(#tcClip)">
+                <svg x="96" y="940" width="888" height="900" viewBox="0 720 972 985" preserveAspectRatio="xMidYMid slice">
+                  <SceneArt T={T} t={30} dur={30} />
+                </svg>
+              </g>
+              <rect x="96" y="940" width="888" height="900" rx="56" fill="none" stroke="#FFD23F" strokeWidth="10" />
+              <Person x={190} y={1790} s={1.05} c={pickChar(S)} mood={S.thumb_mood || 'curious'} />
+            </g>
+          ) : (
+            <g>
+              <circle cx="540" cy="1560" r="430" fill="#FFD23F" opacity="0.12" />
+              <circle cx="540" cy="1560" r="300" fill="#FFD23F" opacity="0.14" />
+              <Person x={540} y={1700} s={2.55} c={pickChar(S)} mood={S.thumb_mood || 'curious'} />
+            </g>
+          )}
         </svg>
         <div style={{ position: 'absolute', left: 86, right: 86, top: 210 }}>
           <div style={{ font: "800 34px 'Montserrat', 'Barlow Condensed', 'Arial Black', sans-serif", letterSpacing: '0.22em',
