@@ -25,18 +25,25 @@
  },
  "ted_pause": 0.32,
  "eleven_experiment": {
-  "slot": "14:00",
   "model": "eleven_v3",
-  "voices": [
-   [
-    "Jessica",
-    "cgSgspJ2msm6clMCkdW9"
+  "slots": {
+   "14:00": [
+    [
+     "Shivam",
+     "SElE2hWOUgTauIJ8DHdH"
+    ]
    ],
-   [
-    "Brian",
-    "nPczCjzI2devNBz1zQrb"
+   "19:00": [
+    [
+     "Jessica",
+     "cgSgspJ2msm6clMCkdW9"
+    ],
+    [
+     "Brian",
+     "nPczCjzI2devNBz1zQrb"
+    ]
    ]
-  ],
-  "note": "2pm Short each day alternates Jessica (expressive, warm) / Brian (deep narrator) on eleven_v3; 9am and 7pm stay Heart for comparison"
+  },
+  "note": "2026-10-22 Shivam: his own ElevenLabs voice every day at 14:00; 19:00 alternates Jessica / Brian; 09:00 stays Heart as the baseline. Falls back to Heart if credits run out."
  }
 }

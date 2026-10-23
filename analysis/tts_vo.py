@@ -216,10 +216,12 @@ def main():
     # so the weekly review can compare it against Heart; falls back to Heart when the free credits run out
     exp = cfg.get("eleven_experiment") or {}
     voice_name = None
-    if (exp.get("voices") and os.environ.get("COVER_SLOT") == exp.get("slot") and os.environ.get("COVER_DATE")
+    slots = exp.get("slots") or ({exp["slot"]: exp["voices"]} if exp.get("voices") else {})
+    pool = slots.get(os.environ.get("COVER_SLOT") or "")
+    if (pool and os.environ.get("COVER_DATE")
             and script.get("format") in ("ted1", "cdesign", "story") and script.get("orientation") != "landscape"):
         import datetime as _dt
-        voice_name, vid = exp["voices"][_dt.date.fromisoformat(os.environ["COVER_DATE"]).toordinal() % len(exp["voices"])]
+        voice_name, vid = pool[_dt.date.fromisoformat(os.environ["COVER_DATE"]).toordinal() % len(pool)]
         script["voice"] = {**(script.get("voice") or {}), "engine": "elevenlabs", "eleven_voice": vid,
                            "eleven_model": exp.get("model", "eleven_v3")}
     cfg.update(script.get("voice") or {})  # per-script voice override (e.g. Ted type 1: deep male)
