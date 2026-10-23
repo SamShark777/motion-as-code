@@ -1,0 +1,17 @@
+{
+ "no": 104,
+ "slug": "foot-in-the-door",
+ "date": "2026-10-24",
+ "slot": "14:00",
+ "due": "2026-10-24T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-24/foot-in-the-door.mp4",
+ "buffer": {
+  "youtube": "6adbc6a99acae620d8192a7d",
+  "instagram": "6adbc6a93d5b27036b4fa580",
+  "tiktok": "6adbc6a9bd33ce99c3ed1021"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 40.1
+}

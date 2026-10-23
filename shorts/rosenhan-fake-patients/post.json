@@ -1,0 +1,17 @@
+{
+ "no": 103,
+ "slug": "rosenhan-fake-patients",
+ "date": "2026-10-24",
+ "slot": "09:00",
+ "due": "2026-10-24T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-24/rosenhan-fake-patients.mp4",
+ "buffer": {
+  "youtube": "6adbc6a6bd33ce99c3ed0fa3",
+  "instagram": "6adbc6a6bd33ce99c3ed0fcf",
+  "tiktok": "6adbc6a70b5343d0704ce897"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 28.9
+}
