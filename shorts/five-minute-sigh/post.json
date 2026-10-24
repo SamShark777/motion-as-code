@@ -1,0 +1,17 @@
+{
+ "no": 107,
+ "slug": "five-minute-sigh",
+ "date": "2026-10-25",
+ "slot": "14:00",
+ "due": "2026-10-25T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-25/five-minute-sigh.mp4",
+ "buffer": {
+  "youtube": "6adcff370b5343d0709a8cb9",
+  "instagram": "6adcff373d5b27036b9b9fe3",
+  "tiktok": "6adcff38e4be8a4d86734d26"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 31.4
+}
