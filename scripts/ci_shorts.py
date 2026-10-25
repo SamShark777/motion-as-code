@@ -254,11 +254,11 @@ def publish(dist):
         S = json.loads((ROOT / "shorts" / b["slug"] / "script.json").read_text())
         title = S["post"]["title"]
         vj = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text())
-        want = ((vj.get("ted_engine") or ("elevenlabs" if vj.get("ted_eleven_voice") else None)) if S.get("format") in ("ted1", "cdesign") else None) or (S.get("voice") or {}).get("engine") or ("kokoro" if S.get("format") in ("ted1", "cdesign") else vj.get("engine", "kokoro"))
+        want = ((vj.get("ted_engine") or ("elevenlabs" if vj.get("ted_eleven_voice") else None)) if S.get("format") in ("ted1", "cdesign", "stick") else None) or (S.get("voice") or {}).get("engine") or ("kokoro" if S.get("format") in ("ted1", "cdesign", "stick") else vj.get("engine", "kokoro"))
         names = {"bf_emma": "Emma (British)", "bm_george": "George (British)", "bm_fable": "Fable (British)", "bf_isabella": "Isabella (British)", "am_onyx": "Onyx (deep male)", "am_michael": "Michael + Heart (dialogue)"}
         vcfg = json.loads((ROOT / "shorts" / "voice" / "voice.json").read_text())
-        vcfg.update(S.get("voice") or ({"kokoro_voice": "am_onyx"} if S.get("format") in ("ted1", "cdesign") else {}))
-        label = (vj.get("ted_engine_name") or meta.get("engine")) if S.get("format") in ("ted1", "cdesign") and meta.get("engine") == vj.get("ted_engine") and not meta.get("fallback") else (vj.get("ted_engine_name") or "Chatterbox") if meta.get("engine") == "chatterbox" else (vj.get("ted_eleven_voice_name") or "ElevenLabs") if meta.get("engine") == "elevenlabs" else names.get(vcfg.get("kokoro_voice"), vcfg.get("kokoro_voice")) if meta.get("engine") == "kokoro" else meta.get("engine")
+        vcfg.update(S.get("voice") or ({"kokoro_voice": "am_onyx"} if S.get("format") in ("ted1", "cdesign", "stick") else {}))
+        label = (vj.get("ted_engine_name") or meta.get("engine")) if S.get("format") in ("ted1", "cdesign", "stick") and meta.get("engine") == vj.get("ted_engine") and not meta.get("fallback") else (vj.get("ted_engine_name") or "Chatterbox") if meta.get("engine") == "chatterbox" else (vj.get("ted_eleven_voice_name") or "ElevenLabs") if meta.get("engine") == "elevenlabs" else names.get(vcfg.get("kokoro_voice"), vcfg.get("kokoro_voice")) if meta.get("engine") == "kokoro" else meta.get("engine")
         if meta.get("voice_name"):
             label, want = meta["voice_name"], meta.get("engine")  # daily ElevenLabs experiment slot
         voice = f"voice: {label}" if meta.get("engine") == want and not meta.get("fallback") else f"⚠️ fallback voice ({meta.get('engine')}): {meta.get('fallback', '')}"

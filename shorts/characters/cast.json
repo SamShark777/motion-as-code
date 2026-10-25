@@ -1,0 +1,55 @@
+{
+ "about": "Recurring cast of the stick story Shorts. The look is drawn by shorts/design_kit/stick-kit.jsx (Stick component, who=<id>) — never redraw a character by hand in art.jsx. Each video works on its own, but characters keep their history (add a line to 'history' after each episode).",
+ "style": "Hand-drawn white stick figures on near-black, black-filled round heads, one signature colour accent per character; brand yellow (#F5D33A) for the key caption word. Handwritten captions (Caveat Brush).",
+ "characters": {
+  "arjun": {
+   "name": "Arjun", "age": "early 20s", "build": "medium height",
+   "look": "messy spiky hair (4 strands), yellow scarf (#F5D33A)",
+   "default_mood": "worried",
+   "personality": "kind, funny, smart — and an overthinker. Reads into every silence.",
+   "speech": "short, anxious inner monologue: 'He's mad at me.' 'I definitely did something.'",
+   "strengths": ["loyal", "notices details", "self-aware after the fact"],
+   "weaknesses": ["mind reading", "catastrophising", "rumination", "people-pleasing when anxious"],
+   "relationships": {"kabir": "best friend since school", "maya": "close friend who calls him out", "zoe": "classmate / crush, unspoken"},
+   "history": []
+  },
+  "maya": {
+   "name": "Maya", "age": "early 20s", "build": "short",
+   "look": "high ponytail with a coral tie (#FF6B5B)",
+   "default_mood": "smug",
+   "personality": "blunt, confident, funny; says the thing everyone is thinking.",
+   "speech": "dry one-liners: 'Did you ask him?'",
+   "strengths": ["direct", "self-assured", "protective of friends"],
+   "weaknesses": ["impatience", "status games", "hates admitting she's wrong"],
+   "relationships": {"arjun": "his reality check", "kabir": "teasing friendship", "zoe": "roommate"},
+   "history": []
+  },
+  "kabir": {
+   "name": "Kabir", "age": "early 20s", "build": "tall",
+   "look": "flat hair, teal headphones (#3FC1C9) always on",
+   "default_mood": "happy",
+   "personality": "easygoing, cheerful, completely oblivious to drama he 'causes'.",
+   "speech": "relaxed: 'Yeah? Why?'",
+   "strengths": ["calm", "secure", "doesn't take things personally"],
+   "weaknesses": ["procrastination", "forgets to reply", "avoids hard conversations"],
+   "relationships": {"arjun": "best friend", "maya": "gets teased by her", "zoe": "friendly"},
+   "history": []
+  },
+  "zoe": {
+   "name": "Zoe", "age": "early 20s", "build": "medium-short",
+   "look": "lavender beanie (#B79CFF) and round lavender glasses",
+   "default_mood": "neutral",
+   "personality": "thoughtful, polite, a people-pleaser who can't say no.",
+   "speech": "soft and over-apologetic: 'Sorry, it's totally fine!'",
+   "strengths": ["empathetic", "reliable", "great listener"],
+   "weaknesses": ["people-pleasing", "comparison", "imposter feelings"],
+   "relationships": {"maya": "roommate", "arjun": "classmate", "kabir": "friend"},
+   "history": []
+  }
+ },
+ "episode_rules": [
+  "Structure: pattern interrupt in the first line (something happens) -> problem -> escalation (viewer predicts) -> 'But…' reveal of what was really going on -> name the psychology effect plainly -> payoff that reframes the opening; optionally a small unresolved character beat at the end.",
+  "20–40 s. 1–3 cast members per episode. Psychology stays accurate: any study or number must be verified; for real experiments say 'Arjun isn't real, but this experiment was.'",
+  "Each line can carry 'label' (1–2 grey corner words) and 'tone' (ElevenLabs tags)."
+ ]
+}

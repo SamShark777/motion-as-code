@@ -1,0 +1,289 @@
+{
+ "slug": "arjun-mind-reading",
+ "no": 133,
+ "format": "stick",
+ "look": "stick",
+ "series": "Arjun",
+ "episode": 1,
+ "cast": [
+  "arjun",
+  "kabir",
+  "maya"
+ ],
+ "title": [
+  "Mind",
+  "Reading"
+ ],
+ "credit": "Cognitive distortions · Beck; Burns 1980",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Ignored",
+   "label": "ignored",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Wave",
+   "chunks": [
+    [
+     "Arjun waved at"
+    ],
+    [
+     "Kabir."
+    ],
+    [
+     "Kabir walked right"
+    ],
+    [
+     "PAST him.",
+     {
+      "emph": "PAST",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Arjun waved at Kabir. Kabir walked right PAST him.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Story",
+   "label": "the story",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Mad",
+   "chunks": [
+    [
+     "Arjun's brain instantly"
+    ],
+    [
+     "decided:"
+    ],
+    [
+     "he's MAD at",
+     {
+      "emph": "MAD",
+      "fx": "pop"
+     }
+    ],
+    [
+     "me."
+    ]
+   ],
+   "text": "Arjun's brain instantly decided: he's MAD at me.",
+   "tone": "worried"
+  },
+  {
+   "sec": "cd",
+   "scene": "Later",
+   "label": "later",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Laugh",
+   "chunks": [
+    [
+     "Then he saw"
+    ],
+    [
+     "Kabir laughing with",
+     {
+      "emph": "laughing",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Maya."
+    ]
+   ],
+   "text": "Then he saw Kabir laughing with Maya.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof?",
+   "label": "proof?",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Sure",
+   "chunks": [
+    [
+     "Now he was"
+    ],
+    [
+     "sure."
+    ],
+    [
+     "I definitely did"
+    ],
+    [
+     "SOMETHING.",
+     {
+      "emph": "SOMETHING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Now he was sure. I definitely did SOMETHING.",
+   "tone": "anxious"
+  },
+  {
+   "sec": "cd",
+   "scene": "3 A.M.",
+   "label": "3 a.m.",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Replay",
+   "chunks": [
+    [
+     "He replayed yesterday's"
+    ],
+    [
+     "chat."
+    ],
+    [
+     "FIVE times.",
+     {
+      "emph": "FIVE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "He replayed yesterday's chat. FIVE times.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Missing",
+   "chunks": [
+    [
+     "But Arjun was"
+    ],
+    [
+     "missing one tiny",
+     {
+      "emph": "tiny",
+      "fx": "pop"
+     }
+    ],
+    [
+     "piece of information."
+    ]
+   ],
+   "text": "But Arjun was missing one tiny piece of information.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Truth",
+   "label": "the truth",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Truth",
+   "chunks": [
+    [
+     "Kabir had his"
+    ],
+    [
+     "headphones on."
+    ],
+    [
+     "He never SAW",
+     {
+      "emph": "SAW",
+      "fx": "pop"
+     }
+    ],
+    [
+     "him."
+    ]
+   ],
+   "text": "Kabir had his headphones on. He never SAW him.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Mind Reading",
+   "label": "mind reading",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Name",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "mind READING:",
+     {
+      "emph": "READING",
+      "fx": "pop"
+     }
+    ],
+    [
+     "deciding what someone"
+    ],
+    [
+     "thinks,"
+    ],
+    [
+     "with zero evidence."
+    ]
+   ],
+   "text": "Psychologists call it mind READING: deciding what someone thinks, with zero evidence.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Next Time",
+   "label": "next time",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS1Ask",
+   "chunks": [
+    [
+     "So ask before"
+    ],
+    [
+     "you assume."
+    ],
+    [
+     "Arjun is still"
+    ],
+    [
+     "WORKING on it.",
+     {
+      "emph": "WORKING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "So ask before you assume. Arjun is still WORKING on it.",
+   "tone": "warmly, laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why You Think Everyone Is Mad at You #shorts",
+  "description": "Arjun is sure Kabir is mad at him. Kabir just had his headphones on. Psychologists call this \"mind reading\": a cognitive distortion (Aaron Beck; David Burns, Feeling Good, 1980) where we conclude what someone thinks without evidence. Fix: ask before you assume. #psychology #shorts #overthinking #anxiety",
+  "tags": [
+   "mind reading",
+   "overthinking",
+   "cognitive distortions",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why You Think They're Mad at You",
+ "thumb_emph": "Mad at You",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 1
+}

@@ -89,6 +89,9 @@ def main():
                 fams.append(q)
         fonts = "https://fonts.googleapis.com/css2?" + "&".join(fams) + "&display=swap"
         files, app = f"{kit}/animations-v3.jsx {kit}/story-kit.jsx ./scenes.jsx {kit}/cover.jsx {kit}/story-engine.jsx", "StoryShortApp"
+    elif S.get("format") == "stick":  # recurring-character stick stories (hand-drawn look)
+        fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Caveat+Brush&display=swap"
+        files, app = f"{kit}/animations-v3.jsx {kit}/stick-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/stick-engine.jsx", "StickShortApp"
     else:
         fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
         files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/cover.jsx {kit}/engine.jsx", "DesignShortApp"
