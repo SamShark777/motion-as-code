@@ -1,3 +1,12 @@
+> **2026-10-25 — Shivam: STICK CHARACTER STORIES replace the explainers.** Every new Short is format `"stick"`
+> (look "stick"): recurring cast from `shorts/characters/cast.json` (Arjun, Maya, Kabir, Zoe) drawn ONLY with
+> `shorts/design_kit/stick-kit.jsx` components; engine `stick-engine.jsx`. Structure: something happens in the first line
+> (character + situation) → problem → escalation → "But…" reveal → name the psychology effect plainly → payoff that
+> reframes the opening; optional small unresolved character beat. 25–40 s, 7–9 lines, each with `label` (grey corner
+> word) and `tone` (ElevenLabs tags). Real studies: "<Name> isn't real. But in <year>…" with verified numbers.
+> Add the episode to the character's `history` in cast.json. Examples: shorts/arjun-mind-reading, zoe-tiny-favor,
+> kabir-two-days. Remaining pattern-test Ideas are topics to retell as stories (keep their sources).
+
 # Daily Shorts pipeline — runbook
 
 > **2026-10-15 — Shivam: Ted type 2 is the only Shorts format.** The 8-bit pixel-avatar videos (all the
