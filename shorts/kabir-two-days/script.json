@@ -1,0 +1,303 @@
+{
+ "slug": "kabir-two-days",
+ "no": 135,
+ "format": "stick",
+ "look": "stick",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Monday",
+   "label": "monday",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Week",
+   "chunks": [
+    [
+     "Kabir had a"
+    ],
+    [
+     "whole WEEK for",
+     {
+      "emph": "WEEK",
+      "fx": "pop"
+     }
+    ],
+    [
+     "his essay."
+    ],
+    [
+     "Easy."
+    ]
+   ],
+   "text": "Kabir had a whole WEEK for his essay. Easy.",
+   "tone": "casually"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Plan",
+   "label": "the plan",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Plan",
+   "chunks": [
+    [
+     "His plan:"
+    ],
+    [
+     "two days, TOPS.",
+     {
+      "emph": "TOPS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "His plan: two days, TOPS.",
+   "tone": "excited"
+  },
+  {
+   "sec": "cd",
+   "scene": "Wednesday",
+   "label": "wednesday",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Zero",
+   "chunks": [
+    [
+     "Wednesday."
+    ],
+    [
+     "Still at ZERO",
+     {
+      "emph": "ZERO",
+      "fx": "pop"
+     }
+    ],
+    [
+     "words."
+    ]
+   ],
+   "text": "Wednesday. Still at ZERO words.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Friday, 11 P.M.",
+   "label": "friday, 11 p.m.",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Night",
+   "chunks": [
+    [
+     "Friday night: Kabir,"
+    ],
+    [
+     "Arjun and three"
+    ],
+    [
+     "energy DRINKS.",
+     {
+      "emph": "DRINKS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Friday night: Kabir, Arjun and three energy DRINKS.",
+   "tone": "laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Dream",
+   "chunks": [
+    [
+     "But Kabir isn't"
+    ],
+    [
+     "lazy."
+    ],
+    [
+     "His brain just"
+    ],
+    [
+     "pictured the PERFECT",
+     {
+      "emph": "PERFECT",
+      "fx": "pop"
+     }
+    ],
+    [
+     "week."
+    ]
+   ],
+   "text": "But Kabir isn't lazy. His brain just pictured the PERFECT week.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "1994",
+   "label": "1994",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Study",
+   "chunks": [
+    [
+     "In a real"
+    ],
+    [
+     "study,"
+    ],
+    [
+     "students guessed their"
+    ],
+    [
+     "thesis would take"
+    ],
+    [
+     "THIRTY-FOUR days.",
+     {
+      "emph": "THIRTY-FOUR",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "In a real study, students guessed their thesis would take THIRTY-FOUR days.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Reality",
+   "label": "reality",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Real",
+   "chunks": [
+    [
+     "It took FIFTY-FIVE.",
+     {
+      "emph": "FIFTY-FIVE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Only about thirty"
+    ],
+    [
+     "percent finished on"
+    ],
+    [
+     "time."
+    ]
+   ],
+   "text": "It took FIFTY-FIVE. Only about thirty percent finished on time.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Planning Fallacy",
+   "label": "planning fallacy",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Name",
+   "chunks": [
+    [
+     "It's the planning"
+    ],
+    [
+     "fallacy:"
+    ],
+    [
+     "we plan for"
+    ],
+    [
+     "the BEST case,",
+     {
+      "emph": "BEST",
+      "fx": "pop"
+     }
+    ],
+    [
+     "not the usual"
+    ],
+    [
+     "one."
+    ]
+   ],
+   "text": "It's the planning fallacy: we plan for the BEST case, not the usual one.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Next Time",
+   "label": "next time",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS3Fix",
+   "chunks": [
+    [
+     "The fix:"
+    ],
+    [
+     "ask how long"
+    ],
+    [
+     "it took LAST",
+     {
+      "emph": "LAST",
+      "fx": "pop"
+     }
+    ],
+    [
+     "time."
+    ],
+    [
+     "Kabir says he'll"
+    ],
+    [
+     "try that next"
+    ],
+    [
+     "week."
+    ]
+   ],
+   "text": "The fix: ask how long it took LAST time. Kabir says he'll try that next week.",
+   "tone": "laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "series": "Kabir",
+ "episode": 1,
+ "cast": [
+  "kabir",
+  "arjun"
+ ],
+ "title": [
+  "Two Days,",
+  "Tops"
+ ],
+ "credit": "Buehler, Griffin & Ross · 1994",
+ "post": {
+  "title": "Why Everything Takes Longer Than You Planned #shorts",
+  "description": "Kabir plans two days for a week-long essay and ends up pulling an all-nighter. Buehler, Griffin & Ross (1994): students predicted their thesis would take 33.9 days; it took 55.5, and only about 30% finished by their own estimate. The planning fallacy. Fix: plan from how long it took last time. #psychology #shorts #procrastination",
+  "tags": [
+   "planning fallacy",
+   "procrastination",
+   "time management",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why Everything Takes Longer",
+ "thumb_emph": "Takes Longer",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 3
+}

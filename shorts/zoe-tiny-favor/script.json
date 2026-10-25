@@ -1,0 +1,303 @@
+{
+ "slug": "zoe-tiny-favor",
+ "no": 134,
+ "format": "stick",
+ "look": "stick",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Favor",
+   "label": "favor",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Coffee",
+   "chunks": [
+    [
+     "Maya asked Zoe"
+    ],
+    [
+     "for one TINY",
+     {
+      "emph": "TINY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "favor:"
+    ],
+    [
+     "hold my coffee."
+    ]
+   ],
+   "text": "Maya asked Zoe for one TINY favor: hold my coffee.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Easy",
+   "label": "easy",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Hold",
+   "chunks": [
+    [
+     "Zoe said yes.",
+     {
+      "emph": "yes",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Of course she"
+    ],
+    [
+     "did."
+    ]
+   ],
+   "text": "Zoe said yes. Of course she did.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Next Day",
+   "label": "next day",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Text",
+   "chunks": [
+    [
+     "Next day:"
+    ],
+    [
+     "can you cover"
+    ],
+    [
+     "my weekend SHIFT?",
+     {
+      "emph": "SHIFT",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Next day: can you cover my weekend SHIFT?",
+   "tone": "casually"
+  },
+  {
+   "sec": "cd",
+   "scene": "Trapped",
+   "label": "trapped",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Sigh",
+   "chunks": [
+    [
+     "Zoe hated working"
+    ],
+    [
+     "weekends."
+    ],
+    [
+     "She said yes"
+    ],
+    [
+     "ANYWAY.",
+     {
+      "emph": "ANYWAY",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Zoe hated working weekends. She said yes ANYWAY.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2But",
+   "chunks": [
+    [
+     "But this wasn't"
+    ],
+    [
+     "about Zoe being"
+    ],
+    [
+     "NICE.",
+     {
+      "emph": "NICE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "But this wasn't about Zoe being NICE.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "1966",
+   "label": "1966",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Sign",
+   "chunks": [
+    [
+     "Zoe isn't real."
+    ],
+    [
+     "But in 1966,"
+    ],
+    [
+     "only SEVENTEEN percent",
+     {
+      "emph": "SEVENTEEN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "of homeowners agreed"
+    ],
+    [
+     "to a huge,"
+    ],
+    [
+     "ugly yard sign."
+    ]
+   ],
+   "text": "Zoe isn't real. But in 1966, only SEVENTEEN percent of homeowners agreed to a huge, ugly yard sign.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Trick",
+   "label": "the trick",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Sticker",
+   "chunks": [
+    [
+     "Ask for a"
+    ],
+    [
+     "tiny window sticker"
+    ],
+    [
+     "first?"
+    ],
+    [
+     "SEVENTY-SIX percent said",
+     {
+      "emph": "SEVENTY-SIX",
+      "fx": "pop"
+     }
+    ],
+    [
+     "yes."
+    ]
+   ],
+   "text": "Ask for a tiny window sticker first? SEVENTY-SIX percent said yes.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Foot In The Door",
+   "label": "foot in the door",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Door",
+   "chunks": [
+    [
+     "One small yes"
+    ],
+    [
+     "changes how you"
+    ],
+    [
+     "see yourself."
+    ],
+    [
+     "It's called the"
+    ],
+    [
+     "foot in the"
+    ],
+    [
+     "DOOR.",
+     {
+      "emph": "DOOR",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "One small yes changes how you see yourself. It's called the foot in the DOOR.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "New Rule",
+   "label": "new rule",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS2Rule",
+   "chunks": [
+    [
+     "Zoe's new rule:"
+    ],
+    [
+     "judge every ask"
+    ],
+    [
+     "on its OWN.",
+     {
+      "emph": "OWN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Maya hasn't noticed"
+    ],
+    [
+     "yet."
+    ]
+   ],
+   "text": "Zoe's new rule: judge every ask on its OWN. Maya hasn't noticed yet.",
+   "tone": "mischievously"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "series": "Zoe",
+ "episode": 1,
+ "cast": [
+  "zoe",
+  "maya"
+ ],
+ "title": [
+  "The Tiny",
+  "Favor"
+ ],
+ "credit": "Freedman & Fraser · 1966",
+ "post": {
+  "title": "Why You Can't Say No After Saying Yes Once #shorts",
+  "description": "Zoe says yes to holding a coffee, then gets talked into a weekend shift. Freedman & Fraser (1966): only 17% of homeowners agreed to a big \"Drive Carefully\" yard sign, but 76% agreed after first saying yes to a small \"Be a Safe Driver\" window sign. The foot-in-the-door technique. #psychology #shorts #peoplepleaser",
+  "tags": [
+   "foot in the door",
+   "people pleasing",
+   "how to say no",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why You Can't Say No",
+ "thumb_emph": "Say No",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 3
+}
