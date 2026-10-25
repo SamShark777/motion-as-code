@@ -1,0 +1,275 @@
+{
+ "slug": "maya-big-ask",
+ "no": 114,
+ "format": "stick",
+ "look": "stick",
+ "series": "Maya",
+ "episode": 2,
+ "cast": [
+  "maya",
+  "kabir"
+ ],
+ "title": [
+  "Just the",
+  "Couch"
+ ],
+ "credit": "Cialdini et al. · 1975",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Moving Day",
+   "label": "moving day",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9Move",
+   "chunks": [
+    [
+     "Maya asked Kabir"
+    ],
+    [
+     "to help her"
+    ],
+    [
+     "move."
+    ],
+    [
+     "All WEEKEND.",
+     {
+      "emph": "WEEKEND",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Maya asked Kabir to help her move. All WEEKEND.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "No",
+   "label": "no",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9No",
+   "chunks": [
+    [
+     "He said no."
+    ],
+    [
+     "Fine,"
+    ],
+    [
+     "she said."
+    ],
+    [
+     "Just the COUCH?",
+     {
+      "emph": "COUCH",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "He said no. Fine, she said. Just the COUCH?",
+   "tone": "laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Wait",
+   "label": "wait",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9Couch",
+   "chunks": [
+    [
+     "Kabir said YES.",
+     {
+      "emph": "YES",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Wait,"
+    ],
+    [
+     "what?"
+    ]
+   ],
+   "text": "Kabir said YES. Wait, what?",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9But",
+   "chunks": [
+    [
+     "But the move"
+    ],
+    [
+     "was never the"
+    ],
+    [
+     "real ASK.",
+     {
+      "emph": "ASK",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "But the move was never the real ASK.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "1975",
+   "label": "1975",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9Zoo",
+   "chunks": [
+    [
+     "Maya isn't real."
+    ],
+    [
+     "But in 1975,"
+    ],
+    [
+     "only SEVENTEEN percent",
+     {
+      "emph": "SEVENTEEN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "of students agreed"
+    ],
+    [
+     "to chaperone teens"
+    ],
+    [
+     "on a zoo"
+    ],
+    [
+     "trip."
+    ]
+   ],
+   "text": "Maya isn't real. But in 1975, only SEVENTEEN percent of students agreed to chaperone teens on a zoo trip.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Big Ask First",
+   "label": "big ask first",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9Years",
+   "chunks": [
+    [
+     "Ask for two"
+    ],
+    [
+     "years of volunteering"
+    ],
+    [
+     "first,"
+    ],
+    [
+     "and FIFTY percent",
+     {
+      "emph": "FIFTY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "said yes."
+    ]
+   ],
+   "text": "Ask for two years of volunteering first, and FIFTY percent said yes.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Door In The Face",
+   "label": "door in the face",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9Name",
+   "chunks": [
+    [
+     "It's the door"
+    ],
+    [
+     "in the FACE:",
+     {
+      "emph": "FACE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "a big no"
+    ],
+    [
+     "makes a small"
+    ],
+    [
+     "yes feel fair."
+    ]
+   ],
+   "text": "It's the door in the FACE: a big no makes a small yes feel fair.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Kabir",
+   "label": "kabir",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS9End",
+   "chunks": [
+    [
+     "Kabir thinks he"
+    ],
+    [
+     "got off EASY.",
+     {
+      "emph": "EASY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Maya is still"
+    ],
+    [
+     "smiling."
+    ]
+   ],
+   "text": "Kabir thinks he got off EASY. Maya is still smiling.",
+   "tone": "laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The Big-No Trick That Gets You a Yes #shorts",
+  "description": "Maya asks Kabir to help her move all weekend. He says no. Then: just the couch? Yes. Cialdini et al. (1975): only 17% of students agreed to chaperone juvenile delinquents on a day trip to the zoo, but 50% agreed after first refusing a much bigger request (two hours a week for two years as a counselor). The door-in-the-face technique. #psychology #shorts #persuasion #influence",
+  "tags": [
+   "door in the face",
+   "persuasion",
+   "influence",
+   "psychology"
+  ]
+ },
+ "thumb_text": "The Big-No Trick",
+ "thumb_emph": "Big-No",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 2
+}

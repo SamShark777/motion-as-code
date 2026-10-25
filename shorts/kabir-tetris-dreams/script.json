@@ -1,0 +1,266 @@
+{
+ "slug": "kabir-tetris-dreams",
+ "no": 109,
+ "format": "stick",
+ "look": "stick",
+ "series": "Kabir",
+ "episode": 2,
+ "cast": [
+  "kabir",
+  "arjun"
+ ],
+ "title": [
+  "Falling",
+  "Blocks"
+ ],
+ "credit": "Stickgold et al. · Science 2000",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Weekend",
+   "label": "weekend",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Game",
+   "chunks": [
+    [
+     "Kabir played a"
+    ],
+    [
+     "new block GAME",
+     {
+      "emph": "GAME",
+      "fx": "pop"
+     }
+    ],
+    [
+     "all weekend."
+    ]
+   ],
+   "text": "Kabir played a new block GAME all weekend.",
+   "tone": "casually"
+  },
+  {
+   "sec": "cd",
+   "scene": "Bedtime",
+   "label": "bedtime",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Bed",
+   "chunks": [
+    [
+     "He closed his"
+    ],
+    [
+     "eyes."
+    ],
+    [
+     "The blocks kept"
+    ],
+    [
+     "FALLING.",
+     {
+      "emph": "FALLING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "He closed his eyes. The blocks kept FALLING.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Monday",
+   "label": "monday",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Books",
+   "chunks": [
+    [
+     "In class,"
+    ],
+    [
+     "he tried to"
+    ],
+    [
+     "fit Arjun's books"
+    ],
+    [
+     "into neat ROWS.",
+     {
+      "emph": "ROWS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "In class, he tried to fit Arjun's books into neat ROWS.",
+   "tone": "laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Brain",
+   "chunks": [
+    [
+     "But Kabir's brain"
+    ],
+    [
+     "wasn't broken."
+    ],
+    [
+     "It was PRACTISING.",
+     {
+      "emph": "PRACTISING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "But Kabir's brain wasn't broken. It was PRACTISING.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "2000",
+   "label": "2000",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Study",
+   "chunks": [
+    [
+     "Kabir isn't real."
+    ],
+    [
+     "But in 2000,"
+    ],
+    [
+     "most Tetris players"
+    ],
+    [
+     "saw falling BLOCKS",
+     {
+      "emph": "BLOCKS",
+      "fx": "pop"
+     }
+    ],
+    [
+     "as they fell"
+    ],
+    [
+     "asleep."
+    ]
+   ],
+   "text": "Kabir isn't real. But in 2000, most Tetris players saw falling BLOCKS as they fell asleep.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Twist",
+   "label": "the twist",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Amnesia",
+   "chunks": [
+    [
+     "Even amnesia patients"
+    ],
+    [
+     "who couldn't REMEMBER",
+     {
+      "emph": "REMEMBER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "playing."
+    ]
+   ],
+   "text": "Even amnesia patients who couldn't REMEMBER playing.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Tetris Effect",
+   "label": "tetris effect",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Name",
+   "chunks": [
+    [
+     "It's the Tetris"
+    ],
+    [
+     "EFFECT:",
+     {
+      "emph": "EFFECT",
+      "fx": "pop"
+     }
+    ],
+    [
+     "whatever you repeat,"
+    ],
+    [
+     "your brain replays."
+    ]
+   ],
+   "text": "It's the Tetris EFFECT: whatever you repeat, your brain replays.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Next Time",
+   "label": "next time",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS4Again",
+   "chunks": [
+    [
+     "So Kabir planned"
+    ],
+    [
+     "to study before"
+    ],
+    [
+     "bed."
+    ],
+    [
+     "He opened the"
+    ],
+    [
+     "GAME instead.",
+     {
+      "emph": "GAME",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "So Kabir planned to study before bed. He opened the GAME instead.",
+   "tone": "laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why You See the Game When You Close Your Eyes #shorts",
+  "description": "Kabir plays a block game all weekend and sees falling blocks every time he closes his eyes. Stickgold et al. (Science, 2000): after hours of Tetris over three days, 17 of 27 players reported Tetris images as they fell asleep, including 3 of 5 amnesic patients who couldn't remember playing. The Tetris effect: what you repeat, your brain replays. #psychology #shorts #gaming #sleep",
+  "tags": [
+   "tetris effect",
+   "gaming",
+   "sleep",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why You See the Game in Bed",
+ "thumb_emph": "the Game",
+ "thumb_mood": "curious",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 2
+}

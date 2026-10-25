@@ -1,0 +1,279 @@
+{
+ "slug": "arjun-borrow-notes",
+ "no": 112,
+ "format": "stick",
+ "look": "stick",
+ "series": "Arjun",
+ "episode": 2,
+ "cast": [
+  "arjun",
+  "zoe",
+  "maya"
+ ],
+ "title": [
+  "The Favor",
+  "Trick"
+ ],
+ "credit": "Jecker & Landy · 1969",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Crush",
+   "label": "crush",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Crush",
+   "chunks": [
+    [
+     "Arjun wanted Zoe"
+    ],
+    [
+     "to like him."
+    ],
+    [
+     "So he did"
+    ],
+    [
+     "her FAVORS.",
+     {
+      "emph": "FAVORS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Arjun wanted Zoe to like him. So he did her FAVORS.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Every Day",
+   "label": "every day",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Favors",
+   "chunks": [
+    [
+     "Coffee."
+    ],
+    [
+     "Notes."
+    ],
+    [
+     "Carried her books."
+    ],
+    [
+     "EVERY day.",
+     {
+      "emph": "EVERY",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Coffee. Notes. Carried her books. EVERY day.",
+   "tone": "casually"
+  },
+  {
+   "sec": "cd",
+   "scene": "Nothing",
+   "label": "nothing",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Thanks",
+   "chunks": [
+    [
+     "Zoe just said"
+    ],
+    [
+     "thanks."
+    ],
+    [
+     "Every."
+    ],
+    [
+     "Single."
+    ],
+    [
+     "TIME.",
+     {
+      "emph": "TIME",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Zoe just said thanks. Every. Single. TIME.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Maya",
+   "label": "maya",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Maya",
+   "chunks": [
+    [
+     "Maya rolled her"
+    ],
+    [
+     "eyes."
+    ],
+    [
+     "Ask HER for",
+     {
+      "emph": "HER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "one."
+    ]
+   ],
+   "text": "Maya rolled her eyes. Ask HER for one.",
+   "tone": "smug"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Borrow",
+   "chunks": [
+    [
+     "So Arjun borrowed"
+    ],
+    [
+     "Zoe's notes."
+    ],
+    [
+     "Next day,"
+    ],
+    [
+     "she was SMILING.",
+     {
+      "emph": "SMILING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "So Arjun borrowed Zoe's notes. Next day, she was SMILING.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "1969",
+   "label": "1969",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Study",
+   "chunks": [
+    [
+     "Arjun isn't real."
+    ],
+    [
+     "But in 1969,"
+    ],
+    [
+     "people asked to"
+    ],
+    [
+     "hand back their"
+    ],
+    [
+     "winnings liked the"
+    ],
+    [
+     "researcher MORE.",
+     {
+      "emph": "MORE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Arjun isn't real. But in 1969, people asked to hand back their winnings liked the researcher MORE.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Ben Franklin Effect",
+   "label": "ben franklin effect",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Name",
+   "chunks": [
+    [
+     "It's the Ben"
+    ],
+    [
+     "Franklin EFFECT:",
+     {
+      "emph": "EFFECT",
+      "fx": "pop"
+     }
+    ],
+    [
+     "we like the"
+    ],
+    [
+     "people we help."
+    ]
+   ],
+   "text": "It's the Ben Franklin EFFECT: we like the people we help.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Now",
+   "label": "now",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS7Pens",
+   "chunks": [
+    [
+     "Now Arjun borrows"
+    ],
+    [
+     "a pen every"
+    ],
+    [
+     "DAY.",
+     {
+      "emph": "DAY",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Maya says that's"
+    ],
+    [
+     "too many pens."
+    ]
+   ],
+   "text": "Now Arjun borrows a pen every DAY. Maya says that's too many pens.",
+   "tone": "laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Want Them to Like You? Ask THEM for a Favor #shorts",
+  "description": "Arjun does Zoe favor after favor. Nothing. Then he asks to borrow her notes. Jecker & Landy (1969): participants the researcher asked to give back their winnings as a personal favor liked him more than those who weren't asked. The Ben Franklin effect: we like the people we help. #psychology #shorts #likability #crush",
+  "tags": [
+   "ben franklin effect",
+   "likability",
+   "favors",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Ask THEM for a Favor",
+ "thumb_emph": "THEM",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 5
+}

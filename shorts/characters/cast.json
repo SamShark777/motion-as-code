@@ -3,48 +3,118 @@
  "style": "Hand-drawn white stick figures on near-black, black-filled round heads, one signature colour accent per character; brand yellow (#F5D33A) for the key caption word. Handwritten captions (Caveat Brush).",
  "characters": {
   "arjun": {
-   "name": "Arjun", "age": "early 20s", "build": "medium height",
+   "name": "Arjun",
+   "age": "early 20s",
+   "build": "medium height",
    "look": "messy spiky hair (4 strands), yellow scarf (#F5D33A)",
    "default_mood": "worried",
    "personality": "kind, funny, smart — and an overthinker. Reads into every silence.",
    "speech": "short, anxious inner monologue: 'He's mad at me.' 'I definitely did something.'",
-   "strengths": ["loyal", "notices details", "self-aware after the fact"],
-   "weaknesses": ["mind reading", "catastrophising", "rumination", "people-pleasing when anxious"],
-   "relationships": {"kabir": "best friend since school", "maya": "close friend who calls him out", "zoe": "classmate / crush, unspoken"},
-   "history": []
+   "strengths": [
+    "loyal",
+    "notices details",
+    "self-aware after the fact"
+   ],
+   "weaknesses": [
+    "mind reading",
+    "catastrophising",
+    "rumination",
+    "people-pleasing when anxious"
+   ],
+   "relationships": {
+    "kabir": "best friend since school",
+    "maya": "close friend who calls him out",
+    "zoe": "classmate / crush, unspoken"
+   },
+   "history": [
+    "ep 1 (arjun-mind-reading): mind reading — thinks Kabir is mad; Kabir just had headphones on",
+    "ep 2 (arjun-borrow-notes): Ben Franklin effect — does Zoe favors, nothing; on Maya's advice borrows Zoe's notes; now borrows too many pens"
+   ]
   },
   "maya": {
-   "name": "Maya", "age": "early 20s", "build": "short",
+   "name": "Maya",
+   "age": "early 20s",
+   "build": "short",
    "look": "high ponytail with a coral tie (#FF6B5B)",
    "default_mood": "smug",
    "personality": "blunt, confident, funny; says the thing everyone is thinking.",
    "speech": "dry one-liners: 'Did you ask him?'",
-   "strengths": ["direct", "self-assured", "protective of friends"],
-   "weaknesses": ["impatience", "status games", "hates admitting she's wrong"],
-   "relationships": {"arjun": "his reality check", "kabir": "teasing friendship", "zoe": "roommate"},
-   "history": []
+   "strengths": [
+    "direct",
+    "self-assured",
+    "protective of friends"
+   ],
+   "weaknesses": [
+    "impatience",
+    "status games",
+    "hates admitting she's wrong"
+   ],
+   "relationships": {
+    "arjun": "his reality check",
+    "kabir": "teasing friendship",
+    "zoe": "roommate"
+   },
+   "history": [
+    "ep 1 (maya-bat-and-ball): bat-and-ball — answers 10 cents instantly; Arjun checks; still says the question was rigged",
+    "ep 2 (maya-big-ask): door-in-the-face — asks Kabir to help move all weekend, he says no, then carries the couch; Maya has a bookshelf next"
+   ]
   },
   "kabir": {
-   "name": "Kabir", "age": "early 20s", "build": "tall",
+   "name": "Kabir",
+   "age": "early 20s",
+   "build": "tall",
    "look": "flat hair, teal headphones (#3FC1C9) always on",
    "default_mood": "happy",
    "personality": "easygoing, cheerful, completely oblivious to drama he 'causes'.",
    "speech": "relaxed: 'Yeah? Why?'",
-   "strengths": ["calm", "secure", "doesn't take things personally"],
-   "weaknesses": ["procrastination", "forgets to reply", "avoids hard conversations"],
-   "relationships": {"arjun": "best friend", "maya": "gets teased by her", "zoe": "friendly"},
-   "history": []
+   "strengths": [
+    "calm",
+    "secure",
+    "doesn't take things personally"
+   ],
+   "weaknesses": [
+    "procrastination",
+    "forgets to reply",
+    "avoids hard conversations"
+   ],
+   "relationships": {
+    "arjun": "best friend",
+    "maya": "gets teased by her",
+    "zoe": "friendly"
+   },
+   "history": [
+    "ep 1 (kabir-two-days): planning fallacy — essay \"two days, tops\", all-nighter with Arjun",
+    "ep 2 (kabir-tetris-dreams): Tetris effect — block game all weekend, sees falling blocks in bed, stacks Arjun's books; opens the game instead of studying",
+    "ep 3 (kabir-late-samaritan): Good Samaritan / hurry — late for an exam, runs past a slumped man; next time stops, still late"
+   ]
   },
   "zoe": {
-   "name": "Zoe", "age": "early 20s", "build": "medium-short",
+   "name": "Zoe",
+   "age": "early 20s",
+   "build": "medium-short",
    "look": "lavender beanie (#B79CFF) and round lavender glasses",
    "default_mood": "neutral",
    "personality": "thoughtful, polite, a people-pleaser who can't say no.",
    "speech": "soft and over-apologetic: 'Sorry, it's totally fine!'",
-   "strengths": ["empathetic", "reliable", "great listener"],
-   "weaknesses": ["people-pleasing", "comparison", "imposter feelings"],
-   "relationships": {"maya": "roommate", "arjun": "classmate", "kabir": "friend"},
-   "history": []
+   "strengths": [
+    "empathetic",
+    "reliable",
+    "great listener"
+   ],
+   "weaknesses": [
+    "people-pleasing",
+    "comparison",
+    "imposter feelings"
+   ],
+   "relationships": {
+    "maya": "roommate",
+    "arjun": "classmate",
+    "kabir": "friend"
+   },
+   "history": [
+    "ep 1 (zoe-tiny-favor): foot-in-the-door — holds Maya's coffee, ends up covering her weekend shift",
+    "ep 2 (zoe-repeat-order): mirroring — café job, tiny tips (Maya tips one coin); repeats orders word for word, Maya calls her a parrot"
+   ]
   }
  },
  "episode_rules": [

@@ -1,0 +1,274 @@
+{
+ "slug": "kabir-late-samaritan",
+ "no": 113,
+ "format": "stick",
+ "look": "stick",
+ "series": "Kabir",
+ "episode": 3,
+ "cast": [
+  "kabir"
+ ],
+ "title": [
+  "Running",
+  "Late"
+ ],
+ "credit": "Darley & Batson · 1973",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Late",
+   "label": "late",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Late",
+   "chunks": [
+    [
+     "Kabir was LATE",
+     {
+      "emph": "LATE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "for his exam."
+    ],
+    [
+     "Again."
+    ]
+   ],
+   "text": "Kabir was LATE for his exam. Again.",
+   "tone": "worried"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sprint",
+   "label": "sprint",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Run",
+   "chunks": [
+    [
+     "He sprinted across"
+    ],
+    [
+     "campus,"
+    ],
+    [
+     "notes FLYING.",
+     {
+      "emph": "FLYING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "He sprinted across campus, notes FLYING.",
+   "tone": "breathless"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Doorway",
+   "label": "the doorway",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Past",
+   "chunks": [
+    [
+     "A man slumped"
+    ],
+    [
+     "in a doorway."
+    ],
+    [
+     "Kabir ran right"
+    ],
+    [
+     "PAST him.",
+     {
+      "emph": "PAST",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "A man slumped in a doorway. Kabir ran right PAST him.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8But",
+   "chunks": [
+    [
+     "But kindness wasn't"
+    ],
+    [
+     "the problem."
+    ],
+    [
+     "Time WAS.",
+     {
+      "emph": "WAS",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "But kindness wasn't the problem. Time WAS.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "1973",
+   "label": "1973",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Study",
+   "chunks": [
+    [
+     "Kabir isn't real."
+    ],
+    [
+     "But in 1973,"
+    ],
+    [
+     "seminary students headed"
+    ],
+    [
+     "to a talk"
+    ],
+    [
+     "on the Good"
+    ],
+    [
+     "SAMARITAN met that",
+     {
+      "emph": "SAMARITAN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "man."
+    ]
+   ],
+   "text": "Kabir isn't real. But in 1973, seminary students headed to a talk on the Good SAMARITAN met that man.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "The Numbers",
+   "label": "the numbers",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Bars",
+   "chunks": [
+    [
+     "With time to"
+    ],
+    [
+     "spare,"
+    ],
+    [
+     "sixty-three percent helped."
+    ],
+    [
+     "Running late?"
+    ],
+    [
+     "Only TEN percent.",
+     {
+      "emph": "TEN",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "With time to spare, sixty-three percent helped. Running late? Only TEN percent.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Hurry",
+   "label": "hurry",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Name",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "situational pressure:"
+    ],
+    [
+     "hurry,"
+    ],
+    [
+     "not character,"
+    ],
+    [
+     "decided who STOPPED.",
+     {
+      "emph": "STOPPED",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Psychologists call it situational pressure: hurry, not character, decided who STOPPED.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Next Time",
+   "label": "next time",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS8Again",
+   "chunks": [
+    [
+     "Next time,"
+    ],
+    [
+     "Kabir left early."
+    ],
+    [
+     "He stopped."
+    ],
+    [
+     "He was still"
+    ],
+    [
+     "LATE.",
+     {
+      "emph": "LATE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Next time, Kabir left early. He stopped. He was still LATE.",
+   "tone": "laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "Why Good People Walk Past Someone in Need #shorts",
+  "description": "Kabir, late again, runs past a man slumped in a doorway. Darley & Batson (1973): seminary students on their way to give a talk, some on the parable of the Good Samaritan, passed a man slumped in an alley. 63% of those with time to spare stopped to help; only 10% of those told they were late did. Hurry, not character, predicted who helped. #psychology #shorts #kindness #goodsamaritan",
+  "tags": [
+   "good samaritan experiment",
+   "bystander",
+   "kindness",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why Good People Walk Past",
+ "thumb_emph": "Walk Past",
+ "thumb_mood": "shocked",
+ "music_vibe": "tense",
+ "pattern": "Character story",
+ "thumb_scene": 3
+}

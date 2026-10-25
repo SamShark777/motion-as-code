@@ -1,0 +1,269 @@
+{
+ "slug": "zoe-repeat-order",
+ "no": 111,
+ "format": "stick",
+ "look": "stick",
+ "series": "Zoe",
+ "episode": 2,
+ "cast": [
+  "zoe",
+  "maya"
+ ],
+ "title": [
+  "Word for",
+  "Word"
+ ],
+ "credit": "van Baaren et al. · 2003",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "New Job",
+   "label": "new job",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Cafe",
+   "chunks": [
+    [
+     "Zoe got a"
+    ],
+    [
+     "café job."
+    ],
+    [
+     "Her tips were"
+    ],
+    [
+     "TINY.",
+     {
+      "emph": "TINY",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Zoe got a café job. Her tips were TINY.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Trying",
+   "label": "trying",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Smile",
+   "chunks": [
+    [
+     "She smiled more."
+    ],
+    [
+     "Said coming right"
+    ],
+    [
+     "up."
+    ],
+    [
+     "Still NOTHING.",
+     {
+      "emph": "NOTHING",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "She smiled more. Said coming right up. Still NOTHING.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Ouch",
+   "label": "ouch",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Coin",
+   "chunks": [
+    [
+     "Even Maya,"
+    ],
+    [
+     "her roommate,"
+    ],
+    [
+     "tipped her one"
+    ],
+    [
+     "COIN.",
+     {
+      "emph": "COIN",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Even Maya, her roommate, tipped her one COIN.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "label": "but",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6But",
+   "chunks": [
+    [
+     "But Zoe was"
+    ],
+    [
+     "missing one tiny"
+    ],
+    [
+     "HABIT.",
+     {
+      "emph": "HABIT",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "But Zoe was missing one tiny HABIT.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "2003",
+   "label": "2003",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Study",
+   "chunks": [
+    [
+     "Zoe isn't real."
+    ],
+    [
+     "But in 2003,"
+    ],
+    [
+     "a Dutch waitress"
+    ],
+    [
+     "repeated each order"
+    ],
+    [
+     "back,"
+    ],
+    [
+     "WORD for word.",
+     {
+      "emph": "WORD",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Zoe isn't real. But in 2003, a Dutch waitress repeated each order back, WORD for word.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Tips",
+   "label": "tips",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Double",
+   "chunks": [
+    [
+     "Her tips almost"
+    ],
+    [
+     "DOUBLED.",
+     {
+      "emph": "DOUBLED",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Her tips almost DOUBLED.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Mirroring",
+   "label": "mirroring",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Name",
+   "chunks": [
+    [
+     "It's called MIRRORING:",
+     {
+      "emph": "MIRRORING",
+      "fx": "pop"
+     }
+    ],
+    [
+     "we warm to"
+    ],
+    [
+     "people who sound"
+    ],
+    [
+     "like us."
+    ]
+   ],
+   "text": "It's called MIRRORING: we warm to people who sound like us.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Next Shift",
+   "label": "next shift",
+   "color": "#0b0b0b",
+   "light": false,
+   "art": "ArtS6Next",
+   "chunks": [
+    [
+     "Next shift,"
+    ],
+    [
+     "Zoe repeated every"
+    ],
+    [
+     "ORDER.",
+     {
+      "emph": "ORDER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Maya asked why"
+    ],
+    [
+     "she sounded like"
+    ],
+    [
+     "a parrot."
+    ]
+   ],
+   "text": "Next shift, Zoe repeated every ORDER. Maya asked why she sounded like a parrot.",
+   "tone": "laughs"
+  }
+ ],
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_onyx",
+  "kokoro_lang": "en-us",
+  "kokoro_speed": 1.05
+ },
+ "post": {
+  "title": "The Waiter Trick That Doubles Tips #shorts",
+  "description": "Zoe's café tips are tiny until she starts repeating orders back word for word. van Baaren, Holland, Steenaert & van Knippenberg (2003): a waitress in the Netherlands who repeated customers' orders verbatim received almost twice the tips she got when she didn't. People warm to those who mirror them. #psychology #shorts #mirroring #likability",
+  "tags": [
+   "mirroring",
+   "tips",
+   "likability",
+   "psychology"
+  ]
+ },
+ "thumb_text": "The Trick That Doubles Tips",
+ "thumb_emph": "Doubles Tips",
+ "thumb_mood": "curious",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 5
+}
