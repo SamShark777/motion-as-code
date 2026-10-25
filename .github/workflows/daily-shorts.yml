@@ -37,6 +37,10 @@ on:
         description: "Only cancel: delete the still-scheduled Buffer posts of these slugs (comma-separated), build nothing"
         required: false
         default: ""
+      remix:
+        description: "With only_slugs + schedule_at: audio-only rebuild (re-mix sound from the hosted stems, picture untouched)"
+        type: boolean
+        default: false
       channel_scan:
         description: "Only study these YouTube channels (names separated by |); results go to the research branch"
         required: false
@@ -387,6 +391,7 @@ jobs:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           COVER_DATE: ${{ matrix.date }}
           COVER_SLOT: ${{ matrix.slot }}
+          REMIX: ${{ inputs.remix && '1' || '' }}
         run: |
           mkdir -p out
           set -o pipefail
