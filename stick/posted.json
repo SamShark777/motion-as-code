@@ -27,6 +27,20 @@
     "instagram": "channel not connected in the Stick Buffer account",
     "tiktok": "channel not connected in the Stick Buffer account"
    }
+  },
+  {
+   "slug": "102_front_door_photo",
+   "title": "A stranger texted you a photo of your own front door #shorts",
+   "date": "2026-10-26",
+   "slot": "16:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-26/102_front_door_photo.mp4",
+   "buffer": {
+    "youtube": "6ade5a69bd33ce99c38a3acd"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
   }
  ]
 }
