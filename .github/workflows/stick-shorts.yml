@@ -1,0 +1,74 @@
+# Stick or Twist (@stickortwist2): schedules tomorrow's videos from the Shadow PC's uploads
+# (branch `media-stick`, inbox/) on the channel's OWN Buffer account. Separate from Daily Shorts:
+# it never touches the psychology `media` branch, tracker or BUFFER_API_KEY.
+#
+# Secret:    BUFFER_API_KEY_STICK  (the Stick or Twist Buffer account; without it the run is a dry run)
+# Variables: STICK_PER_DAY (default 4), STICK_SLOTS (default 08:00,12:00,16:00,20:00 America/Los_Angeles)
+name: Stick Shorts
+
+on:
+  schedule:
+    - cron: "41 17 * * *"   # 10:41 PDT / 09:41 PST — after the Shadow PC's 2:07 AM render + upload
+  workflow_dispatch:
+    inputs:
+      check:
+        description: "Only check: list the Stick Buffer channels and the inbox"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Plan tomorrow's batch but don't host or schedule"
+        type: boolean
+        default: false
+
+concurrency:
+  group: stick-shorts
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  stick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Check
+        if: inputs.check
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY_STICK }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/stick_publish.py check > out.txt 2>&1; code=$?
+          while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
+          exit $code
+      - name: Host + schedule
+        if: ${{ !inputs.check }}
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY_STICK }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STICK_PER_DAY: ${{ vars.STICK_PER_DAY || '4' }}
+          STICK_SLOTS: ${{ vars.STICK_SLOTS || '08:00,12:00,16:00,20:00' }}
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+        run: python3 scripts/stick_publish.py publish
+      - name: Commit log
+        if: ${{ !inputs.check }}
+        run: |
+          git config user.name shorts-bot; git config user.email shorts-bot@users.noreply.github.com
+          git add stick/posted.json
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -qm "ci: stick scheduled $(date -u +%F)"
+          for i in 1 2 3; do git pull -q --rebase origin shorts && git push -q origin shorts && exit 0; sleep 5; done
+          exit 1
+      - name: Issue for Shivam
+        if: ${{ always() && !inputs.check }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          [ -f issue.md ] || echo "The Stick Shorts run failed before scheduling." > issue.md
+          grep -q "Nothing to schedule" issue.md && exit 0
+          echo "" >> issue.md; echo "[Run log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> issue.md
+          gh issue create -R "${{ github.repository }}" --title "Stick or Twist for $(TZ=America/Los_Angeles date -d tomorrow +'%a %b %-d')" --body-file issue.md
