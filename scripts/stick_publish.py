@@ -198,5 +198,62 @@ def publish():
     print("\n".join(lines))
 
 
+def post_now(slug):
+    """Delete the slug's still-scheduled Stick posts and publish it right away (shareNow; falls back to +5 min)."""
+    log = load_log()
+    rec = next((p for p in log["posts"] if p["slug"] == slug), None)
+    if not rec:
+        sys.exit(f"{slug} is not in stick/posted.json")
+    name, argname, tname, key = buffer._delete_field()
+    _, m = buffer.channel_map()
+    meta = {"title": rec.get("title"), "description": ""}
+    tmp = Path(tempfile.mkdtemp())
+    if clone_media(tmp / "m"):
+        j = tmp / "m" / rec["date"] / f"{slug}.json"
+        if j.exists():
+            meta = json.loads(j.read_text())
+    new, errs = {}, {}
+    for svc, pid in list(rec.get("buffer", {}).items()):
+        try:
+            buffer.gql("mutation($v: %s!) { %s(%s: $v) { __typename } }" % (tname, name, argname), {"v": {key: pid} if key else pid})
+        except Exception as e:
+            errs[svc + "_delete"] = str(e)[:200]
+        try:
+            ch = m[svc]["id"]
+            try:
+                new[svc] = create_mode(ch, svc, meta, rec["url"], "shareNow", None)
+            except Exception:
+                due = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=5)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+                new[svc] = create_mode(ch, svc, meta, rec["url"], "customScheduled", due)
+        except Exception as e:
+            errs[svc] = str(e)[:300]
+    rec["buffer"], rec["posted_now"] = new, dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    if errs:
+        rec["errors_now"] = errs
+    LOG.write_text(json.dumps(log, indent=1, ensure_ascii=False) + "\n")
+    print(json.dumps({"slug": slug, "posted": new, "errors": errs}))
+
+
+def create_mode(channel_id, service, meta, url, mode, due):
+    asset = {"video": {"url": url}}
+    inp = {"channelId": channel_id, "text": post_text(meta), "schedulingType": "automatic", "mode": mode,
+           "assets": [asset], "aiAssisted": False, "needsApproval": False}
+    if due:
+        inp["dueAt"] = due
+    if service == "youtube":
+        inp["metadata"] = {"youtube": {"title": (meta.get("title") or "Stick or Twist")[:100], "categoryId": "24", "privacy": "public", "madeForKids": False}}
+    elif service == "instagram":
+        inp["metadata"] = {"instagram": {"type": "reel", "shouldShareToFeed": True}}
+    d = buffer.gql("""mutation($input: CreatePostInput!) { createPost(input: $input) {
+        __typename ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }""", {"input": inp})
+    r = d["createPost"]
+    if r.get("post"):
+        return r["post"]["id"]
+    raise RuntimeError(r.get("message") or json.dumps(r))
+
+
 if __name__ == "__main__":
-    {"check": check, "publish": publish}.get(sys.argv[1] if len(sys.argv) > 1 else "check", check)()
+    if len(sys.argv) > 2 and sys.argv[1] == "now":
+        post_now(sys.argv[2])
+    else:
+        {"check": check, "publish": publish}.get(sys.argv[1] if len(sys.argv) > 1 else "check", check)()
