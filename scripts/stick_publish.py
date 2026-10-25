@@ -139,8 +139,11 @@ def check():
     print(f"media-stick branch: {'found' if had else 'missing (created on first upload)'}; inbox: {len(items)} video(s): "
           + ", ".join(i["slug"] for i in items))
     if os.environ.get("BUFFER_API_KEY"):
-        oid, chs = buffer.channels()
-        print("Buffer channels:", ", ".join(f"{c['service']}:{c.get('displayName') or c['name']}" for c in chs) or "none connected")
+        try:
+            oid, chs = buffer.channels()
+            print("Buffer channels:", ", ".join(f"{c['service']}:{c.get('displayName') or c['name']}" for c in chs) or "none connected")
+        except BaseException as e:  # noqa: BLE001 — one readable line for the run annotations
+            print("BUFFER ERROR:", str(e)[:500]); sys.exit(1)
     else:
         print("BUFFER_API_KEY_STICK is not set — nothing can be scheduled yet.")
 
