@@ -1,0 +1,17 @@
+{
+ "no": 133,
+ "slug": "arjun-mind-reading",
+ "date": "2026-10-25",
+ "slot": "09:00",
+ "due": "2026-10-25T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-25/arjun-mind-reading.mp4",
+ "buffer": {
+  "youtube": "6addab016887a2efc1f1d40a",
+  "instagram": "6addab01e4be8a4d8695ffa0",
+  "tiktok": "6addab028b3d437ddcf646bc"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 31.7
+}

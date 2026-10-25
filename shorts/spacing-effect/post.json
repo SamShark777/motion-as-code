@@ -7,15 +7,18 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-17/spacing-effect.mp4",
  "buffer": {
   "youtube": "6ad27dfc346e510ac44f4f11",
-  "tiktok": "6ad27dfd5720e82b418e1add"
+  "tiktok": "6ad27dfd5720e82b418e1add",
+  "instagram": "6addab04bd33ce99c35d20e4"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
  "duration": 34.2,
  "links": {
   "youtube": "https://www.youtube.com/shorts/Wn4tN7DFZm0",
   "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7697667625811201293?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ },
+ "instagram_catchup": {
+  "due": "2026-10-26T18:30:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/ig-backlog/spacing-effect.mp4"
  }
 }
