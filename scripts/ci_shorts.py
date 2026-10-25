@@ -127,6 +127,9 @@ def check(slug):
             shutil.copy(v, out / v.name)
         if (d / "music.json").exists():
             shutil.copy(d / "music.json", out / "music.json")
+        for ext in ("voice.flac", "timing.json", "lyrics.json", "script.json", "stems.json"):  # stems for audio-only remixes
+            if (d / f"{slug}.{ext}").exists():
+                shutil.copy(d / f"{slug}.{ext}", out / f"{slug}.{ext}")
         if (d / "preview.jpg").exists():
             shutil.copy(d / "preview.jpg", out / "preview.jpg")
     meta["ok"] = not meta["problems"]
@@ -158,6 +161,9 @@ def host(dist, batch):
             shutil.copy(src / f"{b['slug']}.mp4", dd / f"{b['slug']}.mp4")
             for v in src.glob(f"{b['slug']}.*.mp4"):
                 shutil.copy(v, dd / v.name)
+            for ext in ("voice.flac", "timing.json", "lyrics.json", "script.json", "stems.json"):
+                if (src / f"{b['slug']}.{ext}").exists():
+                    shutil.copy(src / f"{b['slug']}.{ext}", dd / f"{b['slug']}.{ext}")
             if (src / "preview.jpg").exists():
                 shutil.copy(src / "preview.jpg", dd / f"{b['slug']}.jpg")
     (tmp / "new" / "README.md").write_text("Hosting for the scheduled Shorts (Buffer fetches the videos from here). Rewritten daily; keeps the last few days.\n")

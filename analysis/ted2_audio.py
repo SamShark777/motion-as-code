@@ -46,6 +46,8 @@ def main():
     total = len(v) / SR
     n = len(v)
     # cues: scene transitions alternate swipe/whoosh, one accent on each scene's emphasis, a bright chime to close
+    mixf = ROOT / "shorts" / "voice" / "audio_mix.json"
+    MIX = json.loads(mixf.read_text()) if mixf.exists() else {}
     cues = []
     lines = S["lines"]
     if S.get("format") == "story":
@@ -57,14 +59,17 @@ def main():
             cues += [(st + float(o), s, float(vol)) for s, o, vol in ln["sfx"]]
             continue
         if i == len(lines) - 1:
-            cues.append((st + 0.25, "chime-bright", 0.26))
+            if MIX.get("end_chime", True):
+                cues.append((st + 0.25, "chime-bright", 0.26))
+        elif not MIX.get("transition_sfx", True):
+            pass  # scene-change swipe/whoosh switched off (audio_mix.json)
         elif i > 0:
             cues.append((max(0, st - 0.05), "swipe" if i % 2 else "whoosh", 0.30 if i % 2 else 0.32))
         else:
             cues.append((0.05, "whoosh", 0.3))
         for j, c in enumerate(ln["chunks"]):
             fx = c[1].get("fx") if len(c) > 1 and isinstance(c[1], dict) else None
-            if fx and i != len(lines) - 1:
+            if fx and i != len(lines) - 1 and MIX.get("emphasis_sfx", True):
                 snd, vol = FX_SOUND.get(fx, ("pop", 0.34))
                 cues.append((TM["chunks"][i][j] + 0.05, snd, vol))
     sfx = np.zeros(n, np.float32)
@@ -114,7 +119,7 @@ def main():
         down = np.clip(((b + DUCK_RAMP) - t) / DUCK_RAMP, 0, 1)
         duck = np.maximum(duck, np.minimum(up, down))
     vol = lo + (hi - lo) * duck
-    mix = v + m * vol + sfx
+    mix = v * float(MIX.get("voice_gain", 1)) + m * vol * float(MIX.get("music_gain", 1)) + sfx * float(MIX.get("sfx_gain", 1))
     peak = np.abs(mix).max()
     if peak > 0.89:
         mix *= 0.89 / peak

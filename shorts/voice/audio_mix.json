@@ -1,0 +1,9 @@
+{
+ "note": "Mix switches for every Short (Shivam, 2026-10-25: scene-change swooshes off). Change here + run a remix to apply to built videos.",
+ "transition_sfx": false,
+ "emphasis_sfx": true,
+ "end_chime": true,
+ "voice_gain": 1.0,
+ "music_gain": 1.0,
+ "sfx_gain": 1.0
+}

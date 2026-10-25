@@ -51,6 +51,8 @@ def main():
         S["cover_index"] = _dt.date.fromisoformat(_d).toordinal() * len(_slots) + _k
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "script.json").write_text(json.dumps(S, ensure_ascii=False))
+    if _os.environ.get("REMIX") and remix(a.slug, d):
+        return
     run(sys.executable, str(ROOT / "analysis" / "tts_vo.py"))
     import soundfile as sf
     info = sf.info(str(ROOT / "audio" / "voiceover.wav"))
@@ -143,6 +145,7 @@ def main():
         if _f.exists():
             _mu[_v] = json.loads(_f.read_text())
     (d / "music.json").write_text(json.dumps(_mu, indent=1))  # which track each platform got (+ the credit line)
+    save_stems(a.slug, d)
     dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp4)], capture_output=True, text=True).stdout)
     from PIL import Image
     W, H = (480, 270) if land else (270, 480)
@@ -158,6 +161,66 @@ def main():
     _vn = ROOT / "out" / "tts_voice_name.txt"
     if _vn.exists() and _vn.read_text().strip():
         print("VOICE_NAME:", _vn.read_text().strip())
+
+
+STEM_FILES = ("voice.flac", "timing.json", "lyrics.json", "script.json", "stems.json")
+
+
+def save_stems(slug, d):
+    """Keep the parts of a build separate (voice, word timing, the exact script used) so sound can be re-mixed later
+    without re-rendering the picture or re-generating the voice. Hosted next to the videos on the media branch."""
+    name = Path(slug).name
+    run("ffmpeg", "-v", "error", "-y", "-i", str(ROOT / "audio" / "voiceover.wav"), "-c:a", "flac", str(d / f"{name}.voice.flac"))
+    for src, ext in ((ROOT / "out" / "timing.json", "timing.json"), (ROOT / "data" / "lyrics.json", "lyrics.json"), (ROOT / "data" / "script.json", "script.json")):
+        (d / f"{name}.{ext}").write_bytes(src.read_bytes())
+    eng = (ROOT / "out" / "tts_engine.txt").read_text().strip() if (ROOT / "out" / "tts_engine.txt").exists() else "?"
+    vn = (ROOT / "out" / "tts_voice_name.txt").read_text().strip() if (ROOT / "out" / "tts_voice_name.txt").exists() else ""
+    (d / f"{name}.stems.json").write_text(json.dumps({"engine": eng, "voice_name": vn}))
+
+
+def remix(slug, d):
+    """REMIX=1: audio-only rebuild from the hosted stems (picture = the hosted <slug>.mp4 video stream, voice + timing
+    + script as built). Applies the current mix settings (shorts/voice/audio_mix.json), music and sound effects to all
+    three platform copies in about a minute. Returns False (-> full build) if the stems aren't hosted."""
+    import os, urllib.request
+    name, date = Path(slug).name, os.environ.get("COVER_DATE")
+    if not date:
+        return False
+    base = f"https://raw.githubusercontent.com/{os.environ.get('GITHUB_REPOSITORY', 'SamShark777/motion-as-code')}/media/{date}/"
+    pic = ROOT / "out" / f"{name}.picture.mp4"
+    try:
+        (ROOT / "out").mkdir(exist_ok=True)
+        urllib.request.urlretrieve(base + f"{name}.mp4", pic)
+        for ext in STEM_FILES:
+            urllib.request.urlretrieve(base + f"{name}.{ext}", d / f"{name}.{ext}")
+    except Exception as e:
+        print(f"REMIX: stems not hosted for {name} ({e}); doing a full build", flush=True)
+        return False
+    (ROOT / "audio").mkdir(exist_ok=True)
+    run("ffmpeg", "-v", "error", "-y", "-i", str(d / f"{name}.voice.flac"), str(ROOT / "audio" / "voiceover.wav"))
+    (ROOT / "out" / "timing.json").write_bytes((d / f"{name}.timing.json").read_bytes())
+    (ROOT / "data" / "lyrics.json").write_bytes((d / f"{name}.lyrics.json").read_bytes())
+    (ROOT / "data" / "script.json").write_bytes((d / f"{name}.script.json").read_bytes())
+    for v in ("", "instagram", "tiktok"):
+        mix = ROOT / "out" / (f"mix.{v}.wav" if v else "mix.wav")
+        out = d / (f"{name}.{v}.mp4" if v else f"{name}.mp4")
+        run(sys.executable, str(ROOT / "analysis" / "ted2_audio.py"), str(ROOT / "data" / "script.json"), str(ROOT / "out" / "timing.json"),
+            env=dict(os.environ, MUSIC_VARIANT=v, MIX_OUT=str(mix)))
+        run("ffmpeg", "-v", "error", "-y", "-i", str(pic), "-i", str(mix), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac",
+            "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out))
+    mu = {v: json.loads((ROOT / "out" / f"music.{v}.json").read_text()) for v in ("youtube", "instagram", "tiktok") if (ROOT / "out" / f"music.{v}.json").exists()}
+    (d / "music.json").write_text(json.dumps(mu, indent=1))
+    try:
+        urllib.request.urlretrieve(base + f"{name}.jpg", d / "preview.jpg")
+    except Exception:
+        pass
+    st = json.loads((d / f"{name}.stems.json").read_text())
+    pic.unlink(missing_ok=True)
+    print(f"remixed {name} (audio only)")
+    print("ENGINE:", st.get("engine", "?"))
+    if st.get("voice_name"):
+        print("VOICE_NAME:", st["voice_name"])
+    return True
 
 
 def capture(slug, out, frm, to, W, H):
