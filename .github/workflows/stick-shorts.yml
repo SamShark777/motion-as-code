@@ -42,6 +42,7 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY_STICK }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set +e
           python3 scripts/stick_publish.py check > out.txt 2>&1; code=$?
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
           exit $code
