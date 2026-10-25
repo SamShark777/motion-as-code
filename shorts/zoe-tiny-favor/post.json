@@ -1,0 +1,17 @@
+{
+ "no": 134,
+ "slug": "zoe-tiny-favor",
+ "date": "2026-10-25",
+ "slot": "14:00",
+ "due": "2026-10-25T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-25/zoe-tiny-favor.mp4",
+ "buffer": {
+  "youtube": "6addb1818b3d437ddcf7b908",
+  "instagram": "6addb1828b3d437ddcf7b93a",
+  "tiktok": "6addb1830b5343d070be5896"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 54.2
+}
