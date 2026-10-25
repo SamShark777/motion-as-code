@@ -1,0 +1,17 @@
+{
+ "no": 109,
+ "slug": "kabir-tetris-dreams",
+ "date": "2026-10-26",
+ "slot": "09:00",
+ "due": "2026-10-26T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-26/kabir-tetris-dreams.mp4",
+ "buffer": {
+  "youtube": "6ade5a388b3d437ddc2479fa",
+  "instagram": "6ade5a39e4be8a4d86c30f8b",
+  "tiktok": "6ade5a3a3d5b27036bec0941"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 29.6
+}

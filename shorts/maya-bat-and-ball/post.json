@@ -1,0 +1,17 @@
+{
+ "no": 110,
+ "slug": "maya-bat-and-ball",
+ "date": "2026-10-26",
+ "slot": "14:00",
+ "due": "2026-10-26T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-26/maya-bat-and-ball.mp4",
+ "buffer": {
+  "youtube": "6ade5a3dbd33ce99c38a3357",
+  "instagram": "6ade5a3ebd33ce99c38a338a",
+  "tiktok": "6ade5a3e0b5343d070eb2880"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 43.5
+}
