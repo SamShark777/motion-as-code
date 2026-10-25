@@ -4,6 +4,7 @@
 > (character + situation) → problem → escalation → "But…" reveal → name the psychology effect plainly → payoff that
 > reframes the opening; optional small unresolved character beat. 25–40 s, 7–9 lines, each with `label` (grey corner
 > word) and `tone` (ElevenLabs tags). Real studies: "<Name> isn't real. But in <year>…" with verified numbers.
+> Length: ElevenLabs voices with tags run ~35% longer than Heart, so keep stick scripts to 70–85 words (Zoe ep.1 at 97 words ran 54 s).
 > Add the episode to the character's `history` in cast.json. Examples: shorts/arjun-mind-reading, zoe-tiny-favor,
 > kabir-two-days. Remaining pattern-test Ideas are topics to retell as stories (keep their sources).
 
