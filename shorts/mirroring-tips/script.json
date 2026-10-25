@@ -34,7 +34,8 @@
      "tips."
     ]
    ],
-   "text": "Waiters who did ONE simple thing almost doubled their tips."
+   "text": "Waiters who did ONE simple thing almost doubled their tips.",
+   "tone": "curious"
   },
   {
    "sec": "cd",
@@ -63,7 +64,8 @@
      }
     ]
    ],
-   "text": "In a Dutch restaurant, a waitress sometimes just said: COMING right up."
+   "text": "In a Dutch restaurant, a waitress sometimes just said: COMING right up.",
+   "tone": "casually"
   },
   {
    "sec": "cd",
@@ -90,7 +92,8 @@
      }
     ]
    ],
-   "text": "Other times, she repeated the order back, WORD for word."
+   "text": "Other times, she repeated the order back, WORD for word.",
+   "tone": "excited"
   },
   {
    "sec": "cd",
@@ -113,7 +116,8 @@
      "much."
     ]
    ],
-   "text": "Those tables tipped almost TWICE as much."
+   "text": "Those tables tipped almost TWICE as much.",
+   "tone": "surprised"
   },
   {
    "sec": "cd",
@@ -140,7 +144,8 @@
      }
     ]
    ],
-   "text": "But it's not a trick. Being copied feels like being HEARD."
+   "text": "But it's not a trick. Being copied feels like being HEARD.",
+   "tone": "warmly"
   },
   {
    "sec": "cd",
@@ -163,7 +168,8 @@
      }
     ]
    ],
-   "text": "Psychologists call it mirroring. It works."
+   "text": "Psychologists call it mirroring. It works.",
+   "tone": "thoughtfully"
   },
   {
    "sec": "cd",
@@ -192,7 +198,8 @@
      }
     ]
    ],
-   "text": "So next time, repeat their key words back before you answer. Follow for MORE."
+   "text": "So next time, repeat their key words back before you answer. Follow for MORE.",
+   "tone": "warmly"
   }
  ],
  "voice": {

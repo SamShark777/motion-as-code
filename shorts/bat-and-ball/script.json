@@ -36,7 +36,8 @@
      }
     ]
    ],
-   "text": "A bat and a ball cost one dollar ten. Most top students get this WRONG."
+   "text": "A bat and a ball cost one dollar ten. Most top students get this WRONG.",
+   "tone": "mischievously"
   },
   {
    "sec": "cd",
@@ -59,7 +60,8 @@
      "than the ball."
     ]
    ],
-   "text": "The bat costs one dollar MORE than the ball."
+   "text": "The bat costs one dollar MORE than the ball.",
+   "tone": "curious"
   },
   {
    "sec": "cd",
@@ -86,7 +88,8 @@
      }
     ]
    ],
-   "text": "How much is the ball? You have three SECONDS."
+   "text": "How much is the ball? You have three SECONDS.",
+   "tone": "excited, quickly"
   },
   {
    "sec": "cd",
@@ -121,7 +124,8 @@
      }
     ]
    ],
-   "text": "Ten cents? Then the bat is a dollar ten, and together they cost a dollar TWENTY."
+   "text": "Ten cents? Then the bat is a dollar ten, and together they cost a dollar TWENTY.",
+   "tone": "sarcastic"
   },
   {
    "sec": "cd",
@@ -141,7 +145,8 @@
      }
     ]
    ],
-   "text": "The real answer is FIVE cents."
+   "text": "The real answer is FIVE cents.",
+   "tone": "excited"
   },
   {
    "sec": "cd",
@@ -177,7 +182,8 @@
      }
     ]
    ],
-   "text": "More than half of Harvard, MIT and Princeton students said ten. Your fast brain answers before your SLOW one checks."
+   "text": "More than half of Harvard, MIT and Princeton students said ten. Your fast brain answers before your SLOW one checks.",
+   "tone": "thoughtfully"
   },
   {
    "sec": "cd",
@@ -204,7 +210,8 @@
      }
     ]
    ],
-   "text": "Got it right? Comment your answer, and follow for the next TEST."
+   "text": "Got it right? Comment your answer, and follow for the next TEST.",
+   "tone": "laughs"
   }
  ],
  "voice": {

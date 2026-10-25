@@ -39,7 +39,8 @@
      }
     ]
    ],
-   "text": "Play a game for hours, and your brain keeps playing it as you fall ASLEEP."
+   "text": "Play a game for hours, and your brain keeps playing it as you fall ASLEEP.",
+   "tone": "curious"
   },
   {
    "sec": "cd",
@@ -65,7 +66,8 @@
      "three days."
     ]
    ],
-   "text": "Harvard researchers had people play Tetris for hours over three days."
+   "text": "Harvard researchers had people play Tetris for hours over three days.",
+   "tone": "thoughtfully"
   },
   {
    "sec": "cd",
@@ -91,7 +93,8 @@
      "drifted off."
     ]
    ],
-   "text": "More than SIXTY percent saw falling blocks as they drifted off."
+   "text": "More than SIXTY percent saw falling blocks as they drifted off.",
+   "tone": "excited"
   },
   {
    "sec": "cd",
@@ -118,7 +121,8 @@
      }
     ]
    ],
-   "text": "But the strangest part: patients with amnesia saw them TOO."
+   "text": "But the strangest part: patients with amnesia saw them TOO.",
+   "tone": "whispers"
   },
   {
    "sec": "cd",
@@ -145,7 +149,8 @@
      }
     ]
    ],
-   "text": "They couldn't remember playing. Their brain still REPLAYED it."
+   "text": "They couldn't remember playing. Their brain still REPLAYED it.",
+   "tone": "surprised"
   },
   {
    "sec": "cd",
@@ -172,7 +177,8 @@
      }
     ]
    ],
-   "text": "It's the Tetris effect: whatever you repeat, your brain REHEARSES."
+   "text": "It's the Tetris effect: whatever you repeat, your brain REHEARSES.",
+   "tone": "thoughtfully"
   },
   {
    "sec": "cd",
@@ -198,7 +204,8 @@
      "Follow for more."
     ]
    ],
-   "text": "So before bed, feed it something worth REPLAYING. Follow for more."
+   "text": "So before bed, feed it something worth REPLAYING. Follow for more.",
+   "tone": "warmly"
   }
  ],
  "voice": {

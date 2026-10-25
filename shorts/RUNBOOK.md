@@ -52,6 +52,11 @@
 > says" loop 12–18 s), 6–7 scenes, the hook speaks to the viewer ("you") in the first line, plain-language titles (no
 > jargon in the title), the 3-act Turn ("But…") stays. Add `"pattern": "<pattern name>"` to script.json. After the 30,
 > the weekly review ranks patterns by views and retention and Shivam picks what continues.
+> **Emotion tags (2026-10-24, Shivam):** give every line a `"tone"` for the ElevenLabs v3 voices (Shivam / Jessica / Brian):
+> 1–2 delivery tags that fit that line, e.g. "curious", "excited", "surprised", "whispers", "thoughtfully", "warmly",
+> "mischievously", "sarcastic", "laughs", "sighs", "serious" (comma-separated). The hook is usually curious/excited, the
+> "But…" turn surprised or whispers, the payoff thoughtfully, the outro warmly. Tags are never spoken or captioned;
+> Heart (Kokoro) ignores them.
 > Examples: shorts/rosenhan-fake-patients, foot-in-the-door, always-late, mind-goes-blank, five-minute-sigh,
 > coffee-spill-effect.
 

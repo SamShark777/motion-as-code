@@ -66,7 +66,7 @@ def kokoro_lines(texts, voice, speed, lang="en-us", model="int8"):
     return out
 
 
-def eleven_lines(texts, cfg):
+def eleven_lines(texts, cfg, tones=None):
     """ElevenLabs TTS, one request per line (with neighbouring text for natural flow). Raises on any
     API problem (no key, out of credits, voice locked) so the caller falls back to Kokoro."""
     import urllib.request
@@ -78,7 +78,11 @@ def eleven_lines(texts, cfg):
     for i, t in enumerate(texts):
         model = cfg.get("eleven_model", "eleven_multilingual_v2")
         if model == "eleven_v3":  # most expressive model: only stability 0 / 0.5 / 1, no text stitching
-            body = {"text": t, "model_id": model, "voice_settings": {"stability": 0.5, "similarity_boost": 0.8}}
+            # per-line delivery tags (script line "tone", e.g. "curious" or "whispers, slowly") steer the emotion;
+            # they are never spoken and don't touch the captions (timing comes from the line text)
+            tone = (tones or [None] * len(texts))[i]
+            tagged = "".join(f"[{x.strip()}] " for x in str(tone).split(",") if x.strip()) + t if tone else t
+            body = {"text": tagged, "model_id": model, "voice_settings": {"stability": 0.0 if tone else 0.5, "similarity_boost": 0.8}}
         else:
             body = {"text": t, "model_id": model,
                     "voice_settings": {"stability": float(cfg.get("eleven_stability", 0.45)), "similarity_boost": 0.8,
@@ -246,7 +250,7 @@ def main():
             engine = "kokoro"
     if engine == "elevenlabs":
         try:
-            rendered = eleven_lines(texts, cfg)
+            rendered = eleven_lines(texts, cfg, [ln.get("tone") for ln in lines])
         except Exception as e:
             print(f"FALLBACK: elevenlabs failed ({str(e)[:300]}) -> kokoro", file=sys.stderr)
             print(f"FALLBACK: {str(e)[:300]}")
