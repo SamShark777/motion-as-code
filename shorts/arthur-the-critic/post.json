@@ -1,0 +1,17 @@
+{
+ "no": 136,
+ "slug": "arthur-the-critic",
+ "date": "2026-10-26",
+ "slot": "14:25",
+ "due": "2026-10-26T21:25:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-26/arthur-the-critic.mp4",
+ "buffer": {
+  "youtube": "6adfbc87ca308c8a23248624",
+  "instagram": "6adfbc883ffda7dd058ff2ba",
+  "tiktok": "6adfbc883ffda7dd058ff2ef"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 30.2
+}

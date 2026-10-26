@@ -7,15 +7,18 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-17/cocktail-party.mp4",
  "buffer": {
   "youtube": "6ad27dfe5720e82b418e1b51",
-  "tiktok": "6ad27dfe346e510ac44f4f9b"
+  "tiktok": "6ad27dfe346e510ac44f4f9b",
+  "instagram": "6adfbc8a2e4832a623d60834"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
  "duration": 34.1,
  "links": {
   "youtube": "https://www.youtube.com/shorts/6lEzq_X0qlE",
   "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7697744609736133901?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ },
+ "instagram_catchup": {
+  "due": "2026-10-27T18:30:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/ig-backlog/cocktail-party.mp4"
  }
 }
