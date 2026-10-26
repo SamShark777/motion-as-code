@@ -20,9 +20,12 @@ if [ -z "${CHROME_PATH:-}" ]; then
 fi
 
 FORMAT0=$(python3 -c "import json;print(json.load(open('$DIR/script.json')).get('format','tpl'))")
-if [ "$FORMAT0" = "prebuilt" ]; then
-  # finished elsewhere (e.g. a Claude Design export that Claude voiced and scored): just copy it + preview strip
+if [ "$FORMAT0" = "prebuilt" ] || [ -f "$DIR/source/final.mp4" ]; then
+  # finished elsewhere (e.g. a Claude Design export, or a video Claude already rendered and Shivam approved to post as-is):
+  # just copy it (+ per-platform music variants and music.json when present) + preview strip
   cp "$DIR/source/final.mp4" "$DIR/$SLUG.mp4"
+  for v in instagram tiktok; do [ -f "$DIR/source/final.$v.mp4" ] && cp "$DIR/source/final.$v.mp4" "$DIR/$SLUG.$v.mp4"; done
+  [ -f "$DIR/source/music.json" ] && cp "$DIR/source/music.json" "$DIR/music.json"
   DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$DIR/$SLUG.mp4")
   ffmpeg -v error -y -i "$DIR/$SLUG.mp4" -vf "fps=6/$DUR,scale=270:480,tile=6x1" -frames:v 1 "$DIR/preview.jpg"
   echo "ENGINE: kokoro"
