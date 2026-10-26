@@ -38,6 +38,40 @@
     "arthur": "colleague"
    },
    "history": []
+  },
+  "otto": {
+   "name": "Otto",
+   "age": "50s",
+   "look": "bald cream head with forehead lines, monobrow-heavy brows, blue suit, red tie",
+   "default_mood": "angry",
+   "personality": "Arthur's boss: loud, certain, rarely right; authority and status effects",
+   "relationships": {
+    "arthur": "his employee",
+    "lila": "his intern"
+   },
+   "history": []
+  },
+  "lila": {
+   "name": "Lila",
+   "age": "20s",
+   "look": "pink face, big mustard curls, red jacket",
+   "default_mood": "happy",
+   "personality": "bold new intern; says what she thinks, gets swept up by the crowd",
+   "relationships": {
+    "otto": "her boss",
+    "mae": "mentor"
+   },
+   "history": []
+  },
+  "doubt": {
+   "name": "The Doubt",
+   "look": "mustard pear-shaped creature, one big eye, pink spots, skinny ink limbs",
+   "default_mood": "sly",
+   "personality": "the 'what if…' voice: whispers worst cases, second-guesses decisions (anxiety, impostor feelings, analysis paralysis); a rival to The Critic",
+   "relationships": {
+    "critic": "rival tenant in people's heads"
+   },
+   "history": []
   }
  }
 }

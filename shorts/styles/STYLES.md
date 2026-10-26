@@ -14,7 +14,7 @@ our pipeline actually rendered — that is the quality bar.
 | ours | `tedmg/ours-milo-coffee-stain.jpg` (+ frames) | `retro/ours-arthur-the-critic.jpg` (+ frames) |
 | example episode | `shorts/milo-coffee-stain/` | `shorts/arthur-the-critic/` |
 | kit / engine | `design_kit/tedmg-kit.jsx` / `tedmg-engine.jsx` | `design_kit/retro-kit.jsx` / `retro-engine.jsx` |
-| cast | `characters/tedmg-cast.json`: Milo, Nia, Theo, Rosa | `characters/retro-cast.json`: Arthur, The Critic, Mae |
+| cast | `characters/tedmg-cast.json`: Milo, Nia, Theo, Rosa, Dev, June — `tedmg/cast-sheet.jpg` | `characters/retro-cast.json`: Arthur, Mae, Otto, Lila, The Critic, The Doubt — `retro/cast-sheet.jpg` |
 
 ## ted-MG motion graphics
 - **Look:** flat-vector cartoon, round cream heads with dot eyes and expressive brows, thick ink outlines;
@@ -55,3 +55,12 @@ Same `script.json` shape as the stick stories (see the two examples): `format` +
   state, effects or timers (use `MG.hsh` / `RM.hsh`). Compose kit components; draw extra props in the same style.
 - Validate: `cd scripts && BABEL=/tmp/babel/node_modules/@babel/standalone node check_art.mjs <slug>` → ok.
 - Real studies: verify every number with a web search; name researchers + year in `credit` and `post.description`.
+
+## Casts in every style (Shivam, 2026-10-26)
+Each style has its own recurring cast — see the `cast-sheet.jpg` in each folder before writing:
+- **Ted type 2:** `characters/ted2-cast.json` — Sam, Priya, Leo, Grace, Omar, drawn with `<T2Bust who=… mood=… />` from
+  `design_kit/ted2-cast.jsx` (loaded automatically for format `cdesign`). Use them whenever a Ted type 2 scene needs a person.
+- **ted-MG:** Milo, Nia, Theo, Rosa, Dev, June (`MGBust` / `MGPerson` / `MGHead` with `who=`).
+- **retro:** Arthur, Mae, Otto, Lila (`RMArthur` / `RMMae` / `RMOtto` / `RMLila`, or `RMHuman who=`) and two creatures that
+  personify the voices in our heads: The Critic (`RMCritic`, harsh self-judgement) and The Doubt (`RMDoubt`, "what if…" worry).
+Give episodes 2–3 characters, rotate who leads, keep personalities and relationships consistent, update `history`.

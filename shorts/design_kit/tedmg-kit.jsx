@@ -24,6 +24,8 @@
     nia: { name: 'Nia', hair: 'curly', hairCol: '#1f1f26', skin: '#8d6346', top: '#e8b33e', pants: '#2f3347' },
     theo: { name: 'Theo', hair: 'short', hairCol: '#9a9a9a', skin: '#e9d2b8', top: '#4f9d78', pants: '#4b3a2e', glasses: true },
     rosa: { name: 'Rosa', hair: 'long', hairCol: '#e0743a', skin: '#f2dccb', top: '#a46fd1', pants: '#2b2b2b' },
+    dev: { name: 'Dev', hair: 'buzz', hairCol: '#1f1a17', skin: '#c99b74', top: '#3f7fbf', pants: '#2f3347', beard: true },
+    june: { name: 'June', hair: 'bun', hairCol: '#c46a3f', skin: '#f2dccb', top: '#5bb3b0', pants: '#4b3a2e', glasses: true },
   };
   const EX_HAIR = [['long', '#e0743a'], ['short', '#4a3426'], ['bun', '#2a2a2a'], ['curly', '#6b4a2f'], ['long', '#f0c75a'], ['short', '#b8b8b8'], ['curly', '#1f1f26'], ['long', '#3a2a22'], ['bun', '#c46a3f'], ['short', '#d6a55c']];
   const EX_TOP = ['#d9534f', '#e8b33e', '#6a7bd1', '#4f9d78', '#a46fd1', '#e07fa8', '#3f7fbf', '#8c6b4f', '#5bb3b0', '#f08a4b'];
@@ -48,6 +50,7 @@
       <path d={`M${x + Math.cos(PI * 1.05) * r * 1.04} ${y + Math.sin(PI * 1.05) * r * 1.04} A${r * 1.04} ${r * 1.04} 0 0 1 ${x + Math.cos(PI * 1.95) * r * 1.04} ${y + Math.sin(PI * 1.95) * r * 1.04} Q${x} ${y - r * 0.45} ${x - r} ${y - r * 0.3} Z`} {...s} /></g>);
     if (style === 'curly') return (<g>{[...Array(9)].map((_, i) => { const a = PI + i * (PI / 8); return <circle key={i} cx={x + Math.cos(a) * r * 0.92} cy={y + Math.sin(a) * r * 0.92 - r * 0.05} r={r * 0.32} {...s} />; })}
       <path d={`M${x - r * 0.9} ${y - r * 0.1} A${r * 0.9} ${r * 0.9} 0 0 1 ${x + r * 0.9} ${y - r * 0.1} Z`} fill={col} /></g>);
+    if (style === 'buzz') return <path d={`M${x - r * 0.98} ${y - r * 0.25} A${r} ${r} 0 0 1 ${x + r * 0.98} ${y - r * 0.25} Q${x} ${y - r * 0.62} ${x - r * 0.98} ${y - r * 0.25} Z`} fill={col} opacity="0.9" />;
     if (style === 'short') return <path d={`M${x + Math.cos(PI * 1.02) * r * 1.04} ${y + Math.sin(PI * 1.02) * r * 1.04} A${r * 1.04} ${r * 1.04} 0 0 1 ${x + Math.cos(PI * 1.98) * r * 1.04} ${y + Math.sin(PI * 1.98) * r * 1.04} L${x + r * 0.8} ${y - r * 0.35} Q${x} ${y - r * 0.6} ${x - r * 0.85} ${y - r * 0.3} Z`} {...s} />;
     return null;
   }
@@ -96,6 +99,7 @@
       {L.hair === 'long' && <HairBack x={x} y={y} r={r} col={L.hairCol} />}
       <circle cx={x} cy={y} r={r} fill={L.skin || CREAM} stroke={INK} strokeWidth={Math.max(3, r * 0.035)} />
       {L.hair === 'long' ? <HairFringe x={x} y={y} r={r} col={L.hairCol} /> : <Hair x={x} y={y} r={r} style={L.hair} col={L.hairCol} />}
+      {L.beard && <path d={`M${x - r * 0.95} ${y + r * 0.2} C${x - r * 0.85} ${y + r * 0.95} ${x - r * 0.3} ${y + r * 1.02} ${x} ${y + r * 1.02} C${x + r * 0.3} ${y + r * 1.02} ${x + r * 0.85} ${y + r * 0.95} ${x + r * 0.95} ${y + r * 0.2} C${x + r * 0.7} ${y + r * 0.62} ${x + r * 0.3} ${y + r * 0.56} ${x} ${y + r * 0.6} C${x - r * 0.3} ${y + r * 0.56} ${x - r * 0.7} ${y + r * 0.62} ${x - r * 0.95} ${y + r * 0.2} Z`} fill={L.hairCol} stroke={INK} strokeWidth={Math.max(3, r * 0.03)} strokeLinejoin="round" />}
       <Face x={x} y={y} r={r} {...f} />
       {L.glasses && <g fill="none" stroke={INK} strokeWidth={r * 0.03}><circle cx={x - r * 0.34} cy={y - r * 0.02} r={r * 0.27} /><circle cx={x + r * 0.34} cy={y - r * 0.02} r={r * 0.27} /><line x1={x - r * 0.07} y1={y - r * 0.05} x2={x + r * 0.07} y2={y - r * 0.05} /></g>}
     </g>);

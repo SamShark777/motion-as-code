@@ -51,6 +51,30 @@
     "nia": "gym buddy"
    },
    "history": []
+  },
+  "dev": {
+   "name": "Dev",
+   "age": "30s",
+   "look": "buzz cut, full beard, blue top, brown skin",
+   "default_mood": "calm",
+   "personality": "laid-back gym coach and confident talker; overestimates himself (Dunning–Kruger material)",
+   "relationships": {
+    "milo": "coworker",
+    "nia": "ex-classmate"
+   },
+   "history": []
+  },
+  "june": {
+   "name": "June",
+   "age": "20s",
+   "look": "ginger bun, round glasses, teal top",
+   "default_mood": "thinking",
+   "personality": "anxious student and planner; procrastinates, then overprepares",
+   "relationships": {
+    "rosa": "younger sister",
+    "theo": "his former student"
+   },
+   "history": []
   }
  }
 }

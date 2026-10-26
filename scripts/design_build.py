@@ -102,7 +102,7 @@ def main():
         files, app = f"{kit}/animations-v3.jsx {kit}/retro-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/retro-engine.jsx", "RetroShortApp"
     else:
         fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
-        files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/cover.jsx {kit}/engine.jsx", "DesignShortApp"
+        files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx {kit}/ted2-cast.jsx ./art.jsx {kit}/cover.jsx {kit}/engine.jsx", "DesignShortApp"
     html = f"""<!DOCTYPE html>
 <html>
 <head>

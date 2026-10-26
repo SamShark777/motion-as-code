@@ -1,0 +1,36 @@
+{
+ "about": "Recurring cast of Ted type 2 (format \"cdesign\"), drawn by shorts/design_kit/ted2-cast.jsx: <T2Bust who=\"sam\" x={486} y={1150} T={T} mood=\"nervous\" s={1} /> inside art.jsx (972×1728 card). Moods: calm, happy, nervous, shocked, sad, smug, angry. Use a cast member whenever a scene needs a person; props, objects and extra figures are still drawn per video in the Rename Your Nerves style. Append each episode to the character's history.",
+ "style": "Flat shapes, no outlines, egg-shaped faces, ink hair, white eyes with ink pupils, soft blush, a big soft coloured circle behind the subject. Reference: shorts/rename-nerves, shorts/styles/ted2/cast-sheet.jpg.",
+ "characters": {
+  "sam": {
+   "name": "Sam",
+   "look": "swept ink hair, cream shirt, blue backdrop",
+   "personality": "nervous overthinker; the viewer's stand-in",
+   "history": []
+  },
+  "priya": {
+   "name": "Priya",
+   "look": "long dark hair, mustard top, red backdrop",
+   "personality": "sharp, confident; knows the trick and explains it",
+   "history": []
+  },
+  "leo": {
+   "name": "Leo",
+   "look": "orange curls, freckles, teal hoodie, yellow backdrop",
+   "personality": "cheerful, impulsive; falls for every bias first",
+   "history": []
+  },
+  "grace": {
+   "name": "Grace",
+   "look": "grey bun, round glasses, purple cardigan, teal backdrop",
+   "personality": "wise retired therapist; calm voice of reason",
+   "history": []
+  },
+  "omar": {
+   "name": "Omar",
+   "look": "buzz cut, full beard, red top, orange backdrop",
+   "personality": "competitive and proud; habits, motivation, status",
+   "history": []
+  }
+ }
+}

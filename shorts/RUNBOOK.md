@@ -5,8 +5,9 @@
 > recently written row (highest No.) whose script.json format is cdesign, tedmg or retro, and write the NEXT one in
 > that order (the cycle started with retro, row 136 arthur-the-critic, so the next is Ted type 2). Read
 > **shorts/styles/STYLES.md** and LOOK AT the reference pictures in `shorts/styles/tedmg/` and `shorts/styles/retro/`
-> before writing those two; for Ted type 2 study shorts/rename-nerves. Casts: `shorts/characters/tedmg-cast.json`
-> (Milo, Nia, Theo, Rosa) and `shorts/characters/retro-cast.json` (Arthur, The Critic, Mae); keep characters on-model
+> before writing those two; for Ted type 2 study shorts/rename-nerves. Casts — one per style, look at each
+> `shorts/styles/<style>/cast-sheet.jpg`: `shorts/characters/ted2-cast.json` (Sam, Priya, Leo, Grace, Omar — `<T2Bust>`),
+> `tedmg-cast.json` (Milo, Nia, Theo, Rosa, Dev, June), `retro-cast.json` (Arthur, Mae, Otto, Lila, The Critic, The Doubt); keep characters on-model
 > (draw them only with the kit) and append each episode to their `history`. Tracker `Visual style` = ted2 | tedmg |
 > retro. No new stick scripts: the unbuilt ones were Vetoed and the two still scheduled on 2026-10-26 were deleted
 > from Buffer at Shivam's request (the separate Stick or Twist channel is unaffected).

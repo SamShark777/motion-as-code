@@ -23,6 +23,9 @@
     arthur: { name: 'Arthur', kind: 'human', skin: P.pink, skinD: P.pinkD, hair: 'flat', hairCol: P.blk, moustache: true, jacket: P.blk },
     mae: { name: 'Mae', kind: 'human', skin: P.yel, skinD: '#D9A62A', hair: 'bob', hairCol: P.blue, moustache: false, lips: true, jacket: P.green },
     critic: { name: 'The Critic', kind: 'critic' },
+    otto: { name: 'Otto', kind: 'human', skin: P.cream, skinD: '#D9C2A0', hair: 'bald', hairCol: P.blk, moustache: false, jacket: P.blue, tie: true },
+    lila: { name: 'Lila', kind: 'human', skin: P.pink, skinD: P.pinkD, hair: 'curly', hairCol: P.yel, moustache: false, lips: true, jacket: P.red },
+    doubt: { name: 'The Doubt', kind: 'doubt' },
   };
 
   // ---- human face (Arthur / Mae): local units, head ≈ 400 wide; s = scale ----
@@ -35,8 +38,9 @@
     const hairFlat = [[-205, -140], [-200, -300], [-120, -340], [150, -345], [200, -290], [195, -165], [150, -210], [60, -200], [-60, -215], [-150, -190]];
     return (<g transform={`translate(${x} ${y}) scale(${s}) rotate(${rot * 180 / PI})`}>
       {body && <g><path d={pts([[-330, 700], [-300, 330], [-150, 250], [150, 250], [300, 330], [330, 700]])} fill={C.jacket} />
-        <path d={pts([[-60, 250], [0, 330], [60, 250]])} fill={P.cream} {...ink(5)} /><Ln x1={0} y1={330} x2={0} y2={700} w={4} c="#3a3240" /></g>}
+        <path d={pts([[-60, 250], [0, 330], [60, 250]])} fill={P.cream} {...ink(5)} />{C.tie ? <path d={pts([[0, 330], [-34, 380], [-20, 640], [0, 690], [20, 640], [34, 380]])} fill={P.red} {...ink(5)} /> : <Ln x1={0} y1={330} x2={0} y2={700} w={4} c="#3a3240" />}</g>}
       {C.hair === 'bob' && <path d="M-250 160 C-280 -200 -170 -380 0 -380 C170 -380 280 -200 250 160 L170 160 L170 -150 L-170 -150 L-170 160 Z" fill={C.hairCol} {...ink(7)} />}
+      {C.hair === 'curly' && [...Array(13)].map((_, i) => { const an = Math.PI * (0.95 + i * 0.092); return <circle key={'c' + i} cx={Math.cos(an) * 215} cy={-90 + Math.sin(an) * 230} r={62} fill={C.hairCol} {...ink(6)} />; })}
       <ellipse cx={-200} cy={-10} rx={40} ry={70} fill={C.skinD} {...ink(6)} />
       <path d={pts(face)} fill={C.skin} {...ink(7)} />
       {C.moustache !== false && C.hair !== 'bob' && [...Array(16)].map((_, i) => <Ln key={i} x1={-140 + i * 19} y1={262} x2={-140 + i * 19} y2={288} w={4} />)}
@@ -45,6 +49,7 @@
         <g clipPath={`url(#hc${u})`} stroke={C.skin} strokeOpacity="0.7" strokeWidth="4" fill="none">{[...Array(8)].map((_, k) => <path key={k} d={`M-220 ${-300 + k * 22} C-80 ${-330 + k * 22} 60 ${-300 + k * 24} 220 ${-330 + k * 22}`} />)}</g></g>}
       {C.hair === 'bob' && <path d="M-205 -120 C-190 -330 190 -330 205 -120 C120 -200 40 -170 -20 -230 C-80 -170 -150 -190 -205 -120 Z" fill={C.hairCol} {...ink(6)} />}
       {C.hair === 'bob' && <rect x={110} y={-250} width={70} height={26} rx={8} fill={P.red} {...ink(4)} transform="rotate(-20 145 -237)" />}
+      {C.hair === 'bald' && <g><path d="M-120 -190 Q-40 -232 60 -205" fill="none" stroke="#fff" strokeOpacity="0.55" strokeWidth="14" strokeLinecap="round" />{[0, 1, 2].map((k) => <path key={k} d={`M-80 ${-150 - k * 18} Q0 ${-162 - k * 18} 80 ${-150 - k * 18}`} fill="none" stroke={P.blk} strokeOpacity="0.45" strokeWidth="3" />)}</g>}
       {[-1, 1].map((sd) => <rect key={sd} x={-55} y={-13} width={110} height={26} fill={P.blk} transform={`translate(${sd * 95} ${-120 + bU}) rotate(${sd * bA})`} />)}
       {[-1, 1].map((sd) => { const ex = sd * 95, ey = -55, ly = ey - 40 + 80 * lid; return (<g key={sd}>
         <circle cx={ex} cy={ey} r={40} fill={P.yel} {...ink(6)} />
@@ -94,6 +99,23 @@
         <path d={pts([[-40, 175], [-20, 175], [-30, 205]])} fill={P.yel} {...ink(3)} /><path d={pts([[40, 175], [20, 175], [30, 205]])} fill={P.yel} {...ink(3)} /></g>}
       {mouth === 'flat' && <path d="M-120 250 Q0 215 120 250" fill="none" {...ink(8)} />}
       {[...Array(12)].map((_, i) => <Ln key={i} x1={-100 + i * 18} y1={330} x2={-100 + i * 18} y2={350} w={4} />)}
+    </g>);
+  }
+
+  // The Doubt: a mustard one-eyed pear-shaped creature with pink spots and skinny ink limbs (the "what if…" voice)
+  // mood: sly | worried | shocked ; eye looks with look [-1..1, -1..1]
+  function Doubt({ x, y, s = 1, T = 0, mood = 'sly', look = [0, 0], blink = 0 }) {
+    const body = 'M0 -300 C150 -300 210 -120 230 60 C250 230 150 320 0 320 C-150 320 -250 230 -230 60 C-210 -120 -150 -300 0 -300 Z';
+    const wob = Math.sin(T * 3) * 4;
+    return (<g transform={`translate(${x} ${y + wob}) scale(${s})`}>
+      {[-1, 1].map((sd) => <g key={sd}><path d={`M${sd * 90} 300 L${sd * 110} 460 L${sd * 150} 470`} fill="none" {...ink(12)} /><path d={`M${sd * 215} 60 Q${sd * 330} 40 ${sd * 360} ${-60 + Math.sin(T * 2 + sd) * 20}`} fill="none" {...ink(12)} /></g>)}
+      <path d={body} fill={P.yel} {...ink(8)} />
+      {[[-120, 120], [140, 60], [-60, 230], [90, 220], [160, 170], [-170, 20]].map(([sx, sy], i) => <circle key={i} cx={sx} cy={sy} r={18 + (i % 3) * 6} fill={P.pink} />)}
+      <g transform={`translate(0 -90) scale(1 ${1 - blink * 0.92})`}><ellipse rx="120" ry="105" fill={P.cream} {...ink(8)} />
+        <circle cx={look[0] * 45} cy={look[1] * 35} r={mood === 'shocked' ? 26 : 42} fill={P.blk} /><circle cx={look[0] * 45 + 14} cy={look[1] * 35 - 14} r="9" fill={P.cream} />
+        {mood !== 'shocked' && <rect x="-130" y="-115" width="260" height={mood === 'sly' ? 70 : 40} fill={P.yel} />}</g>
+      <path d={mood === 'sly' ? 'M-90 -160 L90 -196' : 'M-90 -196 Q0 -230 90 -196'} fill="none" {...ink(9)} />
+      {mood === 'shocked' ? <ellipse cx="0" cy="110" rx="40" ry="50" fill={P.blk} /> : mood === 'worried' ? <path d="M-60 120 q15 -14 30 0 t30 0 t30 0 t30 0" fill="none" {...ink(8)} /> : <path d="M-70 100 Q10 150 80 90" fill="none" {...ink(9)} />}
     </g>);
   }
 
@@ -230,7 +252,7 @@
 
   Object.assign(window, {
     RM: { P, W, H, clamp, lerp, sm, eo, back, osc, hsh, rng, pts, ink },
-    RM_CAST: CAST, RMHuman: Human, RMArthur: (p) => <Human who="arthur" {...p} />, RMMae: (p) => <Human who="mae" {...p} />, RMCritic: Critic, RMHand: Hand,
+    RM_CAST: CAST, RMHuman: Human, RMArthur: (p) => <Human who="arthur" {...p} />, RMMae: (p) => <Human who="mae" {...p} />, RMCritic: Critic, RMDoubt: Doubt, RMOtto: (p) => <Human who="otto" {...p} />, RMLila: (p) => <Human who="lila" {...p} />, RMHand: Hand,
     RMBolt: Bolt, RMBrain: Brain, RMBg: Bg, RMGrid: Grid, RMBulb: Bulb, RMBadge: Badge, RMSpeech: Speech, RMChip: Chip, RMTitle: Title, RMLine: Ln,
     RMEyeMacro: EyeMacro, RMScale: Scale, RMFlower: Flower, RMSpiky: Spiky, RMBush: Bush, RMAlarm: Alarm, RMLoopRings: LoopRings,
   });
