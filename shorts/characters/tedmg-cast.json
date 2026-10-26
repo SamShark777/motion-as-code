@@ -1,0 +1,56 @@
+{
+ "about": "Recurring cast of the ted-MG motion graphics Shorts (format \"tedmg\"). Drawn by shorts/design_kit/tedmg-kit.jsx (MGBust / MGPerson / MGHead with who=<id>) — never redraw a cast member by hand. Background people: MG.extra(i). Append each episode to the character's history.",
+ "style": "Flat-vector cartoon: big round cream heads, dot eyes with expressive brows, thick ink outlines, warm muted scenes. White + amber condensed captions. Reference: shorts/styles/tedmg/.",
+ "characters": {
+  "milo": {
+   "name": "Milo",
+   "age": "24",
+   "look": "tall dark quiff, white button shirt",
+   "default_mood": "worried",
+   "personality": "self-conscious and kind; sure everyone is watching and judging him; funny when he relaxes",
+   "relationships": {
+    "nia": "best friend",
+    "theo": "flatmate",
+    "rosa": "coworker"
+   },
+   "history": [
+    "ep 1 (milo-coffee-stain): spotlight effect — coffee stain at the party, nobody noticed; tomorrow he gives a speech"
+   ]
+  },
+  "nia": {
+   "name": "Nia",
+   "age": "25",
+   "look": "black curly hair, mustard top, deep skin tone",
+   "default_mood": "smug",
+   "personality": "confident, practical, blunt; the one who says 'nobody saw it, Milo'",
+   "relationships": {
+    "milo": "best friend",
+    "rosa": "gym buddy"
+   },
+   "history": []
+  },
+  "theo": {
+   "name": "Theo",
+   "age": "60s",
+   "look": "short grey hair, round glasses, green cardigan",
+   "default_mood": "thinking",
+   "personality": "dry humour, retired teacher; explains the psychology with a story",
+   "relationships": {
+    "milo": "flatmate (rents him the spare room)"
+   },
+   "history": []
+  },
+  "rosa": {
+   "name": "Rosa",
+   "age": "28",
+   "look": "long ginger hair, purple top",
+   "default_mood": "happy",
+   "personality": "ambitious people-pleaser; says yes to everything, then panics",
+   "relationships": {
+    "milo": "coworker",
+    "nia": "gym buddy"
+   },
+   "history": []
+  }
+ }
+}

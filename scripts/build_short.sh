@@ -28,7 +28,7 @@ if [ "$FORMAT0" = "prebuilt" ]; then
   echo "ENGINE: kokoro"
   exit 0
 fi
-if [ "$FORMAT0" = "cdesign" ] || [ "$FORMAT0" = "story" ] || [ "$FORMAT0" = "stick" ]; then
+if [ "$FORMAT0" = "cdesign" ] || [ "$FORMAT0" = "story" ] || [ "$FORMAT0" = "stick" ] || [ "$FORMAT0" = "tedmg" ] || [ "$FORMAT0" = "retro" ]; then
   # Claude Design style (Ted type 2) and story Shorts: React/SVG scenes captured frame by frame (scripts/design_build.py)
   ( cd "$ROOT/app" && [ -d node_modules ] || bun install )
   [ -n "${CHROME_PATH:-}" ] || export CHROME_PATH="$(ls -d /opt/pw-browsers/chromium-*/chrome-linux/chrome 2>/dev/null | head -1 || command -v google-chrome)"

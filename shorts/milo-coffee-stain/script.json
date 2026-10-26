@@ -1,0 +1,340 @@
+{
+ "slug": "milo-coffee-stain",
+ "no": null,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Milo",
+ "episode": 1,
+ "cast": [
+  "milo"
+ ],
+ "title": [
+  "Spotlight",
+  "Effect"
+ ],
+ "credit": "Gilovich, Medvec & Savitsky · 2000",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGHook",
+   "chunks": [
+    [
+     "What if one"
+    ],
+    [
+     "coffee STAIN",
+     {
+      "emph": "STAIN"
+     }
+    ],
+    [
+     "could ruin your"
+    ],
+    [
+     "whole night?"
+    ]
+   ],
+   "text": "What if one coffee STAIN could ruin your whole night?",
+   "tone": "curious",
+   "cam": [
+    660,
+    1100,
+    1.0,
+    1.14
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Milo",
+   "art": "MGIntro",
+   "chunks": [
+    [
+     "Milo."
+    ],
+    [
+     "Ten minutes before"
+    ],
+    [
+     "the biggest PARTY",
+     {
+      "emph": "PARTY"
+     }
+    ],
+    [
+     "of the year."
+    ]
+   ],
+   "text": "Milo. Ten minutes before the biggest PARTY of the year.",
+   "tone": "excited"
+  },
+  {
+   "sec": "cd",
+   "scene": "Spill",
+   "art": "MGSpill",
+   "chunks": [
+    [
+     "He spills coffee"
+    ],
+    [
+     "down his WHITE",
+     {
+      "emph": "WHITE"
+     }
+    ],
+    [
+     "shirt."
+    ]
+   ],
+   "text": "He spills coffee down his WHITE shirt.",
+   "tone": "surprised",
+   "cam": [
+    600,
+    1050,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "No time",
+   "art": "MGNoTime",
+   "chunks": [
+    [
+     "No TIME",
+     {
+      "emph": "TIME"
+     }
+    ],
+    [
+     "to change."
+    ]
+   ],
+   "text": "No TIME to change.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Walk in",
+   "art": "MGWalkIn",
+   "chunks": [
+    [
+     "He walks in,"
+    ],
+    [
+     "certain every EYE",
+     {
+      "emph": "EYE"
+     }
+    ],
+    [
+     "goes straight to"
+    ],
+    [
+     "the stain."
+    ]
+   ],
+   "text": "He walks in, certain every EYE goes straight to the stain.",
+   "tone": "nervous",
+   "cam": [
+    600,
+    1100,
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Hide",
+   "art": "MGHide",
+   "chunks": [
+    [
+     "So he hides"
+    ],
+    [
+     "behind a cup,"
+    ],
+    [
+     "and leaves EARLY.",
+     {
+      "emph": "EARLY"
+     }
+    ]
+   ],
+   "text": "So he hides behind a cup, and leaves EARLY.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Nobody",
+   "art": "MGNobody",
+   "chunks": [
+    [
+     "But almost"
+    ],
+    [
+     "NOBODY noticed.",
+     {
+      "emph": "NOBODY"
+     }
+    ],
+    [
+     "They were busy"
+    ],
+    [
+     "worrying about"
+    ],
+    [
+     "themselves."
+    ]
+   ],
+   "text": "But almost NOBODY noticed. They were busy worrying about themselves.",
+   "tone": "whispers",
+   "cam": [
+    540,
+    1050,
+    1.06,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGName",
+   "chunks": [
+    [
+     "Psychologists call this"
+    ],
+    [
+     "the SPOTLIGHT effect.",
+     {
+      "emph": "SPOTLIGHT"
+     }
+    ]
+   ],
+   "text": "Psychologists call this the SPOTLIGHT effect.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGStudy",
+   "chunks": [
+    [
+     "In a Cornell"
+    ],
+    [
+     "study, people guessed"
+    ],
+    [
+     "half a room"
+    ],
+    [
+     "would notice"
+    ],
+    [
+     "an embarrassing T-shirt."
+    ],
+    [
+     "Really?"
+    ],
+    [
+     "About a QUARTER.",
+     {
+      "emph": "QUARTER"
+     }
+    ]
+   ],
+   "text": "In a Cornell study, people guessed half a room would notice an embarrassing T-shirt. Really? About a QUARTER.",
+   "tone": "curious",
+   "say": "In a Cornell study, people guessed half a room would notice an embarrassing tee shirt. Really? About a quarter.",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.04
+   ],
+   "capY": 1770
+  },
+  {
+   "sec": "cd",
+   "scene": "Movie",
+   "art": "MGMovie",
+   "chunks": [
+    [
+     "Everyone's the"
+    ],
+    [
+     "MAIN character",
+     {
+      "emph": "MAIN"
+     }
+    ],
+    [
+     "of their own"
+    ],
+    [
+     "movie."
+    ]
+   ],
+   "text": "Everyone's the MAIN character of their own movie.",
+   "tone": "warmly",
+   "cam": [
+    540,
+    1000,
+    1.08,
+    1.0
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Tomorrow",
+   "art": "MGCliff",
+   "chunks": [
+    [
+     "But Milo doesn't"
+    ],
+    [
+     "know that yet."
+    ],
+    [
+     "And tomorrow,"
+    ],
+    [
+     "he gives a"
+    ],
+    [
+     "SPEECH.",
+     {
+      "emph": "SPEECH"
+     }
+    ]
+   ],
+   "text": "But Milo doesn't know that yet. And tomorrow, he gives a SPEECH.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.1
+   ]
+  }
+ ],
+ "post": {
+  "title": "Nobody Noticed the Stain #shorts",
+  "description": "Milo is sure everyone is staring at the coffee stain on his shirt. Almost nobody noticed. Psychologists call this the spotlight effect: in a Cornell study (Gilovich, Medvec & Savitsky, 2000) students wearing an embarrassing T-shirt guessed about half the room noticed; only about a quarter did. #psychology #shorts #socialanxiety",
+  "tags": [
+   "spotlight effect",
+   "social anxiety",
+   "psychology",
+   "overthinking"
+  ]
+ },
+ "thumb_text": "Nobody Noticed the Stain",
+ "thumb_emph": "Stain",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0
+}

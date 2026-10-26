@@ -1,0 +1,43 @@
+{
+ "about": "Recurring cast of the retro modern illustration Shorts (format \"retro\"). Drawn by shorts/design_kit/retro-kit.jsx (RMArthur / RMMae / RMHuman, RMCritic, RMHand) — never redraw a cast member by hand. Append each episode to the character's history.",
+ "style": "Mid-century editorial illustration: vermilion / indigo / pink / mustard / cream / black only, stippled grain, angular faces with big triangle noses and yellow eyes, hatched hair and moustaches, glowing cyan electricity as the one accent. Reference: shorts/styles/retro/.",
+ "characters": {
+  "arthur": {
+   "name": "Arthur",
+   "age": "40s",
+   "look": "pink square face, red triangle nose, hatched black hair, moustache, black suit",
+   "default_mood": "worried",
+   "personality": "earnest office worker who takes everything to heart; replays every comment",
+   "relationships": {
+    "critic": "lives in his head",
+    "mae": "colleague who sees through things"
+   },
+   "history": [
+    "ep 1 (arthur-the-critic): negativity bias — 10 compliments, 1 criticism, replays it at 2 AM; the Critic is 'a very old alarm'; tonight Arthur talks back"
+   ]
+  },
+  "critic": {
+   "name": "The Critic",
+   "look": "indigo creature, red-spotted dome head, droopy yellow eyes, fangs, long blue fingers",
+   "default_mood": "smug",
+   "personality": "Arthur's inner critic: sarcastic, dramatic, presses 'the button' — but really an ancient alarm trying to protect him. Can personify any bias (the voice that lies).",
+   "relationships": {
+    "arthur": "his host"
+   },
+   "history": [
+    "ep 1 (arthur-the-critic): introduced"
+   ]
+  },
+  "mae": {
+   "name": "Mae",
+   "age": "30s",
+   "look": "mustard face, indigo bob with a red clip, red lips, green jacket",
+   "default_mood": "smug",
+   "personality": "sharp, warm colleague; asks the one question that breaks the spell",
+   "relationships": {
+    "arthur": "colleague"
+   },
+   "history": []
+  }
+ }
+}

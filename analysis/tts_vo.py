@@ -204,12 +204,12 @@ def main():
     engine = a.engine or cfg.get("engine", "kokoro")
     import soundfile as sf
     script = json.loads((ROOT / "data" / "script.json").read_text(encoding="utf-8"))
-    if script.get("format") in ("ted1", "cdesign", "story", "stick") and not script.get("voice"):
+    if script.get("format") in ("ted1", "cdesign", "story", "stick", "tedmg", "retro") and not script.get("voice"):
         # Ted narrator: ElevenLabs "River" for Shorts (falls back to Kokoro Onyx when the key/credits run out);
         # long-form (landscape) stays on Kokoro so it doesn't burn the monthly ElevenLabs characters
         script["voice"] = {"engine": "kokoro", "kokoro_voice": "am_onyx", "kokoro_lang": "en-us", "kokoro_speed": 1.08}
     ted_engine = cfg.get("ted_engine") or ("elevenlabs" if cfg.get("ted_eleven_voice") else None)
-    if script.get("format") in ("ted1", "cdesign", "story", "stick") and script.get("orientation") != "landscape" and ted_engine:
+    if script.get("format") in ("ted1", "cdesign", "story", "stick", "tedmg", "retro") and script.get("orientation") != "landscape" and ted_engine:
         # overrides the scripts' own Kokoro setting, which stays as the fallback
         script["voice"] = {**script["voice"], "engine": ted_engine}
         if cfg.get("ted_voice"):  # e.g. {"kokoro_voice": "af_heart", "kokoro_speed": 1.0, "kokoro_model": "fp32"}
@@ -223,7 +223,7 @@ def main():
     slots = exp.get("slots") or ({exp["slot"]: exp["voices"]} if exp.get("voices") else {})
     pool = slots.get(os.environ.get("COVER_SLOT") or "")
     if (pool and os.environ.get("COVER_DATE")
-            and script.get("format") in ("ted1", "cdesign", "story", "stick") and script.get("orientation") != "landscape"):
+            and script.get("format") in ("ted1", "cdesign", "story", "stick", "tedmg", "retro") and script.get("orientation") != "landscape"):
         import datetime as _dt
         voice_name, vid = pool[_dt.date.fromisoformat(os.environ["COVER_DATE"]).toordinal() % len(pool)]
         script["voice"] = {**(script.get("voice") or {}), "engine": "elevenlabs", "eleven_voice": vid,
@@ -263,7 +263,7 @@ def main():
     if engine == "elevenlabs" and voice_name:
         print(f"VOICE_NAME: ElevenLabs {voice_name}")
 
-    LEAD, TAIL = (0.15, 1.0) if script.get("format") in ("ted1", "cdesign", "story", "stick") else (0.35, 1.9)
+    LEAD, TAIL = (0.15, 1.0) if script.get("format") in ("ted1", "cdesign", "story", "stick", "tedmg", "retro") else (0.35, 1.9)
     sr0 = rendered[0][1]
     chunks, out_lines, t = [], [], 0.0
     for i, (ln, (audio, sr)) in enumerate(zip(lines, rendered)):

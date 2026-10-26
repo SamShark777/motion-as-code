@@ -94,6 +94,12 @@ def main():
     elif S.get("format") == "stick":  # recurring-character stick stories (hand-drawn look)
         fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Caveat+Brush&display=swap"
         files, app = f"{kit}/animations-v3.jsx {kit}/stick-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/stick-engine.jsx", "StickShortApp"
+    elif S.get("format") == "tedmg":  # ted-MG motion graphics: flat-cartoon micro-stories (Shivam, 2026-10-26)
+        fonts = "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Montserrat:wght@700;800;900&display=swap"
+        files, app = f"{kit}/animations-v3.jsx {kit}/tedmg-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/tedmg-engine.jsx", "TedMGShortApp"
+    elif S.get("format") == "retro":  # retro modern illustration style (Shivam, 2026-10-26)
+        fonts = "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Montserrat:wght@700;800;900&display=swap"
+        files, app = f"{kit}/animations-v3.jsx {kit}/retro-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/retro-engine.jsx", "RetroShortApp"
     else:
         fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
         files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx ./art.jsx {kit}/cover.jsx {kit}/engine.jsx", "DesignShortApp"

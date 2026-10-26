@@ -1,0 +1,310 @@
+{
+ "slug": "arthur-the-critic",
+ "no": null,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 1,
+ "cast": [
+  "arthur",
+  "critic"
+ ],
+ "title": [
+  "Negativity",
+  "Bias"
+ ],
+ "credit": "Baumeister et al. 2001 · Rozin & Royzman 2001",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMHook",
+   "chunks": [
+    [
+     "Arthur got"
+    ],
+    [
+     "TEN compliments",
+     {
+      "emph": "TEN"
+     }
+    ],
+    [
+     "today."
+    ],
+    [
+     "And one criticism."
+    ]
+   ],
+   "text": "Arthur got TEN compliments today. And one criticism.",
+   "tone": "curious",
+   "cam": [
+    540,
+    850,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "2 AM",
+   "art": "RMNight",
+   "chunks": [
+    [
+     "Guess which one"
+    ],
+    [
+     "he's REPLAYING",
+     {
+      "emph": "REPLAYING"
+     }
+    ],
+    [
+     "at 2 AM."
+    ]
+   ],
+   "text": "Guess which one he's REPLAYING at 2 AM.",
+   "tone": "whispers",
+   "say": "Guess which one he's replaying at two A M.",
+   "cam": [
+    470,
+    1100,
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "The Critic",
+   "art": "RMMeet",
+   "chunks": [
+    [
+     "Meet the CRITIC.",
+     {
+      "emph": "CRITIC"
+     }
+    ],
+    [
+     "He lives in"
+    ],
+    [
+     "Arthur's head."
+    ]
+   ],
+   "text": "Meet the CRITIC. He lives in Arthur's head.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Button",
+   "art": "RMZap",
+   "chunks": [
+    [
+     "Every time"
+    ],
+    [
+     "Arthur relaxes,"
+    ],
+    [
+     "the Critic presses"
+    ],
+    [
+     "the same BUTTON.",
+     {
+      "emph": "BUTTON"
+     }
+    ]
+   ],
+   "text": "Every time Arthur relaxes, the Critic presses the same BUTTON.",
+   "tone": "sarcastic",
+   "cam": [
+    540,
+    850,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Again",
+   "art": "RMReplay",
+   "chunks": [
+    [
+     "That one comment."
+    ],
+    [
+     "AGAIN.",
+     {
+      "emph": "AGAIN"
+     }
+    ],
+    [
+     "And again."
+    ]
+   ],
+   "text": "That one comment. AGAIN. And again.",
+   "tone": "sighs",
+   "cam": [
+    540,
+    900,
+    1.05,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMName",
+   "chunks": [
+    [
+     "Psychologists call this"
+    ],
+    [
+     "NEGATIVITY bias.",
+     {
+      "emph": "NEGATIVITY"
+     }
+    ]
+   ],
+   "text": "Psychologists call this NEGATIVITY bias.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Why",
+   "art": "RMWhy",
+   "chunks": [
+    [
+     "Your brain remembers"
+    ],
+    [
+     "THREATS more",
+     {
+      "emph": "THREATS"
+     }
+    ],
+    [
+     "than rewards."
+    ]
+   ],
+   "text": "Your brain remembers THREATS more than rewards.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Bush",
+   "art": "RMBushScene",
+   "chunks": [
+    [
+     "Missing a compliment"
+    ],
+    [
+     "never killed anyone."
+    ],
+    [
+     "Missing a THREAT",
+     {
+      "emph": "THREAT"
+     }
+    ],
+    [
+     "did."
+    ]
+   ],
+   "text": "Missing a compliment never killed anyone. Missing a THREAT did.",
+   "tone": "serious",
+   "cam": [
+    700,
+    1050,
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Alarm",
+   "art": "RMOldAlarm",
+   "chunks": [
+    [
+     "So the Critic"
+    ],
+    [
+     "isn't evil."
+    ],
+    [
+     "He's a very"
+    ],
+    [
+     "OLD alarm.",
+     {
+      "emph": "OLD"
+     }
+    ]
+   ],
+   "text": "So the Critic isn't evil. He's a very OLD alarm.",
+   "tone": "warmly",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Tonight",
+   "art": "RMCliff",
+   "chunks": [
+    [
+     "And tonight,"
+    ],
+    [
+     "Arthur's going to"
+    ],
+    [
+     "TALK back.",
+     {
+      "emph": "TALK"
+     }
+    ]
+   ],
+   "text": "And tonight, Arthur's going to TALK back.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    960,
+    1.0,
+    1.08
+   ]
+  }
+ ],
+ "post": {
+  "title": "Why One Insult Beats Ten Compliments #shorts",
+  "description": "Arthur got ten compliments and one criticism, and at 2 AM he's replaying the criticism. Psychologists call this negativity bias: bad events weigh more than good ones (Baumeister et al., 'Bad Is Stronger Than Good', 2001; Rozin & Royzman, 2001). #psychology #shorts #overthinking",
+  "tags": [
+   "negativity bias",
+   "overthinking",
+   "psychology",
+   "inner critic"
+  ]
+ },
+ "thumb_text": "One Insult Beats Ten Compliments",
+ "thumb_emph": "One Insult",
+ "thumb_mood": "worried",
+ "music_vibe": "mystery",
+ "pattern": "Character story",
+ "thumb_scene": 3
+}

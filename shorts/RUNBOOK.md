@@ -1,3 +1,15 @@
+> **2026-10-26 — Shivam: THE STYLE CYCLE replaces the stick stories.** Every new Short alternates between two styles:
+> **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) and **retro modern illustration**
+> (`"format": "retro"`, `"look": "retro"`). Pick the style for each new script by counting the tedmg vs retro
+> scripts already written (Scripted + Scheduled + Published) and writing the one with fewer (tie → tedmg), so the
+> posts alternate. Read **shorts/styles/STYLES.md** and LOOK AT the reference pictures in `shorts/styles/tedmg/` and
+> `shorts/styles/retro/` before writing. Cast: `shorts/characters/tedmg-cast.json` (Milo, Nia, Theo, Rosa) and
+> `shorts/characters/retro-cast.json` (Arthur, The Critic, Mae); keep characters on-model (draw them only with the
+> kit) and append each episode to their `history`. Story structure, tone tags, verified studies and the 75–100-word
+> length rule as in STYLES.md. Examples: `shorts/milo-coffee-stain`, `shorts/arthur-the-critic` (reference only, not
+> in the tracker). Tracker: `Visual style` = tedmg | retro, `Hook style=story`. Stick scripts already written stay as
+> they are; write no new ones.
+
 > **2026-10-25 — Shivam: STICK CHARACTER STORIES replace the explainers.** Every new Short is format `"stick"`
 > (look "stick"): recurring cast from `shorts/characters/cast.json` (Arjun, Maya, Kabir, Zoe) drawn ONLY with
 > `shorts/design_kit/stick-kit.jsx` components; engine `stick-engine.jsx`. Structure: something happens in the first line
