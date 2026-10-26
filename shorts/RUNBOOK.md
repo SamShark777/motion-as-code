@@ -1,14 +1,15 @@
-> **2026-10-26 — Shivam: THE STYLE CYCLE replaces the stick stories.** Every new Short alternates between two styles:
-> **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) and **retro modern illustration**
-> (`"format": "retro"`, `"look": "retro"`). Pick the style for each new script by counting the tedmg vs retro
-> scripts already written (Scripted + Scheduled + Published) and writing the one with fewer (tie → tedmg), so the
-> posts alternate. Read **shorts/styles/STYLES.md** and LOOK AT the reference pictures in `shorts/styles/tedmg/` and
-> `shorts/styles/retro/` before writing. Cast: `shorts/characters/tedmg-cast.json` (Milo, Nia, Theo, Rosa) and
-> `shorts/characters/retro-cast.json` (Arthur, The Critic, Mae); keep characters on-model (draw them only with the
-> kit) and append each episode to their `history`. Story structure, tone tags, verified studies and the 75–100-word
-> length rule as in STYLES.md. Examples: `shorts/milo-coffee-stain`, `shorts/arthur-the-critic` (reference only, not
-> in the tracker). Tracker: `Visual style` = tedmg | retro, `Hook style=story`. Stick scripts already written stay as
-> they are; write no new ones.
+> **2026-10-26 (updated) — Shivam: THE STYLE CYCLE replaces the stick stories.** New Shorts rotate between THREE styles,
+> in this order: **Ted type 2** (`"format": "cdesign"`, `"look": "ted2"` — the original; rules in the "Ted type 2"
+> section below) → **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) → **retro modern illustration**
+> (`"format": "retro"`, `"look": "retro"`) → Ted type 2 → … To pick the style of each new script, find the most
+> recently written row (highest No.) whose script.json format is cdesign, tedmg or retro, and write the NEXT one in
+> that order (the cycle started with retro, row 136 arthur-the-critic, so the next is Ted type 2). Read
+> **shorts/styles/STYLES.md** and LOOK AT the reference pictures in `shorts/styles/tedmg/` and `shorts/styles/retro/`
+> before writing those two; for Ted type 2 study shorts/rename-nerves. Casts: `shorts/characters/tedmg-cast.json`
+> (Milo, Nia, Theo, Rosa) and `shorts/characters/retro-cast.json` (Arthur, The Critic, Mae); keep characters on-model
+> (draw them only with the kit) and append each episode to their `history`. Tracker `Visual style` = ted2 | tedmg |
+> retro. No new stick scripts: the unbuilt ones were Vetoed and the two still scheduled on 2026-10-26 were deleted
+> from Buffer at Shivam's request (the separate Stick or Twist channel is unaffected).
 
 > **2026-10-25 — Shivam: STICK CHARACTER STORIES replace the explainers.** Every new Short is format `"stick"`
 > (look "stick"): recurring cast from `shorts/characters/cast.json` (Arjun, Maya, Kabir, Zoe) drawn ONLY with
