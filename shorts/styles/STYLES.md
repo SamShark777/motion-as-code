@@ -1,8 +1,9 @@
 # Psychology Shorts — the style cycle (Shivam, 2026-10-26)
 
-New Shorts **rotate between three styles** in order: **Ted type 2** (format `cdesign`, the original — see the
-runbook's Ted type 2 section and shorts/rename-nerves) → **ted-MG motion graphics** (format `tedmg`) → **retro modern
-illustration** (format `retro`) → … The two new ones are recurring-character micro-stories (character → situation →
+New Shorts use **three styles picked at random** (no fixed order — `python3 scripts/pick_style.py` chooses one per
+script from `styles.json`, never 3 in a row of the same): **Ted type 2** (format `cdesign`, the original — see the
+runbook's Ted type 2 section and shorts/rename-nerves), **ted-MG motion graphics** (format `tedmg`) and **retro modern
+illustration** (format `retro`). More styles will be added to `styles.json`. The two new ones are recurring-character micro-stories (character → situation →
 conflict → "But…" psychology reveal → name the effect → payoff/cliffhanger) and are described here. Look at the pictures in this folder before
 writing or drawing anything: `reference-*.jpg` are frames from the reels Shivam picked; `ours-*.jpg` are frames
 our pipeline actually rendered — that is the quality bar.

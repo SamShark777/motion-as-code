@@ -1,0 +1,9 @@
+{
+ "about": "Psychology Shorts styles in rotation (Shivam, 2026-10-26). scripts/pick_style.py picks one AT RANDOM for each new script (no strict order); the only rule is never 3 in a row of the same style. To add a style: build its kit/engine, add an entry here, a folder shorts/styles/<id>/ with reference + cast pictures, and a section in STYLES.md.",
+ "max_in_a_row": 2,
+ "styles": [
+  {"id": "ted2",  "name": "Ted type 2",                 "format": "cdesign", "look": "ted2",  "cast": "shorts/characters/ted2-cast.json",  "example": "shorts/rename-nerves"},
+  {"id": "tedmg", "name": "ted-MG motion graphics",     "format": "tedmg",   "look": "tedmg", "cast": "shorts/characters/tedmg-cast.json", "example": "shorts/milo-coffee-stain"},
+  {"id": "retro", "name": "retro modern illustration",  "format": "retro",   "look": "retro", "cast": "shorts/characters/retro-cast.json", "example": "shorts/arthur-the-critic"}
+ ]
+}

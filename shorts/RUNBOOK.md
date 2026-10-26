@@ -1,9 +1,9 @@
-> **2026-10-26 (updated) — Shivam: THE STYLE CYCLE replaces the stick stories.** New Shorts rotate between THREE styles,
-> in this order: **Ted type 2** (`"format": "cdesign"`, `"look": "ted2"` — the original; rules in the "Ted type 2"
-> section below) → **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) → **retro modern illustration**
-> (`"format": "retro"`, `"look": "retro"`) → Ted type 2 → … To pick the style of each new script, find the most
-> recently written row (highest No.) whose script.json format is cdesign, tedmg or retro, and write the NEXT one in
-> that order (the cycle started with retro, row 136 arthur-the-critic, so the next is Ted type 2). Read
+> **2026-10-26 (updated) — Shivam: THE STYLE CYCLE replaces the stick stories.** New Shorts use THREE styles, **picked at random** (Shivam:
+> "don't switch every single time, just randomly"): **Ted type 2** (`"format": "cdesign"`, `"look": "ted2"` — rules in the
+> "Ted type 2" section below), **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) and **retro modern
+> illustration** (`"format": "retro"`, `"look": "retro"`). Before each new script run `python3 scripts/pick_style.py` and
+> write that style (it picks randomly from `shorts/styles/styles.json`, never 3 in a row of the same style; set `"no"` in
+> every script.json so it can see the order). More styles will be added to styles.json over time. Read
 > **shorts/styles/STYLES.md** and LOOK AT the reference pictures in `shorts/styles/tedmg/` and `shorts/styles/retro/`
 > before writing those two; for Ted type 2 study shorts/rename-nerves. Casts — one per style, look at each
 > `shorts/styles/<style>/cast-sheet.jpg`: `shorts/characters/ted2-cast.json` (Sam, Priya, Leo, Grace, Omar — `<T2Bust>`),
