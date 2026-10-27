@@ -1,0 +1,171 @@
+{
+ "format": "dilemma",
+ "series": "survival-what-if",
+ "hook_pattern": "stranded-count",
+ "title": "What if you were stuck in an elevator for 24 hours?",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Inside a small steel office elevator at night, the man stands alone, the lights flickering, holding a coffee cup, worried.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. A finger presses a glowing red emergency call button on a steel elevator panel full of floor buttons, nothing happening."
+  },
+  "C": "The man sits on the floor of the dim elevator, back against the wall, emergency light glowing orange, backpack beside him.",
+  "D": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a half-empty plastic water bottle and a granola bar over a backpack on a steel elevator floor, dim orange light."
+  },
+  "E": "The man lies on the elevator floor using his hoodie as a pillow, sleeping, dim emergency light, quiet night.",
+  "F": "The man knocks rhythmically on the steel elevator doors with his fist, determined, light from a crack between the doors.",
+  "G": "Elevator doors pried open a few feet by a firefighter in a helmet, bright light flooding in, the man squinting with relief.",
+  "H": "Close-up portrait of the man facing the viewer, tired relieved look, steel elevator walls behind him."
+ },
+ "segments": [
+  {
+   "text": "The elevator stops between floors. It's Friday night. The building is empty.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "tags": "[nervous]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "FLOOR",
+     "value": "BETWEEN 14 & 15",
+     "at_word": 3
+    }
+   ]
+  },
+  {
+   "text": "You press the emergency button. Nothing.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "Phone? Zero bars.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "battery",
+     "value": "31%",
+     "sticky": true
+    }
+   ]
+  },
+  {
+   "text": "Hour one.",
+   "visual": {
+    "card": "day",
+    "label": "HOUR 1",
+    "sub": "WHAT YOU HAVE"
+   },
+   "ui": []
+  },
+  {
+   "text": "Half a bottle of water. One granola bar. A thirty-one percent phone.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "counter",
+     "label": "WATER LEFT",
+     "from": 0,
+     "to": 250,
+     "suffix": " ML",
+     "dur": 1.2
+    }
+   ]
+  },
+  {
+   "text": "First rule: don't try to climb out. Elevators are built to hold you safely. The shaft isn't.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[slowly]",
+   "ui": []
+  },
+  {
+   "text": "Hour nine.",
+   "visual": {
+    "card": "day",
+    "label": "HOUR 9"
+   },
+   "ui": []
+  },
+  {
+   "text": "You sleep in shifts, and turn the phone off to save battery.",
+   "visual": {
+    "scene": "E",
+    "move": "down"
+   }
+  },
+  {
+   "text": "Hour twenty-three.",
+   "visual": {
+    "card": "day",
+    "label": "HOUR 23"
+   },
+   "ui": []
+  },
+  {
+   "text": "Then you hear footsteps. Monday's cleaning crew came in early.",
+   "visual": {
+    "scene": "F",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "tags": "[excited]",
+   "sfx": [
+    "heart::5"
+   ]
+  },
+  {
+   "text": "You bang on the doors. Three knocks. Again. Again.",
+   "visual": {
+    "continue": true
+   }
+  },
+  {
+   "text": "Twenty minutes later, the doors open.",
+   "visual": {
+    "scene": "G",
+    "move": "pull"
+   },
+   "tags": "[sighs]",
+   "ui": []
+  },
+  {
+   "text": "Would you have stayed calm for twenty-four hours? Stick or twist?",
+   "visual": {
+    "scene": "H",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "WOULD YOU STAY CALM?",
+     "sub": "COMMENT BELOW · @STICKORTWIST2"
+    }
+   ]
+  }
+ ]
+}

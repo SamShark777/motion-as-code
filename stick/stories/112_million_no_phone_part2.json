@@ -1,0 +1,112 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "104_million_no_phone",
+ "hook_pattern": "part-2-resolution",
+ "title": "$1 million, but no phone ever — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "The man shaking hands with a mysterious man in a dark suit across a cafe table, a briefcase of cash between them, decision made.",
+  "B": "The man at a bank counter talking to a friendly teller, handing over an ID card, bright bank interior, no readable text.",
+  "C": "The man walking through a park with a paper map and a small notebook, friends waving at him from a bench, autumn leaves.",
+  "D": "The man at a cozy dinner table with friends laughing, no phones on the table, candles, warm light.",
+  "E": "Close-up portrait of the man facing the viewer, calm content smile, park in sunlight behind him."
+ },
+ "segments": [
+  {
+   "text": "You take the million.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "sfx": [
+    "cash"
+   ],
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "TAKE IT"
+    }
+   ]
+  },
+  {
+   "text": "The catch was that the bank needs a phone to log in. So you walk into a branch with your ID instead.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "WHAT STILL WORKS",
+     "value": "BANKING IN PERSON"
+    }
+   ]
+  },
+  {
+   "text": "Week one is chaos. You get lost twice. You miss a party.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[laughs nervously]",
+   "ui": []
+  },
+  {
+   "text": "Week four, your friends start showing up at your door instead of texting.",
+   "visual": {
+    "continue": true
+   }
+  },
+  {
+   "text": "Month six. You sleep eight hours. You notice everything.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "tags": "[slowly]",
+   "ui": [
+    {
+     "type": "counter",
+     "label": "HOURS OF SCREEN TIME SAVED",
+     "from": 0,
+     "to": 700,
+     "suffix": "+",
+     "dur": 1.5,
+     "sub": "ROUGH ESTIMATE"
+    }
+   ]
+  },
+  {
+   "text": "A year later, the stranger asks if you regret it.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "flash": "invert"
+  },
+  {
+   "text": "You don't. The million was nice. Getting your time back was the real prize. The end.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

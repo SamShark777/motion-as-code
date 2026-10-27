@@ -1,0 +1,112 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "106_last_train_out",
+ "hook_pattern": "part-2-resolution",
+ "title": "9 minutes to catch the last train — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "The man sprinting down a station platform at night toward a train conductor in a uniform and cap standing by open train doors.",
+  "B": "The train conductor holding the train door open with one arm, waving toward the stairs, the old man with a cane and his small dog hurrying onto the platform.",
+  "C": "Inside a train carriage at night, the man and the old man with the small dog sitting across from each other laughing, city lights streaking past the window.",
+  "D": "Next morning, a bright modern office, the man in a shirt walking into an interview room and freezing: the same old man sitting behind the desk with the small dog at his feet.",
+  "E": "Close-up portrait of the man facing the viewer, shocked then grinning, bright office behind him."
+ },
+ "segments": [
+  {
+   "text": "You run ahead.",
+   "visual": {
+    "scene": "A",
+    "move": "punch"
+   },
+   "tags": "[strained]",
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "RUN AHEAD"
+    }
+   ]
+  },
+  {
+   "text": "You reach the conductor with forty seconds left. One more passenger. He walks slowly. Please.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "clock",
+     "label": "TIME LEFT",
+     "value": "0:40",
+     "sub": "DOORS CLOSING",
+     "green": true
+    }
+   ]
+  },
+  {
+   "text": "The conductor holds the doors. The old man and his dog make it on.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "You talk the whole ride. About his dog. About your interview.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[laughs]"
+  },
+  {
+   "text": "Next morning, you walk into the interview room.",
+   "visual": {
+    "scene": "D",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "sfx": [
+    "heart::4"
+   ]
+  },
+  {
+   "text": "Behind the desk: the old man. And the dog.",
+   "visual": {
+    "continue": true
+   },
+   "tags": "[gasps]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "YOUR INTERVIEWER",
+     "value": "THE MAN FROM THE TRAIN"
+    }
+   ]
+  },
+  {
+   "text": "He says you already passed the only question that mattered. The end.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

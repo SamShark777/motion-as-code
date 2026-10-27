@@ -1,0 +1,125 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "102_front_door_photo",
+ "hook_pattern": "part-2-resolution",
+ "title": "A stranger texted a photo of your front door — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, the man on the phone in his apartment hallway, worried, standing by his front door with the key in his other hand.",
+  "B": "A woman building manager with a flashlight and a ring of keys arriving in the apartment hallway at night, the man beside her, both looking at door 4B.",
+  "C": "Two people slowly opening an apartment door marked with a brass plate into a dark room, a strip of warm light inside, suspense.",
+  "D": "The lights snapping on in a small apartment full of friends jumping up with party poppers, balloons and a birthday cake with candles, the man frozen in the doorway, joyful chaos.",
+  "E": "A smiling young woman with curly hair holding up a phone and laughing, pointing at the man, birthday balloons behind her.",
+  "F": "Close-up portrait of the man facing the viewer, laughing in relief, party lights and balloons behind him."
+ },
+ "segments": [
+  {
+   "text": "You don't go in alone. You call someone.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "CALL SOMEONE"
+    }
+   ]
+  },
+  {
+   "text": "Your building manager shows up with a flashlight. Together, you walk to 4B.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "tags": "[whispers]",
+   "ui": []
+  },
+  {
+   "text": "Your key turns in the lock.",
+   "visual": {
+    "scene": "C",
+    "move": "punch"
+   },
+   "sfx": [
+    "heart::5"
+   ]
+  },
+  {
+   "text": "The door swings open. Dark. Then the lights snap on.",
+   "visual": {
+    "continue": true
+   },
+   "flash": "black"
+  },
+  {
+   "text": "Surprise!",
+   "visual": {
+    "scene": "D",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "tags": "[laughs]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "TODAY'S DATE",
+     "value": "YOUR BIRTHDAY"
+    }
+   ]
+  },
+  {
+   "text": "Twenty of your friends. A cake. Balloons everywhere.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true
+  },
+  {
+   "text": "The unknown number? Your sister's new phone. She rented 4B for one night just for this.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN NUMBER",
+     "text": "It's me. Happy birthday!"
+    }
+   ]
+  },
+  {
+   "text": "And calling someone first? That was still the right move.",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "tags": "[sighs]"
+  },
+  {
+   "text": "The end.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

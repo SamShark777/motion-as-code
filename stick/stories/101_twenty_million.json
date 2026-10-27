@@ -1,0 +1,274 @@
+{
+ "title": "You just found $20 million",
+ "voice": {
+  "provider": "elevenlabs",
+  "name": "Brian",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "voice_id": "nPczCjzI2devNBz1zQrb"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A2": "Sunset on an empty mountain road with guardrail and purple-orange sky, a dark sedan parked on the gravel shoulder, the man crouches beside a huge black duffel bag unzipped and overflowing with dozens of thick banded stacks of green hundred-dollar bills, shocked, a second black duffel bag next to it.",
+  "B2": "Wide shot of an empty mountain road at dusk, the man stands frozen on the gravel shoulder between two big black duffel bags bulging with cash, dark sedan behind him, distant mountains, dramatic sunset sky.",
+  "C2": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold two thick banded stacks of green hundred-dollar bills above a huge black duffel bag unzipped and overflowing with dozens of thick banded stacks of green hundred-dollar bills on gravel, warm sunset light."
+  },
+  "D2": "The man bent over straining to lift a heavy bulging black duffel bag by its straps on the gravel road shoulder, gritted teeth, sweat drop, sunset light, car behind.",
+  "E2": "Dusk, the man dragging a heavy bulging black duffel bag toward the open trunk of a dark sedan, another cash bag already in the trunk, dark mountains behind, blue hour light.",
+  "F2": "Night, cozy small apartment living room lit by a warm floor lamp, two black duffel bags unzipped and overflowing with stacks of cash on the rug, the man stands at the window peeking nervously through the curtain at the dark street.",
+  "G2": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a black smartphone with a dark screen at chest height, a patterned rug below with an unzipped duffel bag full of cash stacks, warm lamp-lit living room at night."
+  },
+  "H2": {
+   "pov": true,
+   "prompt": "First-person point of view looking straight down at the viewer's own legs in black pants and white sneakers, standing on a patterned rug between two black duffel bags unzipped and overflowing with stacks of hundred-dollar bills, warm lamp light at night. No face visible."
+  },
+  "I2": "The man sits on the edge of a brown leather couch at night staring anxiously at his glowing phone, two duffel bags overflowing with cash stacks on the floor in front of him, warm table lamp, plants, coffee table.",
+  "J2": "Close-up portrait of the man facing the viewer, worried uncertain look, dark living room behind him with warm lamp glow and window, cinematic lighting."
+ },
+ "segments": [
+  {
+   "text": "You just found twenty million dollars.",
+   "tags": "[awed]",
+   "visual": {
+    "scene": "A2",
+    "move": "push"
+   },
+   "sfx": [
+    "cash"
+   ],
+   "ui": [
+    {
+     "type": "counter",
+     "label": "YOU JUST FOUND",
+     "from": 0,
+     "to": 20000000,
+     "prefix": "$",
+     "dur": 1.8
+    }
+   ]
+  },
+  {
+   "text": "Two black duffel bags. On the side of an empty mountain road.",
+   "flash": "black",
+   "visual": {
+    "scene": "B2",
+    "move": "pull"
+   },
+   "ui": []
+  },
+  {
+   "text": "You pick up one stack. It's real.",
+   "tags": "[whispers]",
+   "visual": {
+    "scene": "C2",
+    "move": "punch"
+   },
+   "sfx": [
+    "cash"
+   ]
+  },
+  {
+   "text": "Twenty million in hundreds is two hundred thousand bills.",
+   "visual": {
+    "scene": "D2",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "counter",
+     "label": "$20 MILLION IN $100 BILLS",
+     "from": 0,
+     "to": 200000,
+     "suffix": " BILLS",
+     "dur": 1.4,
+     "at_word": 4
+    }
+   ]
+  },
+  {
+   "text": "That's about two hundred kilos of cash.",
+   "keep_ui": true,
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "counter",
+     "label": "TOTAL CASH WEIGHT",
+     "from": 0,
+     "to": 200,
+     "prefix": "≈ ",
+     "suffix": " KG",
+     "sub": "≈ 441 LB",
+     "dur": 1.4,
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "You drag both bags to your car anyway.",
+   "tags": "[strained]",
+   "visual": {
+    "scene": "E2",
+    "move": "left"
+   },
+   "ui": []
+  },
+  {
+   "text": "That night, the bags sit on your living room floor.",
+   "flash": "black",
+   "visual": {
+    "scene": "F2",
+    "move": "push"
+   }
+  },
+  {
+   "text": "Then your phone buzzes.",
+   "visual": {
+    "scene": "G2",
+    "move": "punch"
+   },
+   "sfx": [
+    "buzz"
+   ],
+   "ui": [
+    {
+     "type": "battery",
+     "value": "1%",
+     "sticky": true
+    }
+   ]
+  },
+  {
+   "text": "Unknown sender. Did you get both bags?",
+   "keep_ui": true,
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN SENDER",
+     "text": "Did you get both bags?",
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "You type... yes. Your hands are shaking.",
+   "tags": "[nervous]",
+   "keep_ui": true,
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "reply",
+     "text": "Yes.",
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "Good. Keep one. Bring the other to eighteen Mercer Road. Midnight.",
+   "tags": "[cold]",
+   "visual": {
+    "scene": "H2",
+    "move": "down"
+   },
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN SENDER",
+     "text": "Good. Keep one. Bring the other back."
+    },
+    {
+     "type": "value",
+     "label": "RETURN LOCATION",
+     "value": "18 MERCER ROAD",
+     "at_word": 7
+    }
+   ]
+  },
+  {
+   "text": "You check the time.",
+   "visual": {
+    "scene": "I2",
+    "move": "push"
+   },
+   "sfx": [
+    "heart::12"
+   ],
+   "ui": [
+    {
+     "type": "clock",
+     "label": "CURRENT TIME",
+     "value": "11:47 P.M.",
+     "sub": "DEADLINE: MIDNIGHT",
+     "green": false
+    },
+    {
+     "type": "clock",
+     "label": "TIME REMAINING",
+     "value": "13 MINUTES",
+     "sub": "LEFT TO DECIDE",
+     "delay": 0.9
+    }
+   ]
+  },
+  {
+   "text": "And then it hits you. You never told anyone where you live.",
+   "tags": "[slowly]",
+   "flash": "invert",
+   "visual": {
+    "scene": "I2",
+    "move": "punch"
+   },
+   "ui": []
+  },
+  {
+   "text": "So do you return one bag, and keep ten million? Or keep everything, and run?",
+   "visual": {
+    "scene": "J2",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "RETURN",
+       "TAKE ONE BAG TO THE ADDRESS"
+      ],
+      [
+       "KEEP",
+       "LEAVE WITH BOTH BAGS"
+      ]
+     ],
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "Comment return or keep. Your vote decides part two.",
+   "keep_ui": true,
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "COMMENT RETURN OR KEEP",
+     "sub": "YOUR VOTE DECIDES PART 2"
+    }
+   ]
+  }
+ ]
+}

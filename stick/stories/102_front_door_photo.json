@@ -1,0 +1,191 @@
+{
+ "format": "dilemma",
+ "series": "mystery-texts",
+ "hook_pattern": "wrong-number",
+ "title": "A stranger just texted you a photo of your front door",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, the man sits on a couch in a dim apartment, face lit by his phone, warm lamp, rain on the window, uneasy.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a smartphone showing a dark blurry photo of an apartment front door with a brass number plate, warm hallway light, the real door visible behind the phone."
+  },
+  "C": "The man presses his ear against the inside of his apartment front door, listening, hallway light leaking under the door, tense.",
+  "D": "View through a door peephole: big circular fisheye frame with a dark metal ring border, an empty dim apartment hallway with flickering ceiling light, nobody there.",
+  "E": "The man carefully opens his front door a crack, a small cardboard box sits on the doormat outside, dim hallway.",
+  "F": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands open a small cardboard box revealing an old silver key and a folded handwritten note, on a wooden kitchen table, lamp light."
+  },
+  "G": "The man stares at his own front door from across the room, holding a silver key, worried, shadows, rain on window.",
+  "H": "Close-up portrait of the man facing the viewer, uncertain worried look, dark apartment behind him with warm lamp glow."
+ },
+ "segments": [
+  {
+   "text": "A stranger just texted you a photo of your own front door.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "tags": "[whispers]",
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN NUMBER",
+     "text": "Photo attached",
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "Taken two minutes ago.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   },
+   "flash": "black",
+   "sfx": [
+    "buzz"
+   ],
+   "ui": [
+    {
+     "type": "clock",
+     "label": "PHOTO TAKEN",
+     "value": "2 MIN AGO",
+     "sub": "FROM YOUR HALLWAY"
+    }
+   ]
+  },
+  {
+   "text": "Then another message. Don't open it yet.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN NUMBER",
+     "text": "Don't open it yet."
+    }
+   ]
+  },
+  {
+   "text": "You press your ear to the door. Nothing.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[nervous]",
+   "sfx": [
+    "heart::8"
+   ],
+   "ui": []
+  },
+  {
+   "text": "You check the peephole. The hallway is empty.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   }
+  },
+  {
+   "text": "Your phone buzzes again. Now you can.",
+   "visual": {
+    "scene": "A",
+    "move": "hold"
+   },
+   "sfx": [
+    "buzz"
+   ],
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN NUMBER",
+     "text": "Now you can."
+    }
+   ]
+  },
+  {
+   "text": "A small box is sitting on your doormat.",
+   "visual": {
+    "scene": "E",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "Inside, a key. And a note.",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "tags": "[slowly]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "THE NOTE SAYS",
+     "value": "APT 4B. TONIGHT."
+    }
+   ]
+  },
+  {
+   "text": "And then you realize. That's the empty apartment across the hall.",
+   "visual": {
+    "scene": "G",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "tags": "[gasps]",
+   "ui": []
+  },
+  {
+   "text": "Do you use the key? Or call someone first?",
+   "visual": {
+    "scene": "H",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "OPEN 4B",
+       "USE THE KEY TONIGHT"
+      ],
+      [
+       "CALL SOMEONE",
+       "DON'T GO ALONE"
+      ]
+     ],
+     "at_word": 3
+    }
+   ]
+  },
+  {
+   "text": "Stick or twist? Comment below. Part two decides.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "banner",
+     "title": "STICK OR TWIST?",
+     "sub": "FOLLOW @STICKORTWIST2 FOR PART 2"
+    }
+   ]
+  }
+ ]
+}

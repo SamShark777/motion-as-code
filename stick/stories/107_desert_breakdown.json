@@ -1,0 +1,153 @@
+{
+ "format": "dilemma",
+ "series": "survival-what-if",
+ "hook_pattern": "stranded-count",
+ "title": "What if your car broke down in the desert?",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "A lonely desert highway under a blazing midday sun, a small car with its hood open and steam rising, the man standing beside it shielding his eyes.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a smartphone showing no signal bars above a hot cracked desert road, heat shimmer."
+  },
+  "C": "The man sitting in the shade on the side of his car, back against the door, wearing his hoodie hood up, desert sun.",
+  "D": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands lay out on the car seat: two water bottles, a phone, a sun shade, a small mirror, car interior."
+  },
+  "E": "Night in the desert, the car under a brilliant starry sky, the man flashing the car hazard lights, cool blue light.",
+  "F": "A highway patrol car with flashing lights pulling up beside the broken car at sunrise in the desert, the man waving.",
+  "G": "Close-up portrait of the man facing the viewer, sunburned and relieved, desert sunrise behind him."
+ },
+ "segments": [
+  {
+   "text": "Your car dies on a desert highway. One hundred and fifteen degrees.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "tags": "[strained]",
+   "ui": [
+    {
+     "type": "counter",
+     "label": "OUTSIDE TEMP",
+     "from": 80,
+     "to": 115,
+     "suffix": "°F",
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "text": "No signal.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": [
+    {
+     "type": "battery",
+     "value": "42%",
+     "sticky": true
+    }
+   ]
+  },
+  {
+   "text": "Every instinct says walk for help. Don't.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[cold]",
+   "ui": []
+  },
+  {
+   "text": "A car is far easier for rescuers to spot than one person walking.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "RULE ONE",
+     "value": "STAY WITH THE CAR"
+    }
+   ]
+  },
+  {
+   "text": "Day one.",
+   "visual": {
+    "card": "day",
+    "label": "DAY 1",
+    "sub": "2 BOTTLES OF WATER"
+   },
+   "ui": []
+  },
+  {
+   "text": "You sip, you don't ration to zero. You stay in the shade. You move only when the sun goes down.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   }
+  },
+  {
+   "text": "Night.",
+   "visual": {
+    "card": "day",
+    "label": "NIGHT 1"
+   },
+   "ui": []
+  },
+  {
+   "text": "You flash your hazards at the first lights you see on the horizon.",
+   "visual": {
+    "scene": "E",
+    "move": "pull"
+   },
+   "tags": "[excited]",
+   "sfx": [
+    "heart::4"
+   ]
+  },
+  {
+   "text": "They don't stop. They call it in.",
+   "visual": {
+    "continue": true
+   },
+   "flash": "invert",
+   "tags": "[whispers]"
+  },
+  {
+   "text": "At sunrise, a patrol car pulls up.",
+   "visual": {
+    "scene": "F",
+    "move": "punch"
+   },
+   "ui": []
+  },
+  {
+   "text": "Would you have stayed with the car? Stick or twist?",
+   "visual": {
+    "scene": "G",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "WOULD YOU HAVE WALKED?",
+     "sub": "COMMENT BELOW · @STICKORTWIST2"
+    }
+   ]
+  }
+ ]
+}

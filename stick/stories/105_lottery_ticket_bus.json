@@ -1,0 +1,162 @@
+{
+ "format": "dilemma",
+ "series": "money-dilemma",
+ "hook_pattern": "found-money",
+ "title": "You find a $4 million lottery ticket on the bus",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Inside a city bus at night, nearly empty, the man sits by the window and notices a small paper ticket on the floor under the seat in front, yellow interior lights.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a crumpled lottery ticket under the bus lights, colorful but with no readable text, numbers circled."
+  },
+  "C": "The man staring at his phone wide-eyed in a bus seat, hand over his mouth, night city lights through the window.",
+  "D": "An elderly woman with grey hair and a cardigan stepping off the bus at a stop in the rain, searching her coat pockets, worried.",
+  "E": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands flip the lottery ticket over: on the back a name and a phone number handwritten in blue ink, no readable letters, bus seat below."
+  },
+  "F": "The man standing at a rainy bus stop at night under a streetlight, holding the ticket, the bus pulling away, conflicted.",
+  "G": "Close-up portrait of the man facing the viewer, conflicted look, rainy night city behind him."
+ },
+ "segments": [
+  {
+   "text": "You find a lottery ticket on the bus floor.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "ui": []
+  },
+  {
+   "text": "You check the numbers. Out of habit.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   }
+  },
+  {
+   "text": "Every. Single. One. Matches.",
+   "visual": {
+    "scene": "C",
+    "move": "punch"
+   },
+   "flash": "black",
+   "tags": "[gasps]",
+   "sfx": [
+    "cash"
+   ],
+   "ui": [
+    {
+     "type": "counter",
+     "label": "JACKPOT",
+     "from": 0,
+     "to": 4000000,
+     "prefix": "$",
+     "dur": 1.8
+    }
+   ]
+  },
+  {
+   "text": "Four million dollars. And nobody saw you pick it up.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "tags": "[whispers]"
+  },
+  {
+   "text": "Then you remember the woman who got off one stop ago. Searching her pockets.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "ui": []
+  },
+  {
+   "text": "You flip the ticket over.",
+   "visual": {
+    "scene": "E",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "tags": "[slowly]"
+  },
+  {
+   "text": "A name. A phone number. She signed it.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "ON THE BACK",
+     "value": "NAME + PHONE #"
+    }
+   ]
+  },
+  {
+   "text": "In many places, a signed ticket can only be claimed by the person who signed it.",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "clock",
+     "label": "DECIDE BEFORE",
+     "value": "NEXT STOP",
+     "sub": "SHE'S STILL CLOSE",
+     "green": true
+    }
+   ]
+  },
+  {
+   "text": "Do you call her, or try your luck?",
+   "visual": {
+    "scene": "G",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "CALL HER",
+       "RETURN THE TICKET"
+      ],
+      [
+       "KEEP IT",
+       "TRY TO CLAIM IT"
+      ]
+     ],
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "Stick or twist? Comment below. Your vote decides part two.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "banner",
+     "title": "COMMENT CALL OR KEEP",
+     "sub": "YOUR VOTE DECIDES PART 2"
+    }
+   ]
+  }
+ ]
+}

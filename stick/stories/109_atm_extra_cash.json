@@ -1,0 +1,161 @@
+{
+ "format": "dilemma",
+ "series": "money-dilemma",
+ "hook_pattern": "found-money",
+ "title": "The ATM just gave you $5,000 too much",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, the man at an outdoor ATM on an empty city street, the machine spitting out a thick stack of cash, his surprised face lit by the screen.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a very thick fan of hundred-dollar bills in front of an ATM, street lights behind."
+  },
+  "C": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a smartphone showing a banking app balance screen with no readable text, ATM glow behind."
+  },
+  "D": "The man walking fast down a dark street with his hoodie up, a bulge of cash in his pocket, glancing over his shoulder at a security camera on a pole.",
+  "E": "Morning, the man sitting at his kitchen table staring at a stack of cash and his phone, coffee cup, sunlight, conflicted.",
+  "F": "Close-up portrait of the man facing the viewer, guilty uncertain look, warm kitchen behind him."
+ },
+ "segments": [
+  {
+   "text": "You ask the ATM for one hundred dollars. It gives you fifty-one hundred.",
+   "visual": {
+    "scene": "A",
+    "move": "punch"
+   },
+   "tags": "[gasps]",
+   "sfx": [
+    "cash"
+   ],
+   "ui": [
+    {
+     "type": "counter",
+     "label": "CASH OUT",
+     "from": 0,
+     "to": 5100,
+     "prefix": "$",
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "text": "You count it twice.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   }
+  },
+  {
+   "text": "Your bank balance only dropped by one hundred.",
+   "visual": {
+    "scene": "C",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": [
+    {
+     "type": "value",
+     "label": "BALANCE CHANGE",
+     "value": "−$100 ONLY"
+    }
+   ]
+  },
+  {
+   "text": "Five thousand dollars nobody knows about.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "tags": "[whispers]"
+  },
+  {
+   "text": "Except the camera above the ATM. And the bank's audit at the end of the day.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "ui": []
+  },
+  {
+   "text": "Machines get loaded wrong. Banks usually find it within days.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "IN MOST PLACES",
+     "value": "KEEPING IT = THEFT"
+    }
+   ]
+  },
+  {
+   "text": "Then your phone buzzes. Your bank.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "flash": "invert",
+   "sfx": [
+    "buzz"
+   ],
+   "tags": "[nervous]",
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "YOUR BANK",
+     "text": "Please call us about your ATM withdrawal."
+    }
+   ]
+  },
+  {
+   "text": "Do you return it before they call back, or wait and see?",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "RETURN IT",
+       "WALK IT BACK TODAY"
+      ],
+      [
+       "WAIT",
+       "SEE IF THEY NOTICE"
+      ]
+     ],
+     "at_word": 3
+    }
+   ]
+  },
+  {
+   "text": "Stick or twist? Comment below.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "banner",
+     "title": "STICK OR TWIST?",
+     "sub": "FOLLOW @STICKORTWIST2"
+    }
+   ]
+  }
+ ]
+}

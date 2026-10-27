@@ -1,0 +1,152 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "101_twenty_million",
+ "hook_pattern": "part-2-resolution",
+ "title": "You just found $20 million — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, an empty concrete parking garage, a single black car with its headlights on, the man walking toward it carrying a heavy black duffel bag, long shadows.",
+  "B": "A tall man in a long grey coat and gloves standing by the black car unzipping the duffel bag and looking at the cash, cold fluorescent garage light, the main character watching nervously.",
+  "C": "The man kneeling on his living room rug at night digging through an open duffel bag of cash, warm lamp light, worried.",
+  "D": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a small black GPS tracker with a blinking red light pulled from under stacks of cash in a duffel bag."
+  },
+  "E": "The man carrying a black duffel bag up the steps of a police station at night, blue and red lights reflecting, determined.",
+  "F": "Police officers in a parking garage at dawn surrounding the black car, the man in the grey coat in handcuffs, flashing lights.",
+  "G": "Close-up portrait of the man facing the viewer, relieved small smile, sunrise light through a window behind him."
+ },
+ "segments": [
+  {
+   "text": "You return the bag.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "RETURN"
+    }
+   ]
+  },
+  {
+   "text": "Eleven fifty-eight p.m. 18 Mercer Road is an empty parking garage. One car. Headlights on.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "clock",
+     "label": "CURRENT TIME",
+     "value": "11:58 P.M.",
+     "sub": "2 MINUTES EARLY",
+     "green": true
+    }
+   ]
+  },
+  {
+   "text": "A man in a grey coat takes the bag. Counts it. Then he says: check your bag.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "tags": "[cold]",
+   "ui": []
+  },
+  {
+   "text": "At home, you dig to the bottom of the bag you kept.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "sfx": [
+    "heart::6"
+   ]
+  },
+  {
+   "text": "A tracker. Blinking.",
+   "visual": {
+    "scene": "D",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "tags": "[gasps]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "FOUND UNDER THE CASH",
+     "value": "GPS TRACKER · ACTIVE"
+    }
+   ]
+  },
+  {
+   "text": "They were never letting you keep it. They needed someone to move the money for them.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "tags": "[slowly]"
+  },
+  {
+   "text": "So you drive both the bag and the tracker straight to the police.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "ui": []
+  },
+  {
+   "text": "The money was stolen. By morning, the tracker leads them back to that garage.",
+   "visual": {
+    "scene": "F",
+    "move": "pull"
+   },
+   "flash": "black"
+  },
+  {
+   "text": "The bank's reward for its return? Two hundred and fifty thousand dollars. Legally yours.",
+   "visual": {
+    "scene": "G",
+    "move": "push"
+   },
+   "sfx": [
+    "cash"
+   ],
+   "ui": [
+    {
+     "type": "counter",
+     "label": "REWARD",
+     "from": 0,
+     "to": 250000,
+     "prefix": "$",
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "text": "Sometimes the best twist is the one nobody picks. The end.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

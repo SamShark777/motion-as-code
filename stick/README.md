@@ -9,3 +9,8 @@ Separate channel from the psychology Shorts. Stories are written and rendered on
   at 08:00, 12:00, 16:00, 20:00 PT on the channel's own Buffer account (secret `BUFFER_API_KEY_STICK`).
 - Log: `stick/posted.json`. Veto = delete the post in the Stick or Twist Buffer account.
 - Never uses the psychology `BUFFER_API_KEY`, `media` branch or tracker.
+
+## Source copies
+- `stick/stories/` — every story JSON written so far (Part 2s use `"series": "part-2"`, `"part_of"`).
+- `stick/pc/` — the Shadow PC's renderer (`make_dilemma.py`), `STORY_GUIDE.md` and queue/schedule scripts, so the
+  PC can be rebuilt and the latest versions are recoverable if it is offline when they change.

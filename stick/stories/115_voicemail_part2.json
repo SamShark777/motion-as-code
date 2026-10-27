@@ -1,0 +1,106 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "108_voicemail_from_myself",
+ "hook_pattern": "part-2-resolution",
+ "title": "A voicemail from your own number — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, the man declining a call on his phone in his dark bedroom, then holding the phone to his ear speaking urgently, streetlight glow.",
+  "B": "Morning, the man standing on his apartment street watching fire trucks and caution tape around a tall office building in the distance, people evacuated on the sidewalk.",
+  "C": "The man sitting on a couch next to his younger brother who is laughing nervously and holding up a phone showing an audio app with a waveform, no readable text.",
+  "D": "Close-up portrait of the man facing the viewer, raised eyebrow, half smiling, half suspicious, living room behind him."
+ },
+ "segments": [
+  {
+   "text": "You decline. And you call the police.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "DECLINE"
+    }
+   ]
+  },
+  {
+   "text": "By the time they arrive, the streetlight is empty.",
+   "visual": {
+    "continue": true
+   },
+   "tags": "[whispers]",
+   "ui": []
+  },
+  {
+   "text": "You stay home from work anyway.",
+   "visual": {
+    "continue": true
+   }
+  },
+  {
+   "text": "At nine a.m., your office building is evacuated. A gas leak on your floor.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": [
+    {
+     "type": "value",
+     "label": "9:02 A.M.",
+     "value": "BUILDING EVACUATED"
+    }
+   ]
+  },
+  {
+   "text": "Nobody is hurt. But you can't stop shaking.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "tags": "[slowly]"
+  },
+  {
+   "text": "That night, your little brother finally confesses. He made the voicemail with an AI voice app. As a prank.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "flash": "invert",
+   "tags": "[laughs nervously]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "THE CALLER",
+     "value": "AN AI COPY OF YOUR VOICE"
+    }
+   ]
+  },
+  {
+   "text": "The gas leak? Pure coincidence. That's what he says, anyway. The end.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

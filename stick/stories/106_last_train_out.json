@@ -1,0 +1,155 @@
+{
+ "format": "dilemma",
+ "series": "time-pressure",
+ "hook_pattern": "countdown",
+ "title": "9 minutes to catch the last train out",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "A huge empty train station concourse at night, departure boards glowing, the man running with a backpack, motion lines.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a paper train ticket and a smartphone showing a countdown timer, station floor below, no readable text."
+  },
+  "C": "An old man with a cane and a small scruffy dog standing lost and confused near a ticket machine in the station at night.",
+  "D": "The man kneeling to talk to the old man, the dog wagging its tail, the station clock above them, warm kind mood.",
+  "E": "A long train at a platform at night with its doors open, steam and lights, platform empty, the man running toward it far away.",
+  "F": "Close-up portrait of the man facing the viewer, out of breath, platform lights behind him."
+ },
+ "segments": [
+  {
+   "text": "Nine minutes. The last train out of the city leaves in nine minutes.",
+   "visual": {
+    "scene": "A",
+    "move": "punch"
+   },
+   "tags": "[strained]",
+   "ui": [
+    {
+     "type": "clock",
+     "label": "LAST TRAIN",
+     "value": "9 MINUTES",
+     "sub": "PLATFORM 12"
+    }
+   ]
+  },
+  {
+   "text": "Miss it, and you miss the job interview that changes everything.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "sfx": [
+    "heart::10"
+   ]
+  },
+  {
+   "text": "Then you see him. An old man. Lost. His dog shaking.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "He's holding a ticket for the same train. He can't find platform twelve.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "HIS TICKET",
+     "value": "SAME TRAIN"
+    }
+   ]
+  },
+  {
+   "text": "He walks slowly. With him, you need twelve minutes. You have nine.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "tags": "[nervous]",
+   "ui": [
+    {
+     "type": "clock",
+     "label": "TIME LEFT",
+     "value": "9 MIN",
+     "sub": "WITH HIM: 12 MIN",
+     "green": true
+    }
+   ]
+  },
+  {
+   "text": "Run alone, and you both might not make it home tonight.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true
+  },
+  {
+   "text": "Here's what nobody tells you. Conductors can sometimes hold the doors for someone who needs help.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "flash": "invert",
+   "tags": "[slowly]",
+   "ui": []
+  },
+  {
+   "text": "But only if somebody reaches them first.",
+   "visual": {
+    "continue": true
+   }
+  },
+  {
+   "text": "So, do you run ahead and ask them to wait? Or walk him there?",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "RUN AHEAD",
+       "ASK THEM TO WAIT"
+      ],
+      [
+       "WALK WITH HIM",
+       "RISK MISSING IT"
+      ]
+     ],
+     "at_word": 3
+    }
+   ]
+  },
+  {
+   "text": "Stick or twist? Comment below.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "banner",
+     "title": "STICK OR TWIST?",
+     "sub": "FOLLOW @STICKORTWIST2"
+    }
+   ]
+  }
+ ]
+}

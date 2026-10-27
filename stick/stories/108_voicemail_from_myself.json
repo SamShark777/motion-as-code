@@ -1,0 +1,163 @@
+{
+ "format": "dilemma",
+ "series": "mystery-texts",
+ "hook_pattern": "wrong-number",
+ "title": "You get a voicemail from your own phone number",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, the man in bed in a dark bedroom, sitting up, face lit by his glowing phone, alarm clock and window with city lights.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold a smartphone showing a voicemail screen with an audio waveform and a play button, no readable text, dark bedroom."
+  },
+  "C": "The man standing in his dark kitchen in pajama pants and hoodie, frozen, listening to the phone at his ear, moonlight through blinds.",
+  "D": "The man looking out his apartment window down at the street at night, a lone figure in a grey hoodie under a streetlight looking up at the window.",
+  "E": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands hold the phone showing an incoming call screen with a green answer button and a red decline button, dark room."
+  },
+  "F": "Close-up portrait of the man facing the viewer, scared confused look, dark bedroom with streetlight glow behind him."
+ },
+ "segments": [
+  {
+   "text": "Three a.m. A voicemail. From your own phone number.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "tags": "[whispers]",
+   "sfx": [
+    "buzz"
+   ],
+   "ui": [
+    {
+     "type": "call",
+     "label": "NEW VOICEMAIL",
+     "value": "FROM: YOU"
+    }
+   ]
+  },
+  {
+   "text": "You press play.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "It's your voice. Saying, don't go to work tomorrow.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[slowly]",
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "VOICEMAIL · 0:07",
+     "text": "Don't go to work tomorrow."
+    }
+   ]
+  },
+  {
+   "text": "Phone numbers can be faked. You know that.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "value",
+     "label": "IT'S CALLED",
+     "value": "CALLER ID SPOOFING"
+    }
+   ]
+  },
+  {
+   "text": "But nobody fakes your voice saying your boss's name.",
+   "visual": {
+    "scene": "C",
+    "move": "hold"
+   },
+   "tags": "[nervous]",
+   "sfx": [
+    "heart::8"
+   ],
+   "ui": []
+  },
+  {
+   "text": "You go to the window. Someone is standing under the streetlight. Grey hoodie. Looking up.",
+   "visual": {
+    "scene": "D",
+    "move": "punch"
+   },
+   "flash": "invert"
+  },
+  {
+   "text": "Then your phone rings. Your own number.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "sfx": [
+    "ring:2"
+   ],
+   "ui": [
+    {
+     "type": "call",
+     "label": "INCOMING",
+     "value": "YOUR OWN NUMBER"
+    }
+   ]
+  },
+  {
+   "text": "Do you answer, or let it ring?",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "ANSWER",
+       "HEAR WHAT IT SAYS"
+      ],
+      [
+       "DECLINE",
+       "CALL THE POLICE"
+      ]
+     ],
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "Stick or twist? Comment below. Part two decides.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "banner",
+     "title": "ANSWER OR DECLINE?",
+     "sub": "YOUR VOTE DECIDES PART 2"
+    }
+   ]
+  }
+ ]
+}

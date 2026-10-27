@@ -1,0 +1,110 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "105_lottery_ticket_bus",
+ "hook_pattern": "part-2-resolution",
+ "title": "The $4 million lottery ticket — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Night, the man at a rainy bus stop dialing his phone, holding the lottery ticket, streetlight glow.",
+  "B": "An elderly woman with grey hair and a cardigan opening the door of a small cozy house, surprised, warm light behind her, the man on the porch holding out the ticket.",
+  "C": "The elderly woman crying happy tears and hugging the man on her porch, rain stopping, warm light.",
+  "D": "Weeks later, the man opening a handwritten envelope at his kitchen table, a check inside with no readable text, sunlight.",
+  "E": "Close-up portrait of the man facing the viewer, moved and smiling, kitchen window light behind him."
+ },
+ "segments": [
+  {
+   "text": "You call her.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "CALL HER"
+    }
+   ]
+  },
+  {
+   "text": "She answers on the first ring. She's been crying. That ticket was her late husband's numbers.",
+   "visual": {
+    "continue": true
+   },
+   "tags": "[slowly]",
+   "ui": []
+  },
+  {
+   "text": "Same numbers. Every week. For thirty-one years.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "counter",
+     "label": "YEARS PLAYING THE SAME NUMBERS",
+     "from": 0,
+     "to": 31,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "text": "You hand it back. She doesn't let go of your hand.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "tags": "[sighs]"
+  },
+  {
+   "text": "Three weeks later, an envelope shows up at your door.",
+   "visual": {
+    "scene": "D",
+    "move": "punch"
+   },
+   "flash": "invert",
+   "sfx": [
+    "cash"
+   ]
+  },
+  {
+   "text": "A thank-you note. And a check for one hundred thousand dollars. She insisted.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "HER THANK-YOU",
+     "value": "$100,000"
+    }
+   ]
+  },
+  {
+   "text": "Four million would have been yours to lose. This was yours to keep. The end.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

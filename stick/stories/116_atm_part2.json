@@ -1,0 +1,93 @@
+{
+ "format": "dilemma",
+ "series": "part-2",
+ "part_of": "109_atm_extra_cash",
+ "hook_pattern": "part-2-resolution",
+ "title": "The ATM gave you $5,000 too much — Part 2",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "Morning, the man walking into a bank branch holding a thick envelope of cash, determined, bright interior.",
+  "B": "A tired young bank employee in a uniform at a counter looking up in shock and relief as the man hands over the envelope.",
+  "C": "The young bank employee telling the story to the man, eyes teary, a cash-loading cart behind her, warm bank light.",
+  "D": "Close-up portrait of the man facing the viewer, proud quiet smile, bank lobby behind him."
+ },
+ "segments": [
+  {
+   "text": "You return it.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "RETURN IT"
+    }
+   ]
+  },
+  {
+   "text": "You walk in before they even call back. Five thousand dollars in an envelope.",
+   "visual": {
+    "continue": true
+   },
+   "ui": [
+    {
+     "type": "counter",
+     "label": "RETURNED",
+     "from": 0,
+     "to": 5000,
+     "prefix": "$",
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "text": "The woman at the counter goes pale. Then she starts laughing.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "tags": "[laughs]"
+  },
+  {
+   "text": "She's the one who loaded that machine. She's been up all night recounting.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "flash": "invert",
+   "tags": "[slowly]",
+   "ui": []
+  },
+  {
+   "text": "She thought the missing money might cost her the job.",
+   "visual": {
+    "continue": true
+   }
+  },
+  {
+   "text": "You kept your conscience clean. She kept her job. The end.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}

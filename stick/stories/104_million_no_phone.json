@@ -1,0 +1,153 @@
+{
+ "format": "dilemma",
+ "series": "would-you-rather",
+ "hook_pattern": "impossible-offer",
+ "title": "$1 million, but you can never use a phone again",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "scenes": {
+  "A": "A mysterious man in a dark suit seated across a small cafe table slides a black briefcase toward the main character, warm cafe light, rain outside.",
+  "B": {
+   "pov": true,
+   "prompt": "First-person point of view from the viewer's own eyes: no face, no head and no full body visible, only the viewer's own two cartoon hands in grey hoodie sleeves reaching in from the bottom of the frame. The hands open a black briefcase full of neatly stacked banded hundred-dollar bills on a cafe table."
+  },
+  "C": "The man walks down a busy city sidewalk at dusk looking lost, everyone around him staring at their phones, he holds a paper map.",
+  "D": "The man sits alone in a quiet apartment writing a handwritten letter at a desk by lamp light, a landline-free empty wall, peaceful.",
+  "E": "The man at a crowded party standing apart, everyone else filming on phones, he watches the stage directly, smiling slightly.",
+  "F": "Close-up portrait of the man facing the viewer, thoughtful conflicted look, cafe interior behind him."
+ },
+ "segments": [
+  {
+   "text": "A stranger offers you one million dollars.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "tags": "[awed]",
+   "sfx": [
+    "cash"
+   ],
+   "ui": [
+    {
+     "type": "counter",
+     "label": "THE OFFER",
+     "from": 0,
+     "to": 1000000,
+     "prefix": "$",
+     "dur": 1.5
+    }
+   ]
+  },
+  {
+   "text": "Tax free. Today. One condition.",
+   "visual": {
+    "scene": "B",
+    "move": "punch"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "You can never use a phone again. Any phone. For the rest of your life.",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "tags": "[cold]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "THE CATCH",
+     "value": "NO PHONE. EVER."
+    }
+   ]
+  },
+  {
+   "text": "No maps. No group chats. No two-factor codes for your bank.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "PHONE CHECKS YOU GIVE UP",
+     "value": "DOZENS A DAY"
+    }
+   ]
+  },
+  {
+   "text": "Your friends would have to write to you. Or knock.",
+   "visual": {
+    "scene": "D",
+    "move": "pull"
+   },
+   "tags": "[sighs]",
+   "ui": []
+  },
+  {
+   "text": "But you'd watch every concert with your own eyes. And nobody could reach you at 2 a.m.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "tags": "[slowly]"
+  },
+  {
+   "text": "Here's the twist. The money is in a bank you can only log into with a phone.",
+   "visual": {
+    "scene": "B",
+    "move": "hold"
+   },
+   "flash": "invert",
+   "tags": "[laughs nervously]",
+   "ui": []
+  },
+  {
+   "text": "So, take the million, or keep your phone?",
+   "visual": {
+    "scene": "F",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "choice",
+     "pos": "bottom",
+     "options": [
+      [
+       "TAKE IT",
+       "$1M, NO PHONE EVER"
+      ],
+      [
+       "KEEP PHONE",
+       "WALK AWAY"
+      ]
+     ],
+     "at_word": 2
+    }
+   ]
+  },
+  {
+   "text": "Stick or twist? Comment below.",
+   "visual": {
+    "continue": true
+   },
+   "keep_ui": true,
+   "ui": [
+    {
+     "type": "banner",
+     "title": "STICK OR TWIST?",
+     "sub": "FOLLOW @STICKORTWIST2"
+    }
+   ]
+  }
+ ]
+}
