@@ -1,0 +1,17 @@
+{
+ "no": 117,
+ "slug": "friend-question",
+ "date": "2026-10-28",
+ "slot": "19:00",
+ "due": "2026-10-29T02:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-28/friend-question.mp4",
+ "buffer": {
+  "youtube": "6ae1113a4e914b3cee29cc80",
+  "instagram": "6ae1113b4e914b3cee29cced",
+  "tiktok": "6ae1113be2341add8c5b37a9"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 37.3
+}

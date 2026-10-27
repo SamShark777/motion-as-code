@@ -1,0 +1,17 @@
+{
+ "no": 115,
+ "slug": "doodlers",
+ "date": "2026-10-28",
+ "slot": "09:00",
+ "due": "2026-10-28T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-28/doodlers.mp4",
+ "buffer": {
+  "youtube": "6ae111322086adf9c11928cb",
+  "instagram": "6ae111334e914b3cee29ca7f",
+  "tiktok": "6ae11134b017df23970aefbd"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 36.0
+}

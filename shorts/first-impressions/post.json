@@ -1,0 +1,17 @@
+{
+ "no": 116,
+ "slug": "first-impressions",
+ "date": "2026-10-28",
+ "slot": "14:00",
+ "due": "2026-10-28T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-28/first-impressions.mp4",
+ "buffer": {
+  "youtube": "6ae111364137b5e3590cba91",
+  "instagram": "6ae11137b017df23970af197",
+  "tiktok": "6ae111384137b5e3590cbb60"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 46.5
+}
