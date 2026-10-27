@@ -14,14 +14,17 @@
    "name": "Priya",
    "look": "long dark hair, mustard top, red backdrop",
    "personality": "sharp, confident; knows the trick and explains it",
-   "history": []
+   "history": [
+    "ep 1 (semantic-satiation, with Leo): explains the tired-meaning idea behind semantic satiation"
+   ]
   },
   "leo": {
    "name": "Leo",
    "look": "orange curls, freckles, teal hoodie, yellow backdrop",
    "personality": "cheerful, impulsive; falls for every bias first",
    "history": [
-    "ep 1 (friend-question): cameo as \"the friend\" in the study scene"
+    "ep 1 (friend-question): cameo as \"the friend\" in the study scene",
+    "ep 2 (semantic-satiation): says \"spoon\" until it is just a noise; tries it on his own name tag"
    ]
   },
   "grace": {

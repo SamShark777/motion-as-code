@@ -49,7 +49,9 @@
     "arthur": "his employee",
     "lila": "his intern"
    },
-   "history": []
+   "history": [
+    "ep 1 (stroop-test): says no test can trick him; Lila's colour-word card does (Stroop effect) — his brain is too good at reading"
+   ]
   },
   "lila": {
    "name": "Lila",
@@ -61,7 +63,9 @@
     "otto": "her boss",
     "mae": "mentor"
    },
-   "history": []
+   "history": [
+    "ep 1 (stroop-test, with Otto): holds up the Stroop cards for her boss"
+   ]
   },
   "doubt": {
    "name": "The Doubt",

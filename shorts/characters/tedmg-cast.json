@@ -14,7 +14,8 @@
     "rosa": "coworker"
    },
    "history": [
-    "ep 1 (milo-coffee-stain): spotlight effect — coffee stain at the party, nobody noticed; tomorrow he gives a speech"
+    "ep 1 (milo-coffee-stain): spotlight effect — coffee stain at the party, nobody noticed; tomorrow he gives a speech",
+    "ep 2 (shaky-bridge): first date in two days; Theo says make it scary (Dutton & Aron 1974 shaky bridge, misattribution of arousal); Milo books a horror escape room, then remembers he is scared of the dark — PART 2"
    ]
   },
   "nia": {
@@ -40,7 +41,9 @@
    "relationships": {
     "milo": "flatmate (rents him the spare room)"
    },
-   "history": []
+   "history": [
+    "ep 1 (shaky-bridge, with Milo): tells Milo about the shaky-bridge study"
+   ]
   },
   "rosa": {
    "name": "Rosa",

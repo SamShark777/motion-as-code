@@ -1,1 +1,267 @@
-{"slug":"stroop-test","no":120,"format":"retro","look":"retro"}
+{
+ "slug": "stroop-test",
+ "no": 120,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 1,
+ "cast": [
+  "otto",
+  "lila"
+ ],
+ "title": [
+  "Stroop",
+  "Test"
+ ],
+ "credit": "J. R. Stroop · 1935",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "STHook",
+   "chunks": [
+    [
+     "Otto says"
+    ],
+    [
+     "no test can"
+    ],
+    [
+     "TRICK him.",
+     {
+      "emph": "TRICK"
+     }
+    ]
+   ],
+   "text": "Otto says no test can TRICK him.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    850,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Card",
+   "art": "STCard",
+   "chunks": [
+    [
+     "So Lila holds"
+    ],
+    [
+     "up a card."
+    ],
+    [
+     "Say the COLOUR,",
+     {
+      "emph": "COLOUR"
+     }
+    ],
+    [
+     "not the word."
+    ]
+   ],
+   "text": "So Lila holds up a card. Say the COLOUR, not the word.",
+   "tone": "curious",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Quiz",
+   "art": "STQuiz",
+   "chunks": [
+    [
+     "Try it"
+    ],
+    [
+     "with him."
+    ],
+    [
+     "GO.",
+     {
+      "emph": "GO"
+     }
+    ]
+   ],
+   "text": "Try it with him. GO.",
+   "tone": "excited",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Fail",
+   "art": "STFail",
+   "chunks": [
+    [
+     "Otto reads"
+    ],
+    [
+     "the WORD.",
+     {
+      "emph": "WORD"
+     }
+    ],
+    [
+     "Every time."
+    ]
+   ],
+   "text": "Otto reads the WORD. Every time.",
+   "tone": "laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "STStudy",
+   "chunks": [
+    [
+     "In 1935,"
+    ],
+    [
+     "John Ridley Stroop"
+    ],
+    [
+     "timed a hundred"
+    ],
+    [
+     "students on"
+    ],
+    [
+     "EXACTLY this.",
+     {
+      "emph": "EXACTLY"
+     }
+    ]
+   ],
+   "text": "In 1935, John Ridley Stroop timed a hundred students on EXACTLY this.",
+   "tone": "curious",
+   "capY": 1560
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "STStat",
+   "chunks": [
+    [
+     "Naming the ink"
+    ],
+    [
+     "took them about"
+    ],
+    [
+     "74 percent"
+    ],
+    [
+     "LONGER",
+     {
+      "emph": "LONGER"
+     }
+    ],
+    [
+     "when the word"
+    ],
+    [
+     "said another colour."
+    ]
+   ],
+   "text": "Naming the ink took them about 74 percent LONGER when the word said another colour.",
+   "tone": "surprised",
+   "say": "Naming the ink took them about seventy-four percent longer when the word said another colour.",
+   "capY": 1500
+  },
+  {
+   "sec": "cd",
+   "scene": "Switch",
+   "art": "STSwitch",
+   "chunks": [
+    [
+     "But Otto"
+    ],
+    [
+     "isn't slow."
+    ],
+    [
+     "Reading is just"
+    ],
+    [
+     "so AUTOMATIC,",
+     {
+      "emph": "AUTOMATIC"
+     }
+    ],
+    [
+     "you can't"
+    ],
+    [
+     "switch it off."
+    ]
+   ],
+   "text": "But Otto isn't slow. Reading is just so AUTOMATIC, you can't switch it off.",
+   "tone": "whispers",
+   "capY": 1600
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "STName",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "the STROOP effect.",
+     {
+      "emph": "STROOP"
+     }
+    ]
+   ],
+   "text": "Psychologists call it the STROOP effect.",
+   "tone": "thoughtfully",
+   "capY": 1640
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "STPayoff",
+   "chunks": [
+    [
+     "Otto's problem?"
+    ],
+    [
+     "His brain is"
+    ],
+    [
+     "too GOOD",
+     {
+      "emph": "GOOD"
+     }
+    ],
+    [
+     "at reading."
+    ]
+   ],
+   "text": "Otto's problem? His brain is too GOOD at reading.",
+   "tone": "warmly",
+   "capY": 1640
+  }
+ ],
+ "post": {
+  "title": "Say the Colour, Not the Word #shorts",
+  "description": "Otto says no test can trick him, then Lila holds up a card. In 1935 John Ridley Stroop asked 100 college students to name the ink colour of colour words printed in a clashing colour. It took them about 74% longer than naming plain colour patches, because reading is so automatic you can't switch it off. Psychologists call it the Stroop effect. #psychology #shorts #brain #quiz",
+  "tags": [
+   "stroop effect",
+   "brain test",
+   "quiz",
+   "psychology",
+   "attention"
+  ]
+ },
+ "thumb_text": "Say the Colour, Not the Word",
+ "thumb_emph": "Colour",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 1
+}
