@@ -142,6 +142,19 @@ def check():
         try:
             oid, chs = buffer.channels()
             print("Buffer channels:", ", ".join(f"{c['service']}:{c.get('displayName') or c['name']}" for c in chs) or "none connected")
+            r = subprocess.run([sys.executable, str(ROOT / "scripts" / "buffer.py"), "stats", "--json"], capture_output=True, text=True)
+            try:
+                st = json.loads(r.stdout)
+                for p in st.get("sent", []):
+                    print("SENT", json.dumps(p)[:900])
+            except Exception:
+                print("STATS unavailable:", (r.stderr or r.stdout)[-400:])
+            r = subprocess.run([sys.executable, str(ROOT / "scripts" / "buffer.py"), "posts"], capture_output=True, text=True)
+            try:
+                for p in json.loads(r.stdout):
+                    print("POST", p.get("id"), p.get("status"), str(p.get("dueAt"))[:16], p.get("sentAt") or "", p.get("externalLink") or "")
+            except Exception:
+                print("POSTS unavailable:", (r.stderr or r.stdout)[-400:])
         except BaseException as e:  # noqa: BLE001 — one readable line for the run annotations
             print("BUFFER ERROR:", str(e)[:500]); sys.exit(1)
     else:
