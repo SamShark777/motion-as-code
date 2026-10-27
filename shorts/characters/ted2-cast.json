@@ -6,7 +6,9 @@
    "name": "Sam",
    "look": "swept ink hair, cream shirt, blue backdrop",
    "personality": "nervous overthinker; the viewer's stand-in",
-   "history": []
+   "history": [
+    "ep 1 (friend-question): stuck for weeks on quitting his job; answers instantly when asked what he would tell a friend (Solomon's paradox)"
+   ]
   },
   "priya": {
    "name": "Priya",
@@ -18,13 +20,17 @@
    "name": "Leo",
    "look": "orange curls, freckles, teal hoodie, yellow backdrop",
    "personality": "cheerful, impulsive; falls for every bias first",
-   "history": []
+   "history": [
+    "ep 1 (friend-question): cameo as \"the friend\" in the study scene"
+   ]
   },
   "grace": {
    "name": "Grace",
    "look": "grey bun, round glasses, purple cardigan, teal backdrop",
    "personality": "wise retired therapist; calm voice of reason",
-   "history": []
+   "history": [
+    "ep 1 (friend-question): Sam's neighbour; asks him \"what would you tell a friend?\""
+   ]
   },
   "omar": {
    "name": "Omar",

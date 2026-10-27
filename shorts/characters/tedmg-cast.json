@@ -27,7 +27,9 @@
     "milo": "best friend",
     "rosa": "gym buddy"
    },
-   "history": []
+   "history": [
+    "ep 1 (first-impressions, with Rosa): \"they'll judge your face first\""
+   ]
   },
   "theo": {
    "name": "Theo",
@@ -50,7 +52,9 @@
     "milo": "coworker",
     "nia": "gym buddy"
    },
-   "history": []
+   "history": [
+    "ep 1 (first-impressions): rehearsed 40 interview answers; learns faces are judged in 0.1 s and the halo effect, bins the script and smiles at the receptionist first"
+   ]
   },
   "dev": {
    "name": "Dev",
@@ -62,7 +66,9 @@
     "milo": "coworker",
     "nia": "ex-classmate"
    },
-   "history": []
+   "history": [
+    "ep 1 (doodlers, with June): sat perfectly still in the meeting and went blank; now doodles sharks"
+   ]
   },
   "june": {
    "name": "June",
@@ -74,7 +80,9 @@
     "rosa": "younger sister",
     "theo": "his former student"
    },
-   "history": []
+   "history": [
+    "ep 1 (doodlers): doodling — June spirals through the meeting, Dev says she is not listening, but she is the one who remembers (Andrade 2009); next meeting Dev doodles sharks"
+   ]
   }
  }
 }

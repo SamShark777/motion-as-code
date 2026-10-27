@@ -1,0 +1,283 @@
+{
+ "slug": "friend-question",
+ "no": 117,
+ "format": "cdesign",
+ "look": "ted2",
+ "cast": [
+  "sam",
+  "grace",
+  "leo"
+ ],
+ "title": [
+  "Ask a",
+  "Friend"
+ ],
+ "credit": "Grossmann & Kross · 2014",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Stuck",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtStuck",
+   "chunks": [
+    [
+     "Stuck on"
+    ],
+    [
+     "a big decision?"
+    ],
+    [
+     "Ask yourself"
+    ],
+    [
+     "ONE question.",
+     {
+      "emph": "ONE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Stuck on a big decision? Ask yourself ONE question.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Circles",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "ArtCircles",
+   "chunks": [
+    [
+     "Sam can't decide"
+    ],
+    [
+     "whether to"
+    ],
+    [
+     "quit his job."
+    ],
+    [
+     "He's gone in"
+    ],
+    [
+     "CIRCLES",
+     {
+      "emph": "CIRCLES",
+      "fx": "doodle",
+      "doodle": "🌀"
+     }
+    ],
+    [
+     "for weeks."
+    ]
+   ],
+   "text": "Sam can't decide whether to quit his job. He's gone in CIRCLES for weeks.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Grace",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "ArtGrace",
+   "chunks": [
+    [
+     "His neighbour Grace,"
+    ],
+    [
+     "a retired therapist,"
+    ],
+    [
+     "asks: what would"
+    ],
+    [
+     "you tell"
+    ],
+    [
+     "a FRIEND?",
+     {
+      "emph": "FRIEND",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "His neighbour Grace, a retired therapist, asks: what would you tell a FRIEND?",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Answer",
+   "color": "#E8C547",
+   "light": true,
+   "art": "ArtAnswer",
+   "chunks": [
+    [
+     "Sam answers"
+    ],
+    [
+     "instantly."
+    ],
+    [
+     "Talk to"
+    ],
+    [
+     "your boss."
+    ],
+    [
+     "Then DECIDE.",
+     {
+      "emph": "DECIDE",
+      "fx": "stamp",
+      "block": "#E0262F"
+     }
+    ]
+   ],
+   "text": "Sam answers instantly. Talk to your boss. Then DECIDE.",
+   "tone": "excited"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#B3202A",
+   "light": false,
+   "art": "ArtStudy",
+   "chunks": [
+    [
+     "Researchers Grossmann"
+    ],
+    [
+     "and Kross"
+    ],
+    [
+     "found people"
+    ],
+    [
+     "reason more"
+    ],
+    [
+     "WISELY",
+     {
+      "emph": "WISELY",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "about a friend's"
+    ],
+    [
+     "problems"
+    ],
+    [
+     "than their own."
+    ]
+   ],
+   "text": "Researchers Grossmann and Kross found people reason more WISELY about a friend's problems than their own.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outside",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "ArtOutside",
+   "chunks": [
+    [
+     "But picturing"
+    ],
+    [
+     "their own problem"
+    ],
+    [
+     "from the outside"
+    ],
+    [
+     "made the gap"
+    ],
+    [
+     "DISAPPEAR.",
+     {
+      "emph": "DISAPPEAR",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "But picturing their own problem from the outside made the gap DISAPPEAR.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Solomon",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "ArtSolomon",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "SOLOMON'S",
+     {
+      "emph": "SOLOMON'S",
+      "fx": "circle",
+      "mark": "#141821"
+     }
+    ],
+    [
+     "paradox."
+    ]
+   ],
+   "text": "It's called SOLOMON'S paradox.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Mirror",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "ArtMirror",
+   "chunks": [
+    [
+     "Next time"
+    ],
+    [
+     "you're stuck,"
+    ],
+    [
+     "ask it."
+    ],
+    [
+     "Then take"
+    ],
+    [
+     "your own ADVICE.",
+     {
+      "emph": "ADVICE",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "Next time you're stuck, ask it. Then take your own ADVICE.",
+   "tone": "warmly"
+  }
+ ],
+ "post": {
+  "title": "Ask This When You're Stuck #shorts",
+  "description": "Stuck on a decision? Ask what you'd tell a friend. Psychologists Igor Grossmann and Ethan Kross (Psychological Science, 2014) found people reason more wisely about a friend's relationship problem than their own — 'Solomon's paradox', after the king famed for wise advice and poor personal choices. When people reflected on their own problem from a distanced, third-person perspective, the gap disappeared. #psychology #shorts #decisionmaking #selfhelp",
+  "tags": [
+   "solomon's paradox",
+   "decision making",
+   "self distancing",
+   "psychology",
+   "advice"
+  ]
+ },
+ "thumb_text": "Ask This When You're Stuck",
+ "thumb_emph": "Stuck",
+ "thumb_mood": "thinking",
+ "music_vibe": "calm",
+ "pattern": "Therapist tip"
+}
