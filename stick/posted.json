@@ -98,6 +98,62 @@
     "instagram": "channel not connected in the Stick Buffer account",
     "tiktok": "channel not connected in the Stick Buffer account"
    }
+  },
+  {
+   "slug": "107_desert_breakdown",
+   "title": "Your car dies in the desert. 115°F. What do you do? #shorts",
+   "date": "2026-10-29",
+   "slot": "08:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-29/107_desert_breakdown.mp4",
+   "buffer": {
+    "youtube": "6ae2716859e061556343b851"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
+  },
+  {
+   "slug": "108_voicemail_from_myself",
+   "title": "3 a.m. A voicemail… from your own number #shorts",
+   "date": "2026-10-29",
+   "slot": "12:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-29/108_voicemail_from_myself.mp4",
+   "buffer": {
+    "youtube": "6ae27169cc91be5434b15f66"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
+  },
+  {
+   "slug": "110_twenty_million_part2",
+   "title": "You found $20 million — Part 2 #shorts",
+   "date": "2026-10-29",
+   "slot": "16:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-29/110_twenty_million_part2.mp4",
+   "buffer": {
+    "youtube": "6ae2716a7d94db46db1d017c"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
+  },
+  {
+   "slug": "111_front_door_part2",
+   "title": "A stranger texted a photo of your front door — Part 2 #shorts",
+   "date": "2026-10-29",
+   "slot": "20:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-29/111_front_door_part2.mp4",
+   "buffer": {
+    "youtube": "6ae2716b7d94db46db1d01b1"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
   }
  ]
 }
