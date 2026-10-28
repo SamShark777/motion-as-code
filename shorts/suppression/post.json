@@ -7,15 +7,18 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-18/suppression.mp4",
  "buffer": {
   "youtube": "6ad3c111e272c4918f997f66",
-  "tiktok": "6ad3c1120b0d72757aedb6ef"
+  "tiktok": "6ad3c1120b0d72757aedb6ef",
+  "instagram": "6ae267d78ecebd502e74b019"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
  "duration": 38.3,
  "links": {
   "youtube": "https://www.youtube.com/shorts/13HOwBFnDU0",
   "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7698038517405994253?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ },
+ "instagram_catchup": {
+  "due": "2026-10-29T18:30:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/ig-backlog/suppression.mp4"
  }
 }

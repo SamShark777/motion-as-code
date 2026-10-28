@@ -1,0 +1,17 @@
+{
+ "no": 119,
+ "slug": "semantic-satiation",
+ "date": "2026-10-29",
+ "slot": "14:00",
+ "due": "2026-10-29T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-29/semantic-satiation.mp4",
+ "buffer": {
+  "youtube": "6ae267d4a840ef151b681442",
+  "instagram": "6ae267d58ecebd502e74afa6",
+  "tiktok": "6ae267d58ecebd502e74afd3"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 44.1
+}

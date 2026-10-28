@@ -1,0 +1,17 @@
+{
+ "no": 118,
+ "slug": "shaky-bridge",
+ "date": "2026-10-29",
+ "slot": "09:00",
+ "due": "2026-10-29T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-29/shaky-bridge.mp4",
+ "buffer": {
+  "youtube": "6ae267cfa840ef151b681394",
+  "instagram": "6ae267d07570388bc1f23880",
+  "tiktok": "6ae267d1443b48362cced035"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 33.3
+}
