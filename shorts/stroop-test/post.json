@@ -1,0 +1,17 @@
+{
+ "no": 120,
+ "slug": "stroop-test",
+ "date": "2026-10-30",
+ "slot": "09:00",
+ "due": "2026-10-30T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-30/stroop-test.mp4",
+ "buffer": {
+  "youtube": "6ae3ba9bf3a9d5311bd0a28c",
+  "instagram": "6ae3ba9b8d19aa0a5be528a2",
+  "tiktok": "6ae3ba9c397c2ef8f34730fc"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 30.9
+}
