@@ -4,6 +4,10 @@
  "part_of": "109_atm_extra_cash",
  "hook_pattern": "part-2-resolution",
  "title": "The ATM gave you $5,000 too much — Part 2",
+ "hook": {
+  "top": "PART 2",
+  "bottom": "The ATM gave you $5,000 too much"
+ },
  "voice": {
   "provider": "elevenlabs",
   "voice_id": "nPczCjzI2devNBz1zQrb",

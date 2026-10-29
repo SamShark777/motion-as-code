@@ -3,6 +3,10 @@
  "series": "money-dilemma",
  "hook_pattern": "found-money",
  "title": "The ATM just gave you $5,000 too much",
+ "hook": {
+  "top": "$5,000 EXTRA",
+  "bottom": "The ATM gave you too much. Keep it?"
+ },
  "voice": {
   "provider": "elevenlabs",
   "voice_id": "nPczCjzI2devNBz1zQrb",
@@ -29,7 +33,7 @@
  },
  "segments": [
   {
-   "text": "You ask the ATM for one hundred dollars. It gives you fifty-one hundred.",
+   "text": "The ATM just gave you five thousand dollars too much. Would you keep it?",
    "visual": {
     "scene": "A",
     "move": "punch"

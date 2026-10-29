@@ -99,6 +99,44 @@ def assign_times(story, toks):
     words = [[exp[k], toks[k][1], toks[k][2], seg_of[k]] for k in range(len(exp))]
     return words
 
+
+# ---------------- hook (frame 1 must sell the dilemma) ----------------
+def hook_text(story):
+    """(top, bottom). story["hook"] wins; else derived from the title."""
+    h = story.get("hook")
+    if h: return h.get("top", "").upper(), h.get("bottom", "").upper()
+    t = story.get("title", "")
+    base = re.split(r"\s+[—-]+\s+Part\s*2", t)[0].strip()
+    if base != t: return "PART 2", base.upper()
+    if "," in base: a, b = base.split(",", 1); return a.strip().upper(), b.strip().upper()
+    m = re.match(r"(?i)(what if)\s+(.*)", base)
+    if m: return "WHAT IF...", m.group(2).upper()
+    return "", base.upper()
+def wrap_font(d, s, f, px):
+    out, line = [], ""
+    for w in s.split():
+        cand = (line + " " + w).strip()
+        if line and d.textlength(cand, font=f) > px: out.append(line); line = w
+        else: line = cand
+    if line: out.append(line)
+    return out
+def draw_hook(base, top, bot, t, end):
+    if t >= end: return
+    a = min(1.0, (end - t) / 0.25)  # fully visible on frame 0, fades out at the end
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
+    ft = fit(d, top, CAP, 170, 860) if top else None
+    fb = F(CAP, 84); lines = wrap_font(d, bot, fb, 840)[:3] if bot else []
+    th = (ft.size + 20 if ft else 0) + 92 * len(lines)
+    y0 = 430 - th // 2; rr(layer, (60, y0 - 40, W - 60, y0 + th + 30), (10, 12, 14, 215), (92, 227, 125, 255), 4, 34)
+    y = y0
+    if ft:
+        tw = d.textlength(top, font=ft)
+        d.text((W / 2 - tw / 2, y), top, font=ft, fill=GREEN + (255,), stroke_width=6, stroke_fill=(0, 0, 0)); y += ft.size + 20
+    for ln in lines:
+        lw = d.textlength(ln, font=fb); d.text((W / 2 - lw / 2, y), ln, font=fb, fill=(255, 255, 255, 255), stroke_width=5, stroke_fill=(0, 0, 0)); y += 92
+    if a < 1: layer.putalpha(layer.getchannel("A").point(lambda v: int(v * a)))
+    base.alpha_composite(layer)
+
 # ---------------- UI chips ----------------
 def rr(layer, box, fill, outline, width=3, r=22):
     d = ImageDraw.Draw(layer); d.rounded_rectangle(box, radius=r, fill=fill, outline=outline, width=width)
@@ -332,6 +370,10 @@ def main(story_path, test=False):
         if s.get("flash") == "black" or "card" in s.get("visual", {}): events.append(("boom", t0, 0))
         if s.get("flash") == "invert": events.append(("riser", t0, 0)); events.append(("boom", t0, 0))
     flashes = [(starts[i], s["flash"]) for i, s in enumerate(segs) if s.get("flash")]
+    HTOP, HBOT = hook_text(story)
+    HOOK_END = min(4.0, max(2.4, seg_t[0][1] + 0.2)) if (HTOP or HBOT) and not story.get("no_hook") else 0
+    n0 = len(clean_words(segs[0]["text"]))
+    if n0 > 16: log(f"WARNING: first line is {n0} words; keep the dilemma in <=14 words so it lands in ~2.5s")
     # captions: one word at a time
     def caption(base, t):
         cur = None
@@ -363,17 +405,19 @@ def main(story_path, test=False):
         # vignette for chip legibility
         stack_y = 170 if any(c["type"] == "battery" and c["start"] <= t < c["end"] for c in chips) else 80
         for c in chips:
+            if t < HOOK_END: break  # the hook card owns the screen for the first seconds
             if c["start"] <= t < c["end"]:
                 pos = c.get("pos", "top")
                 if pos == "top": y = stack_y; stack_y += chip_size(c) + 22
                 elif pos == "bottom": y = 1140 - chip_size(c) if c["type"] != "choice" else 1050
                 else: y = int(pos)
                 draw_chip(base, c, y, t - c["start"], 0)
+        draw_hook(base, HTOP, HBOT, t, HOOK_END)
         im = base.convert("RGB"); caption(im, t)
         if t > END - 0.5: im = Image.blend(im, Image.new("RGB", (W, H)), (t - (END - 0.5)) / 0.5)
         return im
     if test or "--preview" in sys.argv:
-        times = [((s["start"] + s["end"]) / 2) for s in shots] + [c["start"] + 1.2 for c in chips]
+        times = [0.0] + [((s["start"] + s["end"]) / 2) for s in shots] + [c["start"] + 1.2 for c in chips]
         for i, tm in enumerate(sorted(times)):
             frame(tm).resize((360, 640)).save(os.path.join(work, f"prev_{i:02d}.jpg"), quality=80)
         log("previews", len(times), f"END={END:.1f}")

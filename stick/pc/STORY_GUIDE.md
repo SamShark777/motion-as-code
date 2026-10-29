@@ -7,7 +7,11 @@ Reference example that is known to work: `stories\101_twenty_million.json` — c
 
 ## Hard rules
 - 45–65 s of narration (~110–160 words). Second person ("You…") or tight third person. Short sentences.
-- **Hook = first sentence, under 2.5 s, a concrete number/stakes/impossible situation.** No "Imagine if", no greetings, no channel intro.
+- **Frame 1 must sell the whole dilemma.** (Lesson from 104: 47% swiped away because the condition — "no phone" — only came at second 4.) So:
+  - The first spoken sentence states the full deal **including the catch** in ≤14 words, ideally as a question: "Would you take a million dollars if you could never use a phone again?" — not "A stranger offers you one million dollars." No setup, no "Imagine if", no greetings.
+  - Add a `"hook"` object: `{"top": "$1,000,000", "bottom": "But you can never use a phone again"}` — `top` is the stakes in ≤3 words (a number if possible), `bottom` is the catch in ≤8 words. The renderer shows it as a big green/white card from frame 0 until the first sentence ends (2.4–4 s); chips wait until it's gone. If omitted it's built from the title, so the title must also carry the catch.
+  - Part 2s: `"hook": {"top": "PART 2", "bottom": "<part 1 dilemma in ≤8 words>"}`; the first line still opens on the chosen path.
+  - The rules of the dilemma must be airtight in one line (e.g. "$1M in cash" so "you need a phone to bank" can't break it). Viewers will poke holes.
 - An open loop by line 3 (a question the viewer needs answered) and a twist at ~70%.
 - Channel: **Stick or Twist (@stickortwist2)**. The last line should say "Stick or twist?" (or a poll) and the final banner chip should carry @STICKORTWIST2.
 - **Every cliffhanger gets a Part 2.** Any story that ends on a poll or open question must have its Part 2 written in the same batch, numbered right after the other stories so it posts 1–3 days later: `"series": "part-2"`, `"part_of": "<slug of part 1>"`, title "<part 1 title> — Part 2". Part 2 opens with a PART 2 banner chip and starts straight into the chosen path ("You return the bag.") — never mention votes, comments or that nobody answered. Use the majority choice if comments clearly picked one, otherwise the most satisfying outcome. Part 2 must fully resolve the story (no new poll) and end with a THE END banner + @STICKORTWIST2.
@@ -23,6 +27,7 @@ Reference example that is known to work: `stories\101_twenty_million.json` — c
  "series": "money-dilemma",               // style bucket, see style menu
  "hook_pattern": "found-money",           // pattern from research/hooks_library.md
  "title": "You just found $20 million",
+ "hook": {"top": "$20,000,000", "bottom": "Found on an empty road. Keep it?"},   // frame-1 card (see Hard rules)
  "voice": {"provider": "elevenlabs", "voice_id": "nPczCjzI2devNBz1zQrb", "model": "eleven_v3", "stability": 0.4, "kokoro": "am_michael"},
  "tail": 3.5,                              // seconds to hold the ending
  "style": "<copy the style string from 101 unless the series calls for a different palette>",
