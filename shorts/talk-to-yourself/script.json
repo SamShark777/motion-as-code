@@ -1,0 +1,283 @@
+{
+ "slug": "talk-to-yourself",
+ "no": 125,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Nia",
+ "episode": 2,
+ "cast": [
+  "nia",
+  "milo"
+ ],
+ "title": [
+  "Say Your",
+  "Name"
+ ],
+ "credit": "Kross et al. · 2014",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "NTHook",
+   "chunks": [
+    [
+     "Nia talks"
+    ],
+    [
+     "to herself"
+    ],
+    [
+     "in the mirror."
+    ],
+    [
+     "By NAME.",
+     {
+      "emph": "NAME"
+     }
+    ]
+   ],
+   "text": "Nia talks to herself in the mirror. By NAME.",
+   "tone": "curious",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Milo",
+   "art": "NTMilo",
+   "chunks": [
+    [
+     "Milo walks in."
+    ],
+    [
+     "His speech starts"
+    ],
+    [
+     "in FIVE minutes.",
+     {
+      "emph": "FIVE"
+     }
+    ]
+   ],
+   "text": "Milo walks in. His speech starts in FIVE minutes.",
+   "tone": "excited"
+  },
+  {
+   "sec": "cd",
+   "scene": "Lost it",
+   "art": "NTWeird",
+   "chunks": [
+    [
+     "He thinks she's"
+    ],
+    [
+     "finally LOST it.",
+     {
+      "emph": "LOST"
+     }
+    ]
+   ],
+   "text": "He thinks she's finally LOST it.",
+   "tone": "sarcastic",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Spiral",
+   "art": "NTSpiral",
+   "chunks": [
+    [
+     "His own head?"
+    ],
+    [
+     "I'll forget it."
+    ],
+    [
+     "I'll FREEZE.",
+     {
+      "emph": "FREEZE"
+     }
+    ]
+   ],
+   "text": "His own head? I'll forget it. I'll FREEZE.",
+   "tone": "nervous"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "NTKross",
+   "chunks": [
+    [
+     "But in 2014,"
+    ],
+    [
+     "Ethan Kross put"
+    ],
+    [
+     "89 students"
+    ],
+    [
+     "to the TEST.",
+     {
+      "emph": "TEST"
+     }
+    ]
+   ],
+   "text": "But in 2014, Ethan Kross put 89 students to the TEST.",
+   "tone": "curious",
+   "capY": 1650
+  },
+  {
+   "sec": "cd",
+   "scene": "Speech",
+   "art": "NTStudy",
+   "chunks": [
+    [
+     "Five minutes"
+    ],
+    [
+     "to prep a"
+    ],
+    [
+     "SPEECH for judges.",
+     {
+      "emph": "SPEECH"
+     }
+    ]
+   ],
+   "text": "Five minutes to prep a SPEECH for judges.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Split",
+   "art": "NTSplit",
+   "chunks": [
+    [
+     "Half thought about"
+    ],
+    [
+     "their nerves"
+    ],
+    [
+     "using “I”."
+    ],
+    [
+     "Half used"
+    ],
+    [
+     "their own NAME.",
+     {
+      "emph": "NAME"
+     }
+    ]
+   ],
+   "text": "Half thought about their nerves using “I”. Half used their own NAME.",
+   "tone": "curious",
+   "capY": 1560
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "NTResult",
+   "chunks": [
+    [
+     "Blind raters scored"
+    ],
+    [
+     "the name group"
+    ],
+    [
+     "BETTER.",
+     {
+      "emph": "BETTER"
+     }
+    ],
+    [
+     "And they felt"
+    ],
+    [
+     "less shame after."
+    ]
+   ],
+   "text": "Blind raters scored the name group BETTER. And they felt less shame after.",
+   "tone": "surprised",
+   "capY": 1560
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "NTName",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "SELF-DISTANCING.",
+     {
+      "emph": "SELF-DISTANCING"
+     }
+    ]
+   ],
+   "text": "Psychologists call it SELF-DISTANCING.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "NTPayoff",
+   "chunks": [
+    [
+     "So Milo"
+    ],
+    [
+     "tries it."
+    ],
+    [
+     "Milo, you've done"
+    ],
+    [
+     "harder THINGS.",
+     {
+      "emph": "THINGS"
+     }
+    ]
+   ],
+   "text": "So Milo tries it. Milo, you've done harder THINGS.",
+   "tone": "warmly",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.08
+   ]
+  }
+ ],
+ "post": {
+  "title": "Why She Talks to Herself by Name #shorts",
+  "description": "Nia gives herself a pep talk by name. Milo, five minutes before his speech, thinks she's lost it. But in 2014 Ethan Kross and colleagues (Kross, Bruehlman-Senecal, Park, Burson, Dougherty, Shablack, Bremner, Moser & Ayduk, Journal of Personality and Social Psychology) gave 89 students five minutes to prepare a speech for evaluators. Before speaking, half thought about their feelings using \"I\", half using their own name. Raters who didn't know the groups scored the name group's speeches better, and they felt less shame afterwards. Psychologists call it self-distancing: your name lets you coach yourself like a friend. #psychology #shorts #anxiety #selftalk",
+  "tags": [
+   "self-talk",
+   "self-distancing",
+   "public speaking",
+   "anxiety",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Talk to Yourself by Name",
+ "thumb_emph": "Name",
+ "thumb_mood": "smug",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 0
+}

@@ -1,0 +1,303 @@
+{
+ "slug": "peak-end-rule",
+ "no": 122,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 2,
+ "cast": [
+  "arthur",
+  "mae"
+ ],
+ "title": [
+  "Peak-End",
+  "Rule"
+ ],
+ "credit": "Kahneman, Fredrickson, Schreiber & Redelmeier · 1993",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "PEHook",
+   "chunks": [
+    [
+     "Six perfect days"
+    ],
+    [
+     "of holiday."
+    ],
+    [
+     "Then Arthur's flight"
+    ],
+    [
+     "home got CANCELLED.",
+     {
+      "emph": "CANCELLED"
+     }
+    ]
+   ],
+   "text": "Six perfect days of holiday. Then Arthur's flight home got CANCELLED.",
+   "tone": "excited, then surprised",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Floor",
+   "art": "PEFloor",
+   "chunks": [
+    [
+     "He spent"
+    ],
+    [
+     "the night on"
+    ],
+    [
+     "an airport FLOOR.",
+     {
+      "emph": "FLOOR"
+     }
+    ]
+   ],
+   "text": "He spent the night on an airport FLOOR.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Ask",
+   "art": "PEAsk",
+   "chunks": [
+    [
+     "Monday,"
+    ],
+    [
+     "Mae asks how"
+    ],
+    [
+     "the TRIP was.",
+     {
+      "emph": "TRIP"
+     }
+    ]
+   ],
+   "text": "Monday, Mae asks how the TRIP was.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Disaster",
+   "art": "PEDisaster",
+   "chunks": [
+    [
+     "A total DISASTER.",
+     {
+      "emph": "DISASTER"
+     }
+    ]
+   ],
+   "text": "A total DISASTER.",
+   "tone": "sarcastic",
+   "cam": [
+    540,
+    900,
+    1.04,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Great",
+   "art": "PEGreat",
+   "chunks": [
+    [
+     "But six"
+    ],
+    [
+     "of his seven"
+    ],
+    [
+     "days were"
+    ],
+    [
+     "GREAT.",
+     {
+      "emph": "GREAT"
+     }
+    ]
+   ],
+   "text": "But six of his seven days were GREAT.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Last",
+   "art": "PELast",
+   "chunks": [
+    [
+     "His brain kept"
+    ],
+    [
+     "the worst moment,"
+    ],
+    [
+     "and the"
+    ],
+    [
+     "LAST one.",
+     {
+      "emph": "LAST"
+     }
+    ]
+   ],
+   "text": "His brain kept the worst moment, and the LAST one.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "PEName",
+   "chunks": [
+    [
+     "Psychologists call this"
+    ],
+    [
+     "the PEAK-END rule.",
+     {
+      "emph": "PEAK-END"
+     }
+    ]
+   ],
+   "text": "Psychologists call this the PEAK-END rule.",
+   "tone": "thoughtfully",
+   "say": "Psychologists call this the peak end rule."
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "PEStudy",
+   "chunks": [
+    [
+     "In 1993,"
+    ],
+    [
+     "Kahneman's team"
+    ],
+    [
+     "had people hold"
+    ],
+    [
+     "a hand in"
+    ],
+    [
+     "ICY water.",
+     {
+      "emph": "ICY"
+     }
+    ]
+   ],
+   "text": "In 1993, Kahneman's team had people hold a hand in ICY water.",
+   "tone": "curious",
+   "say": "In nineteen ninety-three, Kahneman's team had people hold a hand in icy water."
+  },
+  {
+   "sec": "cd",
+   "scene": "Trials",
+   "art": "PETimers",
+   "chunks": [
+    [
+     "Once for"
+    ],
+    [
+     "60 seconds."
+    ],
+    [
+     "Once for 90,"
+    ],
+    [
+     "ending a bit"
+    ],
+    [
+     "WARMER.",
+     {
+      "emph": "WARMER"
+     }
+    ]
+   ],
+   "text": "Once for 60 seconds. Once for 90, ending a bit WARMER.",
+   "tone": "thoughtfully",
+   "say": "Once for sixty seconds. Once for ninety, ending a bit warmer."
+  },
+  {
+   "sec": "cd",
+   "scene": "Vote",
+   "art": "PEVote",
+   "chunks": [
+    [
+     "Nearly 7"
+    ],
+    [
+     "in 10 chose"
+    ],
+    [
+     "to REPEAT",
+     {
+      "emph": "REPEAT"
+     }
+    ],
+    [
+     "the longer one."
+    ]
+   ],
+   "text": "Nearly 7 in 10 chose to REPEAT the longer one.",
+   "tone": "surprised",
+   "say": "Nearly seven in ten chose to repeat the longer one.",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Tip",
+   "art": "PETip",
+   "chunks": [
+    [
+     "Mae's tip?"
+    ],
+    [
+     "End every date,"
+    ],
+    [
+     "workout or meeting"
+    ],
+    [
+     "on a HIGH.",
+     {
+      "emph": "HIGH"
+     }
+    ]
+   ],
+   "text": "Mae's tip? End every date, workout or meeting on a HIGH.",
+   "tone": "warmly"
+  }
+ ],
+ "post": {
+  "title": "One Bad Day Ruined the Whole Trip #shorts",
+  "description": "Six perfect days of holiday, one cancelled flight, and Arthur calls the whole trip a disaster. Psychologists call it the peak-end rule: we judge an experience by its most intense moment and its ending, not by how long it lasted. In a 1993 study (Kahneman, Fredrickson, Schreiber & Redelmeier, \"When more pain is preferred to less\"), people held a hand in 14°C water for 60 seconds, and in another trial for 90 seconds where the last 30 were slightly warmer. Nearly 7 in 10 chose to repeat the longer one. So end your dates, workouts and meetings on a high. #psychology #shorts #memory #peakendrule",
+  "tags": [
+   "peak-end rule",
+   "memory",
+   "Kahneman",
+   "psychology",
+   "holiday"
+  ]
+ },
+ "thumb_text": "One Bad Day Ruined the Trip",
+ "thumb_emph": "Bad Day",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0
+}

@@ -34,7 +34,7 @@ function STCard({ T, t, beats }) {
 
 /* 3 — the viewer's turn: cards flip fast, full frame */
 function STQuiz({ T, t, dur }) {
-  const i = Math.min(CW.length - 1, Math.floor(t / 0.42)), lt = t - i * 0.42;
+  const i = Math.max(0, Math.min(CW.length - 1, Math.floor(t / 0.42))), lt = Math.max(0, t - i * 0.42);
   return (<g><RMBg kind="dark" waves={false} />
     <Card x={540} y={900} word={CW[i][0]} ink={CW[i][1]} s={1.55} rot={(i % 2 ? 2 : -2)} k={lt / 0.12} />
     <RMChip x={540} y={240} text={`YOUR TURN · ${i + 1}/${CW.length}`} col={P.yel} pop={t / 0.2} size={50} />

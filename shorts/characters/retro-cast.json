@@ -13,7 +13,8 @@
     "mae": "colleague who sees through things"
    },
    "history": [
-    "ep 1 (arthur-the-critic): negativity bias — 10 compliments, 1 criticism, replays it at 2 AM; the Critic is 'a very old alarm'; tonight Arthur talks back"
+    "ep 1 (arthur-the-critic): negativity bias — 10 compliments, 1 criticism, replays it at 2 AM; the Critic is 'a very old alarm'; tonight Arthur talks back",
+    "ep 2 (peak-end-rule, with Mae): six perfect holiday days + one cancelled flight = 'a total disaster'; Mae shows him the chart (peak-end rule, Kahneman et al. 1993) and ends every meeting on a high"
    ]
   },
   "critic": {
@@ -37,7 +38,10 @@
    "relationships": {
     "arthur": "colleague"
    },
-   "history": []
+   "history": [
+    "ep 1 (peak-end-rule, with Arthur): asks how the trip was, shows him 6 of 7 days were great; her tip: end dates, workouts and meetings on a high",
+    "ep 2 (scarcity-cookies, with Lila): shows Lila a full tray of the 'only two left' cookies in the back"
+   ]
   },
   "otto": {
    "name": "Otto",
@@ -64,7 +68,8 @@
     "mae": "mentor"
    },
    "history": [
-    "ep 1 (stroop-test, with Otto): holds up the Stroop cards for her boss"
+    "ep 1 (stroop-test, with Otto): holds up the Stroop cards for her boss",
+    "ep 2 (scarcity-cookies, with The Doubt + Mae): not hungry, sees 'only 2 left', The Doubt whispers 'what if they're gone?', buys both (scarcity effect, Worchel, Lee & Adewole 1975); new rule: would I want it if there were ten?"
    ]
   },
   "doubt": {
@@ -75,7 +80,9 @@
    "relationships": {
     "critic": "rival tenant in people's heads"
    },
-   "history": []
+   "history": [
+    "ep 1 (scarcity-cookies, with Lila): introduced — whispers 'what if they're gone?' at an 'only 2 left' sign; shrinks when Lila asks 'would I want it if there were ten?'"
+   ]
   }
  }
 }

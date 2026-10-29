@@ -1,0 +1,263 @@
+{
+ "slug": "decision-facts",
+ "no": 126,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Theo",
+ "episode": 2,
+ "cast": [
+  "theo",
+  "dev"
+ ],
+ "title": [
+  "Who Really",
+  "Decides"
+ ],
+ "credit": "Johnson & Goldstein · 2003 · Iyengar & Lepper · 2000 · Huber, Payne & Puto · 1982",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "DFHook",
+   "chunks": [
+    [
+     "Dev says"
+    ],
+    [
+     "nobody tells him"
+    ],
+    [
+     "what to CHOOSE.",
+     {
+      "emph": "CHOOSE"
+     }
+    ]
+   ],
+   "text": "Dev says nobody tells him what to CHOOSE.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Theo",
+   "art": "DFTheo",
+   "chunks": [
+    [
+     "Theo bets him"
+    ],
+    [
+     "three FACTS",
+     {
+      "emph": "FACTS"
+     }
+    ],
+    [
+     "say otherwise."
+    ]
+   ],
+   "text": "Theo bets him three FACTS say otherwise.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Organ",
+   "art": "DFOrgan",
+   "chunks": [
+    [
+     "Fact one."
+    ],
+    [
+     "If people must"
+    ],
+    [
+     "opt in"
+    ],
+    [
+     "as organ donors,"
+    ],
+    [
+     "42 PERCENT do.",
+     {
+      "emph": "42 PERCENT"
+     }
+    ]
+   ],
+   "text": "Fact one. If people must opt in as organ donors, 42 PERCENT do.",
+   "tone": "serious",
+   "capY": 1650
+  },
+  {
+   "sec": "cd",
+   "scene": "Default",
+   "art": "DFOptOut",
+   "chunks": [
+    [
+     "If they must"
+    ],
+    [
+     "opt out?"
+    ],
+    [
+     "82 PERCENT.",
+     {
+      "emph": "82 PERCENT"
+     }
+    ]
+   ],
+   "text": "If they must opt out? 82 PERCENT.",
+   "tone": "surprised",
+   "capY": 1650
+  },
+  {
+   "sec": "cd",
+   "scene": "Jam",
+   "art": "DFJam",
+   "chunks": [
+    [
+     "Fact two."
+    ],
+    [
+     "24 jams:"
+    ],
+    [
+     "3 percent bought."
+    ],
+    [
+     "Six jams?"
+    ],
+    [
+     "30 PERCENT.",
+     {
+      "emph": "30 PERCENT"
+     }
+    ]
+   ],
+   "text": "Fact two. 24 jams: 3 percent bought. Six jams? 30 PERCENT.",
+   "tone": "curious",
+   "capY": 1650
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "art": "DFBut",
+   "chunks": [
+    [
+     "But later studies"
+    ],
+    [
+     "say that one"
+    ],
+    [
+     "doesn't always HOLD.",
+     {
+      "emph": "HOLD"
+     }
+    ]
+   ],
+   "text": "But later studies say that one doesn't always HOLD.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Decoy",
+   "art": "DFDecoy",
+   "chunks": [
+    [
+     "Fact three."
+    ],
+    [
+     "Add a worse"
+    ],
+    [
+     "copy of"
+    ],
+    [
+     "one option,"
+    ],
+    [
+     "and the original"
+    ],
+    [
+     "looks BETTER.",
+     {
+      "emph": "BETTER"
+     }
+    ]
+   ],
+   "text": "Fact three. Add a worse copy of one option, and the original looks BETTER.",
+   "tone": "mischievously",
+   "capY": 1640
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "DFName",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "CHOICE architecture.",
+     {
+      "emph": "CHOICE"
+     }
+    ]
+   ],
+   "text": "Psychologists call it CHOICE architecture.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "DFPayoff",
+   "chunks": [
+    [
+     "Dev laughs."
+    ],
+    [
+     "Then buys the"
+    ],
+    [
+     "large popcorn,"
+    ],
+    [
+     "because the medium"
+    ],
+    [
+     "cost almost"
+    ],
+    [
+     "the SAME.",
+     {
+      "emph": "SAME"
+     }
+    ]
+   ],
+   "text": "Dev laughs. Then buys the large popcorn, because the medium cost almost the SAME.",
+   "tone": "warmly"
+  }
+ ],
+ "post": {
+  "title": "3 Facts About How You Decide #shorts",
+  "description": "Dev says nobody tells him what to choose. Theo bets him three facts. 1) Defaults: in an online experiment by Eric Johnson and Daniel Goldstein (2003, \"Do Defaults Save Lives?\", Science), 42% agreed to be organ donors when they had to opt in, but 82% stayed donors when they had to opt out. 2) Choice overload: in Sheena Iyengar and Mark Lepper's 2000 jam study, about 3% of shoppers who stopped at a 24-jam table bought jam, versus about 30% at a 6-jam table, though a later meta-analysis of 50 studies (Scheibehenne, Greifeneder & Todd, 2010) found the effect is not reliable. 3) The decoy effect (Huber, Payne & Puto, 1982): adding a worse version of one option makes that option look better. Psychologists call the way options are set up choice architecture. #psychology #shorts #decisions #marketing",
+  "tags": [
+   "decision making",
+   "default effect",
+   "decoy effect",
+   "choice overload",
+   "psychology"
+  ]
+ },
+ "thumb_text": "3 Facts About How You Decide",
+ "thumb_emph": "Decide",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0
+}
