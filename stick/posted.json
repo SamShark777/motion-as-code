@@ -154,6 +154,62 @@
     "instagram": "channel not connected in the Stick Buffer account",
     "tiktok": "channel not connected in the Stick Buffer account"
    }
+  },
+  {
+   "slug": "112_million_no_phone_part2",
+   "title": "$1 million, no phone ever — Part 2 #shorts",
+   "date": "2026-10-30",
+   "slot": "08:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-30/112_million_no_phone_part2.mp4",
+   "buffer": {
+    "youtube": "6ae3c1dbf3a9d5311bd2a0f9"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
+  },
+  {
+   "slug": "113_lottery_ticket_part2",
+   "title": "The $4 million lottery ticket — Part 2 #shorts",
+   "date": "2026-10-30",
+   "slot": "12:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-30/113_lottery_ticket_part2.mp4",
+   "buffer": {
+    "youtube": "6ae3c1dcf3a9d5311bd2a12a"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
+  },
+  {
+   "slug": "114_last_train_part2",
+   "title": "9 minutes to catch the last train — Part 2 #shorts",
+   "date": "2026-10-30",
+   "slot": "16:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-30/114_last_train_part2.mp4",
+   "buffer": {
+    "youtube": "6ae3c1dd397c2ef8f349138c"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
+  },
+  {
+   "slug": "115_voicemail_part2",
+   "title": "A voicemail from your own number — Part 2 #shorts",
+   "date": "2026-10-30",
+   "slot": "20:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-30/115_voicemail_part2.mp4",
+   "buffer": {
+    "youtube": "6ae3c1de60532fc2b0d2c7a8"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   }
   }
  ]
 }
