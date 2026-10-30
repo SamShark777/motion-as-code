@@ -156,20 +156,6 @@
    }
   },
   {
-   "slug": "112_million_no_phone_part2",
-   "title": "$1 million, no phone ever — Part 2 #shorts",
-   "date": "2026-10-30",
-   "slot": "08:00",
-   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-30/112_million_no_phone_part2.mp4",
-   "buffer": {
-    "youtube": "6ae3c1dbf3a9d5311bd2a0f9"
-   },
-   "errors": {
-    "instagram": "channel not connected in the Stick Buffer account",
-    "tiktok": "channel not connected in the Stick Buffer account"
-   }
-  },
-  {
    "slug": "113_lottery_ticket_part2",
    "title": "The $4 million lottery ticket — Part 2 #shorts",
    "date": "2026-10-30",
@@ -210,6 +196,24 @@
     "instagram": "channel not connected in the Stick Buffer account",
     "tiktok": "channel not connected in the Stick Buffer account"
    }
+  }
+ ],
+ "held": [
+  {
+   "slug": "112_million_no_phone_part2",
+   "title": "$1 million, no phone ever — Part 2 #shorts",
+   "date": "2026-10-30",
+   "slot": "08:00",
+   "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media-stick/2026-10-30/112_million_no_phone_part2.mp4",
+   "buffer": {
+    "youtube": "6ae3c1dbf3a9d5311bd2a0f9"
+   },
+   "errors": {
+    "instagram": "channel not connected in the Stick Buffer account",
+    "tiktok": "channel not connected in the Stick Buffer account"
+   },
+   "held_at": "2026-10-29 22:03",
+   "hold_errors": {}
   }
  ]
 }
