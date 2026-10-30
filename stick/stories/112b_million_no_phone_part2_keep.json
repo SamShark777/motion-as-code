@@ -1,0 +1,138 @@
+{
+ "format": "dilemma",
+ "voice": {
+  "provider": "elevenlabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model": "eleven_v3",
+  "stability": 0.4,
+  "kokoro": "am_michael"
+ },
+ "tail": 3.5,
+ "style": "Warm painterly 2D cartoon illustration, cinematic graphic-novel look: clean bold dark outlines, rich textured digital painting, soft volumetric light, deep warm oranges and moody blues, detailed environment, vertical 9:16 composition.",
+ "character": "MAIN CHARACTER: a lanky ADULT man drawn as a minimalist cartoon: a perfectly round smooth tan head, two tiny solid black dot eyes set wide apart, short thin eyebrow strokes, a very small simple mouth, no nose, no visible hair, simple long limbs, dark charcoal baseball cap, oversized heather-grey hoodie, black slim pants, white sneakers. Minimal face like a webcomic, not a child, not anime, no big eyes.",
+ "series": "part-2",
+ "part_of": "104_million_no_phone",
+ "hook_pattern": "part-2-resolution",
+ "title": "$1 million, but no phone ever — Part 2",
+ "hook": {
+  "top": "PART 2",
+  "bottom": "$1M, but no phone ever"
+ },
+ "scenes": {
+  "A": "The main character standing up from a small cafe table, pushing a black briefcase back toward a mysterious man in a dark suit who smiles, warm cafe light, rain on the window.",
+  "B": "The main character on a city bus tapping his phone on the fare reader, evening city lights through the windows.",
+  "C": "Night street outside a closed bank with glass doors, a second cartoon man with a square tan head, dot eyes and a thin moustache, in a rumpled beige suit clutching a black briefcase and pounding on the glass in frustration, the main character watching nearby.",
+  "D": "Close-up: the main character holding out his phone to a second cartoon man with a square tan head, dot eyes and a thin moustache, in a rumpled beige suit who reaches for it desperately, streetlight glow.",
+  "E": "Close-up portrait of the main character facing the viewer with a calm knowing smile, holding his phone, city night behind him.",
+  "F": "Far down a rainy night street, a mysterious man in a dark suit walks away carrying a black briefcase under a streetlight, seen from behind, the main character small in the foreground watching."
+ },
+ "segments": [
+  {
+   "text": "You keep your phone.",
+   "visual": {
+    "scene": "A",
+    "move": "push"
+   },
+   "tags": "[confident]",
+   "ui": [
+    {
+     "type": "banner",
+     "title": "PART 2",
+     "sub": "KEEP PHONE"
+    }
+   ]
+  },
+  {
+   "text": "You slide the briefcase back. The stranger just smiles, like he expected it.",
+   "visual": {
+    "continue": true
+   },
+   "ui": []
+  },
+  {
+   "text": "That night your phone pays the bus, reroutes you around a closed road, and sets your alarm for work.",
+   "visual": {
+    "scene": "B",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "value",
+     "label": "WHAT YOUR PHONE DID TONIGHT",
+     "value": "PAY. MAP. WAKE."
+    }
+   ]
+  },
+  {
+   "text": "Two weeks later, you see the guy from the next table. He took the deal.",
+   "visual": {
+    "scene": "C",
+    "move": "push"
+   },
+   "flash": "black",
+   "ui": []
+  },
+  {
+   "text": "He's outside the bank at midnight with a million dollars he can't touch. The account needs a code. Sent to a phone.",
+   "visual": {
+    "continue": true
+   },
+   "tags": "[slowly]",
+   "ui": [
+    {
+     "type": "value",
+     "label": "ACCOUNT ACCESS",
+     "value": "LOCKED"
+    }
+   ]
+  },
+  {
+   "text": "He begs to borrow yours. Just for one code.",
+   "visual": {
+    "scene": "D",
+    "move": "push"
+   },
+   "ui": []
+  },
+  {
+   "text": "The second his thumb touches the screen, a text arrives.",
+   "visual": {
+    "continue": true
+   },
+   "flash": "invert",
+   "ui": [
+    {
+     "type": "msg",
+     "sender": "UNKNOWN NUMBER",
+     "text": "Deal's off."
+    }
+   ],
+   "sfx": [
+    "buzz"
+   ]
+  },
+  {
+   "text": "Down the street, a man in a dark suit walks away with the briefcase.",
+   "visual": {
+    "scene": "F",
+    "move": "pull"
+   },
+   "tags": "[whispers]",
+   "ui": []
+  },
+  {
+   "text": "You kept your phone. He kept nothing. The end.",
+   "visual": {
+    "scene": "E",
+    "move": "push"
+   },
+   "ui": [
+    {
+     "type": "banner",
+     "title": "THE END",
+     "sub": "FOLLOW @STICKORTWIST2 FOR THE NEXT ONE"
+    }
+   ]
+  }
+ ]
+}
