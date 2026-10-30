@@ -1,0 +1,471 @@
+{
+ "lines": [
+  {
+   "text": "Arjun waved at Kabir. Kabir walked right PAST him.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.32,
+   "words": [
+    {
+     "w": "Arjun",
+     "start": 0.15,
+     "end": 0.552
+    },
+    {
+     "w": "waved",
+     "start": 0.577,
+     "end": 0.979
+    },
+    {
+     "w": "at",
+     "start": 1.005,
+     "end": 1.199
+    },
+    {
+     "w": "Kabir.",
+     "start": 1.211,
+     "end": 1.613
+    },
+    {
+     "w": "Kabir",
+     "start": 1.746,
+     "end": 2.147
+    },
+    {
+     "w": "walked",
+     "start": 2.173,
+     "end": 2.588
+    },
+    {
+     "w": "right",
+     "start": 2.615,
+     "end": 2.849
+    },
+    {
+     "w": "PAST",
+     "start": 2.864,
+     "end": 3.085
+    },
+    {
+     "w": "him.",
+     "start": 3.099,
+     "end": 3.307
+    }
+   ]
+  },
+  {
+   "text": "Arjun's brain instantly decided: he's MAD at me.",
+   "sec": "cd",
+   "start": 3.64,
+   "end": 6.72,
+   "words": [
+    {
+     "w": "Arjun's",
+     "start": 3.64,
+     "end": 4.074
+    },
+    {
+     "w": "brain",
+     "start": 4.101,
+     "end": 4.346
+    },
+    {
+     "w": "instantly",
+     "start": 4.362,
+     "end": 5.012
+    },
+    {
+     "w": "decided:",
+     "start": 5.054,
+     "end": 5.676
+    },
+    {
+     "w": "he's",
+     "start": 5.827,
+     "end": 6.044
+    },
+    {
+     "w": "MAD",
+     "start": 6.058,
+     "end": 6.275
+    },
+    {
+     "w": "at",
+     "start": 6.289,
+     "end": 6.491
+    },
+    {
+     "w": "me.",
+     "start": 6.504,
+     "end": 6.707
+    }
+   ]
+  },
+  {
+   "text": "Then he saw Kabir laughing with Maya.",
+   "sec": "cd",
+   "start": 7.04,
+   "end": 8.8,
+   "words": [
+    {
+     "w": "Then",
+     "start": 7.04,
+     "end": 7.232
+    },
+    {
+     "w": "he",
+     "start": 7.244,
+     "end": 7.412
+    },
+    {
+     "w": "saw",
+     "start": 7.423,
+     "end": 7.603
+    },
+    {
+     "w": "Kabir",
+     "start": 7.614,
+     "end": 7.963
+    },
+    {
+     "w": "laughing",
+     "start": 7.985,
+     "end": 8.368
+    },
+    {
+     "w": "with",
+     "start": 8.392,
+     "end": 8.584
+    },
+    {
+     "w": "Maya.",
+     "start": 8.596,
+     "end": 8.788
+    }
+   ]
+  },
+  {
+   "text": "Now he was sure. I definitely did SOMETHING.",
+   "sec": "cd",
+   "start": 9.12,
+   "end": 11.56,
+   "words": [
+    {
+     "w": "Now",
+     "start": 9.12,
+     "end": 9.283
+    },
+    {
+     "w": "he",
+     "start": 9.294,
+     "end": 9.447
+    },
+    {
+     "w": "was",
+     "start": 9.457,
+     "end": 9.62
+    },
+    {
+     "w": "sure.",
+     "start": 9.63,
+     "end": 9.804
+    },
+    {
+     "w": "I",
+     "start": 9.9,
+     "end": 10.042
+    },
+    {
+     "w": "definitely",
+     "start": 10.051,
+     "end": 10.816
+    },
+    {
+     "w": "did",
+     "start": 10.864,
+     "end": 11.028
+    },
+    {
+     "w": "SOMETHING.",
+     "start": 11.038,
+     "end": 11.529
+    }
+   ]
+  },
+  {
+   "text": "He replayed yesterday's chat. FIVE times.",
+   "sec": "cd",
+   "start": 11.88,
+   "end": 14.45,
+   "words": [
+    {
+     "w": "He",
+     "start": 11.88,
+     "end": 12.092
+    },
+    {
+     "w": "replayed",
+     "start": 12.105,
+     "end": 12.587
+    },
+    {
+     "w": "yesterday's",
+     "start": 12.618,
+     "end": 13.311
+    },
+    {
+     "w": "chat.",
+     "start": 13.355,
+     "end": 13.596
+    },
+    {
+     "w": "FIVE",
+     "start": 13.728,
+     "end": 13.969
+    },
+    {
+     "w": "times.",
+     "start": 13.984,
+     "end": 14.422
+    }
+   ]
+  },
+  {
+   "text": "But Arjun was missing one tiny piece of information.",
+   "sec": "cd",
+   "start": 14.77,
+   "end": 17.72,
+   "words": [
+    {
+     "w": "But",
+     "start": 14.77,
+     "end": 14.947
+    },
+    {
+     "w": "Arjun",
+     "start": 14.958,
+     "end": 15.301
+    },
+    {
+     "w": "was",
+     "start": 15.322,
+     "end": 15.499
+    },
+    {
+     "w": "missing",
+     "start": 15.511,
+     "end": 15.876
+    },
+    {
+     "w": "one",
+     "start": 15.899,
+     "end": 16.219
+    },
+    {
+     "w": "tiny",
+     "start": 16.239,
+     "end": 16.57
+    },
+    {
+     "w": "piece",
+     "start": 16.591,
+     "end": 16.791
+    },
+    {
+     "w": "of",
+     "start": 16.803,
+     "end": 16.969
+    },
+    {
+     "w": "information.",
+     "start": 16.979,
+     "end": 17.676
+    }
+   ]
+  },
+  {
+   "text": "Kabir had his headphones on. He never SAW him.",
+   "sec": "cd",
+   "start": 18.04,
+   "end": 20.67,
+   "words": [
+    {
+     "w": "Kabir",
+     "start": 18.04,
+     "end": 18.4
+    },
+    {
+     "w": "had",
+     "start": 18.423,
+     "end": 18.609
+    },
+    {
+     "w": "his",
+     "start": 18.621,
+     "end": 18.807
+    },
+    {
+     "w": "headphones",
+     "start": 18.819,
+     "end": 19.389
+    },
+    {
+     "w": "on.",
+     "start": 19.425,
+     "end": 19.599
+    },
+    {
+     "w": "He",
+     "start": 19.706,
+     "end": 19.88
+    },
+    {
+     "w": "never",
+     "start": 19.891,
+     "end": 20.251
+    },
+    {
+     "w": "SAW",
+     "start": 20.274,
+     "end": 20.46
+    },
+    {
+     "w": "him.",
+     "start": 20.472,
+     "end": 20.658
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call it mind READING: deciding what someone thinks, with zero evidence.",
+   "sec": "cd",
+   "start": 20.99,
+   "end": 26.31,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 20.99,
+     "end": 21.863
+    },
+    {
+     "w": "call",
+     "start": 21.918,
+     "end": 22.147
+    },
+    {
+     "w": "it",
+     "start": 22.162,
+     "end": 22.362
+    },
+    {
+     "w": "mind",
+     "start": 22.375,
+     "end": 22.604
+    },
+    {
+     "w": "READING:",
+     "start": 22.618,
+     "end": 23.062
+    },
+    {
+     "w": "deciding",
+     "start": 23.201,
+     "end": 23.831
+    },
+    {
+     "w": "what",
+     "start": 23.871,
+     "end": 24.1
+    },
+    {
+     "w": "someone",
+     "start": 24.114,
+     "end": 24.557
+    },
+    {
+     "w": "thinks,",
+     "start": 24.586,
+     "end": 24.842
+    },
+    {
+     "w": "with",
+     "start": 24.969,
+     "end": 25.198
+    },
+    {
+     "w": "zero",
+     "start": 25.212,
+     "end": 25.614
+    },
+    {
+     "w": "evidence.",
+     "start": 25.639,
+     "end": 26.27
+    }
+   ]
+  },
+  {
+   "text": "So ask before you assume. Arjun is still WORKING on it.",
+   "sec": "cd",
+   "start": 26.63,
+   "end": 29.96,
+   "words": [
+    {
+     "w": "So",
+     "start": 26.63,
+     "end": 26.821
+    },
+    {
+     "w": "ask",
+     "start": 26.833,
+     "end": 27.037
+    },
+    {
+     "w": "before",
+     "start": 27.05,
+     "end": 27.457
+    },
+    {
+     "w": "you",
+     "start": 27.483,
+     "end": 27.687
+    },
+    {
+     "w": "assume.",
+     "start": 27.7,
+     "end": 28.108
+    },
+    {
+     "w": "Arjun",
+     "start": 28.239,
+     "end": 28.634
+    },
+    {
+     "w": "is",
+     "start": 28.659,
+     "end": 28.849
+    },
+    {
+     "w": "still",
+     "start": 28.862,
+     "end": 29.092
+    },
+    {
+     "w": "WORKING",
+     "start": 29.107,
+     "end": 29.527
+    },
+    {
+     "w": "on",
+     "start": 29.554,
+     "end": 29.745
+    },
+    {
+     "w": "it.",
+     "start": 29.757,
+     "end": 29.948
+    }
+   ]
+  }
+ ]
+}

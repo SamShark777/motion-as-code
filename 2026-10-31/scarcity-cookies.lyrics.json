@@ -1,0 +1,544 @@
+{
+ "lines": [
+  {
+   "text": "Lila walks past a bakery sign: only TWO left.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.9,
+   "words": [
+    {
+     "w": "Lila",
+     "start": 0.15,
+     "end": 0.649
+    },
+    {
+     "w": "walks",
+     "start": 0.68,
+     "end": 0.981
+    },
+    {
+     "w": "past",
+     "start": 1.001,
+     "end": 1.284
+    },
+    {
+     "w": "a",
+     "start": 1.302,
+     "end": 1.535
+    },
+    {
+     "w": "bakery",
+     "start": 1.549,
+     "end": 2.297
+    },
+    {
+     "w": "sign:",
+     "start": 2.345,
+     "end": 2.629
+    },
+    {
+     "w": "only",
+     "start": 2.784,
+     "end": 3.283
+    },
+    {
+     "w": "TWO",
+     "start": 3.315,
+     "end": 3.581
+    },
+    {
+     "w": "left.",
+     "start": 3.598,
+     "end": 3.882
+    }
+   ]
+  },
+  {
+   "text": "She wasn't even HUNGRY.",
+   "sec": "cd",
+   "start": 4.22,
+   "end": 7.02,
+   "words": [
+    {
+     "w": "She",
+     "start": 4.22,
+     "end": 4.659
+    },
+    {
+     "w": "wasn't",
+     "start": 4.687,
+     "end": 5.182
+    },
+    {
+     "w": "even",
+     "start": 5.214,
+     "end": 6.034
+    },
+    {
+     "w": "HUNGRY.",
+     "start": 6.087,
+     "end": 6.964
+    }
+   ]
+  },
+  {
+   "text": "Then The Doubt whispers: what if they're GONE?",
+   "sec": "cd",
+   "start": 7.34,
+   "end": 10.34,
+   "words": [
+    {
+     "w": "Then",
+     "start": 7.34,
+     "end": 7.638
+    },
+    {
+     "w": "The",
+     "start": 7.657,
+     "end": 7.938
+    },
+    {
+     "w": "Doubt",
+     "start": 7.955,
+     "end": 8.272
+    },
+    {
+     "w": "whispers:",
+     "start": 8.292,
+     "end": 8.888
+    },
+    {
+     "w": "what",
+     "start": 9.071,
+     "end": 9.369
+    },
+    {
+     "w": "if",
+     "start": 9.388,
+     "end": 9.65
+    },
+    {
+     "w": "they're",
+     "start": 9.667,
+     "end": 10.001
+    },
+    {
+     "w": "GONE?",
+     "start": 10.023,
+     "end": 10.321
+    }
+   ]
+  },
+  {
+   "text": "She buys BOTH.",
+   "sec": "cd",
+   "start": 10.66,
+   "end": 12.64,
+   "words": [
+    {
+     "w": "She",
+     "start": 10.66,
+     "end": 11.255
+    },
+    {
+     "w": "buys",
+     "start": 11.293,
+     "end": 11.926
+    },
+    {
+     "w": "BOTH.",
+     "start": 11.966,
+     "end": 12.6
+    }
+   ]
+  },
+  {
+   "text": "But inside, Mae shows her a full TRAY of the same cookies.",
+   "sec": "cd",
+   "start": 12.96,
+   "end": 17.27,
+   "words": [
+    {
+     "w": "But",
+     "start": 12.96,
+     "end": 13.236
+    },
+    {
+     "w": "inside,",
+     "start": 13.254,
+     "end": 13.806
+    },
+    {
+     "w": "Mae",
+     "start": 13.983,
+     "end": 14.259
+    },
+    {
+     "w": "shows",
+     "start": 14.277,
+     "end": 14.588
+    },
+    {
+     "w": "her",
+     "start": 14.608,
+     "end": 14.884
+    },
+    {
+     "w": "a",
+     "start": 14.902,
+     "end": 15.142
+    },
+    {
+     "w": "full",
+     "start": 15.158,
+     "end": 15.451
+    },
+    {
+     "w": "TRAY",
+     "start": 15.47,
+     "end": 15.764
+    },
+    {
+     "w": "of",
+     "start": 15.783,
+     "end": 16.041
+    },
+    {
+     "w": "the",
+     "start": 16.058,
+     "end": 16.334
+    },
+    {
+     "w": "same",
+     "start": 16.351,
+     "end": 16.645
+    },
+    {
+     "w": "cookies.",
+     "start": 16.664,
+     "end": 17.234
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call this the SCARCITY effect.",
+   "sec": "cd",
+   "start": 17.59,
+   "end": 20.74,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 17.59,
+     "end": 18.582
+    },
+    {
+     "w": "call",
+     "start": 18.646,
+     "end": 18.905
+    },
+    {
+     "w": "this",
+     "start": 18.922,
+     "end": 19.182
+    },
+    {
+     "w": "the",
+     "start": 19.199,
+     "end": 19.443
+    },
+    {
+     "w": "SCARCITY",
+     "start": 19.458,
+     "end": 20.175
+    },
+    {
+     "w": "effect.",
+     "start": 20.221,
+     "end": 20.709
+    }
+   ]
+  },
+  {
+   "text": "In 1975, Worchel's team served cookies from a jar of ten, or just TWO.",
+   "sec": "cd",
+   "start": 21.06,
+   "end": 29.03,
+   "words": [
+    {
+     "w": "In",
+     "start": 21.06,
+     "end": 21.453
+    },
+    {
+     "w": "1975,",
+     "start": 21.478,
+     "end": 21.817
+    },
+    {
+     "w": "Worchel's",
+     "start": 22.054,
+     "end": 22.949
+    },
+    {
+     "w": "team",
+     "start": 23.006,
+     "end": 23.453
+    },
+    {
+     "w": "served",
+     "start": 23.481,
+     "end": 24.321
+    },
+    {
+     "w": "cookies",
+     "start": 24.375,
+     "end": 25.242
+    },
+    {
+     "w": "from",
+     "start": 25.297,
+     "end": 25.744
+    },
+    {
+     "w": "a",
+     "start": 25.773,
+     "end": 26.139
+    },
+    {
+     "w": "jar",
+     "start": 26.162,
+     "end": 26.582
+    },
+    {
+     "w": "of",
+     "start": 26.609,
+     "end": 27.002
+    },
+    {
+     "w": "ten,",
+     "start": 27.027,
+     "end": 27.447
+    },
+    {
+     "w": "or",
+     "start": 27.69,
+     "end": 28.083
+    },
+    {
+     "w": "just",
+     "start": 28.108,
+     "end": 28.555
+    },
+    {
+     "w": "TWO.",
+     "start": 28.583,
+     "end": 29.003
+    }
+   ]
+  },
+  {
+   "text": "Same cookies. The ones from the near-empty jar got rated more DESIRABLE.",
+   "sec": "cd",
+   "start": 29.35,
+   "end": 35.35,
+   "words": [
+    {
+     "w": "Same",
+     "start": 29.35,
+     "end": 29.645
+    },
+    {
+     "w": "cookies.",
+     "start": 29.664,
+     "end": 30.236
+    },
+    {
+     "w": "The",
+     "start": 30.415,
+     "end": 30.692
+    },
+    {
+     "w": "ones",
+     "start": 30.71,
+     "end": 31.228
+    },
+    {
+     "w": "from",
+     "start": 31.261,
+     "end": 31.556
+    },
+    {
+     "w": "the",
+     "start": 31.575,
+     "end": 31.852
+    },
+    {
+     "w": "near-empty",
+     "start": 31.87,
+     "end": 32.701
+    },
+    {
+     "w": "jar",
+     "start": 32.754,
+     "end": 33.031
+    },
+    {
+     "w": "got",
+     "start": 33.049,
+     "end": 33.326
+    },
+    {
+     "w": "rated",
+     "start": 33.344,
+     "end": 33.88
+    },
+    {
+     "w": "more",
+     "start": 33.914,
+     "end": 34.209
+    },
+    {
+     "w": "DESIRABLE.",
+     "start": 34.228,
+     "end": 35.283
+    }
+   ]
+  },
+  {
+   "text": "Even better when the jar emptied because others WANTED them.",
+   "sec": "cd",
+   "start": 35.67,
+   "end": 39.95,
+   "words": [
+    {
+     "w": "Even",
+     "start": 35.67,
+     "end": 36.137
+    },
+    {
+     "w": "better",
+     "start": 36.166,
+     "end": 36.665
+    },
+    {
+     "w": "when",
+     "start": 36.697,
+     "end": 36.963
+    },
+    {
+     "w": "the",
+     "start": 36.98,
+     "end": 37.229
+    },
+    {
+     "w": "jar",
+     "start": 37.245,
+     "end": 37.494
+    },
+    {
+     "w": "emptied",
+     "start": 37.51,
+     "end": 38.025
+    },
+    {
+     "w": "because",
+     "start": 38.058,
+     "end": 38.573
+    },
+    {
+     "w": "others",
+     "start": 38.606,
+     "end": 39.105
+    },
+    {
+     "w": "WANTED",
+     "start": 39.137,
+     "end": 39.636
+    },
+    {
+     "w": "them.",
+     "start": 39.668,
+     "end": 39.933
+    }
+   ]
+  },
+  {
+   "text": "Next \u201conly two left\u201d sign? Ask: would I want it if there were TEN?",
+   "sec": "cd",
+   "start": 40.27,
+   "end": 46.72,
+   "words": [
+    {
+     "w": "Next",
+     "start": 40.27,
+     "end": 40.669
+    },
+    {
+     "w": "\u201conly",
+     "start": 40.695,
+     "end": 41.397
+    },
+    {
+     "w": "two",
+     "start": 41.442,
+     "end": 41.817
+    },
+    {
+     "w": "left\u201d",
+     "start": 41.841,
+     "end": 42.24
+    },
+    {
+     "w": "sign?",
+     "start": 42.266,
+     "end": 42.665
+    },
+    {
+     "w": "Ask:",
+     "start": 42.883,
+     "end": 43.259
+    },
+    {
+     "w": "would",
+     "start": 43.476,
+     "end": 43.899
+    },
+    {
+     "w": "I",
+     "start": 43.926,
+     "end": 44.253
+    },
+    {
+     "w": "want",
+     "start": 44.274,
+     "end": 44.673
+    },
+    {
+     "w": "it",
+     "start": 44.699,
+     "end": 45.05
+    },
+    {
+     "w": "if",
+     "start": 45.072,
+     "end": 45.423
+    },
+    {
+     "w": "there",
+     "start": 45.445,
+     "end": 45.869
+    },
+    {
+     "w": "were",
+     "start": 45.896,
+     "end": 46.295
+    },
+    {
+     "w": "TEN?",
+     "start": 46.321,
+     "end": 46.696
+    }
+   ]
+  }
+ ]
+}

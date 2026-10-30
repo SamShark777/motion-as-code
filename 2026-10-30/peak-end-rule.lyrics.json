@@ -1,0 +1,577 @@
+{
+ "lines": [
+  {
+   "text": "Six perfect days of holiday. Then Arthur's flight home got CANCELLED.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 5.9,
+   "words": [
+    {
+     "w": "Six",
+     "start": 0.15,
+     "end": 0.454
+    },
+    {
+     "w": "perfect",
+     "start": 0.473,
+     "end": 1.1
+    },
+    {
+     "w": "days",
+     "start": 1.14,
+     "end": 1.463
+    },
+    {
+     "w": "of",
+     "start": 1.483,
+     "end": 1.767
+    },
+    {
+     "w": "holiday.",
+     "start": 1.785,
+     "end": 2.657
+    },
+    {
+     "w": "Then",
+     "start": 2.869,
+     "end": 3.192
+    },
+    {
+     "w": "Arthur's",
+     "start": 3.212,
+     "end": 3.839
+    },
+    {
+     "w": "flight",
+     "start": 3.879,
+     "end": 4.241
+    },
+    {
+     "w": "home",
+     "start": 4.265,
+     "end": 4.588
+    },
+    {
+     "w": "got",
+     "start": 4.608,
+     "end": 4.912
+    },
+    {
+     "w": "CANCELLED.",
+     "start": 4.931,
+     "end": 5.842
+    }
+   ]
+  },
+  {
+   "text": "He spent the night on an airport FLOOR.",
+   "sec": "cd",
+   "start": 6.22,
+   "end": 9.24,
+   "words": [
+    {
+     "w": "He",
+     "start": 6.22,
+     "end": 6.507
+    },
+    {
+     "w": "spent",
+     "start": 6.525,
+     "end": 6.871
+    },
+    {
+     "w": "the",
+     "start": 6.893,
+     "end": 7.2
+    },
+    {
+     "w": "night",
+     "start": 7.22,
+     "end": 7.566
+    },
+    {
+     "w": "on",
+     "start": 7.588,
+     "end": 7.875
+    },
+    {
+     "w": "an",
+     "start": 7.893,
+     "end": 8.18
+    },
+    {
+     "w": "airport",
+     "start": 8.198,
+     "end": 8.831
+    },
+    {
+     "w": "FLOOR.",
+     "start": 8.872,
+     "end": 9.218
+    }
+   ]
+  },
+  {
+   "text": "Monday, Mae asks how the TRIP was.",
+   "sec": "cd",
+   "start": 9.56,
+   "end": 11.97,
+   "words": [
+    {
+     "w": "Monday,",
+     "start": 9.56,
+     "end": 10.086
+    },
+    {
+     "w": "Mae",
+     "start": 10.255,
+     "end": 10.518
+    },
+    {
+     "w": "asks",
+     "start": 10.535,
+     "end": 10.815
+    },
+    {
+     "w": "how",
+     "start": 10.833,
+     "end": 11.096
+    },
+    {
+     "w": "the",
+     "start": 11.113,
+     "end": 11.376
+    },
+    {
+     "w": "TRIP",
+     "start": 11.392,
+     "end": 11.672
+    },
+    {
+     "w": "was.",
+     "start": 11.69,
+     "end": 11.953
+    }
+   ]
+  },
+  {
+   "text": "A total DISASTER.",
+   "sec": "cd",
+   "start": 12.29,
+   "end": 14.05,
+   "words": [
+    {
+     "w": "A",
+     "start": 12.29,
+     "end": 12.541
+    },
+    {
+     "w": "total",
+     "start": 12.557,
+     "end": 13.115
+    },
+    {
+     "w": "DISASTER.",
+     "start": 13.15,
+     "end": 13.996
+    }
+   ]
+  },
+  {
+   "text": "But six of his seven days were GREAT.",
+   "sec": "cd",
+   "start": 14.37,
+   "end": 16.7,
+   "words": [
+    {
+     "w": "But",
+     "start": 14.37,
+     "end": 14.61
+    },
+    {
+     "w": "six",
+     "start": 14.625,
+     "end": 14.865
+    },
+    {
+     "w": "of",
+     "start": 14.88,
+     "end": 15.105
+    },
+    {
+     "w": "his",
+     "start": 15.119,
+     "end": 15.359
+    },
+    {
+     "w": "seven",
+     "start": 15.374,
+     "end": 15.839
+    },
+    {
+     "w": "days",
+     "start": 15.868,
+     "end": 16.124
+    },
+    {
+     "w": "were",
+     "start": 16.14,
+     "end": 16.396
+    },
+    {
+     "w": "GREAT.",
+     "start": 16.412,
+     "end": 16.683
+    }
+   ]
+  },
+  {
+   "text": "His brain kept the worst moment, and the LAST one.",
+   "sec": "cd",
+   "start": 17.02,
+   "end": 20.15,
+   "words": [
+    {
+     "w": "His",
+     "start": 17.02,
+     "end": 17.252
+    },
+    {
+     "w": "brain",
+     "start": 17.267,
+     "end": 17.529
+    },
+    {
+     "w": "kept",
+     "start": 17.546,
+     "end": 17.793
+    },
+    {
+     "w": "the",
+     "start": 17.808,
+     "end": 18.041
+    },
+    {
+     "w": "worst",
+     "start": 18.055,
+     "end": 18.317
+    },
+    {
+     "w": "moment,",
+     "start": 18.334,
+     "end": 18.798
+    },
+    {
+     "w": "and",
+     "start": 18.947,
+     "end": 19.179
+    },
+    {
+     "w": "the",
+     "start": 19.194,
+     "end": 19.426
+    },
+    {
+     "w": "LAST",
+     "start": 19.441,
+     "end": 19.688
+    },
+    {
+     "w": "one.",
+     "start": 19.704,
+     "end": 20.123
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call this the PEAK-END rule.",
+   "sec": "cd",
+   "start": 20.47,
+   "end": 23.48,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 20.47,
+     "end": 21.503
+    },
+    {
+     "w": "call",
+     "start": 21.569,
+     "end": 21.84
+    },
+    {
+     "w": "this",
+     "start": 21.857,
+     "end": 22.128
+    },
+    {
+     "w": "the",
+     "start": 22.145,
+     "end": 22.399
+    },
+    {
+     "w": "PEAK-END",
+     "start": 22.416,
+     "end": 22.94
+    },
+    {
+     "w": "rule.",
+     "start": 22.974,
+     "end": 23.45
+    }
+   ]
+  },
+  {
+   "text": "In 1993, Kahneman's team had people hold a hand in ICY water.",
+   "sec": "cd",
+   "start": 23.8,
+   "end": 28.24,
+   "words": [
+    {
+     "w": "In",
+     "start": 23.8,
+     "end": 24.03
+    },
+    {
+     "w": "1993,",
+     "start": 24.045,
+     "end": 24.243
+    },
+    {
+     "w": "Kahneman's",
+     "start": 24.382,
+     "end": 25.12
+    },
+    {
+     "w": "team",
+     "start": 25.167,
+     "end": 25.429
+    },
+    {
+     "w": "had",
+     "start": 25.446,
+     "end": 25.692
+    },
+    {
+     "w": "people",
+     "start": 25.708,
+     "end": 26.2
+    },
+    {
+     "w": "hold",
+     "start": 26.231,
+     "end": 26.493
+    },
+    {
+     "w": "a",
+     "start": 26.51,
+     "end": 26.724
+    },
+    {
+     "w": "hand",
+     "start": 26.737,
+     "end": 26.999
+    },
+    {
+     "w": "in",
+     "start": 27.016,
+     "end": 27.246
+    },
+    {
+     "w": "ICY",
+     "start": 27.261,
+     "end": 27.705
+    },
+    {
+     "w": "water.",
+     "start": 27.734,
+     "end": 28.21
+    }
+   ]
+  },
+  {
+   "text": "Once for 60 seconds. Once for 90, ending a bit WARMER.",
+   "sec": "cd",
+   "start": 28.56,
+   "end": 33.37,
+   "words": [
+    {
+     "w": "Once",
+     "start": 28.56,
+     "end": 28.889
+    },
+    {
+     "w": "for",
+     "start": 28.91,
+     "end": 29.218
+    },
+    {
+     "w": "60",
+     "start": 29.238,
+     "end": 29.487
+    },
+    {
+     "w": "seconds.",
+     "start": 29.503,
+     "end": 30.14
+    },
+    {
+     "w": "Once",
+     "start": 30.34,
+     "end": 30.669
+    },
+    {
+     "w": "for",
+     "start": 30.69,
+     "end": 30.998
+    },
+    {
+     "w": "90,",
+     "start": 31.018,
+     "end": 31.267
+    },
+    {
+     "w": "ending",
+     "start": 31.442,
+     "end": 32.059
+    },
+    {
+     "w": "a",
+     "start": 32.099,
+     "end": 32.368
+    },
+    {
+     "w": "bit",
+     "start": 32.385,
+     "end": 32.693
+    },
+    {
+     "w": "WARMER.",
+     "start": 32.713,
+     "end": 33.331
+    }
+   ]
+  },
+  {
+   "text": "Nearly 7 in 10 chose to REPEAT the longer one.",
+   "sec": "cd",
+   "start": 33.69,
+   "end": 37.11,
+   "words": [
+    {
+     "w": "Nearly",
+     "start": 33.69,
+     "end": 34.169
+    },
+    {
+     "w": "7",
+     "start": 34.2,
+     "end": 34.393
+    },
+    {
+     "w": "in",
+     "start": 34.405,
+     "end": 34.629
+    },
+    {
+     "w": "10",
+     "start": 34.644,
+     "end": 34.837
+    },
+    {
+     "w": "chose",
+     "start": 34.849,
+     "end": 35.12
+    },
+    {
+     "w": "to",
+     "start": 35.137,
+     "end": 35.361
+    },
+    {
+     "w": "REPEAT",
+     "start": 35.375,
+     "end": 35.854
+    },
+    {
+     "w": "the",
+     "start": 35.885,
+     "end": 36.125
+    },
+    {
+     "w": "longer",
+     "start": 36.14,
+     "end": 36.619
+    },
+    {
+     "w": "one.",
+     "start": 36.65,
+     "end": 37.082
+    }
+   ]
+  },
+  {
+   "text": "Mae's tip? End every date, workout or meeting on a HIGH.",
+   "sec": "cd",
+   "start": 37.43,
+   "end": 42.44,
+   "words": [
+    {
+     "w": "Mae's",
+     "start": 37.43,
+     "end": 37.748
+    },
+    {
+     "w": "tip?",
+     "start": 37.768,
+     "end": 38.067
+    },
+    {
+     "w": "End",
+     "start": 38.239,
+     "end": 38.538
+    },
+    {
+     "w": "every",
+     "start": 38.557,
+     "end": 39.376
+    },
+    {
+     "w": "date,",
+     "start": 39.428,
+     "end": 39.746
+    },
+    {
+     "w": "workout",
+     "start": 39.92,
+     "end": 40.536
+    },
+    {
+     "w": "or",
+     "start": 40.575,
+     "end": 40.855
+    },
+    {
+     "w": "meeting",
+     "start": 40.872,
+     "end": 41.489
+    },
+    {
+     "w": "on",
+     "start": 41.528,
+     "end": 41.807
+    },
+    {
+     "w": "a",
+     "start": 41.825,
+     "end": 42.085
+    },
+    {
+     "w": "HIGH.",
+     "start": 42.102,
+     "end": 42.42
+    }
+   ]
+  }
+ ]
+}

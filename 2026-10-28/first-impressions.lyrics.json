@@ -1,0 +1,554 @@
+{
+ "lines": [
+  {
+   "text": "Rosa rehearsed FORTY answers for her interview.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.02,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 0.15,
+     "end": 0.514
+    },
+    {
+     "w": "rehearsed",
+     "start": 0.537,
+     "end": 1.121
+    },
+    {
+     "w": "FORTY",
+     "start": 1.158,
+     "end": 1.534
+    },
+    {
+     "w": "answers",
+     "start": 1.558,
+     "end": 1.96
+    },
+    {
+     "w": "for",
+     "start": 1.985,
+     "end": 2.18
+    },
+    {
+     "w": "her",
+     "start": 2.192,
+     "end": 2.387
+    },
+    {
+     "w": "interview.",
+     "start": 2.399,
+     "end": 2.983
+    }
+   ]
+  },
+  {
+   "text": "Nia laughs. They'll judge your FACE first.",
+   "sec": "cd",
+   "start": 3.34,
+   "end": 6.67,
+   "words": [
+    {
+     "w": "Nia",
+     "start": 3.34,
+     "end": 3.719
+    },
+    {
+     "w": "laughs.",
+     "start": 3.743,
+     "end": 4.196
+    },
+    {
+     "w": "They'll",
+     "start": 4.42,
+     "end": 4.872
+    },
+    {
+     "w": "judge",
+     "start": 4.901,
+     "end": 5.329
+    },
+    {
+     "w": "your",
+     "start": 5.356,
+     "end": 5.76
+    },
+    {
+     "w": "FACE",
+     "start": 5.785,
+     "end": 6.189
+    },
+    {
+     "w": "first.",
+     "start": 6.215,
+     "end": 6.643
+    }
+   ]
+  },
+  {
+   "text": "Fact one. People judge if a face looks trustworthy in a TENTH of a second.",
+   "sec": "cd",
+   "start": 6.99,
+   "end": 13.09,
+   "words": [
+    {
+     "w": "Fact",
+     "start": 6.99,
+     "end": 7.29
+    },
+    {
+     "w": "one.",
+     "start": 7.309,
+     "end": 7.818
+    },
+    {
+     "w": "People",
+     "start": 7.995,
+     "end": 8.559
+    },
+    {
+     "w": "judge",
+     "start": 8.595,
+     "end": 8.913
+    },
+    {
+     "w": "if",
+     "start": 8.933,
+     "end": 9.197
+    },
+    {
+     "w": "a",
+     "start": 9.213,
+     "end": 9.459
+    },
+    {
+     "w": "face",
+     "start": 9.474,
+     "end": 9.774
+    },
+    {
+     "w": "looks",
+     "start": 9.793,
+     "end": 10.112
+    },
+    {
+     "w": "trustworthy",
+     "start": 10.132,
+     "end": 11.013
+    },
+    {
+     "w": "in",
+     "start": 11.07,
+     "end": 11.333
+    },
+    {
+     "w": "a",
+     "start": 11.35,
+     "end": 11.595
+    },
+    {
+     "w": "TENTH",
+     "start": 11.611,
+     "end": 11.929
+    },
+    {
+     "w": "of",
+     "start": 11.949,
+     "end": 12.213
+    },
+    {
+     "w": "a",
+     "start": 12.23,
+     "end": 12.475
+    },
+    {
+     "w": "second.",
+     "start": 12.491,
+     "end": 13.054
+    }
+   ]
+  },
+  {
+   "text": "Fact two. More time barely changes it. It just makes them more SURE.",
+   "sec": "cd",
+   "start": 13.41,
+   "end": 20.11,
+   "words": [
+    {
+     "w": "Fact",
+     "start": 13.41,
+     "end": 13.78
+    },
+    {
+     "w": "two.",
+     "start": 13.804,
+     "end": 14.152
+    },
+    {
+     "w": "More",
+     "start": 14.353,
+     "end": 14.724
+    },
+    {
+     "w": "time",
+     "start": 14.748,
+     "end": 15.118
+    },
+    {
+     "w": "barely",
+     "start": 15.142,
+     "end": 16.118
+    },
+    {
+     "w": "changes",
+     "start": 16.181,
+     "end": 16.899
+    },
+    {
+     "w": "it.",
+     "start": 16.945,
+     "end": 17.271
+    },
+    {
+     "w": "It",
+     "start": 17.471,
+     "end": 17.796
+    },
+    {
+     "w": "just",
+     "start": 17.817,
+     "end": 18.187
+    },
+    {
+     "w": "makes",
+     "start": 18.211,
+     "end": 18.885
+    },
+    {
+     "w": "them",
+     "start": 18.928,
+     "end": 19.298
+    },
+    {
+     "w": "more",
+     "start": 19.322,
+     "end": 19.692
+    },
+    {
+     "w": "SURE.",
+     "start": 19.716,
+     "end": 20.086
+    }
+   ]
+  },
+  {
+   "text": "Rosa panics. So it's HOPELESS?",
+   "sec": "cd",
+   "start": 20.43,
+   "end": 23.52,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 20.43,
+     "end": 21.019
+    },
+    {
+     "w": "panics.",
+     "start": 21.057,
+     "end": 21.686
+    },
+    {
+     "w": "So",
+     "start": 21.889,
+     "end": 22.183
+    },
+    {
+     "w": "it's",
+     "start": 22.202,
+     "end": 22.517
+    },
+    {
+     "w": "HOPELESS?",
+     "start": 22.537,
+     "end": 23.461
+    }
+   ]
+  },
+  {
+   "text": "But fact three is the GOOD news.",
+   "sec": "cd",
+   "start": 23.84,
+   "end": 25.9,
+   "words": [
+    {
+     "w": "But",
+     "start": 23.84,
+     "end": 24.107
+    },
+    {
+     "w": "fact",
+     "start": 24.124,
+     "end": 24.408
+    },
+    {
+     "w": "three",
+     "start": 24.426,
+     "end": 24.727
+    },
+    {
+     "w": "is",
+     "start": 24.746,
+     "end": 24.996
+    },
+    {
+     "w": "the",
+     "start": 25.012,
+     "end": 25.279
+    },
+    {
+     "w": "GOOD",
+     "start": 25.296,
+     "end": 25.58
+    },
+    {
+     "w": "news.",
+     "start": 25.598,
+     "end": 25.882
+    }
+   ]
+  },
+  {
+   "text": "Students watched the same lecturer act warm or COLD.",
+   "sec": "cd",
+   "start": 26.22,
+   "end": 30.18,
+   "words": [
+    {
+     "w": "Students",
+     "start": 26.22,
+     "end": 26.818
+    },
+    {
+     "w": "watched",
+     "start": 26.856,
+     "end": 27.436
+    },
+    {
+     "w": "the",
+     "start": 27.473,
+     "end": 27.753
+    },
+    {
+     "w": "same",
+     "start": 27.771,
+     "end": 28.07
+    },
+    {
+     "w": "lecturer",
+     "start": 28.089,
+     "end": 28.913
+    },
+    {
+     "w": "act",
+     "start": 28.966,
+     "end": 29.247
+    },
+    {
+     "w": "warm",
+     "start": 29.265,
+     "end": 29.564
+    },
+    {
+     "w": "or",
+     "start": 29.583,
+     "end": 29.845
+    },
+    {
+     "w": "COLD.",
+     "start": 29.862,
+     "end": 30.161
+    }
+   ]
+  },
+  {
+   "text": "Warm, they rated his looks and accent far more APPEALING.",
+   "sec": "cd",
+   "start": 30.5,
+   "end": 35.13,
+   "words": [
+    {
+     "w": "Warm,",
+     "start": 30.5,
+     "end": 30.814
+    },
+    {
+     "w": "they",
+     "start": 30.986,
+     "end": 31.301
+    },
+    {
+     "w": "rated",
+     "start": 31.321,
+     "end": 31.892
+    },
+    {
+     "w": "his",
+     "start": 31.929,
+     "end": 32.224
+    },
+    {
+     "w": "looks",
+     "start": 32.243,
+     "end": 32.576
+    },
+    {
+     "w": "and",
+     "start": 32.597,
+     "end": 32.892
+    },
+    {
+     "w": "accent",
+     "start": 32.911,
+     "end": 33.502
+    },
+    {
+     "w": "far",
+     "start": 33.539,
+     "end": 33.835
+    },
+    {
+     "w": "more",
+     "start": 33.853,
+     "end": 34.168
+    },
+    {
+     "w": "APPEALING.",
+     "start": 34.188,
+     "end": 35.073
+    }
+   ]
+  },
+  {
+   "text": "That's the HALO effect. One good trait colours the rest.",
+   "sec": "cd",
+   "start": 35.45,
+   "end": 39.18,
+   "words": [
+    {
+     "w": "That's",
+     "start": 35.45,
+     "end": 35.721
+    },
+    {
+     "w": "the",
+     "start": 35.738,
+     "end": 35.978
+    },
+    {
+     "w": "HALO",
+     "start": 35.993,
+     "end": 36.442
+    },
+    {
+     "w": "effect.",
+     "start": 36.471,
+     "end": 36.951
+    },
+    {
+     "w": "One",
+     "start": 37.105,
+     "end": 37.538
+    },
+    {
+     "w": "good",
+     "start": 37.566,
+     "end": 37.822
+    },
+    {
+     "w": "trait",
+     "start": 37.838,
+     "end": 38.109
+    },
+    {
+     "w": "colours",
+     "start": 38.126,
+     "end": 38.621
+    },
+    {
+     "w": "the",
+     "start": 38.653,
+     "end": 38.893
+    },
+    {
+     "w": "rest.",
+     "start": 38.908,
+     "end": 39.164
+    }
+   ]
+  },
+  {
+   "text": "So Rosa bins the script, and SMILES at the receptionist first.",
+   "sec": "cd",
+   "start": 39.5,
+   "end": 45.48,
+   "words": [
+    {
+     "w": "So",
+     "start": 39.5,
+     "end": 39.817
+    },
+    {
+     "w": "Rosa",
+     "start": 39.837,
+     "end": 40.47
+    },
+    {
+     "w": "bins",
+     "start": 40.51,
+     "end": 40.87
+    },
+    {
+     "w": "the",
+     "start": 40.893,
+     "end": 41.232
+    },
+    {
+     "w": "script,",
+     "start": 41.253,
+     "end": 41.657
+    },
+    {
+     "w": "and",
+     "start": 41.857,
+     "end": 42.196
+    },
+    {
+     "w": "SMILES",
+     "start": 42.217,
+     "end": 42.894
+    },
+    {
+     "w": "at",
+     "start": 42.937,
+     "end": 43.254
+    },
+    {
+     "w": "the",
+     "start": 43.274,
+     "end": 43.612
+    },
+    {
+     "w": "receptionist",
+     "start": 43.634,
+     "end": 44.987
+    },
+    {
+     "w": "first.",
+     "start": 45.074,
+     "end": 45.456
+    }
+   ]
+  }
+ ]
+}

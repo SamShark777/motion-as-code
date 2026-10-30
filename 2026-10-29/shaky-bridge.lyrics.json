@@ -1,0 +1,556 @@
+{
+ "lines": [
+  {
+   "text": "Milo's first date is in two days. Theo says: make it SCARY.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.88,
+   "words": [
+    {
+     "w": "Milo's",
+     "start": 0.15,
+     "end": 0.6
+    },
+    {
+     "w": "first",
+     "start": 0.628,
+     "end": 0.89
+    },
+    {
+     "w": "date",
+     "start": 0.907,
+     "end": 1.154
+    },
+    {
+     "w": "is",
+     "start": 1.17,
+     "end": 1.387
+    },
+    {
+     "w": "in",
+     "start": 1.401,
+     "end": 1.619
+    },
+    {
+     "w": "two",
+     "start": 1.632,
+     "end": 1.865
+    },
+    {
+     "w": "days.",
+     "start": 1.88,
+     "end": 2.127
+    },
+    {
+     "w": "Theo",
+     "start": 2.262,
+     "end": 2.509
+    },
+    {
+     "w": "says:",
+     "start": 2.525,
+     "end": 2.772
+    },
+    {
+     "w": "make",
+     "start": 2.908,
+     "end": 3.155
+    },
+    {
+     "w": "it",
+     "start": 3.171,
+     "end": 3.388
+    },
+    {
+     "w": "SCARY.",
+     "start": 3.402,
+     "end": 3.851
+    }
+   ]
+  },
+  {
+   "text": "Milo thinks that's the worst advice he's ever HEARD.",
+   "sec": "cd",
+   "start": 4.2,
+   "end": 6.88,
+   "words": [
+    {
+     "w": "Milo",
+     "start": 4.2,
+     "end": 4.582
+    },
+    {
+     "w": "thinks",
+     "start": 4.607,
+     "end": 4.851
+    },
+    {
+     "w": "that's",
+     "start": 4.866,
+     "end": 5.097
+    },
+    {
+     "w": "the",
+     "start": 5.112,
+     "end": 5.316
+    },
+    {
+     "w": "worst",
+     "start": 5.33,
+     "end": 5.56
+    },
+    {
+     "w": "advice",
+     "start": 5.575,
+     "end": 5.984
+    },
+    {
+     "w": "he's",
+     "start": 6.01,
+     "end": 6.214
+    },
+    {
+     "w": "ever",
+     "start": 6.228,
+     "end": 6.61
+    },
+    {
+     "w": "HEARD.",
+     "start": 6.634,
+     "end": 6.865
+    }
+   ]
+  },
+  {
+   "text": "In 1974, researchers Dutton and Aron sent a woman to interview men on a SHAKY bridge.",
+   "sec": "cd",
+   "start": 7.2,
+   "end": 13.29,
+   "words": [
+    {
+     "w": "In",
+     "start": 7.2,
+     "end": 7.423
+    },
+    {
+     "w": "1974,",
+     "start": 7.438,
+     "end": 7.63
+    },
+    {
+     "w": "researchers",
+     "start": 7.766,
+     "end": 8.513
+    },
+    {
+     "w": "Dutton",
+     "start": 8.561,
+     "end": 9.038
+    },
+    {
+     "w": "and",
+     "start": 9.069,
+     "end": 9.308
+    },
+    {
+     "w": "Aron",
+     "start": 9.323,
+     "end": 9.77
+    },
+    {
+     "w": "sent",
+     "start": 9.798,
+     "end": 10.053
+    },
+    {
+     "w": "a",
+     "start": 10.069,
+     "end": 10.277
+    },
+    {
+     "w": "woman",
+     "start": 10.29,
+     "end": 10.752
+    },
+    {
+     "w": "to",
+     "start": 10.782,
+     "end": 11.005
+    },
+    {
+     "w": "interview",
+     "start": 11.02,
+     "end": 11.736
+    },
+    {
+     "w": "men",
+     "start": 11.782,
+     "end": 12.021
+    },
+    {
+     "w": "on",
+     "start": 12.036,
+     "end": 12.259
+    },
+    {
+     "w": "a",
+     "start": 12.274,
+     "end": 12.482
+    },
+    {
+     "w": "SHAKY",
+     "start": 12.495,
+     "end": 12.957
+    },
+    {
+     "w": "bridge.",
+     "start": 12.987,
+     "end": 13.272
+    }
+   ]
+  },
+  {
+   "text": "She gave each man her NUMBER, in case he had questions.",
+   "sec": "cd",
+   "start": 13.61,
+   "end": 16.6,
+   "words": [
+    {
+     "w": "She",
+     "start": 13.61,
+     "end": 13.815
+    },
+    {
+     "w": "gave",
+     "start": 13.828,
+     "end": 14.045
+    },
+    {
+     "w": "each",
+     "start": 14.059,
+     "end": 14.277
+    },
+    {
+     "w": "man",
+     "start": 14.291,
+     "end": 14.495
+    },
+    {
+     "w": "her",
+     "start": 14.508,
+     "end": 14.713
+    },
+    {
+     "w": "NUMBER,",
+     "start": 14.726,
+     "end": 15.135
+    },
+    {
+     "w": "in",
+     "start": 15.266,
+     "end": 15.458
+    },
+    {
+     "w": "case",
+     "start": 15.47,
+     "end": 15.688
+    },
+    {
+     "w": "he",
+     "start": 15.702,
+     "end": 15.893
+    },
+    {
+     "w": "had",
+     "start": 15.905,
+     "end": 16.11
+    },
+    {
+     "w": "questions.",
+     "start": 16.123,
+     "end": 16.571
+    }
+   ]
+  },
+  {
+   "text": "On a solid, low bridge, about one in eight CALLED.",
+   "sec": "cd",
+   "start": 16.92,
+   "end": 19.62,
+   "words": [
+    {
+     "w": "On",
+     "start": 16.92,
+     "end": 17.081
+    },
+    {
+     "w": "a",
+     "start": 17.092,
+     "end": 17.242
+    },
+    {
+     "w": "solid,",
+     "start": 17.252,
+     "end": 17.586
+    },
+    {
+     "w": "low",
+     "start": 17.696,
+     "end": 17.868
+    },
+    {
+     "w": "bridge,",
+     "start": 17.879,
+     "end": 18.085
+    },
+    {
+     "w": "about",
+     "start": 18.187,
+     "end": 18.521
+    },
+    {
+     "w": "one",
+     "start": 18.542,
+     "end": 18.854
+    },
+    {
+     "w": "in",
+     "start": 18.874,
+     "end": 19.035
+    },
+    {
+     "w": "eight",
+     "start": 19.046,
+     "end": 19.24
+    },
+    {
+     "w": "CALLED.",
+     "start": 19.253,
+     "end": 19.598
+    }
+   ]
+  },
+  {
+   "text": "But on the shaky one? HALF of them called.",
+   "sec": "cd",
+   "start": 19.94,
+   "end": 22.06,
+   "words": [
+    {
+     "w": "But",
+     "start": 19.94,
+     "end": 20.103
+    },
+    {
+     "w": "on",
+     "start": 20.113,
+     "end": 20.266
+    },
+    {
+     "w": "the",
+     "start": 20.276,
+     "end": 20.439
+    },
+    {
+     "w": "shaky",
+     "start": 20.449,
+     "end": 20.765
+    },
+    {
+     "w": "one?",
+     "start": 20.785,
+     "end": 21.079
+    },
+    {
+     "w": "HALF",
+     "start": 21.182,
+     "end": 21.355
+    },
+    {
+     "w": "of",
+     "start": 21.366,
+     "end": 21.519
+    },
+    {
+     "w": "them",
+     "start": 21.529,
+     "end": 21.702
+    },
+    {
+     "w": "called.",
+     "start": 21.713,
+     "end": 22.039
+    }
+   ]
+  },
+  {
+   "text": "Their racing hearts came from the bridge. They BLAMED her.",
+   "sec": "cd",
+   "start": 22.38,
+   "end": 25.09,
+   "words": [
+    {
+     "w": "Their",
+     "start": 22.38,
+     "end": 22.598
+    },
+    {
+     "w": "racing",
+     "start": 22.612,
+     "end": 22.998
+    },
+    {
+     "w": "hearts",
+     "start": 23.023,
+     "end": 23.253
+    },
+    {
+     "w": "came",
+     "start": 23.268,
+     "end": 23.473
+    },
+    {
+     "w": "from",
+     "start": 23.487,
+     "end": 23.692
+    },
+    {
+     "w": "the",
+     "start": 23.705,
+     "end": 23.898
+    },
+    {
+     "w": "bridge.",
+     "start": 23.911,
+     "end": 24.141
+    },
+    {
+     "w": "They",
+     "start": 24.255,
+     "end": 24.461
+    },
+    {
+     "w": "BLAMED",
+     "start": 24.474,
+     "end": 24.86
+    },
+    {
+     "w": "her.",
+     "start": 24.885,
+     "end": 25.078
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call it MISATTRIBUTION of arousal.",
+   "sec": "cd",
+   "start": 25.41,
+   "end": 28.19,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 25.41,
+     "end": 26.127
+    },
+    {
+     "w": "call",
+     "start": 26.173,
+     "end": 26.361
+    },
+    {
+     "w": "it",
+     "start": 26.373,
+     "end": 26.538
+    },
+    {
+     "w": "MISATTRIBUTION",
+     "start": 26.549,
+     "end": 27.42
+    },
+    {
+     "w": "of",
+     "start": 27.475,
+     "end": 27.64
+    },
+    {
+     "w": "arousal.",
+     "start": 27.651,
+     "end": 28.158
+    }
+   ]
+  },
+  {
+   "text": "So Milo books an escape room. Then remembers he's SCARED of the dark.",
+   "sec": "cd",
+   "start": 28.51,
+   "end": 32.28,
+   "words": [
+    {
+     "w": "So",
+     "start": 28.51,
+     "end": 28.689
+    },
+    {
+     "w": "Milo",
+     "start": 28.701,
+     "end": 29.06
+    },
+    {
+     "w": "books",
+     "start": 29.082,
+     "end": 29.299
+    },
+    {
+     "w": "an",
+     "start": 29.313,
+     "end": 29.492
+    },
+    {
+     "w": "escape",
+     "start": 29.503,
+     "end": 29.887
+    },
+    {
+     "w": "room.",
+     "start": 29.911,
+     "end": 30.116
+    },
+    {
+     "w": "Then",
+     "start": 30.227,
+     "end": 30.431
+    },
+    {
+     "w": "remembers",
+     "start": 30.444,
+     "end": 31.02
+    },
+    {
+     "w": "he's",
+     "start": 31.056,
+     "end": 31.248
+    },
+    {
+     "w": "SCARED",
+     "start": 31.26,
+     "end": 31.644
+    },
+    {
+     "w": "of",
+     "start": 31.668,
+     "end": 31.847
+    },
+    {
+     "w": "the",
+     "start": 31.859,
+     "end": 32.051
+    },
+    {
+     "w": "dark.",
+     "start": 32.063,
+     "end": 32.267
+    }
+   ]
+  }
+ ]
+}

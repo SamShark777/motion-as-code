@@ -1,0 +1,506 @@
+{
+ "lines": [
+  {
+   "text": "Otto says no test can TRICK him.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 1.84,
+   "words": [
+    {
+     "w": "Otto",
+     "start": 0.15,
+     "end": 0.519
+    },
+    {
+     "w": "says",
+     "start": 0.542,
+     "end": 0.752
+    },
+    {
+     "w": "no",
+     "start": 0.765,
+     "end": 0.949
+    },
+    {
+     "w": "test",
+     "start": 0.961,
+     "end": 1.171
+    },
+    {
+     "w": "can",
+     "start": 1.184,
+     "end": 1.381
+    },
+    {
+     "w": "TRICK",
+     "start": 1.394,
+     "end": 1.616
+    },
+    {
+     "w": "him.",
+     "start": 1.63,
+     "end": 1.827
+    }
+   ]
+  },
+  {
+   "text": "So Lila holds up a card. Say the COLOUR, not the word.",
+   "sec": "cd",
+   "start": 2.16,
+   "end": 5.19,
+   "words": [
+    {
+     "w": "So",
+     "start": 2.16,
+     "end": 2.34
+    },
+    {
+     "w": "Lila",
+     "start": 2.351,
+     "end": 2.71
+    },
+    {
+     "w": "holds",
+     "start": 2.733,
+     "end": 2.95
+    },
+    {
+     "w": "up",
+     "start": 2.964,
+     "end": 3.143
+    },
+    {
+     "w": "a",
+     "start": 3.155,
+     "end": 3.322
+    },
+    {
+     "w": "card.",
+     "start": 3.332,
+     "end": 3.537
+    },
+    {
+     "w": "Say",
+     "start": 3.649,
+     "end": 3.841
+    },
+    {
+     "w": "the",
+     "start": 3.853,
+     "end": 4.045
+    },
+    {
+     "w": "COLOUR,",
+     "start": 4.057,
+     "end": 4.441
+    },
+    {
+     "w": "not",
+     "start": 4.564,
+     "end": 4.756
+    },
+    {
+     "w": "the",
+     "start": 4.768,
+     "end": 4.96
+    },
+    {
+     "w": "word.",
+     "start": 4.973,
+     "end": 5.177
+    }
+   ]
+  },
+  {
+   "text": "Try it with him. GO.",
+   "sec": "cd",
+   "start": 5.51,
+   "end": 6.86,
+   "words": [
+    {
+     "w": "Try",
+     "start": 5.51,
+     "end": 5.744
+    },
+    {
+     "w": "it",
+     "start": 5.759,
+     "end": 5.978
+    },
+    {
+     "w": "with",
+     "start": 5.992,
+     "end": 6.241
+    },
+    {
+     "w": "him.",
+     "start": 6.257,
+     "end": 6.491
+    },
+    {
+     "w": "GO.",
+     "start": 6.627,
+     "end": 6.846
+    }
+   ]
+  },
+  {
+   "text": "Otto reads the WORD. Every time.",
+   "sec": "cd",
+   "start": 7.18,
+   "end": 9.18,
+   "words": [
+    {
+     "w": "Otto",
+     "start": 7.18,
+     "end": 7.556
+    },
+    {
+     "w": "reads",
+     "start": 7.58,
+     "end": 7.807
+    },
+    {
+     "w": "the",
+     "start": 7.821,
+     "end": 8.022
+    },
+    {
+     "w": "WORD.",
+     "start": 8.035,
+     "end": 8.249
+    },
+    {
+     "w": "Every",
+     "start": 8.366,
+     "end": 8.917
+    },
+    {
+     "w": "time.",
+     "start": 8.952,
+     "end": 9.166
+    }
+   ]
+  },
+  {
+   "text": "In 1935, John Ridley Stroop timed a hundred students on EXACTLY this.",
+   "sec": "cd",
+   "start": 9.5,
+   "end": 14.65,
+   "words": [
+    {
+     "w": "In",
+     "start": 9.5,
+     "end": 9.747
+    },
+    {
+     "w": "1935,",
+     "start": 9.762,
+     "end": 9.975
+    },
+    {
+     "w": "John",
+     "start": 10.125,
+     "end": 10.405
+    },
+    {
+     "w": "Ridley",
+     "start": 10.423,
+     "end": 10.951
+    },
+    {
+     "w": "Stroop",
+     "start": 10.984,
+     "end": 11.299
+    },
+    {
+     "w": "timed",
+     "start": 11.319,
+     "end": 11.83
+    },
+    {
+     "w": "a",
+     "start": 11.862,
+     "end": 12.092
+    },
+    {
+     "w": "hundred",
+     "start": 12.107,
+     "end": 12.651
+    },
+    {
+     "w": "students",
+     "start": 12.686,
+     "end": 13.247
+    },
+    {
+     "w": "on",
+     "start": 13.283,
+     "end": 13.53
+    },
+    {
+     "w": "EXACTLY",
+     "start": 13.546,
+     "end": 14.303
+    },
+    {
+     "w": "this.",
+     "start": 14.351,
+     "end": 14.632
+    }
+   ]
+  },
+  {
+   "text": "Naming the ink took them about 74 percent LONGER when the word said another colour.",
+   "sec": "cd",
+   "start": 14.97,
+   "end": 19.77,
+   "words": [
+    {
+     "w": "Naming",
+     "start": 14.97,
+     "end": 15.38
+    },
+    {
+     "w": "the",
+     "start": 15.406,
+     "end": 15.611
+    },
+    {
+     "w": "ink",
+     "start": 15.625,
+     "end": 15.83
+    },
+    {
+     "w": "took",
+     "start": 15.843,
+     "end": 16.061
+    },
+    {
+     "w": "them",
+     "start": 16.075,
+     "end": 16.293
+    },
+    {
+     "w": "about",
+     "start": 16.307,
+     "end": 16.704
+    },
+    {
+     "w": "74",
+     "start": 16.729,
+     "end": 16.895
+    },
+    {
+     "w": "percent",
+     "start": 16.905,
+     "end": 17.329
+    },
+    {
+     "w": "LONGER",
+     "start": 17.356,
+     "end": 17.766
+    },
+    {
+     "w": "when",
+     "start": 17.792,
+     "end": 18.011
+    },
+    {
+     "w": "the",
+     "start": 18.025,
+     "end": 18.23
+    },
+    {
+     "w": "word",
+     "start": 18.243,
+     "end": 18.461
+    },
+    {
+     "w": "said",
+     "start": 18.475,
+     "end": 18.693
+    },
+    {
+     "w": "another",
+     "start": 18.707,
+     "end": 19.296
+    },
+    {
+     "w": "colour.",
+     "start": 19.334,
+     "end": 19.744
+    }
+   ]
+  },
+  {
+   "text": "But Otto isn't slow. Reading is just so AUTOMATIC, you can't switch it off.",
+   "sec": "cd",
+   "start": 20.09,
+   "end": 24.53,
+   "words": [
+    {
+     "w": "But",
+     "start": 20.09,
+     "end": 20.299
+    },
+    {
+     "w": "Otto",
+     "start": 20.312,
+     "end": 20.703
+    },
+    {
+     "w": "isn't",
+     "start": 20.728,
+     "end": 20.951
+    },
+    {
+     "w": "slow.",
+     "start": 20.965,
+     "end": 21.188
+    },
+    {
+     "w": "Reading",
+     "start": 21.309,
+     "end": 21.741
+    },
+    {
+     "w": "is",
+     "start": 21.768,
+     "end": 21.964
+    },
+    {
+     "w": "just",
+     "start": 21.976,
+     "end": 22.199
+    },
+    {
+     "w": "so",
+     "start": 22.213,
+     "end": 22.409
+    },
+    {
+     "w": "AUTOMATIC,",
+     "start": 22.421,
+     "end": 23.217
+    },
+    {
+     "w": "you",
+     "start": 23.375,
+     "end": 23.584
+    },
+    {
+     "w": "can't",
+     "start": 23.597,
+     "end": 23.82
+    },
+    {
+     "w": "switch",
+     "start": 23.834,
+     "end": 24.084
+    },
+    {
+     "w": "it",
+     "start": 24.1,
+     "end": 24.295
+    },
+    {
+     "w": "off.",
+     "start": 24.308,
+     "end": 24.517
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call it the STROOP effect.",
+   "sec": "cd",
+   "start": 24.85,
+   "end": 26.9,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 24.85,
+     "end": 25.613
+    },
+    {
+     "w": "call",
+     "start": 25.662,
+     "end": 25.862
+    },
+    {
+     "w": "it",
+     "start": 25.875,
+     "end": 26.051
+    },
+    {
+     "w": "the",
+     "start": 26.062,
+     "end": 26.25
+    },
+    {
+     "w": "STROOP",
+     "start": 26.262,
+     "end": 26.486
+    },
+    {
+     "w": "effect.",
+     "start": 26.5,
+     "end": 26.876
+    }
+   ]
+  },
+  {
+   "text": "Otto's problem? His brain is too GOOD at reading.",
+   "sec": "cd",
+   "start": 27.22,
+   "end": 29.87,
+   "words": [
+    {
+     "w": "Otto's",
+     "start": 27.22,
+     "end": 27.602
+    },
+    {
+     "w": "problem?",
+     "start": 27.627,
+     "end": 28.034
+    },
+    {
+     "w": "His",
+     "start": 28.162,
+     "end": 28.359
+    },
+    {
+     "w": "brain",
+     "start": 28.372,
+     "end": 28.595
+    },
+    {
+     "w": "is",
+     "start": 28.609,
+     "end": 28.794
+    },
+    {
+     "w": "too",
+     "start": 28.806,
+     "end": 29.003
+    },
+    {
+     "w": "GOOD",
+     "start": 29.016,
+     "end": 29.226
+    },
+    {
+     "w": "at",
+     "start": 29.24,
+     "end": 29.424
+    },
+    {
+     "w": "reading.",
+     "start": 29.436,
+     "end": 29.844
+    }
+   ]
+  }
+ ]
+}

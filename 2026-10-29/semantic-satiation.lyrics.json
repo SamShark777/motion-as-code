@@ -1,0 +1,468 @@
+{
+ "lines": [
+  {
+   "text": "Say any word over and over, and it stops MEANING anything.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 5.32,
+   "words": [
+    {
+     "w": "Say",
+     "start": 0.15,
+     "end": 0.433
+    },
+    {
+     "w": "any",
+     "start": 0.451,
+     "end": 0.963
+    },
+    {
+     "w": "word",
+     "start": 0.995,
+     "end": 1.297
+    },
+    {
+     "w": "over",
+     "start": 1.316,
+     "end": 1.846
+    },
+    {
+     "w": "and",
+     "start": 1.88,
+     "end": 2.163
+    },
+    {
+     "w": "over,",
+     "start": 2.181,
+     "end": 2.711
+    },
+    {
+     "w": "and",
+     "start": 2.89,
+     "end": 3.174
+    },
+    {
+     "w": "it",
+     "start": 3.192,
+     "end": 3.457
+    },
+    {
+     "w": "stops",
+     "start": 3.474,
+     "end": 3.793
+    },
+    {
+     "w": "MEANING",
+     "start": 3.814,
+     "end": 4.398
+    },
+    {
+     "w": "anything.",
+     "start": 4.436,
+     "end": 5.267
+    }
+   ]
+  },
+  {
+   "text": "Leo tries it. Spoon. Spoon. SPOON.",
+   "sec": "cd",
+   "start": 5.64,
+   "end": 11.35,
+   "words": [
+    {
+     "w": "Leo",
+     "start": 5.64,
+     "end": 6.319
+    },
+    {
+     "w": "tries",
+     "start": 6.362,
+     "end": 7.129
+    },
+    {
+     "w": "it.",
+     "start": 7.178,
+     "end": 7.814
+    },
+    {
+     "w": "Spoon.",
+     "start": 8.204,
+     "end": 8.97
+    },
+    {
+     "w": "Spoon.",
+     "start": 9.369,
+     "end": 10.136
+    },
+    {
+     "w": "SPOON.",
+     "start": 10.534,
+     "end": 11.301
+    }
+   ]
+  },
+  {
+   "text": "By the twentieth spoon, it's just a weird NOISE.",
+   "sec": "cd",
+   "start": 11.67,
+   "end": 14.76,
+   "words": [
+    {
+     "w": "By",
+     "start": 11.67,
+     "end": 11.918
+    },
+    {
+     "w": "the",
+     "start": 11.934,
+     "end": 12.2
+    },
+    {
+     "w": "twentieth",
+     "start": 12.217,
+     "end": 12.8
+    },
+    {
+     "w": "spoon,",
+     "start": 12.837,
+     "end": 13.137
+    },
+    {
+     "w": "it's",
+     "start": 13.292,
+     "end": 13.558
+    },
+    {
+     "w": "just",
+     "start": 13.575,
+     "end": 13.858
+    },
+    {
+     "w": "a",
+     "start": 13.876,
+     "end": 14.107
+    },
+    {
+     "w": "weird",
+     "start": 14.122,
+     "end": 14.422
+    },
+    {
+     "w": "NOISE.",
+     "start": 14.441,
+     "end": 14.741
+    }
+   ]
+  },
+  {
+   "text": "In 1907, psychologists Severance and Washburn had people stare at one word for three MINUTES.",
+   "sec": "cd",
+   "start": 15.08,
+   "end": 22.79,
+   "words": [
+    {
+     "w": "In",
+     "start": 15.08,
+     "end": 15.347
+    },
+    {
+     "w": "1907,",
+     "start": 15.364,
+     "end": 15.595
+    },
+    {
+     "w": "psychologists",
+     "start": 15.757,
+     "end": 16.919
+    },
+    {
+     "w": "Severance",
+     "start": 16.993,
+     "end": 17.85
+    },
+    {
+     "w": "and",
+     "start": 17.905,
+     "end": 18.191
+    },
+    {
+     "w": "Washburn",
+     "start": 18.209,
+     "end": 18.818
+    },
+    {
+     "w": "had",
+     "start": 18.857,
+     "end": 19.142
+    },
+    {
+     "w": "people",
+     "start": 19.161,
+     "end": 19.732
+    },
+    {
+     "w": "stare",
+     "start": 19.769,
+     "end": 20.091
+    },
+    {
+     "w": "at",
+     "start": 20.112,
+     "end": 20.379
+    },
+    {
+     "w": "one",
+     "start": 20.397,
+     "end": 20.913
+    },
+    {
+     "w": "word",
+     "start": 20.946,
+     "end": 21.25
+    },
+    {
+     "w": "for",
+     "start": 21.27,
+     "end": 21.555
+    },
+    {
+     "w": "three",
+     "start": 21.574,
+     "end": 21.896
+    },
+    {
+     "w": "MINUTES.",
+     "start": 21.917,
+     "end": 22.738
+    }
+   ]
+  },
+  {
+   "text": "The words turned into meaningless SHAPES.",
+   "sec": "cd",
+   "start": 23.11,
+   "end": 25.98,
+   "words": [
+    {
+     "w": "The",
+     "start": 23.11,
+     "end": 23.352
+    },
+    {
+     "w": "words",
+     "start": 23.368,
+     "end": 23.642
+    },
+    {
+     "w": "turned",
+     "start": 23.659,
+     "end": 24.144
+    },
+    {
+     "w": "into",
+     "start": 24.175,
+     "end": 24.628
+    },
+    {
+     "w": "meaningless",
+     "start": 24.657,
+     "end": 25.416
+    },
+    {
+     "w": "SHAPES.",
+     "start": 25.464,
+     "end": 25.949
+    }
+   ]
+  },
+  {
+   "text": "But Priya explains: one idea is the brain cells carrying the meaning get TIRED.",
+   "sec": "cd",
+   "start": 26.3,
+   "end": 33.02,
+   "words": [
+    {
+     "w": "But",
+     "start": 26.3,
+     "end": 26.605
+    },
+    {
+     "w": "Priya",
+     "start": 26.624,
+     "end": 26.968
+    },
+    {
+     "w": "explains:",
+     "start": 26.99,
+     "end": 27.638
+    },
+    {
+     "w": "one",
+     "start": 27.836,
+     "end": 28.386
+    },
+    {
+     "w": "idea",
+     "start": 28.422,
+     "end": 28.991
+    },
+    {
+     "w": "is",
+     "start": 29.028,
+     "end": 29.313
+    },
+    {
+     "w": "the",
+     "start": 29.331,
+     "end": 29.635
+    },
+    {
+     "w": "brain",
+     "start": 29.655,
+     "end": 29.999
+    },
+    {
+     "w": "cells",
+     "start": 30.021,
+     "end": 30.364
+    },
+    {
+     "w": "carrying",
+     "start": 30.386,
+     "end": 31.035
+    },
+    {
+     "w": "the",
+     "start": 31.076,
+     "end": 31.381
+    },
+    {
+     "w": "meaning",
+     "start": 31.4,
+     "end": 32.029
+    },
+    {
+     "w": "get",
+     "start": 32.069,
+     "end": 32.374
+    },
+    {
+     "w": "TIRED.",
+     "start": 32.393,
+     "end": 32.982
+    }
+   ]
+  },
+  {
+   "text": "It's called semantic SATIATION. Named in 1962.",
+   "sec": "cd",
+   "start": 33.34,
+   "end": 38.13,
+   "words": [
+    {
+     "w": "It's",
+     "start": 33.34,
+     "end": 33.684
+    },
+    {
+     "w": "called",
+     "start": 33.706,
+     "end": 34.393
+    },
+    {
+     "w": "semantic",
+     "start": 34.437,
+     "end": 35.446
+    },
+    {
+     "w": "SATIATION.",
+     "start": 35.511,
+     "end": 36.542
+    },
+    {
+     "w": "Named",
+     "start": 36.785,
+     "end": 37.45
+    },
+    {
+     "w": "in",
+     "start": 37.493,
+     "end": 37.815
+    },
+    {
+     "w": "1962.",
+     "start": 37.835,
+     "end": 38.112
+    }
+   ]
+  },
+  {
+   "text": "Try it with your own name. Then stop, and it comes BACK.",
+   "sec": "cd",
+   "start": 38.45,
+   "end": 43.13,
+   "words": [
+    {
+     "w": "Try",
+     "start": 38.45,
+     "end": 38.761
+    },
+    {
+     "w": "it",
+     "start": 38.78,
+     "end": 39.071
+    },
+    {
+     "w": "with",
+     "start": 39.09,
+     "end": 39.42
+    },
+    {
+     "w": "your",
+     "start": 39.441,
+     "end": 39.772
+    },
+    {
+     "w": "own",
+     "start": 39.793,
+     "end": 40.104
+    },
+    {
+     "w": "name.",
+     "start": 40.124,
+     "end": 40.454
+    },
+    {
+     "w": "Then",
+     "start": 40.635,
+     "end": 40.966
+    },
+    {
+     "w": "stop,",
+     "start": 40.987,
+     "end": 41.318
+    },
+    {
+     "w": "and",
+     "start": 41.499,
+     "end": 41.81
+    },
+    {
+     "w": "it",
+     "start": 41.829,
+     "end": 42.12
+    },
+    {
+     "w": "comes",
+     "start": 42.139,
+     "end": 42.74
+    },
+    {
+     "w": "BACK.",
+     "start": 42.778,
+     "end": 43.109
+    }
+   ]
+  }
+ ]
+}

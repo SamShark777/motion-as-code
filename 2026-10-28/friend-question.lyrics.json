@@ -1,0 +1,508 @@
+{
+ "lines": [
+  {
+   "text": "Stuck on a big decision? Ask yourself ONE question.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.02,
+   "words": [
+    {
+     "w": "Stuck",
+     "start": 0.15,
+     "end": 0.435
+    },
+    {
+     "w": "on",
+     "start": 0.453,
+     "end": 0.689
+    },
+    {
+     "w": "a",
+     "start": 0.704,
+     "end": 0.924
+    },
+    {
+     "w": "big",
+     "start": 0.938,
+     "end": 1.19
+    },
+    {
+     "w": "decision?",
+     "start": 1.206,
+     "end": 1.947
+    },
+    {
+     "w": "Ask",
+     "start": 2.124,
+     "end": 2.376
+    },
+    {
+     "w": "yourself",
+     "start": 2.392,
+     "end": 2.929
+    },
+    {
+     "w": "ONE",
+     "start": 2.964,
+     "end": 3.42
+    },
+    {
+     "w": "question.",
+     "start": 3.449,
+     "end": 3.986
+    }
+   ]
+  },
+  {
+   "text": "Sam can't decide whether to quit his job. He's gone in CIRCLES for weeks.",
+   "sec": "cd",
+   "start": 4.34,
+   "end": 9.41,
+   "words": [
+    {
+     "w": "Sam",
+     "start": 4.34,
+     "end": 4.608
+    },
+    {
+     "w": "can't",
+     "start": 4.625,
+     "end": 4.91
+    },
+    {
+     "w": "decide",
+     "start": 4.928,
+     "end": 5.463
+    },
+    {
+     "w": "whether",
+     "start": 5.497,
+     "end": 6.05
+    },
+    {
+     "w": "to",
+     "start": 6.085,
+     "end": 6.335
+    },
+    {
+     "w": "quit",
+     "start": 6.351,
+     "end": 6.636
+    },
+    {
+     "w": "his",
+     "start": 6.655,
+     "end": 6.922
+    },
+    {
+     "w": "job.",
+     "start": 6.939,
+     "end": 7.207
+    },
+    {
+     "w": "He's",
+     "start": 7.362,
+     "end": 7.629
+    },
+    {
+     "w": "gone",
+     "start": 7.646,
+     "end": 7.931
+    },
+    {
+     "w": "in",
+     "start": 7.95,
+     "end": 8.2
+    },
+    {
+     "w": "CIRCLES",
+     "start": 8.216,
+     "end": 8.768
+    },
+    {
+     "w": "for",
+     "start": 8.804,
+     "end": 9.071
+    },
+    {
+     "w": "weeks.",
+     "start": 9.088,
+     "end": 9.391
+    }
+   ]
+  },
+  {
+   "text": "His neighbour Grace, a retired therapist, asks: what would you tell a FRIEND?",
+   "sec": "cd",
+   "start": 9.73,
+   "end": 14.47,
+   "words": [
+    {
+     "w": "His",
+     "start": 9.73,
+     "end": 9.954
+    },
+    {
+     "w": "neighbour",
+     "start": 9.968,
+     "end": 10.459
+    },
+    {
+     "w": "Grace,",
+     "start": 10.491,
+     "end": 10.743
+    },
+    {
+     "w": "a",
+     "start": 10.875,
+     "end": 11.07
+    },
+    {
+     "w": "retired",
+     "start": 11.082,
+     "end": 11.725
+    },
+    {
+     "w": "therapist,",
+     "start": 11.766,
+     "end": 12.437
+    },
+    {
+     "w": "asks:",
+     "start": 12.595,
+     "end": 12.834
+    },
+    {
+     "w": "what",
+     "start": 12.964,
+     "end": 13.203
+    },
+    {
+     "w": "would",
+     "start": 13.218,
+     "end": 13.47
+    },
+    {
+     "w": "you",
+     "start": 13.487,
+     "end": 13.71
+    },
+    {
+     "w": "tell",
+     "start": 13.725,
+     "end": 13.963
+    },
+    {
+     "w": "a",
+     "start": 13.978,
+     "end": 14.173
+    },
+    {
+     "w": "FRIEND?",
+     "start": 14.186,
+     "end": 14.453
+    }
+   ]
+  },
+  {
+   "text": "Sam answers instantly. Talk to your boss. Then DECIDE.",
+   "sec": "cd",
+   "start": 14.79,
+   "end": 19.36,
+   "words": [
+    {
+     "w": "Sam",
+     "start": 14.79,
+     "end": 15.092
+    },
+    {
+     "w": "answers",
+     "start": 15.111,
+     "end": 15.735
+    },
+    {
+     "w": "instantly.",
+     "start": 15.774,
+     "end": 16.68
+    },
+    {
+     "w": "Talk",
+     "start": 16.894,
+     "end": 17.215
+    },
+    {
+     "w": "to",
+     "start": 17.236,
+     "end": 17.518
+    },
+    {
+     "w": "your",
+     "start": 17.536,
+     "end": 17.858
+    },
+    {
+     "w": "boss.",
+     "start": 17.878,
+     "end": 18.2
+    },
+    {
+     "w": "Then",
+     "start": 18.375,
+     "end": 18.697
+    },
+    {
+     "w": "DECIDE.",
+     "start": 18.717,
+     "end": 19.321
+    }
+   ]
+  },
+  {
+   "text": "Researchers Grossmann and Kross found people reason more WISELY about a friend's problems than their own.",
+   "sec": "cd",
+   "start": 19.68,
+   "end": 25.77,
+   "words": [
+    {
+     "w": "Researchers",
+     "start": 19.68,
+     "end": 20.373
+    },
+    {
+     "w": "Grossmann",
+     "start": 20.417,
+     "end": 20.903
+    },
+    {
+     "w": "and",
+     "start": 20.934,
+     "end": 21.156
+    },
+    {
+     "w": "Kross",
+     "start": 21.17,
+     "end": 21.42
+    },
+    {
+     "w": "found",
+     "start": 21.436,
+     "end": 21.686
+    },
+    {
+     "w": "people",
+     "start": 21.702,
+     "end": 22.145
+    },
+    {
+     "w": "reason",
+     "start": 22.174,
+     "end": 22.617
+    },
+    {
+     "w": "more",
+     "start": 22.645,
+     "end": 22.881
+    },
+    {
+     "w": "WISELY",
+     "start": 22.896,
+     "end": 23.518
+    },
+    {
+     "w": "about",
+     "start": 23.557,
+     "end": 23.986
+    },
+    {
+     "w": "a",
+     "start": 24.014,
+     "end": 24.207
+    },
+    {
+     "w": "friend's",
+     "start": 24.219,
+     "end": 24.498
+    },
+    {
+     "w": "problems",
+     "start": 24.515,
+     "end": 24.987
+    },
+    {
+     "w": "than",
+     "start": 25.017,
+     "end": 25.253
+    },
+    {
+     "w": "their",
+     "start": 25.268,
+     "end": 25.518
+    },
+    {
+     "w": "own.",
+     "start": 25.534,
+     "end": 25.756
+    }
+   ]
+  },
+  {
+   "text": "But picturing their own problem from the outside made the gap DISAPPEAR.",
+   "sec": "cd",
+   "start": 26.09,
+   "end": 29.81,
+   "words": [
+    {
+     "w": "But",
+     "start": 26.09,
+     "end": 26.28
+    },
+    {
+     "w": "picturing",
+     "start": 26.292,
+     "end": 26.863
+    },
+    {
+     "w": "their",
+     "start": 26.899,
+     "end": 27.114
+    },
+    {
+     "w": "own",
+     "start": 27.128,
+     "end": 27.318
+    },
+    {
+     "w": "problem",
+     "start": 27.33,
+     "end": 27.723
+    },
+    {
+     "w": "from",
+     "start": 27.748,
+     "end": 27.95
+    },
+    {
+     "w": "the",
+     "start": 27.963,
+     "end": 28.153
+    },
+    {
+     "w": "outside",
+     "start": 28.165,
+     "end": 28.558
+    },
+    {
+     "w": "made",
+     "start": 28.583,
+     "end": 28.785
+    },
+    {
+     "w": "the",
+     "start": 28.798,
+     "end": 28.989
+    },
+    {
+     "w": "gap",
+     "start": 29.001,
+     "end": 29.191
+    },
+    {
+     "w": "DISAPPEAR.",
+     "start": 29.203,
+     "end": 29.774
+    }
+   ]
+  },
+  {
+   "text": "It's called SOLOMON'S paradox.",
+   "sec": "cd",
+   "start": 30.13,
+   "end": 32.39,
+   "words": [
+    {
+     "w": "It's",
+     "start": 30.13,
+     "end": 30.371
+    },
+    {
+     "w": "called",
+     "start": 30.387,
+     "end": 30.869
+    },
+    {
+     "w": "SOLOMON'S",
+     "start": 30.9,
+     "end": 31.608
+    },
+    {
+     "w": "paradox.",
+     "start": 31.653,
+     "end": 32.346
+    }
+   ]
+  },
+  {
+   "text": "Next time you're stuck, ask it. Then take your own ADVICE.",
+   "sec": "cd",
+   "start": 32.71,
+   "end": 36.26,
+   "words": [
+    {
+     "w": "Next",
+     "start": 32.71,
+     "end": 32.973
+    },
+    {
+     "w": "time",
+     "start": 32.99,
+     "end": 33.254
+    },
+    {
+     "w": "you're",
+     "start": 33.27,
+     "end": 33.55
+    },
+    {
+     "w": "stuck,",
+     "start": 33.568,
+     "end": 33.847
+    },
+    {
+     "w": "ask",
+     "start": 33.992,
+     "end": 34.24
+    },
+    {
+     "w": "it.",
+     "start": 34.256,
+     "end": 34.487
+    },
+    {
+     "w": "Then",
+     "start": 34.629,
+     "end": 34.893
+    },
+    {
+     "w": "take",
+     "start": 34.91,
+     "end": 35.173
+    },
+    {
+     "w": "your",
+     "start": 35.19,
+     "end": 35.453
+    },
+    {
+     "w": "own",
+     "start": 35.47,
+     "end": 35.718
+    },
+    {
+     "w": "ADVICE.",
+     "start": 35.733,
+     "end": 36.228
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,518 @@
+{
+ "lines": [
+  {
+   "text": "Two in three ordinary people went all the way to the highest SHOCK.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.01,
+   "words": [
+    {
+     "w": "Two",
+     "start": 0.15,
+     "end": 0.352
+    },
+    {
+     "w": "in",
+     "start": 0.364,
+     "end": 0.553
+    },
+    {
+     "w": "three",
+     "start": 0.565,
+     "end": 0.793
+    },
+    {
+     "w": "ordinary",
+     "start": 0.807,
+     "end": 1.561
+    },
+    {
+     "w": "people",
+     "start": 1.61,
+     "end": 2.013
+    },
+    {
+     "w": "went",
+     "start": 2.038,
+     "end": 2.253
+    },
+    {
+     "w": "all",
+     "start": 2.267,
+     "end": 2.468
+    },
+    {
+     "w": "the",
+     "start": 2.481,
+     "end": 2.683
+    },
+    {
+     "w": "way",
+     "start": 2.696,
+     "end": 2.897
+    },
+    {
+     "w": "to",
+     "start": 2.91,
+     "end": 3.099
+    },
+    {
+     "w": "the",
+     "start": 3.111,
+     "end": 3.312
+    },
+    {
+     "w": "highest",
+     "start": 3.325,
+     "end": 3.741
+    },
+    {
+     "w": "SHOCK.",
+     "start": 3.768,
+     "end": 3.995
+    }
+   ]
+  },
+  {
+   "text": "Sam is sure he'd STOP. Everyone is.",
+   "sec": "cd",
+   "start": 4.33,
+   "end": 6.38,
+   "words": [
+    {
+     "w": "Sam",
+     "start": 4.33,
+     "end": 4.535
+    },
+    {
+     "w": "is",
+     "start": 4.548,
+     "end": 4.739
+    },
+    {
+     "w": "sure",
+     "start": 4.751,
+     "end": 4.969
+    },
+    {
+     "w": "he'd",
+     "start": 4.983,
+     "end": 5.187
+    },
+    {
+     "w": "STOP.",
+     "start": 5.201,
+     "end": 5.418
+    },
+    {
+     "w": "Everyone",
+     "start": 5.538,
+     "end": 6.138
+    },
+    {
+     "w": "is.",
+     "start": 6.176,
+     "end": 6.368
+    }
+   ]
+  },
+  {
+   "text": "Yale, 1963. Volunteers must shock a learner, secretly an ACTOR, for every wrong answer.",
+   "sec": "cd",
+   "start": 6.7,
+   "end": 13.1,
+   "words": [
+    {
+     "w": "Yale,",
+     "start": 6.7,
+     "end": 7.142
+    },
+    {
+     "w": "1963.",
+     "start": 7.291,
+     "end": 7.482
+    },
+    {
+     "w": "Volunteers",
+     "start": 7.615,
+     "end": 8.339
+    },
+    {
+     "w": "must",
+     "start": 8.385,
+     "end": 8.636
+    },
+    {
+     "w": "shock",
+     "start": 8.652,
+     "end": 8.919
+    },
+    {
+     "w": "a",
+     "start": 8.936,
+     "end": 9.142
+    },
+    {
+     "w": "learner,",
+     "start": 9.155,
+     "end": 9.642
+    },
+    {
+     "w": "secretly",
+     "start": 9.795,
+     "end": 10.488
+    },
+    {
+     "w": "an",
+     "start": 10.532,
+     "end": 10.753
+    },
+    {
+     "w": "ACTOR,",
+     "start": 10.767,
+     "end": 11.224
+    },
+    {
+     "w": "for",
+     "start": 11.374,
+     "end": 11.61
+    },
+    {
+     "w": "every",
+     "start": 11.626,
+     "end": 12.273
+    },
+    {
+     "w": "wrong",
+     "start": 12.314,
+     "end": 12.581
+    },
+    {
+     "w": "answer.",
+     "start": 12.598,
+     "end": 13.07
+    }
+   ]
+  },
+  {
+   "text": "Psychiatrists predicted about one in a THOUSAND would go that far.",
+   "sec": "cd",
+   "start": 13.42,
+   "end": 17.29,
+   "words": [
+    {
+     "w": "Psychiatrists",
+     "start": 13.42,
+     "end": 14.076
+    },
+    {
+     "w": "predicted",
+     "start": 14.118,
+     "end": 14.722
+    },
+    {
+     "w": "about",
+     "start": 14.761,
+     "end": 15.15
+    },
+    {
+     "w": "one",
+     "start": 15.175,
+     "end": 15.539
+    },
+    {
+     "w": "in",
+     "start": 15.562,
+     "end": 15.751
+    },
+    {
+     "w": "a",
+     "start": 15.763,
+     "end": 15.938
+    },
+    {
+     "w": "THOUSAND",
+     "start": 15.949,
+     "end": 16.378
+    },
+    {
+     "w": "would",
+     "start": 16.405,
+     "end": 16.633
+    },
+    {
+     "w": "go",
+     "start": 16.647,
+     "end": 16.836
+    },
+    {
+     "w": "that",
+     "start": 16.848,
+     "end": 17.062
+    },
+    {
+     "w": "far.",
+     "start": 17.076,
+     "end": 17.277
+    }
+   ]
+  },
+  {
+   "text": "Instead, 26 of 40 went to 450 VOLTS, because a lab coat said: continue.",
+   "sec": "cd",
+   "start": 17.61,
+   "end": 23.5,
+   "words": [
+    {
+     "w": "Instead,",
+     "start": 17.61,
+     "end": 18.238
+    },
+    {
+     "w": "26",
+     "start": 18.435,
+     "end": 18.68
+    },
+    {
+     "w": "of",
+     "start": 18.696,
+     "end": 18.981
+    },
+    {
+     "w": "40",
+     "start": 18.999,
+     "end": 19.244
+    },
+    {
+     "w": "went",
+     "start": 19.26,
+     "end": 19.584
+    },
+    {
+     "w": "to",
+     "start": 19.605,
+     "end": 19.889
+    },
+    {
+     "w": "450",
+     "start": 19.907,
+     "end": 20.153
+    },
+    {
+     "w": "VOLTS,",
+     "start": 20.169,
+     "end": 20.512
+    },
+    {
+     "w": "because",
+     "start": 20.691,
+     "end": 21.319
+    },
+    {
+     "w": "a",
+     "start": 21.359,
+     "end": 21.624
+    },
+    {
+     "w": "lab",
+     "start": 21.641,
+     "end": 21.945
+    },
+    {
+     "w": "coat",
+     "start": 21.965,
+     "end": 22.289
+    },
+    {
+     "w": "said:",
+     "start": 22.309,
+     "end": 22.633
+    },
+    {
+     "w": "continue.",
+     "start": 22.811,
+     "end": 23.459
+    }
+   ]
+  },
+  {
+   "text": "But when two fellow volunteers REFUSED, only 4 in 40 kept going.",
+   "sec": "cd",
+   "start": 23.82,
+   "end": 27.95,
+   "words": [
+    {
+     "w": "But",
+     "start": 23.82,
+     "end": 24.034
+    },
+    {
+     "w": "when",
+     "start": 24.048,
+     "end": 24.277
+    },
+    {
+     "w": "two",
+     "start": 24.291,
+     "end": 24.506
+    },
+    {
+     "w": "fellow",
+     "start": 24.519,
+     "end": 24.948
+    },
+    {
+     "w": "volunteers",
+     "start": 24.976,
+     "end": 25.633
+    },
+    {
+     "w": "REFUSED,",
+     "start": 25.675,
+     "end": 26.291
+    },
+    {
+     "w": "only",
+     "start": 26.441,
+     "end": 26.842
+    },
+    {
+     "w": "4",
+     "start": 26.868,
+     "end": 27.041
+    },
+    {
+     "w": "in",
+     "start": 27.052,
+     "end": 27.252
+    },
+    {
+     "w": "40",
+     "start": 27.265,
+     "end": 27.438
+    },
+    {
+     "w": "kept",
+     "start": 27.449,
+     "end": 27.678
+    },
+    {
+     "w": "going.",
+     "start": 27.692,
+     "end": 27.934
+    }
+   ]
+  },
+  {
+   "text": "Grace calls it obedience to AUTHORITY.",
+   "sec": "cd",
+   "start": 28.27,
+   "end": 30.44,
+   "words": [
+    {
+     "w": "Grace",
+     "start": 28.27,
+     "end": 28.481
+    },
+    {
+     "w": "calls",
+     "start": 28.494,
+     "end": 28.705
+    },
+    {
+     "w": "it",
+     "start": 28.718,
+     "end": 28.893
+    },
+    {
+     "w": "obedience",
+     "start": 28.904,
+     "end": 29.463
+    },
+    {
+     "w": "to",
+     "start": 29.499,
+     "end": 29.673
+    },
+    {
+     "w": "AUTHORITY.",
+     "start": 29.685,
+     "end": 30.395
+    }
+   ]
+  },
+  {
+   "text": "Something feels wrong? Say it out loud. Your no helps others say NO.",
+   "sec": "cd",
+   "start": 30.76,
+   "end": 34.48,
+   "words": [
+    {
+     "w": "Something",
+     "start": 30.76,
+     "end": 31.367
+    },
+    {
+     "w": "feels",
+     "start": 31.405,
+     "end": 31.634
+    },
+    {
+     "w": "wrong?",
+     "start": 31.648,
+     "end": 31.877
+    },
+    {
+     "w": "Say",
+     "start": 31.995,
+     "end": 32.198
+    },
+    {
+     "w": "it",
+     "start": 32.21,
+     "end": 32.4
+    },
+    {
+     "w": "out",
+     "start": 32.412,
+     "end": 32.614
+    },
+    {
+     "w": "loud.",
+     "start": 32.627,
+     "end": 32.842
+    },
+    {
+     "w": "Your",
+     "start": 32.96,
+     "end": 33.175
+    },
+    {
+     "w": "no",
+     "start": 33.189,
+     "end": 33.378
+    },
+    {
+     "w": "helps",
+     "start": 33.39,
+     "end": 33.619
+    },
+    {
+     "w": "others",
+     "start": 33.633,
+     "end": 34.038
+    },
+    {
+     "w": "say",
+     "start": 34.064,
+     "end": 34.266
+    },
+    {
+     "w": "NO.",
+     "start": 34.279,
+     "end": 34.468
+    }
+   ]
+  }
+ ]
+}

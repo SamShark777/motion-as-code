@@ -1,0 +1,529 @@
+{
+ "lines": [
+  {
+   "text": "Nia talks to herself in the mirror. By NAME.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.69,
+   "words": [
+    {
+     "w": "Nia",
+     "start": 0.15,
+     "end": 0.438
+    },
+    {
+     "w": "talks",
+     "start": 0.457,
+     "end": 0.782
+    },
+    {
+     "w": "to",
+     "start": 0.803,
+     "end": 1.072
+    },
+    {
+     "w": "herself",
+     "start": 1.089,
+     "end": 1.684
+    },
+    {
+     "w": "in",
+     "start": 1.722,
+     "end": 1.992
+    },
+    {
+     "w": "the",
+     "start": 2.009,
+     "end": 2.297
+    },
+    {
+     "w": "mirror.",
+     "start": 2.316,
+     "end": 2.892
+    },
+    {
+     "w": "By",
+     "start": 3.077,
+     "end": 3.346
+    },
+    {
+     "w": "NAME.",
+     "start": 3.364,
+     "end": 3.67
+    }
+   ]
+  },
+  {
+   "text": "Milo walks in. His speech starts in FIVE minutes.",
+   "sec": "cd",
+   "start": 4.01,
+   "end": 8.27,
+   "words": [
+    {
+     "w": "Milo",
+     "start": 4.01,
+     "end": 4.601
+    },
+    {
+     "w": "walks",
+     "start": 4.639,
+     "end": 4.995
+    },
+    {
+     "w": "in.",
+     "start": 5.018,
+     "end": 5.314
+    },
+    {
+     "w": "His",
+     "start": 5.495,
+     "end": 5.811
+    },
+    {
+     "w": "speech",
+     "start": 5.831,
+     "end": 6.208
+    },
+    {
+     "w": "starts",
+     "start": 6.232,
+     "end": 6.609
+    },
+    {
+     "w": "in",
+     "start": 6.633,
+     "end": 6.929
+    },
+    {
+     "w": "FIVE",
+     "start": 6.948,
+     "end": 7.284
+    },
+    {
+     "w": "minutes.",
+     "start": 7.305,
+     "end": 8.212
+    }
+   ]
+  },
+  {
+   "text": "He thinks she's finally LOST it.",
+   "sec": "cd",
+   "start": 8.59,
+   "end": 10.99,
+   "words": [
+    {
+     "w": "He",
+     "start": 8.59,
+     "end": 8.852
+    },
+    {
+     "w": "thinks",
+     "start": 8.868,
+     "end": 9.202
+    },
+    {
+     "w": "she's",
+     "start": 9.224,
+     "end": 9.521
+    },
+    {
+     "w": "finally",
+     "start": 9.54,
+     "end": 10.344
+    },
+    {
+     "w": "LOST",
+     "start": 10.395,
+     "end": 10.693
+    },
+    {
+     "w": "it.",
+     "start": 10.712,
+     "end": 10.973
+    }
+   ]
+  },
+  {
+   "text": "His own head? I'll forget it. I'll FREEZE.",
+   "sec": "cd",
+   "start": 11.31,
+   "end": 15.33,
+   "words": [
+    {
+     "w": "His",
+     "start": 11.31,
+     "end": 11.682
+    },
+    {
+     "w": "own",
+     "start": 11.706,
+     "end": 12.077
+    },
+    {
+     "w": "head?",
+     "start": 12.101,
+     "end": 12.497
+    },
+    {
+     "w": "I'll",
+     "start": 12.714,
+     "end": 13.086
+    },
+    {
+     "w": "forget",
+     "start": 13.109,
+     "end": 13.853
+    },
+    {
+     "w": "it.",
+     "start": 13.901,
+     "end": 14.249
+    },
+    {
+     "w": "I'll",
+     "start": 14.462,
+     "end": 14.834
+    },
+    {
+     "w": "FREEZE.",
+     "start": 14.858,
+     "end": 15.302
+    }
+   ]
+  },
+  {
+   "text": "But in 2014, Ethan Kross put 89 students to the TEST.",
+   "sec": "cd",
+   "start": 15.65,
+   "end": 20.89,
+   "words": [
+    {
+     "w": "But",
+     "start": 15.65,
+     "end": 16.022
+    },
+    {
+     "w": "in",
+     "start": 16.046,
+     "end": 16.395
+    },
+    {
+     "w": "2014,",
+     "start": 16.417,
+     "end": 16.717
+    },
+    {
+     "w": "Ethan",
+     "start": 16.928,
+     "end": 17.649
+    },
+    {
+     "w": "Kross",
+     "start": 17.695,
+     "end": 18.115
+    },
+    {
+     "w": "put",
+     "start": 18.142,
+     "end": 18.515
+    },
+    {
+     "w": "89",
+     "start": 18.538,
+     "end": 18.839
+    },
+    {
+     "w": "students",
+     "start": 18.858,
+     "end": 19.651
+    },
+    {
+     "w": "to",
+     "start": 19.701,
+     "end": 20.05
+    },
+    {
+     "w": "the",
+     "start": 20.072,
+     "end": 20.444
+    },
+    {
+     "w": "TEST.",
+     "start": 20.468,
+     "end": 20.865
+    }
+   ]
+  },
+  {
+   "text": "Five minutes to prep a SPEECH for judges.",
+   "sec": "cd",
+   "start": 21.21,
+   "end": 23.96,
+   "words": [
+    {
+     "w": "Five",
+     "start": 21.21,
+     "end": 21.46
+    },
+    {
+     "w": "minutes",
+     "start": 21.476,
+     "end": 22.151
+    },
+    {
+     "w": "to",
+     "start": 22.194,
+     "end": 22.414
+    },
+    {
+     "w": "prep",
+     "start": 22.428,
+     "end": 22.678
+    },
+    {
+     "w": "a",
+     "start": 22.694,
+     "end": 22.899
+    },
+    {
+     "w": "SPEECH",
+     "start": 22.912,
+     "end": 23.192
+    },
+    {
+     "w": "for",
+     "start": 23.21,
+     "end": 23.445
+    },
+    {
+     "w": "judges.",
+     "start": 23.46,
+     "end": 23.93
+    }
+   ]
+  },
+  {
+   "text": "Half thought about their nerves using \u201cI\u201d. Half used their own NAME.",
+   "sec": "cd",
+   "start": 24.28,
+   "end": 30.19,
+   "words": [
+    {
+     "w": "Half",
+     "start": 24.28,
+     "end": 24.632
+    },
+    {
+     "w": "thought",
+     "start": 24.654,
+     "end": 25.07
+    },
+    {
+     "w": "about",
+     "start": 25.097,
+     "end": 25.736
+    },
+    {
+     "w": "their",
+     "start": 25.777,
+     "end": 26.151
+    },
+    {
+     "w": "nerves",
+     "start": 26.174,
+     "end": 26.835
+    },
+    {
+     "w": "using",
+     "start": 26.878,
+     "end": 27.517
+    },
+    {
+     "w": "\u201cI\u201d.",
+     "start": 27.558,
+     "end": 27.846
+    },
+    {
+     "w": "Half",
+     "start": 28.035,
+     "end": 28.387
+    },
+    {
+     "w": "used",
+     "start": 28.409,
+     "end": 29.027
+    },
+    {
+     "w": "their",
+     "start": 29.067,
+     "end": 29.44
+    },
+    {
+     "w": "own",
+     "start": 29.464,
+     "end": 29.795
+    },
+    {
+     "w": "NAME.",
+     "start": 29.816,
+     "end": 30.167
+    }
+   ]
+  },
+  {
+   "text": "Blind raters scored the name group BETTER. And they felt less shame after.",
+   "sec": "cd",
+   "start": 30.51,
+   "end": 35.61,
+   "words": [
+    {
+     "w": "Blind",
+     "start": 30.51,
+     "end": 30.81
+    },
+    {
+     "w": "raters",
+     "start": 30.829,
+     "end": 31.359
+    },
+    {
+     "w": "scored",
+     "start": 31.393,
+     "end": 31.924
+    },
+    {
+     "w": "the",
+     "start": 31.958,
+     "end": 32.223
+    },
+    {
+     "w": "name",
+     "start": 32.24,
+     "end": 32.523
+    },
+    {
+     "w": "group",
+     "start": 32.541,
+     "end": 32.84
+    },
+    {
+     "w": "BETTER.",
+     "start": 32.86,
+     "end": 33.39
+    },
+    {
+     "w": "And",
+     "start": 33.561,
+     "end": 33.826
+    },
+    {
+     "w": "they",
+     "start": 33.843,
+     "end": 34.126
+    },
+    {
+     "w": "felt",
+     "start": 34.144,
+     "end": 34.426
+    },
+    {
+     "w": "less",
+     "start": 34.444,
+     "end": 34.727
+    },
+    {
+     "w": "shame",
+     "start": 34.745,
+     "end": 35.044
+    },
+    {
+     "w": "after.",
+     "start": 35.064,
+     "end": 35.577
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call it SELF-DISTANCING.",
+   "sec": "cd",
+   "start": 35.93,
+   "end": 39.07,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 35.93,
+     "end": 37.107
+    },
+    {
+     "w": "call",
+     "start": 37.182,
+     "end": 37.49
+    },
+    {
+     "w": "it",
+     "start": 37.51,
+     "end": 37.781
+    },
+    {
+     "w": "SELF-DISTANCING.",
+     "start": 37.798,
+     "end": 38.994
+    }
+   ]
+  },
+  {
+   "text": "So Milo tries it. Milo, you've done harder THINGS.",
+   "sec": "cd",
+   "start": 39.39,
+   "end": 42.99,
+   "words": [
+    {
+     "w": "So",
+     "start": 39.39,
+     "end": 39.632
+    },
+    {
+     "w": "Milo",
+     "start": 39.647,
+     "end": 40.131
+    },
+    {
+     "w": "tries",
+     "start": 40.161,
+     "end": 40.453
+    },
+    {
+     "w": "it.",
+     "start": 40.472,
+     "end": 40.713
+    },
+    {
+     "w": "Milo,",
+     "start": 40.862,
+     "end": 41.345
+    },
+    {
+     "w": "you've",
+     "start": 41.509,
+     "end": 41.801
+    },
+    {
+     "w": "done",
+     "start": 41.82,
+     "end": 42.095
+    },
+    {
+     "w": "harder",
+     "start": 42.112,
+     "end": 42.629
+    },
+    {
+     "w": "THINGS.",
+     "start": 42.662,
+     "end": 42.97
+    }
+   ]
+  }
+ ]
+}

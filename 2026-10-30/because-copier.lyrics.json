@@ -1,0 +1,528 @@
+{
+ "lines": [
+  {
+   "text": "ONE word got people to let a stranger cut the line.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.59,
+   "words": [
+    {
+     "w": "ONE",
+     "start": 0.15,
+     "end": 0.571
+    },
+    {
+     "w": "word",
+     "start": 0.598,
+     "end": 0.846
+    },
+    {
+     "w": "got",
+     "start": 0.862,
+     "end": 1.095
+    },
+    {
+     "w": "people",
+     "start": 1.11,
+     "end": 1.576
+    },
+    {
+     "w": "to",
+     "start": 1.606,
+     "end": 1.824
+    },
+    {
+     "w": "let",
+     "start": 1.838,
+     "end": 2.071
+    },
+    {
+     "w": "a",
+     "start": 2.086,
+     "end": 2.289
+    },
+    {
+     "w": "stranger",
+     "start": 2.302,
+     "end": 2.798
+    },
+    {
+     "w": "cut",
+     "start": 2.83,
+     "end": 3.063
+    },
+    {
+     "w": "the",
+     "start": 3.078,
+     "end": 3.311
+    },
+    {
+     "w": "line.",
+     "start": 3.326,
+     "end": 3.574
+    }
+   ]
+  },
+  {
+   "text": "Leo asks to cut in front of Omar. No reason. Omar says NO.",
+   "sec": "cd",
+   "start": 3.91,
+   "end": 9.3,
+   "words": [
+    {
+     "w": "Leo",
+     "start": 3.91,
+     "end": 4.214
+    },
+    {
+     "w": "asks",
+     "start": 4.234,
+     "end": 4.558
+    },
+    {
+     "w": "to",
+     "start": 4.579,
+     "end": 4.863
+    },
+    {
+     "w": "cut",
+     "start": 4.881,
+     "end": 5.186
+    },
+    {
+     "w": "in",
+     "start": 5.205,
+     "end": 5.49
+    },
+    {
+     "w": "front",
+     "start": 5.508,
+     "end": 5.852
+    },
+    {
+     "w": "of",
+     "start": 5.874,
+     "end": 6.159
+    },
+    {
+     "w": "Omar.",
+     "start": 6.177,
+     "end": 6.746
+    },
+    {
+     "w": "No",
+     "start": 6.939,
+     "end": 7.224
+    },
+    {
+     "w": "reason.",
+     "start": 7.242,
+     "end": 7.851
+    },
+    {
+     "w": "Omar",
+     "start": 8.047,
+     "end": 8.616
+    },
+    {
+     "w": "says",
+     "start": 8.652,
+     "end": 8.976
+    },
+    {
+     "w": "NO.",
+     "start": 8.997,
+     "end": 9.282
+    }
+   ]
+  },
+  {
+   "text": "So Leo tries: can I go first, BECAUSE I have to make copies?",
+   "sec": "cd",
+   "start": 9.62,
+   "end": 14.69,
+   "words": [
+    {
+     "w": "So",
+     "start": 9.62,
+     "end": 9.899
+    },
+    {
+     "w": "Leo",
+     "start": 9.917,
+     "end": 10.215
+    },
+    {
+     "w": "tries:",
+     "start": 10.235,
+     "end": 10.572
+    },
+    {
+     "w": "can",
+     "start": 10.747,
+     "end": 11.045
+    },
+    {
+     "w": "I",
+     "start": 11.064,
+     "end": 11.324
+    },
+    {
+     "w": "go",
+     "start": 11.341,
+     "end": 11.62
+    },
+    {
+     "w": "first,",
+     "start": 11.638,
+     "end": 11.975
+    },
+    {
+     "w": "BECAUSE",
+     "start": 12.15,
+     "end": 12.766
+    },
+    {
+     "w": "I",
+     "start": 12.805,
+     "end": 13.065
+    },
+    {
+     "w": "have",
+     "start": 13.082,
+     "end": 13.4
+    },
+    {
+     "w": "to",
+     "start": 13.42,
+     "end": 13.699
+    },
+    {
+     "w": "make",
+     "start": 13.717,
+     "end": 14.035
+    },
+    {
+     "w": "copies?",
+     "start": 14.055,
+     "end": 14.652
+    }
+   ]
+  },
+  {
+   "text": "Omar steps aside. But wait: EVERYONE there has copies to make.",
+   "sec": "cd",
+   "start": 15.01,
+   "end": 20.85,
+   "words": [
+    {
+     "w": "Omar",
+     "start": 15.01,
+     "end": 15.613
+    },
+    {
+     "w": "steps",
+     "start": 15.652,
+     "end": 16.015
+    },
+    {
+     "w": "aside.",
+     "start": 16.039,
+     "end": 16.662
+    },
+    {
+     "w": "But",
+     "start": 16.868,
+     "end": 17.19
+    },
+    {
+     "w": "wait:",
+     "start": 17.211,
+     "end": 17.554
+    },
+    {
+     "w": "EVERYONE",
+     "start": 17.742,
+     "end": 18.688
+    },
+    {
+     "w": "there",
+     "start": 18.748,
+     "end": 19.112
+    },
+    {
+     "w": "has",
+     "start": 19.136,
+     "end": 19.458
+    },
+    {
+     "w": "copies",
+     "start": 19.478,
+     "end": 20.123
+    },
+    {
+     "w": "to",
+     "start": 20.164,
+     "end": 20.466
+    },
+    {
+     "w": "make.",
+     "start": 20.485,
+     "end": 20.828
+    }
+   ]
+  },
+  {
+   "text": "In 1978, Ellen LANGER tested it for real.",
+   "sec": "cd",
+   "start": 21.17,
+   "end": 24.53,
+   "words": [
+    {
+     "w": "In",
+     "start": 21.17,
+     "end": 21.435
+    },
+    {
+     "w": "1978,",
+     "start": 21.452,
+     "end": 21.68
+    },
+    {
+     "w": "Ellen",
+     "start": 21.84,
+     "end": 22.388
+    },
+    {
+     "w": "LANGER",
+     "start": 22.423,
+     "end": 22.989
+    },
+    {
+     "w": "tested",
+     "start": 23.025,
+     "end": 23.591
+    },
+    {
+     "w": "it",
+     "start": 23.627,
+     "end": 23.892
+    },
+    {
+     "w": "for",
+     "start": 23.908,
+     "end": 24.191
+    },
+    {
+     "w": "real.",
+     "start": 24.21,
+     "end": 24.511
+    }
+   ]
+  },
+  {
+   "text": "No reason: 60% said yes. A real reason: 94%. A FAKE one: 93%.",
+   "sec": "cd",
+   "start": 24.85,
+   "end": 33.3,
+   "words": [
+    {
+     "w": "No",
+     "start": 24.85,
+     "end": 25.274
+    },
+    {
+     "w": "reason:",
+     "start": 25.301,
+     "end": 26.208
+    },
+    {
+     "w": "60%",
+     "start": 26.5,
+     "end": 26.865
+    },
+    {
+     "w": "said",
+     "start": 26.889,
+     "end": 27.371
+    },
+    {
+     "w": "yes.",
+     "start": 27.402,
+     "end": 27.856
+    },
+    {
+     "w": "A",
+     "start": 28.118,
+     "end": 28.513
+    },
+    {
+     "w": "real",
+     "start": 28.538,
+     "end": 29.021
+    },
+    {
+     "w": "reason:",
+     "start": 29.052,
+     "end": 29.959
+    },
+    {
+     "w": "94%.",
+     "start": 30.25,
+     "end": 30.616
+    },
+    {
+     "w": "A",
+     "start": 30.872,
+     "end": 31.267
+    },
+    {
+     "w": "FAKE",
+     "start": 31.293,
+     "end": 31.775
+    },
+    {
+     "w": "one:",
+     "start": 31.806,
+     "end": 32.625
+    },
+    {
+     "w": "93%.",
+     "start": 32.911,
+     "end": 33.277
+    }
+   ]
+  },
+  {
+   "text": "Priya: 'because' SOUNDS like a reason, so we stop checking.",
+   "sec": "cd",
+   "start": 33.62,
+   "end": 37.63,
+   "words": [
+    {
+     "w": "Priya:",
+     "start": 33.62,
+     "end": 33.916
+    },
+    {
+     "w": "'because'",
+     "start": 34.071,
+     "end": 34.613
+    },
+    {
+     "w": "SOUNDS",
+     "start": 34.647,
+     "end": 34.961
+    },
+    {
+     "w": "like",
+     "start": 34.981,
+     "end": 35.26
+    },
+    {
+     "w": "a",
+     "start": 35.278,
+     "end": 35.507
+    },
+    {
+     "w": "reason,",
+     "start": 35.521,
+     "end": 36.047
+    },
+    {
+     "w": "so",
+     "start": 36.215,
+     "end": 36.461
+    },
+    {
+     "w": "we",
+     "start": 36.477,
+     "end": 36.722
+    },
+    {
+     "w": "stop",
+     "start": 36.738,
+     "end": 37.017
+    },
+    {
+     "w": "checking.",
+     "start": 37.035,
+     "end": 37.594
+    }
+   ]
+  },
+  {
+   "text": "Small favours only. Ask for twenty pages, and you'll need a REAL reason.",
+   "sec": "cd",
+   "start": 37.95,
+   "end": 44.32,
+   "words": [
+    {
+     "w": "Small",
+     "start": 37.95,
+     "end": 38.304
+    },
+    {
+     "w": "favours",
+     "start": 38.327,
+     "end": 38.974
+    },
+    {
+     "w": "only.",
+     "start": 39.015,
+     "end": 39.602
+    },
+    {
+     "w": "Ask",
+     "start": 39.801,
+     "end": 40.114
+    },
+    {
+     "w": "for",
+     "start": 40.134,
+     "end": 40.448
+    },
+    {
+     "w": "twenty",
+     "start": 40.468,
+     "end": 41.095
+    },
+    {
+     "w": "pages,",
+     "start": 41.135,
+     "end": 41.742
+    },
+    {
+     "w": "and",
+     "start": 41.942,
+     "end": 42.256
+    },
+    {
+     "w": "you'll",
+     "start": 42.276,
+     "end": 42.63
+    },
+    {
+     "w": "need",
+     "start": 42.652,
+     "end": 42.986
+    },
+    {
+     "w": "a",
+     "start": 43.007,
+     "end": 43.28
+    },
+    {
+     "w": "REAL",
+     "start": 43.298,
+     "end": 43.632
+    },
+    {
+     "w": "reason.",
+     "start": 43.653,
+     "end": 44.28
+    }
+   ]
+  }
+ ]
+}
