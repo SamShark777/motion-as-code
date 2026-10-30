@@ -7,15 +7,18 @@
  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-18/impostor-feelings.mp4",
  "buffer": {
   "youtube": "6ad3c116938409f1d09b2eb1",
-  "tiktok": "6ad3c117ae173d6e00cc5da0"
+  "tiktok": "6ad3c117ae173d6e00cc5da0",
+  "instagram": "6ae5091d18914720939a7673"
  },
- "errors": {
-  "instagram": "Account is not allowed to perform this action"
- },
+ "errors": {},
  "engine": "kokoro",
  "duration": 44.1,
  "links": {
   "youtube": "https://www.youtube.com/shorts/WwaBdNzyp7A",
   "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7698192983463628045?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ },
+ "instagram_catchup": {
+  "due": "2026-10-31T18:30:00.000Z",
+  "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/ig-backlog/impostor-feelings.mp4"
  }
 }

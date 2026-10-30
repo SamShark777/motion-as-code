@@ -1,0 +1,17 @@
+{
+ "no": 125,
+ "slug": "talk-to-yourself",
+ "date": "2026-10-31",
+ "slot": "19:00",
+ "due": "2026-11-01T02:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-31/talk-to-yourself.mp4",
+ "buffer": {
+  "youtube": "6ae5091aeaa24d6f9a3d317f",
+  "instagram": "6ae5091bb84259308ba072ea",
+  "tiktok": "6ae5091bfc1ac02b6edf3c63"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 44.0
+}

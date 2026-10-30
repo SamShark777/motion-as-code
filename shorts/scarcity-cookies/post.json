@@ -1,0 +1,17 @@
+{
+ "no": 124,
+ "slug": "scarcity-cookies",
+ "date": "2026-10-31",
+ "slot": "14:00",
+ "due": "2026-10-31T21:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-31/scarcity-cookies.mp4",
+ "buffer": {
+  "youtube": "6ae50917fc1ac02b6edf3bcc",
+  "instagram": "6ae50917eaa24d6f9a3d30c1",
+  "tiktok": "6ae50918eaa24d6f9a3d30f8"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 47.7
+}

@@ -1,0 +1,17 @@
+{
+ "no": 123,
+ "slug": "milgram-obedience",
+ "date": "2026-10-31",
+ "slot": "09:00",
+ "due": "2026-10-31T16:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-10-31/milgram-obedience.mp4",
+ "buffer": {
+  "youtube": "6ae5091318914720939a74c3",
+  "instagram": "6ae50914eaa24d6f9a3d2fc6",
+  "tiktok": "6ae50914406ab8a018828c8e"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 35.5
+}
