@@ -107,6 +107,30 @@ def inbox(old):
     return items
 
 
+def is_part2(item):
+    m = item.get("meta") or {}
+    return bool(m.get("part_of")) or "part2" in item["slug"] or "part 2" in (m.get("title") or "").lower()
+
+
+def hold(slug):
+    """Unschedule a slug's pending Stick posts (video stays hosted); re-add it later via the inbox."""
+    log = load_log()
+    rec = next((p for p in log["posts"] if p["slug"] == slug), None)
+    if not rec:
+        sys.exit(f"{slug} is not in stick/posted.json")
+    name, argname, tname, key = buffer._delete_field()
+    errs = {}
+    for svc, pid in list(rec.get("buffer", {}).items()):
+        try:
+            buffer.gql("mutation($v: %s!) { %s(%s: $v) { __typename } }" % (tname, name, argname), {"v": {key: pid} if key else pid})
+        except Exception as e:
+            errs[svc] = str(e)[:200]
+    log["posts"].remove(rec)
+    log.setdefault("held", []).append({**rec, "held_at": dt.datetime.now(TZ).strftime("%Y-%m-%d %H:%M"), "hold_errors": errs})
+    LOG.write_text(json.dumps(log, indent=1, ensure_ascii=False) + "\n")
+    print(json.dumps({"held": slug, "errors": errs}))
+
+
 def rewrite(old, new, moves, date):
     """New orphan tree: remaining inbox files + recent dated folders + today's moved videos."""
     keep_from = (dt.datetime.now(TZ).date() - dt.timedelta(days=KEEP_DAYS - 2)).isoformat()
@@ -172,6 +196,9 @@ def publish():
     taken = sum(1 for p in log["posts"] if p.get("date") == day.isoformat())
     free = SLOTS[taken:][:PER_DAY]
     batch = items[:len(free)]
+    # keep two-parters together: never leave a Part 2 for a later day than its Part 1
+    while len(batch) > 1 and len(items) > len(batch) and is_part2(items[len(batch)]) and not is_part2(batch[-1]):
+        batch = batch[:-1]
     lines = [f"## Stick or Twist — {day.strftime('%a %b %-d')}", ""]
     if not batch:
         lines.append(f"Nothing to schedule: {len(items)} new video(s) in the inbox, {len(free)} free slot(s) tomorrow.")
@@ -268,5 +295,7 @@ def create_mode(channel_id, service, meta, url, mode, due):
 if __name__ == "__main__":
     if len(sys.argv) > 2 and sys.argv[1] == "now":
         post_now(sys.argv[2])
+    elif len(sys.argv) > 2 and sys.argv[1] == "hold":
+        for sl in sys.argv[2].replace(",", " ").split(): hold(sl)
     else:
         {"check": check, "publish": publish}.get(sys.argv[1] if len(sys.argv) > 1 else "check", check)()
