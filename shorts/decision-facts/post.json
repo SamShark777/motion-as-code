@@ -1,0 +1,17 @@
+{
+ "no": 126,
+ "slug": "decision-facts",
+ "date": "2026-11-01",
+ "slot": "09:00",
+ "due": "2026-11-01T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-01/decision-facts.mp4",
+ "buffer": {
+  "youtube": "6ae64df6cf3a3112f3c07a95",
+  "instagram": "6ae64df71ee172cd6dbfd5f9",
+  "tiktok": "6ae64df7ab019b90872216ca"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 33.5
+}
