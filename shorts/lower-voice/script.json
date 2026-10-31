@@ -1,0 +1,304 @@
+{
+ "slug": "lower-voice",
+ "no": 131,
+ "format": "cdesign",
+ "look": "ted2",
+ "cast": [
+  "priya",
+  "grace"
+ ],
+ "title": [
+  "Lower",
+  "Voice"
+ ],
+ "credit": "Klofstad, Anderson & Peters · 2012",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "LVHook",
+   "chunks": [
+    [
+     "Same speech."
+    ],
+    [
+     "Same person."
+    ],
+    [
+     "Only the"
+    ],
+    [
+     "PITCH",
+     {
+      "emph": "PITCH",
+      "fx": "pop"
+     }
+    ],
+    [
+     "changed."
+    ]
+   ],
+   "text": "Same speech. Same person. Only the PITCH changed.",
+   "tone": "curious, intrigued"
+  },
+  {
+   "sec": "cd",
+   "scene": "Priya",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "LVPriya",
+   "chunks": [
+    [
+     "Priya is pitching"
+    ],
+    [
+     "to lead"
+    ],
+    [
+     "her team."
+    ],
+    [
+     "Every sentence"
+    ],
+    [
+     "ends like a"
+    ],
+    [
+     "QUESTION?",
+     {
+      "emph": "QUESTION",
+      "fx": "doodle",
+      "doodle": "❓"
+     }
+    ]
+   ],
+   "text": "Priya is pitching to lead her team. Every sentence ends like a QUESTION?",
+   "tone": "playfully, rising at the end"
+  },
+  {
+   "sec": "cd",
+   "scene": "2012",
+   "color": "#B3202A",
+   "light": false,
+   "art": "LVStudy",
+   "chunks": [
+    [
+     "In 2012,"
+    ],
+    [
+     "Casey"
+    ],
+    [
+     "KLOFSTAD'S",
+     {
+      "emph": "KLOFSTAD'S",
+      "fx": "type"
+     }
+    ],
+    [
+     "team recorded"
+    ],
+    [
+     "people saying:"
+    ],
+    [
+     "I urge you"
+    ],
+    [
+     "to vote"
+    ],
+    [
+     "for me"
+    ],
+    [
+     "this November."
+    ]
+   ],
+   "text": "In 2012, Casey KLOFSTAD'S team recorded people saying: I urge you to vote for me this November.",
+   "tone": "curious",
+   "say": "In twenty twelve, Casey Klofstad's team recorded people saying: I urge you to vote for me this November."
+  },
+  {
+   "sec": "cd",
+   "scene": "Pitch",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "LVPitch",
+   "chunks": [
+    [
+     "Then they"
+    ],
+    [
+     "made each voice"
+    ],
+    [
+     "a little higher,"
+    ],
+    [
+     "and a little"
+    ],
+    [
+     "LOWER.",
+     {
+      "emph": "LOWER",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "Then they made each voice a little higher, and a little LOWER.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Votes",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "LVVotes",
+   "chunks": [
+    [
+     "Listeners picked"
+    ],
+    [
+     "the"
+    ],
+    [
+     "DEEPER",
+     {
+      "emph": "DEEPER",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "versions,"
+    ],
+    [
+     "for male"
+    ],
+    [
+     "and female"
+    ],
+    [
+     "candidates."
+    ]
+   ],
+   "text": "Listeners picked the DEEPER versions, for male and female candidates.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Traits",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "LVTraits",
+   "chunks": [
+    [
+     "Deeper voices"
+    ],
+    [
+     "often sounded"
+    ],
+    [
+     "stronger and"
+    ],
+    [
+     "more"
+    ],
+    [
+     "COMPETENT.",
+     {
+      "emph": "COMPETENT",
+      "fx": "circle",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "Deeper voices often sounded stronger and more COMPETENT.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "LVBut",
+   "chunks": [
+    [
+     "But this was"
+    ],
+    [
+     "a lab test"
+    ],
+    [
+     "with edited voices,"
+    ],
+    [
+     "not a real"
+    ],
+    [
+     "ELECTION.",
+     {
+      "emph": "ELECTION",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "But this was a lab test with edited voices, not a real ELECTION.",
+   "tone": "honestly, calm"
+  },
+  {
+   "sec": "cd",
+   "scene": "Fix",
+   "color": "#E8C547",
+   "light": true,
+   "art": "LVFix",
+   "chunks": [
+    [
+     "Priya's fix:"
+    ],
+    [
+     "she ends"
+    ],
+    [
+     "each sentence"
+    ],
+    [
+     "going"
+    ],
+    [
+     "DOWN.",
+     {
+      "emph": "DOWN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Grace nods."
+    ]
+   ],
+   "text": "Priya's fix: she ends each sentence going DOWN. Grace nods.",
+   "tone": "warmly, confident"
+  }
+ ],
+ "post": {
+  "title": "Same Speech, Lower Voice, More Votes #shorts",
+  "description": "Priya is pitching to lead her team, but every sentence ends like a question. In 2012 Casey Klofstad, Rindy Anderson and Susan Peters (\"Sounds like a winner: voice pitch influences perception of leadership capacity in both men and women\", Proceedings of the Royal Society B) recorded men and women saying \"I urge you to vote for me this November\", then made higher- and lower-pitched versions of each voice. Both men and women listeners picked the lower-pitched candidates, for male and female voices, and lower voices were often rated stronger and more competent. Caveat: a lab test with edited recordings, not a real election. #psychology #shorts #leadership #publicspeaking",
+  "tags": [
+   "voice pitch",
+   "leadership",
+   "public speaking",
+   "klofstad",
+   "first impressions",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Lower Voice, More Votes",
+ "thumb_emph": "Lower Voice",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Presence & influence rules"
+}

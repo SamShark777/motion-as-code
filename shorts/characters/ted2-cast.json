@@ -8,7 +8,8 @@
    "personality": "nervous overthinker; the viewer's stand-in",
    "history": [
     "ep 1 (friend-question): stuck for weeks on quitting his job; answers instantly when asked what he would tell a friend (Solomon's paradox)",
-    "ep 2 (milgram-obedience): sure he'd have stopped; plays the volunteer at the panel, then refuses and says no out loud (Milgram 1963)"
+    "ep 2 (milgram-obedience): sure he'd have stopped; plays the volunteer at the panel, then refuses and says no out loud (Milgram 1963)",
+    "ep 3 (maximizer-test, with Leo): forty tabs for one phone charger; a maximizer (Schwartz et al. 2002); still wonders about tab 39; learns to define good enough"
    ]
   },
   "priya": {
@@ -18,7 +19,8 @@
    "history": [
     "ep 1 (semantic-satiation, with Leo): explains the tired-meaning idea behind semantic satiation",
     "ep 2 (because-copier): explains that \"because\" sounds like a reason, so we stop checking",
-    "ep 3 (milgram-obedience): cameo as one of the two volunteers who refuse"
+    "ep 3 (milgram-obedience): cameo as one of the two volunteers who refuse",
+    "ep 4 (lower-voice, with Grace): pitching to lead her team, every sentence ends like a question; learns voice-pitch study (Klofstad, Anderson & Peters 2012), ends sentences going down"
    ]
   },
   "leo": {
@@ -28,7 +30,8 @@
    "history": [
     "ep 1 (friend-question): cameo as \"the friend\" in the study scene",
     "ep 2 (semantic-satiation): says \"spoon\" until it is just a noise; tries it on his own name tag",
-    "ep 3 (because-copier): cuts the copier line with \"because I have to make copies\""
+    "ep 3 (because-copier): cuts the copier line with \"because I have to make copies\"",
+    "ep 4 (maximizer-test): buys the first good charger in two minutes — the satisficer"
    ]
   },
   "grace": {
@@ -37,7 +40,9 @@
    "personality": "wise retired therapist; calm voice of reason",
    "history": [
     "ep 1 (friend-question): Sam's neighbour; asks him \"what would you tell a friend?\"",
-    "ep 2 (milgram-obedience): names obedience to authority"
+    "ep 2 (milgram-obedience): names obedience to authority",
+    "ep 3 (gratitude-visit): hands Omar the pen; explains the boost lasted a month, faded by six; \"so write another one\"",
+    "ep 4 (lower-voice): nods at Priya's new pitch"
    ]
   },
   "omar": {
@@ -45,7 +50,8 @@
    "look": "buzz cut, full beard, red top, orange backdrop",
    "personality": "competitive and proud; habits, motivation, status",
    "history": [
-    "ep 1 (because-copier): next in line at the copier; refuses Leo with no reason, then steps aside for an empty \"because\" (Langer copy-machine study)"
+    "ep 1 (because-copier): next in line at the copier; refuses Leo with no reason, then steps aside for an empty \"because\" (Langer copy-machine study)",
+    "ep 2 (gratitude-visit, with Grace): thinks thank-you notes are for weddings; writes to his old coach and reads it aloud, voice cracking (gratitude visit, Seligman et al. 2005)"
    ]
   }
  }

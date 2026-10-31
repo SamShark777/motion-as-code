@@ -1,0 +1,290 @@
+{
+ "slug": "maximizer-test",
+ "no": 130,
+ "format": "cdesign",
+ "look": "ted2",
+ "cast": [
+  "sam",
+  "leo"
+ ],
+ "title": [
+  "Maximizer",
+  "Test"
+ ],
+ "credit": "Schwartz, Ward, Monterosso, Lyubomirsky, White & Lehman · 2002",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "MXHook",
+   "chunks": [
+    [
+     "Do you always"
+    ],
+    [
+     "hunt for the"
+    ],
+    [
+     "BEST option?",
+     {
+      "emph": "BEST",
+      "fx": "pop"
+     }
+    ],
+    [
+     "It could be"
+    ],
+    [
+     "costing you"
+    ],
+    [
+     "happiness."
+    ]
+   ],
+   "text": "Do you always hunt for the BEST option? It could be costing you happiness.",
+   "tone": "curious, a little teasing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Tabs",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "MXTabs",
+   "chunks": [
+    [
+     "Sam needs"
+    ],
+    [
+     "a phone charger."
+    ],
+    [
+     "Three hours later:"
+    ],
+    [
+     "forty"
+    ],
+    [
+     "TABS.",
+     {
+      "emph": "TABS",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Sam needs a phone charger. Three hours later: forty TABS.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Leo",
+   "color": "#E8C547",
+   "light": true,
+   "art": "MXLeo",
+   "chunks": [
+    [
+     "Leo buys"
+    ],
+    [
+     "the first"
+    ],
+    [
+     "good one."
+    ],
+    [
+     "Two"
+    ],
+    [
+     "MINUTES.",
+     {
+      "emph": "MINUTES",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Leo buys the first good one. Two MINUTES.",
+   "tone": "playfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "MXName",
+   "chunks": [
+    [
+     "Psychologists call"
+    ],
+    [
+     "Sam a"
+    ],
+    [
+     "MAXIMIZER.",
+     {
+      "emph": "MAXIMIZER",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ],
+    [
+     "Leo is"
+    ],
+    [
+     "a satisficer."
+    ]
+   ],
+   "text": "Psychologists call Sam a MAXIMIZER. Leo is a satisficer.",
+   "tone": "thoughtfully",
+   "say": "Psychologists call Sam a maximizer. Leo is a sat-iss-fyer."
+  },
+  {
+   "sec": "cd",
+   "scene": "2002",
+   "color": "#B3202A",
+   "light": false,
+   "art": "MXStudy",
+   "chunks": [
+    [
+     "In 2002,"
+    ],
+    [
+     "Barry"
+    ],
+    [
+     "SCHWARTZ'S",
+     {
+      "emph": "SCHWARTZ'S",
+      "fx": "type"
+     }
+    ],
+    [
+     "team measured"
+    ],
+    [
+     "both types."
+    ]
+   ],
+   "text": "In 2002, Barry SCHWARTZ'S team measured both types.",
+   "tone": "curious",
+   "say": "In two thousand two, Barry Schwartz's team measured both types."
+  },
+  {
+   "sec": "cd",
+   "scene": "Results",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "MXResults",
+   "chunks": [
+    [
+     "Maximizers reported"
+    ],
+    [
+     "less happiness,"
+    ],
+    [
+     "less optimism,"
+    ],
+    [
+     "and more"
+    ],
+    [
+     "REGRET.",
+     {
+      "emph": "REGRET",
+      "fx": "circle",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "Maximizers reported less happiness, less optimism, and more REGRET.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "MXBut",
+   "chunks": [
+    [
+     "But Sam's charger"
+    ],
+    [
+     "is barely better."
+    ],
+    [
+     "And he still"
+    ],
+    [
+     "WONDERS",
+     {
+      "emph": "WONDERS",
+      "fx": "doodle",
+      "doodle": "🤔"
+     }
+    ],
+    [
+     "about tab"
+    ],
+    [
+     "thirty-nine."
+    ]
+   ],
+   "text": "But Sam's charger is barely better. And he still WONDERS about tab thirty-nine.",
+   "tone": "wryly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Move",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "MXMove",
+   "chunks": [
+    [
+     "Your move:"
+    ],
+    [
+     "decide what"
+    ],
+    [
+     "good"
+    ],
+    [
+     "ENOUGH",
+     {
+      "emph": "ENOUGH",
+      "fx": "pop"
+     }
+    ],
+    [
+     "looks like,"
+    ],
+    [
+     "then stop looking."
+    ]
+   ],
+   "text": "Your move: decide what good ENOUGH looks like, then stop looking.",
+   "tone": "warmly"
+  }
+ ],
+ "post": {
+  "title": "Are You a Maximizer or a Satisficer? #shorts",
+  "description": "Sam opens forty tabs to buy one phone charger. Leo buys the first good one in two minutes. Psychologists call Sam a maximizer (always hunting for the best option) and Leo a satisficer (picks the first option that is good enough). In 2002 Barry Schwartz, Andrew Ward, John Monterosso, Sonja Lyubomirsky, Katherine White and Darrin Lehman (\"Maximizing Versus Satisficing: Happiness Is a Matter of Choice\", Journal of Personality and Social Psychology) found that people who scored high on their Maximization Scale reported less happiness, optimism and life satisfaction, and more regret and depression. These are correlations, not proof that maximizing causes unhappiness. Try deciding what good enough looks like, then stop looking. #psychology #shorts #decisionmaking #maximizer",
+  "tags": [
+   "maximizer",
+   "satisficer",
+   "barry schwartz",
+   "paradox of choice",
+   "decision making",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Maximizer or Satisficer?",
+ "thumb_emph": "Maximizer",
+ "thumb_mood": "nervous",
+ "music_vibe": "playful",
+ "pattern": "Quiz / test yourself"
+}

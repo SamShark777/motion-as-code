@@ -16,7 +16,8 @@
    "history": [
     "ep 1 (milo-coffee-stain): spotlight effect — coffee stain at the party, nobody noticed; tomorrow he gives a speech",
     "ep 2 (shaky-bridge): first date in two days; Theo says make it scary (Dutton & Aron 1974 shaky bridge, misattribution of arousal); Milo books a horror escape room, then remembers he is scared of the dark — PART 2",
-    "ep 3 (talk-to-yourself, with Nia): the speech from ep 1 — catches Nia talking to herself by name, learns self-distancing (Kross et al. 2014), coaches himself by name and goes on calm"
+    "ep 3 (talk-to-yourself, with Nia): the speech from ep 1 — catches Nia talking to herself by name, learns self-distancing (Kross et al. 2014), coaches himself by name and goes on calm",
+    "ep 4 (lima-syndrome): locked in Rosa's escape room with June; tells her about his speech"
    ]
   },
   "nia": {
@@ -31,7 +32,8 @@
    },
    "history": [
     "ep 1 (first-impressions, with Rosa): \"they'll judge your face first\"",
-    "ep 2 (talk-to-yourself, with Milo): pep-talks herself by name in the mirror; Milo, 5 min before his speech, thinks she's lost it, while his own head spirals in 'I' (Kross et al. 2014 self-distancing); he tries 'Milo, you've done harder things' and walks on stage calm"
+    "ep 2 (talk-to-yourself, with Milo): pep-talks herself by name in the mirror; Milo, 5 min before his speech, thinks she's lost it, while his own head spirals in 'I' (Kross et al. 2014 self-distancing); he tries 'Milo, you've done harder things' and walks on stage calm",
+    "ep 3 (ikea-effect, with Theo): six hours on a wobbly shelf, prices it at $100 vs $40 new (IKEA effect, Norton, Mochon & Ariely 2012: builders paid 63% more); Theo then hands her his flat-pack desk"
    ]
   },
   "theo": {
@@ -45,7 +47,8 @@
    },
    "history": [
     "ep 1 (shaky-bridge, with Milo): tells Milo about the shaky-bridge study",
-    "ep 2 (decision-facts, with Dev): bets Dev three facts about choosing — defaults (Johnson & Goldstein 2003 organ donors 42% vs 82%), the jam study (Iyengar & Lepper 2000, mixed replications), the decoy (Huber, Payne & Puto 1982); calls it choice architecture"
+    "ep 2 (decision-facts, with Dev): bets Dev three facts about choosing — defaults (Johnson & Goldstein 2003 organ donors 42% vs 82%), the jam study (Iyengar & Lepper 2000, mixed replications), the decoy (Huber, Payne & Puto 1982); calls it choice architecture",
+    "ep 3 (ikea-effect): offers Nia $20 for her shelf, names the IKEA effect"
    ]
   },
   "rosa": {
@@ -59,7 +62,8 @@
     "nia": "gym buddy"
    },
    "history": [
-    "ep 1 (first-impressions): rehearsed 40 interview answers; learns faces are judged in 0.1 s and the halo effect, bins the script and smiles at the receptionist first"
+    "ep 1 (first-impressions): rehearsed 40 interview answers; learns faces are judged in 0.1 s and the halo effect, bins the script and smiles at the receptionist first",
+    "ep 2 (lima-syndrome, with Milo + June): new escape-room game master; no-hints rule collapses, whispers answers, opens the door at minute 30 (Lima syndrome, 1996 Lima hostage crisis; one case, not lab studies)"
    ]
   },
   "dev": {
@@ -88,7 +92,8 @@
     "theo": "his former student"
    },
    "history": [
-    "ep 1 (doodlers): doodling — June spirals through the meeting, Dev says she is not listening, but she is the one who remembers (Andrade 2009); next meeting Dev doodles sharks"
+    "ep 1 (doodlers): doodling — June spirals through the meeting, Dev says she is not listening, but she is the one who remembers (Andrade 2009); next meeting Dev doodles sharks",
+    "ep 2 (lima-syndrome): shares her snacks with game-master Rosa; walks out early"
    ]
   }
  }

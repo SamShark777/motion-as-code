@@ -1,0 +1,321 @@
+{
+ "slug": "lima-syndrome",
+ "no": 129,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Rosa",
+ "episode": 2,
+ "cast": [
+  "rosa",
+  "milo",
+  "june"
+ ],
+ "title": [
+  "Lima",
+  "Syndrome"
+ ],
+ "credit": "1996–97 Japanese embassy hostage crisis, Lima",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "LHook",
+   "chunks": [
+    [
+     "Rosa's new job:"
+    ],
+    [
+     "keep Milo"
+    ],
+    [
+     "and June"
+    ],
+    [
+     "LOCKED",
+     {
+      "emph": "LOCKED"
+     }
+    ],
+    [
+     "in for"
+    ],
+    [
+     "an hour."
+    ]
+   ],
+   "text": "Rosa's new job: keep Milo and June LOCKED in for an hour.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Rule",
+   "art": "LRule",
+   "chunks": [
+    [
+     "Rule one:"
+    ],
+    [
+     "no"
+    ],
+    [
+     "HINTS.",
+     {
+      "emph": "HINTS"
+     }
+    ]
+   ],
+   "text": "Rule one: no HINTS.",
+   "tone": "seriously, mock-strict"
+  },
+  {
+   "sec": "cd",
+   "scene": "Bond",
+   "art": "LBond",
+   "chunks": [
+    [
+     "Then Milo"
+    ],
+    [
+     "tells her"
+    ],
+    [
+     "about his speech."
+    ],
+    [
+     "June shares"
+    ],
+    [
+     "her"
+    ],
+    [
+     "SNACKS.",
+     {
+      "emph": "SNACKS"
+     }
+    ]
+   ],
+   "text": "Then Milo tells her about his speech. June shares her SNACKS.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Answers",
+   "art": "LAnswers",
+   "chunks": [
+    [
+     "Minute twenty:"
+    ],
+    [
+     "Rosa is"
+    ],
+    [
+     "whispering"
+    ],
+    [
+     "ANSWERS.",
+     {
+      "emph": "ANSWERS"
+     }
+    ]
+   ],
+   "text": "Minute twenty: Rosa is whispering ANSWERS.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "Door",
+   "art": "LDoor",
+   "chunks": [
+    [
+     "Minute thirty:"
+    ],
+    [
+     "she just"
+    ],
+    [
+     "opens the"
+    ],
+    [
+     "DOOR.",
+     {
+      "emph": "DOOR"
+     }
+    ]
+   ],
+   "text": "Minute thirty: she just opens the DOOR.",
+   "tone": "laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Reverse",
+   "art": "LReverse",
+   "chunks": [
+    [
+     "Stockholm syndrome"
+    ],
+    [
+     "is hostages"
+    ],
+    [
+     "bonding with captors."
+    ],
+    [
+     "This is the"
+    ],
+    [
+     "REVERSE.",
+     {
+      "emph": "REVERSE"
+     }
+    ]
+   ],
+   "text": "Stockholm syndrome is hostages bonding with captors. This is the REVERSE.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Lima",
+   "art": "LLima",
+   "chunks": [
+    [
+     "In 1996,"
+    ],
+    [
+     "rebels in Lima"
+    ],
+    [
+     "took over"
+    ],
+    [
+     "600",
+     {
+      "emph": "600"
+     }
+    ],
+    [
+     "hostages."
+    ]
+   ],
+   "text": "In 1996, rebels in Lima took over 600 hostages.",
+   "tone": "serious",
+   "say": "In nineteen ninety-six, rebels in Lima took over six hundred hostages.",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Released",
+   "art": "LReleased",
+   "chunks": [
+    [
+     "Within weeks,"
+    ],
+    [
+     "hundreds were"
+    ],
+    [
+     "RELEASED.",
+     {
+      "emph": "RELEASED"
+     }
+    ],
+    [
+     "Some captors"
+    ],
+    [
+     "reportedly grew"
+    ],
+    [
+     "attached."
+    ]
+   ],
+   "text": "Within weeks, hundreds were RELEASED. Some captors reportedly grew attached.",
+   "tone": "thoughtfully",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "LName",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "LIMA",
+     {
+      "emph": "LIMA"
+     }
+    ],
+    [
+     "syndrome."
+    ],
+    [
+     "But it rests"
+    ],
+    [
+     "on one case,"
+    ],
+    [
+     "not lab studies."
+    ]
+   ],
+   "text": "It's called LIMA syndrome. But it rests on one case, not lab studies.",
+   "tone": "thoughtfully, honest"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "LPayoff",
+   "chunks": [
+    [
+     "Her manager:"
+    ],
+    [
+     "thirty minutes"
+    ],
+    [
+     "left?"
+    ],
+    [
+     "Rosa:"
+    ],
+    [
+     "they were"
+    ],
+    [
+     "NICE!",
+     {
+      "emph": "NICE"
+     }
+    ]
+   ],
+   "text": "Her manager: thirty minutes left? Rosa: they were NICE!",
+   "tone": "playfully",
+   "say": "Her manager: thirty minutes left? Rosa: they were nice!"
+  }
+ ],
+ "post": {
+  "title": "The Reverse of Stockholm Syndrome #shorts",
+  "description": "Rosa's job is to keep Milo and June locked in an escape room for an hour. Thirty minutes in, she opens the door. Stockholm syndrome is hostages bonding with their captors; Lima syndrome is the reverse: captors growing attached to the people they hold. It is named after the Japanese embassy hostage crisis in Lima, Peru, which began on 17 December 1996, when MRTA rebels took more than 600 people hostage at the Japanese ambassador's residence. Within weeks hundreds were released, and some of the young captors were reported to have grown attached to their hostages. Honest caveat: the term comes from that one famous case and a few anecdotes, not from controlled studies. #psychology #shorts #limasyndrome #stockholmsyndrome",
+  "tags": [
+   "lima syndrome",
+   "stockholm syndrome",
+   "psychology",
+   "escape room",
+   "empathy"
+  ]
+ },
+ "thumb_text": "The Reverse of Stockholm Syndrome",
+ "thumb_emph": "Reverse",
+ "thumb_mood": "shocked",
+ "music_vibe": "mystery",
+ "pattern": "Character story",
+ "thumb_scene": 4
+}

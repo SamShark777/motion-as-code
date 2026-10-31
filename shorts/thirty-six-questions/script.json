@@ -1,0 +1,307 @@
+{
+ "slug": "thirty-six-questions",
+ "no": 128,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 2,
+ "cast": [
+  "otto",
+  "arthur",
+  "mae"
+ ],
+ "title": [
+  "36",
+  "Questions"
+ ],
+ "credit": "Aron, Melinat, Aron, Vallone & Bator · 1997",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "QHook",
+   "chunks": [
+    [
+     "Otto has sat"
+    ],
+    [
+     "next to Arthur"
+    ],
+    [
+     "for"
+    ],
+    [
+     "TEN years.",
+     {
+      "emph": "TEN"
+     }
+    ]
+   ],
+   "text": "Otto has sat next to Arthur for TEN years.",
+   "tone": "curious, a little amused",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Tea",
+   "art": "QTea",
+   "chunks": [
+    [
+     "He knows"
+    ],
+    [
+     "one fact:"
+    ],
+    [
+     "Arthur likes"
+    ],
+    [
+     "TEA.",
+     {
+      "emph": "TEA"
+     }
+    ]
+   ],
+   "text": "He knows one fact: Arthur likes TEA.",
+   "tone": "deadpan"
+  },
+  {
+   "sec": "cd",
+   "scene": "List",
+   "art": "QList",
+   "chunks": [
+    [
+     "Mae hands them"
+    ],
+    [
+     "a list."
+    ],
+    [
+     "Thirty-six"
+    ],
+    [
+     "QUESTIONS.",
+     {
+      "emph": "QUESTIONS"
+     }
+    ]
+   ],
+   "text": "Mae hands them a list. Thirty-six QUESTIONS.",
+   "tone": "mischievously"
+  },
+  {
+   "sec": "cd",
+   "scene": "Famous",
+   "art": "QFamous",
+   "chunks": [
+    [
+     "It starts easy."
+    ],
+    [
+     "Would you like"
+    ],
+    [
+     "to be"
+    ],
+    [
+     "FAMOUS?",
+     {
+      "emph": "FAMOUS"
+     }
+    ]
+   ],
+   "text": "It starts easy. Would you like to be FAMOUS?",
+   "tone": "playfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Deeper",
+   "art": "QDeep",
+   "chunks": [
+    [
+     "Then deeper."
+    ],
+    [
+     "What do you"
+    ],
+    [
+     "value"
+    ],
+    [
+     "MOST",
+     {
+      "emph": "MOST"
+     }
+    ],
+    [
+     "in a friendship?"
+    ]
+   ],
+   "text": "Then deeper. What do you value MOST in a friendship?",
+   "tone": "softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Tears",
+   "art": "QTears",
+   "chunks": [
+    [
+     "Forty-five minutes later,"
+    ],
+    [
+     "Otto is"
+    ],
+    [
+     "WIPING",
+     {
+      "emph": "WIPING"
+     }
+    ],
+    [
+     "his eyes."
+    ]
+   ],
+   "text": "Forty-five minutes later, Otto is WIPING his eyes.",
+   "tone": "surprised, then gently",
+   "say": "Forty five minutes later, Otto is wiping his eyes."
+  },
+  {
+   "sec": "cd",
+   "scene": "Aron",
+   "art": "QAron",
+   "chunks": [
+    [
+     "In 1997,"
+    ],
+    [
+     "another Arthur,"
+    ],
+    [
+     "psychologist Arthur"
+    ],
+    [
+     "ARON,",
+     {
+      "emph": "ARON"
+     }
+    ],
+    [
+     "paired up strangers."
+    ]
+   ],
+   "text": "In 1997, another Arthur, psychologist Arthur ARON, paired up strangers.",
+   "tone": "curious",
+   "say": "In nineteen ninety-seven, another Arthur, psychologist Arthur Aron, paired up strangers."
+  },
+  {
+   "sec": "cd",
+   "scene": "Closer",
+   "art": "QCloser",
+   "chunks": [
+    [
+     "Pairs who asked"
+    ],
+    [
+     "these questions"
+    ],
+    [
+     "felt"
+    ],
+    [
+     "CLOSER",
+     {
+      "emph": "CLOSER"
+     }
+    ],
+    [
+     "than pairs"
+    ],
+    [
+     "making small talk."
+    ]
+   ],
+   "text": "Pairs who asked these questions felt CLOSER than pairs making small talk.",
+   "tone": "surprised",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "QStep",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "escalating"
+    ],
+    [
+     "SELF-DISCLOSURE:",
+     {
+      "emph": "SELF-DISCLOSURE"
+     }
+    ],
+    [
+     "sharing a bit"
+    ],
+    [
+     "more,"
+    ],
+    [
+     "step by step."
+    ]
+   ],
+   "text": "Psychologists call it escalating SELF-DISCLOSURE: sharing a bit more, step by step.",
+   "tone": "thoughtfully",
+   "say": "Psychologists call it escalating self disclosure: sharing a bit more, step by step."
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "QPayoff",
+   "chunks": [
+    [
+     "Next morning,"
+    ],
+    [
+     "Otto brings Arthur"
+    ],
+    [
+     "a"
+    ],
+    [
+     "TEA.",
+     {
+      "emph": "TEA"
+     }
+    ]
+   ],
+   "text": "Next morning, Otto brings Arthur a TEA.",
+   "tone": "warmly"
+  }
+ ],
+ "post": {
+  "title": "36 Questions That Made Strangers Close #shorts",
+  "description": "Otto has sat next to Arthur for ten years and knows exactly one thing about him. Then Mae hands them the 36 questions. In 1997 psychologist Arthur Aron and colleagues (Aron, Melinat, Aron, Vallone & Bator, \"The Experimental Generation of Interpersonal Closeness\", Personality and Social Psychology Bulletin) paired up strangers for 45 minutes: three sets of 12 questions that slowly get more personal. Pairs who asked them felt closer afterwards than pairs who made small talk. The trick is escalating, back-and-forth self-disclosure. #psychology #shorts #friendship #36questions",
+  "tags": [
+   "36 questions",
+   "arthur aron",
+   "friendship",
+   "closeness",
+   "self-disclosure",
+   "psychology"
+  ]
+ },
+ "thumb_text": "36 Questions Made Strangers Close",
+ "thumb_emph": "36 Questions",
+ "thumb_mood": "shocked",
+ "music_vibe": "warm",
+ "pattern": "Character story",
+ "thumb_scene": 5
+}

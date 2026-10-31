@@ -1,0 +1,301 @@
+{
+ "slug": "ikea-effect",
+ "no": 132,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Nia",
+ "episode": 3,
+ "cast": [
+  "nia",
+  "theo"
+ ],
+ "title": [
+  "IKEA",
+  "Effect"
+ ],
+ "credit": "Norton, Mochon & Ariely · 2012",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "IKHook",
+   "chunks": [
+    [
+     "Nia spent"
+    ],
+    [
+     "six hours"
+    ],
+    [
+     "building a"
+    ],
+    [
+     "SHELF.",
+     {
+      "emph": "SHELF"
+     }
+    ]
+   ],
+   "text": "Nia spent six hours building a SHELF.",
+   "tone": "proudly, then deadpan",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Wobble",
+   "art": "IKWobble",
+   "chunks": [
+    [
+     "It wobbles."
+    ],
+    [
+     "One screw"
+    ],
+    [
+     "is"
+    ],
+    [
+     "LEFT",
+     {
+      "emph": "LEFT"
+     }
+    ],
+    [
+     "over."
+    ]
+   ],
+   "text": "It wobbles. One screw is LEFT over.",
+   "tone": "wryly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Offer",
+   "art": "IKOffer",
+   "chunks": [
+    [
+     "Theo offers her"
+    ],
+    [
+     "twenty dollars."
+    ],
+    [
+     "Nia says"
+    ],
+    [
+     "it's worth"
+    ],
+    [
+     "a"
+    ],
+    [
+     "HUNDRED.",
+     {
+      "emph": "HUNDRED"
+     }
+    ]
+   ],
+   "text": "Theo offers her twenty dollars. Nia says it's worth a HUNDRED.",
+   "tone": "playfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Box",
+   "art": "IKBox",
+   "chunks": [
+    [
+     "The same shelf,"
+    ],
+    [
+     "new in"
+    ],
+    [
+     "the box?"
+    ],
+    [
+     "FORTY.",
+     {
+      "emph": "FORTY"
+     }
+    ]
+   ],
+   "text": "The same shelf, new in the box? FORTY.",
+   "tone": "deadpan",
+   "capY": 1650
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "IKName",
+   "chunks": [
+    [
+     "Psychologists call this"
+    ],
+    [
+     "the"
+    ],
+    [
+     "IKEA",
+     {
+      "emph": "IKEA"
+     }
+    ],
+    [
+     "effect."
+    ]
+   ],
+   "text": "Psychologists call this the IKEA effect.",
+   "tone": "thoughtfully",
+   "say": "Psychologists call this the Ikea effect."
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "IKStudy",
+   "chunks": [
+    [
+     "Norton, Mochon"
+    ],
+    [
+     "and Ariely"
+    ],
+    [
+     "had people"
+    ],
+    [
+     "ASSEMBLE",
+     {
+      "emph": "ASSEMBLE"
+     }
+    ],
+    [
+     "plain IKEA boxes."
+    ]
+   ],
+   "text": "Norton, Mochon and Ariely had people ASSEMBLE plain IKEA boxes.",
+   "tone": "curious",
+   "say": "Norton, Mochon and Ariely had people assemble plain Ikea boxes."
+  },
+  {
+   "sec": "cd",
+   "scene": "Stat",
+   "art": "IKStat",
+   "chunks": [
+    [
+     "Builders would pay"
+    ],
+    [
+     "63 PERCENT",
+     {
+      "emph": "63 PERCENT"
+     }
+    ],
+    [
+     "more"
+    ],
+    [
+     "than people handed"
+    ],
+    [
+     "one already built."
+    ]
+   ],
+   "text": "Builders would pay 63 PERCENT more than people handed one already built.",
+   "tone": "surprised",
+   "say": "Builders would pay sixty-three percent more than people handed one already built.",
+   "capY": 1650
+  },
+  {
+   "sec": "cd",
+   "scene": "Love",
+   "art": "IKLove",
+   "chunks": [
+    [
+     "Effort makes us"
+    ],
+    [
+     "LOVE",
+     {
+      "emph": "LOVE"
+     }
+    ],
+    [
+     "what we make."
+    ]
+   ],
+   "text": "Effort makes us LOVE what we make.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "art": "IKBut",
+   "chunks": [
+    [
+     "But the boost"
+    ],
+    [
+     "fades when people"
+    ],
+    [
+     "don't"
+    ],
+    [
+     "FINISH.",
+     {
+      "emph": "FINISH"
+     }
+    ]
+   ],
+   "text": "But the boost fades when people don't FINISH.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "IKPayoff",
+   "chunks": [
+    [
+     "Theo nods."
+    ],
+    [
+     "Then hands Nia"
+    ],
+    [
+     "his flat-pack"
+    ],
+    [
+     "DESK.",
+     {
+      "emph": "DESK"
+     }
+    ]
+   ],
+   "text": "Theo nods. Then hands Nia his flat-pack DESK.",
+   "tone": "mischievously"
+  }
+ ],
+ "post": {
+  "title": "Why Your Wobbly Shelf Feels Priceless #shorts",
+  "description": "Nia spent six hours on a wobbly shelf and won't sell it for less than a new one costs. Psychologists call it the IKEA effect. Michael Norton, Daniel Mochon and Dan Ariely (\"The IKEA effect: When labor leads to love\", Journal of Consumer Psychology, 2012) had people assemble plain IKEA storage boxes: builders were willing to pay 63% more for their box than people handed the same box already built. The effect also showed up for origami and Lego, and it depended on actually finishing the build. #psychology #shorts #ikeaeffect #behavioraleconomics",
+  "tags": [
+   "ikea effect",
+   "dan ariely",
+   "michael norton",
+   "behavioral economics",
+   "diy",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why Your Wobbly Shelf Feels Priceless",
+ "thumb_emph": "Priceless",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 2
+}

@@ -1,0 +1,287 @@
+{
+ "slug": "gratitude-visit",
+ "no": 127,
+ "format": "cdesign",
+ "look": "ted2",
+ "cast": [
+  "omar",
+  "grace"
+ ],
+ "title": [
+  "Gratitude",
+  "Visit"
+ ],
+ "credit": "Seligman, Steen, Park & Peterson · 2005",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "GVHook",
+   "chunks": [
+    [
+     "ONE letter",
+     {
+      "emph": "ONE",
+      "fx": "pop"
+     }
+    ],
+    [
+     "made people"
+    ],
+    [
+     "happier"
+    ],
+    [
+     "for a month."
+    ]
+   ],
+   "text": "ONE letter made people happier for a month.",
+   "tone": "curious, excited"
+  },
+  {
+   "sec": "cd",
+   "scene": "Omar",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "GVOmar",
+   "chunks": [
+    [
+     "Omar thinks"
+    ],
+    [
+     "thank-you notes"
+    ],
+    [
+     "are for"
+    ],
+    [
+     "WEDDINGS.",
+     {
+      "emph": "WEDDINGS",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Omar thinks thank-you notes are for WEDDINGS.",
+   "tone": "mischievously",
+   "say": "Omar thinks thank you notes are for weddings."
+  },
+  {
+   "sec": "cd",
+   "scene": "Pen",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "GVPen",
+   "chunks": [
+    [
+     "Grace hands"
+    ],
+    [
+     "him a pen:"
+    ],
+    [
+     "write to someone"
+    ],
+    [
+     "who changed"
+    ],
+    [
+     "your life"
+    ],
+    [
+     "and never got"
+    ],
+    [
+     "THANKED.",
+     {
+      "emph": "THANKED",
+      "fx": "underline",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "Grace hands him a pen: write to someone who changed your life and never got THANKED.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Read",
+   "color": "#E8C547",
+   "light": true,
+   "art": "GVRead",
+   "chunks": [
+    [
+     "Then read it"
+    ],
+    [
+     "to them."
+    ],
+    [
+     "In"
+    ],
+    [
+     "PERSON.",
+     {
+      "emph": "PERSON",
+      "fx": "doodle",
+      "doodle": "✉️"
+     }
+    ]
+   ],
+   "text": "Then read it to them. In PERSON.",
+   "tone": "playfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "2005",
+   "color": "#B3202A",
+   "light": false,
+   "art": "GVStudy",
+   "chunks": [
+    [
+     "In 2005,"
+    ],
+    [
+     "Martin"
+    ],
+    [
+     "SELIGMAN'S",
+     {
+      "emph": "SELIGMAN'S",
+      "fx": "type"
+     }
+    ],
+    [
+     "team tested"
+    ],
+    [
+     "happiness exercises"
+    ],
+    [
+     "online."
+    ]
+   ],
+   "text": "In 2005, Martin SELIGMAN'S team tested happiness exercises online.",
+   "tone": "curious",
+   "say": "In two thousand five, Martin Seligman's team tested happiness exercises online."
+  },
+  {
+   "sec": "cd",
+   "scene": "Biggest",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "GVBiggest",
+   "chunks": [
+    [
+     "This one"
+    ],
+    [
+     "gave the"
+    ],
+    [
+     "BIGGEST boost,",
+     {
+      "emph": "BIGGEST",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "still there"
+    ],
+    [
+     "a month later."
+    ]
+   ],
+   "text": "This one gave the BIGGEST boost, still there a month later.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "But",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "GVFade",
+   "chunks": [
+    [
+     "But by"
+    ],
+    [
+     "six months,"
+    ],
+    [
+     "it had"
+    ],
+    [
+     "FADED.",
+     {
+      "emph": "FADED",
+      "fx": "circle",
+      "mark": "#FFD23F"
+     }
+    ]
+   ],
+   "text": "But by six months, it had FADED.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Coach",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "GVCoach",
+   "chunks": [
+    [
+     "Omar reads"
+    ],
+    [
+     "his letter"
+    ],
+    [
+     "to his"
+    ],
+    [
+     "old coach."
+    ],
+    [
+     "Voice cracks."
+    ],
+    [
+     "Grace smiles:"
+    ],
+    [
+     "so write"
+    ],
+    [
+     "ANOTHER one.",
+     {
+      "emph": "ANOTHER",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Omar reads his letter to his old coach. Voice cracks. Grace smiles: so write ANOTHER one.",
+   "tone": "warmly, then playfully"
+  }
+ ],
+ "post": {
+  "title": "One Letter Made People Happier for a Month #shorts",
+  "description": "Omar thinks thank-you notes are for weddings, so Grace hands him a pen. The gratitude visit: write a letter to someone who changed your life and was never properly thanked, then read it to them in person. In 2005 Martin Seligman, Tracy Steen, Nansook Park and Christopher Peterson (\"Positive Psychology Progress\", American Psychologist) tested several happiness exercises online; the gratitude visit produced the biggest boost in happiness, still visible a month later, though it had faded by six months. So: write another one. #psychology #shorts #gratitude #happiness",
+  "tags": [
+   "gratitude",
+   "gratitude letter",
+   "happiness",
+   "positive psychology",
+   "seligman",
+   "psychology"
+  ]
+ },
+ "thumb_text": "One Letter, a Month of Happiness",
+ "thumb_emph": "One Letter",
+ "thumb_mood": "happy",
+ "music_vibe": "warm",
+ "pattern": "Therapist tip"
+}
