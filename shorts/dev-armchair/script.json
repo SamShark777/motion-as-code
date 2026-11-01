@@ -1,0 +1,268 @@
+{
+ "slug": "dev-armchair",
+ "no": 138,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Dev",
+ "episode": 3,
+ "cast": [
+  "dev",
+  "june"
+ ],
+ "title": [
+  "Endowment",
+  "Effect"
+ ],
+ "credit": "Kahneman, Knetsch & Thaler · 1990",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGChairHook",
+   "chunks": [
+    [
+     "Dev paid"
+    ],
+    [
+     "fifty dollars"
+    ],
+    [
+     "for this armchair."
+    ],
+    [
+     "Now he wants"
+    ],
+    [
+     "TWO hundred.",
+     {
+      "emph": "TWO"
+     }
+    ]
+   ],
+   "text": "Dev paid fifty dollars for this armchair. Now he wants TWO hundred.",
+   "tone": "curious",
+   "cam": [
+    540,
+    1000,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Offer",
+   "art": "MGJuneOffer",
+   "chunks": [
+    [
+     "June offers forty."
+    ],
+    [
+     "Dev is"
+    ],
+    [
+     "OFFENDED.",
+     {
+      "emph": "OFFENDED"
+     }
+    ]
+   ],
+   "text": "June offers forty. Dev is OFFENDED.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Memories",
+   "art": "MGMemories",
+   "chunks": [
+    [
+     "\"This chair has"
+    ],
+    [
+     "MEMORIES!\"",
+     {
+      "emph": "MEMORIES"
+     }
+    ]
+   ],
+   "text": "\"This chair has MEMORIES!\"",
+   "tone": "excited, sarcastic",
+   "cam": [
+    540,
+    950,
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Same chair",
+   "art": "MGSameChair",
+   "chunks": [
+    [
+     "But it's"
+    ],
+    [
+     "the same chair."
+    ],
+    [
+     "Only the"
+    ],
+    [
+     "OWNER changed.",
+     {
+      "emph": "OWNER"
+     }
+    ]
+   ],
+   "text": "But it's the same chair. Only the OWNER changed.",
+   "tone": "whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGStudyMug",
+   "chunks": [
+    [
+     "In 1990,"
+    ],
+    [
+     "researchers gave"
+    ],
+    [
+     "students a"
+    ],
+    [
+     "coffee MUG.",
+     {
+      "emph": "MUG"
+     }
+    ]
+   ],
+   "text": "In 1990, researchers gave students a coffee MUG.",
+   "tone": "curious",
+   "say": "In nineteen ninety, researchers gave students a coffee mug."
+  },
+  {
+   "sec": "cd",
+   "scene": "Owners",
+   "art": "MGOwners",
+   "chunks": [
+    [
+     "Owners wouldn't sell"
+    ],
+    [
+     "for less than"
+    ],
+    [
+     "about SEVEN dollars.",
+     {
+      "emph": "SEVEN"
+     }
+    ]
+   ],
+   "text": "Owners wouldn't sell for less than about SEVEN dollars.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Buyers",
+   "art": "MGBuyers",
+   "chunks": [
+    [
+     "Buyers would pay"
+    ],
+    [
+     "under THREE.",
+     {
+      "emph": "THREE"
+     }
+    ]
+   ],
+   "text": "Buyers would pay under THREE.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameEndow",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "ENDOWMENT effect.",
+     {
+      "emph": "ENDOWMENT"
+     }
+    ],
+    [
+     "Once it's yours,"
+    ],
+    [
+     "losing it hurts."
+    ]
+   ],
+   "text": "It's the ENDOWMENT effect. Once it's yours, losing it hurts.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    1050,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "MGBuyToday",
+   "chunks": [
+    [
+     "So June asks:"
+    ],
+    [
+     "would you"
+    ],
+    [
+     "BUY it today",
+     {
+      "emph": "BUY"
+     }
+    ],
+    [
+     "for two hundred?"
+    ],
+    [
+     "Dev takes"
+    ],
+    [
+     "the forty."
+    ]
+   ],
+   "text": "So June asks: would you BUY it today for two hundred? Dev takes the forty.",
+   "tone": "warmly, laughs",
+   "cam": [
+    540,
+    1000,
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "post": {
+  "title": "He Paid $50. Now He Wants $200 #shorts",
+  "description": "Dev won't sell his old armchair for less than four times what he paid. Psychologists call it the endowment effect: owning something makes it feel more valuable. In Kahneman, Knetsch & Thaler's 1990 mug experiments, students given a coffee mug wouldn't sell it for less than about $7 (median $7.12), while buyers would pay only about $3 (median $2.87). The fix: ask 'would I buy this today at this price?' #psychology #shorts #money",
+  "tags": [
+   "endowment effect",
+   "behavioral economics",
+   "psychology",
+   "decluttering"
+  ]
+ },
+ "thumb_text": "Why Your Stuff Feels Priceless",
+ "thumb_emph": "Priceless",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0
+}

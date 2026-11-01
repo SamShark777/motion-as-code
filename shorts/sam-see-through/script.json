@@ -1,0 +1,279 @@
+{
+ "slug": "sam-see-through",
+ "no": 141,
+ "format": "cdesign",
+ "look": "ted2",
+ "cast": [
+  "sam",
+  "grace"
+ ],
+ "title": [
+  "See-Through",
+  "Nerves"
+ ],
+ "credit": "Savitsky & Gilovich · 2003",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "STHook",
+   "chunks": [
+    [
+     "Sam's hands"
+    ],
+    [
+     "are shaking."
+    ],
+    [
+     "He's sure"
+    ],
+    [
+     "everyone can"
+    ],
+    [
+     "SEE it.",
+     {
+      "emph": "SEE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Sam's hands are shaking. He's sure everyone can SEE it.",
+   "tone": "curious, nervous"
+  },
+  {
+   "sec": "cd",
+   "scene": "Setup",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "STSetup",
+   "chunks": [
+    [
+     "Racing heart."
+    ],
+    [
+     "Wobbly voice."
+    ],
+    [
+     "He must look"
+    ],
+    [
+     "like a"
+    ],
+    [
+     "WRECK.",
+     {
+      "emph": "WRECK",
+      "fx": "doodle",
+      "doodle": "😰"
+     }
+    ]
+   ],
+   "text": "Racing heart. Wobbly voice. He must look like a WRECK.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#B3202A",
+   "light": false,
+   "art": "STStudy",
+   "chunks": [
+    [
+     "In 2003,"
+    ],
+    [
+     "Kenneth Savitsky"
+    ],
+    [
+     "and Thomas"
+    ],
+    [
+     "GILOVICH",
+     {
+      "emph": "GILOVICH",
+      "fx": "type"
+     }
+    ],
+    [
+     "had students"
+    ],
+    [
+     "give a speech"
+    ],
+    [
+     "on the spot."
+    ]
+   ],
+   "text": "In 2003, Kenneth Savitsky and Thomas GILOVICH had students give a speech on the spot.",
+   "tone": "curious",
+   "say": "In two thousand three, Kenneth Savitsky and Thomas Gilovich had students give a speech on the spot."
+  },
+  {
+   "sec": "cd",
+   "scene": "Ratings",
+   "color": "#E8C547",
+   "light": true,
+   "art": "STRatings",
+   "chunks": [
+    [
+     "Speakers rated"
+    ],
+    [
+     "how nervous"
+    ],
+    [
+     "they LOOKED.",
+     {
+      "emph": "LOOKED",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "So did"
+    ],
+    [
+     "the audience."
+    ]
+   ],
+   "text": "Speakers rated how nervous they LOOKED. So did the audience.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "STTurn",
+   "chunks": [
+    [
+     "But the audience"
+    ],
+    [
+     "saw LESS",
+     {
+      "emph": "LESS",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "nerves than"
+    ],
+    [
+     "the speakers"
+    ],
+    [
+     "thought they showed."
+    ]
+   ],
+   "text": "But the audience saw LESS nerves than the speakers thought they showed.",
+   "tone": "surprised, whispers"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "STName",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the ILLUSION",
+     {
+      "emph": "ILLUSION",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "of transparency."
+    ]
+   ],
+   "text": "It's called the ILLUSION of transparency.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Bonus",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "STBonus",
+   "chunks": [
+    [
+     "And speakers"
+    ],
+    [
+     "who were TOLD",
+     {
+      "emph": "TOLD",
+      "fx": "circle",
+      "mark": "#FFD23F"
+     }
+    ],
+    [
+     "about it"
+    ],
+    [
+     "gave talks"
+    ],
+    [
+     "rated better."
+    ]
+   ],
+   "text": "And speakers who were TOLD about it gave talks rated better.",
+   "tone": "excited"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "STOutro",
+   "chunks": [
+    [
+     "Grace tells Sam."
+    ],
+    [
+     "He walks on"
+    ],
+    [
+     "CALMER.",
+     {
+      "emph": "CALMER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Save this for"
+    ],
+    [
+     "your next speech."
+    ]
+   ],
+   "text": "Grace tells Sam. He walks on CALMER. Save this for your next speech.",
+   "tone": "warmly"
+  }
+ ],
+ "post": {
+  "title": "They Can't See Your Nerves #shorts",
+  "description": "Sam is sure the whole room can see his shaking hands. Research says they can't, at least not as much as he thinks. Gilovich, Savitsky & Medvec (1998) called it the illusion of transparency: we overestimate how readable our inner states are. In Savitsky & Gilovich (2003, Journal of Experimental Social Psychology), students gave impromptu speeches; speakers thought they looked more nervous than observers saw, and speakers who were told about the illusion beforehand gave talks that observers rated better and more composed (simple reassurance didn't help). #psychology #shorts #publicspeaking #anxiety",
+  "tags": [
+   "illusion of transparency",
+   "public speaking",
+   "nerves",
+   "psychology",
+   "anxiety"
+  ]
+ },
+ "thumb_text": "They Can't See Your Nerves",
+ "thumb_emph": "Nerves",
+ "thumb_mood": "worried",
+ "music_vibe": "uplifting",
+ "pattern": "Therapist tip"
+}

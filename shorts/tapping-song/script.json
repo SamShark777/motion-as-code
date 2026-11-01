@@ -1,0 +1,318 @@
+{
+ "slug": "tapping-song",
+ "no": 137,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 3,
+ "cast": [
+  "otto",
+  "lila",
+  "arthur"
+ ],
+ "title": [
+  "Curse of",
+  "Knowledge"
+ ],
+ "credit": "Elizabeth Newton · Stanford · 1990",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMTapHook",
+   "chunks": [
+    [
+     "Otto taps"
+    ],
+    [
+     "a song"
+    ],
+    [
+     "on his desk."
+    ],
+    [
+     "\"EASY,\" he says.",
+     {
+      "emph": "EASY"
+     }
+    ]
+   ],
+   "text": "Otto taps a song on his desk. \"EASY,\" he says.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lila",
+   "art": "RMLilaGuess",
+   "chunks": [
+    [
+     "Lila hears"
+    ],
+    [
+     "knocking."
+    ],
+    [
+     "She guesses"
+    ],
+    [
+     "MORSE code.",
+     {
+      "emph": "MORSE"
+     }
+    ]
+   ],
+   "text": "Lila hears knocking. She guesses MORSE code.",
+   "tone": "curious",
+   "cam": [
+    540,
+    950,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Furious",
+   "art": "RMOttoMad",
+   "chunks": [
+    [
+     "It's Happy"
+    ],
+    [
+     "BIRTHDAY!",
+     {
+      "emph": "BIRTHDAY"
+     }
+    ],
+    [
+     "How could anyone"
+    ],
+    [
+     "miss it?"
+    ]
+   ],
+   "text": "It's Happy BIRTHDAY! How could anyone miss it?",
+   "tone": "excited, sarcastic",
+   "cam": [
+    540,
+    900,
+    1.04,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "In his head",
+   "art": "RMHeadTune",
+   "chunks": [
+    [
+     "In Otto's head,"
+    ],
+    [
+     "a whole BAND",
+     {
+      "emph": "BAND"
+     }
+    ],
+    [
+     "is playing."
+    ],
+    [
+     "Lila hears"
+    ],
+    [
+     "a knuckle."
+    ]
+   ],
+   "text": "In Otto's head, a whole BAND is playing. Lila hears a knuckle.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMStudyRoom",
+   "chunks": [
+    [
+     "But in 1990,"
+    ],
+    [
+     "a Stanford student,"
+    ],
+    [
+     "Elizabeth Newton,"
+    ],
+    [
+     "ran this"
+    ],
+    [
+     "EXACT game.",
+     {
+      "emph": "EXACT"
+     }
+    ]
+   ],
+   "text": "But in 1990, a Stanford student, Elizabeth Newton, ran this EXACT game.",
+   "tone": "surprised",
+   "say": "But in nineteen ninety, a Stanford student, Elizabeth Newton, ran this exact game.",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Guess",
+   "art": "RMStatGuess",
+   "chunks": [
+    [
+     "Tappers guessed"
+    ],
+    [
+     "listeners would name"
+    ],
+    [
+     "HALF the songs.",
+     {
+      "emph": "HALF"
+     }
+    ]
+   ],
+   "text": "Tappers guessed listeners would name HALF the songs.",
+   "tone": "curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Actual",
+   "art": "RMStatReal",
+   "chunks": [
+    [
+     "A hundred and"
+    ],
+    [
+     "twenty songs."
+    ],
+    [
+     "Listeners got"
+    ],
+    [
+     "THREE.",
+     {
+      "emph": "THREE"
+     }
+    ]
+   ],
+   "text": "A hundred and twenty songs. Listeners got THREE.",
+   "tone": "whispers",
+   "capY": 1700
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameCurse",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the CURSE",
+     {
+      "emph": "CURSE"
+     }
+    ],
+    [
+     "of knowledge."
+    ]
+   ],
+   "text": "It's called the CURSE of knowledge.",
+   "tone": "serious",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Why",
+   "art": "RMCantUnhear",
+   "chunks": [
+    [
+     "Once you know"
+    ],
+    [
+     "something, you can't"
+    ],
+    [
+     "UNHEAR the tune.",
+     {
+      "emph": "UNHEAR"
+     }
+    ]
+   ],
+   "text": "Once you know something, you can't UNHEAR the tune.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Cliff",
+   "art": "RMTrainingCliff",
+   "chunks": [
+    [
+     "Tomorrow, Otto"
+    ],
+    [
+     "trains the whole"
+    ],
+    [
+     "office. Arthur is"
+    ],
+    [
+     "already SWEATING.",
+     {
+      "emph": "SWEATING"
+     }
+    ]
+   ],
+   "text": "Tomorrow, Otto trains the whole office. Arthur is already SWEATING.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    960,
+    1.0,
+    1.08
+   ]
+  }
+ ],
+ "post": {
+  "title": "He Tapped Happy Birthday. Nobody Got It #shorts",
+  "description": "Otto taps a song on his desk and can't believe Lila misses it. In 1990 Stanford psychology student Elizabeth Newton had people tap out well-known songs: tappers predicted listeners would name half of them, but of 120 songs listeners named just 3 (2.5%). It's called the curse of knowledge: once you know something, you can't imagine not knowing it. #psychology #shorts #communication",
+  "tags": [
+   "curse of knowledge",
+   "tappers and listeners",
+   "psychology",
+   "communication"
+  ]
+ },
+ "thumb_text": "They Can't Hear Your Tune",
+ "thumb_emph": "Tune",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 2
+}

@@ -15,7 +15,8 @@
    "history": [
     "ep 1 (arthur-the-critic): negativity bias — 10 compliments, 1 criticism, replays it at 2 AM; the Critic is 'a very old alarm'; tonight Arthur talks back",
     "ep 2 (peak-end-rule, with Mae): six perfect holiday days + one cancelled flight = 'a total disaster'; Mae shows him the chart (peak-end rule, Kahneman et al. 1993) and ends every meeting on a high",
-    "ep 3 (thirty-six-questions, with Otto + Mae): answers the 36 questions with Otto; shares a name with psychologist Arthur Aron"
+    "ep 3 (thirty-six-questions, with Otto + Mae): answers the 36 questions with Otto; shares a name with psychologist Arthur Aron",
+    "ep 4 (tapping-song): cameo — sweating before Otto's software training"
    ]
   },
   "critic": {
@@ -27,7 +28,8 @@
     "arthur": "his host"
    },
    "history": [
-    "ep 1 (arthur-the-critic): introduced"
+    "ep 1 (arthur-the-critic): introduced",
+    "ep 2 (mae-liking-gap): visits Mae's head, replays her small talk; shrinks when the neighbour knocks with cookies"
    ]
   },
   "mae": {
@@ -42,7 +44,8 @@
    "history": [
     "ep 1 (peak-end-rule, with Arthur): asks how the trip was, shows him 6 of 7 days were great; her tip: end dates, workouts and meetings on a high",
     "ep 2 (scarcity-cookies, with Lila): shows Lila a full tray of the 'only two left' cookies in the back",
-    "ep 3 (thirty-six-questions): hands Otto and Arthur the list of 36 questions"
+    "ep 3 (thirty-six-questions): hands Otto and Arthur the list of 36 questions",
+    "ep 4 (mae-liking-gap, with the Critic): five minutes of small talk with her new neighbour; the Critic replays it all night ('that joke? awful'); liking gap (Boothby et al. 2018); next morning the neighbour brings cookies"
    ]
   },
   "otto": {
@@ -57,7 +60,8 @@
    },
    "history": [
     "ep 1 (stroop-test): says no test can trick him; Lila's colour-word card does (Stroop effect) — his brain is too good at reading",
-    "ep 2 (thirty-six-questions, with Arthur + Mae): ten years at the next desk, knows one fact (Arthur likes tea); the 36 questions (Aron et al. 1997) leave him wiping his eyes; brings Arthur a tea next morning"
+    "ep 2 (thirty-six-questions, with Arthur + Mae): ten years at the next desk, knows one fact (Arthur likes tea); the 36 questions (Aron et al. 1997) leave him wiping his eyes; brings Arthur a tea next morning",
+    "ep 3 (tapping-song, with Lila + Arthur): taps Happy Birthday on his desk, sure it's 'EASY'; Lila guesses Morse code (curse of knowledge, Newton 1990: 3 of 120 songs); tomorrow he trains the whole office — Arthur already sweating, PART 2"
    ]
   },
   "lila": {
@@ -72,7 +76,8 @@
    },
    "history": [
     "ep 1 (stroop-test, with Otto): holds up the Stroop cards for her boss",
-    "ep 2 (scarcity-cookies, with The Doubt + Mae): not hungry, sees 'only 2 left', The Doubt whispers 'what if they're gone?', buys both (scarcity effect, Worchel, Lee & Adewole 1975); new rule: would I want it if there were ten?"
+    "ep 2 (scarcity-cookies, with The Doubt + Mae): not hungry, sees 'only 2 left', The Doubt whispers 'what if they're gone?', buys both (scarcity effect, Worchel, Lee & Adewole 1975); new rule: would I want it if there were ten?",
+    "ep 3 (tapping-song, with Otto): hears only knocking when Otto taps Happy Birthday; guesses Morse code"
    ]
   },
   "doubt": {

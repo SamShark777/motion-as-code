@@ -1,0 +1,280 @@
+{
+ "slug": "mae-liking-gap",
+ "no": 139,
+ "format": "retro",
+ "look": "retro",
+ "series": "Mae",
+ "episode": 4,
+ "cast": [
+  "mae",
+  "critic"
+ ],
+ "title": [
+  "Liking",
+  "Gap"
+ ],
+ "credit": "Boothby, Cooney, Sandstrom & Clark · 2018",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMMeetNeighbour",
+   "chunks": [
+    [
+     "Mae just met"
+    ],
+    [
+     "her new neighbour."
+    ],
+    [
+     "Five minutes"
+    ],
+    [
+     "of SMALL talk.",
+     {
+      "emph": "SMALL"
+     }
+    ]
+   ],
+   "text": "Mae just met her new neighbour. Five minutes of SMALL talk.",
+   "tone": "curious",
+   "cam": [
+    540,
+    950,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Replay",
+   "art": "RMCriticArrives",
+   "chunks": [
+    [
+     "Then the Critic"
+    ],
+    [
+     "starts the"
+    ],
+    [
+     "REPLAY.",
+     {
+      "emph": "REPLAY"
+     }
+    ]
+   ],
+   "text": "Then the Critic starts the REPLAY.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Awful",
+   "art": "RMAwfulJoke",
+   "chunks": [
+    [
+     "\"You talked"
+    ],
+    [
+     "too much."
+    ],
+    [
+     "That joke?"
+    ],
+    [
+     "AWFUL.\"",
+     {
+      "emph": "AWFUL"
+     }
+    ]
+   ],
+   "text": "\"You talked too much. That joke? AWFUL.\"",
+   "tone": "sarcastic"
+  },
+  {
+   "sec": "cd",
+   "scene": "Bedtime",
+   "art": "RMBedtime",
+   "chunks": [
+    [
+     "By bedtime,"
+    ],
+    [
+     "Mae's sure"
+    ],
+    [
+     "he can't"
+    ],
+    [
+     "STAND her.",
+     {
+      "emph": "STAND"
+     }
+    ]
+   ],
+   "text": "By bedtime, Mae's sure he can't STAND her.",
+   "tone": "sighs",
+   "cam": [
+    540,
+    1050,
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMStudyPairs",
+   "chunks": [
+    [
+     "But in 2018,"
+    ],
+    [
+     "researchers paired up"
+    ],
+    [
+     "strangers for"
+    ],
+    [
+     "the SAME chat.",
+     {
+      "emph": "SAME"
+     }
+    ]
+   ],
+   "text": "But in 2018, researchers paired up strangers for the SAME chat.",
+   "tone": "surprised",
+   "say": "But in twenty eighteen, researchers paired up strangers for the same chat."
+  },
+  {
+   "sec": "cd",
+   "scene": "Guess",
+   "art": "RMGuessLow",
+   "chunks": [
+    [
+     "Then each guessed"
+    ],
+    [
+     "how much"
+    ],
+    [
+     "the other"
+    ],
+    [
+     "liked them."
+    ],
+    [
+     "They guessed"
+    ],
+    [
+     "too LOW.",
+     {
+      "emph": "LOW"
+     }
+    ]
+   ],
+   "text": "Then each guessed how much the other liked them. They guessed too LOW.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameGap",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the LIKING gap.",
+     {
+      "emph": "LIKING"
+     }
+    ]
+   ],
+   "text": "It's called the LIKING gap.",
+   "tone": "serious",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Why",
+   "art": "RMInsideOutside",
+   "chunks": [
+    [
+     "You hear"
+    ],
+    [
+     "every awkward thought."
+    ],
+    [
+     "They just"
+    ],
+    [
+     "see you SMILE.",
+     {
+      "emph": "SMILE"
+     }
+    ]
+   ],
+   "text": "You hear every awkward thought. They just see you SMILE.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "RMCookies",
+   "chunks": [
+    [
+     "Next morning,"
+    ],
+    [
+     "the neighbour knocks."
+    ],
+    [
+     "He brought"
+    ],
+    [
+     "COOKIES.",
+     {
+      "emph": "COOKIES"
+     }
+    ]
+   ],
+   "text": "Next morning, the neighbour knocks. He brought COOKIES.",
+   "tone": "laughs, warmly",
+   "cam": [
+    540,
+    960,
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "post": {
+  "title": "They Liked You More Than You Think #shorts",
+  "description": "Mae's inner Critic replays every word of a five-minute chat with her new neighbour. Research says the Critic is wrong: in Boothby, Cooney, Sandstrom & Clark's 2018 studies (Psychological Science), people who had just talked with a stranger consistently underestimated how much their partner liked them, and shyer people underestimated more. They called it the liking gap. #psychology #shorts #socialanxiety",
+  "tags": [
+   "liking gap",
+   "social anxiety",
+   "psychology",
+   "making friends"
+  ]
+ },
+ "thumb_text": "They Liked You More",
+ "thumb_emph": "More",
+ "thumb_mood": "happy",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 3
+}
