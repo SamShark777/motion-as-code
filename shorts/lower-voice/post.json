@@ -1,0 +1,17 @@
+{
+ "no": 131,
+ "slug": "lower-voice",
+ "date": "2026-11-02",
+ "slot": "19:00",
+ "due": "2026-11-03T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-02/lower-voice.mp4",
+ "buffer": {
+  "youtube": "6ae7a681bbe52340201af241",
+  "instagram": "6ae7a68107b774c8fb2d6dbc",
+  "tiktok": "6ae7a6821120555c2a374581"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 45.8
+}

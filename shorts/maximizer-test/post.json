@@ -1,0 +1,17 @@
+{
+ "no": 130,
+ "slug": "maximizer-test",
+ "date": "2026-11-02",
+ "slot": "14:00",
+ "due": "2026-11-02T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-02/maximizer-test.mp4",
+ "buffer": {
+  "youtube": "6ae7a67e465de073df1e230e",
+  "instagram": "6ae7a67ebbe52340201af1de",
+  "tiktok": "6ae7a67f07b774c8fb2d6d86"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 46.4
+}
