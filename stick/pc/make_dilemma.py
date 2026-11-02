@@ -375,17 +375,50 @@ def main(story_path, test=False):
     n0 = len(clean_words(segs[0]["text"]))
     if n0 > 16: log(f"WARNING: first line is {n0} words; keep the dilemma in <=14 words so it lands in ~2.5s")
     # captions: one word at a time
+    # phrase captions (2-3 words, active word green): any frame YouTube grabs as the thumbnail still reads
+    chunks = []
+    for i in range(len(segs)):
+        ws = [w for w in words if w[3] == i]; cur = []
+        for w in ws:
+            cur.append(w)
+            if len(cur) == 3 or w[0].rstrip("\"'").endswith((".", "?", "!", ",")): chunks.append(cur); cur = []
+        if cur: chunks.append(cur)
+    if story.get("thumb"): T1, T2 = story["thumb"].get("top", "").upper(), story["thumb"].get("bottom", "").upper()
+    elif HTOP or HBOT: T1, T2 = (HTOP, HBOT) if HTOP else ("", HBOT)
+    else: T1, T2 = "", story.get("title", "").upper()
     def caption(base, t):
-        cur = None
-        for w in words:
-            if w[1] - 0.02 <= t < (w[2] + 0.25): cur = w
-        if cur is None or segs[cur[3]].get("nocaps") or "card" in segs[cur[3]].get("visual", {}): return
-        txt = cur[0].strip(".,!?;:\"'").upper()
+        ch = next((c for c in chunks if c[0][1] - 0.02 <= t < c[-1][2] + 0.25), None)
+        if ch is None or segs[ch[0][3]].get("nocaps") or "card" in segs[ch[0][3]].get("visual", {}): return
+        txt = [w[0].strip(".,!?;:\"'").upper() for w in ch]; txt = [x for x in txt if x]
         if not txt: return
-        f = F(CAP, 130 * (0.88 + 0.12 * outback((t - cur[1]) / 0.12)))
-        d = ImageDraw.Draw(base); tw = d.textlength(txt, font=f)
-        d.text((W / 2 - tw / 2 + 5, 1530 + 7), txt, font=f, fill=(0, 0, 0), stroke_width=10, stroke_fill=(0, 0, 0))
-        d.text((W / 2 - tw / 2, 1530), txt, font=f, fill=(255, 255, 255), stroke_width=10, stroke_fill=(0, 0, 0))
+        d = ImageDraw.Draw(base); f = fit(d, " ".join(txt), CAP, int(112 * (0.92 + 0.08 * outback((t - ch[0][1]) / 0.12))), 980)
+        sp = d.textlength(" ", font=f); x = W / 2 - d.textlength(" ".join(txt), font=f) / 2
+        for w, s_ in zip([w for w in ch if w[0].strip(".,!?;:\"'")], txt):
+            on = w[1] - 0.02 <= t < w[2] + 0.05
+            d.text((x + 5, 1530 + 7), s_, font=f, fill=(0, 0, 0), stroke_width=10, stroke_fill=(0, 0, 0))
+            d.text((x, 1530), s_, font=f, fill=GREEN if on else (255, 255, 255), stroke_width=10, stroke_fill=(0, 0, 0))
+            x += d.textlength(s_, font=f) + sp
+    def title_strip(base, t, y0):
+        """persistent 2-line title card after the hook: whatever frame YouTube grabs as the thumbnail says what the video is.
+        returns the height used (0 if not shown)"""
+        if not (T1 or T2) or t < HOOK_END or story.get("no_title_strip"): return 0
+        a = min(1.0, (t - HOOK_END) / 0.25)
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+        f1 = fit(d, T1, CAP, 96, 880) if T1 else None
+        f2 = fit(d, T2, CAP, 64, 900) if T2 else None
+        if f2 and f2.size < 56:  # long catch: wrap into two lines instead of shrinking
+            f2 = F(CAP, 58); lines = wrap_font(d, T2, f2, 880)[:2]
+        else: lines = [T2] if T2 else []
+        h = (f1.size + 8 if f1 else 0) + (f2.size + 6) * len(lines) + 36
+        tw = max([d.textlength(T1, font=f1)] if f1 else [0] + [d.textlength(l, font=f2) for l in lines])
+        tw = max([tw] + [d.textlength(l, font=f2) for l in lines])
+        rr(lay, (W / 2 - tw / 2 - 40, y0, W / 2 + tw / 2 + 40, y0 + h), (10, 12, 14, int(225 * a)), (92, 227, 125, int(255 * a)), 3, 28)
+        y = y0 + 16
+        if f1:
+            d.text((W / 2 - d.textlength(T1, font=f1) / 2, y), T1, font=f1, fill=GREEN + (int(255 * a),)); y += f1.size + 8
+        for l in lines:
+            d.text((W / 2 - d.textlength(l, font=f2) / 2, y), l, font=f2, fill=(255, 255, 255, int(255 * a))); y += f2.size + 6
+        base.alpha_composite(lay); return h + 20
     def frame(t):
         sh = next((s for s in shots if s["start"] <= t < s["end"]), shots[-1]); v = sh["v"]
         p = (t - sh["start"]) / max(0.01, sh["end"] - sh["start"])
@@ -403,7 +436,10 @@ def main(story_path, test=False):
                 im = ImageOps.invert(ImageOps.grayscale(im)).convert("RGB")
         base = im.convert("RGBA")
         # vignette for chip legibility
-        stack_y = 170 if any(c["type"] == "battery" and c["start"] <= t < c["end"] for c in chips) else 80
+        bat = any(c["type"] == "battery" and c["start"] <= t < c["end"] for c in chips)
+        y0 = 150 if bat else 40
+        sh_h = title_strip(base, t, y0) if "card" not in v else 0
+        stack_y = (y0 + sh_h) if sh_h else (170 if bat else 80)
         for c in chips:
             if t < HOOK_END: break  # the hook card owns the screen for the first seconds
             if c["start"] <= t < c["end"]:
