@@ -1,0 +1,17 @@
+{
+ "no": 137,
+ "slug": "tapping-song",
+ "date": "2026-11-03",
+ "slot": "14:00",
+ "due": "2026-11-03T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-03/tapping-song.mp4",
+ "buffer": {
+  "youtube": "6ae923e125014d8f321234c0",
+  "instagram": "6ae923e225014d8f321234f4",
+  "tiktok": "6ae923e2967eeee46f57ac8c"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 45.2
+}

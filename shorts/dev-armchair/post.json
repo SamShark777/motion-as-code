@@ -1,0 +1,17 @@
+{
+ "no": 138,
+ "slug": "dev-armchair",
+ "date": "2026-11-03",
+ "slot": "19:00",
+ "due": "2026-11-04T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-03/dev-armchair.mp4",
+ "buffer": {
+  "youtube": "6ae923e5967eeee46f57ad14",
+  "instagram": "6ae923e5b62d192bcc4ffcd1",
+  "tiktok": "6ae923e6967eeee46f57ad6e"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 35.4
+}

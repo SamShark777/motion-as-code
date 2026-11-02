@@ -1,0 +1,17 @@
+{
+ "no": 132,
+ "slug": "ikea-effect",
+ "date": "2026-11-03",
+ "slot": "09:00",
+ "due": "2026-11-03T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-03/ikea-effect.mp4",
+ "buffer": {
+  "youtube": "6ae923deb62d192bcc4ffb98",
+  "instagram": "6ae923de967eeee46f57ab54",
+  "tiktok": "6ae923df4e401f604e5216bf"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 31.4
+}
