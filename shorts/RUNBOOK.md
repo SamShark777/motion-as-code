@@ -1,3 +1,23 @@
+> **2026-11-02 — Shivam: HOOK FORMULA = CONTEXT → LEAN → SNAPBACK (all styles, every script not yet built; on top of the
+> 3-act arc and the "that's me" Barnum lines).** The first 3–5 seconds must do three jobs, in this order:
+> 1. **Context (line 1, first words):** name what the video is about straight away — the everyday situation the viewer
+>    has a stake in ("You replay conversations at 3am…", "When someone texts 'ok'…"). Never delay the topic to the back
+>    half of the sentence; no "So…", "Did you know…", "Here's something…" openers. **Say it, show it, write it:** the
+>    voice says the topic, line 1's on-screen `text` carries the topic word as the emphasis chunk, and line 1's art draws
+>    that exact situation literally (the phone with "ok", the bed at 3am) — not an abstract brain or a generic face.
+>    In character stories (ted-MG / retro) line 1 shows the character IN the topic situation; line 2 turns it to the viewer.
+> 2. **Lean (lines 1–2):** make them curious in ONE direction using one of: **Shock** (a surprising but verified fact),
+>    **Pain point** (a specific moment they've lived — the Barnum "that's me" beat) or **Proof** (a verified study or
+>    number). The viewer should predict where it's going.
+> 3. **Snapback (by line 3, ≤ 8 s in):** a contrarian turn that pulls them the other way — "But it's not what you think.",
+>    "Here's the twist: it's not anxiety, it's…" — opening the loop the payoff closes. Visually: change scene, add a
+>    `cam` punch-in on the snapback line, emphasis word in CAPS. The 3-act "But…" Turn later stays; the snapback is an
+>    early mini-turn.
+> Honesty: shocks and proof only from verified sources; the snapback must be true (no bait the payoff doesn't pay).
+> Record it in the tracker: `Hook style` = "context-lean-snapback/<shock|pain|proof>" and in script.json
+> `"hook": {"context": "…", "lean": "shock|pain|proof", "snapback": "…"}` so the weekly review can compare lean types.
+> Source: Kallaway's "god-tier hook" carousel (Context, The Lean, Snapback) that Shivam shared.
+
 > **2026-10-26 (updated) — Shivam: THE STYLE CYCLE replaces the stick stories.** New Shorts use THREE styles, **picked at random** (Shivam:
 > "don't switch every single time, just randomly"): **Ted type 2** (`"format": "cdesign"`, `"look": "ted2"` — rules in the
 > "Ted type 2" section below), **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) and **retro modern
