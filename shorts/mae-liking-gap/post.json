@@ -1,0 +1,17 @@
+{
+ "no": 139,
+ "slug": "mae-liking-gap",
+ "date": "2026-11-04",
+ "slot": "09:00",
+ "due": "2026-11-04T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-04/mae-liking-gap.mp4",
+ "buffer": {
+  "youtube": "6aea62cff93f03bf7d9aba45",
+  "instagram": "6aea62d0f93f03bf7d9abab2",
+  "tiktok": "6aea62d01b5bcd0e9d29a617"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 30.2
+}

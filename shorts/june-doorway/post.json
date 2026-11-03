@@ -1,0 +1,17 @@
+{
+ "no": 140,
+ "slug": "june-doorway",
+ "date": "2026-11-04",
+ "slot": "14:00",
+ "due": "2026-11-04T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-04/june-doorway.mp4",
+ "buffer": {
+  "youtube": "6aea62d3a54767472d4950e3",
+  "instagram": "6aea62d4a54767472d495135",
+  "tiktok": "6aea62d48204b43ff3716c9a"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 49.2
+}

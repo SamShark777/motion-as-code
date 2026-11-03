@@ -1,0 +1,17 @@
+{
+ "no": 141,
+ "slug": "sam-see-through",
+ "date": "2026-11-04",
+ "slot": "19:00",
+ "due": "2026-11-05T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-04/sam-see-through.mp4",
+ "buffer": {
+  "youtube": "6aea62d61b5bcd0e9d29a76f",
+  "instagram": "6aea62d72fbe315a4d641b9c",
+  "tiktok": "6aea62d7a54767472d49520c"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 41.9
+}
