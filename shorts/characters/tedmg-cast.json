@@ -17,7 +17,8 @@
     "ep 1 (milo-coffee-stain): spotlight effect — coffee stain at the party, nobody noticed; tomorrow he gives a speech",
     "ep 2 (shaky-bridge): first date in two days; Theo says make it scary (Dutton & Aron 1974 shaky bridge, misattribution of arousal); Milo books a horror escape room, then remembers he is scared of the dark — PART 2",
     "ep 3 (talk-to-yourself, with Nia): the speech from ep 1 — catches Nia talking to herself by name, learns self-distancing (Kross et al. 2014), coaches himself by name and goes on calm",
-    "ep 4 (lima-syndrome): locked in Rosa's escape room with June; tells her about his speech"
+    "ep 4 (lima-syndrome): locked in Rosa's escape room with June; tells her about his speech",
+    "ep 5 (milo-snap-judgment, with Dev): Dev is 20 min late, Milo decides he's \"just unreliable\"; next week Milo is late and blames the bus; fundamental attribution error (Jones & Harris 1967: readers still judged an assigned pro-Castro writer as pro-Castro, 44.1 vs 22.9)"
    ]
   },
   "nia": {
@@ -33,7 +34,8 @@
    "history": [
     "ep 1 (first-impressions, with Rosa): \"they'll judge your face first\"",
     "ep 2 (talk-to-yourself, with Milo): pep-talks herself by name in the mirror; Milo, 5 min before his speech, thinks she's lost it, while his own head spirals in 'I' (Kross et al. 2014 self-distancing); he tries 'Milo, you've done harder things' and walks on stage calm",
-    "ep 3 (ikea-effect, with Theo): six hours on a wobbly shelf, prices it at $100 vs $40 new (IKEA effect, Norton, Mochon & Ariely 2012: builders paid 63% more); Theo then hands her his flat-pack desk"
+    "ep 3 (ikea-effect, with Theo): six hours on a wobbly shelf, prices it at $100 vs $40 new (IKEA effect, Norton, Mochon & Ariely 2012: builders paid 63% more); Theo then hands her his flat-pack desk",
+    "ep 4 (rosa-start-monday, with Rosa): smirks at \"I'll start Monday\", then texts \"gym? 7am. no excuses\" for the new month"
    ]
   },
   "theo": {
@@ -64,7 +66,8 @@
    },
    "history": [
     "ep 1 (first-impressions): rehearsed 40 interview answers; learns faces are judged in 0.1 s and the halo effect, bins the script and smiles at the receptionist first",
-    "ep 2 (lima-syndrome, with Milo + June): new escape-room game master; no-hints rule collapses, whispers answers, opens the door at minute 30 (Lima syndrome, 1996 Lima hostage crisis; one case, not lab studies)"
+    "ep 2 (lima-syndrome, with Milo + June): new escape-room game master; no-hints rule collapses, whispers answers, opens the door at minute 30 (Lima syndrome, 1996 Lima hostage crisis; one case, not lab studies)",
+    "ep 3 (rosa-start-monday, with Nia): Thursday night, crisps in hand, swears \"I'll start Monday\"; fresh start effect (Dai, Milkman & Riis 2014: diet searches, gym visits and commitment contracts rise after temporal landmarks); goes to the gym on the 1st with Nia"
    ]
   },
   "dev": {
@@ -80,7 +83,8 @@
    "history": [
     "ep 1 (doodlers, with June): sat perfectly still in the meeting and went blank; now doodles sharks",
     "ep 2 (decision-facts, with Theo): insists nobody tells him what to choose, loses the bet, then buys the large popcorn because the medium cost almost the same",
-    "ep 3 (dev-armchair, with June): paid $50 for an armchair, wants $200 ('it has memories'); endowment effect (Kahneman, Knetsch & Thaler 1990 mugs: ~$7 vs ~$3); June asks 'would you buy it today for $200?' and he takes $40"
+    "ep 3 (dev-armchair, with June): paid $50 for an armchair, wants $200 ('it has memories'); endowment effect (Kahneman, Knetsch & Thaler 1990 mugs: ~$7 vs ~$3); June asks 'would you buy it today for $200?' and he takes $40",
+    "ep 4 (milo-snap-judgment, with Milo): 20 min late, written off as unreliable; really his bus broke down and he walked"
    ]
   },
   "june": {

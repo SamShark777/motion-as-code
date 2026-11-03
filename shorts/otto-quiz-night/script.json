@@ -1,0 +1,333 @@
+{
+ "slug": "otto-quiz-night",
+ "no": 142,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 4,
+ "cast": [
+  "otto",
+  "arthur"
+ ],
+ "title": [
+  "Dunning-Kruger",
+  "Effect"
+ ],
+ "credit": "Kruger & Dunning · 1999",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMQuizNight",
+   "chunks": [
+    [
+     "QUIZ night.",
+     {
+      "emph": "QUIZ"
+     }
+    ],
+    [
+     "Otto's sure"
+    ],
+    [
+     "he crushed it."
+    ],
+    [
+     "Arthur's sure"
+    ],
+    [
+     "he bombed."
+    ]
+   ],
+   "text": "QUIZ night. Otto's sure he crushed it. Arthur's sure he bombed.",
+   "tone": "excited, curious",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "RMRankLean",
+   "chunks": [
+    [
+     "You know"
+    ],
+    [
+     "an Otto."
+    ],
+    [
+     "In tests,"
+    ],
+    [
+     "the WORST scorers",
+     {
+      "emph": "WORST"
+     }
+    ],
+    [
+     "rate themselves"
+    ],
+    [
+     "above average."
+    ]
+   ],
+   "text": "You know an Otto. In tests, the WORST scorers rate themselves above average.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapJudge",
+   "chunks": [
+    [
+     "But Otto's"
+    ],
+    [
+     "not dumb."
+    ],
+    [
+     "The skill"
+    ],
+    [
+     "to answer"
+    ],
+    [
+     "is the skill"
+    ],
+    [
+     "to JUDGE.",
+     {
+      "emph": "JUDGE"
+     }
+    ]
+   ],
+   "text": "But Otto's not dumb. The skill to answer is the skill to JUDGE.",
+   "tone": "whispers, serious",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Scores",
+   "art": "RMScoreboard",
+   "chunks": [
+    [
+     "Scores in."
+    ],
+    [
+     "Otto: LAST.",
+     {
+      "emph": "LAST"
+     }
+    ],
+    [
+     "Arthur?"
+    ],
+    [
+     "Near the top."
+    ]
+   ],
+   "text": "Scores in. Otto: LAST. Arthur? Near the top.",
+   "tone": "laughs",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMRankProof",
+   "chunks": [
+    [
+     "In 1999,"
+    ],
+    [
+     "the bottom quarter"
+    ],
+    [
+     "averaged around"
+    ],
+    [
+     "the 12th percentile."
+    ],
+    [
+     "They guessed"
+    ],
+    [
+     "the 62ND.",
+     {
+      "emph": "62ND"
+     }
+    ]
+   ],
+   "text": "In 1999, the bottom quarter averaged around the 12th percentile. They guessed the 62ND.",
+   "tone": "surprised",
+   "say": "In nineteen ninety-nine, the bottom quarter averaged around the twelfth percentile. They guessed the sixty-second."
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameDK",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the DUNNING-KRUGER",
+     {
+      "emph": "DUNNING-KRUGER"
+     }
+    ],
+    [
+     "effect."
+    ]
+   ],
+   "text": "It's called the DUNNING-KRUGER effect.",
+   "tone": "serious",
+   "say": "It's called the Dunning-Kruger effect.",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "RMEasyCrack",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last \"EASY\"",
+     {
+      "emph": "EASY"
+     }
+    ],
+    [
+     "that wasn't."
+    ],
+    [
+     "Yeah."
+    ],
+    [
+     "That one."
+    ]
+   ],
+   "text": "Think of the last \"EASY\" that wasn't. Yeah. That one.",
+   "tone": "mischievously",
+   "cam": [
+    540,
+    850,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Reframe",
+   "art": "RMBeginner",
+   "chunks": [
+    [
+     "But everyone's"
+    ],
+    [
+     "a beginner"
+    ],
+    [
+     "somewhere."
+    ],
+    [
+     "\"Maybe I"
+    ],
+    [
+     "don't KNOW\"",
+     {
+      "emph": "KNOW"
+     }
+    ],
+    [
+     "is the skill."
+    ]
+   ],
+   "text": "But everyone's a beginner somewhere. \"Maybe I don't KNOW\" is the skill.",
+   "tone": "warmly, thoughtfully",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndDoubt",
+   "chunks": [
+    [
+     "Doubt isn't"
+    ],
+    [
+     "DUMB.",
+     {
+      "emph": "DUMB"
+     }
+    ],
+    [
+     "Comment \"Otto\""
+    ],
+    [
+     "if you"
+    ],
+    [
+     "know one."
+    ]
+   ],
+   "text": "Doubt isn't DUMB. Comment \"Otto\" if you know one.",
+   "tone": "warmly, playful"
+  }
+ ],
+ "post": {
+  "title": "The Worst Scorers Thought They Were Above Average #shorts",
+  "description": "Quiz night: Otto is sure he crushed it, Arthur is sure he bombed, and the scores say the opposite. In Kruger & Dunning's 1999 paper \"Unskilled and Unaware of It\" (Journal of Personality and Social Psychology), four studies tested humour, logical reasoning and English grammar; people in the bottom quarter averaged around the 12th percentile but estimated themselves around the 62nd. Their explanation: the skill you need to get answers right is the same skill you need to judge whether they're right. Honest caveat: later work (Krueger & Mueller 2002, and statistical analyses in 2022) showed part of the pattern can come from statistics (regression to the mean) and a general better-than-average bias, while a large 2021 replication still found low performers were worse at judging whether their own answers were right. Everyone's a beginner at something. #psychology #shorts #dunningkruger",
+  "tags": [
+   "dunning kruger effect",
+   "overconfidence",
+   "psychology",
+   "self awareness",
+   "quiz night"
+  ]
+ },
+ "thumb_text": "The Worst Think They're Above Average",
+ "thumb_emph": "Above Average",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 3,
+ "hook": {
+  "context": "Quiz night: Otto's sure he crushed it, Arthur's sure he bombed",
+  "lean": "shock",
+  "snapback": "But Otto's not dumb. The skill to answer is the skill to JUDGE."
+ },
+ "relate": "barnum"
+}

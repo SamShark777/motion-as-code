@@ -1,0 +1,366 @@
+{
+ "slug": "arthur-3am-worries",
+ "no": 147,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 6,
+ "cast": [
+  "arthur",
+  "doubt"
+ ],
+ "title": [
+  "Worry's",
+  "Deceit"
+ ],
+ "credit": "LaFreniere & Newman · 2020",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "AW3am",
+   "chunks": [
+    [
+     "3 AM WORRIES.",
+     {
+      "emph": "WORRIES"
+     }
+    ],
+    [
+     "Arthur's wide awake."
+    ],
+    [
+     "The Doubt whispers,"
+    ],
+    [
+     "“What if…”"
+    ]
+   ],
+   "text": "3 AM WORRIES. Arthur's wide awake. The Doubt whispers, “What if…”",
+   "tone": "whispers, curious",
+   "say": "Three A M worries. Arthur's wide awake. The Doubt whispers, “What if…”",
+   "cam": [
+    470,
+    1050,
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "What ifs",
+   "art": "AWWhatIfs",
+   "chunks": [
+    [
+     "The email."
+    ],
+    [
+     "The meeting."
+    ],
+    [
+     "The car NOISE.",
+     {
+      "emph": "NOISE"
+     }
+    ],
+    [
+     "You've done"
+    ],
+    [
+     "this too."
+    ]
+   ],
+   "text": "The email. The meeting. The car NOISE. You've done this too.",
+   "tone": "anxious, knowingly",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "AWSnapWrong",
+   "chunks": [
+    [
+     "But The Doubt"
+    ],
+    [
+     "is almost always"
+    ],
+    [
+     "WRONG.",
+     {
+      "emph": "WRONG"
+     }
+    ]
+   ],
+   "text": "But The Doubt is almost always WRONG.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "AWNotebook",
+   "chunks": [
+    [
+     "In one"
+    ],
+    [
+     "2020 study,"
+    ],
+    [
+     "29 anxious people"
+    ],
+    [
+     "WROTE their",
+     {
+      "emph": "WROTE"
+     }
+    ],
+    [
+     "worries down."
+    ]
+   ],
+   "text": "In one 2020 study, 29 anxious people WROTE their worries down.",
+   "tone": "curious",
+   "say": "In one twenty twenty study, twenty-nine anxious people wrote their worries down."
+  },
+  {
+   "sec": "cd",
+   "scene": "Check",
+   "art": "AWCalendar",
+   "chunks": [
+    [
+     "For a month,"
+    ],
+    [
+     "they checked:"
+    ],
+    [
+     "did it"
+    ],
+    [
+     "HAPPEN?",
+     {
+      "emph": "HAPPEN"
+     }
+    ]
+   ],
+   "text": "For a month, they checked: did it HAPPEN?",
+   "tone": "curious",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "AW91",
+   "chunks": [
+    [
+     "About 91%"
+    ],
+    [
+     "NEVER",
+     {
+      "emph": "NEVER"
+     }
+    ],
+    [
+     "came true."
+    ]
+   ],
+   "text": "About 91% NEVER came true.",
+   "tone": "surprised",
+   "say": "About ninety-one percent never came true."
+  },
+  {
+   "sec": "cd",
+   "scene": "Zero",
+   "art": "AWZero",
+   "chunks": [
+    [
+     "Most common"
+    ],
+    [
+     "result?"
+    ],
+    [
+     "NONE",
+     {
+      "emph": "NONE"
+     }
+    ],
+    [
+     "came true."
+    ]
+   ],
+   "text": "Most common result? NONE came true.",
+   "tone": "laughs, surprised",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "AWDeceit",
+   "chunks": [
+    [
+     "Researchers call it"
+    ],
+    [
+     "worry's"
+    ],
+    [
+     "DECEIT.",
+     {
+      "emph": "DECEIT"
+     }
+    ]
+   ],
+   "text": "Researchers call it worry's DECEIT.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Self-proof",
+   "art": "AWLastMonth",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "last month's"
+    ],
+    [
+     "big worry."
+    ],
+    [
+     "Did it"
+    ],
+    [
+     "ACTUALLY",
+     {
+      "emph": "ACTUALLY"
+     }
+    ],
+    [
+     "happen?"
+    ]
+   ],
+   "text": "Think of last month's big worry. Did it ACTUALLY happen?",
+   "tone": "knowingly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "AWWriteDown",
+   "chunks": [
+    [
+     "Arthur"
+    ],
+    [
+     "writes it DOWN.",
+     {
+      "emph": "DOWN"
+     }
+    ],
+    [
+     "Checks later."
+    ],
+    [
+     "The Doubt shrinks."
+    ]
+   ],
+   "text": "Arthur writes it DOWN. Checks later. The Doubt shrinks.",
+   "tone": "warmly",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "AWEnd",
+   "chunks": [
+    [
+     "Your 3 AM"
+    ],
+    [
+     "brain is"
+    ],
+    [
+     "a terrible"
+    ],
+    [
+     "FORTUNE teller.",
+     {
+      "emph": "FORTUNE"
+     }
+    ],
+    [
+     "Comment 'got me'."
+    ]
+   ],
+   "text": "Your 3 AM brain is a terrible FORTUNE teller. Comment 'got me'.",
+   "tone": "warmly, playful",
+   "say": "Your three A M brain is a terrible fortune teller. Comment 'got me'.",
+   "cam": [
+    540,
+    960,
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "post": {
+  "title": "Most 3 AM Worries Never Come True #shorts",
+  "description": "3 AM, and The Doubt is whispering \"what if\" in Arthur's ear: the email, the meeting, the noise in the car. In LaFreniere & Newman's 2020 study \"Exposing Worry's Deceit\" (Behavior Therapy), 29 people with generalized anxiety disorder wrote down their worries when prompted for 10 days, reviewed them each night, and tracked for 30 days whether each one came true. About 91% (91.4%) of the worry predictions did not come true; for the most common participant, none did; and people who saw more of their worries fail to come true had bigger drops in anxiety symptoms. Caveats: it was a small study of people with an anxiety disorder, so the exact number won't apply to everyone, and it's not medical advice. If worry is taking over, talk to a professional. #psychology #shorts #anxiety #overthinking",
+  "tags": [
+   "worry",
+   "anxiety",
+   "overthinking",
+   "psychology",
+   "worry journal",
+   "3am thoughts"
+  ]
+ },
+ "thumb_text": "Most Worries Never Happen",
+ "thumb_emph": "Never",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 3,
+ "hook": {
+  "context": "Lying awake at 3 AM while The Doubt whispers 'what if' about the email, the meeting, the car noise",
+  "lean": "proof",
+  "snapback": "But The Doubt is almost always WRONG."
+ },
+ "relate": "barnum"
+}

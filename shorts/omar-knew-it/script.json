@@ -1,0 +1,292 @@
+{
+ "slug": "omar-knew-it",
+ "no": 145,
+ "format": "cdesign",
+ "look": "ted2",
+ "cast": [
+  "omar",
+  "priya"
+ ],
+ "title": [
+  "I Knew",
+  "It"
+ ],
+ "credit": "Fischhoff & Beyth · 1975",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "OKHook",
+   "chunks": [
+    [
+     "Match over."
+    ],
+    [
+     "Omar yells,"
+    ],
+    [
+     "\"I KNEW it!\"",
+     {
+      "emph": "KNEW",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Match over. Omar yells, \"I KNEW it!\"",
+   "tone": "excited, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Receipts",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "OKReceipts",
+   "chunks": [
+    [
+     "Priya scrolls up"
+    ],
+    [
+     "to his text"
+    ],
+    [
+     "from last week:"
+    ],
+    [
+     "\"No CHANCE.\"",
+     {
+      "emph": "CHANCE",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "You've done"
+    ],
+    [
+     "this too."
+    ]
+   ],
+   "text": "Priya scrolls up to his text from last week: \"No CHANCE.\" You've done this too.",
+   "tone": "teasing, then knowing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "OKSnap",
+   "chunks": [
+    [
+     "But he's"
+    ],
+    [
+     "not lying."
+    ],
+    [
+     "His memory"
+    ],
+    [
+     "REWROTE",
+     {
+      "emph": "REWROTE",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "the guess."
+    ]
+   ],
+   "text": "But he's not lying. His memory REWROTE the guess.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#B3202A",
+   "light": false,
+   "art": "OKStudy",
+   "chunks": [
+    [
+     "Before Nixon's"
+    ],
+    [
+     "1972 trips,"
+    ],
+    [
+     "Fischhoff and"
+    ],
+    [
+     "BEYTH",
+     {
+      "emph": "BEYTH",
+      "fx": "type"
+     }
+    ],
+    [
+     "had people"
+    ],
+    [
+     "guess the odds."
+    ]
+   ],
+   "text": "Before Nixon's 1972 trips, Fischhoff and BEYTH had people guess the odds.",
+   "tone": "curious",
+   "say": "Before Nixon's nineteen seventy-two trips, Fischhoff and Beyth had people guess the odds."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#2B6E7A",
+   "light": false,
+   "art": "OKTurn",
+   "chunks": [
+    [
+     "Afterwards, they"
+    ],
+    [
+     "\"remembered\" guessing"
+    ],
+    [
+     "HIGHER",
+     {
+      "emph": "HIGHER",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "for what"
+    ],
+    [
+     "actually happened."
+    ]
+   ],
+   "text": "Afterwards, they \"remembered\" guessing HIGHER for what actually happened.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#6A3FA0",
+   "light": false,
+   "art": "OKName",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "HINDSIGHT bias.",
+     {
+      "emph": "HINDSIGHT",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "Your brain"
+    ],
+    [
+     "quietly edits"
+    ],
+    [
+     "the old file."
+    ]
+   ],
+   "text": "It's called HINDSIGHT bias. Your brain quietly edits the old file.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "color": "#E07A2E",
+   "light": false,
+   "art": "OKProof",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last twist"
+    ],
+    [
+     "you \"SAW coming.\"",
+     {
+      "emph": "SAW",
+      "fx": "doodle",
+      "doodle": "👀"
+     }
+    ],
+    [
+     "Yeah."
+    ],
+    [
+     "That one."
+    ]
+   ],
+   "text": "Think of the last twist you \"SAW coming.\" Yeah. That one.",
+   "tone": "knowing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "light": false,
+   "art": "OKOutro",
+   "chunks": [
+    [
+     "You're not"
+    ],
+    [
+     "a liar."
+    ],
+    [
+     "Write guesses"
+    ],
+    [
+     "DOWN.",
+     {
+      "emph": "DOWN",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Memory can't"
+    ],
+    [
+     "edit a"
+    ],
+    [
+     "screenshot."
+    ]
+   ],
+   "text": "You're not a liar. Write guesses DOWN. Memory can't edit a screenshot.",
+   "tone": "warmly, blunt"
+  }
+ ],
+ "post": {
+  "title": "You Didn't Know It All Along #shorts",
+  "description": "Omar yells \"I knew it!\" the second the match ends. Priya scrolls back to his text from last week saying the opposite. He isn't lying: his memory rewrote the guess. That's hindsight bias, the \"I knew it all along\" effect. Before President Nixon's 1972 trips to China and the USSR, Baruch Fischhoff and Ruth Beyth asked people to estimate the odds of possible outcomes. After the trips, asked to recall their original estimates, people tended to remember giving higher odds to what actually happened and lower odds to what didn't (Fischhoff & Beyth, 1975, \"I knew it would happen\", Organizational Behavior and Human Performance). Fischhoff called it \"creeping determinism\". It's a tendency, not a rule for everyone every time. Tip: write your predictions down. #psychology #shorts #hindsightbias #memory #cognitivebias",
+  "tags": [
+   "hindsight bias",
+   "I knew it all along",
+   "memory",
+   "cognitive bias",
+   "psychology",
+   "Fischhoff"
+  ]
+ },
+ "thumb_text": "You Didn't Know It",
+ "thumb_emph": "Know",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Strange named effect",
+ "hook": {
+  "context": "The match ends and Omar yells \"I knew it!\"",
+  "lean": "pain",
+  "snapback": "But he's not lying. His memory REWROTE the guess."
+ },
+ "relate": "barnum"
+}
