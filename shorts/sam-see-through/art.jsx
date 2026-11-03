@@ -53,7 +53,8 @@ function STHook({ T, t, dur }) {
   return (<g>
     {EYES.map(([x, y], i) => <Eye key={i} x={x} y={y} s={0.8} k={tw(t, D * 0.55 + i * 0.06, 0.25)} look={(486 - x) / 400} />)}
     <T2Bust who="sam" x={486} y={1230} T={T} mood="nervous" />
-    <Hand x={250} y={1560} s={0.9} T={T} rot={-10} /><Hand x={722} y={1560} s={0.9} T={T + 0.3} rot={10} />
+    <Podium x={486} y={1490} s={0.95} label="SPEECH" />
+    <Hand x={290} y={1395} s={0.8} T={T} rot={-10} /><Hand x={682} y={1395} s={0.8} T={T + 0.3} rot={10} />
   </g>);
 }
 
@@ -150,5 +151,17 @@ function STOutro({ T, t, dur }) {
   </g>);
 }
 
-Object.assign(window, { STHook, STSetup, STStudy, STRatings, STTurn, STName, STBonus, STOutro });
+/* 2b — snapback: punch in on the audience; they look calm, "HE SEEMS FINE" */
+function STSnap({ T, t, dur }) {
+  const D = Math.max(2.5, dur || 4), z = 1 + 0.15 * tw(t, 0, 0.6);
+  return (<g transform={`translate(486 1200) scale(${z}) translate(-486 -1200)`}>
+    <circle cx="486" cy="1220" r="420" fill="#C9A63A" />
+    {['grace', 'omar', 'priya'].map((w, i) => <T2Bust key={w} who={w} x={226 + i * 260} y={1330} s={0.42} T={T} ph={i * 0.5} mood="calm" disc={false} />)}
+    <g transform={`translate(486 850) scale(${pop(t, D * 0.35)})`}><rect x="-260" y="-60" width="520" height="120" rx="60" fill="#fff" />
+      <path d="M-40 55 L-10 110 L20 55 Z" fill="#fff" />
+      <text y="18" textAnchor="middle" fontFamily={BOLD} fontWeight="900" fontSize="54" fill={INK}>HE SEEMS FINE</text></g>
+  </g>);
+}
+
+Object.assign(window, { STSnap, STHook, STSetup, STStudy, STRatings, STTurn, STName, STBonus, STOutro });
 })();

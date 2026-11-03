@@ -25,19 +25,16 @@
      "June walks"
     ],
     [
-     "into the kitchen."
+     "into the kitchen"
     ],
     [
-     "And completely"
-    ],
-    [
-     "FORGETS why.",
+     "and FORGETS why.",
      {
       "emph": "FORGETS"
      }
     ]
    ],
-   "text": "June walks into the kitchen. And completely FORGETS why.",
+   "text": "June walks into the kitchen and FORGETS why.",
    "tone": "curious",
    "cam": [
     540,
@@ -52,28 +49,61 @@
    "art": "MGFridge",
    "chunks": [
     [
-     "She stares"
+     "You've done"
     ],
     [
-     "at the fridge."
+     "this too."
     ],
     [
-     "The fridge"
+     "Staring at"
     ],
     [
-     "stares BACK.",
+     "the open"
+    ],
+    [
+     "FRIDGE.",
      {
-      "emph": "BACK"
+      "emph": "FRIDGE"
      }
     ]
    ],
-   "text": "She stares at the fridge. The fridge stares BACK.",
-   "tone": "sarcastic",
+   "text": "You've done this too. Staring at the open FRIDGE.",
+   "tone": "knowingly",
    "cam": [
     560,
     950,
     1.0,
     1.1
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Theo",
+   "art": "MGTheoDoor",
+   "chunks": [
+    [
+     "Theo laughs."
+    ],
+    [
+     "\"Your memory's"
+    ],
+    [
+     "fine. Blame"
+    ],
+    [
+     "the DOOR.\"",
+     {
+      "emph": "DOOR"
+     }
+    ]
+   ],
+   "text": "Theo laughs. \"Your memory's fine. Blame the DOOR.\"",
+   "tone": "laughs, mischievously",
+   "cam": [
+    700,
+    900,
+    1.0,
+    1.18
    ]
   },
   {
@@ -99,33 +129,6 @@
    ],
    "text": "Back at her desk, she REMEMBERS. Scissors.",
    "tone": "surprised"
-  },
-  {
-   "sec": "cd",
-   "scene": "Theo",
-   "art": "MGTheoDoor",
-   "chunks": [
-    [
-     "Theo laughs."
-    ],
-    [
-     "\"Blame the"
-    ],
-    [
-     "DOOR.\"",
-     {
-      "emph": "DOOR"
-     }
-    ]
-   ],
-   "text": "Theo laughs. \"Blame the DOOR.\"",
-   "tone": "laughs, mischievously",
-   "cam": [
-    540,
-    950,
-    1.0,
-    1.06
-   ]
   },
   {
    "sec": "cd",
@@ -265,6 +268,33 @@
     1.0,
     1.08
    ]
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndGotMe",
+   "chunks": [
+    [
+     "Not forgetful."
+    ],
+    [
+     "Just between"
+    ],
+    [
+     "SCENES.",
+     {
+      "emph": "SCENES"
+     }
+    ],
+    [
+     "Comment 'got me'"
+    ],
+    [
+     "if that's you."
+    ]
+   ],
+   "text": "Not forgetful. Just between SCENES. Comment 'got me' if that's you.",
+   "tone": "warmly, playful"
   }
  ],
  "post": {
@@ -282,5 +312,11 @@
  "thumb_mood": "curious",
  "music_vibe": "playful",
  "pattern": "Character story",
- "thumb_scene": 1
+ "thumb_scene": 1,
+ "hook": {
+  "context": "Walking into the kitchen and forgetting why",
+  "lean": "pain",
+  "snapback": "Your memory's fine. Blame the DOOR."
+ },
+ "relate": "barnum"
 }

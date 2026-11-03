@@ -22,26 +22,23 @@
    "art": "STHook",
    "chunks": [
     [
-     "Sam's hands"
+     "Shaky hands"
     ],
     [
-     "are shaking."
-    ],
-    [
-     "He's sure"
-    ],
-    [
-     "everyone can"
-    ],
-    [
-     "SEE it.",
+     "before a SPEECH.",
      {
-      "emph": "SEE",
+      "emph": "SPEECH",
       "fx": "pop"
      }
+    ],
+    [
+     "Sam's sure"
+    ],
+    [
+     "everyone sees."
     ]
    ],
-   "text": "Sam's hands are shaking. He's sure everyone can SEE it.",
+   "text": "Shaky hands before a SPEECH. Sam's sure everyone sees.",
    "tone": "curious, nervous"
   },
   {
@@ -58,7 +55,7 @@
      "Wobbly voice."
     ],
     [
-     "He must look"
+     "You feel"
     ],
     [
      "like a"
@@ -72,8 +69,36 @@
      }
     ]
    ],
-   "text": "Racing heart. Wobbly voice. He must look like a WRECK.",
+   "text": "Racing heart. Wobbly voice. You feel like a WRECK.",
    "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "STSnap",
+   "chunks": [
+    [
+     "But they"
+    ],
+    [
+     "can't see it."
+    ],
+    [
+     "Not like"
+    ],
+    [
+     "you THINK.",
+     {
+      "emph": "THINK",
+      "fx": "underline",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "But they can't see it. Not like you THINK.",
+   "tone": "surprised"
   },
   {
    "sec": "cd",
@@ -86,10 +111,7 @@
      "In 2003,"
     ],
     [
-     "Kenneth Savitsky"
-    ],
-    [
-     "and Thomas"
+     "Savitsky and"
     ],
     [
      "GILOVICH",
@@ -102,46 +124,15 @@
      "had students"
     ],
     [
-     "give a speech"
+     "give speeches"
     ],
     [
      "on the spot."
     ]
    ],
-   "text": "In 2003, Kenneth Savitsky and Thomas GILOVICH had students give a speech on the spot.",
+   "text": "In 2003, Savitsky and GILOVICH had students give speeches on the spot.",
    "tone": "curious",
-   "say": "In two thousand three, Kenneth Savitsky and Thomas Gilovich had students give a speech on the spot."
-  },
-  {
-   "sec": "cd",
-   "scene": "Ratings",
-   "color": "#E8C547",
-   "light": true,
-   "art": "STRatings",
-   "chunks": [
-    [
-     "Speakers rated"
-    ],
-    [
-     "how nervous"
-    ],
-    [
-     "they LOOKED.",
-     {
-      "emph": "LOOKED",
-      "fx": "underline",
-      "mark": "#B3202A"
-     }
-    ],
-    [
-     "So did"
-    ],
-    [
-     "the audience."
-    ]
-   ],
-   "text": "Speakers rated how nervous they LOOKED. So did the audience.",
-   "tone": "thoughtfully"
+   "say": "In two thousand three, Savitsky and Gilovich had students give speeches on the spot."
   },
   {
    "sec": "cd",
@@ -151,26 +142,26 @@
    "art": "STTurn",
    "chunks": [
     [
-     "But the audience"
+     "Audiences saw"
     ],
     [
-     "saw LESS",
+     "LESS nerves",
      {
       "emph": "LESS",
       "fx": "glitch"
      }
     ],
     [
-     "nerves than"
+     "than speakers"
     ],
     [
-     "the speakers"
+     "thought they"
     ],
     [
-     "thought they showed."
+     "showed."
     ]
    ],
-   "text": "But the audience saw LESS nerves than the speakers thought they showed.",
+   "text": "Audiences saw LESS nerves than speakers thought they showed.",
    "tone": "surprised, whispers"
   },
   {
@@ -250,13 +241,13 @@
      }
     ],
     [
-     "Save this for"
+     "They see you,"
     ],
     [
-     "your next speech."
+     "not your pulse."
     ]
    ],
-   "text": "Grace tells Sam. He walks on CALMER. Save this for your next speech.",
+   "text": "Grace tells Sam. He walks on CALMER. They see you, not your pulse.",
    "tone": "warmly"
   }
  ],
@@ -275,5 +266,11 @@
  "thumb_emph": "Nerves",
  "thumb_mood": "worried",
  "music_vibe": "uplifting",
- "pattern": "Therapist tip"
+ "pattern": "Therapist tip",
+ "hook": {
+  "context": "Shaky hands before a speech, sure everyone can see",
+  "lean": "pain",
+  "snapback": "But they can't see it. Not like you THINK."
+ },
+ "relate": "barnum"
 }

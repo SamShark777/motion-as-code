@@ -122,5 +122,28 @@ function RMCookies({ T, t, beats }) {
     <RMChip x={540} y={200} text="NEXT MORNING" pop={t / 0.2} size={46} /></g>);
 }
 
-Object.assign(window, { RMMeetNeighbour, RMCriticArrives, RMAwfulJoke, RMBedtime, RMStudyPairs, RMGuessLow, RMNameGap, RMInsideOutside, RMCookies });
+/* 3b — snapback: the Critic's replay tape gets a big WRONG stamp; he gapes */
+function RMSnapWrong({ T, t, beats }) {
+  const c = bt(beats, 1, 0.6), k = EO((t - c) / 0.25);
+  return (<g><RMBg kind="blue" />
+    <rect x="160" y="420" width="760" height="460" fill={P.blk} /><rect x="190" y="450" width="700" height="400" fill={P.cream} />
+    {[0, 1].map((i) => <circle key={i} cx={380 + i * 320} cy={650} r={110} fill={P.blk} stroke={P.yel} strokeWidth="10" transform={`rotate(${T * 120 * (t < c ? 1 : 0.1)} ${380 + i * 320} 650)`} />)}
+    <RMCritic x={540} y={1180} s={0.7} mouth={t > c ? 'o' : 'grin'} lid={t > c ? 0 : 0.45} look={[0, -0.6]} />
+    {t > c && <g transform={`translate(540 640) rotate(-8) scale(${1.6 - 0.6 * k})`} opacity={k}>
+      <rect x="-330" y="-110" width="660" height="220" fill="none" stroke={P.red} strokeWidth="22" />
+      <text y="70" textAnchor="middle" fontFamily="Oswald, sans-serif" fontWeight="700" fontSize="190" fill={P.red}>WRONG</text></g>}
+    <RMChip x={540} y={230} text="▶ REPLAY" col={P.cream} size={48} pop={t / 0.2} /></g>);
+}
+
+/* 10 — end: Mae smiling at her door, cookies in hand, the Critic tiny and quiet; comment prompt */
+function RMEndGotMe({ T, t, beats }) {
+  const c = bt(beats, 2, 1.2);
+  return (<g><RMBg kind="red" />
+    <RMMae x={540} y={1000} s={0.85} mouth="smile" brow="up" lid={0.15} look={[0, 0]} />
+    <RMCritic x={860} y={420} s={0.2} mouth="o" lid={0.3} look={[-1, 0.5]} body={false} />
+    {[[200, 520], [880, 900], [190, 1150]].map(([x, y], i) => <RMBadge key={i} x={x} y={y} r={50} k={(t - 0.2 - i * 0.12) / 0.25} />)}
+    <RMChip x={540} y={230} text={t > c ? 'COMMENT: GOT ME' : "NOT THEIR REVIEW"} pop={t / 0.2} size={46} /></g>);
+}
+
+Object.assign(window, { RMSnapWrong, RMEndGotMe, RMMeetNeighbour, RMCriticArrives, RMAwfulJoke, RMBedtime, RMStudyPairs, RMGuessLow, RMNameGap, RMInsideOutside, RMCookies });
 })();

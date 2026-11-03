@@ -138,5 +138,15 @@ function MGScissors({ T, t, beats }) {
     {t > c && <text x={560} y={430} textAnchor="middle" fontFamily={BB} fontSize={180 * BK((t - c) / 0.3)} fill={A} stroke={K} strokeWidth="6">?</text>}</g>);
 }
 
-Object.assign(window, { MGKitchenHook, MGFridge, MGBackToDesk, MGTheoDoor, MGStudyRooms, MGDoorResult, MGNameDoor, MGScenes, MGScissors });
+/* 10 — end: June grinning with the scissors, a "NEW SCENE" chip; comment prompt */
+function MGEndGotMe({ T, t, beats }) {
+  const c = b(beats, 3, 1.4);
+  return (<g><MGBg kind="wall" c1="#f0d9a8" c2="#d7a85e" />
+    <Doorway x={250} y={1250} w={240} h={600} open={0.6} />
+    <MGBust x={620} y={860} r={230} who="june" mouth="grin" brow="up" look={[-0.3, 0]} bl={BL(T)} />
+    <Scissors x={780} y={1180} s={0.8} rot={-30} open={0.2 + 0.2 * Math.abs(Math.sin(T * 3))} />
+    <MGChip x={540} y={360} text={t > c ? "COMMENT 'GOT ME'" : 'NEW SCENE'} size={60} pop={t / 0.25} /></g>);
+}
+
+Object.assign(window, { MGEndGotMe, MGKitchenHook, MGFridge, MGBackToDesk, MGTheoDoor, MGStudyRooms, MGDoorResult, MGNameDoor, MGScenes, MGScissors });
 })();

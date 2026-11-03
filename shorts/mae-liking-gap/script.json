@@ -22,22 +22,25 @@
    "art": "RMMeetNeighbour",
    "chunks": [
     [
-     "Mae just met"
-    ],
-    [
-     "her new neighbour."
-    ],
-    [
-     "Five minutes"
-    ],
-    [
-     "of SMALL talk.",
+     "SMALL talk",
      {
       "emph": "SMALL"
      }
+    ],
+    [
+     "with the"
+    ],
+    [
+     "new neighbour."
+    ],
+    [
+     "Mae's sure"
+    ],
+    [
+     "she blew it."
     ]
    ],
-   "text": "Mae just met her new neighbour. Five minutes of SMALL talk.",
+   "text": "SMALL talk with the new neighbour. Mae's sure she blew it.",
    "tone": "curious",
    "cam": [
     540,
@@ -52,25 +55,58 @@
    "art": "RMCriticArrives",
    "chunks": [
     [
-     "Then the Critic"
+     "You've done"
     ],
     [
-     "starts the"
+     "this too."
     ],
     [
-     "REPLAY.",
+     "The Critic"
+    ],
+    [
+     "hits REPLAY.",
      {
       "emph": "REPLAY"
      }
     ]
    ],
-   "text": "Then the Critic starts the REPLAY.",
-   "tone": "mischievously",
+   "text": "You've done this too. The Critic hits REPLAY.",
+   "tone": "knowingly",
    "cam": [
     540,
     900,
     1.0,
     1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapWrong",
+   "chunks": [
+    [
+     "But the replay"
+    ],
+    [
+     "is WRONG.",
+     {
+      "emph": "WRONG"
+     }
+    ],
+    [
+     "And there's"
+    ],
+    [
+     "proof."
+    ]
+   ],
+   "text": "But the replay is WRONG. And there's proof.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.18
    ]
   },
   {
@@ -96,36 +132,6 @@
    ],
    "text": "\"You talked too much. That joke? AWFUL.\"",
    "tone": "sarcastic"
-  },
-  {
-   "sec": "cd",
-   "scene": "Bedtime",
-   "art": "RMBedtime",
-   "chunks": [
-    [
-     "By bedtime,"
-    ],
-    [
-     "Mae's sure"
-    ],
-    [
-     "he can't"
-    ],
-    [
-     "STAND her.",
-     {
-      "emph": "STAND"
-     }
-    ]
-   ],
-   "text": "By bedtime, Mae's sure he can't STAND her.",
-   "tone": "sighs",
-   "cam": [
-    540,
-    1050,
-    1.0,
-    1.1
-   ]
   },
   {
    "sec": "cd",
@@ -259,6 +265,30 @@
     1.0,
     1.06
    ]
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndGotMe",
+   "chunks": [
+    [
+     "The Critic's review"
+    ],
+    [
+     "isn't THEIRS.",
+     {
+      "emph": "THEIRS"
+     }
+    ],
+    [
+     "Comment 'got me'"
+    ],
+    [
+     "if that's you."
+    ]
+   ],
+   "text": "The Critic's review isn't THEIRS. Comment 'got me' if that's you.",
+   "tone": "warmly, playful"
   }
  ],
  "post": {
@@ -276,5 +306,11 @@
  "thumb_mood": "happy",
  "music_vibe": "uplifting",
  "pattern": "Character story",
- "thumb_scene": 3
+ "thumb_scene": 3,
+ "hook": {
+  "context": "Small talk with a new neighbour, then sure you blew it",
+  "lean": "pain",
+  "snapback": "But the replay is WRONG. And there's proof."
+ },
+ "relate": "barnum"
 }
