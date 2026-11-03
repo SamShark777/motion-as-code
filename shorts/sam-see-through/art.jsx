@@ -53,8 +53,8 @@ function STHook({ T, t, dur }) {
   return (<g>
     {EYES.map(([x, y], i) => <Eye key={i} x={x} y={y} s={0.8} k={tw(t, D * 0.55 + i * 0.06, 0.25)} look={(486 - x) / 400} />)}
     <T2Bust who="sam" x={486} y={1230} T={T} mood="nervous" />
-    <Podium x={486} y={1490} s={0.95} label="SPEECH" />
-    <Hand x={290} y={1395} s={0.8} T={T} rot={-10} /><Hand x={682} y={1395} s={0.8} T={T + 0.3} rot={10} />
+    <Podium x={486} y={1610} s={0.9} label="SPEECH" mic={false} />
+    <Hand x={290} y={1515} s={0.8} T={T} rot={-10} /><Hand x={682} y={1515} s={0.8} T={T + 0.3} rot={10} />
   </g>);
 }
 
@@ -147,7 +147,7 @@ function STOutro({ T, t, dur }) {
     <T2Bust who="sam" x={640} y={1230} s={0.8} T={T} mood={calm > 0.5 ? 'happy' : 'calm'} />
     <Heart x={830} y={760} s={0.6} T={T} bpm={150 - 80 * calm} col={calm > 0.5 ? '#E07A2E' : RED} />
     <g opacity={tw(t, D * 0.6, 0.4)}><rect x="186" y="700" width="420" height="80" rx="40" fill={YEL} />
-      <text x="396" y="754" textAnchor="middle" fontFamily={BOLD} fontWeight="900" fontSize="36" fill={INK}>SAVE FOR LATER</text></g>
+      <text x="396" y="754" textAnchor="middle" fontFamily={BOLD} fontWeight="900" fontSize="36" fill={INK}>THEY SEE YOU</text></g>
   </g>);
 }
 

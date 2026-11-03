@@ -128,7 +128,7 @@ function RMSnapWrong({ T, t, beats }) {
   return (<g><RMBg kind="blue" />
     <rect x="160" y="420" width="760" height="460" fill={P.blk} /><rect x="190" y="450" width="700" height="400" fill={P.cream} />
     {[0, 1].map((i) => <circle key={i} cx={380 + i * 320} cy={650} r={110} fill={P.blk} stroke={P.yel} strokeWidth="10" transform={`rotate(${T * 120 * (t < c ? 1 : 0.1)} ${380 + i * 320} 650)`} />)}
-    <RMCritic x={540} y={1180} s={0.7} mouth={t > c ? 'o' : 'grin'} lid={t > c ? 0 : 0.45} look={[0, -0.6]} />
+    <RMCritic x={540} y={1040} s={0.6} mouth={t > c ? 'o' : 'grin'} lid={t > c ? 0 : 0.45} look={[0, -0.6]} />
     {t > c && <g transform={`translate(540 640) rotate(-8) scale(${1.6 - 0.6 * k})`} opacity={k}>
       <rect x="-330" y="-110" width="660" height="220" fill="none" stroke={P.red} strokeWidth="22" />
       <text y="70" textAnchor="middle" fontFamily="Oswald, sans-serif" fontWeight="700" fontSize="190" fill={P.red}>WRONG</text></g>}
