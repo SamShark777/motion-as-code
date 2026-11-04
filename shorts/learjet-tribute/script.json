@@ -1,0 +1,14 @@
+{
+ "slug": "learjet-tribute",
+ "no": 157,
+ "format": "prebuilt",
+ "look": "vintage-collage",
+ "cover": false,
+ "voice": {"engine": "kokoro", "kokoro_voice": "af_heart"},
+ "note": "Tribute Short built in HyperFrames (vintage aviation collage, Shivam's reference). Narration Kokoro af_heart 0.92; music Heartbreaking (Kevin MacLeod, CC BY 4.0). Facts checked 2026-11-04 (NTSB statements); no cause, no names, no crash imagery. Shivam approved posting 2026-11-04.",
+ "post": {
+  "title": "In Memory of the Nine | Why We Rush to Explain Tragedy #shorts",
+  "description": "On Nov 1, a Learjet 60 flying from Austin to the Bahamas came down in Greenacres, Florida. All nine people on board died. The crew had reported ice and turbulence at 35,000 ft; the NTSB is investigating and hasn't named a cause. Our thoughts are with every family grieving. Music: \"Heartbreaking\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #needforclosure #shorts",
+  "tags": ["psychology", "need for closure", "tribute", "Greenacres", "Learjet"]
+ }
+}
