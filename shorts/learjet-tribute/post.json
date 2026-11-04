@@ -1,0 +1,17 @@
+{
+ "no": 157,
+ "slug": "learjet-tribute",
+ "date": "2026-11-04",
+ "slot": "09:45",
+ "due": "2026-11-04T17:45:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-04/learjet-tribute.mp4",
+ "buffer": {
+  "youtube": "6aeb6853de5163115e19a416",
+  "instagram": "6aeb6854491f63648ceb1831",
+  "tiktok": "6aeb6855491f63648ceb186e"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 54.6
+}

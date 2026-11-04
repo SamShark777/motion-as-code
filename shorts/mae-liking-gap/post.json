@@ -13,5 +13,9 @@
  "errors": {},
  "engine": "kokoro",
  "voice_name": null,
- "duration": 30.2
+ "duration": 30.2,
+ "links": {
+  "youtube": "https://www.youtube.com/shorts/ei3bxsJ-udw",
+  "instagram": "https://www.instagram.com/reel/DfU8zCoAtI3/"
+ }
 }
