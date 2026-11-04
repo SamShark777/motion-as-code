@@ -1,0 +1,17 @@
+{
+ "no": 158,
+ "slug": "midterms-split",
+ "date": "2026-11-04",
+ "slot": "12:50",
+ "due": "2026-11-04T20:50:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-04/midterms-split.mp4",
+ "buffer": {
+  "youtube": "6aeb948f22c5ca646ead51e3",
+  "instagram": "6aeb948fa575e0d10cdd52ca",
+  "tiktok": "6aeb949001386678ed56e6a1"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 57.6
+}
