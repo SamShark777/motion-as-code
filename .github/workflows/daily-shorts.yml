@@ -33,6 +33,10 @@ on:
         description: "Only check the Buffer connection (lists channels + post schema), build nothing"
         type: boolean
         default: false
+      yt_stats:
+        description: "Only pull YouTube stats (views, likes, comments, subscribers) with the YouTube Data API; saved to shorts/stats/youtube.json"
+        type: boolean
+        default: false
       buffer_cancel:
         description: "Only cancel: delete the still-scheduled Buffer posts of these slugs (comma-separated), build nothing"
         required: false
@@ -67,7 +71,7 @@ on:
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.channel_scan != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.yt_stats || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.channel_scan != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -114,6 +118,24 @@ jobs:
           code=$?
           # annotations are readable through the API (the raw log isn't, from Claude's side)
           while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
+          exit $code
+
+  yt-stats:
+    if: inputs.yt_stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: shorts }
+      - env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          set +e
+          python3 scripts/yt_stats.py --save > out.txt 2>&1
+          code=$?
+          while IFS= read -r line; do echo "::notice::${line:0:3900}"; done < out.txt
+          git config user.name shorts-bot; git config user.email shorts-bot@users.noreply.github.com
+          git add shorts/stats/youtube.json 2>/dev/null
+          git diff --cached --quiet || { git commit -qm "ci: youtube stats $(date -u +%F)"; for i in 1 2 3; do git pull -q --rebase origin shorts && git push -q origin shorts && break; sleep 5; done; }
           exit $code
 
   buffer-cancel:
@@ -298,7 +320,7 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
 
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.channel_scan && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
+    if: ${{ !inputs.buffer_check && !inputs.yt_stats && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.channel_scan && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
