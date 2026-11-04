@@ -1,0 +1,14 @@
+{
+ "slug": "midterms-split",
+ "no": 158,
+ "format": "prebuilt",
+ "look": "flat-figures",
+ "cover": false,
+ "voice": {"engine": "kokoro", "kokoro_voice": "af_heart"},
+ "note": "HyperFrames build: original flat geometric characters (blue/red), facts checked 2026-11-04 (AP calls: Democrats win House + Senate). Both sides' claims given equal weight; ends with comment prompts. Shivam approved scheduling 2026-11-04.",
+ "post": {
+  "title": "Democrats Won Congress. Half of You Are Furious. #shorts",
+  "description": "From Jan 3, Democrats control the House and Senate. They run the committees, and judges and cabinet picks need their votes, but the veto stays. Same results, two realities: that's motivated reasoning. Comment 1 for checks & balances, 2 for gridlock, and blue or red for who you support. Music: \"Wallpaper\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #midterms #politics #shorts",
+  "tags": ["midterms", "politics", "psychology", "motivated reasoning", "Congress"]
+ }
+}
