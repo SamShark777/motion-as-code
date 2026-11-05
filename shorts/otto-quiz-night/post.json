@@ -1,0 +1,17 @@
+{
+ "no": 142,
+ "slug": "otto-quiz-night",
+ "date": "2026-11-05",
+ "slot": "09:00",
+ "due": "2026-11-05T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-05/otto-quiz-night.mp4",
+ "buffer": {
+  "youtube": "6aec2800660b2991f15891d4",
+  "instagram": "6aec28007877e0eab27cfe87",
+  "tiktok": "6aec280180f7fd0537f5dc98"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 35.1
+}

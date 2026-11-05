@@ -1,0 +1,17 @@
+{
+ "no": 159,
+ "slug": "money-evil",
+ "date": "2026-11-05",
+ "slot": "09:45",
+ "due": "2026-11-05T17:45:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-05/money-evil.mp4",
+ "buffer": {
+  "youtube": "6aec280e7877e0eab27d0062",
+  "instagram": "6aec280fe22643a98796537a",
+  "tiktok": "6aec280f7877e0eab27d00b7"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 49.6
+}

@@ -1,0 +1,17 @@
+{
+ "no": 143,
+ "slug": "rosa-start-monday",
+ "date": "2026-11-05",
+ "slot": "14:00",
+ "due": "2026-11-05T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-05/rosa-start-monday.mp4",
+ "buffer": {
+  "youtube": "6aec280580f7fd0537f5dd07",
+  "instagram": "6aec280675052a1eb825b693",
+  "tiktok": "6aec280780f7fd0537f5dd5f"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 53.8
+}
