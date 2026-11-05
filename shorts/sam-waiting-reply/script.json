@@ -1,0 +1,290 @@
+{
+ "slug": "sam-waiting-reply",
+ "no": 148,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Sam",
+ "episode": 5,
+ "cast": [
+  "sam",
+  "priya"
+ ],
+ "title": [
+  "Not",
+  "Knowing"
+ ],
+ "credit": "de Berker et al. · 2016",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "art": "SWHook",
+   "chunks": [
+    [
+     "Waiting for"
+    ],
+    [
+     "a TEXT back,",
+     {
+      "emph": "TEXT",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Sam stares"
+    ],
+    [
+     "at \"Read 9:14.\""
+    ]
+   ],
+   "text": "Waiting for a TEXT back, Sam stares at \"Read 9:14.\"",
+   "tone": "curious, tense",
+   "say": "Waiting for a text back, Sam stares at, read, nine fourteen."
+  },
+  {
+   "sec": "cd",
+   "scene": "Maybe",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "SWRatherNo",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "this too."
+    ],
+    [
+     "Part of you"
+    ],
+    [
+     "would rather"
+    ],
+    [
+     "just get"
+    ],
+    [
+     "a NO.",
+     {
+      "emph": "NO",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "You've done this too. Part of you would rather just get a NO.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "SWSnap",
+   "chunks": [
+    [
+     "But that's"
+    ],
+    [
+     "not drama."
+    ],
+    [
+     "Science"
+    ],
+    [
+     "MEASURED it.",
+     {
+      "emph": "MEASURED",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "But that's not drama. Science MEASURED it.",
+   "tone": "surprised",
+   "cam": [
+    486,
+    1100,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#2B6E7A",
+   "art": "SWStudy",
+   "chunks": [
+    [
+     "In 2016,"
+    ],
+    [
+     "UCL scientists"
+    ],
+    [
+     "gave 45 people"
+    ],
+    [
+     "a game"
+    ],
+    [
+     "with mild"
+    ],
+    [
+     "electric SHOCKS.",
+     {
+      "emph": "SHOCKS",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "In 2016, UCL scientists gave 45 people a game with mild electric SHOCKS.",
+   "tone": "curious",
+   "say": "In twenty sixteen, UCL scientists gave forty-five people a game with mild electric shocks."
+  },
+  {
+   "sec": "cd",
+   "scene": "Peak",
+   "color": "#B3202A",
+   "art": "SWPeak",
+   "chunks": [
+    [
+     "Stress peaked"
+    ],
+    [
+     "at a"
+    ],
+    [
+     "FIFTY-FIFTY chance,",
+     {
+      "emph": "FIFTY-FIFTY",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "not at"
+    ],
+    [
+     "a sure shock."
+    ]
+   ],
+   "text": "Stress peaked at a FIFTY-FIFTY chance, not at a sure shock.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#6A3FA0",
+   "art": "SWOdds",
+   "chunks": [
+    [
+     "Not knowing"
+    ],
+    [
+     "is the stress."
+    ],
+    [
+     "Your brain"
+    ],
+    [
+     "keeps running"
+    ],
+    [
+     "the ODDS.",
+     {
+      "emph": "ODDS",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Not knowing is the stress. Your brain keeps running the ODDS.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "color": "#E07A2E",
+   "art": "SWProof",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last chat"
+    ],
+    [
+     "you REFRESHED.",
+     {
+      "emph": "REFRESHED",
+      "fx": "doodle",
+      "doodle": "🔄"
+     }
+    ],
+    [
+     "Yeah."
+    ],
+    [
+     "That one."
+    ]
+   ],
+   "text": "Think of the last chat you REFRESHED. Yeah. That one.",
+   "tone": "knowing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "art": "SWOutro",
+   "chunks": [
+    [
+     "Priya flips"
+    ],
+    [
+     "the phone:"
+    ],
+    [
+     "\"You're not needy.\""
+    ],
+    [
+     "A no stings."
+    ],
+    [
+     "A MAYBE haunts.",
+     {
+      "emph": "MAYBE",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Priya flips the phone: \"You're not needy.\" A no stings. A MAYBE haunts.",
+   "tone": "warmly, blunt"
+  }
+ ],
+ "post": {
+  "title": "Why Waiting for a Text Feels Worse Than a No #shorts",
+  "description": "Sam sent the text. \"Read 9:14.\" An hour later he'd honestly rather get a no. That isn't drama. In a 2016 Nature Communications study, Archy de Berker, Sven Bestmann and colleagues at University College London had 45 volunteers play a game of turning over rocks that might hide a snake, and a snake meant a mildly painful electric shock. Stress (pupil dilation, sweating and how stressed people said they felt) was highest when the chance of a shock was about 50%, and lowest when it was 0% or 100%: a sure shock was less stressful than a maybe. Uncertainty itself is stressful, because your brain keeps trying to predict what happens next. Not knowing is the stress. Comment 'got me' if you've stared at 'Read' too. #psychology #shorts #overthinking #anxiety #texting",
+  "tags": [
+   "uncertainty",
+   "overthinking",
+   "texting anxiety",
+   "stress",
+   "psychology",
+   "de Berker"
+  ]
+ },
+ "thumb_text": "Why Maybe Hurts More",
+ "thumb_emph": "Maybe",
+ "thumb_mood": "worried",
+ "music_vibe": "tense",
+ "pattern": "Overthinking",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Waiting for a text back, staring at \"Read 9:14\"",
+  "lean": "pain",
+  "snapback": "But that's not drama. Science MEASURED it."
+ },
+ "relate": "barnum"
+}

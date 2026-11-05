@@ -1,0 +1,306 @@
+{
+ "slug": "otto-rhyme-poster",
+ "no": 153,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 6,
+ "cast": [
+  "otto",
+  "arthur"
+ ],
+ "title": [
+  "Rhyme",
+  "Reason"
+ ],
+ "credit": "McGlone & Tofighbakhsh · 2000",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMPosterHook",
+   "chunks": [
+    [
+     "Otto's new poster"
+    ],
+    [
+     "RHYMES:",
+     {
+      "emph": "RHYMES"
+     }
+    ],
+    [
+     "\"Work late,"
+    ],
+    [
+     "feel great.\""
+    ]
+   ],
+   "text": "Otto's new poster RHYMES: \"Work late, feel great.\"",
+   "tone": "curious, playful",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "RMArthurNods",
+   "chunks": [
+    [
+     "You'd trust"
+    ],
+    [
+     "it too."
+    ],
+    [
+     "Rhyming sayings"
+    ],
+    [
+     "get rated"
+    ],
+    [
+     "more ACCURATE.",
+     {
+      "emph": "ACCURATE"
+     }
+    ]
+   ],
+   "text": "You'd trust it too. Rhyming sayings get rated more ACCURATE.",
+   "tone": "knowingly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapEasy",
+   "chunks": [
+    [
+     "But it's"
+    ],
+    [
+     "not wisdom."
+    ],
+    [
+     "It's how"
+    ],
+    [
+     "EASY it sounds.",
+     {
+      "emph": "EASY"
+     }
+    ]
+   ],
+   "text": "But it's not wisdom. It's how EASY it sounds.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMStudyFoes",
+   "chunks": [
+    [
+     "In 2000,"
+    ],
+    [
+     "McGlone and Tofighbakhsh"
+    ],
+    [
+     "showed people"
+    ],
+    [
+     "\"Woes unite FOES.\"",
+     {
+      "emph": "FOES"
+     }
+    ]
+   ],
+   "text": "In 2000, McGlone and Tofighbakhsh showed people \"Woes unite FOES.\"",
+   "tone": "curious",
+   "say": "In two thousand, McGlone and Tofig-bakhsh showed people \"Woes unite foes.\""
+  },
+  {
+   "sec": "cd",
+   "scene": "Enemies",
+   "art": "RMEnemiesScale",
+   "chunks": [
+    [
+     "Others saw"
+    ],
+    [
+     "\"Woes unite ENEMIES.\"",
+     {
+      "emph": "ENEMIES"
+     }
+    ],
+    [
+     "Same meaning."
+    ],
+    [
+     "Rated less true."
+    ]
+   ],
+   "text": "Others saw \"Woes unite ENEMIES.\" Same meaning. Rated less true.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameRhyme",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "RHYME-as-reason effect.",
+     {
+      "emph": "RHYME"
+     }
+    ],
+    [
+     "Smooth sounds"
+    ],
+    [
+     "feel like facts."
+    ]
+   ],
+   "text": "It's the RHYME-as-reason effect. Smooth sounds feel like facts.",
+   "tone": "serious",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Meaning",
+   "art": "RMJudgeMeaning",
+   "chunks": [
+    [
+     "Told to judge"
+    ],
+    [
+     "the MEANING,",
+     {
+      "emph": "MEANING"
+     }
+    ],
+    [
+     "not the sound,"
+    ],
+    [
+     "the boost shrank."
+    ]
+   ],
+   "text": "Told to judge the MEANING, not the sound, the boost shrank.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMSloganHead",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last slogan"
+    ],
+    [
+     "stuck in"
+    ],
+    [
+     "your HEAD.",
+     {
+      "emph": "HEAD"
+     }
+    ],
+    [
+     "Yeah."
+    ]
+   ],
+   "text": "Think of the last slogan stuck in your HEAD. Yeah.",
+   "tone": "knowing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Fix",
+   "art": "RMArthurFix",
+   "chunks": [
+    [
+     "Arthur fixes"
+    ],
+    [
+     "the poster:"
+    ],
+    [
+     "\"Work late."
+    ],
+    [
+     "Feel TIRED.\"",
+     {
+      "emph": "TIRED"
+     }
+    ]
+   ],
+   "text": "Arthur fixes the poster: \"Work late. Feel TIRED.\"",
+   "tone": "deadpan, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndCatchy",
+   "chunks": [
+    [
+     "Catchy isn't"
+    ],
+    [
+     "the same"
+    ],
+    [
+     "as TRUE.",
+     {
+      "emph": "TRUE"
+     }
+    ]
+   ],
+   "text": "Catchy isn't the same as TRUE.",
+   "tone": "warmly, blunt"
+  }
+ ],
+ "post": {
+  "title": "Why Rhymes Sound More True #shorts",
+  "description": "Otto's new office poster rhymes: \"Work late, feel great.\" Arthur nods along. You probably would too. In 2000, Matthew McGlone and Jessica Tofighbakhsh (Psychological Science, \"Birds of a feather flock conjointly (?): Rhyme as reason in aphorisms\") had people rate how accurate sayings about human behaviour were. Rhyming sayings like \"Woes unite foes\" were judged more accurate than the same idea without the rhyme, like \"Woes unite enemies\". When people were told to judge the meaning and not the sound, the rhyme's advantage shrank. The rhyme-as-reason effect: smooth, easy-to-process phrases feel more true. Catchy isn't the same as true. Comment the most suspicious rhyme you've ever believed. #psychology #shorts #cognitivebias #rhyme #persuasion",
+  "tags": [
+   "rhyme as reason",
+   "cognitive bias",
+   "persuasion",
+   "slogans",
+   "psychology",
+   "McGlone"
+  ]
+ },
+ "thumb_text": "Why Rhymes Sound True",
+ "thumb_emph": "True",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Otto's new office poster rhymes: \"Work late, feel great.\"",
+  "lean": "proof",
+  "snapback": "But it's not wisdom. It's how EASY it sounds."
+ },
+ "relate": "barnum"
+}

@@ -1,0 +1,310 @@
+{
+ "slug": "lila-replay-write",
+ "no": 152,
+ "format": "retro",
+ "look": "retro",
+ "series": "Lila",
+ "episode": 5,
+ "cast": [
+  "lila",
+  "critic",
+  "mae"
+ ],
+ "title": [
+  "Write It",
+  "Down"
+ ],
+ "credit": "Pennebaker & Beall · 1986",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMReplayMum",
+   "chunks": [
+    [
+     "REPLAYING the meeting,",
+     {
+      "emph": "REPLAYING"
+     }
+    ],
+    [
+     "Lila hears it"
+    ],
+    [
+     "again: she called"
+    ],
+    [
+     "her boss \"Mum.\""
+    ]
+   ],
+   "text": "REPLAYING the meeting, Lila hears it again: she called her boss \"Mum.\"",
+   "tone": "curious, cringing",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Loop",
+   "art": "RMLoopYou",
+   "chunks": [
+    [
+     "You've got"
+    ],
+    [
+     "one too."
+    ],
+    [
+     "The thing"
+    ],
+    [
+     "your brain plays"
+    ],
+    [
+     "on LOOP.",
+     {
+      "emph": "LOOP"
+     }
+    ]
+   ],
+   "text": "You've got one too. The thing your brain plays on LOOP.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapPen",
+   "chunks": [
+    [
+     "But the fix"
+    ],
+    [
+     "isn't forgetting it."
+    ],
+    [
+     "It's WRITING",
+     {
+      "emph": "WRITING"
+     }
+    ],
+    [
+     "it down."
+    ]
+   ],
+   "text": "But the fix isn't forgetting it. It's WRITING it down.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMStudyWrite",
+   "chunks": [
+    [
+     "In 1986,"
+    ],
+    [
+     "Pennebaker had"
+    ],
+    [
+     "students WRITE",
+     {
+      "emph": "WRITE"
+     }
+    ],
+    [
+     "about upsetting moments:"
+    ],
+    [
+     "fifteen minutes,"
+    ],
+    [
+     "four days."
+    ]
+   ],
+   "text": "In 1986, Pennebaker had students WRITE about upsetting moments: fifteen minutes, four days.",
+   "tone": "curious",
+   "say": "In nineteen eighty-six, Pennebaker had students write about upsetting moments: fifteen minutes, four days."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "RMClinicLess",
+   "chunks": [
+    [
+     "Over the next"
+    ],
+    [
+     "six months,"
+    ],
+    [
+     "they visited"
+    ],
+    [
+     "the health centre"
+    ],
+    [
+     "LESS.",
+     {
+      "emph": "LESS"
+     }
+    ]
+   ],
+   "text": "Over the next six months, they visited the health centre LESS.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameExpressive",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "EXPRESSIVE writing.",
+     {
+      "emph": "EXPRESSIVE"
+     }
+    ]
+   ],
+   "text": "It's called EXPRESSIVE writing.",
+   "tone": "serious",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Critic",
+   "art": "RMCriticPaper",
+   "chunks": [
+    [
+     "The Critic"
+    ],
+    [
+     "hates paper."
+    ],
+    [
+     "On paper,"
+    ],
+    [
+     "he's BORING.",
+     {
+      "emph": "BORING"
+     }
+    ]
+   ],
+   "text": "The Critic hates paper. On paper, he's BORING.",
+   "tone": "mischievously, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMShowerArgue",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last shower"
+    ],
+    [
+     "ARGUMENT you won.",
+     {
+      "emph": "ARGUMENT"
+     }
+    ],
+    [
+     "Yeah."
+    ]
+   ],
+   "text": "Think of the last shower ARGUMENT you won. Yeah.",
+   "tone": "knowing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Mae",
+   "art": "RMMaePen",
+   "chunks": [
+    [
+     "Mae hands"
+    ],
+    [
+     "her a pen:"
+    ],
+    [
+     "\"Fifteen minutes."
+    ],
+    [
+     "Then CLOSE",
+     {
+      "emph": "CLOSE"
+     }
+    ],
+    [
+     "the notebook.\""
+    ]
+   ],
+   "text": "Mae hands her a pen: \"Fifteen minutes. Then CLOSE the notebook.\"",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndDown",
+   "chunks": [
+    [
+     "You're not stuck."
+    ],
+    [
+     "You just haven't"
+    ],
+    [
+     "written it DOWN.",
+     {
+      "emph": "DOWN"
+     }
+    ]
+   ],
+   "text": "You're not stuck. You just haven't written it DOWN.",
+   "tone": "warmly, blunt"
+  }
+ ],
+ "post": {
+  "title": "Write Down the Thing You Keep Replaying #shorts",
+  "description": "Lila keeps replaying the meeting where she called her boss \"Mum\". The Critic hits replay all night. The fix isn't forcing yourself to forget it; it's writing it down. In James Pennebaker and Sandra Beall's 1986 study (Journal of Abnormal Psychology), healthy undergraduates wrote about personally upsetting or traumatic experiences for 15 minutes on four consecutive days, while a control group wrote about trivial topics. Over the following six months, the students who wrote about traumatic events visited the university health centre less. It's called expressive writing, and hundreds of studies followed; later reviews find the benefits are real but modest and vary between people, so treat it as a tool, not a cure. Try it: 15 minutes, then close the notebook. If something is truly overwhelming, talk to someone you trust or a professional. Comment 'got me' if you've won a shower argument this week. #psychology #shorts #overthinking #journaling #expressivewriting",
+  "tags": [
+   "expressive writing",
+   "overthinking",
+   "rumination",
+   "journaling",
+   "psychology",
+   "Pennebaker"
+  ]
+ },
+ "thumb_text": "Write the Replay Down",
+ "thumb_emph": "Down",
+ "thumb_mood": "thinking",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Replaying the meeting where Lila called her boss \"Mum\"",
+  "lean": "pain",
+  "snapback": "But the fix isn't forgetting it. It's WRITING it down."
+ },
+ "relate": "barnum"
+}

@@ -10,7 +10,9 @@
     "ep 1 (friend-question): stuck for weeks on quitting his job; answers instantly when asked what he would tell a friend (Solomon's paradox)",
     "ep 2 (milgram-obedience): sure he'd have stopped; plays the volunteer at the panel, then refuses and says no out loud (Milgram 1963)",
     "ep 3 (maximizer-test, with Leo): forty tabs for one phone charger; a maximizer (Schwartz et al. 2002); still wonders about tab 39; learns to define good enough",
-    "ep 4 (sam-see-through, with Grace): shaking hands before a speech, sure everyone can see; illusion of transparency (Savitsky & Gilovich 2003: audiences saw less nerves; speakers told about it gave better-rated talks); walks on calmer"
+    "ep 4 (sam-see-through, with Grace): shaking hands before a speech, sure everyone can see; illusion of transparency (Savitsky & Gilovich 2003: audiences saw less nerves; speakers told about it gave better-rated talks); walks on calmer",
+    "ep 5 (sam-waiting-reply, with Priya): staring at \"Read 9:14\", would rather get a no; uncertainty is the stress (de Berker et al. 2016: 45 volunteers, a 50% shock chance was more stressful than 0% or 100%); Priya flips his phone: \"you're not needy\"",
+    "ep 6 (priya-urgent-emails): sticks a \"BIG THING FIRST\" note on Priya's laptop"
    ]
   },
   "priya": {
@@ -22,7 +24,9 @@
     "ep 2 (because-copier): explains that \"because\" sounds like a reason, so we stop checking",
     "ep 3 (milgram-obedience): cameo as one of the two volunteers who refuse",
     "ep 4 (lower-voice, with Grace): pitching to lead her team, every sentence ends like a question; learns voice-pitch study (Klofstad, Anderson & Peters 2012), ends sentences going down",
-    "ep 5 (omar-knew-it, with Omar): scrolls back to Omar's \"no chance\" text and hands him a notebook for his guesses"
+    "ep 5 (omar-knew-it, with Omar): scrolls back to Omar's \"no chance\" text and hands him a notebook for his guesses",
+    "ep 6 (sam-waiting-reply): flips Sam's phone face down: \"you're not needy, you hate a coin flip\"",
+    "ep 7 (priya-urgent-emails, with Sam): answers twenty emails while the big project gathers dust; mere urgency effect (Zhu, Yang & Hsee 2018: 31% took the urgent 3-chocolate task over 5)"
    ]
   },
   "leo": {
@@ -34,7 +38,8 @@
     "ep 2 (semantic-satiation): says \"spoon\" until it is just a noise; tries it on his own name tag",
     "ep 3 (because-copier): cuts the copier line with \"because I have to make copies\"",
     "ep 4 (maximizer-test): buys the first good charger in two minutes — the satisficer",
-    "ep 5 (sam-see-through): cameo as the student giving a speech on the spot"
+    "ep 5 (sam-see-through): cameo as the student giving a speech on the spot",
+    "ep 6 (leo-ten-minutes, with Grace): \"ten minutes\" for his essay at 7 PM, still going at midnight; planning fallacy (Buehler, Griffin & Ross 1994: thesis guessed 33.9 days, took 55.5; worst case 48.6)"
    ]
   },
   "grace": {
@@ -46,7 +51,8 @@
     "ep 2 (milgram-obedience): names obedience to authority",
     "ep 3 (gratitude-visit): hands Omar the pen; explains the boost lasted a month, faded by six; \"so write another one\"",
     "ep 4 (lower-voice): nods at Priya's new pitch",
-    "ep 5 (sam-see-through): tells Sam the audience can't see his nerves (much)"
+    "ep 5 (sam-see-through): tells Sam the audience can't see his nerves (much)",
+    "ep 6 (leo-ten-minutes): shows Leo his last essay took 2 hours: \"use last time, not hope\""
    ]
   },
   "omar": {

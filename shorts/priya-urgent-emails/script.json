@@ -1,0 +1,278 @@
+{
+ "slug": "priya-urgent-emails",
+ "no": 151,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Priya",
+ "episode": 7,
+ "cast": [
+  "priya",
+  "sam"
+ ],
+ "title": [
+  "Urgent",
+  "Trap"
+ ],
+ "credit": "Zhu, Yang & Hsee · 2018",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "art": "UEHook",
+   "chunks": [
+    [
+     "Twenty EMAILS answered.",
+     {
+      "emph": "EMAILS",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Priya's big project?"
+    ],
+    [
+     "Still untouched."
+    ]
+   ],
+   "text": "Twenty EMAILS answered. Priya's big project? Still untouched.",
+   "tone": "curious, brisk"
+  },
+  {
+   "sec": "cd",
+   "scene": "Busy",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "UEBusy",
+   "chunks": [
+    [
+     "You've had"
+    ],
+    [
+     "this day too:"
+    ],
+    [
+     "busy all day,"
+    ],
+    [
+     "nothing important"
+    ],
+    [
+     "DONE.",
+     {
+      "emph": "DONE",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "You've had this day too: busy all day, nothing important DONE.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "UESnap",
+   "chunks": [
+    [
+     "But it's"
+    ],
+    [
+     "not laziness."
+    ],
+    [
+     "Your brain"
+    ],
+    [
+     "chases TIMERS.",
+     {
+      "emph": "TIMERS",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "But it's not laziness. Your brain chases TIMERS.",
+   "tone": "surprised",
+   "cam": [
+    486,
+    1100,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#2B6E7A",
+   "art": "UEStudy",
+   "chunks": [
+    [
+     "In 2018,"
+    ],
+    [
+     "people picked"
+    ],
+    [
+     "a task:"
+    ],
+    [
+     "five chocolates,"
+    ],
+    [
+     "or THREE.",
+     {
+      "emph": "THREE",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "In 2018, people picked a task: five chocolates, or THREE.",
+   "tone": "curious",
+   "say": "In twenty eighteen, people picked a task: five chocolates, or three."
+  },
+  {
+   "sec": "cd",
+   "scene": "Expire",
+   "color": "#B3202A",
+   "art": "UEExpire",
+   "chunks": [
+    [
+     "Make the three"
+    ],
+    [
+     "expire sooner,"
+    ],
+    [
+     "and 31 PERCENT",
+     {
+      "emph": "PERCENT",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "took it."
+    ]
+   ],
+   "text": "Make the three expire sooner, and 31 PERCENT took it.",
+   "tone": "whispers, amazed",
+   "say": "Make the three expire sooner, and thirty-one percent took it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#6A3FA0",
+   "art": "UEName",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "mere URGENCY effect.",
+     {
+      "emph": "URGENCY",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Busier people"
+    ],
+    [
+     "fall for it"
+    ],
+    [
+     "more."
+    ]
+   ],
+   "text": "It's the mere URGENCY effect. Busier people fall for it more.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "color": "#E07A2E",
+   "art": "UEProof",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last"
+    ],
+    [
+     "\"urgent\" email"
+    ],
+    [
+     "that could have"
+    ],
+    [
+     "WAITED.",
+     {
+      "emph": "WAITED",
+      "fx": "doodle",
+      "doodle": "📧"
+     }
+    ],
+    [
+     "Yeah. That one."
+    ]
+   ],
+   "text": "Think of the last \"urgent\" email that could have WAITED. Yeah. That one.",
+   "tone": "knowing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "art": "UEOutro",
+   "chunks": [
+    [
+     "Sam's sticky note:"
+    ],
+    [
+     "\"Big thing first.\""
+    ],
+    [
+     "Urgent isn't important."
+    ],
+    [
+     "It's just LOUD.",
+     {
+      "emph": "LOUD",
+      "fx": "pop"
+     }
+    ]
+   ],
+   "text": "Sam's sticky note: \"Big thing first.\" Urgent isn't important. It's just LOUD.",
+   "tone": "warmly, blunt"
+  }
+ ],
+ "post": {
+  "title": "Why You Answer Emails Instead of Doing the Big Thing #shorts",
+  "description": "Priya answered twenty emails today. Her big project is still untouched. It's not laziness: deadlines pull at us. In 'The Mere Urgency Effect' (Journal of Consumer Research, 2018), Meng Zhu, Yang Yang and Christopher Hsee ran five experiments. In one, 124 people chose between two tasks: one paid three Hershey's Kisses, the other five. Almost everyone took five. But when the three-chocolate task had to be done within 10 minutes and the other within 24 hours, 31% chose the urgent, smaller reward, even though both tasks were about the same. People who feel especially busy were more likely to fall for it. Urgent isn't the same as important. Try doing the big thing first. Comment 'got me' if your inbox won today. #psychology #shorts #productivity #procrastination #urgency",
+  "tags": [
+   "mere urgency effect",
+   "productivity",
+   "procrastination",
+   "email",
+   "psychology",
+   "Hsee"
+  ]
+ },
+ "thumb_text": "Urgent Isn't Important",
+ "thumb_emph": "Urgent",
+ "thumb_mood": "thinking",
+ "music_vibe": "uplifting",
+ "pattern": "Everyday relatable",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Twenty emails answered while the big project sits untouched",
+  "lean": "pain",
+  "snapback": "But it's not laziness. Your brain chases TIMERS."
+ },
+ "relate": "barnum"
+}

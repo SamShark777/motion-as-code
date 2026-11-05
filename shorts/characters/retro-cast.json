@@ -18,7 +18,8 @@
     "ep 3 (thirty-six-questions, with Otto + Mae): answers the 36 questions with Otto; shares a name with psychologist Arthur Aron",
     "ep 4 (tapping-song): cameo — sweating before Otto's software training",
     "ep 5 (otto-quiz-night, with Otto): sure he bombed quiz night, finishes near the top; his \"maybe I don't know\" is the skill (Dunning-Kruger effect, Kruger & Dunning 1999)",
-    "ep 6 (arthur-3am-worries, with The Doubt): wide awake at 3 AM while The Doubt whispers \"what if\" (the email, the meeting, the car noise); writes each worry down and checks later; worry's deceit (LaFreniere & Newman 2020: ~91% of worry predictions in people with GAD never came true)"
+    "ep 6 (arthur-3am-worries, with The Doubt): wide awake at 3 AM while The Doubt whispers \"what if\" (the email, the meeting, the car noise); writes each worry down and checks later; worry's deceit (LaFreniere & Newman 2020: ~91% of worry predictions in people with GAD never came true)",
+    "ep 7 (otto-rhyme-poster): nods at Otto's rhyming poster, then fixes it: \"Work late. Feel tired.\""
    ]
   },
   "critic": {
@@ -31,7 +32,8 @@
    },
    "history": [
     "ep 1 (arthur-the-critic): introduced",
-    "ep 2 (mae-liking-gap): visits Mae's head, replays her small talk; shrinks when the neighbour knocks with cookies"
+    "ep 2 (mae-liking-gap): visits Mae's head, replays her small talk; shrinks when the neighbour knocks with cookies",
+    "ep 3 (lila-replay-write): hits replay on Lila's \"thanks, Mum\"; pressed flat onto a notebook page he's just a boring paragraph"
    ]
   },
   "mae": {
@@ -48,7 +50,8 @@
     "ep 2 (scarcity-cookies, with Lila): shows Lila a full tray of the 'only two left' cookies in the back",
     "ep 3 (thirty-six-questions): hands Otto and Arthur the list of 36 questions",
     "ep 4 (mae-liking-gap, with the Critic): five minutes of small talk with her new neighbour; the Critic replays it all night ('that joke? awful'); liking gap (Boothby et al. 2018); next morning the neighbour brings cookies",
-    "ep 5 (lila-group-photo, with Lila): shrugs off Lila's selfie panic: \"nobody inspects your face like you do\" (cheerleader effect, Walker & Vul 2014)"
+    "ep 5 (lila-group-photo, with Lila): shrugs off Lila's selfie panic: \"nobody inspects your face like you do\" (cheerleader effect, Walker & Vul 2014)",
+    "ep 6 (lila-replay-write): hands Lila a pen: \"fifteen minutes, then close the notebook\""
    ]
   },
   "otto": {
@@ -65,7 +68,9 @@
     "ep 1 (stroop-test): says no test can trick him; Lila's colour-word card does (Stroop effect) — his brain is too good at reading",
     "ep 2 (thirty-six-questions, with Arthur + Mae): ten years at the next desk, knows one fact (Arthur likes tea); the 36 questions (Aron et al. 1997) leave him wiping his eyes; brings Arthur a tea next morning",
     "ep 3 (tapping-song, with Lila + Arthur): taps Happy Birthday on his desk, sure it's 'EASY'; Lila guesses Morse code (curse of knowledge, Newton 1990: 3 of 120 songs); tomorrow he trains the whole office — Arthur already sweating, PART 2",
-    "ep 4 (otto-quiz-night, with Arthur): sure he crushed quiz night (\"EASY!\"), comes LAST; Dunning-Kruger effect (Kruger & Dunning 1999: bottom-quarter scorers averaged around the 12th percentile but guessed around the 62nd)"
+    "ep 4 (otto-quiz-night, with Arthur): sure he crushed quiz night (\"EASY!\"), comes LAST; Dunning-Kruger effect (Kruger & Dunning 1999: bottom-quarter scorers averaged around the 12th percentile but guessed around the 62nd)",
+    "ep 5 (lila-replay-write): cameo in Lila's replay as the boss she called \"Mum\"",
+    "ep 6 (otto-rhyme-poster, with Arthur): hangs a rhyming poster \"Work late, feel great\"; rhyme-as-reason effect (McGlone & Tofighbakhsh 2000: \"woes unite foes\" rated more accurate than \"woes unite enemies\")"
    ]
   },
   "lila": {
@@ -82,7 +87,8 @@
     "ep 1 (stroop-test, with Otto): holds up the Stroop cards for her boss",
     "ep 2 (scarcity-cookies, with The Doubt + Mae): not hungry, sees 'only 2 left', The Doubt whispers 'what if they're gone?', buys both (scarcity effect, Worchel, Lee & Adewole 1975); new rule: would I want it if there were ten?",
     "ep 3 (tapping-song, with Otto): hears only knocking when Otto taps Happy Birthday; guesses Morse code",
-    "ep 4 (lila-group-photo, with Mae): hates her solo selfie but loves the group photo, same face; cheerleader effect (Walker & Vul 2014: same face rated more attractive in a group than cropped alone — tiny, ~49th to 51st percentile)"
+    "ep 4 (lila-group-photo, with Mae): hates her solo selfie but loves the group photo, same face; cheerleader effect (Walker & Vul 2014: same face rated more attractive in a group than cropped alone — tiny, ~49th to 51st percentile)",
+    "ep 5 (lila-replay-write, with The Critic, Mae): replays the meeting where she called her boss \"Mum\"; expressive writing (Pennebaker & Beall 1986: 15 min × 4 days, fewer health-centre visits over six months); closes the notebook"
    ]
   },
   "doubt": {
