@@ -37,6 +37,10 @@ on:
         description: "Only pull YouTube stats (views, likes, comments, subscribers) with the YouTube Data API; saved to shorts/stats/youtube.json"
         type: boolean
         default: false
+      asset_fetch:
+        description: "Only download these image URLs (name=url, comma-separated) to the assets-fetch branch under <date>/"
+        required: false
+        default: ""
       yt_competitors:
         description: "Only pull competitor data from YouTube: 'auto' (top 3 psychology Shorts channels) or @handle,@handle; saved to shorts/stats/competitors.json"
         required: false
@@ -75,7 +79,7 @@ on:
         default: ""
 
 concurrency:
-  group: daily-shorts-${{ (inputs.buffer_check || inputs.yt_stats || inputs.yt_competitors != '' || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.channel_scan != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
+  group: daily-shorts-${{ (inputs.buffer_check || inputs.asset_fetch != '' || inputs.yt_stats || inputs.yt_competitors != '' || inputs.voice_test != '' || inputs.lottie_fetch != '' || inputs.music_fetch || inputs.channel_scan != '' || inputs.buffer_cancel != '' || inputs.eleven_test != '' || inputs.chatterbox_test != '') && 'check' || 'run' }}
   cancel-in-progress: false
 
 permissions:
@@ -141,6 +145,25 @@ jobs:
           git add shorts/stats/youtube.json 2>/dev/null
           git diff --cached --quiet || { git commit -qm "ci: youtube stats $(date -u +%F)"; for i in 1 2 3; do git pull -q --rebase origin shorts && git push -q origin shorts && break; sleep 5; done; }
           exit $code
+
+  asset-fetch:
+    if: ${{ inputs.asset_fetch != '' && inputs.asset_fetch != null }}
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          LIST: ${{ inputs.asset_fetch }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          D=$(date -u +%F); mkdir -p out/$D
+          IFS=',' read -ra ITEMS <<< "$LIST"
+          for it in "${ITEMS[@]}"; do n="${it%%=*}"; u="${it#*=}"; n=$(echo "$n" | tr -cd 'A-Za-z0-9._-'); curl -sSfL --max-time 120 -o "out/$D/$n" "$u" && echo "::notice::fetched $n $(stat -c %s out/$D/$n)"; done
+          cd out
+          git init -q; git config user.name shorts-bot; git config user.email shorts-bot@users.noreply.github.com
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth 1 origin assets-fetch 2>/dev/null; then git checkout -q -b assets-fetch FETCH_HEAD 2>/dev/null || git checkout -q FETCH_HEAD; fi
+          git checkout -q -B assets-fetch
+          git add -A; git commit -qm "fetch $D" || true; git push -q origin assets-fetch
 
   yt-competitors:
     if: ${{ inputs.yt_competitors != '' && inputs.yt_competitors != null }}
@@ -343,7 +366,7 @@ jobs:
           git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" voice-tests
 
   plan:
-    if: ${{ !inputs.buffer_check && !inputs.yt_stats && !inputs.yt_competitors && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.channel_scan && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
+    if: ${{ !inputs.buffer_check && !inputs.asset_fetch && !inputs.yt_stats && !inputs.yt_competitors && !inputs.voice_test && !inputs.lottie_fetch && !inputs.music_fetch && !inputs.channel_scan && !inputs.buffer_cancel && !inputs.eleven_test && !inputs.chatterbox_test && !inputs.ig_catchup }}
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
