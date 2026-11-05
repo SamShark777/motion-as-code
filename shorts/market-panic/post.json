@@ -1,0 +1,17 @@
+{
+ "no": 170,
+ "slug": "market-panic",
+ "date": "2026-11-05",
+ "slot": "12:30",
+ "due": "2026-11-05T20:30:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-05/market-panic.mp4",
+ "buffer": {
+  "youtube": "6aece2ed518b77a52495bd1f",
+  "instagram": "6aece2edfb4f34c06a7f7a5e",
+  "tiktok": "6aece2ee518b77a52495bd64"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 59.1
+}
