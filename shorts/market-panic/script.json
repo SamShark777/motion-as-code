@@ -1,0 +1,14 @@
+{
+ "slug": "market-panic",
+ "no": 170,
+ "format": "prebuilt",
+ "look": "vox-explainer",
+ "cover": false,
+ "voice": {"engine": "kokoro", "kokoro_voice": "af_heart"},
+ "note": "Shivam's brief 2026-11-05 (Vox-style explainer). Market figure stated as an estimate (~3% in about an hour, ~$2T, Nov 5 2026 intraday; sources: Kobeissi Letter, TokenPost). Not financial advice. Approved to post ASAP.",
+ "post": {
+  "title": "The Stock Market Crashed. Your Brain Is the Bigger Problem. #shorts",
+  "description": "Today the S&P 500 dropped about 3% in roughly an hour, erasing an estimated $2 trillion (intraday estimates, still moving). Why we panic: loss aversion, herd mentality and FOMO. General education, not financial advice. Music: \"Clean Soul\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #stockmarket #investing #shorts",
+  "tags": ["stock market", "psychology", "loss aversion", "herd mentality", "FOMO"]
+ }
+}
