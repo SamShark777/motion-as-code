@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 cfg = json.loads((ROOT / "shorts" / "styles" / "styles.json").read_text())
-styles = cfg["styles"]
+styles = [s for s in cfg["styles"] if s.get("auto", True)]
 by_look = {s["look"]: s["id"] for s in styles}
 by_format = {s["format"]: s["id"] for s in styles}
 recent = []

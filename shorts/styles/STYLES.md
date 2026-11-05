@@ -65,3 +65,10 @@ Each style has its own recurring cast — see the `cast-sheet.jpg` in each folde
 - **retro:** Arthur, Mae, Otto, Lila (`RMArthur` / `RMMae` / `RMOtto` / `RMLila`, or `RMHuman who=`) and two creatures that
   personify the voices in our heads: The Critic (`RMCritic`, harsh self-judgement) and The Doubt (`RMDoubt`, "what if…" worry).
 Give episodes 2–3 characters, rotate who leads, keep personalities and relationships consistent, update `history`.
+
+## German Expressionism (`expressionism`, Shivam 2026-11-04)
+Look: 1920s silent-film expressionism (Caligari-style crooked sets). Bold black ink outlines, jagged geometric shapes, walls and buildings tilted at impossible angles, one hard light source (bare bulb, candle, window beam) with long angular shadows, thick textured oil paint mixed with woodcut cross-hatching, paper grain. Palette: deep black, bone white #EFE6CF, muted olive green, oxblood red #9E2B22, ochre #D9A441. Figures elongated, huge haunted round eyes, long fingers. Recurring motifs: staring eyes, stairs/doorways, monstrous shadows cast by ordinary objects.
+Shivam's reference board (14 images, not committed: third-party art) covered expressionist film posters, ink shadow monsters, cubist-expressionist paintings, crooked cityscapes and eye-filled corridors.
+Cast: shorts/characters/expressionism-cast.json, sheet shorts/styles/expressionism/cast-sheet.jpg. Example: money-evil (ours-money-evil.jpg).
+Build: Higgsfield gpt_image_2_6, 9:16, quality medium, 2k, cast sheet job as image reference, prompts end with the palette + "No text, no watermark"; 8 scenes ≈ 8 credits. Images are fetched with the Daily Shorts `asset_fetch` input (the image host is blocked in Claude's workspace), then a HyperFrames build: slow push-ins, bulb flicker, League Gothic bone-white titles with hard black shadow, Inter captions on a dark chip at y 1190, dark piano bed. Never draw a real person or a group as the villain; The Shadow is always the fear itself.
+Status: saved, not in the automatic rotation yet ("auto": false) — each video costs Higgsfield credits and the scheduled script writer can't generate art.

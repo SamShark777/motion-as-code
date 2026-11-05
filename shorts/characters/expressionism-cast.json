@@ -1,0 +1,10 @@
+{
+ "about": "Recurring cast of the German Expressionism style (Shivam, 2026-11-04). Generated with Higgsfield gpt_image_2_6; ALWAYS pass the cast sheet job as an image reference so they stay on-model. Cast sheet: shorts/styles/expressionism/cast-sheet.jpg (Higgsfield job 1f84cfa7-55cf-4fac-b022-f6acfc89cbd9).",
+ "characters": {
+  "ellis_child": {"name": "Ellis (child)", "look": "about 9, small, oversized grey wool coat to the knees, cropped dark hair, enormous round worried eyes", "role": "the viewer as a kid; where beliefs are learned", "history": ["ep 1 (money-evil): learns 'money is evil' at the kitchen table"]},
+  "father": {"name": "The Father", "look": "very tall and gaunt, long dark double-breasted coat, flat cap, hollow cheeks, stooped, long fingers", "role": "worry, bills, silence", "history": ["ep 1 (money-evil): head in hands over unpaid bills"]},
+  "mother": {"name": "The Mother", "look": "thin and angular, oxblood red dress, grey fringed shawl, dark hair in a tight bun, anxious eyes", "role": "the whisper; love mixed with fear", "history": ["ep 1 (money-evil): whispers 'we can't afford that' in the doorway"]},
+  "ellis_adult": {"name": "Ellis (adult)", "look": "thirties, thin, olive-green suit, loosened dark tie, messy dark hair, the same enormous round eyes", "role": "the viewer now; still running old scripts", "history": ["ep 1 (money-evil): pushes a coin away; at dawn holds it calmly"]},
+  "the_shadow": {"name": "The Shadow", "look": "tall jagged black ink shadow creature, spiky outline, long clawed fingers, two pale eye-slits", "role": "the fear itself (never a real person or group)", "history": ["ep 1 (money-evil): the shadow coins cast on the kitchen wall"]}
+ }
+}
