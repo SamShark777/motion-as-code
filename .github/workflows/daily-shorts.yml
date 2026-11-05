@@ -420,7 +420,8 @@ jobs:
           pip install -q omnivoice kokoro-onnx soundfile pillow numpy openpyxl
       - name: Chatterbox (own venv, Ted narrator)
         run: |
-          [ -x ~/cbenv/bin/python ] || python -m venv ~/cbenv
+          # a cached venv can point at an old runner Python: rebuild it when its python doesn't run
+          ~/cbenv/bin/python -c 'import sys' 2>/dev/null || { rm -rf ~/cbenv; python -m venv ~/cbenv; }
           ~/cbenv/bin/pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           ~/cbenv/bin/pip install -q chatterbox-tts
           echo "CHATTERBOX_PY=$HOME/cbenv/bin/python" >> "$GITHUB_ENV"
