@@ -1,0 +1,17 @@
+{
+ "no": 147,
+ "slug": "arthur-3am-worries",
+ "date": "2026-11-06",
+ "slot": "19:00",
+ "due": "2026-11-07T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-06/arthur-3am-worries.mp4",
+ "buffer": {
+  "youtube": "6aed0511265cb90551e029b1",
+  "instagram": "6aed05125ab704cc602e31c2",
+  "tiktok": "6aed0513d49eaca59e048e92"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 53.8
+}

@@ -1,0 +1,17 @@
+{
+ "no": 145,
+ "slug": "omar-knew-it",
+ "date": "2026-11-06",
+ "slot": "09:00",
+ "due": "2026-11-06T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-06/omar-knew-it.mp4",
+ "buffer": {
+  "youtube": "6aed0508d49eaca59e048c5c",
+  "instagram": "6aed0508425be630832dc503",
+  "tiktok": "6aed0509265cb90551e0283d"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 32.7
+}

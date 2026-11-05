@@ -1,0 +1,17 @@
+{
+ "no": 146,
+ "slug": "lila-group-photo",
+ "date": "2026-11-06",
+ "slot": "14:00",
+ "due": "2026-11-06T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-06/lila-group-photo.mp4",
+ "buffer": {
+  "youtube": "6aed050cd930780bcacdea8d",
+  "instagram": "6aed050c5ab704cc602e30cc",
+  "tiktok": "6aed050dd49eaca59e048d57"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Shivam",
+ "duration": 52.6
+}
