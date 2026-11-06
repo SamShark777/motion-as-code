@@ -1,0 +1,544 @@
+{
+ "lines": [
+  {
+   "text": "SMALL talk with the new neighbour. Mae's sure she blew it.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 2.93,
+   "words": [
+    {
+     "w": "SMALL",
+     "start": 0.15,
+     "end": 0.376
+    },
+    {
+     "w": "talk",
+     "start": 0.39,
+     "end": 0.603
+    },
+    {
+     "w": "with",
+     "start": 0.617,
+     "end": 0.83
+    },
+    {
+     "w": "the",
+     "start": 0.843,
+     "end": 1.043
+    },
+    {
+     "w": "new",
+     "start": 1.056,
+     "end": 1.256
+    },
+    {
+     "w": "neighbour.",
+     "start": 1.269,
+     "end": 1.708
+    },
+    {
+     "w": "Mae's",
+     "start": 1.839,
+     "end": 2.052
+    },
+    {
+     "w": "sure",
+     "start": 2.065,
+     "end": 2.278
+    },
+    {
+     "w": "she",
+     "start": 2.292,
+     "end": 2.492
+    },
+    {
+     "w": "blew",
+     "start": 2.504,
+     "end": 2.717
+    },
+    {
+     "w": "it.",
+     "start": 2.731,
+     "end": 2.918
+    }
+   ]
+  },
+  {
+   "text": "You've done this too. The Critic hits REPLAY.",
+   "sec": "cd",
+   "start": 3.25,
+   "end": 5.59,
+   "words": [
+    {
+     "w": "You've",
+     "start": 3.25,
+     "end": 3.48
+    },
+    {
+     "w": "done",
+     "start": 3.494,
+     "end": 3.711
+    },
+    {
+     "w": "this",
+     "start": 3.725,
+     "end": 3.942
+    },
+    {
+     "w": "too.",
+     "start": 3.955,
+     "end": 4.159
+    },
+    {
+     "w": "The",
+     "start": 4.277,
+     "end": 4.48
+    },
+    {
+     "w": "Critic",
+     "start": 4.493,
+     "end": 4.9
+    },
+    {
+     "w": "hits",
+     "start": 4.926,
+     "end": 5.143
+    },
+    {
+     "w": "REPLAY.",
+     "start": 5.157,
+     "end": 5.564
+    }
+   ]
+  },
+  {
+   "text": "But the replay is WRONG. And there's proof.",
+   "sec": "cd",
+   "start": 5.91,
+   "end": 7.98,
+   "words": [
+    {
+     "w": "But",
+     "start": 5.91,
+     "end": 6.092
+    },
+    {
+     "w": "the",
+     "start": 6.104,
+     "end": 6.286
+    },
+    {
+     "w": "replay",
+     "start": 6.298,
+     "end": 6.662
+    },
+    {
+     "w": "is",
+     "start": 6.685,
+     "end": 6.856
+    },
+    {
+     "w": "WRONG.",
+     "start": 6.867,
+     "end": 7.073
+    },
+    {
+     "w": "And",
+     "start": 7.18,
+     "end": 7.362
+    },
+    {
+     "w": "there's",
+     "start": 7.373,
+     "end": 7.738
+    },
+    {
+     "w": "proof.",
+     "start": 7.761,
+     "end": 7.967
+    }
+   ]
+  },
+  {
+   "text": "\"You talked too much. That joke? AWFUL.\"",
+   "sec": "cd",
+   "start": 8.3,
+   "end": 10.45,
+   "words": [
+    {
+     "w": "\"You",
+     "start": 8.3,
+     "end": 8.5
+    },
+    {
+     "w": "talked",
+     "start": 8.513,
+     "end": 8.913
+    },
+    {
+     "w": "too",
+     "start": 8.939,
+     "end": 9.139
+    },
+    {
+     "w": "much.",
+     "start": 9.152,
+     "end": 9.365
+    },
+    {
+     "w": "That",
+     "start": 9.481,
+     "end": 9.695
+    },
+    {
+     "w": "joke?",
+     "start": 9.708,
+     "end": 9.921
+    },
+    {
+     "w": "AWFUL.\"",
+     "start": 10.038,
+     "end": 10.425
+    }
+   ]
+  },
+  {
+   "text": "But in 2018, researchers paired up strangers for the SAME chat.",
+   "sec": "cd",
+   "start": 10.77,
+   "end": 14.62,
+   "words": [
+    {
+     "w": "But",
+     "start": 10.77,
+     "end": 11.002
+    },
+    {
+     "w": "in",
+     "start": 11.017,
+     "end": 11.233
+    },
+    {
+     "w": "2018,",
+     "start": 11.247,
+     "end": 11.434
+    },
+    {
+     "w": "researchers",
+     "start": 11.565,
+     "end": 12.291
+    },
+    {
+     "w": "paired",
+     "start": 12.337,
+     "end": 12.801
+    },
+    {
+     "w": "up",
+     "start": 12.83,
+     "end": 13.047
+    },
+    {
+     "w": "strangers",
+     "start": 13.061,
+     "end": 13.569
+    },
+    {
+     "w": "for",
+     "start": 13.602,
+     "end": 13.834
+    },
+    {
+     "w": "the",
+     "start": 13.848,
+     "end": 14.08
+    },
+    {
+     "w": "SAME",
+     "start": 14.095,
+     "end": 14.342
+    },
+    {
+     "w": "chat.",
+     "start": 14.357,
+     "end": 14.604
+    }
+   ]
+  },
+  {
+   "text": "Then each guessed how much the other liked them. They guessed too LOW.",
+   "sec": "cd",
+   "start": 14.94,
+   "end": 18.11,
+   "words": [
+    {
+     "w": "Then",
+     "start": 14.94,
+     "end": 15.118
+    },
+    {
+     "w": "each",
+     "start": 15.13,
+     "end": 15.308
+    },
+    {
+     "w": "guessed",
+     "start": 15.319,
+     "end": 15.665
+    },
+    {
+     "w": "how",
+     "start": 15.687,
+     "end": 15.854
+    },
+    {
+     "w": "much",
+     "start": 15.865,
+     "end": 16.043
+    },
+    {
+     "w": "the",
+     "start": 16.054,
+     "end": 16.221
+    },
+    {
+     "w": "other",
+     "start": 16.232,
+     "end": 16.556
+    },
+    {
+     "w": "liked",
+     "start": 16.577,
+     "end": 16.901
+    },
+    {
+     "w": "them.",
+     "start": 16.921,
+     "end": 17.099
+    },
+    {
+     "w": "They",
+     "start": 17.197,
+     "end": 17.375
+    },
+    {
+     "w": "guessed",
+     "start": 17.386,
+     "end": 17.732
+    },
+    {
+     "w": "too",
+     "start": 17.754,
+     "end": 17.921
+    },
+    {
+     "w": "LOW.",
+     "start": 17.932,
+     "end": 18.099
+    }
+   ]
+  },
+  {
+   "text": "It's called the LIKING gap.",
+   "sec": "cd",
+   "start": 18.43,
+   "end": 19.66,
+   "words": [
+    {
+     "w": "It's",
+     "start": 18.43,
+     "end": 18.595
+    },
+    {
+     "w": "called",
+     "start": 18.606,
+     "end": 18.936
+    },
+    {
+     "w": "the",
+     "start": 18.957,
+     "end": 19.122
+    },
+    {
+     "w": "LIKING",
+     "start": 19.133,
+     "end": 19.463
+    },
+    {
+     "w": "gap.",
+     "start": 19.484,
+     "end": 19.649
+    }
+   ]
+  },
+  {
+   "text": "You hear every awkward thought. They just see you SMILE.",
+   "sec": "cd",
+   "start": 19.98,
+   "end": 22.64,
+   "words": [
+    {
+     "w": "You",
+     "start": 19.98,
+     "end": 20.15
+    },
+    {
+     "w": "hear",
+     "start": 20.161,
+     "end": 20.343
+    },
+    {
+     "w": "every",
+     "start": 20.354,
+     "end": 20.821
+    },
+    {
+     "w": "awkward",
+     "start": 20.851,
+     "end": 21.203
+    },
+    {
+     "w": "thought.",
+     "start": 21.225,
+     "end": 21.44
+    },
+    {
+     "w": "They",
+     "start": 21.541,
+     "end": 21.722
+    },
+    {
+     "w": "just",
+     "start": 21.734,
+     "end": 21.915
+    },
+    {
+     "w": "see",
+     "start": 21.927,
+     "end": 22.097
+    },
+    {
+     "w": "you",
+     "start": 22.108,
+     "end": 22.278
+    },
+    {
+     "w": "SMILE.",
+     "start": 22.289,
+     "end": 22.619
+    }
+   ]
+  },
+  {
+   "text": "Next morning, the neighbour knocks. He brought COOKIES.",
+   "sec": "cd",
+   "start": 22.96,
+   "end": 25.65,
+   "words": [
+    {
+     "w": "Next",
+     "start": 22.96,
+     "end": 23.171
+    },
+    {
+     "w": "morning,",
+     "start": 23.185,
+     "end": 23.594
+    },
+    {
+     "w": "the",
+     "start": 23.723,
+     "end": 23.921
+    },
+    {
+     "w": "neighbour",
+     "start": 23.934,
+     "end": 24.369
+    },
+    {
+     "w": "knocks.",
+     "start": 24.397,
+     "end": 24.634
+    },
+    {
+     "w": "He",
+     "start": 24.751,
+     "end": 24.937
+    },
+    {
+     "w": "brought",
+     "start": 24.949,
+     "end": 25.198
+    },
+    {
+     "w": "COOKIES.",
+     "start": 25.214,
+     "end": 25.624
+    }
+   ]
+  },
+  {
+   "text": "The Critic's review isn't THEIRS. Comment 'got me' if that's you.",
+   "sec": "cd",
+   "start": 25.97,
+   "end": 29.16,
+   "words": [
+    {
+     "w": "The",
+     "start": 25.97,
+     "end": 26.172
+    },
+    {
+     "w": "Critic's",
+     "start": 26.185,
+     "end": 26.601
+    },
+    {
+     "w": "review",
+     "start": 26.627,
+     "end": 27.031
+    },
+    {
+     "w": "isn't",
+     "start": 27.056,
+     "end": 27.271
+    },
+    {
+     "w": "THEIRS.",
+     "start": 27.285,
+     "end": 27.525
+    },
+    {
+     "w": "Comment",
+     "start": 27.645,
+     "end": 28.061
+    },
+    {
+     "w": "'got",
+     "start": 28.087,
+     "end": 28.289
+    },
+    {
+     "w": "me'",
+     "start": 28.302,
+     "end": 28.491
+    },
+    {
+     "w": "if",
+     "start": 28.503,
+     "end": 28.691
+    },
+    {
+     "w": "that's",
+     "start": 28.703,
+     "end": 28.931
+    },
+    {
+     "w": "you.",
+     "start": 28.945,
+     "end": 29.147
+    }
+   ]
+  }
+ ]
+}

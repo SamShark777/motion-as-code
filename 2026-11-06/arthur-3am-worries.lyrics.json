@@ -1,0 +1,567 @@
+{
+ "lines": [
+  {
+   "text": "3 AM WORRIES. Arthur's wide awake. The Doubt whispers, \u201cWhat if\u2026\u201d",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 7.92,
+   "words": [
+    {
+     "w": "3",
+     "start": 0.15,
+     "end": 0.505
+    },
+    {
+     "w": "AM",
+     "start": 0.528,
+     "end": 0.94
+    },
+    {
+     "w": "WORRIES.",
+     "start": 0.966,
+     "end": 1.876
+    },
+    {
+     "w": "Arthur's",
+     "start": 2.161,
+     "end": 3.07
+    },
+    {
+     "w": "wide",
+     "start": 3.128,
+     "end": 3.597
+    },
+    {
+     "w": "awake.",
+     "start": 3.627,
+     "end": 4.479
+    },
+    {
+     "w": "The",
+     "start": 4.761,
+     "end": 5.201
+    },
+    {
+     "w": "Doubt",
+     "start": 5.229,
+     "end": 5.727
+    },
+    {
+     "w": "whispers,",
+     "start": 5.758,
+     "end": 6.696
+    },
+    {
+     "w": "\u201cWhat",
+     "start": 6.983,
+     "end": 7.452
+    },
+    {
+     "w": "if\u2026\u201d",
+     "start": 7.482,
+     "end": 7.894
+    }
+   ]
+  },
+  {
+   "text": "The email. The meeting. The car NOISE. You've done this too.",
+   "sec": "cd",
+   "start": 8.24,
+   "end": 13.54,
+   "words": [
+    {
+     "w": "The",
+     "start": 8.24,
+     "end": 8.576
+    },
+    {
+     "w": "email.",
+     "start": 8.597,
+     "end": 9.247
+    },
+    {
+     "w": "The",
+     "start": 9.461,
+     "end": 9.797
+    },
+    {
+     "w": "meeting.",
+     "start": 9.818,
+     "end": 10.512
+    },
+    {
+     "w": "The",
+     "start": 10.729,
+     "end": 11.064
+    },
+    {
+     "w": "car",
+     "start": 11.086,
+     "end": 11.422
+    },
+    {
+     "w": "NOISE.",
+     "start": 11.443,
+     "end": 11.822
+    },
+    {
+     "w": "You've",
+     "start": 12.019,
+     "end": 12.398
+    },
+    {
+     "w": "done",
+     "start": 12.422,
+     "end": 12.78
+    },
+    {
+     "w": "this",
+     "start": 12.803,
+     "end": 13.16
+    },
+    {
+     "w": "too.",
+     "start": 13.183,
+     "end": 13.519
+    }
+   ]
+  },
+  {
+   "text": "But The Doubt is almost always WRONG.",
+   "sec": "cd",
+   "start": 13.86,
+   "end": 17.63,
+   "words": [
+    {
+     "w": "But",
+     "start": 13.86,
+     "end": 14.245
+    },
+    {
+     "w": "The",
+     "start": 14.27,
+     "end": 14.656
+    },
+    {
+     "w": "Doubt",
+     "start": 14.68,
+     "end": 15.115
+    },
+    {
+     "w": "is",
+     "start": 15.143,
+     "end": 15.504
+    },
+    {
+     "w": "almost",
+     "start": 15.527,
+     "end": 16.298
+    },
+    {
+     "w": "always",
+     "start": 16.347,
+     "end": 17.118
+    },
+    {
+     "w": "WRONG.",
+     "start": 17.167,
+     "end": 17.602
+    }
+   ]
+  },
+  {
+   "text": "In one 2020 study, 29 anxious people WROTE their worries down.",
+   "sec": "cd",
+   "start": 17.95,
+   "end": 22.69,
+   "words": [
+    {
+     "w": "In",
+     "start": 17.95,
+     "end": 18.207
+    },
+    {
+     "w": "one",
+     "start": 18.223,
+     "end": 18.719
+    },
+    {
+     "w": "2020",
+     "start": 18.751,
+     "end": 18.972
+    },
+    {
+     "w": "study,",
+     "start": 18.987,
+     "end": 19.518
+    },
+    {
+     "w": "29",
+     "start": 19.693,
+     "end": 19.915
+    },
+    {
+     "w": "anxious",
+     "start": 19.929,
+     "end": 20.496
+    },
+    {
+     "w": "people",
+     "start": 20.532,
+     "end": 21.081
+    },
+    {
+     "w": "WROTE",
+     "start": 21.116,
+     "end": 21.426
+    },
+    {
+     "w": "their",
+     "start": 21.446,
+     "end": 21.756
+    },
+    {
+     "w": "worries",
+     "start": 21.776,
+     "end": 22.343
+    },
+    {
+     "w": "down.",
+     "start": 22.379,
+     "end": 22.671
+    }
+   ]
+  },
+  {
+   "text": "For a month, they checked: did it HAPPEN?",
+   "sec": "cd",
+   "start": 23.01,
+   "end": 25.7,
+   "words": [
+    {
+     "w": "For",
+     "start": 23.01,
+     "end": 23.239
+    },
+    {
+     "w": "a",
+     "start": 23.254,
+     "end": 23.453
+    },
+    {
+     "w": "month,",
+     "start": 23.466,
+     "end": 23.725
+    },
+    {
+     "w": "they",
+     "start": 23.859,
+     "end": 24.103
+    },
+    {
+     "w": "checked:",
+     "start": 24.119,
+     "end": 24.592
+    },
+    {
+     "w": "did",
+     "start": 24.74,
+     "end": 24.97
+    },
+    {
+     "w": "it",
+     "start": 24.984,
+     "end": 25.199
+    },
+    {
+     "w": "HAPPEN?",
+     "start": 25.212,
+     "end": 25.671
+    }
+   ]
+  },
+  {
+   "text": "About 91% NEVER came true.",
+   "sec": "cd",
+   "start": 26.02,
+   "end": 30.03,
+   "words": [
+    {
+     "w": "About",
+     "start": 26.02,
+     "end": 27.092
+    },
+    {
+     "w": "91%",
+     "start": 27.16,
+     "end": 27.607
+    },
+    {
+     "w": "NEVER",
+     "start": 27.635,
+     "end": 28.707
+    },
+    {
+     "w": "came",
+     "start": 28.776,
+     "end": 29.365
+    },
+    {
+     "w": "true.",
+     "start": 29.403,
+     "end": 29.992
+    }
+   ]
+  },
+  {
+   "text": "Most common result? NONE came true.",
+   "sec": "cd",
+   "start": 30.35,
+   "end": 34.53,
+   "words": [
+    {
+     "w": "Most",
+     "start": 30.35,
+     "end": 30.828
+    },
+    {
+     "w": "common",
+     "start": 30.859,
+     "end": 31.758
+    },
+    {
+     "w": "result?",
+     "start": 31.815,
+     "end": 32.714
+    },
+    {
+     "w": "NONE",
+     "start": 33.003,
+     "end": 33.481
+    },
+    {
+     "w": "came",
+     "start": 33.512,
+     "end": 33.99
+    },
+    {
+     "w": "true.",
+     "start": 34.021,
+     "end": 34.499
+    }
+   ]
+  },
+  {
+   "text": "Researchers call it worry's DECEIT.",
+   "sec": "cd",
+   "start": 34.85,
+   "end": 37.91,
+   "words": [
+    {
+     "w": "Researchers",
+     "start": 34.85,
+     "end": 35.836
+    },
+    {
+     "w": "call",
+     "start": 35.899,
+     "end": 36.234
+    },
+    {
+     "w": "it",
+     "start": 36.256,
+     "end": 36.55
+    },
+    {
+     "w": "worry's",
+     "start": 36.569,
+     "end": 37.199
+    },
+    {
+     "w": "DECEIT.",
+     "start": 37.24,
+     "end": 37.87
+    }
+   ]
+  },
+  {
+   "text": "Think of last month's big worry. Did it ACTUALLY happen?",
+   "sec": "cd",
+   "start": 38.23,
+   "end": 42.46,
+   "words": [
+    {
+     "w": "Think",
+     "start": 38.23,
+     "end": 38.537
+    },
+    {
+     "w": "of",
+     "start": 38.557,
+     "end": 38.811
+    },
+    {
+     "w": "last",
+     "start": 38.828,
+     "end": 39.117
+    },
+    {
+     "w": "month's",
+     "start": 39.136,
+     "end": 39.461
+    },
+    {
+     "w": "big",
+     "start": 39.481,
+     "end": 39.753
+    },
+    {
+     "w": "worry.",
+     "start": 39.771,
+     "end": 40.297
+    },
+    {
+     "w": "Did",
+     "start": 40.471,
+     "end": 40.743
+    },
+    {
+     "w": "it",
+     "start": 40.761,
+     "end": 41.015
+    },
+    {
+     "w": "ACTUALLY",
+     "start": 41.031,
+     "end": 41.83
+    },
+    {
+     "w": "happen?",
+     "start": 41.881,
+     "end": 42.425
+    }
+   ]
+  },
+  {
+   "text": "Arthur writes it DOWN. Checks later. The Doubt shrinks.",
+   "sec": "cd",
+   "start": 42.78,
+   "end": 47.09,
+   "words": [
+    {
+     "w": "Arthur",
+     "start": 42.78,
+     "end": 43.381
+    },
+    {
+     "w": "writes",
+     "start": 43.419,
+     "end": 44.02
+    },
+    {
+     "w": "it",
+     "start": 44.059,
+     "end": 44.34
+    },
+    {
+     "w": "DOWN.",
+     "start": 44.358,
+     "end": 44.677
+    },
+    {
+     "w": "Checks",
+     "start": 44.852,
+     "end": 45.211
+    },
+    {
+     "w": "later.",
+     "start": 45.234,
+     "end": 45.816
+    },
+    {
+     "w": "The",
+     "start": 46.007,
+     "end": 46.308
+    },
+    {
+     "w": "Doubt",
+     "start": 46.327,
+     "end": 46.666
+    },
+    {
+     "w": "shrinks.",
+     "start": 46.688,
+     "end": 47.066
+    }
+   ]
+  },
+  {
+   "text": "Your 3 AM brain is a terrible FORTUNE teller. Comment 'got me'.",
+   "sec": "cd",
+   "start": 47.41,
+   "end": 52.75,
+   "words": [
+    {
+     "w": "Your",
+     "start": 47.41,
+     "end": 47.72
+    },
+    {
+     "w": "3",
+     "start": 47.74,
+     "end": 47.975
+    },
+    {
+     "w": "AM",
+     "start": 47.99,
+     "end": 48.263
+    },
+    {
+     "w": "brain",
+     "start": 48.28,
+     "end": 48.609
+    },
+    {
+     "w": "is",
+     "start": 48.63,
+     "end": 48.903
+    },
+    {
+     "w": "a",
+     "start": 48.92,
+     "end": 49.174
+    },
+    {
+     "w": "terrible",
+     "start": 49.19,
+     "end": 50.045
+    },
+    {
+     "w": "FORTUNE",
+     "start": 50.1,
+     "end": 50.702
+    },
+    {
+     "w": "teller.",
+     "start": 50.74,
+     "end": 51.323
+    },
+    {
+     "w": "Comment",
+     "start": 51.51,
+     "end": 52.112
+    },
+    {
+     "w": "'got",
+     "start": 52.15,
+     "end": 52.441
+    },
+    {
+     "w": "me'.",
+     "start": 52.46,
+     "end": 52.733
+    }
+   ]
+  }
+ ]
+}

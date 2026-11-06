@@ -1,0 +1,523 @@
+{
+ "lines": [
+  {
+   "text": "\"Ten MINUTES,\" Leo says, opening his essay. It's 7 PM.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 5.04,
+   "words": [
+    {
+     "w": "\"Ten",
+     "start": 0.15,
+     "end": 0.447
+    },
+    {
+     "w": "MINUTES,\"",
+     "start": 0.466,
+     "end": 1.321
+    },
+    {
+     "w": "Leo",
+     "start": 1.375,
+     "end": 1.673
+    },
+    {
+     "w": "says,",
+     "start": 1.692,
+     "end": 2.008
+    },
+    {
+     "w": "opening",
+     "start": 2.182,
+     "end": 3.036
+    },
+    {
+     "w": "his",
+     "start": 3.09,
+     "end": 3.388
+    },
+    {
+     "w": "essay.",
+     "start": 3.407,
+     "end": 3.982
+    },
+    {
+     "w": "It's",
+     "start": 4.172,
+     "end": 4.47
+    },
+    {
+     "w": "7",
+     "start": 4.489,
+     "end": 4.729
+    },
+    {
+     "w": "PM.",
+     "start": 4.744,
+     "end": 5.022
+    }
+   ]
+  },
+  {
+   "text": "You've said it too. Then it's midnight, and you blame YOURSELF.",
+   "sec": "cd",
+   "start": 5.36,
+   "end": 10.32,
+   "words": [
+    {
+     "w": "You've",
+     "start": 5.36,
+     "end": 5.722
+    },
+    {
+     "w": "said",
+     "start": 5.745,
+     "end": 6.086
+    },
+    {
+     "w": "it",
+     "start": 6.108,
+     "end": 6.408
+    },
+    {
+     "w": "too.",
+     "start": 6.427,
+     "end": 6.747
+    },
+    {
+     "w": "Then",
+     "start": 6.933,
+     "end": 7.274
+    },
+    {
+     "w": "it's",
+     "start": 7.296,
+     "end": 7.616
+    },
+    {
+     "w": "midnight,",
+     "start": 7.637,
+     "end": 8.319
+    },
+    {
+     "w": "and",
+     "start": 8.527,
+     "end": 8.848
+    },
+    {
+     "w": "you",
+     "start": 8.868,
+     "end": 9.189
+    },
+    {
+     "w": "blame",
+     "start": 9.209,
+     "end": 9.571
+    },
+    {
+     "w": "YOURSELF.",
+     "start": 9.594,
+     "end": 10.276
+    }
+   ]
+  },
+  {
+   "text": "But it's not laziness. Almost EVERYONE guesses wrong.",
+   "sec": "cd",
+   "start": 10.64,
+   "end": 15.54,
+   "words": [
+    {
+     "w": "But",
+     "start": 10.64,
+     "end": 10.957
+    },
+    {
+     "w": "it's",
+     "start": 10.977,
+     "end": 11.293
+    },
+    {
+     "w": "not",
+     "start": 11.314,
+     "end": 11.63
+    },
+    {
+     "w": "laziness.",
+     "start": 11.65,
+     "end": 12.58
+    },
+    {
+     "w": "Almost",
+     "start": 12.802,
+     "end": 13.435
+    },
+    {
+     "w": "EVERYONE",
+     "start": 13.476,
+     "end": 14.405
+    },
+    {
+     "w": "guesses",
+     "start": 14.464,
+     "end": 15.118
+    },
+    {
+     "w": "wrong.",
+     "start": 15.16,
+     "end": 15.517
+    }
+   ]
+  },
+  {
+   "text": "In 1994, students guessed their thesis would take 34 DAYS.",
+   "sec": "cd",
+   "start": 15.86,
+   "end": 20.56,
+   "words": [
+    {
+     "w": "In",
+     "start": 15.86,
+     "end": 16.164
+    },
+    {
+     "w": "1994,",
+     "start": 16.183,
+     "end": 16.445
+    },
+    {
+     "w": "students",
+     "start": 16.628,
+     "end": 17.319
+    },
+    {
+     "w": "guessed",
+     "start": 17.364,
+     "end": 18.034
+    },
+    {
+     "w": "their",
+     "start": 18.076,
+     "end": 18.443
+    },
+    {
+     "w": "thesis",
+     "start": 18.466,
+     "end": 19.115
+    },
+    {
+     "w": "would",
+     "start": 19.157,
+     "end": 19.523
+    },
+    {
+     "w": "take",
+     "start": 19.546,
+     "end": 19.892
+    },
+    {
+     "w": "34",
+     "start": 19.914,
+     "end": 20.176
+    },
+    {
+     "w": "DAYS.",
+     "start": 20.192,
+     "end": 20.538
+    }
+   ]
+  },
+  {
+   "text": "It took 56. Even their WORST-CASE guess was too short.",
+   "sec": "cd",
+   "start": 20.88,
+   "end": 27.18,
+   "words": [
+    {
+     "w": "It",
+     "start": 20.88,
+     "end": 21.315
+    },
+    {
+     "w": "took",
+     "start": 21.343,
+     "end": 21.837
+    },
+    {
+     "w": "56.",
+     "start": 21.869,
+     "end": 22.244
+    },
+    {
+     "w": "Even",
+     "start": 22.507,
+     "end": 23.376
+    },
+    {
+     "w": "their",
+     "start": 23.432,
+     "end": 23.957
+    },
+    {
+     "w": "WORST-CASE",
+     "start": 23.99,
+     "end": 25.01
+    },
+    {
+     "w": "guess",
+     "start": 25.075,
+     "end": 25.599
+    },
+    {
+     "w": "was",
+     "start": 25.633,
+     "end": 26.098
+    },
+    {
+     "w": "too",
+     "start": 26.127,
+     "end": 26.592
+    },
+    {
+     "w": "short.",
+     "start": 26.622,
+     "end": 27.147
+    }
+   ]
+  },
+  {
+   "text": "It's the PLANNING fallacy. You picture the plan, not the interruptions.",
+   "sec": "cd",
+   "start": 27.5,
+   "end": 32.16,
+   "words": [
+    {
+     "w": "It's",
+     "start": 27.5,
+     "end": 27.729
+    },
+    {
+     "w": "the",
+     "start": 27.743,
+     "end": 27.972
+    },
+    {
+     "w": "PLANNING",
+     "start": 27.986,
+     "end": 28.473
+    },
+    {
+     "w": "fallacy.",
+     "start": 28.504,
+     "end": 29.16
+    },
+    {
+     "w": "You",
+     "start": 29.32,
+     "end": 29.549
+    },
+    {
+     "w": "picture",
+     "start": 29.563,
+     "end": 30.035
+    },
+    {
+     "w": "the",
+     "start": 30.065,
+     "end": 30.294
+    },
+    {
+     "w": "plan,",
+     "start": 30.309,
+     "end": 30.552
+    },
+    {
+     "w": "not",
+     "start": 30.685,
+     "end": 30.914
+    },
+    {
+     "w": "the",
+     "start": 30.928,
+     "end": 31.157
+    },
+    {
+     "w": "interruptions.",
+     "start": 31.172,
+     "end": 32.101
+    }
+   ]
+  },
+  {
+   "text": "Think of your last \"QUICK\" task. Yeah. That one.",
+   "sec": "cd",
+   "start": 32.48,
+   "end": 38.03,
+   "words": [
+    {
+     "w": "Think",
+     "start": 32.48,
+     "end": 33.002
+    },
+    {
+     "w": "of",
+     "start": 33.035,
+     "end": 33.467
+    },
+    {
+     "w": "your",
+     "start": 33.495,
+     "end": 33.987
+    },
+    {
+     "w": "last",
+     "start": 34.018,
+     "end": 34.51
+    },
+    {
+     "w": "\"QUICK\"",
+     "start": 34.541,
+     "end": 35.063
+    },
+    {
+     "w": "task.",
+     "start": 35.096,
+     "end": 35.588
+    },
+    {
+     "w": "Yeah.",
+     "start": 35.858,
+     "end": 36.349
+    },
+    {
+     "w": "That",
+     "start": 36.619,
+     "end": 37.111
+    },
+    {
+     "w": "one.",
+     "start": 37.142,
+     "end": 37.977
+    }
+   ]
+  },
+  {
+   "text": "Grace smiles: \"Use LAST time, not hope.\" Ten minutes is a wish. Send this to the friend who's always \"ten minutes away.\"",
+   "sec": "cd",
+   "start": 38.35,
+   "end": 48.76,
+   "words": [
+    {
+     "w": "Grace",
+     "start": 38.35,
+     "end": 38.702
+    },
+    {
+     "w": "smiles:",
+     "start": 38.724,
+     "end": 39.348
+    },
+    {
+     "w": "\"Use",
+     "start": 39.548,
+     "end": 40.111
+    },
+    {
+     "w": "LAST",
+     "start": 40.147,
+     "end": 40.479
+    },
+    {
+     "w": "time,",
+     "start": 40.5,
+     "end": 40.832
+    },
+    {
+     "w": "not",
+     "start": 41.014,
+     "end": 41.326
+    },
+    {
+     "w": "hope.\"",
+     "start": 41.346,
+     "end": 41.678
+    },
+    {
+     "w": "Ten",
+     "start": 41.699,
+     "end": 42.011
+    },
+    {
+     "w": "minutes",
+     "start": 42.03,
+     "end": 42.925
+    },
+    {
+     "w": "is",
+     "start": 42.983,
+     "end": 43.274
+    },
+    {
+     "w": "a",
+     "start": 43.293,
+     "end": 43.564
+    },
+    {
+     "w": "wish.",
+     "start": 43.582,
+     "end": 43.914
+    },
+    {
+     "w": "Send",
+     "start": 44.095,
+     "end": 44.427
+    },
+    {
+     "w": "this",
+     "start": 44.448,
+     "end": 44.78
+    },
+    {
+     "w": "to",
+     "start": 44.801,
+     "end": 45.093
+    },
+    {
+     "w": "the",
+     "start": 45.112,
+     "end": 45.423
+    },
+    {
+     "w": "friend",
+     "start": 45.443,
+     "end": 45.815
+    },
+    {
+     "w": "who's",
+     "start": 45.839,
+     "end": 46.171
+    },
+    {
+     "w": "always",
+     "start": 46.192,
+     "end": 46.816
+    },
+    {
+     "w": "\"ten",
+     "start": 46.856,
+     "end": 47.167
+    },
+    {
+     "w": "minutes",
+     "start": 47.187,
+     "end": 48.082
+    },
+    {
+     "w": "away.\"",
+     "start": 48.139,
+     "end": 48.723
+    }
+   ]
+  }
+ ]
+}

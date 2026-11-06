@@ -1,0 +1,553 @@
+{
+ "lines": [
+  {
+   "text": "Waiting for a TEXT back, Sam stares at \"Read 9:14.\"",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.7,
+   "words": [
+    {
+     "w": "Waiting",
+     "start": 0.15,
+     "end": 0.708
+    },
+    {
+     "w": "for",
+     "start": 0.743,
+     "end": 1.013
+    },
+    {
+     "w": "a",
+     "start": 1.031,
+     "end": 1.266
+    },
+    {
+     "w": "TEXT",
+     "start": 1.281,
+     "end": 1.568
+    },
+    {
+     "w": "back,",
+     "start": 1.587,
+     "end": 1.874
+    },
+    {
+     "w": "Sam",
+     "start": 2.032,
+     "end": 2.302
+    },
+    {
+     "w": "stares",
+     "start": 2.319,
+     "end": 2.859
+    },
+    {
+     "w": "at",
+     "start": 2.894,
+     "end": 3.146
+    },
+    {
+     "w": "\"Read",
+     "start": 3.162,
+     "end": 3.45
+    },
+    {
+     "w": "9:14.\"",
+     "start": 3.468,
+     "end": 3.686
+    }
+   ]
+  },
+  {
+   "text": "You've done this too. Part of you would rather just get a NO.",
+   "sec": "cd",
+   "start": 4.02,
+   "end": 6.89,
+   "words": [
+    {
+     "w": "You've",
+     "start": 4.02,
+     "end": 4.227
+    },
+    {
+     "w": "done",
+     "start": 4.24,
+     "end": 4.435
+    },
+    {
+     "w": "this",
+     "start": 4.447,
+     "end": 4.642
+    },
+    {
+     "w": "too.",
+     "start": 4.654,
+     "end": 4.837
+    },
+    {
+     "w": "Part",
+     "start": 4.943,
+     "end": 5.138
+    },
+    {
+     "w": "of",
+     "start": 5.15,
+     "end": 5.322
+    },
+    {
+     "w": "you",
+     "start": 5.333,
+     "end": 5.516
+    },
+    {
+     "w": "would",
+     "start": 5.527,
+     "end": 5.734
+    },
+    {
+     "w": "rather",
+     "start": 5.747,
+     "end": 6.113
+    },
+    {
+     "w": "just",
+     "start": 6.136,
+     "end": 6.331
+    },
+    {
+     "w": "get",
+     "start": 6.344,
+     "end": 6.527
+    },
+    {
+     "w": "a",
+     "start": 6.538,
+     "end": 6.698
+    },
+    {
+     "w": "NO.",
+     "start": 6.708,
+     "end": 6.879
+    }
+   ]
+  },
+  {
+   "text": "But that's not drama. Science MEASURED it.",
+   "sec": "cd",
+   "start": 7.21,
+   "end": 9.53,
+   "words": [
+    {
+     "w": "But",
+     "start": 7.21,
+     "end": 7.414
+    },
+    {
+     "w": "that's",
+     "start": 7.427,
+     "end": 7.658
+    },
+    {
+     "w": "not",
+     "start": 7.673,
+     "end": 7.877
+    },
+    {
+     "w": "drama.",
+     "start": 7.89,
+     "end": 8.285
+    },
+    {
+     "w": "Science",
+     "start": 8.416,
+     "end": 8.673
+    },
+    {
+     "w": "MEASURED",
+     "start": 8.689,
+     "end": 9.288
+    },
+    {
+     "w": "it.",
+     "start": 9.327,
+     "end": 9.518
+    }
+   ]
+  },
+  {
+   "text": "In 2016, UCL scientists gave 45 people a game with mild electric SHOCKS.",
+   "sec": "cd",
+   "start": 9.85,
+   "end": 16.03,
+   "words": [
+    {
+     "w": "In",
+     "start": 9.85,
+     "end": 10.16
+    },
+    {
+     "w": "2016,",
+     "start": 10.179,
+     "end": 10.446
+    },
+    {
+     "w": "UCL",
+     "start": 10.634,
+     "end": 10.965
+    },
+    {
+     "w": "scientists",
+     "start": 10.986,
+     "end": 11.734
+    },
+    {
+     "w": "gave",
+     "start": 11.781,
+     "end": 12.134
+    },
+    {
+     "w": "45",
+     "start": 12.156,
+     "end": 12.423
+    },
+    {
+     "w": "people",
+     "start": 12.44,
+     "end": 13.102
+    },
+    {
+     "w": "a",
+     "start": 13.144,
+     "end": 13.433
+    },
+    {
+     "w": "game",
+     "start": 13.451,
+     "end": 13.804
+    },
+    {
+     "w": "with",
+     "start": 13.826,
+     "end": 14.178
+    },
+    {
+     "w": "mild",
+     "start": 14.201,
+     "end": 14.553
+    },
+    {
+     "w": "electric",
+     "start": 14.576,
+     "end": 15.548
+    },
+    {
+     "w": "SHOCKS.",
+     "start": 15.61,
+     "end": 16.005
+    }
+   ]
+  },
+  {
+   "text": "Stress peaked at a FIFTY-FIFTY chance, not at a sure shock.",
+   "sec": "cd",
+   "start": 16.35,
+   "end": 19.53,
+   "words": [
+    {
+     "w": "Stress",
+     "start": 16.35,
+     "end": 16.579
+    },
+    {
+     "w": "peaked",
+     "start": 16.594,
+     "end": 16.979
+    },
+    {
+     "w": "at",
+     "start": 17.003,
+     "end": 17.183
+    },
+    {
+     "w": "a",
+     "start": 17.194,
+     "end": 17.362
+    },
+    {
+     "w": "FIFTY-FIFTY",
+     "start": 17.373,
+     "end": 18.117
+    },
+    {
+     "w": "chance,",
+     "start": 18.164,
+     "end": 18.394
+    },
+    {
+     "w": "not",
+     "start": 18.507,
+     "end": 18.7
+    },
+    {
+     "w": "at",
+     "start": 18.712,
+     "end": 18.892
+    },
+    {
+     "w": "a",
+     "start": 18.903,
+     "end": 19.071
+    },
+    {
+     "w": "sure",
+     "start": 19.081,
+     "end": 19.286
+    },
+    {
+     "w": "shock.",
+     "start": 19.299,
+     "end": 19.516
+    }
+   ]
+  },
+  {
+   "text": "Not knowing is the stress. Your brain keeps running the ODDS.",
+   "sec": "cd",
+   "start": 19.85,
+   "end": 22.95,
+   "words": [
+    {
+     "w": "Not",
+     "start": 19.85,
+     "end": 20.056
+    },
+    {
+     "w": "knowing",
+     "start": 20.069,
+     "end": 20.495
+    },
+    {
+     "w": "is",
+     "start": 20.522,
+     "end": 20.715
+    },
+    {
+     "w": "the",
+     "start": 20.728,
+     "end": 20.934
+    },
+    {
+     "w": "stress.",
+     "start": 20.947,
+     "end": 21.193
+    },
+    {
+     "w": "Your",
+     "start": 21.315,
+     "end": 21.535
+    },
+    {
+     "w": "brain",
+     "start": 21.549,
+     "end": 21.781
+    },
+    {
+     "w": "keeps",
+     "start": 21.796,
+     "end": 22.029
+    },
+    {
+     "w": "running",
+     "start": 22.044,
+     "end": 22.47
+    },
+    {
+     "w": "the",
+     "start": 22.497,
+     "end": 22.703
+    },
+    {
+     "w": "ODDS.",
+     "start": 22.716,
+     "end": 22.936
+    }
+   ]
+  },
+  {
+   "text": "Think of the last chat you REFRESHED. Yeah. That one.",
+   "sec": "cd",
+   "start": 23.27,
+   "end": 26.19,
+   "words": [
+    {
+     "w": "Think",
+     "start": 23.27,
+     "end": 23.49
+    },
+    {
+     "w": "of",
+     "start": 23.504,
+     "end": 23.686
+    },
+    {
+     "w": "the",
+     "start": 23.698,
+     "end": 23.892
+    },
+    {
+     "w": "last",
+     "start": 23.905,
+     "end": 24.112
+    },
+    {
+     "w": "chat",
+     "start": 24.125,
+     "end": 24.333
+    },
+    {
+     "w": "you",
+     "start": 24.346,
+     "end": 24.541
+    },
+    {
+     "w": "REFRESHED.",
+     "start": 24.553,
+     "end": 25.137
+    },
+    {
+     "w": "Yeah.",
+     "start": 25.275,
+     "end": 25.482
+    },
+    {
+     "w": "That",
+     "start": 25.595,
+     "end": 25.803
+    },
+    {
+     "w": "one.",
+     "start": 25.816,
+     "end": 26.168
+    }
+   ]
+  },
+  {
+   "text": "Priya flips the phone: \"You're not needy.\" A no stings. A MAYBE haunts. Send this to the friend still staring at \"typing\u2026\"",
+   "sec": "cd",
+   "start": 26.51,
+   "end": 33.75,
+   "words": [
+    {
+     "w": "Priya",
+     "start": 26.51,
+     "end": 26.79
+    },
+    {
+     "w": "flips",
+     "start": 26.807,
+     "end": 27.087
+    },
+    {
+     "w": "the",
+     "start": 27.105,
+     "end": 27.352
+    },
+    {
+     "w": "phone:",
+     "start": 27.368,
+     "end": 27.648
+    },
+    {
+     "w": "\"You're",
+     "start": 27.793,
+     "end": 28.073
+    },
+    {
+     "w": "not",
+     "start": 28.091,
+     "end": 28.338
+    },
+    {
+     "w": "needy.\"",
+     "start": 28.354,
+     "end": 28.833
+    },
+    {
+     "w": "A",
+     "start": 28.864,
+     "end": 29.08
+    },
+    {
+     "w": "no",
+     "start": 29.093,
+     "end": 29.325
+    },
+    {
+     "w": "stings.",
+     "start": 29.34,
+     "end": 29.635
+    },
+    {
+     "w": "A",
+     "start": 29.782,
+     "end": 29.997
+    },
+    {
+     "w": "MAYBE",
+     "start": 30.011,
+     "end": 30.291
+    },
+    {
+     "w": "haunts.",
+     "start": 30.308,
+     "end": 30.604
+    },
+    {
+     "w": "Send",
+     "start": 30.75,
+     "end": 31.014
+    },
+    {
+     "w": "this",
+     "start": 31.031,
+     "end": 31.294
+    },
+    {
+     "w": "to",
+     "start": 31.311,
+     "end": 31.543
+    },
+    {
+     "w": "the",
+     "start": 31.558,
+     "end": 31.805
+    },
+    {
+     "w": "friend",
+     "start": 31.821,
+     "end": 32.117
+    },
+    {
+     "w": "still",
+     "start": 32.135,
+     "end": 32.415
+    },
+    {
+     "w": "staring",
+     "start": 32.433,
+     "end": 32.944
+    },
+    {
+     "w": "at",
+     "start": 32.977,
+     "end": 33.208
+    },
+    {
+     "w": "\"typing\u2026\"",
+     "start": 33.223,
+     "end": 33.718
+    }
+   ]
+  }
+ ]
+}

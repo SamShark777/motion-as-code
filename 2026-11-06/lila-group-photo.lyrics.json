@@ -1,0 +1,592 @@
+{
+ "lines": [
+  {
+   "text": "Lila hates her selfie. Loves the GROUP photo. Same face.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 5.33,
+   "words": [
+    {
+     "w": "Lila",
+     "start": 0.15,
+     "end": 0.753
+    },
+    {
+     "w": "hates",
+     "start": 0.792,
+     "end": 1.416
+    },
+    {
+     "w": "her",
+     "start": 1.456,
+     "end": 1.779
+    },
+    {
+     "w": "selfie.",
+     "start": 1.799,
+     "end": 2.184
+    },
+    {
+     "w": "Loves",
+     "start": 2.375,
+     "end": 2.999
+    },
+    {
+     "w": "the",
+     "start": 3.039,
+     "end": 3.361
+    },
+    {
+     "w": "GROUP",
+     "start": 3.382,
+     "end": 3.746
+    },
+    {
+     "w": "photo.",
+     "start": 3.769,
+     "end": 4.394
+    },
+    {
+     "w": "Same",
+     "start": 4.599,
+     "end": 4.943
+    },
+    {
+     "w": "face.",
+     "start": 4.965,
+     "end": 5.308
+    }
+   ]
+  },
+  {
+   "text": "You've done this too. And a study says the group shot IS better.",
+   "sec": "cd",
+   "start": 5.65,
+   "end": 11.01,
+   "words": [
+    {
+     "w": "You've",
+     "start": 5.65,
+     "end": 6.011
+    },
+    {
+     "w": "done",
+     "start": 6.034,
+     "end": 6.375
+    },
+    {
+     "w": "this",
+     "start": 6.397,
+     "end": 6.738
+    },
+    {
+     "w": "too.",
+     "start": 6.759,
+     "end": 7.079
+    },
+    {
+     "w": "And",
+     "start": 7.265,
+     "end": 7.585
+    },
+    {
+     "w": "a",
+     "start": 7.605,
+     "end": 7.884
+    },
+    {
+     "w": "study",
+     "start": 7.902,
+     "end": 8.521
+    },
+    {
+     "w": "says",
+     "start": 8.561,
+     "end": 8.901
+    },
+    {
+     "w": "the",
+     "start": 8.923,
+     "end": 9.243
+    },
+    {
+     "w": "group",
+     "start": 9.264,
+     "end": 9.625
+    },
+    {
+     "w": "shot",
+     "start": 9.648,
+     "end": 9.989
+    },
+    {
+     "w": "IS",
+     "start": 10.01,
+     "end": 10.31
+    },
+    {
+     "w": "better.",
+     "start": 10.329,
+     "end": 10.969
+    }
+   ]
+  },
+  {
+   "text": "But it's not the lighting. Your brain AVERAGES faces.",
+   "sec": "cd",
+   "start": 11.33,
+   "end": 15.52,
+   "words": [
+    {
+     "w": "But",
+     "start": 11.33,
+     "end": 11.602
+    },
+    {
+     "w": "it's",
+     "start": 11.619,
+     "end": 11.891
+    },
+    {
+     "w": "not",
+     "start": 11.909,
+     "end": 12.181
+    },
+    {
+     "w": "the",
+     "start": 12.198,
+     "end": 12.47
+    },
+    {
+     "w": "lighting.",
+     "start": 12.487,
+     "end": 13.066
+    },
+    {
+     "w": "Your",
+     "start": 13.243,
+     "end": 13.533
+    },
+    {
+     "w": "brain",
+     "start": 13.551,
+     "end": 13.858
+    },
+    {
+     "w": "AVERAGES",
+     "start": 13.878,
+     "end": 14.895
+    },
+    {
+     "w": "faces.",
+     "start": 14.96,
+     "end": 15.486
+    }
+   ]
+  },
+  {
+   "text": "Students rated the SAME face, in a group, then cropped alone.",
+   "sec": "cd",
+   "start": 15.84,
+   "end": 20.04,
+   "words": [
+    {
+     "w": "Students",
+     "start": 15.84,
+     "end": 16.36
+    },
+    {
+     "w": "rated",
+     "start": 16.393,
+     "end": 16.866
+    },
+    {
+     "w": "the",
+     "start": 16.896,
+     "end": 17.141
+    },
+    {
+     "w": "SAME",
+     "start": 17.156,
+     "end": 17.416
+    },
+    {
+     "w": "face,",
+     "start": 17.433,
+     "end": 17.693
+    },
+    {
+     "w": "in",
+     "start": 17.835,
+     "end": 18.064
+    },
+    {
+     "w": "a",
+     "start": 18.078,
+     "end": 18.291
+    },
+    {
+     "w": "group,",
+     "start": 18.305,
+     "end": 18.58
+    },
+    {
+     "w": "then",
+     "start": 18.724,
+     "end": 18.984
+    },
+    {
+     "w": "cropped",
+     "start": 19.0,
+     "end": 19.505
+    },
+    {
+     "w": "alone.",
+     "start": 19.537,
+     "end": 20.01
+    }
+   ]
+  },
+  {
+   "text": "The group version scored HIGHER.",
+   "sec": "cd",
+   "start": 20.36,
+   "end": 22.53,
+   "words": [
+    {
+     "w": "The",
+     "start": 20.36,
+     "end": 20.609
+    },
+    {
+     "w": "group",
+     "start": 20.625,
+     "end": 20.906
+    },
+    {
+     "w": "version",
+     "start": 20.924,
+     "end": 21.438
+    },
+    {
+     "w": "scored",
+     "start": 21.471,
+     "end": 21.969
+    },
+    {
+     "w": "HIGHER.",
+     "start": 22.0,
+     "end": 22.498
+    }
+   ]
+  },
+  {
+   "text": "It's called the CHEERLEADER effect.",
+   "sec": "cd",
+   "start": 22.85,
+   "end": 25.19,
+   "words": [
+    {
+     "w": "It's",
+     "start": 22.85,
+     "end": 23.091
+    },
+    {
+     "w": "called",
+     "start": 23.106,
+     "end": 23.588
+    },
+    {
+     "w": "the",
+     "start": 23.619,
+     "end": 23.86
+    },
+    {
+     "w": "CHEERLEADER",
+     "start": 23.875,
+     "end": 24.629
+    },
+    {
+     "w": "effect.",
+     "start": 24.677,
+     "end": 25.159
+    }
+   ]
+  },
+  {
+   "text": "Your brain blends the group, pulling faces toward AVERAGE. Average looks attractive.",
+   "sec": "cd",
+   "start": 25.51,
+   "end": 32.19,
+   "words": [
+    {
+     "w": "Your",
+     "start": 25.51,
+     "end": 25.808
+    },
+    {
+     "w": "brain",
+     "start": 25.827,
+     "end": 26.143
+    },
+    {
+     "w": "blends",
+     "start": 26.164,
+     "end": 26.498
+    },
+    {
+     "w": "the",
+     "start": 26.519,
+     "end": 26.799
+    },
+    {
+     "w": "group,",
+     "start": 26.817,
+     "end": 27.133
+    },
+    {
+     "w": "pulling",
+     "start": 27.298,
+     "end": 27.876
+    },
+    {
+     "w": "faces",
+     "start": 27.913,
+     "end": 28.455
+    },
+    {
+     "w": "toward",
+     "start": 28.49,
+     "end": 29.05
+    },
+    {
+     "w": "AVERAGE.",
+     "start": 29.085,
+     "end": 29.89
+    },
+    {
+     "w": "Average",
+     "start": 30.085,
+     "end": 30.889
+    },
+    {
+     "w": "looks",
+     "start": 30.941,
+     "end": 31.257
+    },
+    {
+     "w": "attractive.",
+     "start": 31.277,
+     "end": 32.135
+    }
+   ]
+  },
+  {
+   "text": "But the boost is TINY. Forty-ninth to fifty-first percentile.",
+   "sec": "cd",
+   "start": 32.51,
+   "end": 37.81,
+   "words": [
+    {
+     "w": "But",
+     "start": 32.51,
+     "end": 32.797
+    },
+    {
+     "w": "the",
+     "start": 32.815,
+     "end": 33.102
+    },
+    {
+     "w": "boost",
+     "start": 33.121,
+     "end": 33.445
+    },
+    {
+     "w": "is",
+     "start": 33.466,
+     "end": 33.734
+    },
+    {
+     "w": "TINY.",
+     "start": 33.751,
+     "end": 34.288
+    },
+    {
+     "w": "Forty-ninth",
+     "start": 34.47,
+     "end": 35.35
+    },
+    {
+     "w": "to",
+     "start": 35.406,
+     "end": 35.675
+    },
+    {
+     "w": "fifty-first",
+     "start": 35.692,
+     "end": 36.572
+    },
+    {
+     "w": "percentile.",
+     "start": 36.628,
+     "end": 37.739
+    }
+   ]
+  },
+  {
+   "text": "Think of your last group photo. You checked ONE face. Yours.",
+   "sec": "cd",
+   "start": 38.13,
+   "end": 44.15,
+   "words": [
+    {
+     "w": "Think",
+     "start": 38.13,
+     "end": 38.548
+    },
+    {
+     "w": "of",
+     "start": 38.575,
+     "end": 38.921
+    },
+    {
+     "w": "your",
+     "start": 38.943,
+     "end": 39.337
+    },
+    {
+     "w": "last",
+     "start": 39.362,
+     "end": 39.756
+    },
+    {
+     "w": "group",
+     "start": 39.781,
+     "end": 40.199
+    },
+    {
+     "w": "photo.",
+     "start": 40.226,
+     "end": 40.942
+    },
+    {
+     "w": "You",
+     "start": 41.178,
+     "end": 41.548
+    },
+    {
+     "w": "checked",
+     "start": 41.572,
+     "end": 42.336
+    },
+    {
+     "w": "ONE",
+     "start": 42.385,
+     "end": 43.053
+    },
+    {
+     "w": "face.",
+     "start": 43.096,
+     "end": 43.49
+    },
+    {
+     "w": "Yours.",
+     "start": 43.705,
+     "end": 44.123
+    }
+   ]
+  },
+  {
+   "text": "Mae shrugs: \"Nobody inspects your face like YOU do.\"",
+   "sec": "cd",
+   "start": 44.47,
+   "end": 48.44,
+   "words": [
+    {
+     "w": "Mae",
+     "start": 44.47,
+     "end": 44.763
+    },
+    {
+     "w": "shrugs:",
+     "start": 44.782,
+     "end": 45.131
+    },
+    {
+     "w": "\"Nobody",
+     "start": 45.304,
+     "end": 46.126
+    },
+    {
+     "w": "inspects",
+     "start": 46.179,
+     "end": 46.802
+    },
+    {
+     "w": "your",
+     "start": 46.842,
+     "end": 47.154
+    },
+    {
+     "w": "face",
+     "start": 47.174,
+     "end": 47.485
+    },
+    {
+     "w": "like",
+     "start": 47.505,
+     "end": 47.817
+    },
+    {
+     "w": "YOU",
+     "start": 47.837,
+     "end": 48.13
+    },
+    {
+     "w": "do.\"",
+     "start": 48.149,
+     "end": 48.423
+    }
+   ]
+  },
+  {
+   "text": "Not uglier alone. Just ZOOMED in.",
+   "sec": "cd",
+   "start": 48.76,
+   "end": 51.61,
+   "words": [
+    {
+     "w": "Not",
+     "start": 48.76,
+     "end": 49.044
+    },
+    {
+     "w": "uglier",
+     "start": 49.063,
+     "end": 49.631
+    },
+    {
+     "w": "alone.",
+     "start": 49.668,
+     "end": 50.218
+    },
+    {
+     "w": "Just",
+     "start": 50.4,
+     "end": 50.702
+    },
+    {
+     "w": "ZOOMED",
+     "start": 50.722,
+     "end": 51.291
+    },
+    {
+     "w": "in.",
+     "start": 51.327,
+     "end": 51.593
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,569 @@
+{
+ "lines": [
+  {
+   "text": "Thursday night, crisps in hand, Rosa swears: \"I'll start MONDAY.\"",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 5.47,
+   "words": [
+    {
+     "w": "Thursday",
+     "start": 0.15,
+     "end": 0.855
+    },
+    {
+     "w": "night,",
+     "start": 0.9,
+     "end": 1.274
+    },
+    {
+     "w": "crisps",
+     "start": 1.469,
+     "end": 1.864
+    },
+    {
+     "w": "in",
+     "start": 1.889,
+     "end": 2.199
+    },
+    {
+     "w": "hand,",
+     "start": 2.219,
+     "end": 2.572
+    },
+    {
+     "w": "Rosa",
+     "start": 2.765,
+     "end": 3.384
+    },
+    {
+     "w": "swears:",
+     "start": 3.424,
+     "end": 3.819
+    },
+    {
+     "w": "\"I'll",
+     "start": 4.015,
+     "end": 4.346
+    },
+    {
+     "w": "start",
+     "start": 4.367,
+     "end": 4.741
+    },
+    {
+     "w": "MONDAY.\"",
+     "start": 4.765,
+     "end": 5.428
+    }
+   ]
+  },
+  {
+   "text": "Nia smirks. You've said it too. And there's DATA on it.",
+   "sec": "cd",
+   "start": 5.79,
+   "end": 9.97,
+   "words": [
+    {
+     "w": "Nia",
+     "start": 5.79,
+     "end": 6.07
+    },
+    {
+     "w": "smirks.",
+     "start": 6.088,
+     "end": 6.422
+    },
+    {
+     "w": "You've",
+     "start": 6.588,
+     "end": 6.904
+    },
+    {
+     "w": "said",
+     "start": 6.924,
+     "end": 7.222
+    },
+    {
+     "w": "it",
+     "start": 7.241,
+     "end": 7.503
+    },
+    {
+     "w": "too.",
+     "start": 7.52,
+     "end": 7.8
+    },
+    {
+     "w": "And",
+     "start": 7.962,
+     "end": 8.242
+    },
+    {
+     "w": "there's",
+     "start": 8.26,
+     "end": 8.82
+    },
+    {
+     "w": "DATA",
+     "start": 8.855,
+     "end": 9.379
+    },
+    {
+     "w": "on",
+     "start": 9.413,
+     "end": 9.675
+    },
+    {
+     "w": "it.",
+     "start": 9.691,
+     "end": 9.953
+    }
+   ]
+  },
+  {
+   "text": "But \"I'll start Monday\" isn't just an EXCUSE.",
+   "sec": "cd",
+   "start": 10.29,
+   "end": 13.32,
+   "words": [
+    {
+     "w": "But",
+     "start": 10.29,
+     "end": 10.569
+    },
+    {
+     "w": "\"I'll",
+     "start": 10.587,
+     "end": 10.867
+    },
+    {
+     "w": "start",
+     "start": 10.884,
+     "end": 11.2
+    },
+    {
+     "w": "Monday\"",
+     "start": 11.22,
+     "end": 11.779
+    },
+    {
+     "w": "isn't",
+     "start": 11.815,
+     "end": 12.112
+    },
+    {
+     "w": "just",
+     "start": 12.131,
+     "end": 12.428
+    },
+    {
+     "w": "an",
+     "start": 12.447,
+     "end": 12.709
+    },
+    {
+     "w": "EXCUSE.",
+     "start": 12.726,
+     "end": 13.284
+    }
+   ]
+  },
+  {
+   "text": "In 2014, researchers found Google searches for 'diet' peak every new WEEK, month and year.",
+   "sec": "cd",
+   "start": 13.64,
+   "end": 21.01,
+   "words": [
+    {
+     "w": "In",
+     "start": 13.64,
+     "end": 13.932
+    },
+    {
+     "w": "2014,",
+     "start": 13.95,
+     "end": 14.202
+    },
+    {
+     "w": "researchers",
+     "start": 14.378,
+     "end": 15.353
+    },
+    {
+     "w": "found",
+     "start": 15.416,
+     "end": 15.768
+    },
+    {
+     "w": "Google",
+     "start": 15.79,
+     "end": 16.413
+    },
+    {
+     "w": "searches",
+     "start": 16.453,
+     "end": 17.117
+    },
+    {
+     "w": "for",
+     "start": 17.159,
+     "end": 17.471
+    },
+    {
+     "w": "'diet'",
+     "start": 17.491,
+     "end": 17.823
+    },
+    {
+     "w": "peak",
+     "start": 17.844,
+     "end": 18.176
+    },
+    {
+     "w": "every",
+     "start": 18.197,
+     "end": 19.051
+    },
+    {
+     "w": "new",
+     "start": 19.106,
+     "end": 19.418
+    },
+    {
+     "w": "WEEK,",
+     "start": 19.438,
+     "end": 19.769
+    },
+    {
+     "w": "month",
+     "start": 19.951,
+     "end": 20.303
+    },
+    {
+     "w": "and",
+     "start": 20.325,
+     "end": 20.637
+    },
+    {
+     "w": "year.",
+     "start": 20.657,
+     "end": 20.989
+    }
+   ]
+  },
+  {
+   "text": "Gym visits rose too: new week, new semester, after BIRTHDAYS.",
+   "sec": "cd",
+   "start": 21.33,
+   "end": 26.71,
+   "words": [
+    {
+     "w": "Gym",
+     "start": 21.33,
+     "end": 21.634
+    },
+    {
+     "w": "visits",
+     "start": 21.653,
+     "end": 22.261
+    },
+    {
+     "w": "rose",
+     "start": 22.3,
+     "end": 22.623
+    },
+    {
+     "w": "too:",
+     "start": 22.644,
+     "end": 22.948
+    },
+    {
+     "w": "new",
+     "start": 23.123,
+     "end": 23.427
+    },
+    {
+     "w": "week,",
+     "start": 23.447,
+     "end": 23.77
+    },
+    {
+     "w": "new",
+     "start": 23.947,
+     "end": 24.251
+    },
+    {
+     "w": "semester,",
+     "start": 24.27,
+     "end": 25.162
+    },
+    {
+     "w": "after",
+     "start": 25.375,
+     "end": 25.963
+    },
+    {
+     "w": "BIRTHDAYS.",
+     "start": 26.001,
+     "end": 26.667
+    }
+   ]
+  },
+  {
+   "text": "It's called the FRESH start effect.",
+   "sec": "cd",
+   "start": 27.03,
+   "end": 30.07,
+   "words": [
+    {
+     "w": "It's",
+     "start": 27.03,
+     "end": 27.376
+    },
+    {
+     "w": "called",
+     "start": 27.398,
+     "end": 28.09
+    },
+    {
+     "w": "the",
+     "start": 28.134,
+     "end": 28.48
+    },
+    {
+     "w": "FRESH",
+     "start": 28.502,
+     "end": 28.893
+    },
+    {
+     "w": "start",
+     "start": 28.918,
+     "end": 29.309
+    },
+    {
+     "w": "effect.",
+     "start": 29.334,
+     "end": 30.026
+    }
+   ]
+  },
+  {
+   "text": "A landmark draws a line: old you, NEW you.",
+   "sec": "cd",
+   "start": 30.39,
+   "end": 34.87,
+   "words": [
+    {
+     "w": "A",
+     "start": 30.39,
+     "end": 30.722
+    },
+    {
+     "w": "landmark",
+     "start": 30.744,
+     "end": 31.556
+    },
+    {
+     "w": "draws",
+     "start": 31.608,
+     "end": 32.039
+    },
+    {
+     "w": "a",
+     "start": 32.067,
+     "end": 32.399
+    },
+    {
+     "w": "line:",
+     "start": 32.42,
+     "end": 32.827
+    },
+    {
+     "w": "old",
+     "start": 33.049,
+     "end": 33.431
+    },
+    {
+     "w": "you,",
+     "start": 33.455,
+     "end": 33.837
+    },
+    {
+     "w": "NEW",
+     "start": 34.058,
+     "end": 34.44
+    },
+    {
+     "w": "you.",
+     "start": 34.464,
+     "end": 34.846
+    }
+   ]
+  },
+  {
+   "text": "Skip the wait. Birthdays, the first of the month, any LANDMARK counts.",
+   "sec": "cd",
+   "start": 35.19,
+   "end": 41.72,
+   "words": [
+    {
+     "w": "Skip",
+     "start": 35.19,
+     "end": 35.572
+    },
+    {
+     "w": "the",
+     "start": 35.597,
+     "end": 35.956
+    },
+    {
+     "w": "wait.",
+     "start": 35.979,
+     "end": 36.361
+    },
+    {
+     "w": "Birthdays,",
+     "start": 36.57,
+     "end": 37.357
+    },
+    {
+     "w": "the",
+     "start": 37.593,
+     "end": 37.952
+    },
+    {
+     "w": "first",
+     "start": 37.974,
+     "end": 38.38
+    },
+    {
+     "w": "of",
+     "start": 38.406,
+     "end": 38.742
+    },
+    {
+     "w": "the",
+     "start": 38.763,
+     "end": 39.122
+    },
+    {
+     "w": "month,",
+     "start": 39.145,
+     "end": 39.55
+    },
+    {
+     "w": "any",
+     "start": 39.761,
+     "end": 40.41
+    },
+    {
+     "w": "LANDMARK",
+     "start": 40.451,
+     "end": 41.215
+    },
+    {
+     "w": "counts.",
+     "start": 41.264,
+     "end": 41.693
+    }
+   ]
+  },
+  {
+   "text": "Rosa checks. Tomorrow's the FIRST. Bag packed.",
+   "sec": "cd",
+   "start": 42.04,
+   "end": 48.57,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 42.04,
+     "end": 42.984
+    },
+    {
+     "w": "checks.",
+     "start": 43.045,
+     "end": 43.647
+    },
+    {
+     "w": "Tomorrow's",
+     "start": 43.945,
+     "end": 45.46
+    },
+    {
+     "w": "the",
+     "start": 45.556,
+     "end": 46.061
+    },
+    {
+     "w": "FIRST.",
+     "start": 46.093,
+     "end": 46.663
+    },
+    {
+     "w": "Bag",
+     "start": 46.959,
+     "end": 47.464
+    },
+    {
+     "w": "packed.",
+     "start": 47.496,
+     "end": 48.506
+    }
+   ]
+  },
+  {
+   "text": "Monday isn't magic. It's a line. Draw your OWN.",
+   "sec": "cd",
+   "start": 48.89,
+   "end": 52.76,
+   "words": [
+    {
+     "w": "Monday",
+     "start": 48.89,
+     "end": 49.495
+    },
+    {
+     "w": "isn't",
+     "start": 49.533,
+     "end": 49.855
+    },
+    {
+     "w": "magic.",
+     "start": 49.876,
+     "end": 50.461
+    },
+    {
+     "w": "It's",
+     "start": 50.654,
+     "end": 50.956
+    },
+    {
+     "w": "a",
+     "start": 50.975,
+     "end": 51.239
+    },
+    {
+     "w": "line.",
+     "start": 51.256,
+     "end": 51.577
+    },
+    {
+     "w": "Draw",
+     "start": 51.754,
+     "end": 52.075
+    },
+    {
+     "w": "your",
+     "start": 52.096,
+     "end": 52.418
+    },
+    {
+     "w": "OWN.",
+     "start": 52.438,
+     "end": 52.741
+    }
+   ]
+  }
+ ]
+}

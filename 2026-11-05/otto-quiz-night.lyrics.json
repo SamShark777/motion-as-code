@@ -1,0 +1,551 @@
+{
+ "lines": [
+  {
+   "text": "QUIZ night. Otto's sure he crushed it. Arthur's sure he bombed.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.46,
+   "words": [
+    {
+     "w": "QUIZ",
+     "start": 0.15,
+     "end": 0.355
+    },
+    {
+     "w": "night.",
+     "start": 0.368,
+     "end": 0.585
+    },
+    {
+     "w": "Otto's",
+     "start": 0.698,
+     "end": 1.071
+    },
+    {
+     "w": "sure",
+     "start": 1.095,
+     "end": 1.3
+    },
+    {
+     "w": "he",
+     "start": 1.313,
+     "end": 1.493
+    },
+    {
+     "w": "crushed",
+     "start": 1.504,
+     "end": 1.902
+    },
+    {
+     "w": "it.",
+     "start": 1.927,
+     "end": 2.107
+    },
+    {
+     "w": "Arthur's",
+     "start": 2.218,
+     "end": 2.615
+    },
+    {
+     "w": "sure",
+     "start": 2.641,
+     "end": 2.846
+    },
+    {
+     "w": "he",
+     "start": 2.859,
+     "end": 3.039
+    },
+    {
+     "w": "bombed.",
+     "start": 3.05,
+     "end": 3.435
+    }
+   ]
+  },
+  {
+   "text": "You know an Otto. In tests, the WORST scorers rate themselves above average.",
+   "sec": "cd",
+   "start": 3.78,
+   "end": 8.12,
+   "words": [
+    {
+     "w": "You",
+     "start": 3.78,
+     "end": 3.974
+    },
+    {
+     "w": "know",
+     "start": 3.986,
+     "end": 4.193
+    },
+    {
+     "w": "an",
+     "start": 4.206,
+     "end": 4.387
+    },
+    {
+     "w": "Otto.",
+     "start": 4.399,
+     "end": 4.762
+    },
+    {
+     "w": "In",
+     "start": 4.885,
+     "end": 5.066
+    },
+    {
+     "w": "tests,",
+     "start": 5.078,
+     "end": 5.297
+    },
+    {
+     "w": "the",
+     "start": 5.411,
+     "end": 5.605
+    },
+    {
+     "w": "WORST",
+     "start": 5.617,
+     "end": 5.836
+    },
+    {
+     "w": "scorers",
+     "start": 5.85,
+     "end": 6.251
+    },
+    {
+     "w": "rate",
+     "start": 6.276,
+     "end": 6.483
+    },
+    {
+     "w": "themselves",
+     "start": 6.496,
+     "end": 7.09
+    },
+    {
+     "w": "above",
+     "start": 7.128,
+     "end": 7.504
+    },
+    {
+     "w": "average.",
+     "start": 7.528,
+     "end": 8.084
+    }
+   ]
+  },
+  {
+   "text": "But Otto's not dumb. The skill to answer is the skill to JUDGE.",
+   "sec": "cd",
+   "start": 8.44,
+   "end": 12.11,
+   "words": [
+    {
+     "w": "But",
+     "start": 8.44,
+     "end": 8.66
+    },
+    {
+     "w": "Otto's",
+     "start": 8.674,
+     "end": 9.1
+    },
+    {
+     "w": "not",
+     "start": 9.127,
+     "end": 9.347
+    },
+    {
+     "w": "dumb.",
+     "start": 9.361,
+     "end": 9.596
+    },
+    {
+     "w": "The",
+     "start": 9.724,
+     "end": 9.944
+    },
+    {
+     "w": "skill",
+     "start": 9.958,
+     "end": 10.206
+    },
+    {
+     "w": "to",
+     "start": 10.222,
+     "end": 10.428
+    },
+    {
+     "w": "answer",
+     "start": 10.441,
+     "end": 10.881
+    },
+    {
+     "w": "is",
+     "start": 10.909,
+     "end": 11.115
+    },
+    {
+     "w": "the",
+     "start": 11.128,
+     "end": 11.348
+    },
+    {
+     "w": "skill",
+     "start": 11.362,
+     "end": 11.611
+    },
+    {
+     "w": "to",
+     "start": 11.627,
+     "end": 11.833
+    },
+    {
+     "w": "JUDGE.",
+     "start": 11.846,
+     "end": 12.094
+    }
+   ]
+  },
+  {
+   "text": "Scores in. Otto: LAST. Arthur? Near the top.",
+   "sec": "cd",
+   "start": 12.43,
+   "end": 15.35,
+   "words": [
+    {
+     "w": "Scores",
+     "start": 12.43,
+     "end": 12.857
+    },
+    {
+     "w": "in.",
+     "start": 12.884,
+     "end": 13.083
+    },
+    {
+     "w": "Otto:",
+     "start": 13.206,
+     "end": 13.605
+    },
+    {
+     "w": "LAST.",
+     "start": 13.74,
+     "end": 13.967
+    },
+    {
+     "w": "Arthur?",
+     "start": 14.091,
+     "end": 14.518
+    },
+    {
+     "w": "Near",
+     "start": 14.655,
+     "end": 14.882
+    },
+    {
+     "w": "the",
+     "start": 14.896,
+     "end": 15.11
+    },
+    {
+     "w": "top.",
+     "start": 15.123,
+     "end": 15.336
+    }
+   ]
+  },
+  {
+   "text": "In 1999, the bottom quarter averaged around the 12th percentile. They guessed the 62ND.",
+   "sec": "cd",
+   "start": 15.67,
+   "end": 22.03,
+   "words": [
+    {
+     "w": "In",
+     "start": 15.67,
+     "end": 15.899
+    },
+    {
+     "w": "1999,",
+     "start": 15.914,
+     "end": 16.112
+    },
+    {
+     "w": "the",
+     "start": 16.25,
+     "end": 16.496
+    },
+    {
+     "w": "bottom",
+     "start": 16.511,
+     "end": 17.002
+    },
+    {
+     "w": "quarter",
+     "start": 17.033,
+     "end": 17.539
+    },
+    {
+     "w": "averaged",
+     "start": 17.571,
+     "end": 18.489
+    },
+    {
+     "w": "around",
+     "start": 18.547,
+     "end": 19.037
+    },
+    {
+     "w": "the",
+     "start": 19.069,
+     "end": 19.314
+    },
+    {
+     "w": "12th",
+     "start": 19.33,
+     "end": 19.559
+    },
+    {
+     "w": "percentile.",
+     "start": 19.573,
+     "end": 20.522
+    },
+    {
+     "w": "They",
+     "start": 20.709,
+     "end": 20.97
+    },
+    {
+     "w": "guessed",
+     "start": 20.987,
+     "end": 21.493
+    },
+    {
+     "w": "the",
+     "start": 21.525,
+     "end": 21.77
+    },
+    {
+     "w": "62ND.",
+     "start": 21.786,
+     "end": 22.015
+    }
+   ]
+  },
+  {
+   "text": "It's called the DUNNING-KRUGER effect.",
+   "sec": "cd",
+   "start": 22.35,
+   "end": 24.04,
+   "words": [
+    {
+     "w": "It's",
+     "start": 22.35,
+     "end": 22.508
+    },
+    {
+     "w": "called",
+     "start": 22.518,
+     "end": 22.834
+    },
+    {
+     "w": "the",
+     "start": 22.854,
+     "end": 23.012
+    },
+    {
+     "w": "DUNNING-KRUGER",
+     "start": 23.022,
+     "end": 23.663
+    },
+    {
+     "w": "effect.",
+     "start": 23.704,
+     "end": 24.02
+    }
+   ]
+  },
+  {
+   "text": "Think of the last \"EASY\" that wasn't. Yeah. That one.",
+   "sec": "cd",
+   "start": 24.36,
+   "end": 27.25,
+   "words": [
+    {
+     "w": "Think",
+     "start": 24.36,
+     "end": 24.594
+    },
+    {
+     "w": "of",
+     "start": 24.609,
+     "end": 24.803
+    },
+    {
+     "w": "the",
+     "start": 24.816,
+     "end": 25.023
+    },
+    {
+     "w": "last",
+     "start": 25.036,
+     "end": 25.257
+    },
+    {
+     "w": "\"EASY\"",
+     "start": 25.271,
+     "end": 25.659
+    },
+    {
+     "w": "that",
+     "start": 25.684,
+     "end": 25.905
+    },
+    {
+     "w": "wasn't.",
+     "start": 25.919,
+     "end": 26.153
+    },
+    {
+     "w": "Yeah.",
+     "start": 26.275,
+     "end": 26.496
+    },
+    {
+     "w": "That",
+     "start": 26.616,
+     "end": 26.837
+    },
+    {
+     "w": "one.",
+     "start": 26.851,
+     "end": 27.226
+    }
+   ]
+  },
+  {
+   "text": "But everyone's a beginner somewhere. \"Maybe I don't KNOW\" is the skill.",
+   "sec": "cd",
+   "start": 27.57,
+   "end": 31.12,
+   "words": [
+    {
+     "w": "But",
+     "start": 27.57,
+     "end": 27.743
+    },
+    {
+     "w": "everyone's",
+     "start": 27.754,
+     "end": 28.413
+    },
+    {
+     "w": "a",
+     "start": 28.455,
+     "end": 28.605
+    },
+    {
+     "w": "beginner",
+     "start": 28.615,
+     "end": 29.123
+    },
+    {
+     "w": "somewhere.",
+     "start": 29.155,
+     "end": 29.674
+    },
+    {
+     "w": "\"Maybe",
+     "start": 29.796,
+     "end": 29.991
+    },
+    {
+     "w": "I",
+     "start": 30.004,
+     "end": 30.155
+    },
+    {
+     "w": "don't",
+     "start": 30.164,
+     "end": 30.348
+    },
+    {
+     "w": "KNOW\"",
+     "start": 30.36,
+     "end": 30.544
+    },
+    {
+     "w": "is",
+     "start": 30.556,
+     "end": 30.718
+    },
+    {
+     "w": "the",
+     "start": 30.728,
+     "end": 30.901
+    },
+    {
+     "w": "skill.",
+     "start": 30.912,
+     "end": 31.108
+    }
+   ]
+  },
+  {
+   "text": "Doubt isn't DUMB. Comment \"Otto\" if you know one.",
+   "sec": "cd",
+   "start": 31.44,
+   "end": 34.13,
+   "words": [
+    {
+     "w": "Doubt",
+     "start": 31.44,
+     "end": 31.669
+    },
+    {
+     "w": "isn't",
+     "start": 31.683,
+     "end": 31.899
+    },
+    {
+     "w": "DUMB.",
+     "start": 31.913,
+     "end": 32.128
+    },
+    {
+     "w": "Comment",
+     "start": 32.246,
+     "end": 32.664
+    },
+    {
+     "w": "\"Otto\"",
+     "start": 32.691,
+     "end": 33.07
+    },
+    {
+     "w": "if",
+     "start": 33.094,
+     "end": 33.284
+    },
+    {
+     "w": "you",
+     "start": 33.296,
+     "end": 33.498
+    },
+    {
+     "w": "know",
+     "start": 33.511,
+     "end": 33.727
+    },
+    {
+     "w": "one.",
+     "start": 33.741,
+     "end": 34.107
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,622 @@
+{
+ "lines": [
+  {
+   "text": "Mini golf, last hole. Dev OVERTHINKS an easy putt.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.6,
+   "words": [
+    {
+     "w": "Mini",
+     "start": 0.15,
+     "end": 0.68
+    },
+    {
+     "w": "golf,",
+     "start": 0.714,
+     "end": 1.015
+    },
+    {
+     "w": "last",
+     "start": 1.18,
+     "end": 1.481
+    },
+    {
+     "w": "hole.",
+     "start": 1.501,
+     "end": 2.03
+    },
+    {
+     "w": "Dev",
+     "start": 2.21,
+     "end": 2.493
+    },
+    {
+     "w": "OVERTHINKS",
+     "start": 2.511,
+     "end": 3.379
+    },
+    {
+     "w": "an",
+     "start": 3.434,
+     "end": 3.699
+    },
+    {
+     "w": "easy",
+     "start": 3.716,
+     "end": 4.246
+    },
+    {
+     "w": "putt.",
+     "start": 4.279,
+     "end": 4.581
+    }
+   ]
+  },
+  {
+   "text": "You know this: think harder, play WORSE.",
+   "sec": "cd",
+   "start": 4.92,
+   "end": 8.3,
+   "words": [
+    {
+     "w": "You",
+     "start": 4.92,
+     "end": 5.257
+    },
+    {
+     "w": "know",
+     "start": 5.279,
+     "end": 5.638
+    },
+    {
+     "w": "this:",
+     "start": 5.661,
+     "end": 6.02
+    },
+    {
+     "w": "think",
+     "start": 6.216,
+     "end": 6.597
+    },
+    {
+     "w": "harder,",
+     "start": 6.622,
+     "end": 7.296
+    },
+    {
+     "w": "play",
+     "start": 7.513,
+     "end": 7.872
+    },
+    {
+     "w": "WORSE.",
+     "start": 7.895,
+     "end": 8.276
+    }
+   ]
+  },
+  {
+   "text": "But it's not nerves. It's PAYING attention.",
+   "sec": "cd",
+   "start": 8.62,
+   "end": 12.45,
+   "words": [
+    {
+     "w": "But",
+     "start": 8.62,
+     "end": 8.957
+    },
+    {
+     "w": "it's",
+     "start": 8.979,
+     "end": 9.316
+    },
+    {
+     "w": "not",
+     "start": 9.337,
+     "end": 9.675
+    },
+    {
+     "w": "nerves.",
+     "start": 9.696,
+     "end": 10.37
+    },
+    {
+     "w": "It's",
+     "start": 10.587,
+     "end": 10.924
+    },
+    {
+     "w": "PAYING",
+     "start": 10.946,
+     "end": 11.348
+    },
+    {
+     "w": "attention.",
+     "start": 11.374,
+     "end": 12.385
+    }
+   ]
+  },
+  {
+   "text": "In 2002, Sian Beilock had skilled golfers putt TWO ways.",
+   "sec": "cd",
+   "start": 12.77,
+   "end": 17.3,
+   "words": [
+    {
+     "w": "In",
+     "start": 12.77,
+     "end": 13.063
+    },
+    {
+     "w": "2002,",
+     "start": 13.081,
+     "end": 13.334
+    },
+    {
+     "w": "Sian",
+     "start": 13.511,
+     "end": 13.844
+    },
+    {
+     "w": "Beilock",
+     "start": 13.865,
+     "end": 14.511
+    },
+    {
+     "w": "had",
+     "start": 14.552,
+     "end": 14.865
+    },
+    {
+     "w": "skilled",
+     "start": 14.885,
+     "end": 15.531
+    },
+    {
+     "w": "golfers",
+     "start": 15.572,
+     "end": 16.218
+    },
+    {
+     "w": "putt",
+     "start": 16.259,
+     "end": 16.592
+    },
+    {
+     "w": "TWO",
+     "start": 16.613,
+     "end": 16.926
+    },
+    {
+     "w": "ways.",
+     "start": 16.946,
+     "end": 17.279
+    }
+   ]
+  },
+  {
+   "text": "Focused on each step, they were LESS accurate.",
+   "sec": "cd",
+   "start": 17.62,
+   "end": 20.77,
+   "words": [
+    {
+     "w": "Focused",
+     "start": 17.62,
+     "end": 18.297
+    },
+    {
+     "w": "on",
+     "start": 18.341,
+     "end": 18.561
+    },
+    {
+     "w": "each",
+     "start": 18.576,
+     "end": 18.827
+    },
+    {
+     "w": "step,",
+     "start": 18.843,
+     "end": 19.094
+    },
+    {
+     "w": "they",
+     "start": 19.231,
+     "end": 19.483
+    },
+    {
+     "w": "were",
+     "start": 19.499,
+     "end": 19.75
+    },
+    {
+     "w": "LESS",
+     "start": 19.766,
+     "end": 20.017
+    },
+    {
+     "w": "accurate.",
+     "start": 20.033,
+     "end": 20.726
+    }
+   ]
+  },
+  {
+   "text": "Distracted by a second task? MORE accurate.",
+   "sec": "cd",
+   "start": 21.09,
+   "end": 24.89,
+   "words": [
+    {
+     "w": "Distracted",
+     "start": 21.09,
+     "end": 21.971
+    },
+    {
+     "w": "by",
+     "start": 22.028,
+     "end": 22.297
+    },
+    {
+     "w": "a",
+     "start": 22.314,
+     "end": 22.564
+    },
+    {
+     "w": "second",
+     "start": 22.58,
+     "end": 23.156
+    },
+    {
+     "w": "task?",
+     "start": 23.192,
+     "end": 23.499
+    },
+    {
+     "w": "MORE",
+     "start": 23.666,
+     "end": 23.972
+    },
+    {
+     "w": "accurate.",
+     "start": 23.992,
+     "end": 24.836
+    }
+   ]
+  },
+  {
+   "text": "It's called CHOKING. Watching a skill you know can break it.",
+   "sec": "cd",
+   "start": 25.21,
+   "end": 28.98,
+   "words": [
+    {
+     "w": "It's",
+     "start": 25.21,
+     "end": 25.449
+    },
+    {
+     "w": "called",
+     "start": 25.465,
+     "end": 25.943
+    },
+    {
+     "w": "CHOKING.",
+     "start": 25.974,
+     "end": 26.468
+    },
+    {
+     "w": "Watching",
+     "start": 26.623,
+     "end": 27.132
+    },
+    {
+     "w": "a",
+     "start": 27.165,
+     "end": 27.373
+    },
+    {
+     "w": "skill",
+     "start": 27.387,
+     "end": 27.657
+    },
+    {
+     "w": "you",
+     "start": 27.674,
+     "end": 27.913
+    },
+    {
+     "w": "know",
+     "start": 27.929,
+     "end": 28.183
+    },
+    {
+     "w": "can",
+     "start": 28.2,
+     "end": 28.439
+    },
+    {
+     "w": "break",
+     "start": 28.454,
+     "end": 28.725
+    },
+    {
+     "w": "it.",
+     "start": 28.742,
+     "end": 28.966
+    }
+   ]
+  },
+  {
+   "text": "Beginners are the opposite: step by step HELPS them.",
+   "sec": "cd",
+   "start": 29.3,
+   "end": 32.96,
+   "words": [
+    {
+     "w": "Beginners",
+     "start": 29.3,
+     "end": 30.013
+    },
+    {
+     "w": "are",
+     "start": 30.058,
+     "end": 30.487
+    },
+    {
+     "w": "the",
+     "start": 30.515,
+     "end": 30.752
+    },
+    {
+     "w": "opposite:",
+     "start": 30.767,
+     "end": 31.465
+    },
+    {
+     "w": "step",
+     "start": 31.631,
+     "end": 31.884
+    },
+    {
+     "w": "by",
+     "start": 31.9,
+     "end": 32.123
+    },
+    {
+     "w": "step",
+     "start": 32.137,
+     "end": 32.39
+    },
+    {
+     "w": "HELPS",
+     "start": 32.406,
+     "end": 32.674
+    },
+    {
+     "w": "them.",
+     "start": 32.691,
+     "end": 32.944
+    }
+   ]
+  },
+  {
+   "text": "Ever tried to walk \"NORMAL\" while someone watches? Yeah.",
+   "sec": "cd",
+   "start": 33.28,
+   "end": 37.85,
+   "words": [
+    {
+     "w": "Ever",
+     "start": 33.28,
+     "end": 33.83
+    },
+    {
+     "w": "tried",
+     "start": 33.865,
+     "end": 34.197
+    },
+    {
+     "w": "to",
+     "start": 34.218,
+     "end": 34.493
+    },
+    {
+     "w": "walk",
+     "start": 34.511,
+     "end": 34.824
+    },
+    {
+     "w": "\"NORMAL\"",
+     "start": 34.844,
+     "end": 35.432
+    },
+    {
+     "w": "while",
+     "start": 35.469,
+     "end": 36.038
+    },
+    {
+     "w": "someone",
+     "start": 36.074,
+     "end": 36.681
+    },
+    {
+     "w": "watches?",
+     "start": 36.72,
+     "end": 37.327
+    },
+    {
+     "w": "Yeah.",
+     "start": 37.517,
+     "end": 37.83
+    }
+   ]
+  },
+  {
+   "text": "Theo starts humming. Dev stops thinking. And SINKS it.",
+   "sec": "cd",
+   "start": 38.17,
+   "end": 43.3,
+   "words": [
+    {
+     "w": "Theo",
+     "start": 38.17,
+     "end": 38.577
+    },
+    {
+     "w": "starts",
+     "start": 38.603,
+     "end": 39.059
+    },
+    {
+     "w": "humming.",
+     "start": 39.088,
+     "end": 39.878
+    },
+    {
+     "w": "Dev",
+     "start": 40.125,
+     "end": 40.507
+    },
+    {
+     "w": "stops",
+     "start": 40.532,
+     "end": 40.963
+    },
+    {
+     "w": "thinking.",
+     "start": 40.991,
+     "end": 41.805
+    },
+    {
+     "w": "And",
+     "start": 42.054,
+     "end": 42.436
+    },
+    {
+     "w": "SINKS",
+     "start": 42.46,
+     "end": 42.892
+    },
+    {
+     "w": "it.",
+     "start": 42.92,
+     "end": 43.277
+    }
+   ]
+  },
+  {
+   "text": "You're not bad under pressure. You're just WATCHING too hard. Send this to the friend who freezes when people watch.",
+   "sec": "cd",
+   "start": 43.62,
+   "end": 51.02,
+   "words": [
+    {
+     "w": "You're",
+     "start": 43.62,
+     "end": 43.91
+    },
+    {
+     "w": "not",
+     "start": 43.929,
+     "end": 44.186
+    },
+    {
+     "w": "bad",
+     "start": 44.202,
+     "end": 44.459
+    },
+    {
+     "w": "under",
+     "start": 44.476,
+     "end": 44.973
+    },
+    {
+     "w": "pressure.",
+     "start": 45.005,
+     "end": 45.552
+    },
+    {
+     "w": "You're",
+     "start": 45.719,
+     "end": 46.009
+    },
+    {
+     "w": "just",
+     "start": 46.028,
+     "end": 46.301
+    },
+    {
+     "w": "WATCHING",
+     "start": 46.319,
+     "end": 46.866
+    },
+    {
+     "w": "too",
+     "start": 46.901,
+     "end": 47.158
+    },
+    {
+     "w": "hard.",
+     "start": 47.174,
+     "end": 47.448
+    },
+    {
+     "w": "Send",
+     "start": 47.598,
+     "end": 47.871
+    },
+    {
+     "w": "this",
+     "start": 47.889,
+     "end": 48.162
+    },
+    {
+     "w": "to",
+     "start": 48.18,
+     "end": 48.42
+    },
+    {
+     "w": "the",
+     "start": 48.436,
+     "end": 48.693
+    },
+    {
+     "w": "friend",
+     "start": 48.709,
+     "end": 49.016
+    },
+    {
+     "w": "who",
+     "start": 49.035,
+     "end": 49.293
+    },
+    {
+     "w": "freezes",
+     "start": 49.309,
+     "end": 49.84
+    },
+    {
+     "w": "when",
+     "start": 49.873,
+     "end": 50.147
+    },
+    {
+     "w": "people",
+     "start": 50.164,
+     "end": 50.678
+    },
+    {
+     "w": "watch.",
+     "start": 50.711,
+     "end": 51.001
+    }
+   ]
+  }
+ ]
+}
