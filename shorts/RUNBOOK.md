@@ -1,3 +1,18 @@
+> **2026-11-05 — Shivam: SHARE ENDING + "N SIGNS" LIST TEST (every script not yet built; read with the HOOK FORMULA box).**
+> Why: reels now get strong reach and a low skip rate, but ~0% shares and 0 follows.
+> 1. **Share ending.** The last line gives a reason to SEND the video, naming the person: "Send this to the friend who…",
+>    "Show this to someone who still…", "Tag the person who does this." Friend's voice, screenshot-able; may add a short
+>    comment prompt ("…and comment 'got me'"); never just "follow for more". Same send-line on the end card and at the start
+>    of post.description. Record it in script.json "share": "<the send line>". Already-Scripted, not-yet-built rows: rewrite
+>    only the end line + end card to this.
+> 2. **"N signs" list test** (competitor scan 2026-11-05, shorts/stats/competitors.json: MindSense "7 Signs You Are Quietly
+>    Becoming a High-Value Person" 528k and "6 Signs You Are Mentally Exhausted Without Realizing It" 440k; viewers retype the
+>    list and say "I check all the boxes"). Each script-writer run makes ONE of its new scripts a list: "N Signs You…"
+>    (5–7 signs) on an overthinking/relatable topic, each sign a near-universal "that's me" line, any finding verified,
+>    45–75 s, numbers on screen, hook still Context→Lean→Snapback, share ending "Send this to the friend who checks all N".
+>    script.json "pattern": "signs-list", tracker Theme "Pattern: signs-list". About every 3rd run make an interactive test
+>    instead ("Pause and pick…", answer = the real effect): "pattern": "test".
+
 > **2026-11-02 — Shivam: HOOK FORMULA = CONTEXT → LEAN → SNAPBACK (all styles, every script not yet built; on top of the
 > 3-act arc and the "that's me" Barnum lines).** The first 3–5 seconds must do three jobs, in this order:
 > 1. **Context (line 1, first words):** name what the video is about straight away — the everyday situation the viewer
