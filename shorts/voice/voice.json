@@ -5,7 +5,7 @@
  "num_step": 32,
  "speed": null,
  "seed": 7,
- "narrator": "British narrator: Kokoro bf_emma (Shivam 2026-10-14: his cloned voice sounded mechanical \u2014 don't use it). OmniVoice settings kept below but unused.",
+ "narrator": "British narrator: Kokoro bf_emma (Shivam 2026-10-14: his cloned voice sounded mechanical — don't use it). OmniVoice settings kept below but unused.",
  "polish": true,
  "kokoro_voice": "bf_emma",
  "kokoro_lang": "en-gb",
@@ -29,8 +29,12 @@
   "slots": {
    "14:00": [
     [
-     "Shivam",
-     "SElE2hWOUgTauIJ8DHdH"
+     "Brian",
+     "nPczCjzI2devNBz1zQrb"
+    ],
+    [
+     "Jessica",
+     "cgSgspJ2msm6clMCkdW9"
     ]
    ],
    "19:00": [
@@ -44,6 +48,6 @@
     ]
    ]
   },
-  "note": "2026-10-22 Shivam: his own ElevenLabs voice every day at 14:00; 19:00 alternates Jessica / Brian; 09:00 stays Heart as the baseline. Falls back to Heart if credits run out."
+  "note": "2026-11-05 Shivam: NEVER use his own voice (any slot, any tool). 14:00 alternates Brian / Jessica; 19:00 alternates Jessica / Brian; 09:00 stays Heart. Falls back to Heart if credits run out."
  }
 }
