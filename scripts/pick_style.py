@@ -24,4 +24,4 @@ k = cfg.get("max_in_a_row", 2)
 pool = [s for s in styles]
 if len(recent) >= k and len(set(recent[-k:])) == 1:
     pool = [s for s in styles if s["id"] != recent[-1]] or styles
-print(json.dumps(random.choice(pool)))
+print(json.dumps(random.choices(pool, weights=[s.get("weight", 1) for s in pool])[0]))  # weights: 2026-11-05 experiment

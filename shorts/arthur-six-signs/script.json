@@ -1,0 +1,343 @@
+{
+ "slug": "arthur-six-signs",
+ "no": 171,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 0,
+ "cast": [
+  "arthur",
+  "mae",
+  "critic",
+  "lila"
+ ],
+ "title": [
+  "6 Signs",
+  "They're Not Watching"
+ ],
+ "credit": "Gilovich, Medvec & Savitsky · 2000",
+ "handle": "@aroundthestrangeai",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMSpillCafe",
+   "chunks": [
+    [
+     "Arthur spills coffee"
+    ],
+    [
+     "in a café"
+    ],
+    [
+     "and thinks"
+    ],
+    [
+     "EVERYONE saw.",
+     {
+      "emph": "EVERYONE"
+     }
+    ]
+   ],
+   "text": "Arthur spills coffee in a café and thinks EVERYONE saw.",
+   "tone": "cringing, quick",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "RMSixSigns",
+   "chunks": [
+    [
+     "Six signs"
+    ],
+    [
+     "you do this,"
+    ],
+    [
+     "and the twist"
+    ],
+    [
+     "makes it BETTER.",
+     {
+      "emph": "BETTER"
+     }
+    ]
+   ],
+   "text": "Six signs you do this, and the twist makes it BETTER.",
+   "tone": "knowing, teasing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 1",
+   "art": "RMSign1",
+   "chunks": [
+    [
+     "One: you replay"
+    ],
+    [
+     "a tiny mistake"
+    ],
+    [
+     "for DAYS.",
+     {
+      "emph": "DAYS"
+     }
+    ]
+   ],
+   "text": "One: you replay a tiny mistake for DAYS.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 2",
+   "art": "RMSign2",
+   "chunks": [
+    [
+     "Two: you check"
+    ],
+    [
+     "your REFLECTION",
+     {
+      "emph": "REFLECTION"
+     }
+    ],
+    [
+     "before walking"
+    ],
+    [
+     "into a room."
+    ]
+   ],
+   "text": "Two: you check your REFLECTION before walking into a room.",
+   "tone": "wry"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 3",
+   "art": "RMSign3",
+   "chunks": [
+    [
+     "Three: one"
+    ],
+    [
+     "bad hair day"
+    ],
+    [
+     "ruins your MOOD.",
+     {
+      "emph": "MOOD"
+     }
+    ]
+   ],
+   "text": "Three: one bad hair day ruins your MOOD.",
+   "tone": "deadpan"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 4",
+   "art": "RMSign4",
+   "chunks": [
+    [
+     "Four: you REHEARSE",
+     {
+      "emph": "REHEARSE"
+     }
+    ],
+    [
+     "your order"
+    ],
+    [
+     "before the waiter"
+    ],
+    [
+     "gets there."
+    ]
+   ],
+   "text": "Four: you REHEARSE your order before the waiter gets there.",
+   "tone": "playful"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 5",
+   "art": "RMSign5",
+   "chunks": [
+    [
+     "Five: one"
+    ],
+    [
+     "weird look"
+    ],
+    [
+     "keeps you up"
+    ],
+    [
+     "all NIGHT.",
+     {
+      "emph": "NIGHT"
+     }
+    ]
+   ],
+   "text": "Five: one weird look keeps you up all NIGHT.",
+   "tone": "tired"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 6",
+   "art": "RMSign6",
+   "chunks": [
+    [
+     "Six: you think"
+    ],
+    [
+     "people still REMEMBER",
+     {
+      "emph": "REMEMBER"
+     }
+    ],
+    [
+     "your worst moment."
+    ]
+   ],
+   "text": "Six: you think people still REMEMBER your worst moment.",
+   "tone": "quiet"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMShirtStudy",
+   "chunks": [
+    [
+     "At Cornell,"
+    ],
+    [
+     "students wore"
+    ],
+    [
+     "an embarrassing T-shirt."
+    ],
+    [
+     "They guessed half"
+    ],
+    [
+     "the room noticed."
+    ],
+    [
+     "Only about"
+    ],
+    [
+     "a QUARTER did.",
+     {
+      "emph": "QUARTER"
+     }
+    ]
+   ],
+   "text": "At Cornell, students wore an embarrassing T-shirt. They guessed half the room noticed. Only about a QUARTER did.",
+   "tone": "curious, building",
+   "say": "At Cornell, students wore an embarrassing T-shirt. They guessed half the room noticed. Only about a quarter did."
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameSpotlight",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the SPOTLIGHT effect.",
+     {
+      "emph": "SPOTLIGHT"
+     }
+    ]
+   ],
+   "text": "It's called the SPOTLIGHT effect.",
+   "tone": "reveal",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Reframe",
+   "art": "RMOwnSpotlights",
+   "chunks": [
+    [
+     "Everyone's too busy"
+    ],
+    [
+     "in their own"
+    ],
+    [
+     "spotlight to"
+    ],
+    [
+     "WATCH yours.",
+     {
+      "emph": "WATCH"
+     }
+    ]
+   ],
+   "text": "Everyone's too busy in their own spotlight to WATCH yours.",
+   "tone": "warm"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndSend",
+   "chunks": [
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checked"
+    ],
+    [
+     "all SIX.",
+     {
+      "emph": "SIX"
+     }
+    ]
+   ],
+   "text": "Send this to the friend who checked all SIX.",
+   "tone": "warmly, smiling"
+  }
+ ],
+ "post": {
+  "title": "6 Signs You Think Everyone's Watching You #shorts",
+  "description": "Send this to the friend who checked all six. Replaying a tiny mistake for days, mirror checks, rehearsing a coffee order: that's the spotlight effect, the feeling that everyone notices you far more than they do. In Gilovich, Medvec & Savitsky's 2000 study (Journal of Personality and Social Psychology), Cornell students wore an embarrassing T-shirt into a room of peers. They guessed about half the room noticed; only about a quarter actually did. Everyone is busy in their own spotlight. Comment how many you checked. #psychology #shorts #overthinking #spotlighteffect #socialanxiety",
+  "tags": [
+   "spotlight effect",
+   "overthinking",
+   "psychology",
+   "self-conscious",
+   "Gilovich",
+   "signs you"
+  ]
+ },
+ "thumb_text": "6 Signs They're Watching",
+ "thumb_emph": "Watching",
+ "thumb_mood": "anxious",
+ "music_vibe": "lofi",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Arthur spills coffee in a café",
+  "lean": "pain",
+  "snapback": "Six signs you do this, and the twist makes it BETTER."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who checked all six.",
+ "experiment": "signs-list (competitor ×2 median) + share ending, 2026-11-05"
+}

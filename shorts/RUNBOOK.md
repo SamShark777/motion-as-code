@@ -1,3 +1,5 @@
+> **2026-11-05 FORMULA EXPERIMENT (competitor + own data).** What worked: "N Signs You…" titles ≈2× competitor median; 90 s+ ≈1.36×; our retro (1044) and tedmg (965) medians beat ted2 (319); "Character story" is our best pattern. Applied: pick_style weights retro/tedmg 2×; share endings on 148–153; test Short #171 arthur-six-signs (signs-list). Review in ~2 weeks: compare signs-list + share-ending views/shares vs. medians in shorts/stats/youtube.json.
+
 > **2026-11-05 — Shivam: SHARE ENDING + "N SIGNS" LIST TEST (every script not yet built; read with the HOOK FORMULA box).**
 > Why: reels now get strong reach and a low skip rate, but ~0% shares and 0 follows.
 > 1. **Share ending.** The last line gives a reason to SEND the video, naming the person: "Send this to the friend who…",

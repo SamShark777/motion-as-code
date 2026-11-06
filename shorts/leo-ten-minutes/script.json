@@ -253,15 +253,27 @@
     ],
     [
      "is a wish."
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who's always"
+    ],
+    [
+     "\"ten minutes away.\""
     ]
    ],
-   "text": "Grace smiles: \"Use LAST time, not hope.\" Ten minutes is a wish.",
+   "text": "Grace smiles: \"Use LAST time, not hope.\" Ten minutes is a wish. Send this to the friend who's always \"ten minutes away.\"",
    "tone": "warmly, blunt"
   }
  ],
  "post": {
   "title": "Why 'It'll Take 10 Minutes' Never Does #shorts",
-  "description": "Leo says his essay will take ten minutes. It's 7 PM. You know how this ends. It's not laziness: almost everyone underestimates. In Roger Buehler, Dale Griffin and Michael Ross's 1994 study (Journal of Personality and Social Psychology), 37 psychology students estimated how long their senior thesis would take: 33.9 days on average. It took 55.5 days. Even their 'if everything goes as poorly as it possibly could' estimate (48.6 days) was too short, and only about 30% finished within their own prediction. Daniel Kahneman and Amos Tversky named it the planning fallacy (1979): we picture the plan, not the interruptions, and ignore how long similar tasks took last time. Fix: estimate from the last time you did it. Comment 'got me' if your ten minutes became an evening. #psychology #shorts #procrastination #planningfallacy #productivity",
+  "description": "Send this to the friend who's always \"ten minutes away.\" Leo says his essay will take ten minutes. It's 7 PM. You know how this ends. It's not laziness: almost everyone underestimates. In Roger Buehler, Dale Griffin and Michael Ross's 1994 study (Journal of Personality and Social Psychology), 37 psychology students estimated how long their senior thesis would take: 33.9 days on average. It took 55.5 days. Even their 'if everything goes as poorly as it possibly could' estimate (48.6 days) was too short, and only about 30% finished within their own prediction. Daniel Kahneman and Amos Tversky named it the planning fallacy (1979): we picture the plan, not the interruptions, and ignore how long similar tasks took last time. Fix: estimate from the last time you did it. Comment 'got me' if your ten minutes became an evening. #psychology #shorts #procrastination #planningfallacy #productivity",
   "tags": [
    "planning fallacy",
    "procrastination",
@@ -282,5 +294,6 @@
   "lean": "pain",
   "snapback": "But it's not laziness. Almost EVERYONE guesses wrong."
  },
- "relate": "barnum"
+ "relate": "barnum",
+ "share": "Send this to the friend who's always \"ten minutes away.\""
 }

@@ -277,15 +277,27 @@
      {
       "emph": "DOWN"
      }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who replays"
+    ],
+    [
+     "everything."
     ]
    ],
-   "text": "You're not stuck. You just haven't written it DOWN.",
+   "text": "You're not stuck. You just haven't written it DOWN. Send this to the friend who replays everything.",
    "tone": "warmly, blunt"
   }
  ],
  "post": {
   "title": "Write Down the Thing You Keep Replaying #shorts",
-  "description": "Lila keeps replaying the meeting where she called her boss \"Mum\". The Critic hits replay all night. The fix isn't forcing yourself to forget it; it's writing it down. In James Pennebaker and Sandra Beall's 1986 study (Journal of Abnormal Psychology), healthy undergraduates wrote about personally upsetting or traumatic experiences for 15 minutes on four consecutive days, while a control group wrote about trivial topics. Over the following six months, the students who wrote about traumatic events visited the university health centre less. It's called expressive writing, and hundreds of studies followed; later reviews find the benefits are real but modest and vary between people, so treat it as a tool, not a cure. Try it: 15 minutes, then close the notebook. If something is truly overwhelming, talk to someone you trust or a professional. Comment 'got me' if you've won a shower argument this week. #psychology #shorts #overthinking #journaling #expressivewriting",
+  "description": "Send this to the friend who replays everything. Lila keeps replaying the meeting where she called her boss \"Mum\". The Critic hits replay all night. The fix isn't forcing yourself to forget it; it's writing it down. In James Pennebaker and Sandra Beall's 1986 study (Journal of Abnormal Psychology), healthy undergraduates wrote about personally upsetting or traumatic experiences for 15 minutes on four consecutive days, while a control group wrote about trivial topics. Over the following six months, the students who wrote about traumatic events visited the university health centre less. It's called expressive writing, and hundreds of studies followed; later reviews find the benefits are real but modest and vary between people, so treat it as a tool, not a cure. Try it: 15 minutes, then close the notebook. If something is truly overwhelming, talk to someone you trust or a professional. Comment 'got me' if you've won a shower argument this week. #psychology #shorts #overthinking #journaling #expressivewriting",
   "tags": [
    "expressive writing",
    "overthinking",
@@ -306,5 +318,6 @@
   "lean": "pain",
   "snapback": "But the fix isn't forgetting it. It's WRITING it down."
  },
- "relate": "barnum"
+ "relate": "barnum",
+ "share": "Send this to the friend who replays everything."
 }

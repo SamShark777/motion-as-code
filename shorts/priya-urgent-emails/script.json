@@ -245,15 +245,27 @@
       "emph": "LOUD",
       "fx": "pop"
      }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who answers"
+    ],
+    [
+     "every email first."
     ]
    ],
-   "text": "Sam's sticky note: \"Big thing first.\" Urgent isn't important. It's just LOUD.",
+   "text": "Sam's sticky note: \"Big thing first.\" Urgent isn't important. It's just LOUD. Send this to the friend who answers every email first.",
    "tone": "warmly, blunt"
   }
  ],
  "post": {
   "title": "Why You Answer Emails Instead of Doing the Big Thing #shorts",
-  "description": "Priya answered twenty emails today. Her big project is still untouched. It's not laziness: deadlines pull at us. In 'The Mere Urgency Effect' (Journal of Consumer Research, 2018), Meng Zhu, Yang Yang and Christopher Hsee ran five experiments. In one, 124 people chose between two tasks: one paid three Hershey's Kisses, the other five. Almost everyone took five. But when the three-chocolate task had to be done within 10 minutes and the other within 24 hours, 31% chose the urgent, smaller reward, even though both tasks were about the same. People who feel especially busy were more likely to fall for it. Urgent isn't the same as important. Try doing the big thing first. Comment 'got me' if your inbox won today. #psychology #shorts #productivity #procrastination #urgency",
+  "description": "Send this to the friend who answers every email first. Priya answered twenty emails today. Her big project is still untouched. It's not laziness: deadlines pull at us. In 'The Mere Urgency Effect' (Journal of Consumer Research, 2018), Meng Zhu, Yang Yang and Christopher Hsee ran five experiments. In one, 124 people chose between two tasks: one paid three Hershey's Kisses, the other five. Almost everyone took five. But when the three-chocolate task had to be done within 10 minutes and the other within 24 hours, 31% chose the urgent, smaller reward, even though both tasks were about the same. People who feel especially busy were more likely to fall for it. Urgent isn't the same as important. Try doing the big thing first. Comment 'got me' if your inbox won today. #psychology #shorts #productivity #procrastination #urgency",
   "tags": [
    "mere urgency effect",
    "productivity",
@@ -274,5 +286,6 @@
   "lean": "pain",
   "snapback": "But it's not laziness. Your brain chases TIMERS."
  },
- "relate": "barnum"
+ "relate": "barnum",
+ "share": "Send this to the friend who answers every email first."
 }

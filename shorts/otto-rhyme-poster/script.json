@@ -273,15 +273,27 @@
      {
       "emph": "TRUE"
      }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who believes"
+    ],
+    [
+     "anything that rhymes."
     ]
    ],
-   "text": "Catchy isn't the same as TRUE.",
+   "text": "Catchy isn't the same as TRUE. Send this to the friend who believes anything that rhymes.",
    "tone": "warmly, blunt"
   }
  ],
  "post": {
   "title": "Why Rhymes Sound More True #shorts",
-  "description": "Otto's new office poster rhymes: \"Work late, feel great.\" Arthur nods along. You probably would too. In 2000, Matthew McGlone and Jessica Tofighbakhsh (Psychological Science, \"Birds of a feather flock conjointly (?): Rhyme as reason in aphorisms\") had people rate how accurate sayings about human behaviour were. Rhyming sayings like \"Woes unite foes\" were judged more accurate than the same idea without the rhyme, like \"Woes unite enemies\". When people were told to judge the meaning and not the sound, the rhyme's advantage shrank. The rhyme-as-reason effect: smooth, easy-to-process phrases feel more true. Catchy isn't the same as true. Comment the most suspicious rhyme you've ever believed. #psychology #shorts #cognitivebias #rhyme #persuasion",
+  "description": "Send this to the friend who believes anything that rhymes. Otto's new office poster rhymes: \"Work late, feel great.\" Arthur nods along. You probably would too. In 2000, Matthew McGlone and Jessica Tofighbakhsh (Psychological Science, \"Birds of a feather flock conjointly (?): Rhyme as reason in aphorisms\") had people rate how accurate sayings about human behaviour were. Rhyming sayings like \"Woes unite foes\" were judged more accurate than the same idea without the rhyme, like \"Woes unite enemies\". When people were told to judge the meaning and not the sound, the rhyme's advantage shrank. The rhyme-as-reason effect: smooth, easy-to-process phrases feel more true. Catchy isn't the same as true. Comment the most suspicious rhyme you've ever believed. #psychology #shorts #cognitivebias #rhyme #persuasion",
   "tags": [
    "rhyme as reason",
    "cognitive bias",
@@ -302,5 +314,6 @@
   "lean": "proof",
   "snapback": "But it's not wisdom. It's how EASY it sounds."
  },
- "relate": "barnum"
+ "relate": "barnum",
+ "share": "Send this to the friend who believes anything that rhymes."
 }
