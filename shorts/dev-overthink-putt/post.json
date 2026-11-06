@@ -1,0 +1,17 @@
+{
+ "no": 150,
+ "slug": "dev-overthink-putt",
+ "date": "2026-11-07",
+ "slot": "19:00",
+ "due": "2026-11-08T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-07/dev-overthink-putt.mp4",
+ "buffer": {
+  "youtube": "6aee51aed6bbae6fa14e24fd",
+  "instagram": "6aee51af004e4879a71ae51b",
+  "tiktok": "6aee51b09214322f68b56a03"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 52.0
+}

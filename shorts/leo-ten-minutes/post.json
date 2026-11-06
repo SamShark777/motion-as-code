@@ -1,0 +1,17 @@
+{
+ "no": 149,
+ "slug": "leo-ten-minutes",
+ "date": "2026-11-07",
+ "slot": "14:00",
+ "due": "2026-11-07T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-07/leo-ten-minutes.mp4",
+ "buffer": {
+  "youtube": "6aee51a7af7e526d43e5b27e",
+  "instagram": "6aee51a8229bf05daf126fed",
+  "tiktok": "6aee51a9229bf05daf127023"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 49.8
+}
