@@ -392,3 +392,5 @@ Commit, push and send Shivam the headline findings plus what was changed.
             "tags": ["spotlight effect", "psychology"] }
 }
 ```
+
+> **2026-11-05 — Shivam: NO swoosh sounds at all.** No whoosh / swoosh / swipe / swish anywhere (scene changes, per-line "sfx", HyperFrames builds). The mixers drop them automatically (audio_mix.json "no_swoosh": true); never write them into a script's "sfx" either. Pops, ticks, chimes and soft taps are fine.

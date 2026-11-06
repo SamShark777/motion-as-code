@@ -105,6 +105,8 @@ _n = {}
 
 def cue(t, name, db, pan=0.0, rate=1.0, take=None, length=None, fade=0.03, mode=None):
     """Place `name` at time t (seconds). take: 1-based take index (default: alternate)."""
+    if any(w in name for w in ("whoosh", "swoosh", "swipe", "swish")):
+        return  # Shivam 2026-11-05: no swoosh sounds at all
     k = _n.get(name, 0)
     _n[name] = k + 1
     CUES.append(dict(t=float(t), name=name, db=float(db), pan=float(pan), rate=float(rate), take=take if take else None, k=k, length=length, fade=fade, mode=mode or MODE.get(name, "onset")))

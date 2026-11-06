@@ -24,7 +24,7 @@ COLS = [  # header, width, help (cell comment)
                            "#210B3D, violet #7624CE, neon green highlight; Barlow Condensed headlines'."),
     ("Characters", 26, "Optional: who appears, e.g. 'the One More protagonist (curly hair, violet jacket)', or 'none — objects only'."),
     ("Sound cues", 34, "Optional: sound effects and moments, e.g. 'soft swipe on each card, notification ping on the cue, "
-                       "three wooden taps on the end icons'. Available: swipe, whoosh, pop, tick, chime, chime-bright, "
+                       "three wooden taps on the end icons'. Available (never swipe/whoosh, Shivam 2026-11-05): pop, tick, chime, chime-bright, "
                        "rising, notification, flip, flip-dull, lightning, airy, card-slide, settle, toggle, drawer, "
                        "page-turn, wood-tap. Music: the soft F-major pad bed."),
 ]

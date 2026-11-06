@@ -72,6 +72,8 @@ def main():
             if fx and i != len(lines) - 1 and MIX.get("emphasis_sfx", True):
                 snd, vol = FX_SOUND.get(fx, ("pop", 0.34))
                 cues.append((TM["chunks"][i][j] + 0.05, snd, vol))
+    if MIX.get("no_swoosh", True):  # Shivam 2026-11-05: no swoosh/whoosh/swipe sounds at all
+        cues = [c for c in cues if not any(w in c[1] for w in ("whoosh", "swoosh", "swipe", "swish"))]
     sfx = np.zeros(n, np.float32)
     rate = 0.94 + (L.hash_seed(str(S.get("slug")) + "sfx" + os.environ.get("MUSIC_VARIANT", "")) % 1000) / 1000 * 0.12  # per-video pitch of the effects (0.94-1.06)
     for k, (at, snd, vol) in enumerate(sorted(cues)):
