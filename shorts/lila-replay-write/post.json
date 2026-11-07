@@ -1,0 +1,17 @@
+{
+ "no": 152,
+ "slug": "lila-replay-write",
+ "date": "2026-11-08",
+ "slot": "14:00",
+ "due": "2026-11-08T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-08/lila-replay-write.mp4",
+ "buffer": {
+  "youtube": "6aef8c7a51492b796efc4bff",
+  "instagram": "6aef8c7b562f2e6de97d29ad",
+  "tiktok": "6aef8c7c229bf05daf724547"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 47.5
+}

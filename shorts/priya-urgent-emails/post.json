@@ -1,0 +1,17 @@
+{
+ "no": 151,
+ "slug": "priya-urgent-emails",
+ "date": "2026-11-08",
+ "slot": "09:00",
+ "due": "2026-11-08T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-08/priya-urgent-emails.mp4",
+ "buffer": {
+  "youtube": "6aef8c7751492b796efc4ba0",
+  "instagram": "6aef8c78562f2e6de97d2943",
+  "tiktok": "6aef8c78229bf05daf7243be"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 36.5
+}

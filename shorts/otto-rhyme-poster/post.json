@@ -1,0 +1,17 @@
+{
+ "no": 153,
+ "slug": "otto-rhyme-poster",
+ "date": "2026-11-08",
+ "slot": "19:00",
+ "due": "2026-11-09T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-08/otto-rhyme-poster.mp4",
+ "buffer": {
+  "youtube": "6aef8c7e004e4879a77b2fbd",
+  "instagram": "6aef8c7e229bf05daf7245c9",
+  "tiktok": "6aef8c7f229bf05daf724612"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 54.9
+}
