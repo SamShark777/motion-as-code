@@ -1,0 +1,319 @@
+{
+ "slug": "june-dont-think",
+ "no": 160,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "June",
+ "episode": 5,
+ "cast": [
+  "june",
+  "nia"
+ ],
+ "title": [
+  "Don't Think",
+  "About It"
+ ],
+ "credit": "Wegner, Schneider, Carter & White · 1987",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why You Can't Stop Thinking About Your Ex #shorts",
+  "description": "Send this to the friend who 'isn't thinking about him'. June is trying not to think about her ex, so every song and every street is him. In 1987, Daniel Wegner, David Schneider, Samuel Carter and Teri White (Journal of Personality and Social Psychology) asked people to think aloud for five minutes while trying NOT to think of a white bear, and to ring a bell whenever it came to mind. They kept ringing. And when they were later allowed to think about it, people who had suppressed it first thought about the white bear more than people who hadn't: a rebound effect. In a second experiment, giving people one specific thing to think about instead (a red Volkswagen) cut the rebound. So don't fight the thought; let it pass and steer toward something else on purpose. If thoughts about someone feel overwhelming, talking to a friend or a professional helps. Comment 'got me' if you looked when someone said 'don't look'. #psychology #shorts #overthinking #whitebear #thoughtsuppression",
+  "tags": [
+   "white bear experiment",
+   "thought suppression",
+   "overthinking",
+   "breakup",
+   "psychology",
+   "Wegner"
+  ]
+ },
+ "thumb_text": "Don't Think About It",
+ "thumb_emph": "Don't",
+ "thumb_mood": "anxious",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "June is trying not to think about her ex",
+  "lean": "pain",
+  "snapback": "But the trying is the PROBLEM."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who 'isn't thinking about him.'",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGJuneEx",
+   "chunks": [
+    [
+     "June is trying"
+    ],
+    [
+     "not to think"
+    ],
+    [
+     "about her EX.",
+     {
+      "emph": "EX"
+     }
+    ]
+   ],
+   "text": "June is trying not to think about her EX.",
+   "tone": "softly, a little dramatic",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "MGEverySong",
+   "chunks": [
+    [
+     "You know this:"
+    ],
+    [
+     "every song,"
+    ],
+    [
+     "every street,"
+    ],
+    [
+     "HIM.",
+     {
+      "emph": "HIM"
+     }
+    ]
+   ],
+   "text": "You know this: every song, every street, HIM.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGSnapTrying",
+   "chunks": [
+    [
+     "But the trying"
+    ],
+    [
+     "is the PROBLEM.",
+     {
+      "emph": "PROBLEM"
+     }
+    ]
+   ],
+   "text": "But the trying is the PROBLEM.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    880,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGWhiteBear",
+   "chunks": [
+    [
+     "In 1987,"
+    ],
+    [
+     "Daniel Wegner"
+    ],
+    [
+     "told people:"
+    ],
+    [
+     "don't think"
+    ],
+    [
+     "of a"
+    ],
+    [
+     "WHITE bear.",
+     {
+      "emph": "WHITE"
+     }
+    ]
+   ],
+   "text": "In 1987, Daniel Wegner told people: don't think of a WHITE bear.",
+   "tone": "curious",
+   "say": "In nineteen eighty-seven, Daniel Wegner told people: don't think of a white bear."
+  },
+  {
+   "sec": "cd",
+   "scene": "Bells",
+   "art": "MGBells",
+   "chunks": [
+    [
+     "Ring a bell"
+    ],
+    [
+     "if it"
+    ],
+    [
+     "pops up."
+    ],
+    [
+     "They kept"
+    ],
+    [
+     "RINGING.",
+     {
+      "emph": "RINGING"
+     }
+    ]
+   ],
+   "text": "Ring a bell if it pops up. They kept RINGING.",
+   "tone": "amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Rebound",
+   "art": "MGRebound",
+   "chunks": [
+    [
+     "Afterwards,"
+    ],
+    [
+     "those who'd"
+    ],
+    [
+     "fought it"
+    ],
+    [
+     "thought of"
+    ],
+    [
+     "the bear MORE.",
+     {
+      "emph": "MORE"
+     }
+    ]
+   ],
+   "text": "Afterwards, those who'd fought it thought of the bear MORE.",
+   "tone": "surprised, serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameRebound",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the REBOUND effect.",
+     {
+      "emph": "REBOUND"
+     }
+    ]
+   ],
+   "text": "It's called the REBOUND effect.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    950,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGDontLook",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last time"
+    ],
+    [
+     "someone said"
+    ],
+    [
+     "'don't look.'"
+    ],
+    [
+     "You LOOKED.",
+     {
+      "emph": "LOOKED"
+     }
+    ]
+   ],
+   "text": "Think of the last time someone said 'don't look.' You LOOKED.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Nia",
+   "art": "MGNiaTrick",
+   "chunks": [
+    [
+     "Nia's trick:"
+    ],
+    [
+     "pick another"
+    ],
+    [
+     "thing,"
+    ],
+    [
+     "and think"
+    ],
+    [
+     "about THAT",
+     {
+      "emph": "THAT"
+     }
+    ],
+    [
+     "on purpose."
+    ]
+   ],
+   "text": "Nia's trick: pick another thing, and think about THAT on purpose.",
+   "tone": "warmly, confident"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndPush",
+   "chunks": [
+    [
+     "You're not obsessed."
+    ],
+    [
+     "You're pushing"
+    ],
+    [
+     "too HARD.",
+     {
+      "emph": "HARD"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who 'isn't"
+    ],
+    [
+     "thinking about him.'"
+    ]
+   ],
+   "text": "You're not obsessed. You're pushing too HARD. Send this to the friend who 'isn't thinking about him.'",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

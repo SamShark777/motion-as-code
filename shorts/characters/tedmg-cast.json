@@ -18,7 +18,8 @@
     "ep 2 (shaky-bridge): first date in two days; Theo says make it scary (Dutton & Aron 1974 shaky bridge, misattribution of arousal); Milo books a horror escape room, then remembers he is scared of the dark — PART 2",
     "ep 3 (talk-to-yourself, with Nia): the speech from ep 1 — catches Nia talking to herself by name, learns self-distancing (Kross et al. 2014), coaches himself by name and goes on calm",
     "ep 4 (lima-syndrome): locked in Rosa's escape room with June; tells her about his speech",
-    "ep 5 (milo-snap-judgment, with Dev): Dev is 20 min late, Milo decides he's \"just unreliable\"; next week Milo is late and blames the bus; fundamental attribution error (Jones & Harris 1967: readers still judged an assigned pro-Castro writer as pro-Castro, 44.1 vs 22.9)"
+    "ep 5 (milo-snap-judgment, with Dev): Dev is 20 min late, Milo decides he's \"just unreliable\"; next week Milo is late and blames the bus; fundamental attribution error (Jones & Harris 1967: readers still judged an assigned pro-Castro writer as pro-Castro, 44.1 vs 22.9)",
+    "ep 6 (milo-lottery-ticket, with Theo): buys a lottery ticket and spends the millions in his head; hedonic adaptation (Brickman, Coates & Janoff-Bulman 1978: 22 winners no happier, enjoyed everyday pleasures less); no win, Theo hands him toast"
    ]
   },
   "nia": {
@@ -35,7 +36,9 @@
     "ep 1 (first-impressions, with Rosa): \"they'll judge your face first\"",
     "ep 2 (talk-to-yourself, with Milo): pep-talks herself by name in the mirror; Milo, 5 min before his speech, thinks she's lost it, while his own head spirals in 'I' (Kross et al. 2014 self-distancing); he tries 'Milo, you've done harder things' and walks on stage calm",
     "ep 3 (ikea-effect, with Theo): six hours on a wobbly shelf, prices it at $100 vs $40 new (IKEA effect, Norton, Mochon & Ariely 2012: builders paid 63% more); Theo then hands her his flat-pack desk",
-    "ep 4 (rosa-start-monday, with Rosa): smirks at \"I'll start Monday\", then texts \"gym? 7am. no excuses\" for the new month"
+    "ep 4 (rosa-start-monday, with Rosa): smirks at \"I'll start Monday\", then texts \"gym? 7am. no excuses\" for the new month",
+    "ep 5 (rosa-five-signs, with Rosa): hands Rosa her review back and makes her read the nice ones out loud (negativity bias)",
+    "ep 6 (june-dont-think, with June): teaches June the one-other-thing trick (focused distraction, the red Volkswagen from Wegner 1987)"
    ]
   },
   "theo": {
@@ -52,7 +55,8 @@
     "ep 2 (decision-facts, with Dev): bets Dev three facts about choosing — defaults (Johnson & Goldstein 2003 organ donors 42% vs 82%), the jam study (Iyengar & Lepper 2000, mixed replications), the decoy (Huber, Payne & Puto 1982); calls it choice architecture",
     "ep 3 (ikea-effect): offers Nia $20 for her shelf, names the IKEA effect",
     "ep 4 (june-doorway): laughs 'blame the door'",
-    "ep 5 (dev-overthink-putt): hums a tune at mini golf so Dev stops overthinking his putt; high five"
+    "ep 5 (dev-overthink-putt): hums a tune at mini golf so Dev stops overthinking his putt; high five",
+    "ep 6 (milo-lottery-ticket, with Milo): checks the numbers, no win; hands Milo a slice of toast — the small stuff isn't small"
    ]
   },
   "rosa": {
@@ -68,7 +72,8 @@
    "history": [
     "ep 1 (first-impressions): rehearsed 40 interview answers; learns faces are judged in 0.1 s and the halo effect, bins the script and smiles at the receptionist first",
     "ep 2 (lima-syndrome, with Milo + June): new escape-room game master; no-hints rule collapses, whispers answers, opens the door at minute 30 (Lima syndrome, 1996 Lima hostage crisis; one case, not lab studies)",
-    "ep 3 (rosa-start-monday, with Nia): Thursday night, crisps in hand, swears \"I'll start Monday\"; fresh start effect (Dai, Milkman & Riis 2014: diet searches, gym visits and commitment contracts rise after temporal landmarks); goes to the gym on the 1st with Nia"
+    "ep 3 (rosa-start-monday, with Nia): Thursday night, crisps in hand, swears \"I'll start Monday\"; fresh start effect (Dai, Milkman & Riis 2014: diet searches, gym visits and commitment contracts rise after temporal landmarks); goes to the gym on the 1st with Nia",
+    "ep 4 (rosa-five-signs, with Nia): performance review with nine compliments and one 'could improve' — rereads the bad one five times; 5-signs list on negativity bias (Baumeister, Bratslavsky, Finkenauer & Vohs 2001); Nia makes her read the nice ones out loud"
    ]
   },
   "dev": {
@@ -103,7 +108,8 @@
     "ep 1 (doodlers): doodling — June spirals through the meeting, Dev says she is not listening, but she is the one who remembers (Andrade 2009); next meeting Dev doodles sharks",
     "ep 2 (lima-syndrome): shares her snacks with game-master Rosa; walks out early",
     "ep 3 (dev-armchair): offers Dev $40 for his armchair and walks off with it",
-    "ep 4 (june-doorway, with Theo): walks into the kitchen and forgets why, remembers at her desk (scissors); doorway effect (Radvansky et al. 2011); ends holding the scissors with no idea what for"
+    "ep 4 (june-doorway, with Theo): walks into the kitchen and forgets why, remembers at her desk (scissors); doorway effect (Radvansky et al. 2011); ends holding the scissors with no idea what for",
+    "ep 5 (june-dont-think, with Nia): 1 AM, trying not to think about her ex — every song, every street is him; white bear / rebound effect (Wegner, Schneider, Carter & White 1987); Nia's trick: think about one other thing on purpose (a red car)"
    ]
   }
  }

@@ -1,0 +1,304 @@
+{
+ "slug": "milo-lottery-ticket",
+ "no": 155,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Milo",
+ "episode": 6,
+ "cast": [
+  "milo",
+  "theo"
+ ],
+ "title": [
+  "The Jackpot",
+  "Fades"
+ ],
+ "credit": "Brickman, Coates & Janoff-Bulman · 1978",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Winning the Lottery Wouldn't Fix It #shorts",
+  "description": "Send this to the friend who's already spent the jackpot. Milo buys a lottery ticket and spends the millions in his head: the house, the car, quitting in style. In a famous 1978 study (Journal of Personality and Social Psychology), Philip Brickman, Dan Coates and Ronnie Janoff-Bulman interviewed 22 major lottery winners and compared them with a control group of 22 people who hadn't won. The winners were not happier overall, and they rated everyday pleasures (chatting with a friend, a funny joke, breakfast, a compliment) as less enjoyable. Psychologists call it hedonic adaptation: we get used to good changes and return toward our usual level. Fair warning: it was a small study, and larger later research on Swedish lottery winners (Lindqvist, Östling & Cesarini, 2020) found big wins can raise long-term life satisfaction. Money helps; it just doesn't keep the thrill. The small stuff is where a lot of the joy lives. Comment 'got me' if you've planned your lottery speech. #psychology #shorts #happiness #hedonicadaptation #lottery",
+  "tags": [
+   "hedonic adaptation",
+   "happiness",
+   "lottery winners",
+   "psychology",
+   "Brickman",
+   "overthinking"
+  ]
+ },
+ "thumb_text": "The Jackpot Wouldn't Fix It",
+ "thumb_emph": "Jackpot",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Milo buys a lottery ticket and spends the millions in his head",
+  "lean": "shock",
+  "snapback": "But in one famous study, the winners weren't HAPPIER."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who's already spent the jackpot.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGTicketHook",
+   "chunks": [
+    [
+     "Milo buys"
+    ],
+    [
+     "a LOTTERY ticket",
+     {
+      "emph": "LOTTERY"
+     }
+    ],
+    [
+     "and spends"
+    ],
+    [
+     "the millions"
+    ],
+    [
+     "in his head."
+    ]
+   ],
+   "text": "Milo buys a LOTTERY ticket and spends the millions in his head.",
+   "tone": "playful, dreamy",
+   "cam": [
+    540,
+    950,
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "MGDreamList",
+   "chunks": [
+    [
+     "You've done it:"
+    ],
+    [
+     "the house,"
+    ],
+    [
+     "the car,"
+    ],
+    [
+     "quitting in STYLE.",
+     {
+      "emph": "STYLE"
+     }
+    ]
+   ],
+   "text": "You've done it: the house, the car, quitting in STYLE.",
+   "tone": "knowingly, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGSnapWinners",
+   "chunks": [
+    [
+     "But in"
+    ],
+    [
+     "one famous study,"
+    ],
+    [
+     "the winners"
+    ],
+    [
+     "weren't HAPPIER.",
+     {
+      "emph": "HAPPIER"
+     }
+    ]
+   ],
+   "text": "But in one famous study, the winners weren't HAPPIER.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGBrickman",
+   "chunks": [
+    [
+     "In 1978,"
+    ],
+    [
+     "Philip Brickman interviewed"
+    ],
+    [
+     "twenty-two big"
+    ],
+    [
+     "lottery WINNERS.",
+     {
+      "emph": "WINNERS"
+     }
+    ]
+   ],
+   "text": "In 1978, Philip Brickman interviewed twenty-two big lottery WINNERS.",
+   "tone": "curious",
+   "say": "In nineteen seventy-eight, Philip Brickman interviewed twenty-two big lottery winners."
+  },
+  {
+   "sec": "cd",
+   "scene": "Compare",
+   "art": "MGNoHappier",
+   "chunks": [
+    [
+     "Next to"
+    ],
+    [
+     "non-winners,"
+    ],
+    [
+     "they were"
+    ],
+    [
+     "no HAPPIER.",
+     {
+      "emph": "HAPPIER"
+     }
+    ]
+   ],
+   "text": "Next to non-winners, they were no HAPPIER.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Pleasures",
+   "art": "MGLessFun",
+   "chunks": [
+    [
+     "And breakfast,"
+    ],
+    [
+     "or a joke?"
+    ],
+    [
+     "They enjoyed"
+    ],
+    [
+     "those LESS.",
+     {
+      "emph": "LESS"
+     }
+    ]
+   ],
+   "text": "And breakfast, or a joke? They enjoyed those LESS.",
+   "tone": "surprised, softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameHedonic",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "HEDONIC adaptation:",
+     {
+      "emph": "HEDONIC"
+     }
+    ],
+    [
+     "you get used"
+    ],
+    [
+     "to the"
+    ],
+    [
+     "good stuff."
+    ]
+   ],
+   "text": "It's called HEDONIC adaptation: you get used to the good stuff.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    950,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGPhoneHadTo",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the phone"
+    ],
+    [
+     "you HAD",
+     {
+      "emph": "HAD"
+     }
+    ],
+    [
+     "to have."
+    ],
+    [
+     "Now?"
+    ],
+    [
+     "Just a phone."
+    ]
+   ],
+   "text": "Think of the phone you HAD to have. Now? Just a phone.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGTheoToast",
+   "chunks": [
+    [
+     "The small stuff"
+    ],
+    [
+     "isn't small."
+    ],
+    [
+     "It's where"
+    ],
+    [
+     "JOY lives.",
+     {
+      "emph": "JOY"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who's already spent"
+    ],
+    [
+     "the jackpot."
+    ]
+   ],
+   "text": "The small stuff isn't small. It's where JOY lives. Send this to the friend who's already spent the jackpot.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

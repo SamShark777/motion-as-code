@@ -51,7 +51,8 @@
     "ep 3 (thirty-six-questions): hands Otto and Arthur the list of 36 questions",
     "ep 4 (mae-liking-gap, with the Critic): five minutes of small talk with her new neighbour; the Critic replays it all night ('that joke? awful'); liking gap (Boothby et al. 2018); next morning the neighbour brings cookies",
     "ep 5 (lila-group-photo, with Lila): shrugs off Lila's selfie panic: \"nobody inspects your face like you do\" (cheerleader effect, Walker & Vul 2014)",
-    "ep 6 (lila-replay-write): hands Lila a pen: \"fifteen minutes, then close the notebook\""
+    "ep 6 (lila-replay-write): hands Lila a pen: \"fifteen minutes, then close the notebook\"",
+    "ep 7 (mae-too-many-shows, with The Doubt): endless choices on her streaming app, scrolls forty minutes and watches nothing; choice overload (Iyengar & Lepper 2000 jam study: 24 jams ~3% of stoppers bought, 6 jams ~30%); picks from three and is watching in a minute"
    ]
   },
   "otto": {
@@ -70,7 +71,8 @@
     "ep 3 (tapping-song, with Lila + Arthur): taps Happy Birthday on his desk, sure it's 'EASY'; Lila guesses Morse code (curse of knowledge, Newton 1990: 3 of 120 songs); tomorrow he trains the whole office — Arthur already sweating, PART 2",
     "ep 4 (otto-quiz-night, with Arthur): sure he crushed quiz night (\"EASY!\"), comes LAST; Dunning-Kruger effect (Kruger & Dunning 1999: bottom-quarter scorers averaged around the 12th percentile but guessed around the 62nd)",
     "ep 5 (lila-replay-write): cameo in Lila's replay as the boss she called \"Mum\"",
-    "ep 6 (otto-rhyme-poster, with Arthur): hangs a rhyming poster \"Work late, feel great\"; rhyme-as-reason effect (McGlone & Tofighbakhsh 2000: \"woes unite foes\" rated more accurate than \"woes unite enemies\")"
+    "ep 6 (otto-rhyme-poster, with Arthur): hangs a rhyming poster \"Work late, feel great\"; rhyme-as-reason effect (McGlone & Tofighbakhsh 2000: \"woes unite foes\" rated more accurate than \"woes unite enemies\")",
+    "ep 7 (otto-name-it, with Lila): furious when the printer jams before his big meeting, types in caps, insists he's fine; affect labeling (Lieberman et al. 2007: naming the feeling lowered amygdala activity); Lila asks 'Frustrated?' and his jaw unclenches"
    ]
   },
   "lila": {
@@ -88,7 +90,8 @@
     "ep 2 (scarcity-cookies, with The Doubt + Mae): not hungry, sees 'only 2 left', The Doubt whispers 'what if they're gone?', buys both (scarcity effect, Worchel, Lee & Adewole 1975); new rule: would I want it if there were ten?",
     "ep 3 (tapping-song, with Otto): hears only knocking when Otto taps Happy Birthday; guesses Morse code",
     "ep 4 (lila-group-photo, with Mae): hates her solo selfie but loves the group photo, same face; cheerleader effect (Walker & Vul 2014: same face rated more attractive in a group than cropped alone — tiny, ~49th to 51st percentile)",
-    "ep 5 (lila-replay-write, with The Critic, Mae): replays the meeting where she called her boss \"Mum\"; expressive writing (Pennebaker & Beall 1986: 15 min × 4 days, fewer health-centre visits over six months); closes the notebook"
+    "ep 5 (lila-replay-write, with The Critic, Mae): replays the meeting where she called her boss \"Mum\"; expressive writing (Pennebaker & Beall 1986: 15 min × 4 days, fewer health-centre visits over six months); closes the notebook",
+    "ep 6 (otto-name-it, with Otto): asks her boss 'Frustrated?' — naming it calms him (affect labeling)"
    ]
   },
   "doubt": {
@@ -101,7 +104,8 @@
    },
    "history": [
     "ep 1 (scarcity-cookies, with Lila): introduced — whispers 'what if they're gone?' at an 'only 2 left' sign; shrinks when Lila asks 'would I want it if there were ten?'",
-    "ep 2 (arthur-3am-worries, with Arthur): whispers \"what if…\" at 3 AM; gets stamped WRONG and shrinks once Arthur writes his worries down and checks them (LaFreniere & Newman 2020)"
+    "ep 2 (arthur-3am-worries, with Arthur): whispers \"what if…\" at 3 AM; gets stamped WRONG and shrinks once Arthur writes his worries down and checks them (LaFreniere & Newman 2020)",
+    "ep 3 (mae-too-many-shows, with Mae): whispers 'what if the other one's better?' over a long menu (choice overload)"
    ]
   }
  }

@@ -1,0 +1,295 @@
+{
+ "slug": "otto-name-it",
+ "no": 161,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 7,
+ "cast": [
+  "otto",
+  "lila"
+ ],
+ "title": [
+  "Name It",
+  "To Tame It"
+ ],
+ "credit": "Lieberman, Eisenberger, Crockett, Tom, Pfeifer & Way · 2007",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Angry? Say This One Word Out Loud #shorts",
+  "description": "Send this to the friend who says 'I'm fine' through gritted teeth. Otto is angry: the printer jammed right before his big meeting. The fix isn't forcing yourself to calm down; it's naming the feeling. In 2007, Matthew Lieberman, Naomi Eisenberger, Molly Crockett, Sabrina Tom, Jennifer Pfeifer and Baldwin Way (Psychological Science, 'Putting Feelings Into Words') scanned people's brains while they looked at angry and fearful faces. When they picked a word for the emotion ('angry', 'scared') instead of just matching the faces, activity in the amygdala, a brain region involved in threat and emotion, went down, while a region in the right prefrontal cortex became more active. Psychologists call it affect labeling. It's a lab finding about short-term reactions, not a cure-all, but it's a free thing to try: one word, out loud. Comment 'got me' if you've typed in caps today. #psychology #shorts #anger #emotions #affectlabeling",
+  "tags": [
+   "affect labeling",
+   "anger",
+   "emotional regulation",
+   "name it to tame it",
+   "psychology",
+   "Lieberman"
+  ]
+ },
+ "thumb_text": "Name It to Tame It",
+ "thumb_emph": "Name",
+ "thumb_mood": "angry",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Otto is angry: the printer jammed before his big meeting",
+  "lean": "pain",
+  "snapback": "But calming down isn't the fix. NAMING it is."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who says 'I'm fine' through gritted teeth.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMPrinterRage",
+   "chunks": [
+    [
+     "Otto is ANGRY:",
+     {
+      "emph": "ANGRY"
+     }
+    ],
+    [
+     "the printer jammed"
+    ],
+    [
+     "before his"
+    ],
+    [
+     "big meeting."
+    ]
+   ],
+   "text": "Otto is ANGRY: the printer jammed before his big meeting.",
+   "tone": "dramatic, amused",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "RMFineCaps",
+   "chunks": [
+    [
+     "You've been there:"
+    ],
+    [
+     "jaw tight,"
+    ],
+    [
+     "typing in caps,"
+    ],
+    [
+     "telling everyone"
+    ],
+    [
+     "you're FINE.",
+     {
+      "emph": "FINE"
+     }
+    ]
+   ],
+   "text": "You've been there: jaw tight, typing in caps, telling everyone you're FINE.",
+   "tone": "knowingly, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapName",
+   "chunks": [
+    [
+     "But calming down"
+    ],
+    [
+     "isn't the fix."
+    ],
+    [
+     "NAMING it is.",
+     {
+      "emph": "NAMING"
+     }
+    ]
+   ],
+   "text": "But calming down isn't the fix. NAMING it is.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMFacesScan",
+   "chunks": [
+    [
+     "In 2007,"
+    ],
+    [
+     "Matthew Lieberman's lab"
+    ],
+    [
+     "scanned people"
+    ],
+    [
+     "looking at"
+    ],
+    [
+     "angry and scared"
+    ],
+    [
+     "FACES.",
+     {
+      "emph": "FACES"
+     }
+    ]
+   ],
+   "text": "In 2007, Matthew Lieberman's lab scanned people looking at angry and scared FACES.",
+   "tone": "curious",
+   "say": "In two thousand seven, Matthew Lieberman's lab scanned people looking at angry and scared faces."
+  },
+  {
+   "sec": "cd",
+   "scene": "Amygdala",
+   "art": "RMAlarmDown",
+   "chunks": [
+    [
+     "Naming the feeling"
+    ],
+    [
+     "turned DOWN",
+     {
+      "emph": "DOWN"
+     }
+    ],
+    [
+     "the amygdala,"
+    ],
+    [
+     "the brain's alarm."
+    ]
+   ],
+   "text": "Naming the feeling turned DOWN the amygdala, the brain's alarm.",
+   "tone": "serious, then relieved"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameAffect",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "AFFECT labeling.",
+     {
+      "emph": "AFFECT"
+     }
+    ]
+   ],
+   "text": "It's called AFFECT labeling.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lila",
+   "art": "RMLilaAsks",
+   "chunks": [
+    [
+     "Lila asks:"
+    ],
+    [
+     "'Frustrated?'"
+    ],
+    [
+     "Otto nods."
+    ],
+    [
+     "His jaw UNCLENCHES.",
+     {
+      "emph": "UNCLENCHES"
+     }
+    ]
+   ],
+   "text": "Lila asks: 'Frustrated?' Otto nods. His jaw UNCLENCHES.",
+   "tone": "warmly, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMStressedLighter",
+   "chunks": [
+    [
+     "Ever said"
+    ],
+    [
+     "'I'm just stressed'"
+    ],
+    [
+     "and felt LIGHTER?",
+     {
+      "emph": "LIGHTER"
+     }
+    ],
+    [
+     "Yeah, that."
+    ]
+   ],
+   "text": "Ever said 'I'm just stressed' and felt LIGHTER? Yeah, that.",
+   "tone": "knowing, softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndOneWord",
+   "chunks": [
+    [
+     "One word,"
+    ],
+    [
+     "out loud."
+    ],
+    [
+     "Name it"
+    ],
+    [
+     "to TAME it.",
+     {
+      "emph": "TAME"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who says"
+    ],
+    [
+     "'I'm fine'"
+    ],
+    [
+     "through gritted teeth."
+    ]
+   ],
+   "text": "One word, out loud. Name it to TAME it. Send this to the friend who says 'I'm fine' through gritted teeth.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

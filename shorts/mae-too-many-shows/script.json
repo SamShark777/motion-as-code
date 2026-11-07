@@ -1,0 +1,316 @@
+{
+ "slug": "mae-too-many-shows",
+ "no": 156,
+ "format": "retro",
+ "look": "retro",
+ "series": "Mae",
+ "episode": 7,
+ "cast": [
+  "mae",
+  "doubt"
+ ],
+ "title": [
+  "Too Many",
+  "Choices"
+ ],
+ "credit": "Iyengar & Lepper · 2000",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why You Scroll for an Hour and Watch Nothing #shorts",
+  "description": "Send this to the friend who scrolls more than they watch. Mae has endless choices on her streaming app, and watches nothing. In 2000, Sheena Iyengar and Mark Lepper (Journal of Personality and Social Psychology) set up a jam-tasting table in an upscale grocery store. With 24 jams on display, more passing shoppers stopped (about 60% vs 40%), but only about 3% of those who stopped bought a jar. With 6 jams, about 30% did. They called it choice overload: too many options can make deciding feel harder and less satisfying. Honest footnote: later meta-analyses found the effect isn't universal (Scheibehenne, Greifeneder & Todd, 2010); it shows up most when the options are hard to compare and you don't know what you want (Chernev, Böckenholt & Goodman, 2015). Try it: pick three, then choose. Comment 'got me' if you've scrolled past your own bedtime. #psychology #shorts #overthinking #choiceoverload #decisionmaking",
+  "tags": [
+   "choice overload",
+   "paradox of choice",
+   "decision making",
+   "overthinking",
+   "psychology",
+   "Iyengar"
+  ]
+ },
+ "thumb_text": "Too Many Choices",
+ "thumb_emph": "Choices",
+ "thumb_mood": "thinking",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Mae has endless choices on her streaming app and watches nothing",
+  "lean": "pain",
+  "snapback": "But it's not you being picky. It's the MENU."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who scrolls more than they watch.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMEndlessShows",
+   "chunks": [
+    [
+     "Mae has"
+    ],
+    [
+     "endless CHOICES",
+     {
+      "emph": "CHOICES"
+     }
+    ],
+    [
+     "on her"
+    ],
+    [
+     "streaming app,"
+    ],
+    [
+     "and watches nothing."
+    ]
+   ],
+   "text": "Mae has endless CHOICES on her streaming app, and watches nothing.",
+   "tone": "curious, playful",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "RMScrollBed",
+   "chunks": [
+    [
+     "You know this:"
+    ],
+    [
+     "forty minutes"
+    ],
+    [
+     "of scrolling,"
+    ],
+    [
+     "then BED.",
+     {
+      "emph": "BED"
+     }
+    ]
+   ],
+   "text": "You know this: forty minutes of scrolling, then BED.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapMenu",
+   "chunks": [
+    [
+     "But it's"
+    ],
+    [
+     "not you"
+    ],
+    [
+     "being picky."
+    ],
+    [
+     "It's the MENU.",
+     {
+      "emph": "MENU"
+     }
+    ]
+   ],
+   "text": "But it's not you being picky. It's the MENU.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMJamTable",
+   "chunks": [
+    [
+     "In 2000,"
+    ],
+    [
+     "Sheena Iyengar"
+    ],
+    [
+     "set up"
+    ],
+    [
+     "a JAM table",
+     {
+      "emph": "JAM"
+     }
+    ],
+    [
+     "in a store."
+    ]
+   ],
+   "text": "In 2000, Sheena Iyengar set up a JAM table in a store.",
+   "tone": "curious",
+   "say": "In two thousand, Sheena Iyengar set up a jam table in a store."
+  },
+  {
+   "sec": "cd",
+   "scene": "24 jams",
+   "art": "RMJam24",
+   "chunks": [
+    [
+     "Twenty-four jams"
+    ],
+    [
+     "drew more people."
+    ],
+    [
+     "Three percent"
+    ],
+    [
+     "BOUGHT.",
+     {
+      "emph": "BOUGHT"
+     }
+    ]
+   ],
+   "text": "Twenty-four jams drew more people. Three percent BOUGHT.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "6 jams",
+   "art": "RMJam6",
+   "chunks": [
+    [
+     "Six jams?"
+    ],
+    [
+     "THIRTY percent.",
+     {
+      "emph": "THIRTY"
+     }
+    ]
+   ],
+   "text": "Six jams? THIRTY percent.",
+   "tone": "amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameChoice",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "CHOICE overload.",
+     {
+      "emph": "CHOICE"
+     }
+    ]
+   ],
+   "text": "It's called CHOICE overload.",
+   "tone": "serious",
+   "cam": [
+    540,
+    980,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Doubt",
+   "art": "RMDoubtMenu",
+   "chunks": [
+    [
+     "The Doubt"
+    ],
+    [
+     "whispers:"
+    ],
+    [
+     "what if"
+    ],
+    [
+     "the other one's"
+    ],
+    [
+     "BETTER?",
+     {
+      "emph": "BETTER"
+     }
+    ]
+   ],
+   "text": "The Doubt whispers: what if the other one's BETTER?",
+   "tone": "mischievously, whispering"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMMenuStare",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last menu"
+    ],
+    [
+     "you stared at"
+    ],
+    [
+     "too long."
+    ],
+    [
+     "Yeah, that ONE.",
+     {
+      "emph": "ONE"
+     }
+    ]
+   ],
+   "text": "Think of the last menu you stared at too long. Yeah, that ONE.",
+   "tone": "knowing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndThree",
+   "chunks": [
+    [
+     "Mae picks"
+    ],
+    [
+     "from three,"
+    ],
+    [
+     "watching in"
+    ],
+    [
+     "a MINUTE.",
+     {
+      "emph": "MINUTE"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who scrolls more"
+    ],
+    [
+     "than they watch."
+    ]
+   ],
+   "text": "Mae picks from three, watching in a MINUTE. Send this to the friend who scrolls more than they watch.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

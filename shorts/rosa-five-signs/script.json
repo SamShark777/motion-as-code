@@ -1,0 +1,328 @@
+{
+ "slug": "rosa-five-signs",
+ "no": 154,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Rosa",
+ "episode": 4,
+ "cast": [
+  "rosa",
+  "nia"
+ ],
+ "title": [
+  "5 Signs",
+  "Bad Sticks"
+ ],
+ "credit": "Baumeister, Bratslavsky, Finkenauer & Vohs · 2001",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs Your Brain Keeps Score of the Bad Stuff #shorts",
+  "description": "Send this to the friend who checked all five. Rosa's review: nine compliments and one 'could improve'. Guess which one she rereads at midnight. 1) one bad comment outlives a pile of good ones, 2) you still cringe at awkward moments from years ago, 3) one rude driver ruins your morning, 4) 'we need to talk' means the worst, 5) you reread the mean one. Five times. It isn't a character flaw. In 2001, Roy Baumeister, Ellen Bratslavsky, Catrin Finkenauer and Kathleen Vohs reviewed research across relationships, feedback, emotions, learning and memory in 'Bad Is Stronger Than Good' (Review of General Psychology) and found that bad events, feedback and feelings generally have a bigger impact than equally sized good ones. Their reading: noticing threats was useful for survival, so the brain weights them heavily. Psychologists call it negativity bias. It's a tendency, not a rule. Try reading the nice ones out loud. Comment 'got me' if you've reread a mean comment today. #psychology #shorts #overthinking #negativitybias #selfcompassion",
+  "tags": [
+   "negativity bias",
+   "overthinking",
+   "criticism",
+   "bad is stronger than good",
+   "psychology",
+   "Baumeister"
+  ]
+ },
+ "thumb_text": "5 Signs Bad Sticks",
+ "thumb_emph": "Bad",
+ "thumb_mood": "anxious",
+ "music_vibe": "lofi",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Rosa's performance review: nine compliments, one 'could improve'",
+  "lean": "pain",
+  "snapback": "Five signs you do this too. And it's NOT your fault."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who checked all five.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGReviewHook",
+   "chunks": [
+    [
+     "Rosa's REVIEW:",
+     {
+      "emph": "REVIEW"
+     }
+    ],
+    [
+     "nine compliments,"
+    ],
+    [
+     "one 'could improve.'"
+    ],
+    [
+     "Guess which"
+    ],
+    [
+     "one sticks."
+    ]
+   ],
+   "text": "Rosa's REVIEW: nine compliments, one 'could improve.' Guess which one sticks.",
+   "tone": "curious, teasing",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "MGFiveSigns",
+   "chunks": [
+    [
+     "Five signs"
+    ],
+    [
+     "you do"
+    ],
+    [
+     "this too."
+    ],
+    [
+     "And it's"
+    ],
+    [
+     "NOT",
+     {
+      "emph": "NOT"
+     }
+    ],
+    [
+     "your fault."
+    ]
+   ],
+   "text": "Five signs you do this too. And it's NOT your fault.",
+   "tone": "knowingly, then surprised",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.16
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 1",
+   "art": "MGSign1",
+   "chunks": [
+    [
+     "One:"
+    ],
+    [
+     "one bad comment"
+    ],
+    [
+     "outlives a pile"
+    ],
+    [
+     "of GOOD ones.",
+     {
+      "emph": "GOOD"
+     }
+    ]
+   ],
+   "text": "One: one bad comment outlives a pile of GOOD ones.",
+   "tone": "knowing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 2",
+   "art": "MGSign2",
+   "chunks": [
+    [
+     "Two:"
+    ],
+    [
+     "you cringe"
+    ],
+    [
+     "at AWKWARD moments",
+     {
+      "emph": "AWKWARD"
+     }
+    ],
+    [
+     "from years ago."
+    ]
+   ],
+   "text": "Two: you cringe at AWKWARD moments from years ago.",
+   "tone": "cringing, laughs softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 3",
+   "art": "MGSign3",
+   "chunks": [
+    [
+     "Three:"
+    ],
+    [
+     "one rude driver"
+    ],
+    [
+     "ruins your"
+    ],
+    [
+     "MORNING.",
+     {
+      "emph": "MORNING"
+     }
+    ]
+   ],
+   "text": "Three: one rude driver ruins your MORNING.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 4",
+   "art": "MGSign4",
+   "chunks": [
+    [
+     "Four:"
+    ],
+    [
+     "'we need"
+    ],
+    [
+     "to talk'"
+    ],
+    [
+     "means the"
+    ],
+    [
+     "WORST.",
+     {
+      "emph": "WORST"
+     }
+    ]
+   ],
+   "text": "Four: 'we need to talk' means the WORST.",
+   "tone": "dramatic, whispering"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 5",
+   "art": "MGSign5",
+   "chunks": [
+    [
+     "Five:"
+    ],
+    [
+     "you reread"
+    ],
+    [
+     "the mean one."
+    ],
+    [
+     "Five TIMES.",
+     {
+      "emph": "TIMES"
+     }
+    ]
+   ],
+   "text": "Five: you reread the mean one. Five TIMES.",
+   "tone": "teasing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGBadStudy",
+   "chunks": [
+    [
+     "In 2001,"
+    ],
+    [
+     "Roy Baumeister's team"
+    ],
+    [
+     "found bad"
+    ],
+    [
+     "hits HARDER",
+     {
+      "emph": "HARDER"
+     }
+    ],
+    [
+     "than good."
+    ]
+   ],
+   "text": "In 2001, Roy Baumeister's team found bad hits HARDER than good.",
+   "tone": "curious, serious",
+   "say": "In two thousand one, Roy Baumeister's team found bad hits harder than good."
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameNeg",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "NEGATIVITY bias:",
+     {
+      "emph": "NEGATIVITY"
+     }
+    ],
+    [
+     "an old"
+    ],
+    [
+     "safety alarm."
+    ]
+   ],
+   "text": "It's called NEGATIVITY bias: an old safety alarm.",
+   "tone": "thoughtfully, warm",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndLoud",
+   "chunks": [
+    [
+     "Read the"
+    ],
+    [
+     "nice ones"
+    ],
+    [
+     "out LOUD.",
+     {
+      "emph": "LOUD"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checked"
+    ],
+    [
+     "all five."
+    ]
+   ],
+   "text": "Read the nice ones out LOUD. Send this to the friend who checked all five.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}
