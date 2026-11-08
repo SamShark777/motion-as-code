@@ -1,3 +1,16 @@
+> **2026-11-08 — Shivam: ROTATION + COMMENT ENDING (every script not yet built; review Nov 15).** YouTube since Oct 28:
+> retro avg ~800 (median 1,011), tedmg ~725, ted2 ~366; German Expressionism (12) and the vox-explainer topical test (65) flopped.
+> 1. **Styles:** retro + tedmg carry the rotation. `pick_style.py` now skips ted2 if it was one of the last 2 picks
+>    (`min_gap: 2` in styles.json), so at most ~1 Ted 2 a day. Expressionism stays paused (`auto: false`); no off-slot
+>    topical tests (vox-explainer / hyperframes looks) until the review.
+> 2. **Comment question:** comments are ~0 on almost every Short. Just before the share line, add ONE short question
+>    the viewer can answer in a word or two ("Which one are you — A or B?", "Has this happened to you?"). Speak it,
+>    caption it, and put the same question as the first line of post.description. Record it in script.json
+>    `"question"`. Keep the share ending (Nov 5 box) as the last line.
+> 3. **Review Nov 15:** using shorts/stats/youtube.json, retro + tedmg Shorts posted Nov 9–14 should average 800+ views
+>    on YouTube, and Shorts with a question should average more comments than before. If the styles miss, look at
+>    topics/hooks next, not style.
+
 > **2026-11-05 FORMULA EXPERIMENT (competitor + own data).** What worked: "N Signs You…" titles ≈2× competitor median; 90 s+ ≈1.36×; our retro (1044) and tedmg (965) medians beat ted2 (319); "Character story" is our best pattern. Applied: pick_style weights retro/tedmg 2×; share endings on 148–153; test Short #171 arthur-six-signs (signs-list). Review in ~2 weeks: compare signs-list + share-ending views/shares vs. medians in shorts/stats/youtube.json.
 
 > **2026-11-05 — Shivam: SHARE ENDING + "N SIGNS" LIST TEST (every script not yet built; read with the HOOK FORMULA box).**

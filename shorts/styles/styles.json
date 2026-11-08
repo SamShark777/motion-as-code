@@ -8,7 +8,8 @@
       "format": "cdesign",
       "look": "ted2",
       "cast": "shorts/characters/ted2-cast.json",
-      "example": "shorts/rename-nerves"
+      "example": "shorts/rename-nerves",
+      "min_gap": 2
     },
     {
       "id": "tedmg",
@@ -39,5 +40,6 @@
       "auto": false
     }
   ],
-  "weights_note": "2026-11-05 experiment: own-data medians retro 1044 / tedmg 965 vs ted2 319 views -> retro & tedmg weighted 2x."
+  "weights_note": "2026-11-05 experiment: own-data medians retro 1044 / tedmg 965 vs ted2 319 views -> retro & tedmg weighted 2x.",
+  "rotation_note": "2026-11-08 (Shivam): through the Nov 15 review, retro + tedmg carry the rotation; ted2 limited to at most 1 in any 3 picks (min_gap 2 = not picked if it was one of the last 2), so about one Ted 2 a day. expressionism stays auto:false (paused, 12 views); off-slot topical tests (vox-explainer, hyperframes) paused too."
 }

@@ -22,6 +22,8 @@ for p in (ROOT / "shorts").glob("*/script.json"):
 recent = [sid for _, sid in sorted(recent)]
 k = cfg.get("max_in_a_row", 2)
 pool = [s for s in styles]
+# min_gap (2026-11-08): a style with min_gap N is skipped if it was used in any of the last N picks
+pool = [s for s in pool if not (s.get("min_gap") and s["id"] in recent[-s["min_gap"]:])] or styles
 if len(recent) >= k and len(set(recent[-k:])) == 1:
-    pool = [s for s in styles if s["id"] != recent[-1]] or styles
+    pool = [s for s in pool if s["id"] != recent[-1]] or styles
 print(json.dumps(random.choices(pool, weights=[s.get("weight", 1) for s in pool])[0]))  # weights: 2026-11-05 experiment
