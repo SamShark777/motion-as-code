@@ -1,0 +1,17 @@
+{
+ "no": 171,
+ "slug": "arthur-six-signs",
+ "date": "2026-11-09",
+ "slot": "14:00",
+ "due": "2026-11-09T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-09/arthur-six-signs.mp4",
+ "buffer": {
+  "youtube": "6af0e379d6bbae6fa10fe255",
+  "instagram": "6af0e37a004e4879a7dee27b",
+  "tiktok": "6af0e37b562f2e6de9e0a6c1"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 52.9
+}
