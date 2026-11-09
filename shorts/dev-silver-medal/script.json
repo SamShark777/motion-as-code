@@ -1,0 +1,299 @@
+{
+ "slug": "dev-silver-medal",
+ "no": 162,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Dev",
+ "episode": 6,
+ "cast": [
+  "dev",
+  "theo"
+ ],
+ "title": [
+  "Silver",
+  "Feels Worse"
+ ],
+ "credit": "Medvec, Madey & Gilovich · 1995",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Second Place Feels Worse Than Third #shorts",
+  "description": "Which are you: silver or bronze? Tell me in the comments. Send this to the friend who calls second place 'losing.' Dev won silver at the 5K and he's sulking, while Theo, in third, can't stop grinning. In 'When Less Is More: Counterfactual Thinking and Satisfaction Among Olympic Medalists' (Journal of Personality and Social Psychology, 1995), Victoria Husted Medvec, Scott Madey and Thomas Gilovich had people rate TV footage of medalists at the 1992 Barcelona Olympics on a scale from agony to ecstasy. Bronze medalists looked happier than silver medalists, both right after the event and on the podium. Their explanation: silver compares up ('I almost won gold'), bronze compares down ('at least I got a medal'). Psychologists call these 'what might have been' thoughts counterfactual thinking. Later research suggests it also depends on what each athlete expected, so it isn't a law of nature, but it explains why 'almost' can sting more than 'not quite'. #psychology #shorts #olympics #mindset #overthinking",
+  "tags": [
+   "counterfactual thinking",
+   "silver medal",
+   "bronze medal",
+   "olympics psychology",
+   "psychology",
+   "Gilovich"
+  ]
+ },
+ "thumb_text": "Why Silver Feels Worse",
+ "thumb_emph": "Silver",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful",
+ "pattern": "test",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Dev won silver at the 5K and he's sulking",
+  "lean": "shock",
+  "snapback": "Silver should win. But the faces say the OPPOSITE."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who calls second place 'losing.'",
+ "question": "Which are you: silver or bronze?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGSilverSulk",
+   "chunks": [
+    [
+     "Dev won SILVER",
+     {
+      "emph": "SILVER"
+     }
+    ],
+    [
+     "at the 5K,"
+    ],
+    [
+     "and he's sulking."
+    ]
+   ],
+   "text": "Dev won SILVER at the 5K, and he's sulking.",
+   "tone": "amused, curious",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Test",
+   "art": "MGPickTest",
+   "chunks": [
+    [
+     "Pause and pick:"
+    ],
+    [
+     "who looks happier,"
+    ],
+    [
+     "silver or BRONZE?",
+     {
+      "emph": "BRONZE"
+     }
+    ]
+   ],
+   "text": "Pause and pick: who looks happier, silver or BRONZE?",
+   "tone": "mischievously"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGTheoGrin",
+   "chunks": [
+    [
+     "Silver should win."
+    ],
+    [
+     "But the faces"
+    ],
+    [
+     "say the OPPOSITE.",
+     {
+      "emph": "OPPOSITE"
+     }
+    ]
+   ],
+   "text": "Silver should win. But the faces say the OPPOSITE.",
+   "tone": "surprised",
+   "cam": [
+    700,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGOlympicTV",
+   "chunks": [
+    [
+     "In 1995,"
+    ],
+    [
+     "researchers had people"
+    ],
+    [
+     "rate Olympic"
+    ],
+    [
+     "medalists' FACES.",
+     {
+      "emph": "FACES"
+     }
+    ]
+   ],
+   "text": "In 1995, researchers had people rate Olympic medalists' FACES.",
+   "tone": "curious",
+   "say": "In nineteen ninety-five, researchers had people rate Olympic medalists' faces."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "MGJoyMeter",
+   "chunks": [
+    [
+     "Bronze winners"
+    ],
+    [
+     "looked HAPPIER",
+     {
+      "emph": "HAPPIER"
+     }
+    ],
+    [
+     "than silver."
+    ]
+   ],
+   "text": "Bronze winners looked HAPPIER than silver.",
+   "tone": "surprised, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Up",
+   "art": "MGCompareUp",
+   "chunks": [
+    [
+     "Silver compares up:"
+    ],
+    [
+     "'I almost"
+    ],
+    [
+     "had GOLD.'",
+     {
+      "emph": "GOLD"
+     }
+    ]
+   ],
+   "text": "Silver compares up: 'I almost had GOLD.'",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Down",
+   "art": "MGCompareDown",
+   "chunks": [
+    [
+     "Bronze compares down:"
+    ],
+    [
+     "'At least"
+    ],
+    [
+     "I MEDALED.'",
+     {
+      "emph": "MEDALED"
+     }
+    ]
+   ],
+   "text": "Bronze compares down: 'At least I MEDALED.'",
+   "tone": "laughs, warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameCounter",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "counterfactual THINKING.",
+     {
+      "emph": "THINKING"
+     }
+    ]
+   ],
+   "text": "Psychologists call it counterfactual THINKING.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGAlmostDay",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last time"
+    ],
+    [
+     "'almost' ruined"
+    ],
+    [
+     "a good day."
+    ],
+    [
+     "Yeah, that ONE.",
+     {
+      "emph": "ONE"
+     }
+    ]
+   ],
+   "text": "Think of the last time 'almost' ruined a good day. Yeah, that ONE.",
+   "tone": "knowingly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndStepThree",
+   "chunks": [
+    [
+     "Same race."
+    ],
+    [
+     "Different COMPARISON.",
+     {
+      "emph": "COMPARISON"
+     }
+    ],
+    [
+     "Which are you:"
+    ],
+    [
+     "silver or bronze?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who calls"
+    ],
+    [
+     "second place"
+    ],
+    [
+     "'losing.'"
+    ]
+   ],
+   "text": "Same race. Different COMPARISON. Which are you: silver or bronze? Send this to the friend who calls second place 'losing.'",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

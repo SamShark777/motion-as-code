@@ -19,7 +19,8 @@
     "ep 3 (talk-to-yourself, with Nia): the speech from ep 1 — catches Nia talking to herself by name, learns self-distancing (Kross et al. 2014), coaches himself by name and goes on calm",
     "ep 4 (lima-syndrome): locked in Rosa's escape room with June; tells her about his speech",
     "ep 5 (milo-snap-judgment, with Dev): Dev is 20 min late, Milo decides he's \"just unreliable\"; next week Milo is late and blames the bus; fundamental attribution error (Jones & Harris 1967: readers still judged an assigned pro-Castro writer as pro-Castro, 44.1 vs 22.9)",
-    "ep 6 (milo-lottery-ticket, with Theo): buys a lottery ticket and spends the millions in his head; hedonic adaptation (Brickman, Coates & Janoff-Bulman 1978: 22 winners no happier, enjoyed everyday pleasures less); no win, Theo hands him toast"
+    "ep 6 (milo-lottery-ticket, with Theo): buys a lottery ticket and spends the millions in his head; hedonic adaptation (Brickman, Coates & Janoff-Bulman 1978: 22 winners no happier, enjoyed everyday pleasures less); no win, Theo hands him toast",
+    "ep 7 (milo-google-egg, with Nia): googles 'boiled egg time' for the third time this week; Google effect (Sparrow, Liu & Wegner 2011: people told the computer would save facts remembered them less, but remembered where they were saved)"
    ]
   },
   "nia": {
@@ -38,7 +39,8 @@
     "ep 3 (ikea-effect, with Theo): six hours on a wobbly shelf, prices it at $100 vs $40 new (IKEA effect, Norton, Mochon & Ariely 2012: builders paid 63% more); Theo then hands her his flat-pack desk",
     "ep 4 (rosa-start-monday, with Rosa): smirks at \"I'll start Monday\", then texts \"gym? 7am. no excuses\" for the new month",
     "ep 5 (rosa-five-signs, with Rosa): hands Rosa her review back and makes her read the nice ones out loud (negativity bias)",
-    "ep 6 (june-dont-think, with June): teaches June the one-other-thing trick (focused distraction, the red Volkswagen from Wegner 1987)"
+    "ep 6 (june-dont-think, with June): teaches June the one-other-thing trick (focused distraction, the red Volkswagen from Wegner 1987)",
+    "ep 7 (milo-google-egg, with Milo): laughs at Milo's re-Googling; 'your brain filed it under PHONE'"
    ]
   },
   "theo": {
@@ -56,7 +58,8 @@
     "ep 3 (ikea-effect): offers Nia $20 for her shelf, names the IKEA effect",
     "ep 4 (june-doorway): laughs 'blame the door'",
     "ep 5 (dev-overthink-putt): hums a tune at mini golf so Dev stops overthinking his putt; high five",
-    "ep 6 (milo-lottery-ticket, with Milo): checks the numbers, no win; hands Milo a slice of toast — the small stuff isn't small"
+    "ep 6 (milo-lottery-ticket, with Milo): checks the numbers, no win; hands Milo a slice of toast — the small stuff isn't small",
+    "ep 7 (dev-silver-medal, with Dev): beams on the bronze step — 'at least I medaled' — and makes room for Dev"
    ]
   },
   "rosa": {
@@ -73,7 +76,8 @@
     "ep 1 (first-impressions): rehearsed 40 interview answers; learns faces are judged in 0.1 s and the halo effect, bins the script and smiles at the receptionist first",
     "ep 2 (lima-syndrome, with Milo + June): new escape-room game master; no-hints rule collapses, whispers answers, opens the door at minute 30 (Lima syndrome, 1996 Lima hostage crisis; one case, not lab studies)",
     "ep 3 (rosa-start-monday, with Nia): Thursday night, crisps in hand, swears \"I'll start Monday\"; fresh start effect (Dai, Milkman & Riis 2014: diet searches, gym visits and commitment contracts rise after temporal landmarks); goes to the gym on the 1st with Nia",
-    "ep 4 (rosa-five-signs, with Nia): performance review with nine compliments and one 'could improve' — rereads the bad one five times; 5-signs list on negativity bias (Baumeister, Bratslavsky, Finkenauer & Vohs 2001); Nia makes her read the nice ones out loud"
+    "ep 4 (rosa-five-signs, with Nia): performance review with nine compliments and one 'could improve' — rereads the bad one five times; 5-signs list on negativity bias (Baumeister, Bratslavsky, Finkenauer & Vohs 2001); Nia makes her read the nice ones out loud",
+    "ep 5 (rosa-deleted-compliment, with Dev): types 'your talk was amazing!' to Dev, deletes it as too awkward; Zhao & Epley 2021 (senders underestimate how good compliments feel); sends it, Dev screenshots it"
    ]
   },
   "dev": {
@@ -91,7 +95,9 @@
     "ep 2 (decision-facts, with Theo): insists nobody tells him what to choose, loses the bet, then buys the large popcorn because the medium cost almost the same",
     "ep 3 (dev-armchair, with June): paid $50 for an armchair, wants $200 ('it has memories'); endowment effect (Kahneman, Knetsch & Thaler 1990 mugs: ~$7 vs ~$3); June asks 'would you buy it today for $200?' and he takes $40",
     "ep 4 (milo-snap-judgment, with Milo): 20 min late, written off as unreliable; really his bus broke down and he walked",
-    "ep 5 (dev-overthink-putt, with Theo): last hole of mini golf, overthinks a 2-foot putt and misses; choking / explicit monitoring (Beilock, Carr, MacMahon & Starkes 2002: experienced golfers putted better distracted than focusing on each step; novices the opposite); sinks it once Theo hums"
+    "ep 5 (dev-overthink-putt, with Theo): last hole of mini golf, overthinks a 2-foot putt and misses; choking / explicit monitoring (Beilock, Carr, MacMahon & Starkes 2002: experienced golfers putted better distracted than focusing on each step; novices the opposite); sinks it once Theo hums",
+    "ep 6 (dev-silver-medal, with Theo): wins silver at the fun run 5K and sulks while Theo grins in third; counterfactual thinking (Medvec, Madey & Gilovich 1995: raters judged 1992 Olympic bronze medalists happier than silver); 'test' pattern; steps down to stand with Theo",
+    "ep 7 (rosa-deleted-compliment, with Rosa): gets Rosa's compliment and screenshots it"
    ]
   },
   "june": {

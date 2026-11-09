@@ -1,0 +1,296 @@
+{
+ "slug": "rosa-deleted-compliment",
+ "no": 164,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Rosa",
+ "episode": 5,
+ "cast": [
+  "rosa",
+  "dev"
+ ],
+ "title": [
+  "Send The",
+  "Compliment"
+ ],
+ "credit": "Zhao & Epley · 2021",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "That Compliment You Deleted Would Have Made Their Day #shorts",
+  "description": "Who deserves one today? Tell me in the comments. Send this to the friend who deletes every nice text. Rosa wrote Dev a compliment about his talk, then deleted it: too awkward. In 'Insufficiently Complimentary?: Underestimating the Positive Impact of Compliments Creates a Barrier to Expressing Them' (Psychological Science, 2021), Xuan Zhao and Nicholas Epley had people write and send real compliments to friends and others. The people giving compliments underestimated how positive the receivers would feel and overestimated how awkward and uncomfortable it would be. That mismatch is a barrier: we hold back kind words because we get the math wrong. It doesn't mean every message lands perfectly, but the cringe you picture is usually bigger than the one they feel. #psychology #shorts #kindness #compliments #overthinking",
+  "tags": [
+   "compliments",
+   "kindness",
+   "Zhao and Epley",
+   "social anxiety",
+   "overthinking",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Send the Compliment",
+ "thumb_emph": "Send",
+ "thumb_mood": "worried",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Rosa wrote Dev a compliment, then deleted it",
+  "lean": "pain",
+  "snapback": "But the awkward part is mostly in YOUR head."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who deletes every nice text.",
+ "question": "Who deserves one today?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGRosaDelete",
+   "chunks": [
+    [
+     "Rosa wrote Dev"
+    ],
+    [
+     "a COMPLIMENT,",
+     {
+      "emph": "COMPLIMENT"
+     }
+    ],
+    [
+     "then deleted it."
+    ]
+   ],
+   "text": "Rosa wrote Dev a COMPLIMENT, then deleted it.",
+   "tone": "curious, amused",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "MGTooAwkward",
+   "chunks": [
+    [
+     "You've done it"
+    ],
+    [
+     "too: typed"
+    ],
+    [
+     "something kind,"
+    ],
+    [
+     "then thought,"
+    ],
+    [
+     "'too AWKWARD.'",
+     {
+      "emph": "AWKWARD"
+     }
+    ]
+   ],
+   "text": "You've done it too: typed something kind, then thought, 'too AWKWARD.'",
+   "tone": "knowingly, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGInYourHead",
+   "chunks": [
+    [
+     "But the"
+    ],
+    [
+     "awkward part"
+    ],
+    [
+     "is mostly"
+    ],
+    [
+     "in YOUR head.",
+     {
+      "emph": "YOUR"
+     }
+    ]
+   ],
+   "text": "But the awkward part is mostly in YOUR head.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGComplimentStudy",
+   "chunks": [
+    [
+     "In 2021,"
+    ],
+    [
+     "Xuan Zhao"
+    ],
+    [
+     "and Nicholas Epley"
+    ],
+    [
+     "had people send"
+    ],
+    [
+     "real COMPLIMENTS.",
+     {
+      "emph": "COMPLIMENTS"
+     }
+    ]
+   ],
+   "text": "In 2021, Xuan Zhao and Nicholas Epley had people send real COMPLIMENTS.",
+   "tone": "curious",
+   "say": "In twenty twenty-one, Shwen Jow and Nicholas Epley had people send real compliments."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "MGFeltBetter",
+   "chunks": [
+    [
+     "They guessed awkward."
+    ],
+    [
+     "Receivers felt"
+    ],
+    [
+     "way BETTER",
+     {
+      "emph": "BETTER"
+     }
+    ],
+    [
+     "than predicted."
+    ]
+   ],
+   "text": "They guessed awkward. Receivers felt way BETTER than predicted.",
+   "tone": "surprised, warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGCringeScale",
+   "chunks": [
+    [
+     "We overestimate"
+    ],
+    [
+     "the CRINGE,",
+     {
+      "emph": "CRINGE"
+     }
+    ],
+    [
+     "underestimate"
+    ],
+    [
+     "the joy."
+    ]
+   ],
+   "text": "We overestimate the CRINGE, underestimate the joy.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGStillRemember",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last compliment"
+    ],
+    [
+     "a stranger"
+    ],
+    [
+     "gave you."
+    ],
+    [
+     "You still"
+    ],
+    [
+     "REMEMBER it.",
+     {
+      "emph": "REMEMBER"
+     }
+    ]
+   ],
+   "text": "Think of the last compliment a stranger gave you. You still REMEMBER it.",
+   "tone": "softly, knowing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Dev",
+   "art": "MGDevScreenshot",
+   "chunks": [
+    [
+     "Rosa sends it."
+    ],
+    [
+     "Dev SCREENSHOTS it.",
+     {
+      "emph": "SCREENSHOTS"
+     }
+    ]
+   ],
+   "text": "Rosa sends it. Dev SCREENSHOTS it.",
+   "tone": "laughs, delighted"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndGift",
+   "chunks": [
+    [
+     "It's not weird."
+    ],
+    [
+     "It's a GIFT.",
+     {
+      "emph": "GIFT"
+     }
+    ],
+    [
+     "Who deserves"
+    ],
+    [
+     "one today?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who deletes"
+    ],
+    [
+     "every nice text."
+    ]
+   ],
+   "text": "It's not weird. It's a GIFT. Who deserves one today? Send this to the friend who deletes every nice text.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

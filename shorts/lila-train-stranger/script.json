@@ -1,0 +1,305 @@
+{
+ "slug": "lila-train-stranger",
+ "no": 165,
+ "format": "retro",
+ "look": "retro",
+ "series": "Lila",
+ "episode": 7,
+ "cast": [
+  "lila",
+  "doubt"
+ ],
+ "title": [
+  "Talk To",
+  "The Stranger"
+ ],
+ "credit": "Epley & Schroeder · 2014",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Headphones In on the Train? Science Says Try This #shorts",
+  "description": "Would you say hi first? Tell me in the comments. Send this to the friend with noise-cancelling everything. Lila rides the morning train with headphones in and eyes down, while The Doubt whispers that talking to a stranger would be awkward. In 'Mistakenly Seeking Solitude' (Journal of Experimental Psychology: General, 2014), Nicholas Epley and Juliana Schroeder asked Chicago commuters on trains and buses to either strike up a conversation with a stranger, sit in solitude, or ride as usual. The people who talked reported a more pleasant commute, even though commuters predicted the opposite: they expected connecting to be the worse experience and assumed others wouldn't want to talk. We underestimate how much other people want to connect too. You don't have to chat every day, but one 'good book?' might beat another podcast. #psychology #shorts #socialanxiety #overthinking #happiness",
+  "tags": [
+   "talking to strangers",
+   "Epley",
+   "social connection",
+   "commute",
+   "overthinking",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Talk to the Stranger",
+ "thumb_emph": "Stranger",
+ "thumb_mood": "curious",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Lila on the morning train: headphones in, eyes down",
+  "lean": "pain",
+  "snapback": "But the quiet ride? It's the WORSE one."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend with noise-cancelling everything.",
+ "question": "Would you say hi first?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMTrainQuiet",
+   "chunks": [
+    [
+     "Lila's on"
+    ],
+    [
+     "the morning TRAIN:",
+     {
+      "emph": "TRAIN"
+     }
+    ],
+    [
+     "headphones in,"
+    ],
+    [
+     "eyes down."
+    ]
+   ],
+   "text": "Lila's on the morning TRAIN: headphones in, eyes down.",
+   "tone": "calm, curious",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "RMZeroWords",
+   "chunks": [
+    [
+     "You know"
+    ],
+    [
+     "this ride:"
+    ],
+    [
+     "twenty strangers,"
+    ],
+    [
+     "zero WORDS.",
+     {
+      "emph": "WORDS"
+     }
+    ]
+   ],
+   "text": "You know this ride: twenty strangers, zero WORDS.",
+   "tone": "knowingly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSnapWorse",
+   "chunks": [
+    [
+     "But the"
+    ],
+    [
+     "quiet ride?"
+    ],
+    [
+     "It's the"
+    ],
+    [
+     "WORSE one.",
+     {
+      "emph": "WORSE"
+     }
+    ]
+   ],
+   "text": "But the quiet ride? It's the WORSE one.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Doubt",
+   "art": "RMDoubtWhisper",
+   "chunks": [
+    [
+     "The Doubt hisses:"
+    ],
+    [
+     "'It'll be AWKWARD.'",
+     {
+      "emph": "AWKWARD"
+     }
+    ]
+   ],
+   "text": "The Doubt hisses: 'It'll be AWKWARD.'",
+   "tone": "whispers, mischievously"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMCommuterStudy",
+   "chunks": [
+    [
+     "In 2014,"
+    ],
+    [
+     "Nicholas Epley"
+    ],
+    [
+     "and Juliana Schroeder"
+    ],
+    [
+     "had Chicago COMMUTERS",
+     {
+      "emph": "COMMUTERS"
+     }
+    ],
+    [
+     "try it."
+    ]
+   ],
+   "text": "In 2014, Nicholas Epley and Juliana Schroeder had Chicago COMMUTERS try it.",
+   "tone": "curious",
+   "say": "In twenty fourteen, Nicholas Epley and Juliana Schroeder had Chicago commuters try it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "RMPleasantRide",
+   "chunks": [
+    [
+     "Talkers had"
+    ],
+    [
+     "a more"
+    ],
+    [
+     "PLEASANT ride.",
+     {
+      "emph": "PLEASANT"
+     }
+    ],
+    [
+     "They'd predicted"
+    ],
+    [
+     "the opposite."
+    ]
+   ],
+   "text": "Talkers had a more PLEASANT ride. They'd predicted the opposite.",
+   "tone": "surprised, warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameSolitude",
+   "chunks": [
+    [
+     "Epley calls it"
+    ],
+    [
+     "mistakenly seeking SOLITUDE.",
+     {
+      "emph": "SOLITUDE"
+     }
+    ]
+   ],
+   "text": "Epley calls it mistakenly seeking SOLITUDE.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Lila",
+   "art": "RMGoodBook",
+   "chunks": [
+    [
+     "Lila says,"
+    ],
+    [
+     "'Good book?'"
+    ],
+    [
+     "Twenty minutes VANISH.",
+     {
+      "emph": "VANISH"
+     }
+    ]
+   ],
+   "text": "Lila says, 'Good book?' Twenty minutes VANISH.",
+   "tone": "warmly, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMDreadedChat",
+   "chunks": [
+    [
+     "Remember the"
+    ],
+    [
+     "last chat"
+    ],
+    [
+     "you dreaded?"
+    ],
+    [
+     "Probably FINE.",
+     {
+      "emph": "FINE"
+     }
+    ]
+   ],
+   "text": "Remember the last chat you dreaded? Probably FINE.",
+   "tone": "knowing, softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndHello",
+   "chunks": [
+    [
+     "Strangers are"
+    ],
+    [
+     "KINDER than",
+     {
+      "emph": "KINDER"
+     }
+    ],
+    [
+     "The Doubt thinks."
+    ],
+    [
+     "Would you"
+    ],
+    [
+     "say hi first?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "with noise-cancelling"
+    ],
+    [
+     "everything."
+    ]
+   ],
+   "text": "Strangers are KINDER than The Doubt thinks. Would you say hi first? Send this to the friend with noise-cancelling everything.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

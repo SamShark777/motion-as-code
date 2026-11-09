@@ -19,7 +19,8 @@
     "ep 4 (tapping-song): cameo — sweating before Otto's software training",
     "ep 5 (otto-quiz-night, with Otto): sure he bombed quiz night, finishes near the top; his \"maybe I don't know\" is the skill (Dunning-Kruger effect, Kruger & Dunning 1999)",
     "ep 6 (arthur-3am-worries, with The Doubt): wide awake at 3 AM while The Doubt whispers \"what if\" (the email, the meeting, the car noise); writes each worry down and checks later; worry's deceit (LaFreniere & Newman 2020: ~91% of worry predictions in people with GAD never came true)",
-    "ep 7 (otto-rhyme-poster): nods at Otto's rhyming poster, then fixes it: \"Work late. Feel tired.\""
+    "ep 7 (otto-rhyme-poster): nods at Otto's rhyming poster, then fixes it: \"Work late. Feel tired.\"",
+    "ep 8 (arthur-ask-favour, with Otto): needs a favour from grumpy Otto and would rather struggle alone; Ben Franklin effect (Jecker & Landy 1969: people the researcher personally asked to return their winnings liked him more); borrows Otto's pen, next day Otto says hello"
    ]
   },
   "critic": {
@@ -72,7 +73,8 @@
     "ep 4 (otto-quiz-night, with Arthur): sure he crushed quiz night (\"EASY!\"), comes LAST; Dunning-Kruger effect (Kruger & Dunning 1999: bottom-quarter scorers averaged around the 12th percentile but guessed around the 62nd)",
     "ep 5 (lila-replay-write): cameo in Lila's replay as the boss she called \"Mum\"",
     "ep 6 (otto-rhyme-poster, with Arthur): hangs a rhyming poster \"Work late, feel great\"; rhyme-as-reason effect (McGlone & Tofighbakhsh 2000: \"woes unite foes\" rated more accurate than \"woes unite enemies\")",
-    "ep 7 (otto-name-it, with Lila): furious when the printer jams before his big meeting, types in caps, insists he's fine; affect labeling (Lieberman et al. 2007: naming the feeling lowered amygdala activity); Lila asks 'Frustrated?' and his jaw unclenches"
+    "ep 7 (otto-name-it, with Lila): furious when the printer jams before his big meeting, types in caps, insists he's fine; affect labeling (Lieberman et al. 2007: naming the feeling lowered amygdala activity); Lila asks 'Frustrated?' and his jaw unclenches",
+    "ep 8 (arthur-ask-favour, with Arthur): lends Arthur his pen and is suddenly friendly the next day"
    ]
   },
   "lila": {
@@ -91,7 +93,8 @@
     "ep 3 (tapping-song, with Otto): hears only knocking when Otto taps Happy Birthday; guesses Morse code",
     "ep 4 (lila-group-photo, with Mae): hates her solo selfie but loves the group photo, same face; cheerleader effect (Walker & Vul 2014: same face rated more attractive in a group than cropped alone — tiny, ~49th to 51st percentile)",
     "ep 5 (lila-replay-write, with The Critic, Mae): replays the meeting where she called her boss \"Mum\"; expressive writing (Pennebaker & Beall 1986: 15 min × 4 days, fewer health-centre visits over six months); closes the notebook",
-    "ep 6 (otto-name-it, with Otto): asks her boss 'Frustrated?' — naming it calms him (affect labeling)"
+    "ep 6 (otto-name-it, with Otto): asks her boss 'Frustrated?' — naming it calms him (affect labeling)",
+    "ep 7 (lila-train-stranger, with The Doubt): morning train, headphones in, eyes down while The Doubt hisses 'it'll be awkward'; mistakenly seeking solitude (Epley & Schroeder 2014: Chicago commuters who talked to a stranger had a more pleasant ride, though they predicted the opposite); asks 'Good book?' and twenty minutes vanish"
    ]
   },
   "doubt": {
@@ -105,7 +108,8 @@
    "history": [
     "ep 1 (scarcity-cookies, with Lila): introduced — whispers 'what if they're gone?' at an 'only 2 left' sign; shrinks when Lila asks 'would I want it if there were ten?'",
     "ep 2 (arthur-3am-worries, with Arthur): whispers \"what if…\" at 3 AM; gets stamped WRONG and shrinks once Arthur writes his worries down and checks them (LaFreniere & Newman 2020)",
-    "ep 3 (mae-too-many-shows, with Mae): whispers 'what if the other one's better?' over a long menu (choice overload)"
+    "ep 3 (mae-too-many-shows, with Mae): whispers 'what if the other one's better?' over a long menu (choice overload)",
+    "ep 4 (lila-train-stranger, with Lila): hisses 'it'll be awkward' on the train; shrinks to a pea when Lila says hi"
    ]
   }
  }
