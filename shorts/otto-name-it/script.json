@@ -17,7 +17,7 @@
  "handle": "@aroundthestrangeai",
  "post": {
   "title": "Angry? Say This One Word Out Loud #shorts",
-  "description": "Send this to the friend who says 'I'm fine' through gritted teeth. Otto is angry: the printer jammed right before his big meeting. The fix isn't forcing yourself to calm down; it's naming the feeling. In 2007, Matthew Lieberman, Naomi Eisenberger, Molly Crockett, Sabrina Tom, Jennifer Pfeifer and Baldwin Way (Psychological Science, 'Putting Feelings Into Words') scanned people's brains while they looked at angry and fearful faces. When they picked a word for the emotion ('angry', 'scared') instead of just matching the faces, activity in the amygdala, a brain region involved in threat and emotion, went down, while a region in the right prefrontal cortex became more active. Psychologists call it affect labeling. It's a lab finding about short-term reactions, not a cure-all, but it's a free thing to try: one word, out loud. Comment 'got me' if you've typed in caps today. #psychology #shorts #anger #emotions #affectlabeling",
+  "description": "Your word today? Tell me in the comments. Send this to the friend who says 'I'm fine' through gritted teeth. Otto is angry: the printer jammed right before his big meeting. The fix isn't forcing yourself to calm down; it's naming the feeling. In 2007, Matthew Lieberman, Naomi Eisenberger, Molly Crockett, Sabrina Tom, Jennifer Pfeifer and Baldwin Way (Psychological Science, 'Putting Feelings Into Words') scanned people's brains while they looked at angry and fearful faces. When they picked a word for the emotion ('angry', 'scared') instead of just matching the faces, activity in the amygdala, a brain region involved in threat and emotion, went down, while a region in the right prefrontal cortex became more active. Psychologists call it affect labeling. It's a lab finding about short-term reactions, not a cure-all, but it's a free thing to try: one word, out loud. Comment 'got me' if you've typed in caps today. #psychology #shorts #anger #emotions #affectlabeling",
   "tags": [
    "affect labeling",
    "anger",
@@ -273,6 +273,12 @@
      }
     ],
     [
+     "Your word"
+    ],
+    [
+     "today?"
+    ],
+    [
      "Send this"
     ],
     [
@@ -288,8 +294,9 @@
      "through gritted teeth."
     ]
    ],
-   "text": "One word, out loud. Name it to TAME it. Send this to the friend who says 'I'm fine' through gritted teeth.",
+   "text": "One word, out loud. Name it to TAME it. Your word today? Send this to the friend who says 'I'm fine' through gritted teeth.",
    "tone": "warmly, blunt"
   }
- ]
+ ],
+ "question": "Your word today?"
 }
