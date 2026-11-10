@@ -1,5 +1,5 @@
 {
-  "about": "Psychology Shorts styles in rotation (Shivam, 2026-10-26). scripts/pick_style.py picks one AT RANDOM for each new script (no strict order); the only rule is never 3 in a row of the same style. To add a style: build its kit/engine, add an entry here, a folder shorts/styles/<id>/ with reference + cast pictures, and a section in STYLES.md. Styles with \"auto\": false are saved but only picked once they have an automatic build path.",
+  "about": "Psychology Shorts styles in rotation (Shivam, 2026-10-26; experiment log added 2026-11-09). scripts/pick_style.py picks one AT RANDOM for each new script (no strict order); the only rule is never 3 in a row of the same style. To add a style: build its kit/engine, add an entry here, a folder shorts/styles/<id>/ with reference + cast pictures, and a section in STYLES.md. Styles with \"auto\": false are saved but only picked once they have an automatic build path.",
   "max_in_a_row": 2,
   "styles": [
     {
@@ -30,6 +30,15 @@
       "weight": 2
     },
     {
+      "id": "xplog",
+      "name": "experiment log",
+      "format": "xplog",
+      "look": "xplog",
+      "cast": "shorts/characters/xplog-cast.json",
+      "example": "shorts/finn-left-on-read",
+      "weight": 1
+    },
+    {
       "id": "expressionism",
       "name": "German Expressionism",
       "format": "prebuilt",
@@ -41,5 +50,5 @@
     }
   ],
   "weights_note": "2026-11-05 experiment: own-data medians retro 1044 / tedmg 965 vs ted2 319 views -> retro & tedmg weighted 2x.",
-  "rotation_note": "2026-11-08 (Shivam): through the Nov 15 review, retro + tedmg carry the rotation; ted2 limited to at most 1 in any 3 picks (min_gap 2 = not picked if it was one of the last 2), so about one Ted 2 a day. expressionism stays auto:false (paused, 12 views); off-slot topical tests (vox-explainer, hyperframes) paused too."
+  "rotation_note": "2026-11-08 (Shivam): through the Nov 15 review, retro + tedmg carry the rotation; ted2 limited to at most 1 in any 3 picks (min_gap 2 = not picked if it was one of the last 2), so about one Ted 2 a day. expressionism stays auto:false (paused, 12 views); off-slot topical tests (vox-explainer, hyperframes) paused too. 2026-11-09 (Shivam): experiment log (xplog) added to the rotation at weight 1 (retro/tedmg stay 2x), so roughly 1 pick in 5-6 until the review."
 }

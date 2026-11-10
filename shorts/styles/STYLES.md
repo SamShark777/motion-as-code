@@ -3,7 +3,7 @@
 New Shorts use **three styles picked at random** (no fixed order — `python3 scripts/pick_style.py` chooses one per
 script from `styles.json`, never 3 in a row of the same): **Ted type 2** (format `cdesign`, the original — see the
 runbook's Ted type 2 section and shorts/rename-nerves), **ted-MG motion graphics** (format `tedmg`) and **retro modern
-illustration** (format `retro`). More styles will be added to `styles.json`. The two new ones are recurring-character micro-stories (character → situation →
+illustration** (format `retro`). **Experiment log** (format `xplog`, added 2026-11-09 — its own section below) is the fourth. More styles will be added to `styles.json`. The two new ones are recurring-character micro-stories (character → situation →
 conflict → "But…" psychology reveal → name the effect → payoff/cliffhanger) and are described here. Look at the pictures in this folder before
 writing or drawing anything: `reference-*.jpg` are frames from the reels Shivam picked; `ours-*.jpg` are frames
 our pipeline actually rendered — that is the quality bar.
@@ -65,6 +65,41 @@ Each style has its own recurring cast — see the `cast-sheet.jpg` in each folde
 - **retro:** Arthur, Mae, Otto, Lila (`RMArthur` / `RMMae` / `RMOtto` / `RMLila`, or `RMHuman who=`) and two creatures that
   personify the voices in our heads: The Critic (`RMCritic`, harsh self-judgement) and The Doubt (`RMDoubt`, "what if…" worry).
 Give episodes 2–3 characters, rotate who leads, keep personalities and relationships consistent, update `history`.
+
+## Experiment log (`xplog`, Shivam 2026-11-09)
+Modelled on a reel Shivam shared ("I tested the hot-singles ads for 24 hours": HOUR 1 header, trial countdown, FAKES FOUND 0/7,
+one wide cartoon panel, sentence captions). We keep the **structure**, not their character, palette or handle (reference frames are
+third-party and are not committed). Ours: `xplog/ours-finn-left-on-read.jpg`, `ours-frame-*.jpg`, cast `xplog/cast-sheet.jpg`.
+- **What it is:** a timed experiment told in second person ("You send one text."), as a log. The viewer is the subject; a cast
+  member (Finn, Ivy or Gus — `characters/xplog-cast.json`) is their stand-in on screen. One everyday overthinking situation, a
+  clock that jumps forward chapter by chapter (MINUTE 4 → HOUR 2 → HOUR 23), and a counter that fills up (SPIRALS 0/7,
+  EXCUSES 0/5, REWRITES 0/6). The hook opens a loop the last chapter closes ("Stay for the reply. It is three words.").
+- **Page (the engine draws it, never art.jsx):** HUD on top = chapter title with a yellow underline, the tag
+  "THE OVERTHINK CLUB", the running clock and the counter; ONE wide panel in the middle; the line's full sentence underneath
+  in white caps (Poppins 800), the emphasis word turning yellow as it is spoken. Navy `#10131F` page.
+- **Look of the panel:** thick ink outlines, navy striped walls, cream cards `#F3E9CF`, yellow `#FFC93C`, red `#E5484D` for alerts
+  and stamps, green only for "online". Mostly objects and UI close-ups (the chat window, a phone face down, a stopwatch, a case
+  file, a filing drawer), with a character close-up every 3–4 lines for the emotion. One idea per panel; text in panels in CAPS, ≥ 22 px.
+- **Kit (`design_kit/xplog-kit.jsx`, engine `xplog-engine.jsx`):** `XLBg` (wall | wallDark | room | wood | woodDark), `XLChar`
+  (who, mood = neutral | wide | worried | squint | sleepy | relief | smile, look, sweat, bl), `XLAvatar`, `XLChat` + `XLBubble`,
+  `XLPhone` (back | lit), `XLCard`, `XLText`, `XLChip`, `XLStamp`, `XLStopwatch`, `XLDial`, `XLSpiral`, `XLBattery`, `XLBulb`,
+  `XLBars`, `XLGlow`; motion wrappers `XLPop`, `XLFade`, `XLRise`, `XLWiggle`, `XLPulse` (all take `t` + `at`); helpers on `XL`
+  (palette, clamp, eo, back, osc, hsh, p2, clock, beat).
+- **script.json:** `format` + `look` = `xplog`, `pattern: "Experiment log"`, plus top-level
+  `"hud": {"clock_label": "LEFT ON READ FOR", "count_label": "SPIRALS", "count_total": 7, "tag": "THE OVERTHINK CLUB"}` and per line
+  an optional `"hud": {"title": "MINUTE 4", "clock": 240, "run": true, "count": 1, "count_beat": 1}` (carried forward: `clock` =
+  seconds shown when the line starts, ticking in real time unless `"run": false`; `count` lands on chunk `count_beat`, default the
+  emphasis chunk). Lines keep the usual shape (`scene`, `art`, `chunks` of 1–3 words with exactly ONE emphasis chunk, `text`,
+  `tone`); the caption shows the whole line, so write each line as one or two short complete sentences.
+- **Length:** 12–16 lines, **100–125 spoken words** (the example: 15 lines, 118 words, 42 s). Chapters are short: time stamp
+  first ("Hour two."), then what you do, then the sting. 5–7 counter steps, then the "But…" reveal in plain words, the payoff
+  that closes the hook's loop, the comment question, the share line.
+- **art.jsx:** one component per `art`, drawing ONLY the panel — `viewBox 0 0 1080 608`, background included — as a pure function
+  of `T`, `t`, `dur`, `beats`. Every scene is also rendered before it starts, so guard anything that breaks on a negative `t`
+  (`'.'.repeat(n)`, array indexes). Wrap in `(function () { … Object.assign(window, { … }); })();`. Set `thumb_scene` to a line
+  whose subject sits in the middle of the panel (the cover crops the panel's centre).
+- **Rules that still apply:** Context → Lean → Snapback hook, "that's me" beats, comment question before the share ending, real
+  studies only with verified numbers (the example cites none on purpose), no whoosh sounds.
 
 ## German Expressionism (`expressionism`, Shivam 2026-11-04)
 Look: 1920s silent-film expressionism (Caligari-style crooked sets). Bold black ink outlines, jagged geometric shapes, walls and buildings tilted at impossible angles, one hard light source (bare bulb, candle, window beam) with long angular shadows, thick textured oil paint mixed with woodcut cross-hatching, paper grain. Palette: deep black, bone white #EFE6CF, muted olive green, oxblood red #9E2B22, ochre #D9A441. Figures elongated, huge haunted round eyes, long fingers. Recurring motifs: staring eyes, stairs/doorways, monstrous shadows cast by ordinary objects.

@@ -100,6 +100,9 @@ def main():
     elif S.get("format") == "retro":  # retro modern illustration style (Shivam, 2026-10-26)
         fonts = "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Montserrat:wght@700;800;900&display=swap"
         files, app = f"{kit}/animations-v3.jsx {kit}/retro-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/retro-engine.jsx", "RetroShortApp"
+    elif S.get("format") == "xplog":  # experiment log: HUD + one wide panel + sentence caption (Shivam, 2026-11-09)
+        fonts = "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Montserrat:wght@700;800;900&display=swap"
+        files, app = f"{kit}/animations-v3.jsx {kit}/xplog-kit.jsx ./art.jsx {kit}/cover.jsx {kit}/xplog-engine.jsx", "XpLogShortApp"
     else:
         fonts = "https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap"
         files, app = f"{kit}/animations-v3.jsx {kit}/caption-system.jsx {kit}/ted2-cast.jsx ./art.jsx {kit}/cover.jsx {kit}/engine.jsx", "DesignShortApp"

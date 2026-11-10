@@ -1,3 +1,11 @@
+> **2026-11-09 — Shivam: NEW STYLE IN THE ROTATION — EXPERIMENT LOG (`xplog`).** "Add this style to rotation": the timed
+> experiment format from the reel he shared (HUD with chapter title + running clock + counter, one wide panel, sentence captions).
+> `styles.json` has it at weight 1 (retro + tedmg stay 2×; ted2 keeps `min_gap: 2`), so `pick_style.py` picks it about once in
+> 5–6 scripts. How to write and draw it: shorts/styles/STYLES.md "Experiment log"; kit `design_kit/xplog-kit.jsx`, engine
+> `xplog-engine.jsx`, cast `characters/xplog-cast.json` (Finn, Ivy, Gus), example `shorts/finn-left-on-read` (queued as No. 193).
+> Different from the character stories: second person, 12–16 lines, 100–125 words, art.jsx draws only the 1080×608 panel.
+> Include it in the Nov 15 review as its own group.
+
 > **2026-11-08 — Shivam: ROTATION + COMMENT ENDING (every script not yet built; review Nov 15).** YouTube since Oct 28:
 > retro avg ~800 (median 1,011), tedmg ~725, ted2 ~366; German Expressionism (12) and the vox-explainer topical test (65) flopped.
 > 1. **Styles:** retro + tedmg carry the rotation. `pick_style.py` now skips ted2 if it was one of the last 2 picks

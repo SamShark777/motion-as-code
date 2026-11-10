@@ -31,7 +31,7 @@ if [ "$FORMAT0" = "prebuilt" ] || [ -f "$DIR/source/final.mp4" ]; then
   echo "ENGINE: kokoro"
   exit 0
 fi
-if [ "$FORMAT0" = "cdesign" ] || [ "$FORMAT0" = "story" ] || [ "$FORMAT0" = "stick" ] || [ "$FORMAT0" = "tedmg" ] || [ "$FORMAT0" = "retro" ]; then
+if [ "$FORMAT0" = "cdesign" ] || [ "$FORMAT0" = "story" ] || [ "$FORMAT0" = "stick" ] || [ "$FORMAT0" = "tedmg" ] || [ "$FORMAT0" = "retro" ] || [ "$FORMAT0" = "xplog" ]; then
   # Claude Design style (Ted type 2) and story Shorts: React/SVG scenes captured frame by frame (scripts/design_build.py)
   ( cd "$ROOT/app" && [ -d node_modules ] || bun install )
   [ -n "${CHROME_PATH:-}" ] || export CHROME_PATH="$(ls -d /opt/pw-browsers/chromium-*/chrome-linux/chrome 2>/dev/null | head -1 || command -v google-chrome)"

@@ -154,7 +154,7 @@
               <defs><clipPath id="tcClip"><rect x="96" y="940" width="888" height="900" rx="56" /></clipPath></defs>
               <rect x="96" y="940" width="888" height="900" rx="56" fill={ln.color || '#1F3B73'} />
               <g clipPath="url(#tcClip)">
-                <svg x="96" y="940" width="888" height="900" viewBox="0 720 972 985" preserveAspectRatio="xMidYMid slice">
+                <svg x="96" y="940" width="888" height="900" viewBox={S.format === 'xplog' ? '0 0 1080 608' : '0 720 972 985'} preserveAspectRatio="xMidYMid slice">
                   <SceneArt T={T} t={30} dur={30} />
                 </svg>
               </g>

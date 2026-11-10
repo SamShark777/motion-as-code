@@ -1,0 +1,44 @@
+{
+ "about": "Recurring cast of the experiment log Shorts (format \"xplog\"). Drawn by shorts/design_kit/xplog-kit.jsx (XLChar who=<id> mood=…) — never redraw a cast member by hand. The narrator speaks to the viewer as \"you\"; the cast member is the viewer's stand-in on screen. People the viewer texts or meets (Sam, a boss, a date) stay grey avatars (XLAvatar). Append each episode to the character's history.",
+ "style": "Thick ink outlines, big round heads with round white eyes, navy striped walls, cream UI cards, yellow accent #FFC93C, red #E5484D for alerts. HUD on top, one wide panel, sentence caption. Pictures: shorts/styles/xplog/.",
+ "characters": {
+  "finn": {
+   "name": "Finn",
+   "age": "26",
+   "look": "yellow beanie with a white bobble, round glasses, teal hoodie",
+   "default_mood": "worried",
+   "personality": "chronic overthinker; rereads everything he sends; calm on the outside, running twelve tabs inside",
+   "relationships": {
+    "ivy": "flatmate",
+    "gus": "best friend since school"
+   },
+   "history": [
+    "ep 1 (finn-left-on-read): texts Sam \"we still on for Saturday?\", left on read 23 hours, 7 spirals; Sam's phone had died"
+   ]
+  },
+  "ivy": {
+   "name": "Ivy",
+   "age": "27",
+   "look": "purple bob, orange jumper",
+   "default_mood": "neutral",
+   "personality": "over-prepares; rehearses conversations in the shower; very funny once the plan falls apart",
+   "relationships": {
+    "finn": "flatmate",
+    "gus": "gym partner"
+   },
+   "history": []
+  },
+  "gus": {
+   "name": "Gus",
+   "age": "26",
+   "look": "dark curls, blue hoodie",
+   "default_mood": "smile",
+   "personality": "says he never overthinks; overthinks about that",
+   "relationships": {
+    "finn": "best friend since school",
+    "ivy": "gym partner"
+   },
+   "history": []
+  }
+ }
+}
