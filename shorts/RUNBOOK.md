@@ -56,6 +56,9 @@
 > `"hook": {"context": "…", "lean": "shock|pain|proof", "snapback": "…"}` so the weekly review can compare lean types.
 > Source: Kallaway's "god-tier hook" carousel (Context, The Lean, Snapback) that Shivam shared.
 
+> **2026-11-09: a FOURTH style is in the cycle — experiment log (`xplog`).** When `pick_style.py` prints it, follow shorts/styles/STYLES.md
+> "Experiment log" (second person, 12–16 lines, 100–125 words, HUD fields, art.jsx draws only the 1080×608 panel), NOT the ted-MG / retro rules below.
+
 > **2026-10-26 (updated) — Shivam: THE STYLE CYCLE replaces the stick stories.** New Shorts use THREE styles, **picked at random** (Shivam:
 > "don't switch every single time, just randomly"): **Ted type 2** (`"format": "cdesign"`, `"look": "ted2"` — rules in the
 > "Ted type 2" section below), **ted-MG motion graphics** (`"format": "tedmg"`, `"look": "tedmg"`) and **retro modern
