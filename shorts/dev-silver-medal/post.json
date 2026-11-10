@@ -1,0 +1,17 @@
+{
+ "no": 162,
+ "slug": "dev-silver-medal",
+ "date": "2026-11-11",
+ "slot": "14:00",
+ "due": "2026-11-11T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-11/dev-silver-medal.mp4",
+ "buffer": {
+  "youtube": "6af397da40d53aa0ae1770ac",
+  "instagram": "6af397db32827e88e29af4dd",
+  "tiktok": "6af397db357b57fbf8bd8461"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 53.8
+}

@@ -1,0 +1,17 @@
+{
+ "no": 193,
+ "slug": "finn-left-on-read",
+ "date": "2026-11-11",
+ "slot": "09:00",
+ "due": "2026-11-11T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-11/finn-left-on-read.mp4",
+ "buffer": {
+  "youtube": "6af397d5a5cf8ae8befef9a7",
+  "instagram": "6af397d532827e88e29af3b7",
+  "tiktok": "6af397d6cda6440b2f1d0409"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 41.9
+}
