@@ -1,0 +1,17 @@
+{
+ "no": 161,
+ "slug": "otto-name-it",
+ "date": "2026-11-10",
+ "slot": "19:00",
+ "due": "2026-11-11T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-10/otto-name-it.mp4",
+ "buffer": {
+  "youtube": "6af268f9b59b34913a47b6c9",
+  "instagram": "6af268fa26f9e6aeead4d2fd",
+  "tiktok": "6af268fa05af22d726f82792"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 54.4
+}

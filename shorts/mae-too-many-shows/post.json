@@ -1,0 +1,17 @@
+{
+ "no": 156,
+ "slug": "mae-too-many-shows",
+ "date": "2026-11-10",
+ "slot": "09:00",
+ "due": "2026-11-10T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-10/mae-too-many-shows.mp4",
+ "buffer": {
+  "youtube": "6af268f0b59b34913a47b2de",
+  "instagram": "6af268f1e261c09acc8e491b",
+  "tiktok": "6af268f226f9e6aeead4d1a6"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 34.8
+}

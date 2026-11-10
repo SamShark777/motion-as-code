@@ -1,0 +1,17 @@
+{
+ "no": 160,
+ "slug": "june-dont-think",
+ "date": "2026-11-10",
+ "slot": "14:00",
+ "due": "2026-11-10T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-10/june-dont-think.mp4",
+ "buffer": {
+  "youtube": "6af268f4223aa16048dc3f76",
+  "instagram": "6af268f505af22d726f825be",
+  "tiktok": "6af268f605af22d726f825f0"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 40.7
+}
