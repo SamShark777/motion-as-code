@@ -1,0 +1,17 @@
+{
+ "no": 166,
+ "slug": "milo-google-egg",
+ "date": "2026-11-12",
+ "slot": "19:00",
+ "due": "2026-11-13T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-12/milo-google-egg.mp4",
+ "buffer": {
+  "youtube": "6af4f5bbcb4c7286fdfcd32c",
+  "instagram": "6af4f5bb77f44b65360099ec",
+  "tiktok": "6af4f5bc304f8985c46efd45"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 46.1
+}

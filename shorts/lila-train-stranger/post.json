@@ -1,0 +1,17 @@
+{
+ "no": 165,
+ "slug": "lila-train-stranger",
+ "date": "2026-11-12",
+ "slot": "14:00",
+ "due": "2026-11-12T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-12/lila-train-stranger.mp4",
+ "buffer": {
+  "youtube": "6af4f5b6cb4c7286fdfcd198",
+  "instagram": "6af4f5b73d8c751bfdfe07c6",
+  "tiktok": "6af4f5b8cb4c7286fdfcd24c"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 45.7
+}

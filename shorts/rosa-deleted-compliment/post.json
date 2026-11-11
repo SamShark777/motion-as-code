@@ -1,0 +1,17 @@
+{
+ "no": 164,
+ "slug": "rosa-deleted-compliment",
+ "date": "2026-11-12",
+ "slot": "09:00",
+ "due": "2026-11-12T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-12/rosa-deleted-compliment.mp4",
+ "buffer": {
+  "youtube": "6af4f5b2cb4c7286fdfcd03c",
+  "instagram": "6af4f5b2cb4c7286fdfcd07b",
+  "tiktok": "6af4f5b3bc9f3773a1a784ca"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 36.0
+}
