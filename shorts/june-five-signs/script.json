@@ -1,0 +1,363 @@
+{
+ "slug": "june-five-signs",
+ "no": 173,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "June",
+ "episode": 6,
+ "cast": [
+  "june",
+  "theo"
+ ],
+ "title": [
+  "5 Signs",
+  "You're Not Done"
+ ],
+ "credit": "Quoidbach, Gilbert & Wilson · 2013",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs You're Not Done Changing #shorts",
+  "description": "How many did you check? Tell me in the comments. Send this to the friend who checked all five. June finds her old diary and cringes at every page. Old photos, an embarrassing school playlist, an old best friend who feels like a stranger, the coffee you swore you'd never drink, and the feeling that this version of you is the final one. In 'The End of History Illusion' (Science, 2013), Jordi Quoidbach, Daniel Gilbert and Timothy Wilson asked more than 19,000 people aged 18 to 68 about their personalities, values and preferences. At every age, people reported changing a lot over the past ten years but expected to change much less over the next ten. Future you will probably cringe at today, and that's growth. #psychology #shorts #endofhistoryillusion #overthinking #selfgrowth",
+  "tags": [
+   "end of history illusion",
+   "signs you",
+   "personal growth",
+   "Quoidbach",
+   "Gilbert",
+   "psychology"
+  ]
+ },
+ "thumb_text": "5 Signs You're Not Done Changing",
+ "thumb_emph": "Changing",
+ "thumb_mood": "thinking",
+ "music_vibe": "lofi",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "June finds her old diary and cringes at every page",
+  "lean": "pain",
+  "snapback": "Five signs you're still changing, and the twist is GOOD news."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who checked all five.",
+ "question": "How many did you check?",
+ "experiment": "signs-list + share ending + comment question, 2026-11-11",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGJuneDiary",
+   "chunks": [
+    [
+     "June finds"
+    ],
+    [
+     "her old DIARY",
+     {
+      "emph": "DIARY"
+     }
+    ],
+    [
+     "and cringes"
+    ],
+    [
+     "at every page."
+    ]
+   ],
+   "text": "June finds her old DIARY and cringes at every page.",
+   "tone": "amused, cringing",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "MGFiveSigns",
+   "chunks": [
+    [
+     "Five signs"
+    ],
+    [
+     "you're still changing,"
+    ],
+    [
+     "and the twist"
+    ],
+    [
+     "is GOOD news.",
+     {
+      "emph": "GOOD"
+     }
+    ]
+   ],
+   "text": "Five signs you're still changing, and the twist is GOOD news.",
+   "tone": "intrigued",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.16
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 1",
+   "art": "MGSign1",
+   "chunks": [
+    [
+     "One:"
+    ],
+    [
+     "old photos"
+    ],
+    [
+     "make you CRINGE.",
+     {
+      "emph": "CRINGE"
+     }
+    ]
+   ],
+   "text": "One: old photos make you CRINGE.",
+   "tone": "knowingly, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 2",
+   "art": "MGSign2",
+   "chunks": [
+    [
+     "Two:"
+    ],
+    [
+     "your school playlist"
+    ],
+    [
+     "is EMBARRASSING now.",
+     {
+      "emph": "EMBARRASSING"
+     }
+    ]
+   ],
+   "text": "Two: your school playlist is EMBARRASSING now.",
+   "tone": "teasing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 3",
+   "art": "MGSign3",
+   "chunks": [
+    [
+     "Three:"
+    ],
+    [
+     "an old"
+    ],
+    [
+     "best friend"
+    ],
+    [
+     "feels like"
+    ],
+    [
+     "a STRANGER.",
+     {
+      "emph": "STRANGER"
+     }
+    ]
+   ],
+   "text": "Three: an old best friend feels like a STRANGER.",
+   "tone": "softly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 4",
+   "art": "MGSign4",
+   "chunks": [
+    [
+     "Four:"
+    ],
+    [
+     "you swore"
+    ],
+    [
+     "you'd never like"
+    ],
+    [
+     "COFFEE.",
+     {
+      "emph": "COFFEE"
+     }
+    ]
+   ],
+   "text": "Four: you swore you'd never like COFFEE.",
+   "tone": "playful"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign 5",
+   "art": "MGSign5",
+   "chunks": [
+    [
+     "Five:"
+    ],
+    [
+     "you're sure"
+    ],
+    [
+     "THIS version",
+     {
+      "emph": "THIS"
+     }
+    ],
+    [
+     "of you"
+    ],
+    [
+     "is final."
+    ]
+   ],
+   "text": "Five: you're sure THIS version of you is final.",
+   "tone": "knowing, slower"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGQuoidbach",
+   "chunks": [
+    [
+     "In 2013,"
+    ],
+    [
+     "over 19,000 people"
+    ],
+    [
+     "said they'd changed"
+    ],
+    [
+     "LOTS",
+     {
+      "emph": "LOTS"
+     }
+    ],
+    [
+     "in ten years."
+    ]
+   ],
+   "text": "In 2013, over 19,000 people said they'd changed LOTS in ten years.",
+   "tone": "curious",
+   "say": "In twenty thirteen, over nineteen thousand people said they'd changed lots in ten years."
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "art": "MGExpectLess",
+   "chunks": [
+    [
+     "But expected"
+    ],
+    [
+     "far LESS",
+     {
+      "emph": "LESS"
+     }
+    ],
+    [
+     "in the"
+    ],
+    [
+     "next ten."
+    ]
+   ],
+   "text": "But expected far LESS in the next ten.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameHistory",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the end"
+    ],
+    [
+     "of history"
+    ],
+    [
+     "ILLUSION.",
+     {
+      "emph": "ILLUSION"
+     }
+    ]
+   ],
+   "text": "It's called the end of history ILLUSION.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Reframe",
+   "art": "MGFutureYou",
+   "chunks": [
+    [
+     "Future you"
+    ],
+    [
+     "will cringe"
+    ],
+    [
+     "at today."
+    ],
+    [
+     "That's GROWTH.",
+     {
+      "emph": "GROWTH"
+     }
+    ]
+   ],
+   "text": "Future you will cringe at today. That's GROWTH.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndSigns",
+   "chunks": [
+    [
+     "How MANY",
+     {
+      "emph": "MANY"
+     }
+    ],
+    [
+     "did you check?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checked"
+    ],
+    [
+     "all five."
+    ]
+   ],
+   "text": "How MANY did you check? Send this to the friend who checked all five.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

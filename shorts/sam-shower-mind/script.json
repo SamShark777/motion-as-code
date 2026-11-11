@@ -1,0 +1,303 @@
+{
+ "slug": "sam-shower-mind",
+ "no": 172,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Sam",
+ "episode": 7,
+ "cast": [
+  "sam",
+  "priya"
+ ],
+ "title": [
+  "Wandering",
+  "Mind"
+ ],
+ "credit": "Killingsworth & Gilbert · 2010",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Your Mind Is Somewhere Else Half the Day #shorts",
+  "description": "Where did your mind go just now? Tell me in the comments. Send this to the friend who's never fully here. Sam's in the shower and his mind is already at tomorrow's meeting. In 'A Wandering Mind Is an Unhappy Mind' (Science, 2010), Matthew Killingsworth and Daniel Gilbert of Harvard used an iPhone app to ping 2,250 adults at random moments and ask what they were doing, what they were thinking about and how happy they felt. People's minds were wandering in 46.9% of the samples, and people were less happy when their minds wandered than when they didn't. Even when they drifted to pleasant topics, they were no happier than when focused on what they were doing, and what people were thinking predicted their happiness better than what they were doing. Small fix: notice one real thing in front of you. #psychology #shorts #mindwandering #overthinking #mindfulness",
+  "tags": [
+   "mind wandering",
+   "overthinking",
+   "happiness",
+   "Killingsworth",
+   "Gilbert",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Mind Is Somewhere Else",
+ "thumb_emph": "Somewhere",
+ "thumb_mood": "thinking",
+ "music_vibe": "calm",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Sam is in the shower, mind already at tomorrow's meeting",
+  "lean": "pain",
+  "snapback": "But it's not what you're doing that drains you. It's the WANDERING."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who's never fully here.",
+ "question": "Where did your mind go?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "art": "WMShower",
+   "chunks": [
+    [
+     "Sam's in"
+    ],
+    [
+     "the shower."
+    ],
+    [
+     "His MIND",
+     {
+      "emph": "MIND",
+      "fx": "pop"
+     }
+    ],
+    [
+     "is at"
+    ],
+    [
+     "tomorrow's meeting."
+    ]
+   ],
+   "text": "Sam's in the shower. His MIND is at tomorrow's meeting.",
+   "tone": "softly, curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "WMYou",
+   "chunks": [
+    [
+     "You know it:"
+    ],
+    [
+     "body here,"
+    ],
+    [
+     "head SOMEWHERE else.",
+     {
+      "emph": "SOMEWHERE",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "You know it: body here, head SOMEWHERE else.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "WMSnap",
+   "chunks": [
+    [
+     "But it's not"
+    ],
+    [
+     "what you're doing"
+    ],
+    [
+     "that drains you."
+    ],
+    [
+     "It's the WANDERING.",
+     {
+      "emph": "WANDERING",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "But it's not what you're doing that drains you. It's the WANDERING.",
+   "tone": "surprised",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#2B6E7A",
+   "art": "WMStudy",
+   "chunks": [
+    [
+     "In 2010,"
+    ],
+    [
+     "Harvard researchers"
+    ],
+    [
+     "pinged 2,250 people's"
+    ],
+    [
+     "PHONES at random.",
+     {
+      "emph": "PHONES",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "In 2010, Harvard researchers pinged 2,250 people's PHONES at random.",
+   "tone": "curious",
+   "say": "In twenty ten, Harvard researchers pinged twenty-two hundred and fifty people's phones at random."
+  },
+  {
+   "sec": "cd",
+   "scene": "Half",
+   "color": "#B3202A",
+   "art": "WMHalf",
+   "chunks": [
+    [
+     "Nearly HALF",
+     {
+      "emph": "HALF",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "the time,"
+    ],
+    [
+     "minds were elsewhere."
+    ]
+   ],
+   "text": "Nearly HALF the time, minds were elsewhere.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#6A3FA0",
+   "art": "WMUnhappy",
+   "chunks": [
+    [
+     "And wandering minds"
+    ],
+    [
+     "were less HAPPY.",
+     {
+      "emph": "HAPPY",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "And wandering minds were less HAPPY.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "color": "#E07A2E",
+   "art": "WMName",
+   "chunks": [
+    [
+     "Their paper's title:"
+    ],
+    [
+     "a wandering mind"
+    ],
+    [
+     "is an"
+    ],
+    [
+     "UNHAPPY mind.",
+     {
+      "emph": "UNHAPPY",
+      "fx": "doodle",
+      "doodle": "🌧️"
+     }
+    ]
+   ],
+   "text": "Their paper's title: a wandering mind is an UNHAPPY mind.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "color": "#2B6E7A",
+   "art": "WMProof",
+   "chunks": [
+    [
+     "Think of the"
+    ],
+    [
+     "last time"
+    ],
+    [
+     "you read"
+    ],
+    [
+     "a page"
+    ],
+    [
+     "three times."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Think of the last time you read a page three times. Yeah, THAT one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "art": "WMOutro",
+   "chunks": [
+    [
+     "Sam feels"
+    ],
+    [
+     "the WATER.",
+     {
+      "emph": "WATER",
+      "fx": "pop"
+     }
+    ],
+    [
+     "Where did"
+    ],
+    [
+     "your mind go?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who's never"
+    ],
+    [
+     "fully here."
+    ]
+   ],
+   "text": "Sam feels the WATER. Where did your mind go? Send this to the friend who's never fully here.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

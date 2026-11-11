@@ -1,0 +1,311 @@
+{
+ "slug": "rosa-parking-ticket",
+ "no": 169,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Rosa",
+ "episode": 6,
+ "cast": [
+  "rosa",
+  "nia"
+ ],
+ "title": [
+  "Not Me",
+  "Bias"
+ ],
+ "credit": "Weinstein · 1980",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why You Think It Won't Happen to You #shorts",
+  "description": "Are you the 'I'll be fine' type? Tell me in the comments. Send this to the friend who never reads the parking sign. Rosa parks on the yellow line: 'I won't get a ticket.' In 'Unrealistic Optimism About Future Life Events' (Journal of Personality and Social Psychology, 1980), Neil Weinstein asked college students to rate their own chances of dozens of future events compared with their classmates'. On average they rated themselves more likely than their peers to have good things happen and less likely to have bad things happen. Not everyone can be above average, so as a group they were too optimistic. It's called optimism bias, and it's extremely common. Hope isn't the problem; skipping the sign is. #psychology #shorts #optimismbias #overthinking #mindset",
+  "tags": [
+   "optimism bias",
+   "unrealistic optimism",
+   "it won't happen to me",
+   "Weinstein",
+   "psychology",
+   "cognitive bias"
+  ]
+ },
+ "thumb_text": "It Won't Happen to Me",
+ "thumb_emph": "Me",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Rosa parks on the yellow line sure she won't get a ticket",
+  "lean": "pain",
+  "snapback": "But that's not arrogance. It's how most BRAINS work."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who never reads the sign.",
+ "question": "Are you the 'I'll be fine' type?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGRosaParking",
+   "chunks": [
+    [
+     "Rosa parks"
+    ],
+    [
+     "on the"
+    ],
+    [
+     "yellow line:"
+    ],
+    [
+     "'I won't get"
+    ],
+    [
+     "a TICKET.'",
+     {
+      "emph": "TICKET"
+     }
+    ]
+   ],
+   "text": "Rosa parks on the yellow line: 'I won't get a TICKET.'",
+   "tone": "playful, confident",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "MGNotMe",
+   "chunks": [
+    [
+     "You've thought"
+    ],
+    [
+     "it too:"
+    ],
+    [
+     "bad stuff happens."
+    ],
+    [
+     "Just not"
+    ],
+    [
+     "to YOU.",
+     {
+      "emph": "YOU"
+     }
+    ]
+   ],
+   "text": "You've thought it too: bad stuff happens. Just not to YOU.",
+   "tone": "knowingly, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGOptimism",
+   "chunks": [
+    [
+     "But that's"
+    ],
+    [
+     "not arrogance."
+    ],
+    [
+     "It's how"
+    ],
+    [
+     "most BRAINS work.",
+     {
+      "emph": "BRAINS"
+     }
+    ]
+   ],
+   "text": "But that's not arrogance. It's how most BRAINS work.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGWeinsteinStudy",
+   "chunks": [
+    [
+     "In 1980,"
+    ],
+    [
+     "Neil Weinstein"
+    ],
+    [
+     "asked students"
+    ],
+    [
+     "to rate"
+    ],
+    [
+     "their FUTURE.",
+     {
+      "emph": "FUTURE"
+     }
+    ]
+   ],
+   "text": "In 1980, Neil Weinstein asked students to rate their FUTURE.",
+   "tone": "curious",
+   "say": "In nineteen eighty, Neil Weinstein asked students to rate their future."
+  },
+  {
+   "sec": "cd",
+   "scene": "Split",
+   "art": "MGAboveBelow",
+   "chunks": [
+    [
+     "Good things:"
+    ],
+    [
+     "more likely"
+    ],
+    [
+     "for ME",
+     {
+      "emph": "ME"
+     }
+    ],
+    [
+     "than classmates."
+    ],
+    [
+     "Bad things:"
+    ],
+    [
+     "less."
+    ]
+   ],
+   "text": "Good things: more likely for ME than classmates. Bad things: less.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "art": "MGAverage",
+   "chunks": [
+    [
+     "But not everyone"
+    ],
+    [
+     "can be"
+    ],
+    [
+     "above AVERAGE.",
+     {
+      "emph": "AVERAGE"
+     }
+    ]
+   ],
+   "text": "But not everyone can be above AVERAGE.",
+   "tone": "dry, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameOptimism",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "optimism BIAS.",
+     {
+      "emph": "BIAS"
+     }
+    ]
+   ],
+   "text": "It's called optimism BIAS.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGUmbrella",
+   "chunks": [
+    [
+     "Think of the"
+    ],
+    [
+     "last time"
+    ],
+    [
+     "you skipped"
+    ],
+    [
+     "the umbrella."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "text": "Think of the last time you skipped the umbrella. Yeah, THAT one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndTicket",
+   "chunks": [
+    [
+     "Rosa got"
+    ],
+    [
+     "the ticket."
+    ],
+    [
+     "Hope's GOOD.",
+     {
+      "emph": "GOOD"
+     }
+    ],
+    [
+     "Read the"
+    ],
+    [
+     "sign anyway."
+    ],
+    [
+     "'I'll be"
+    ],
+    [
+     "fine' type?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who never reads"
+    ],
+    [
+     "the sign."
+    ]
+   ],
+   "text": "Rosa got the ticket. Hope's GOOD. Read the sign anyway. 'I'll be fine' type? Send this to the friend who never reads the sign.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}
