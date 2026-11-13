@@ -1,0 +1,29 @@
+{
+ "slug": "huang-horns",
+ "no": 204,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "note": "Shivam 2026-11-13: new format = latest news + psychology analysis, two NEW characters (Gus: jumps to verdicts; Nell: sceptic) conversing. Facts: Nvidia 8-K Nov 12 2026 (Huang resigned as President, CEO and director, effective immediately; Colette Kress interim CEO); Al Jazeera Nov 12 (alleged affair with suspected Chinese intelligence asset; FBI, Congress, Nvidia investigating; stock ~-10% early Thu). Allegations kept as 'alleged / nothing proven'. Halo effect: Thorndike 1920, J Applied Psychology.",
+ "post": {
+  "title": "Nvidia's CEO Resigned. Watch What Your Brain Does Next. #shorts",
+  "description": "Jensen Huang resigned as Nvidia's CEO on Nov 12, effective immediately. Reports allege an affair with a woman suspected of spying for China; the FBI and Congress are investigating, and nothing has been proven. Gus and Nell talk about the horns effect: the halo effect's evil twin, where one bad headline repaints a whole person and their whole past (Thorndike, 1920). Genius, villain, or too early to tell? Comment below. Sources: Nvidia SEC 8-K (Nov 12, 2026); Al Jazeera (Nov 12, 2026). Music: \"Secrets of the Schoolyard\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #nvidia #news #haloeffect #shorts",
+  "tags": [
+   "Nvidia",
+   "Jensen Huang",
+   "horns effect",
+   "halo effect",
+   "psychology",
+   "news"
+  ]
+ }
+}
