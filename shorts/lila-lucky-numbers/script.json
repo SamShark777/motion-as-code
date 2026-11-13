@@ -1,0 +1,286 @@
+{
+ "slug": "lila-lucky-numbers",
+ "no": 180,
+ "format": "retro",
+ "look": "retro",
+ "series": "Lila",
+ "episode": 9,
+ "cast": [
+  "lila",
+  "otto"
+ ],
+ "title": [
+  "Lucky",
+  "Numbers"
+ ],
+ "credit": "Langer · 1975",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Picking Your Own Lottery Numbers Feels Luckier #shorts",
+  "description": "What's your lucky thing? Tell me in the comments. Send this to the friend with the lucky socks. Lila won't take a random ticket in the office lottery: she picks her own numbers. In 'The Illusion of Control' (Journal of Personality and Social Psychology, 1975), Ellen Langer sold $1 lottery tickets to office workers. Some chose their own ticket, others were simply handed one. When asked to sell it back, people who had chosen their ticket asked for $8.67 on average, against $1.96 for people who were handed one, even though every ticket had exactly the same odds. Choosing feels like control, even when it changes nothing. #psychology #shorts #illusionofcontrol #luck #overthinking",
+  "tags": [
+   "illusion of control",
+   "lottery",
+   "luck",
+   "Ellen Langer",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Lucky Numbers Aren't Luckier",
+ "thumb_emph": "Lucky",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Office lottery: Lila won't take a random ticket, she picks her birthday",
+  "lean": "proof",
+  "snapback": "But the odds were EXACTLY the same."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend with the lucky socks.",
+ "question": "What's your lucky thing?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMOfficePool",
+   "chunks": [
+    [
+     "Office LOTTERY:",
+     {
+      "emph": "LOTTERY"
+     }
+    ],
+    [
+     "Lila won't take"
+    ],
+    [
+     "a random ticket."
+    ],
+    [
+     "She picks"
+    ],
+    [
+     "her birthday."
+    ]
+   ],
+   "text": "Office LOTTERY: Lila won't take a random ticket. She picks her birthday.",
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMNineDollars",
+   "chunks": [
+    [
+     "In 1975,"
+    ],
+    [
+     "people who picked"
+    ],
+    [
+     "their own"
+    ],
+    [
+     "one-dollar ticket"
+    ],
+    [
+     "wanted nearly"
+    ],
+    [
+     "NINE dollars",
+     {
+      "emph": "NINE"
+     }
+    ],
+    [
+     "to sell it."
+    ]
+   ],
+   "text": "In 1975, people who picked their own one-dollar ticket wanted nearly NINE dollars to sell it.",
+   "tone": "curious, amazed",
+   "say": "In nineteen seventy-five, people who picked their own one-dollar ticket wanted nearly nine dollars to sell it."
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMSameOdds",
+   "chunks": [
+    [
+     "But the odds"
+    ],
+    [
+     "were EXACTLY",
+     {
+      "emph": "EXACTLY"
+     }
+    ],
+    [
+     "the same."
+    ]
+   ],
+   "text": "But the odds were EXACTLY the same.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Handed",
+   "art": "RMHandedTwo",
+   "chunks": [
+    [
+     "People handed"
+    ],
+    [
+     "a ticket"
+    ],
+    [
+     "asked about TWO.",
+     {
+      "emph": "TWO"
+     }
+    ]
+   ],
+   "text": "People handed a ticket asked about TWO.",
+   "tone": "dry, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameControl",
+   "chunks": [
+    [
+     "Ellen Langer"
+    ],
+    [
+     "called it"
+    ],
+    [
+     "the illusion"
+    ],
+    [
+     "of CONTROL.",
+     {
+      "emph": "CONTROL"
+     }
+    ]
+   ],
+   "text": "Ellen Langer called it the illusion of CONTROL.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "RMLiftButton",
+   "chunks": [
+    [
+     "It's why"
+    ],
+    [
+     "you press"
+    ],
+    [
+     "the lift button"
+    ],
+    [
+     "TWICE.",
+     {
+      "emph": "TWICE"
+     }
+    ]
+   ],
+   "text": "It's why you press the lift button TWICE.",
+   "tone": "knowingly, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Self",
+   "art": "RMLuckyMug",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "your lucky mug."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "text": "Think of your lucky mug. Yeah, THAT one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "RMRealControl",
+   "chunks": [
+    [
+     "Spend that"
+    ],
+    [
+     "feeling where"
+    ],
+    [
+     "you actually"
+    ],
+    [
+     "HAVE control.",
+     {
+      "emph": "HAVE"
+     }
+    ]
+   ],
+   "text": "Spend that feeling where you actually HAVE control.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndLucky",
+   "chunks": [
+    [
+     "What's your"
+    ],
+    [
+     "LUCKY thing?",
+     {
+      "emph": "LUCKY"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "with lucky socks."
+    ]
+   ],
+   "text": "What's your LUCKY thing? Send this to the friend with lucky socks.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

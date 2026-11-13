@@ -1,0 +1,283 @@
+{
+ "slug": "leo-dream-job",
+ "no": 178,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Leo",
+ "episode": 7,
+ "cast": [
+  "leo",
+  "priya"
+ ],
+ "title": [
+  "Dream",
+  "Drain"
+ ],
+ "credit": "Kappes & Oettingen · 2011",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Picturing Your Dream Can Stop You Chasing It #shorts",
+  "description": "What's the first obstacle to your dream? Tell me in the comments. Send this to the friend who's manifesting instead of applying. Leo pictured the dream job so clearly, then never applied. In 'Positive Fantasies About Idealized Futures Sap Energy' (Journal of Experimental Social Psychology, 2011), Heather Barry Kappes and Gabriele Oettingen had people imagine an idealized future, like a perfect week or doing brilliantly, while others imagined a more questioning or neutral version. The positive dreamers' energy dropped, measured by lower systolic blood pressure and by how energized they said they felt, and people who dreamed about an ideal week reported getting less done a week later. Daydreaming isn't the enemy: Oettingen's fix, mental contrasting, is to picture the dream and then the first real obstacle. #psychology #shorts #motivation #overthinking #goals",
+  "tags": [
+   "positive fantasies",
+   "mental contrasting",
+   "Oettingen",
+   "motivation",
+   "goals",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Picturing It Can Stop You",
+ "thumb_emph": "Stop",
+ "thumb_mood": "thinking",
+ "music_vibe": "calm",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Leo pictured the dream job so clearly, then didn't apply",
+  "lean": "pain",
+  "snapback": "But the dream didn't motivate him. It DRAINED him."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who's manifesting instead of applying.",
+ "question": "What's yours?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "art": "DJDream",
+   "chunks": [
+    [
+     "Leo pictured"
+    ],
+    [
+     "the DREAM job",
+     {
+      "emph": "DREAM",
+      "fx": "pop"
+     }
+    ],
+    [
+     "so clearly."
+    ],
+    [
+     "Then he"
+    ],
+    [
+     "didn't apply."
+    ]
+   ],
+   "text": "Leo pictured the DREAM job so clearly. Then he didn't apply.",
+   "tone": "softly, amused",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "DJYou",
+   "chunks": [
+    [
+     "Sometimes the"
+    ],
+    [
+     "daydream feels"
+    ],
+    [
+     "like PROGRESS.",
+     {
+      "emph": "PROGRESS",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "text": "Sometimes the daydream feels like PROGRESS.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "DJDrain",
+   "chunks": [
+    [
+     "But the dream"
+    ],
+    [
+     "didn't motivate him."
+    ],
+    [
+     "It DRAINED him.",
+     {
+      "emph": "DRAINED",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "text": "But the dream didn't motivate him. It DRAINED him.",
+   "tone": "surprised",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "color": "#2B6E7A",
+   "art": "DJStudy",
+   "chunks": [
+    [
+     "In 2011,"
+    ],
+    [
+     "Kappes and Oettingen"
+    ],
+    [
+     "had people imagine"
+    ],
+    [
+     "perfect FUTURES.",
+     {
+      "emph": "FUTURES",
+      "fx": "type"
+     }
+    ]
+   ],
+   "text": "In 2011, Kappes and Oettingen had people imagine perfect FUTURES.",
+   "tone": "curious",
+   "say": "In twenty eleven, Kappes and Oettingen had people imagine perfect futures."
+  },
+  {
+   "sec": "cd",
+   "scene": "Energy",
+   "color": "#B3202A",
+   "art": "DJPressure",
+   "chunks": [
+    [
+     "Their energy dropped."
+    ],
+    [
+     "Even blood"
+    ],
+    [
+     "PRESSURE fell.",
+     {
+      "emph": "PRESSURE",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "text": "Their energy dropped. Even blood PRESSURE fell.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Turn",
+   "color": "#6A3FA0",
+   "art": "DJWeek",
+   "chunks": [
+    [
+     "Dreaming up"
+    ],
+    [
+     "a perfect week?"
+    ],
+    [
+     "LESS got done.",
+     {
+      "emph": "LESS",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Dreaming up a perfect week? LESS got done.",
+   "tone": "serious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "color": "#2B6E7A",
+   "art": "DJProof",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "a goal"
+    ],
+    [
+     "you've pictured"
+    ],
+    [
+     "a hundred times."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "text": "Think of a goal you've pictured a hundred times. Yeah, THAT one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "art": "DJOutro",
+   "chunks": [
+    [
+     "Priya's fix:"
+    ],
+    [
+     "dream, then"
+    ],
+    [
+     "name the first"
+    ],
+    [
+     "OBSTACLE.",
+     {
+      "emph": "OBSTACLE",
+      "fx": "doodle",
+      "doodle": "🧱"
+     }
+    ],
+    [
+     "What's yours?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who's manifesting"
+    ],
+    [
+     "instead of applying."
+    ]
+   ],
+   "text": "Priya's fix: dream, then name the first OBSTACLE. What's yours? Send this to the friend who's manifesting instead of applying.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

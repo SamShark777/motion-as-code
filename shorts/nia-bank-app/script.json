@@ -1,0 +1,279 @@
+{
+ "slug": "nia-bank-app",
+ "no": 175,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Nia",
+ "episode": 10,
+ "cast": [
+  "nia",
+  "milo"
+ ],
+ "title": [
+  "Don't",
+  "Look"
+ ],
+ "credit": "Karlsson, Loewenstein & Seppi · 2009",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why You Stop Checking Your Bank App When It's Bad #shorts",
+  "description": "Which app do you avoid opening? Tell me in the comments. Send this to the friend with 300 unread emails. Nia's bank app pings after a bad week, and she flips her phone face down. In 'The Ostrich Effect: Selective Attention to Information' (Journal of Risk and Uncertainty, 2009), Niklas Karlsson, George Loewenstein and Duane Seppi looked at how often real investors (Swedish pension savers and US Vanguard clients) logged in to check their accounts. They looked up their portfolios more often when the market was rising and less often when it was flat or falling. Bad news stings, so we dodge it, even though the facts stay the same. It's called the ostrich effect. Fun part: real ostriches don't bury their heads in the sand; the authors point out it's a myth. #psychology #shorts #ostricheffect #overthinking #money",
+  "tags": [
+   "ostrich effect",
+   "avoidance",
+   "money anxiety",
+   "Loewenstein",
+   "overthinking",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Bad Week? You Stop Checking",
+ "thumb_emph": "Checking",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Nia's bank app pings after a bad week; she flips the phone over",
+  "lean": "pain",
+  "snapback": "But you're not lazy. Your brain is DODGING the sting."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend with 300 unread emails.",
+ "question": "Which app do you avoid?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGNiaBankPing",
+   "chunks": [
+    [
+     "Nia's BANK app",
+     {
+      "emph": "BANK"
+     }
+    ],
+    [
+     "pinged."
+    ],
+    [
+     "Bad week."
+    ],
+    [
+     "She flips"
+    ],
+    [
+     "the phone over."
+    ]
+   ],
+   "text": "Nia's BANK app pinged. Bad week. She flips the phone over.",
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "MGYouUnopened",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "this too:"
+    ],
+    [
+     "bad news?"
+    ],
+    [
+     "Don't LOOK.",
+     {
+      "emph": "LOOK"
+     }
+    ]
+   ],
+   "text": "You've done this too: bad news? Don't LOOK.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGDodgeSting",
+   "chunks": [
+    [
+     "But you're"
+    ],
+    [
+     "not lazy."
+    ],
+    [
+     "Your brain"
+    ],
+    [
+     "is DODGING",
+     {
+      "emph": "DODGING"
+     }
+    ],
+    [
+     "the sting."
+    ]
+   ],
+   "text": "But you're not lazy. Your brain is DODGING the sting.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGInvestorStudy",
+   "chunks": [
+    [
+     "In 2009,"
+    ],
+    [
+     "researchers tracked"
+    ],
+    [
+     "how often investors"
+    ],
+    [
+     "checked their ACCOUNTS.",
+     {
+      "emph": "ACCOUNTS"
+     }
+    ]
+   ],
+   "text": "In 2009, researchers tracked how often investors checked their ACCOUNTS.",
+   "tone": "curious",
+   "say": "In two thousand nine, researchers tracked how often investors checked their accounts."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "MGUpDown",
+   "chunks": [
+    [
+     "Markets up?"
+    ],
+    [
+     "They logged"
+    ],
+    [
+     "in MORE.",
+     {
+      "emph": "MORE"
+     }
+    ],
+    [
+     "Markets down?"
+    ],
+    [
+     "They looked away."
+    ]
+   ],
+   "text": "Markets up? They logged in MORE. Markets down? They looked away.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameOstrich",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "the OSTRICH",
+     {
+      "emph": "OSTRICH"
+     }
+    ],
+    [
+     "effect."
+    ]
+   ],
+   "text": "It's called the OSTRICH effect.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGUnreadEmail",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the email"
+    ],
+    [
+     "you haven't opened."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "text": "Think of the email you haven't opened. Yeah, THAT one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndOpen",
+   "chunks": [
+    [
+     "Nia opens it."
+    ],
+    [
+     "One look,"
+    ],
+    [
+     "less WONDERING.",
+     {
+      "emph": "WONDERING"
+     }
+    ],
+    [
+     "Which app"
+    ],
+    [
+     "do you avoid?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "with 300"
+    ],
+    [
+     "unread emails."
+    ]
+   ],
+   "text": "Nia opens it. One look, less WONDERING. Which app do you avoid? Send this to the friend with 300 unread emails.",
+   "tone": "warmly, blunt",
+   "say": "Nia opens it. One look, less wondering. Which app do you avoid? Send this to the friend with three hundred unread emails."
+  }
+ ]
+}

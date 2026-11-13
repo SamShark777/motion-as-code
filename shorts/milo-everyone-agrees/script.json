@@ -1,0 +1,275 @@
+{
+ "slug": "milo-everyone-agrees",
+ "no": 176,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Milo",
+ "episode": 10,
+ "cast": [
+  "milo",
+  "theo"
+ ],
+ "title": [
+  "Everyone",
+  "Agrees"
+ ],
+ "credit": "Ross, Greene & House · 1977",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Would You Wear This Sign? Your Answer Says More Than You Think #shorts",
+  "description": "Yes or no: would you wear the sign? Tell me in the comments. Send this to the friend who says 'everyone does it.' Milo is sure everyone thinks like him. Theo asks him the question from a famous Stanford study. In 1977, Lee Ross, David Greene and Pamela House asked students to walk around campus for 30 minutes wearing a sandwich board that said 'Eat at Joe's'. Then they asked them to guess what other students would do. Students who agreed estimated about 62% of others would agree too; students who refused thought only about 33% would agree. Whatever we pick, we tend to assume most people would pick the same. It's called the false consensus effect (Journal of Experimental Social Psychology, 1977). #psychology #shorts #falseconsensus #overthinking #socialpsychology",
+  "tags": [
+   "false consensus effect",
+   "Lee Ross",
+   "Stanford",
+   "social psychology",
+   "test",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Would You Wear This Sign?",
+ "thumb_emph": "Sign",
+ "thumb_mood": "curious",
+ "music_vibe": "playful",
+ "pattern": "test",
+ "thumb_scene": 1,
+ "hook": {
+  "context": "Milo is sure everyone thinks like him; the viewer gets the sandwich-board question",
+  "lean": "pain",
+  "snapback": "Whatever you picked, you probably think MOST people picked it too."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who says 'everyone does it.'",
+ "question": "Yes or no?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGMiloSure",
+   "chunks": [
+    [
+     "Milo's sure"
+    ],
+    [
+     "EVERYONE thinks",
+     {
+      "emph": "EVERYONE"
+     }
+    ],
+    [
+     "like him."
+    ]
+   ],
+   "text": "Milo's sure EVERYONE thinks like him.",
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Test",
+   "art": "MGPauseSign",
+   "chunks": [
+    [
+     "Pause and pick:"
+    ],
+    [
+     "would you wear"
+    ],
+    [
+     "a giant SIGN",
+     {
+      "emph": "SIGN"
+     }
+    ],
+    [
+     "saying 'Eat"
+    ],
+    [
+     "at Joe's'?"
+    ]
+   ],
+   "text": "Pause and pick: would you wear a giant SIGN saying 'Eat at Joe's'?",
+   "tone": "playful, curious"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGMostPicked",
+   "chunks": [
+    [
+     "Whatever you picked,"
+    ],
+    [
+     "you probably think"
+    ],
+    [
+     "MOST people",
+     {
+      "emph": "MOST"
+     }
+    ],
+    [
+     "picked it too."
+    ]
+   ],
+   "text": "Whatever you picked, you probably think MOST people picked it too.",
+   "tone": "surprised, knowing",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGStanfordBoard",
+   "chunks": [
+    [
+     "In 1977,"
+    ],
+    [
+     "Stanford students got"
+    ],
+    [
+     "this exact DARE.",
+     {
+      "emph": "DARE"
+     }
+    ]
+   ],
+   "text": "In 1977, Stanford students got this exact DARE.",
+   "tone": "curious",
+   "say": "In nineteen seventy-seven, Stanford students got this exact dare."
+  },
+  {
+   "sec": "cd",
+   "scene": "Yes",
+   "art": "MGYesGuess",
+   "chunks": [
+    [
+     "Yes-sayers guessed"
+    ],
+    [
+     "most would"
+    ],
+    [
+     "say YES.",
+     {
+      "emph": "YES"
+     }
+    ]
+   ],
+   "text": "Yes-sayers guessed most would say YES.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "No",
+   "art": "MGNoGuess",
+   "chunks": [
+    [
+     "Refusers guessed"
+    ],
+    [
+     "most would REFUSE.",
+     {
+      "emph": "REFUSE"
+     }
+    ]
+   ],
+   "text": "Refusers guessed most would REFUSE.",
+   "tone": "dry, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGNameConsensus",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "false CONSENSUS",
+     {
+      "emph": "CONSENSUS"
+     }
+    ],
+    [
+     "effect."
+    ]
+   ],
+   "text": "It's the false CONSENSUS effect.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "MGEveryoneKnows",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last 'everyone"
+    ],
+    [
+     "knows that.'"
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "text": "Think of the last 'everyone knows that.' Yeah, THAT one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndNormal",
+   "chunks": [
+    [
+     "Your normal"
+    ],
+    [
+     "isn't EVERYONE'S.",
+     {
+      "emph": "EVERYONE'S"
+     }
+    ],
+    [
+     "Yes or no?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who says 'everyone"
+    ],
+    [
+     "does it.'"
+    ]
+   ],
+   "text": "Your normal isn't EVERYONE'S. Yes or no? Send this to the friend who says 'everyone does it.'",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

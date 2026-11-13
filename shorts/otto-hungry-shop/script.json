@@ -1,0 +1,262 @@
+{
+ "slug": "otto-hungry-shop",
+ "no": 179,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 9,
+ "cast": [
+  "otto",
+  "lila"
+ ],
+ "title": [
+  "Hungry",
+  "Shopper"
+ ],
+ "credit": "Read & van Leeuwen · 1998",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why You Should Never Shop Hungry #shorts",
+  "description": "Which snack always sneaks into your basket? Tell me in the comments. Send this to the friend who shops starving. Otto went in for milk and came out with six snacks. In 'Predicting Hunger: The Effects of Appetite and Delay on Choice' (Organizational Behavior and Human Decision Processes, 1998), Daniel Read and Barbara van Leeuwen asked 200 employees in Amsterdam to choose a snack they would get a week later. People who chose while hungry picked unhealthy snacks more often than people who chose after lunch, whether or not they would be hungry when the snack arrived. How you feel right now leaks into choices for future you. It's called the hot-cold empathy gap. Eat first, then shop. #psychology #shorts #hotcoldempathygap #decisions #overthinking",
+  "tags": [
+   "hot-cold empathy gap",
+   "shopping hungry",
+   "decision making",
+   "Read and van Leeuwen",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Never Shop Hungry",
+ "thumb_emph": "Hungry",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Otto went in for milk and came out with six snacks",
+  "lean": "pain",
+  "snapback": "But it's not just tonight. Hunger shops for NEXT week too."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who shops starving.",
+ "question": "Which snack always sneaks in?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMOttoCheckout",
+   "chunks": [
+    [
+     "Otto went in"
+    ],
+    [
+     "for MILK.",
+     {
+      "emph": "MILK"
+     }
+    ],
+    [
+     "He came out"
+    ],
+    [
+     "with six snacks."
+    ]
+   ],
+   "text": "Otto went in for MILK. He came out with six snacks.",
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "You",
+   "art": "RMHungryAisle",
+   "chunks": [
+    [
+     "Hungry? Everything"
+    ],
+    [
+     "looks NEEDED.",
+     {
+      "emph": "NEEDED"
+     }
+    ]
+   ],
+   "text": "Hungry? Everything looks NEEDED.",
+   "tone": "knowingly, sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMNextWeek",
+   "chunks": [
+    [
+     "But it's"
+    ],
+    [
+     "not just tonight."
+    ],
+    [
+     "Hunger shops"
+    ],
+    [
+     "for NEXT",
+     {
+      "emph": "NEXT"
+     }
+    ],
+    [
+     "week too."
+    ]
+   ],
+   "text": "But it's not just tonight. Hunger shops for NEXT week too.",
+   "tone": "surprised",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMSnackStudy",
+   "chunks": [
+    [
+     "In 1998,"
+    ],
+    [
+     "200 workers"
+    ],
+    [
+     "picked a snack"
+    ],
+    [
+     "for next WEEK.",
+     {
+      "emph": "WEEK"
+     }
+    ]
+   ],
+   "text": "In 1998, 200 workers picked a snack for next WEEK.",
+   "tone": "curious",
+   "say": "In nineteen ninety-eight, two hundred workers picked a snack for next week."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "RMJunkPick",
+   "chunks": [
+    [
+     "Hungry pickers"
+    ],
+    [
+     "chose more JUNK,",
+     {
+      "emph": "JUNK"
+     }
+    ],
+    [
+     "however full"
+    ],
+    [
+     "they'd be later."
+    ]
+   ],
+   "text": "Hungry pickers chose more JUNK, however full they'd be later.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameGap",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "hot-cold EMPATHY gap.",
+     {
+      "emph": "EMPATHY"
+     }
+    ]
+   ],
+   "text": "It's the hot-cold EMPATHY gap.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMHealthyPlan",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the 'healthy week'"
+    ],
+    [
+     "you planned"
+    ],
+    [
+     "after DINNER.",
+     {
+      "emph": "DINNER"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "text": "Think of the 'healthy week' you planned after DINNER. Yeah, that one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndBanana",
+   "chunks": [
+    [
+     "Lila hands"
+    ],
+    [
+     "Otto a banana."
+    ],
+    [
+     "Eat, THEN shop.",
+     {
+      "emph": "THEN"
+     }
+    ],
+    [
+     "Which snack"
+    ],
+    [
+     "sneaks in?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who shops starving."
+    ]
+   ],
+   "text": "Lila hands Otto a banana. Eat, THEN shop. Which snack sneaks in? Send this to the friend who shops starving.",
+   "tone": "warmly, blunt"
+  }
+ ]
+}

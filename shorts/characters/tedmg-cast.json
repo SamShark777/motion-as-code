@@ -21,7 +21,9 @@
     "ep 5 (milo-snap-judgment, with Dev): Dev is 20 min late, Milo decides he's \"just unreliable\"; next week Milo is late and blames the bus; fundamental attribution error (Jones & Harris 1967: readers still judged an assigned pro-Castro writer as pro-Castro, 44.1 vs 22.9)",
     "ep 6 (milo-lottery-ticket, with Theo): buys a lottery ticket and spends the millions in his head; hedonic adaptation (Brickman, Coates & Janoff-Bulman 1978: 22 winners no happier, enjoyed everyday pleasures less); no win, Theo hands him toast",
     "ep 7 (milo-google-egg, with Nia): googles 'boiled egg time' for the third time this week; Google effect (Sparrow, Liu & Wegner 2011: people told the computer would save facts remembered them less, but remembered where they were saved)",
-    "ep 8 (theo-goldfish-fact, with Theo): hears the goldfish 'fact' from everywhere, never checked it; laughs when Theo looks it up"
+    "ep 8 (theo-goldfish-fact, with Theo): hears the goldfish 'fact' from everywhere, never checked it; laughs when Theo looks it up",
+    "ep 9 (nia-bank-app, with Nia): sits beside Nia with his cup when she finally opens the bank app",
+    "ep 10 (milo-everyone-agrees, with Theo): sure everyone thinks like him; the 'Eat at Joe's' sandwich-board test; false consensus effect (Ross, Greene & House 1977: agreers guessed ~62% would agree, refusers ~33%); learns his normal isn't everyone's"
    ]
   },
   "nia": {
@@ -43,7 +45,8 @@
     "ep 6 (june-dont-think, with June): teaches June the one-other-thing trick (focused distraction, the red Volkswagen from Wegner 1987)",
     "ep 7 (milo-google-egg, with Milo): laughs at Milo's re-Googling; 'your brain filed it under PHONE'",
     "ep 8 (rosa-parking-ticket, with Rosa): unimpressed by Rosa's 'me: more likely' logic; laughs at the ticket",
-    "ep 9 (dev-concert-ticket, with Dev): thumbs-up as Dev stays home; 'your evening costs too'"
+    "ep 9 (dev-concert-ticket, with Dev): thumbs-up as Dev stays home; 'your evening costs too'",
+    "ep 10 (nia-bank-app, with Milo): bank app pings after a bad week, she flips the phone face down; ostrich effect (Karlsson, Loewenstein & Seppi 2009: investors checked their portfolios more in rising markets, less in flat or falling ones); opens it — one look, less wondering"
    ]
   },
   "theo": {
@@ -64,7 +67,8 @@
     "ep 6 (milo-lottery-ticket, with Milo): checks the numbers, no win; hands Milo a slice of toast — the small stuff isn't small",
     "ep 7 (dev-silver-medal, with Dev): beams on the bronze step — 'at least I medaled' — and makes room for Dev",
     "ep 8 (theo-goldfish-fact, with Milo): has 'heard a hundred times' that goldfish forget in three seconds; illusory truth effect (Hasher, Goldstein & Toppino 1977; Fazio et al. 2015); looks it up: goldfish remember for months",
-    "ep 9 (june-five-signs, with June): shows June his own 1984 photo (big curly hair)"
+    "ep 9 (june-five-signs, with June): shows June his own 1984 photo (big curly hair)",
+    "ep 10 (milo-everyone-agrees, with Milo): holds up the YES/NO tally at the party — it's split"
    ]
   },
   "rosa": {

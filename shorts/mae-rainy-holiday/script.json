@@ -1,0 +1,289 @@
+{
+ "slug": "mae-rainy-holiday",
+ "no": 177,
+ "format": "retro",
+ "look": "retro",
+ "series": "Mae",
+ "episode": 8,
+ "cast": [
+  "mae",
+  "arthur"
+ ],
+ "title": [
+  "Rosy",
+  "Memory"
+ ],
+ "credit": "Mitchell, Thompson, Peterson & Cronk · 1997",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Your Best Holiday Wasn't That Great (While You Were There) #shorts",
+  "description": "Which trip got better in your memory? Tell me in the comments. Send this to the friend who calls every holiday 'perfect'. Mae's holiday photos look perfect, but it rained for three days. In 'Temporal Adjustments in the Evaluation of Events: The Rosy View' (Journal of Experimental Social Psychology, 1997), Terence Mitchell, Leigh Thompson, Erika Peterson and Randy Cronk asked people about a European tour, a Thanksgiving trip home and a three-week California bike tour before, during and after. On the bike tour, only 5% expected to be disappointed, 61% said they felt disappointed during the trip, and a week later only 11% remembered being disappointed. Looking forward and looking back felt better than being there. It's called rosy retrospection, and it isn't lying: your memory keeps the good parts. #psychology #shorts #rosyretrospection #memory #overthinking",
+  "tags": [
+   "rosy retrospection",
+   "memory",
+   "nostalgia",
+   "holiday",
+   "Mitchell",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Holiday Wasn't That Perfect",
+ "thumb_emph": "Perfect",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Mae's holiday photos look perfect; it rained for three days",
+  "lean": "shock",
+  "snapback": "A week later? Only 11% REMEMBERED it."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who calls every holiday 'perfect'.",
+ "question": "Which trip got better in your memory?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMMaeAlbum",
+   "chunks": [
+    [
+     "Mae's HOLIDAY photos",
+     {
+      "emph": "HOLIDAY"
+     }
+    ],
+    [
+     "look perfect."
+    ],
+    [
+     "It rained"
+    ],
+    [
+     "for three days."
+    ]
+   ],
+   "text": "Mae's HOLIDAY photos look perfect. It rained for three days.",
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Shock",
+   "art": "RMBikeTour",
+   "chunks": [
+    [
+     "On one"
+    ],
+    [
+     "bike tour,"
+    ],
+    [
+     "61% felt"
+    ],
+    [
+     "DISAPPOINTED",
+     {
+      "emph": "DISAPPOINTED"
+     }
+    ],
+    [
+     "along the way."
+    ]
+   ],
+   "text": "On one bike tour, 61% felt DISAPPOINTED along the way.",
+   "tone": "surprised",
+   "say": "On one bike tour, sixty-one percent felt disappointed along the way."
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMForgotten",
+   "chunks": [
+    [
+     "A week later?"
+    ],
+    [
+     "Only 11%"
+    ],
+    [
+     "REMEMBERED it.",
+     {
+      "emph": "REMEMBERED"
+     }
+    ]
+   ],
+   "text": "A week later? Only 11% REMEMBERED it.",
+   "tone": "whispers, amazed",
+   "say": "A week later? Only eleven percent remembered it.",
+   "cam": [
+    540,
+    860,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMThreeStages",
+   "chunks": [
+    [
+     "In 1997,"
+    ],
+    [
+     "researchers tracked people"
+    ],
+    [
+     "before, during"
+    ],
+    [
+     "and after TRIPS.",
+     {
+      "emph": "TRIPS"
+     }
+    ]
+   ],
+   "text": "In 1997, researchers tracked people before, during and after TRIPS.",
+   "tone": "curious",
+   "say": "In nineteen ninety-seven, researchers tracked people before, during and after trips."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "RMGlowEnds",
+   "chunks": [
+    [
+     "Planning and"
+    ],
+    [
+     "remembering beat"
+    ],
+    [
+     "BEING there.",
+     {
+      "emph": "BEING"
+     }
+    ]
+   ],
+   "text": "Planning and remembering beat BEING there.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNameRosy",
+   "chunks": [
+    [
+     "It's called"
+    ],
+    [
+     "rosy RETROSPECTION.",
+     {
+      "emph": "RETROSPECTION"
+     }
+    ]
+   ],
+   "text": "It's called rosy RETROSPECTION.",
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Proof",
+   "art": "RMQueueMemory",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "a trip"
+    ],
+    [
+     "you miss."
+    ],
+    [
+     "Forgot the"
+    ],
+    [
+     "long QUEUES?",
+     {
+      "emph": "QUEUES"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "text": "Think of a trip you miss. Forgot the long QUEUES? Yeah, that one.",
+   "tone": "knowing, laughs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "RMKeepGood",
+   "chunks": [
+    [
+     "Mae laughs."
+    ],
+    [
+     "Her memory"
+    ],
+    [
+     "kept the"
+    ],
+    [
+     "good PARTS.",
+     {
+      "emph": "PARTS"
+     }
+    ]
+   ],
+   "text": "Mae laughs. Her memory kept the good PARTS.",
+   "tone": "warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndRosy",
+   "chunks": [
+    [
+     "Which trip"
+    ],
+    [
+     "got BETTER?",
+     {
+      "emph": "BETTER"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who calls"
+    ],
+    [
+     "every holiday"
+    ],
+    [
+     "'perfect.'"
+    ]
+   ],
+   "text": "Which trip got BETTER? Send this to the friend who calls every holiday 'perfect.'",
+   "tone": "warmly, blunt"
+  }
+ ]
+}
