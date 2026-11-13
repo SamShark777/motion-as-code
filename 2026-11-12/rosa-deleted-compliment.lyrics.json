@@ -1,0 +1,551 @@
+{
+ "lines": [
+  {
+   "text": "Rosa wrote Dev a COMPLIMENT, then deleted it.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 2.74,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 0.15,
+     "end": 0.493
+    },
+    {
+     "w": "wrote",
+     "start": 0.515,
+     "end": 0.721
+    },
+    {
+     "w": "Dev",
+     "start": 0.735,
+     "end": 0.918
+    },
+    {
+     "w": "a",
+     "start": 0.93,
+     "end": 1.089
+    },
+    {
+     "w": "COMPLIMENT,",
+     "start": 1.099,
+     "end": 1.661
+    },
+    {
+     "w": "then",
+     "start": 1.791,
+     "end": 1.986
+    },
+    {
+     "w": "deleted",
+     "start": 1.998,
+     "end": 2.524
+    },
+    {
+     "w": "it.",
+     "start": 2.558,
+     "end": 2.729
+    }
+   ]
+  },
+  {
+   "text": "You've done it too: typed something kind, then thought, 'too AWKWARD.'",
+   "sec": "cd",
+   "start": 3.06,
+   "end": 6.35,
+   "words": [
+    {
+     "w": "You've",
+     "start": 3.06,
+     "end": 3.266
+    },
+    {
+     "w": "done",
+     "start": 3.279,
+     "end": 3.473
+    },
+    {
+     "w": "it",
+     "start": 3.485,
+     "end": 3.656
+    },
+    {
+     "w": "too:",
+     "start": 3.667,
+     "end": 3.849
+    },
+    {
+     "w": "typed",
+     "start": 3.954,
+     "end": 4.307
+    },
+    {
+     "w": "something",
+     "start": 4.33,
+     "end": 4.877
+    },
+    {
+     "w": "kind,",
+     "start": 4.911,
+     "end": 5.105
+    },
+    {
+     "w": "then",
+     "start": 5.212,
+     "end": 5.406
+    },
+    {
+     "w": "thought,",
+     "start": 5.418,
+     "end": 5.647
+    },
+    {
+     "w": "'too",
+     "start": 5.756,
+     "end": 5.938
+    },
+    {
+     "w": "AWKWARD.'",
+     "start": 5.95,
+     "end": 6.326
+    }
+   ]
+  },
+  {
+   "text": "But the awkward part is mostly in YOUR head.",
+   "sec": "cd",
+   "start": 6.67,
+   "end": 8.93,
+   "words": [
+    {
+     "w": "But",
+     "start": 6.67,
+     "end": 6.861
+    },
+    {
+     "w": "the",
+     "start": 6.873,
+     "end": 7.064
+    },
+    {
+     "w": "awkward",
+     "start": 7.076,
+     "end": 7.47
+    },
+    {
+     "w": "part",
+     "start": 7.495,
+     "end": 7.699
+    },
+    {
+     "w": "is",
+     "start": 7.712,
+     "end": 7.89
+    },
+    {
+     "w": "mostly",
+     "start": 7.902,
+     "end": 8.283
+    },
+    {
+     "w": "in",
+     "start": 8.308,
+     "end": 8.486
+    },
+    {
+     "w": "YOUR",
+     "start": 8.498,
+     "end": 8.701
+    },
+    {
+     "w": "head.",
+     "start": 8.714,
+     "end": 8.917
+    }
+   ]
+  },
+  {
+   "text": "In 2021, Xuan Zhao and Nicholas Epley had people send real COMPLIMENTS.",
+   "sec": "cd",
+   "start": 9.25,
+   "end": 14.88,
+   "words": [
+    {
+     "w": "In",
+     "start": 9.25,
+     "end": 9.518
+    },
+    {
+     "w": "2021,",
+     "start": 9.535,
+     "end": 9.766
+    },
+    {
+     "w": "Xuan",
+     "start": 9.928,
+     "end": 10.233
+    },
+    {
+     "w": "Zhao",
+     "start": 10.252,
+     "end": 10.557
+    },
+    {
+     "w": "and",
+     "start": 10.576,
+     "end": 10.863
+    },
+    {
+     "w": "Nicholas",
+     "start": 10.881,
+     "end": 11.722
+    },
+    {
+     "w": "Epley",
+     "start": 11.775,
+     "end": 12.329
+    },
+    {
+     "w": "had",
+     "start": 12.365,
+     "end": 12.651
+    },
+    {
+     "w": "people",
+     "start": 12.669,
+     "end": 13.242
+    },
+    {
+     "w": "send",
+     "start": 13.278,
+     "end": 13.583
+    },
+    {
+     "w": "real",
+     "start": 13.603,
+     "end": 13.907
+    },
+    {
+     "w": "COMPLIMENTS.",
+     "start": 13.927,
+     "end": 14.823
+    }
+   ]
+  },
+  {
+   "text": "They guessed awkward. Receivers felt way BETTER than predicted.",
+   "sec": "cd",
+   "start": 15.2,
+   "end": 18.41,
+   "words": [
+    {
+     "w": "They",
+     "start": 15.2,
+     "end": 15.391
+    },
+    {
+     "w": "guessed",
+     "start": 15.403,
+     "end": 15.774
+    },
+    {
+     "w": "awkward.",
+     "start": 15.798,
+     "end": 16.168
+    },
+    {
+     "w": "Receivers",
+     "start": 16.284,
+     "end": 16.823
+    },
+    {
+     "w": "felt",
+     "start": 16.857,
+     "end": 17.048
+    },
+    {
+     "w": "way",
+     "start": 17.061,
+     "end": 17.24
+    },
+    {
+     "w": "BETTER",
+     "start": 17.252,
+     "end": 17.611
+    },
+    {
+     "w": "than",
+     "start": 17.634,
+     "end": 17.825
+    },
+    {
+     "w": "predicted.",
+     "start": 17.837,
+     "end": 18.376
+    }
+   ]
+  },
+  {
+   "text": "We overestimate the CRINGE, underestimate the joy.",
+   "sec": "cd",
+   "start": 18.73,
+   "end": 21.72,
+   "words": [
+    {
+     "w": "We",
+     "start": 18.73,
+     "end": 18.902
+    },
+    {
+     "w": "overestimate",
+     "start": 18.913,
+     "end": 19.796
+    },
+    {
+     "w": "the",
+     "start": 19.853,
+     "end": 20.037
+    },
+    {
+     "w": "CRINGE,",
+     "start": 20.048,
+     "end": 20.268
+    },
+    {
+     "w": "underestimate",
+     "start": 20.376,
+     "end": 21.272
+    },
+    {
+     "w": "the",
+     "start": 21.329,
+     "end": 21.513
+    },
+    {
+     "w": "joy.",
+     "start": 21.524,
+     "end": 21.708
+    }
+   ]
+  },
+  {
+   "text": "Think of the last compliment a stranger gave you. You still REMEMBER it.",
+   "sec": "cd",
+   "start": 22.04,
+   "end": 25.84,
+   "words": [
+    {
+     "w": "Think",
+     "start": 22.04,
+     "end": 22.255
+    },
+    {
+     "w": "of",
+     "start": 22.269,
+     "end": 22.447
+    },
+    {
+     "w": "the",
+     "start": 22.459,
+     "end": 22.649
+    },
+    {
+     "w": "last",
+     "start": 22.661,
+     "end": 22.864
+    },
+    {
+     "w": "compliment",
+     "start": 22.877,
+     "end": 23.461
+    },
+    {
+     "w": "a",
+     "start": 23.499,
+     "end": 23.665
+    },
+    {
+     "w": "stranger",
+     "start": 23.675,
+     "end": 24.081
+    },
+    {
+     "w": "gave",
+     "start": 24.107,
+     "end": 24.31
+    },
+    {
+     "w": "you.",
+     "start": 24.323,
+     "end": 24.513
+    },
+    {
+     "w": "You",
+     "start": 24.623,
+     "end": 24.814
+    },
+    {
+     "w": "still",
+     "start": 24.826,
+     "end": 25.041
+    },
+    {
+     "w": "REMEMBER",
+     "start": 25.055,
+     "end": 25.615
+    },
+    {
+     "w": "it.",
+     "start": 25.65,
+     "end": 25.829
+    }
+   ]
+  },
+  {
+   "text": "Rosa sends it. Dev SCREENSHOTS it.",
+   "sec": "cd",
+   "start": 26.16,
+   "end": 28.41,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 26.16,
+     "end": 26.616
+    },
+    {
+     "w": "sends",
+     "start": 26.645,
+     "end": 26.92
+    },
+    {
+     "w": "it.",
+     "start": 26.938,
+     "end": 27.166
+    },
+    {
+     "w": "Dev",
+     "start": 27.306,
+     "end": 27.55
+    },
+    {
+     "w": "SCREENSHOTS",
+     "start": 27.565,
+     "end": 28.131
+    },
+    {
+     "w": "it.",
+     "start": 28.167,
+     "end": 28.395
+    }
+   ]
+  },
+  {
+   "text": "It's not weird. It's a GIFT. Who deserves one today? Send this to the friend who deletes every nice text.",
+   "sec": "cd",
+   "start": 28.73,
+   "end": 35.05,
+   "words": [
+    {
+     "w": "It's",
+     "start": 28.73,
+     "end": 28.933
+    },
+    {
+     "w": "not",
+     "start": 28.946,
+     "end": 29.15
+    },
+    {
+     "w": "weird.",
+     "start": 29.163,
+     "end": 29.393
+    },
+    {
+     "w": "It's",
+     "start": 29.512,
+     "end": 29.716
+    },
+    {
+     "w": "a",
+     "start": 29.729,
+     "end": 29.906
+    },
+    {
+     "w": "GIFT.",
+     "start": 29.917,
+     "end": 30.134
+    },
+    {
+     "w": "Who",
+     "start": 30.252,
+     "end": 30.456
+    },
+    {
+     "w": "deserves",
+     "start": 30.469,
+     "end": 31.066
+    },
+    {
+     "w": "one",
+     "start": 31.104,
+     "end": 31.472
+    },
+    {
+     "w": "today?",
+     "start": 31.495,
+     "end": 31.889
+    },
+    {
+     "w": "Send",
+     "start": 32.019,
+     "end": 32.236
+    },
+    {
+     "w": "this",
+     "start": 32.25,
+     "end": 32.466
+    },
+    {
+     "w": "to",
+     "start": 32.48,
+     "end": 32.67
+    },
+    {
+     "w": "the",
+     "start": 32.683,
+     "end": 32.886
+    },
+    {
+     "w": "friend",
+     "start": 32.899,
+     "end": 33.142
+    },
+    {
+     "w": "who",
+     "start": 33.157,
+     "end": 33.361
+    },
+    {
+     "w": "deletes",
+     "start": 33.374,
+     "end": 33.958
+    },
+    {
+     "w": "every",
+     "start": 33.996,
+     "end": 34.553
+    },
+    {
+     "w": "nice",
+     "start": 34.589,
+     "end": 34.806
+    },
+    {
+     "w": "text.",
+     "start": 34.82,
+     "end": 35.036
+    }
+   ]
+  }
+ ]
+}

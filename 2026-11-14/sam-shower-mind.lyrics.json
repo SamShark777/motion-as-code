@@ -1,0 +1,551 @@
+{
+ "lines": [
+  {
+   "text": "Sam's in the shower. His MIND is at tomorrow's meeting.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.24,
+   "words": [
+    {
+     "w": "Sam's",
+     "start": 0.15,
+     "end": 0.363
+    },
+    {
+     "w": "in",
+     "start": 0.377,
+     "end": 0.565
+    },
+    {
+     "w": "the",
+     "start": 0.577,
+     "end": 0.777
+    },
+    {
+     "w": "shower.",
+     "start": 0.79,
+     "end": 1.191
+    },
+    {
+     "w": "His",
+     "start": 1.32,
+     "end": 1.52
+    },
+    {
+     "w": "MIND",
+     "start": 1.533,
+     "end": 1.747
+    },
+    {
+     "w": "is",
+     "start": 1.76,
+     "end": 1.948
+    },
+    {
+     "w": "at",
+     "start": 1.96,
+     "end": 2.148
+    },
+    {
+     "w": "tomorrow's",
+     "start": 2.16,
+     "end": 2.761
+    },
+    {
+     "w": "meeting.",
+     "start": 2.8,
+     "end": 3.214
+    }
+   ]
+  },
+  {
+   "text": "You know it: body here, head SOMEWHERE else.",
+   "sec": "cd",
+   "start": 3.56,
+   "end": 5.59,
+   "words": [
+    {
+     "w": "You",
+     "start": 3.56,
+     "end": 3.719
+    },
+    {
+     "w": "know",
+     "start": 3.729,
+     "end": 3.898
+    },
+    {
+     "w": "it:",
+     "start": 3.908,
+     "end": 4.057
+    },
+    {
+     "w": "body",
+     "start": 4.148,
+     "end": 4.444
+    },
+    {
+     "w": "here,",
+     "start": 4.463,
+     "end": 4.632
+    },
+    {
+     "w": "head",
+     "start": 4.725,
+     "end": 4.893
+    },
+    {
+     "w": "SOMEWHERE",
+     "start": 4.904,
+     "end": 5.38
+    },
+    {
+     "w": "else.",
+     "start": 5.41,
+     "end": 5.579
+    }
+   ]
+  },
+  {
+   "text": "But it's not what you're doing that drains you. It's the WANDERING.",
+   "sec": "cd",
+   "start": 5.91,
+   "end": 8.93,
+   "words": [
+    {
+     "w": "But",
+     "start": 5.91,
+     "end": 6.098
+    },
+    {
+     "w": "it's",
+     "start": 6.11,
+     "end": 6.299
+    },
+    {
+     "w": "not",
+     "start": 6.311,
+     "end": 6.499
+    },
+    {
+     "w": "what",
+     "start": 6.511,
+     "end": 6.712
+    },
+    {
+     "w": "you're",
+     "start": 6.725,
+     "end": 6.938
+    },
+    {
+     "w": "doing",
+     "start": 6.951,
+     "end": 7.164
+    },
+    {
+     "w": "that",
+     "start": 7.177,
+     "end": 7.378
+    },
+    {
+     "w": "drains",
+     "start": 7.391,
+     "end": 7.616
+    },
+    {
+     "w": "you.",
+     "start": 7.63,
+     "end": 7.819
+    },
+    {
+     "w": "It's",
+     "start": 7.928,
+     "end": 8.116
+    },
+    {
+     "w": "the",
+     "start": 8.128,
+     "end": 8.317
+    },
+    {
+     "w": "WANDERING.",
+     "start": 8.329,
+     "end": 8.894
+    }
+   ]
+  },
+  {
+   "text": "In 2010, Harvard researchers pinged 2,250 people's PHONES at random.",
+   "sec": "cd",
+   "start": 9.25,
+   "end": 14.68,
+   "words": [
+    {
+     "w": "In",
+     "start": 9.25,
+     "end": 9.527
+    },
+    {
+     "w": "2010,",
+     "start": 9.545,
+     "end": 9.784
+    },
+    {
+     "w": "Harvard",
+     "start": 9.952,
+     "end": 10.563
+    },
+    {
+     "w": "researchers",
+     "start": 10.602,
+     "end": 11.53
+    },
+    {
+     "w": "pinged",
+     "start": 11.589,
+     "end": 12.181
+    },
+    {
+     "w": "2,250",
+     "start": 12.219,
+     "end": 12.458
+    },
+    {
+     "w": "people's",
+     "start": 12.473,
+     "end": 13.085
+    },
+    {
+     "w": "PHONES",
+     "start": 13.124,
+     "end": 13.717
+    },
+    {
+     "w": "at",
+     "start": 13.755,
+     "end": 14.032
+    },
+    {
+     "w": "random.",
+     "start": 14.05,
+     "end": 14.642
+    }
+   ]
+  },
+  {
+   "text": "Nearly HALF the time, minds were elsewhere.",
+   "sec": "cd",
+   "start": 15.0,
+   "end": 17.31,
+   "words": [
+    {
+     "w": "Nearly",
+     "start": 15.0,
+     "end": 15.402
+    },
+    {
+     "w": "HALF",
+     "start": 15.428,
+     "end": 15.641
+    },
+    {
+     "w": "the",
+     "start": 15.655,
+     "end": 15.856
+    },
+    {
+     "w": "time,",
+     "start": 15.869,
+     "end": 16.083
+    },
+    {
+     "w": "minds",
+     "start": 16.2,
+     "end": 16.427
+    },
+    {
+     "w": "were",
+     "start": 16.441,
+     "end": 16.655
+    },
+    {
+     "w": "elsewhere.",
+     "start": 16.669,
+     "end": 17.272
+    }
+   ]
+  },
+  {
+   "text": "And wandering minds were less HAPPY.",
+   "sec": "cd",
+   "start": 17.63,
+   "end": 19.49,
+   "words": [
+    {
+     "w": "And",
+     "start": 17.63,
+     "end": 17.82
+    },
+    {
+     "w": "wandering",
+     "start": 17.832,
+     "end": 18.403
+    },
+    {
+     "w": "minds",
+     "start": 18.439,
+     "end": 18.654
+    },
+    {
+     "w": "were",
+     "start": 18.668,
+     "end": 18.87
+    },
+    {
+     "w": "less",
+     "start": 18.883,
+     "end": 19.085
+    },
+    {
+     "w": "HAPPY.",
+     "start": 19.098,
+     "end": 19.467
+    }
+   ]
+  },
+  {
+   "text": "Their paper's title: a wandering mind is an UNHAPPY mind.",
+   "sec": "cd",
+   "start": 19.81,
+   "end": 23.27,
+   "words": [
+    {
+     "w": "Their",
+     "start": 19.81,
+     "end": 20.035
+    },
+    {
+     "w": "paper's",
+     "start": 20.05,
+     "end": 20.449
+    },
+    {
+     "w": "title:",
+     "start": 20.475,
+     "end": 20.861
+    },
+    {
+     "w": "a",
+     "start": 20.988,
+     "end": 21.162
+    },
+    {
+     "w": "wandering",
+     "start": 21.173,
+     "end": 21.772
+    },
+    {
+     "w": "mind",
+     "start": 21.811,
+     "end": 22.023
+    },
+    {
+     "w": "is",
+     "start": 22.037,
+     "end": 22.224
+    },
+    {
+     "w": "an",
+     "start": 22.235,
+     "end": 22.422
+    },
+    {
+     "w": "UNHAPPY",
+     "start": 22.434,
+     "end": 23.007
+    },
+    {
+     "w": "mind.",
+     "start": 23.044,
+     "end": 23.256
+    }
+   ]
+  },
+  {
+   "text": "Think of the last time you read a page three times. Yeah, THAT one.",
+   "sec": "cd",
+   "start": 23.59,
+   "end": 27.21,
+   "words": [
+    {
+     "w": "Think",
+     "start": 23.59,
+     "end": 23.814
+    },
+    {
+     "w": "of",
+     "start": 23.828,
+     "end": 24.014
+    },
+    {
+     "w": "the",
+     "start": 24.025,
+     "end": 24.224
+    },
+    {
+     "w": "last",
+     "start": 24.236,
+     "end": 24.448
+    },
+    {
+     "w": "time",
+     "start": 24.461,
+     "end": 24.672
+    },
+    {
+     "w": "you",
+     "start": 24.686,
+     "end": 24.884
+    },
+    {
+     "w": "read",
+     "start": 24.896,
+     "end": 25.108
+    },
+    {
+     "w": "a",
+     "start": 25.121,
+     "end": 25.294
+    },
+    {
+     "w": "page",
+     "start": 25.305,
+     "end": 25.516
+    },
+    {
+     "w": "three",
+     "start": 25.529,
+     "end": 25.753
+    },
+    {
+     "w": "times.",
+     "start": 25.767,
+     "end": 26.151
+    },
+    {
+     "w": "Yeah,",
+     "start": 26.278,
+     "end": 26.489
+    },
+    {
+     "w": "THAT",
+     "start": 26.604,
+     "end": 26.815
+    },
+    {
+     "w": "one.",
+     "start": 26.829,
+     "end": 27.187
+    }
+   ]
+  },
+  {
+   "text": "Sam feels the WATER. Where did your mind go? Send this to the friend who's never fully here.",
+   "sec": "cd",
+   "start": 27.53,
+   "end": 32.49,
+   "words": [
+    {
+     "w": "Sam",
+     "start": 27.53,
+     "end": 27.737
+    },
+    {
+     "w": "feels",
+     "start": 27.751,
+     "end": 27.985
+    },
+    {
+     "w": "the",
+     "start": 28.0,
+     "end": 28.207
+    },
+    {
+     "w": "WATER.",
+     "start": 28.22,
+     "end": 28.622
+    },
+    {
+     "w": "Where",
+     "start": 28.754,
+     "end": 28.988
+    },
+    {
+     "w": "did",
+     "start": 29.003,
+     "end": 29.21
+    },
+    {
+     "w": "your",
+     "start": 29.224,
+     "end": 29.444
+    },
+    {
+     "w": "mind",
+     "start": 29.458,
+     "end": 29.679
+    },
+    {
+     "w": "go?",
+     "start": 29.693,
+     "end": 29.887
+    },
+    {
+     "w": "Send",
+     "start": 30.006,
+     "end": 30.227
+    },
+    {
+     "w": "this",
+     "start": 30.241,
+     "end": 30.462
+    },
+    {
+     "w": "to",
+     "start": 30.476,
+     "end": 30.67
+    },
+    {
+     "w": "the",
+     "start": 30.682,
+     "end": 30.89
+    },
+    {
+     "w": "friend",
+     "start": 30.903,
+     "end": 31.151
+    },
+    {
+     "w": "who's",
+     "start": 31.166,
+     "end": 31.387
+    },
+    {
+     "w": "never",
+     "start": 31.401,
+     "end": 31.803
+    },
+    {
+     "w": "fully",
+     "start": 31.828,
+     "end": 32.23
+    },
+    {
+     "w": "here.",
+     "start": 32.255,
+     "end": 32.476
+    }
+   ]
+  }
+ ]
+}

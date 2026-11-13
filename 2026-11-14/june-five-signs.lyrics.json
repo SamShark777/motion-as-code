@@ -1,0 +1,640 @@
+{
+ "lines": [
+  {
+   "text": "June finds her old DIARY and cringes at every page.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.02,
+   "words": [
+    {
+     "w": "June",
+     "start": 0.15,
+     "end": 0.428
+    },
+    {
+     "w": "finds",
+     "start": 0.446,
+     "end": 0.74
+    },
+    {
+     "w": "her",
+     "start": 0.759,
+     "end": 1.02
+    },
+    {
+     "w": "old",
+     "start": 1.037,
+     "end": 1.298
+    },
+    {
+     "w": "DIARY",
+     "start": 1.315,
+     "end": 1.82
+    },
+    {
+     "w": "and",
+     "start": 1.852,
+     "end": 2.113
+    },
+    {
+     "w": "cringes",
+     "start": 2.13,
+     "end": 2.669
+    },
+    {
+     "w": "at",
+     "start": 2.703,
+     "end": 2.947
+    },
+    {
+     "w": "every",
+     "start": 2.963,
+     "end": 3.679
+    },
+    {
+     "w": "page.",
+     "start": 3.724,
+     "end": 4.002
+    }
+   ]
+  },
+  {
+   "text": "Five signs you're still changing, and the twist is GOOD news.",
+   "sec": "cd",
+   "start": 4.34,
+   "end": 8.42,
+   "words": [
+    {
+     "w": "Five",
+     "start": 4.34,
+     "end": 4.648
+    },
+    {
+     "w": "signs",
+     "start": 4.668,
+     "end": 4.994
+    },
+    {
+     "w": "you're",
+     "start": 5.015,
+     "end": 5.342
+    },
+    {
+     "w": "still",
+     "start": 5.362,
+     "end": 5.689
+    },
+    {
+     "w": "changing,",
+     "start": 5.71,
+     "end": 6.326
+    },
+    {
+     "w": "and",
+     "start": 6.514,
+     "end": 6.803
+    },
+    {
+     "w": "the",
+     "start": 6.822,
+     "end": 7.111
+    },
+    {
+     "w": "twist",
+     "start": 7.129,
+     "end": 7.456
+    },
+    {
+     "w": "is",
+     "start": 7.477,
+     "end": 7.748
+    },
+    {
+     "w": "GOOD",
+     "start": 7.765,
+     "end": 8.073
+    },
+    {
+     "w": "news.",
+     "start": 8.092,
+     "end": 8.4
+    }
+   ]
+  },
+  {
+   "text": "One: old photos make you CRINGE.",
+   "sec": "cd",
+   "start": 8.74,
+   "end": 12.05,
+   "words": [
+    {
+     "w": "One:",
+     "start": 8.74,
+     "end": 9.398
+    },
+    {
+     "w": "old",
+     "start": 9.627,
+     "end": 9.991
+    },
+    {
+     "w": "photos",
+     "start": 10.014,
+     "end": 10.742
+    },
+    {
+     "w": "make",
+     "start": 10.788,
+     "end": 11.176
+    },
+    {
+     "w": "you",
+     "start": 11.201,
+     "end": 11.565
+    },
+    {
+     "w": "CRINGE.",
+     "start": 11.588,
+     "end": 12.022
+    }
+   ]
+  },
+  {
+   "text": "Two: your school playlist is EMBARRASSING now.",
+   "sec": "cd",
+   "start": 12.37,
+   "end": 15.55,
+   "words": [
+    {
+     "w": "Two:",
+     "start": 12.37,
+     "end": 12.623
+    },
+    {
+     "w": "your",
+     "start": 12.77,
+     "end": 13.039
+    },
+    {
+     "w": "school",
+     "start": 13.056,
+     "end": 13.359
+    },
+    {
+     "w": "playlist",
+     "start": 13.378,
+     "end": 13.917
+    },
+    {
+     "w": "is",
+     "start": 13.951,
+     "end": 14.188
+    },
+    {
+     "w": "EMBARRASSING",
+     "start": 14.203,
+     "end": 15.216
+    },
+    {
+     "w": "now.",
+     "start": 15.281,
+     "end": 15.534
+    }
+   ]
+  },
+  {
+   "text": "Three: an old best friend feels like a STRANGER.",
+   "sec": "cd",
+   "start": 15.87,
+   "end": 19.38,
+   "words": [
+    {
+     "w": "Three:",
+     "start": 15.87,
+     "end": 16.209
+    },
+    {
+     "w": "an",
+     "start": 16.385,
+     "end": 16.665
+    },
+    {
+     "w": "old",
+     "start": 16.683,
+     "end": 16.983
+    },
+    {
+     "w": "best",
+     "start": 17.002,
+     "end": 17.322
+    },
+    {
+     "w": "friend",
+     "start": 17.342,
+     "end": 17.7
+    },
+    {
+     "w": "feels",
+     "start": 17.723,
+     "end": 18.061
+    },
+    {
+     "w": "like",
+     "start": 18.083,
+     "end": 18.402
+    },
+    {
+     "w": "a",
+     "start": 18.423,
+     "end": 18.684
+    },
+    {
+     "w": "STRANGER.",
+     "start": 18.701,
+     "end": 19.339
+    }
+   ]
+  },
+  {
+   "text": "Four: you swore you'd never like COFFEE.",
+   "sec": "cd",
+   "start": 19.7,
+   "end": 22.62,
+   "words": [
+    {
+     "w": "Four:",
+     "start": 19.7,
+     "end": 20.027
+    },
+    {
+     "w": "you",
+     "start": 20.206,
+     "end": 20.513
+    },
+    {
+     "w": "swore",
+     "start": 20.533,
+     "end": 20.88
+    },
+    {
+     "w": "you'd",
+     "start": 20.902,
+     "end": 21.229
+    },
+    {
+     "w": "never",
+     "start": 21.25,
+     "end": 21.844
+    },
+    {
+     "w": "like",
+     "start": 21.882,
+     "end": 22.209
+    },
+    {
+     "w": "COFFEE.",
+     "start": 22.23,
+     "end": 22.597
+    }
+   ]
+  },
+  {
+   "text": "Five: you're sure THIS version of you is final.",
+   "sec": "cd",
+   "start": 22.94,
+   "end": 27.2,
+   "words": [
+    {
+     "w": "Five:",
+     "start": 22.94,
+     "end": 23.305
+    },
+    {
+     "w": "you're",
+     "start": 23.505,
+     "end": 23.892
+    },
+    {
+     "w": "sure",
+     "start": 23.917,
+     "end": 24.282
+    },
+    {
+     "w": "THIS",
+     "start": 24.305,
+     "end": 24.67
+    },
+    {
+     "w": "version",
+     "start": 24.693,
+     "end": 25.401
+    },
+    {
+     "w": "of",
+     "start": 25.447,
+     "end": 25.767
+    },
+    {
+     "w": "you",
+     "start": 25.788,
+     "end": 26.131
+    },
+    {
+     "w": "is",
+     "start": 26.153,
+     "end": 26.473
+    },
+    {
+     "w": "final.",
+     "start": 26.494,
+     "end": 27.158
+    }
+   ]
+  },
+  {
+   "text": "In 2013, over 19,000 people said they'd changed LOTS in ten years.",
+   "sec": "cd",
+   "start": 27.52,
+   "end": 32.86,
+   "words": [
+    {
+     "w": "In",
+     "start": 27.52,
+     "end": 27.827
+    },
+    {
+     "w": "2013,",
+     "start": 27.847,
+     "end": 28.111
+    },
+    {
+     "w": "over",
+     "start": 28.297,
+     "end": 28.912
+    },
+    {
+     "w": "19,000",
+     "start": 28.951,
+     "end": 29.216
+    },
+    {
+     "w": "people",
+     "start": 29.232,
+     "end": 29.889
+    },
+    {
+     "w": "said",
+     "start": 29.931,
+     "end": 30.28
+    },
+    {
+     "w": "they'd",
+     "start": 30.303,
+     "end": 30.673
+    },
+    {
+     "w": "changed",
+     "start": 30.697,
+     "end": 31.375
+    },
+    {
+     "w": "LOTS",
+     "start": 31.418,
+     "end": 31.767
+    },
+    {
+     "w": "in",
+     "start": 31.79,
+     "end": 32.097
+    },
+    {
+     "w": "ten",
+     "start": 32.116,
+     "end": 32.445
+    },
+    {
+     "w": "years.",
+     "start": 32.466,
+     "end": 32.836
+    }
+   ]
+  },
+  {
+   "text": "But expected far LESS in the next ten.",
+   "sec": "cd",
+   "start": 33.18,
+   "end": 35.93,
+   "words": [
+    {
+     "w": "But",
+     "start": 33.18,
+     "end": 33.438
+    },
+    {
+     "w": "expected",
+     "start": 33.455,
+     "end": 34.214
+    },
+    {
+     "w": "far",
+     "start": 34.262,
+     "end": 34.521
+    },
+    {
+     "w": "LESS",
+     "start": 34.537,
+     "end": 34.812
+    },
+    {
+     "w": "in",
+     "start": 34.83,
+     "end": 35.072
+    },
+    {
+     "w": "the",
+     "start": 35.087,
+     "end": 35.346
+    },
+    {
+     "w": "next",
+     "start": 35.362,
+     "end": 35.637
+    },
+    {
+     "w": "ten.",
+     "start": 35.655,
+     "end": 35.913
+    }
+   ]
+  },
+  {
+   "text": "It's called the end of history ILLUSION.",
+   "sec": "cd",
+   "start": 36.25,
+   "end": 38.49,
+   "words": [
+    {
+     "w": "It's",
+     "start": 36.25,
+     "end": 36.429
+    },
+    {
+     "w": "called",
+     "start": 36.441,
+     "end": 36.799
+    },
+    {
+     "w": "the",
+     "start": 36.822,
+     "end": 37.002
+    },
+    {
+     "w": "end",
+     "start": 37.013,
+     "end": 37.192
+    },
+    {
+     "w": "of",
+     "start": 37.204,
+     "end": 37.372
+    },
+    {
+     "w": "history",
+     "start": 37.382,
+     "end": 37.897
+    },
+    {
+     "w": "ILLUSION.",
+     "start": 37.93,
+     "end": 38.456
+    }
+   ]
+  },
+  {
+   "text": "Future you will cringe at today. That's GROWTH.",
+   "sec": "cd",
+   "start": 38.81,
+   "end": 42.06,
+   "words": [
+    {
+     "w": "Future",
+     "start": 38.81,
+     "end": 39.369
+    },
+    {
+     "w": "you",
+     "start": 39.404,
+     "end": 39.684
+    },
+    {
+     "w": "will",
+     "start": 39.702,
+     "end": 39.999
+    },
+    {
+     "w": "cringe",
+     "start": 40.018,
+     "end": 40.351
+    },
+    {
+     "w": "at",
+     "start": 40.373,
+     "end": 40.634
+    },
+    {
+     "w": "today.",
+     "start": 40.651,
+     "end": 41.191
+    },
+    {
+     "w": "That's",
+     "start": 41.37,
+     "end": 41.685
+    },
+    {
+     "w": "GROWTH.",
+     "start": 41.705,
+     "end": 42.039
+    }
+   ]
+  },
+  {
+   "text": "How MANY did you check? Send this to the friend who checked all five.",
+   "sec": "cd",
+   "start": 42.38,
+   "end": 46.73,
+   "words": [
+    {
+     "w": "How",
+     "start": 42.38,
+     "end": 42.622
+    },
+    {
+     "w": "MANY",
+     "start": 42.638,
+     "end": 43.091
+    },
+    {
+     "w": "did",
+     "start": 43.12,
+     "end": 43.363
+    },
+    {
+     "w": "you",
+     "start": 43.378,
+     "end": 43.62
+    },
+    {
+     "w": "check?",
+     "start": 43.636,
+     "end": 43.91
+    },
+    {
+     "w": "Send",
+     "start": 44.052,
+     "end": 44.31
+    },
+    {
+     "w": "this",
+     "start": 44.326,
+     "end": 44.584
+    },
+    {
+     "w": "to",
+     "start": 44.601,
+     "end": 44.827
+    },
+    {
+     "w": "the",
+     "start": 44.842,
+     "end": 45.084
+    },
+    {
+     "w": "friend",
+     "start": 45.1,
+     "end": 45.389
+    },
+    {
+     "w": "who",
+     "start": 45.408,
+     "end": 45.65
+    },
+    {
+     "w": "checked",
+     "start": 45.665,
+     "end": 46.166
+    },
+    {
+     "w": "all",
+     "start": 46.198,
+     "end": 46.44
+    },
+    {
+     "w": "five.",
+     "start": 46.456,
+     "end": 46.714
+    }
+   ]
+  }
+ ]
+}

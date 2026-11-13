@@ -1,0 +1,586 @@
+{
+ "lines": [
+  {
+   "text": "Dev PAID for concert tickets. He's sick, and he's still going.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 5.74,
+   "words": [
+    {
+     "w": "Dev",
+     "start": 0.15,
+     "end": 0.513
+    },
+    {
+     "w": "PAID",
+     "start": 0.536,
+     "end": 0.922
+    },
+    {
+     "w": "for",
+     "start": 0.947,
+     "end": 1.31
+    },
+    {
+     "w": "concert",
+     "start": 1.333,
+     "end": 2.082
+    },
+    {
+     "w": "tickets.",
+     "start": 2.13,
+     "end": 2.879
+    },
+    {
+     "w": "He's",
+     "start": 3.113,
+     "end": 3.476
+    },
+    {
+     "w": "sick,",
+     "start": 3.499,
+     "end": 3.885
+    },
+    {
+     "w": "and",
+     "start": 4.097,
+     "end": 4.459
+    },
+    {
+     "w": "he's",
+     "start": 4.483,
+     "end": 4.845
+    },
+    {
+     "w": "still",
+     "start": 4.869,
+     "end": 5.278
+    },
+    {
+     "w": "going.",
+     "start": 5.304,
+     "end": 5.714
+    }
+   ]
+  },
+  {
+   "text": "You've done it: it's paid for, so you HAVE to go.",
+   "sec": "cd",
+   "start": 6.06,
+   "end": 11.63,
+   "words": [
+    {
+     "w": "You've",
+     "start": 6.06,
+     "end": 6.551
+    },
+    {
+     "w": "done",
+     "start": 6.583,
+     "end": 7.046
+    },
+    {
+     "w": "it:",
+     "start": 7.075,
+     "end": 7.483
+    },
+    {
+     "w": "it's",
+     "start": 7.732,
+     "end": 8.168
+    },
+    {
+     "w": "paid",
+     "start": 8.195,
+     "end": 8.659
+    },
+    {
+     "w": "for,",
+     "start": 8.688,
+     "end": 9.123
+    },
+    {
+     "w": "so",
+     "start": 9.375,
+     "end": 9.782
+    },
+    {
+     "w": "you",
+     "start": 9.808,
+     "end": 10.243
+    },
+    {
+     "w": "HAVE",
+     "start": 10.271,
+     "end": 10.734
+    },
+    {
+     "w": "to",
+     "start": 10.764,
+     "end": 11.171
+    },
+    {
+     "w": "go.",
+     "start": 11.197,
+     "end": 11.604
+    }
+   ]
+  },
+  {
+   "text": "But the money's already gone. Going doesn't bring it BACK.",
+   "sec": "cd",
+   "start": 11.95,
+   "end": 15.97,
+   "words": [
+    {
+     "w": "But",
+     "start": 11.95,
+     "end": 12.222
+    },
+    {
+     "w": "the",
+     "start": 12.24,
+     "end": 12.512
+    },
+    {
+     "w": "money's",
+     "start": 12.53,
+     "end": 13.074
+    },
+    {
+     "w": "already",
+     "start": 13.109,
+     "end": 13.891
+    },
+    {
+     "w": "gone.",
+     "start": 13.941,
+     "end": 14.231
+    },
+    {
+     "w": "Going",
+     "start": 14.39,
+     "end": 14.698
+    },
+    {
+     "w": "doesn't",
+     "start": 14.717,
+     "end": 15.042
+    },
+    {
+     "w": "bring",
+     "start": 15.063,
+     "end": 15.371
+    },
+    {
+     "w": "it",
+     "start": 15.39,
+     "end": 15.645
+    },
+    {
+     "w": "BACK.",
+     "start": 15.661,
+     "end": 15.951
+    }
+   ]
+  },
+  {
+   "text": "In 1985, Hal Arkes's team gave random DISCOUNTS on theater season tickets.",
+   "sec": "cd",
+   "start": 16.29,
+   "end": 23.16,
+   "words": [
+    {
+     "w": "In",
+     "start": 16.29,
+     "end": 16.615
+    },
+    {
+     "w": "1985,",
+     "start": 16.635,
+     "end": 16.915
+    },
+    {
+     "w": "Hal",
+     "start": 17.112,
+     "end": 17.458
+    },
+    {
+     "w": "Arkes's",
+     "start": 17.481,
+     "end": 18.175
+    },
+    {
+     "w": "team",
+     "start": 18.219,
+     "end": 18.588
+    },
+    {
+     "w": "gave",
+     "start": 18.612,
+     "end": 18.981
+    },
+    {
+     "w": "random",
+     "start": 19.005,
+     "end": 19.699
+    },
+    {
+     "w": "DISCOUNTS",
+     "start": 19.743,
+     "end": 20.504
+    },
+    {
+     "w": "on",
+     "start": 20.552,
+     "end": 20.877
+    },
+    {
+     "w": "theater",
+     "start": 20.898,
+     "end": 21.614
+    },
+    {
+     "w": "season",
+     "start": 21.66,
+     "end": 22.354
+    },
+    {
+     "w": "tickets.",
+     "start": 22.398,
+     "end": 23.114
+    }
+   ]
+  },
+  {
+   "text": "Full-price buyers went to MORE plays at first.",
+   "sec": "cd",
+   "start": 23.48,
+   "end": 26.66,
+   "words": [
+    {
+     "w": "Full-price",
+     "start": 23.48,
+     "end": 24.16
+    },
+    {
+     "w": "buyers",
+     "start": 24.203,
+     "end": 24.573
+    },
+    {
+     "w": "went",
+     "start": 24.597,
+     "end": 24.927
+    },
+    {
+     "w": "to",
+     "start": 24.948,
+     "end": 25.238
+    },
+    {
+     "w": "MORE",
+     "start": 25.256,
+     "end": 25.586
+    },
+    {
+     "w": "plays",
+     "start": 25.607,
+     "end": 25.957
+    },
+    {
+     "w": "at",
+     "start": 25.979,
+     "end": 26.269
+    },
+    {
+     "w": "first.",
+     "start": 26.288,
+     "end": 26.638
+    }
+   ]
+  },
+  {
+   "text": "Same plays, same THEATER. Only the price was different.",
+   "sec": "cd",
+   "start": 26.98,
+   "end": 31.56,
+   "words": [
+    {
+     "w": "Same",
+     "start": 26.98,
+     "end": 27.301
+    },
+    {
+     "w": "plays,",
+     "start": 27.321,
+     "end": 27.661
+    },
+    {
+     "w": "same",
+     "start": 27.838,
+     "end": 28.159
+    },
+    {
+     "w": "THEATER.",
+     "start": 28.179,
+     "end": 28.801
+    },
+    {
+     "w": "Only",
+     "start": 28.996,
+     "end": 29.56
+    },
+    {
+     "w": "the",
+     "start": 29.596,
+     "end": 29.897
+    },
+    {
+     "w": "price",
+     "start": 29.916,
+     "end": 30.256
+    },
+    {
+     "w": "was",
+     "start": 30.278,
+     "end": 30.579
+    },
+    {
+     "w": "different.",
+     "start": 30.599,
+     "end": 31.502
+    }
+   ]
+  },
+  {
+   "text": "It's called the sunk COST effect.",
+   "sec": "cd",
+   "start": 31.88,
+   "end": 34.39,
+   "words": [
+    {
+     "w": "It's",
+     "start": 31.88,
+     "end": 32.17
+    },
+    {
+     "w": "called",
+     "start": 32.189,
+     "end": 32.769
+    },
+    {
+     "w": "the",
+     "start": 32.806,
+     "end": 33.097
+    },
+    {
+     "w": "sunk",
+     "start": 33.115,
+     "end": 33.424
+    },
+    {
+     "w": "COST",
+     "start": 33.444,
+     "end": 33.753
+    },
+    {
+     "w": "effect.",
+     "start": 33.772,
+     "end": 34.353
+    }
+   ]
+  },
+  {
+   "text": "Think of a bad movie you finished because you PAID. Yeah, that one.",
+   "sec": "cd",
+   "start": 34.71,
+   "end": 39.75,
+   "words": [
+    {
+     "w": "Think",
+     "start": 34.71,
+     "end": 35.007
+    },
+    {
+     "w": "of",
+     "start": 35.026,
+     "end": 35.271
+    },
+    {
+     "w": "a",
+     "start": 35.287,
+     "end": 35.516
+    },
+    {
+     "w": "bad",
+     "start": 35.53,
+     "end": 35.793
+    },
+    {
+     "w": "movie",
+     "start": 35.81,
+     "end": 36.107
+    },
+    {
+     "w": "you",
+     "start": 36.126,
+     "end": 36.388
+    },
+    {
+     "w": "finished",
+     "start": 36.405,
+     "end": 37.176
+    },
+    {
+     "w": "because",
+     "start": 37.225,
+     "end": 37.768
+    },
+    {
+     "w": "you",
+     "start": 37.803,
+     "end": 38.065
+    },
+    {
+     "w": "PAID.",
+     "start": 38.082,
+     "end": 38.362
+    },
+    {
+     "w": "Yeah,",
+     "start": 38.515,
+     "end": 38.794
+    },
+    {
+     "w": "that",
+     "start": 38.948,
+     "end": 39.227
+    },
+    {
+     "w": "one.",
+     "start": 39.245,
+     "end": 39.72
+    }
+   ]
+  },
+  {
+   "text": "Dev stays home. Your evening costs TOO. What did you sit through? Send this to the friend who finishes every bad book.",
+   "sec": "cd",
+   "start": 40.07,
+   "end": 48.69,
+   "words": [
+    {
+     "w": "Dev",
+     "start": 40.07,
+     "end": 40.34
+    },
+    {
+     "w": "stays",
+     "start": 40.357,
+     "end": 40.662
+    },
+    {
+     "w": "home.",
+     "start": 40.681,
+     "end": 40.968
+    },
+    {
+     "w": "Your",
+     "start": 41.126,
+     "end": 41.413
+    },
+    {
+     "w": "evening",
+     "start": 41.431,
+     "end": 42.206
+    },
+    {
+     "w": "costs",
+     "start": 42.255,
+     "end": 42.56
+    },
+    {
+     "w": "TOO.",
+     "start": 42.579,
+     "end": 42.849
+    },
+    {
+     "w": "What",
+     "start": 43.005,
+     "end": 43.292
+    },
+    {
+     "w": "did",
+     "start": 43.311,
+     "end": 43.58
+    },
+    {
+     "w": "you",
+     "start": 43.598,
+     "end": 43.867
+    },
+    {
+     "w": "sit",
+     "start": 43.885,
+     "end": 44.154
+    },
+    {
+     "w": "through?",
+     "start": 44.172,
+     "end": 44.511
+    },
+    {
+     "w": "Send",
+     "start": 44.672,
+     "end": 44.959
+    },
+    {
+     "w": "this",
+     "start": 44.977,
+     "end": 45.264
+    },
+    {
+     "w": "to",
+     "start": 45.283,
+     "end": 45.535
+    },
+    {
+     "w": "the",
+     "start": 45.551,
+     "end": 45.821
+    },
+    {
+     "w": "friend",
+     "start": 45.838,
+     "end": 46.16
+    },
+    {
+     "w": "who",
+     "start": 46.181,
+     "end": 46.451
+    },
+    {
+     "w": "finishes",
+     "start": 46.468,
+     "end": 47.26
+    },
+    {
+     "w": "every",
+     "start": 47.31,
+     "end": 48.05
+    },
+    {
+     "w": "bad",
+     "start": 48.097,
+     "end": 48.367
+    },
+    {
+     "w": "book.",
+     "start": 48.384,
+     "end": 48.672
+    }
+   ]
+  }
+ ]
+}

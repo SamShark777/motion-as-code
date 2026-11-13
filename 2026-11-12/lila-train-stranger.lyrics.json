@@ -1,0 +1,554 @@
+{
+ "lines": [
+  {
+   "text": "Lila's on the morning TRAIN: headphones in, eyes down.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.28,
+   "words": [
+    {
+     "w": "Lila's",
+     "start": 0.15,
+     "end": 0.681
+    },
+    {
+     "w": "on",
+     "start": 0.714,
+     "end": 0.971
+    },
+    {
+     "w": "the",
+     "start": 0.987,
+     "end": 1.261
+    },
+    {
+     "w": "morning",
+     "start": 1.279,
+     "end": 1.845
+    },
+    {
+     "w": "TRAIN:",
+     "start": 1.881,
+     "end": 2.191
+    },
+    {
+     "w": "headphones",
+     "start": 2.351,
+     "end": 3.192
+    },
+    {
+     "w": "in,",
+     "start": 3.245,
+     "end": 3.502
+    },
+    {
+     "w": "eyes",
+     "start": 3.659,
+     "end": 3.951
+    },
+    {
+     "w": "down.",
+     "start": 3.97,
+     "end": 4.261
+    }
+   ]
+  },
+  {
+   "text": "You know this ride: twenty strangers, zero WORDS.",
+   "sec": "cd",
+   "start": 4.6,
+   "end": 8.18,
+   "words": [
+    {
+     "w": "You",
+     "start": 4.6,
+     "end": 4.872
+    },
+    {
+     "w": "know",
+     "start": 4.89,
+     "end": 5.18
+    },
+    {
+     "w": "this",
+     "start": 5.198,
+     "end": 5.488
+    },
+    {
+     "w": "ride:",
+     "start": 5.507,
+     "end": 5.797
+    },
+    {
+     "w": "twenty",
+     "start": 5.955,
+     "end": 6.5
+    },
+    {
+     "w": "strangers,",
+     "start": 6.535,
+     "end": 7.132
+    },
+    {
+     "w": "zero",
+     "start": 7.311,
+     "end": 7.82
+    },
+    {
+     "w": "WORDS.",
+     "start": 7.853,
+     "end": 8.16
+    }
+   ]
+  },
+  {
+   "text": "But the quiet ride? It's the WORSE one.",
+   "sec": "cd",
+   "start": 8.5,
+   "end": 11.46,
+   "words": [
+    {
+     "w": "But",
+     "start": 8.5,
+     "end": 8.789
+    },
+    {
+     "w": "the",
+     "start": 8.808,
+     "end": 9.097
+    },
+    {
+     "w": "quiet",
+     "start": 9.116,
+     "end": 9.443
+    },
+    {
+     "w": "ride?",
+     "start": 9.463,
+     "end": 9.772
+    },
+    {
+     "w": "It's",
+     "start": 9.94,
+     "end": 10.23
+    },
+    {
+     "w": "the",
+     "start": 10.248,
+     "end": 10.538
+    },
+    {
+     "w": "WORSE",
+     "start": 10.556,
+     "end": 10.883
+    },
+    {
+     "w": "one.",
+     "start": 10.904,
+     "end": 11.427
+    }
+   ]
+  },
+  {
+   "text": "The Doubt hisses: 'It'll be AWKWARD.'",
+   "sec": "cd",
+   "start": 11.78,
+   "end": 14.5,
+   "words": [
+    {
+     "w": "The",
+     "start": 11.78,
+     "end": 12.075
+    },
+    {
+     "w": "Doubt",
+     "start": 12.093,
+     "end": 12.426
+    },
+    {
+     "w": "hisses:",
+     "start": 12.447,
+     "end": 13.037
+    },
+    {
+     "w": "'It'll",
+     "start": 13.226,
+     "end": 13.54
+    },
+    {
+     "w": "be",
+     "start": 13.56,
+     "end": 13.835
+    },
+    {
+     "w": "AWKWARD.'",
+     "start": 13.853,
+     "end": 14.461
+    }
+   ]
+  },
+  {
+   "text": "In 2014, Nicholas Epley and Juliana Schroeder had Chicago COMMUTERS try it.",
+   "sec": "cd",
+   "start": 14.82,
+   "end": 21.16,
+   "words": [
+    {
+     "w": "In",
+     "start": 14.82,
+     "end": 15.074
+    },
+    {
+     "w": "2014,",
+     "start": 15.09,
+     "end": 15.309
+    },
+    {
+     "w": "Nicholas",
+     "start": 15.462,
+     "end": 16.259
+    },
+    {
+     "w": "Epley",
+     "start": 16.31,
+     "end": 16.835
+    },
+    {
+     "w": "and",
+     "start": 16.868,
+     "end": 17.139
+    },
+    {
+     "w": "Juliana",
+     "start": 17.157,
+     "end": 17.936
+    },
+    {
+     "w": "Schroeder",
+     "start": 17.985,
+     "end": 18.58
+    },
+    {
+     "w": "had",
+     "start": 18.618,
+     "end": 18.89
+    },
+    {
+     "w": "Chicago",
+     "start": 18.907,
+     "end": 19.686
+    },
+    {
+     "w": "COMMUTERS",
+     "start": 19.736,
+     "end": 20.549
+    },
+    {
+     "w": "try",
+     "start": 20.601,
+     "end": 20.873
+    },
+    {
+     "w": "it.",
+     "start": 20.89,
+     "end": 21.144
+    }
+   ]
+  },
+  {
+   "text": "Talkers had a more PLEASANT ride. They'd predicted the opposite.",
+   "sec": "cd",
+   "start": 21.48,
+   "end": 25.18,
+   "words": [
+    {
+     "w": "Talkers",
+     "start": 21.48,
+     "end": 21.909
+    },
+    {
+     "w": "had",
+     "start": 21.936,
+     "end": 22.144
+    },
+    {
+     "w": "a",
+     "start": 22.157,
+     "end": 22.338
+    },
+    {
+     "w": "more",
+     "start": 22.35,
+     "end": 22.571
+    },
+    {
+     "w": "PLEASANT",
+     "start": 22.585,
+     "end": 23.027
+    },
+    {
+     "w": "ride.",
+     "start": 23.056,
+     "end": 23.277
+    },
+    {
+     "w": "They'd",
+     "start": 23.398,
+     "end": 23.632
+    },
+    {
+     "w": "predicted",
+     "start": 23.647,
+     "end": 24.27
+    },
+    {
+     "w": "the",
+     "start": 24.31,
+     "end": 24.518
+    },
+    {
+     "w": "opposite.",
+     "start": 24.531,
+     "end": 25.141
+    }
+   ]
+  },
+  {
+   "text": "Epley calls it mistakenly seeking SOLITUDE.",
+   "sec": "cd",
+   "start": 25.5,
+   "end": 28.74,
+   "words": [
+    {
+     "w": "Epley",
+     "start": 25.5,
+     "end": 25.958
+    },
+    {
+     "w": "calls",
+     "start": 25.987,
+     "end": 26.254
+    },
+    {
+     "w": "it",
+     "start": 26.271,
+     "end": 26.493
+    },
+    {
+     "w": "mistakenly",
+     "start": 26.507,
+     "end": 27.423
+    },
+    {
+     "w": "seeking",
+     "start": 27.481,
+     "end": 27.97
+    },
+    {
+     "w": "SOLITUDE.",
+     "start": 28.001,
+     "end": 28.696
+    }
+   ]
+  },
+  {
+   "text": "Lila says, 'Good book?' Twenty minutes VANISH.",
+   "sec": "cd",
+   "start": 29.06,
+   "end": 32.96,
+   "words": [
+    {
+     "w": "Lila",
+     "start": 29.06,
+     "end": 29.612
+    },
+    {
+     "w": "says,",
+     "start": 29.648,
+     "end": 29.962
+    },
+    {
+     "w": "'Good",
+     "start": 30.134,
+     "end": 30.448
+    },
+    {
+     "w": "book?'",
+     "start": 30.468,
+     "end": 30.782
+    },
+    {
+     "w": "Twenty",
+     "start": 30.802,
+     "end": 31.393
+    },
+    {
+     "w": "minutes",
+     "start": 31.43,
+     "end": 32.278
+    },
+    {
+     "w": "VANISH.",
+     "start": 32.332,
+     "end": 32.922
+    }
+   ]
+  },
+  {
+   "text": "Remember the last chat you dreaded? Probably FINE.",
+   "sec": "cd",
+   "start": 33.28,
+   "end": 36.71,
+   "words": [
+    {
+     "w": "Remember",
+     "start": 33.28,
+     "end": 33.975
+    },
+    {
+     "w": "the",
+     "start": 34.02,
+     "end": 34.256
+    },
+    {
+     "w": "last",
+     "start": 34.272,
+     "end": 34.524
+    },
+    {
+     "w": "chat",
+     "start": 34.54,
+     "end": 34.792
+    },
+    {
+     "w": "you",
+     "start": 34.808,
+     "end": 35.045
+    },
+    {
+     "w": "dreaded?",
+     "start": 35.06,
+     "end": 35.549
+    },
+    {
+     "w": "Probably",
+     "start": 35.702,
+     "end": 36.397
+    },
+    {
+     "w": "FINE.",
+     "start": 36.442,
+     "end": 36.694
+    }
+   ]
+  },
+  {
+   "text": "Strangers are KINDER than The Doubt thinks. Would you say hi first? Send this to the friend with noise-cancelling everything.",
+   "sec": "cd",
+   "start": 37.03,
+   "end": 44.7,
+   "words": [
+    {
+     "w": "Strangers",
+     "start": 37.03,
+     "end": 37.528
+    },
+    {
+     "w": "are",
+     "start": 37.56,
+     "end": 37.97
+    },
+    {
+     "w": "KINDER",
+     "start": 37.997,
+     "end": 38.451
+    },
+    {
+     "w": "than",
+     "start": 38.48,
+     "end": 38.722
+    },
+    {
+     "w": "The",
+     "start": 38.737,
+     "end": 38.964
+    },
+    {
+     "w": "Doubt",
+     "start": 38.979,
+     "end": 39.235
+    },
+    {
+     "w": "thinks.",
+     "start": 39.251,
+     "end": 39.523
+    },
+    {
+     "w": "Would",
+     "start": 39.657,
+     "end": 39.913
+    },
+    {
+     "w": "you",
+     "start": 39.93,
+     "end": 40.157
+    },
+    {
+     "w": "say",
+     "start": 40.171,
+     "end": 40.398
+    },
+    {
+     "w": "hi",
+     "start": 40.413,
+     "end": 40.625
+    },
+    {
+     "w": "first?",
+     "start": 40.639,
+     "end": 40.895
+    },
+    {
+     "w": "Send",
+     "start": 41.029,
+     "end": 41.27
+    },
+    {
+     "w": "this",
+     "start": 41.286,
+     "end": 41.528
+    },
+    {
+     "w": "to",
+     "start": 41.543,
+     "end": 41.756
+    },
+    {
+     "w": "the",
+     "start": 41.769,
+     "end": 41.996
+    },
+    {
+     "w": "friend",
+     "start": 42.011,
+     "end": 42.282
+    },
+    {
+     "w": "with",
+     "start": 42.299,
+     "end": 42.541
+    },
+    {
+     "w": "noise-cancelling",
+     "start": 42.556,
+     "end": 43.692
+    },
+    {
+     "w": "everything.",
+     "start": 43.765,
+     "end": 44.644
+    }
+   ]
+  }
+ ]
+}

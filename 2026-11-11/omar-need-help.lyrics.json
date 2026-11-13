@@ -1,0 +1,513 @@
+{
+ "lines": [
+  {
+   "text": "Omar almost didn't tell Grace: 'I need HELP.'",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.71,
+   "words": [
+    {
+     "w": "Omar",
+     "start": 0.15,
+     "end": 0.736
+    },
+    {
+     "w": "almost",
+     "start": 0.774,
+     "end": 1.401
+    },
+    {
+     "w": "didn't",
+     "start": 1.441,
+     "end": 1.794
+    },
+    {
+     "w": "tell",
+     "start": 1.817,
+     "end": 2.151
+    },
+    {
+     "w": "Grace:",
+     "start": 2.172,
+     "end": 2.526
+    },
+    {
+     "w": "'I",
+     "start": 2.71,
+     "end": 2.983
+    },
+    {
+     "w": "need",
+     "start": 3.0,
+     "end": 3.334
+    },
+    {
+     "w": "HELP.'",
+     "start": 3.355,
+     "end": 3.689
+    }
+   ]
+  },
+  {
+   "text": "You know the move: smile, say 'all good,' while you're SINKING.",
+   "sec": "cd",
+   "start": 4.03,
+   "end": 8.79,
+   "words": [
+    {
+     "w": "You",
+     "start": 4.03,
+     "end": 4.324
+    },
+    {
+     "w": "know",
+     "start": 4.343,
+     "end": 4.655
+    },
+    {
+     "w": "the",
+     "start": 4.675,
+     "end": 4.969
+    },
+    {
+     "w": "move:",
+     "start": 4.988,
+     "end": 5.301
+    },
+    {
+     "w": "smile,",
+     "start": 5.472,
+     "end": 6.041
+    },
+    {
+     "w": "say",
+     "start": 6.228,
+     "end": 6.522
+    },
+    {
+     "w": "'all",
+     "start": 6.541,
+     "end": 6.835
+    },
+    {
+     "w": "good,'",
+     "start": 6.854,
+     "end": 7.167
+    },
+    {
+     "w": "while",
+     "start": 7.187,
+     "end": 7.755
+    },
+    {
+     "w": "you're",
+     "start": 7.792,
+     "end": 8.123
+    },
+    {
+     "w": "SINKING.",
+     "start": 8.145,
+     "end": 8.751
+    }
+   ]
+  },
+  {
+   "text": "But the thing you hide? Others see it as BRAVE.",
+   "sec": "cd",
+   "start": 9.11,
+   "end": 12.79,
+   "words": [
+    {
+     "w": "But",
+     "start": 9.11,
+     "end": 9.406
+    },
+    {
+     "w": "the",
+     "start": 9.425,
+     "end": 9.721
+    },
+    {
+     "w": "thing",
+     "start": 9.74,
+     "end": 10.075
+    },
+    {
+     "w": "you",
+     "start": 10.096,
+     "end": 10.392
+    },
+    {
+     "w": "hide?",
+     "start": 10.411,
+     "end": 10.727
+    },
+    {
+     "w": "Others",
+     "start": 10.899,
+     "end": 11.492
+    },
+    {
+     "w": "see",
+     "start": 11.529,
+     "end": 11.826
+    },
+    {
+     "w": "it",
+     "start": 11.845,
+     "end": 12.122
+    },
+    {
+     "w": "as",
+     "start": 12.139,
+     "end": 12.417
+    },
+    {
+     "w": "BRAVE.",
+     "start": 12.434,
+     "end": 12.769
+    }
+   ]
+  },
+  {
+   "text": "In 2018, Anna Bruk's team had people imagine admitting a MISTAKE.",
+   "sec": "cd",
+   "start": 13.11,
+   "end": 17.38,
+   "words": [
+    {
+     "w": "In",
+     "start": 13.11,
+     "end": 13.317
+    },
+    {
+     "w": "2018,",
+     "start": 13.331,
+     "end": 13.51
+    },
+    {
+     "w": "Anna",
+     "start": 13.635,
+     "end": 14.05
+    },
+    {
+     "w": "Bruk's",
+     "start": 14.077,
+     "end": 14.327
+    },
+    {
+     "w": "team",
+     "start": 14.343,
+     "end": 14.579
+    },
+    {
+     "w": "had",
+     "start": 14.594,
+     "end": 14.816
+    },
+    {
+     "w": "people",
+     "start": 14.83,
+     "end": 15.274
+    },
+    {
+     "w": "imagine",
+     "start": 15.302,
+     "end": 15.939
+    },
+    {
+     "w": "admitting",
+     "start": 15.98,
+     "end": 16.645
+    },
+    {
+     "w": "a",
+     "start": 16.687,
+     "end": 16.881
+    },
+    {
+     "w": "MISTAKE.",
+     "start": 16.893,
+     "end": 17.351
+    }
+   ]
+  },
+  {
+   "text": "Picturing themselves: WEAKNESS. Picturing others: courage.",
+   "sec": "cd",
+   "start": 17.7,
+   "end": 22.66,
+   "words": [
+    {
+     "w": "Picturing",
+     "start": 17.7,
+     "end": 18.537
+    },
+    {
+     "w": "themselves:",
+     "start": 18.591,
+     "end": 19.446
+    },
+    {
+     "w": "WEAKNESS.",
+     "start": 19.644,
+     "end": 20.238
+    },
+    {
+     "w": "Picturing",
+     "start": 20.419,
+     "end": 21.256
+    },
+    {
+     "w": "others:",
+     "start": 21.31,
+     "end": 21.868
+    },
+    {
+     "w": "courage.",
+     "start": 22.047,
+     "end": 22.623
+    }
+   ]
+  },
+  {
+   "text": "It's called the beautiful MESS effect.",
+   "sec": "cd",
+   "start": 22.98,
+   "end": 24.84,
+   "words": [
+    {
+     "w": "It's",
+     "start": 22.98,
+     "end": 23.154
+    },
+    {
+     "w": "called",
+     "start": 23.165,
+     "end": 23.512
+    },
+    {
+     "w": "the",
+     "start": 23.534,
+     "end": 23.708
+    },
+    {
+     "w": "beautiful",
+     "start": 23.719,
+     "end": 24.24
+    },
+    {
+     "w": "MESS",
+     "start": 24.274,
+     "end": 24.459
+    },
+    {
+     "w": "effect.",
+     "start": 24.47,
+     "end": 24.818
+    }
+   ]
+  },
+  {
+   "text": "Think of a friend who admitted they were struggling. You didn't think 'weak.' You thought 'HUMAN.'",
+   "sec": "cd",
+   "start": 25.16,
+   "end": 31.21,
+   "words": [
+    {
+     "w": "Think",
+     "start": 25.16,
+     "end": 25.459
+    },
+    {
+     "w": "of",
+     "start": 25.478,
+     "end": 25.726
+    },
+    {
+     "w": "a",
+     "start": 25.742,
+     "end": 25.973
+    },
+    {
+     "w": "friend",
+     "start": 25.988,
+     "end": 26.304
+    },
+    {
+     "w": "who",
+     "start": 26.325,
+     "end": 26.59
+    },
+    {
+     "w": "admitted",
+     "start": 26.607,
+     "end": 27.385
+    },
+    {
+     "w": "they",
+     "start": 27.434,
+     "end": 27.717
+    },
+    {
+     "w": "were",
+     "start": 27.735,
+     "end": 28.017
+    },
+    {
+     "w": "struggling.",
+     "start": 28.035,
+     "end": 28.634
+    },
+    {
+     "w": "You",
+     "start": 28.808,
+     "end": 29.073
+    },
+    {
+     "w": "didn't",
+     "start": 29.09,
+     "end": 29.39
+    },
+    {
+     "w": "think",
+     "start": 29.409,
+     "end": 29.708
+    },
+    {
+     "w": "'weak.'",
+     "start": 29.727,
+     "end": 30.009
+    },
+    {
+     "w": "You",
+     "start": 30.027,
+     "end": 30.292
+    },
+    {
+     "w": "thought",
+     "start": 30.309,
+     "end": 30.643
+    },
+    {
+     "w": "'HUMAN.'",
+     "start": 30.664,
+     "end": 31.177
+    }
+   ]
+  },
+  {
+   "text": "Omar says it. Grace just SMILES. Are you an 'I'm fine' person? Send this to the friend who's 'fine' with everything.",
+   "sec": "cd",
+   "start": 31.53,
+   "end": 40.51,
+   "words": [
+    {
+     "w": "Omar",
+     "start": 31.53,
+     "end": 32.064
+    },
+    {
+     "w": "says",
+     "start": 32.098,
+     "end": 32.402
+    },
+    {
+     "w": "it.",
+     "start": 32.421,
+     "end": 32.688
+    },
+    {
+     "w": "Grace",
+     "start": 32.852,
+     "end": 33.174
+    },
+    {
+     "w": "just",
+     "start": 33.195,
+     "end": 33.499
+    },
+    {
+     "w": "SMILES.",
+     "start": 33.518,
+     "end": 34.089
+    },
+    {
+     "w": "Are",
+     "start": 34.272,
+     "end": 34.787
+    },
+    {
+     "w": "you",
+     "start": 34.82,
+     "end": 35.106
+    },
+    {
+     "w": "an",
+     "start": 35.124,
+     "end": 35.391
+    },
+    {
+     "w": "'I'm",
+     "start": 35.408,
+     "end": 35.675
+    },
+    {
+     "w": "fine'",
+     "start": 35.692,
+     "end": 35.996
+    },
+    {
+     "w": "person?",
+     "start": 36.015,
+     "end": 36.586
+    },
+    {
+     "w": "Send",
+     "start": 36.769,
+     "end": 37.073
+    },
+    {
+     "w": "this",
+     "start": 37.092,
+     "end": 37.396
+    },
+    {
+     "w": "to",
+     "start": 37.415,
+     "end": 37.682
+    },
+    {
+     "w": "the",
+     "start": 37.699,
+     "end": 37.985
+    },
+    {
+     "w": "friend",
+     "start": 38.003,
+     "end": 38.344
+    },
+    {
+     "w": "who's",
+     "start": 38.365,
+     "end": 38.669
+    },
+    {
+     "w": "'fine'",
+     "start": 38.689,
+     "end": 38.992
+    },
+    {
+     "w": "with",
+     "start": 39.012,
+     "end": 39.315
+    },
+    {
+     "w": "everything.",
+     "start": 39.335,
+     "end": 40.439
+    }
+   ]
+  }
+ ]
+}

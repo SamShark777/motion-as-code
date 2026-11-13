@@ -1,0 +1,571 @@
+{
+ "lines": [
+  {
+   "text": "Rosa parks on the yellow line: 'I won't get a TICKET.'",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.52,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 0.15,
+     "end": 0.565
+    },
+    {
+     "w": "parks",
+     "start": 0.591,
+     "end": 0.841
+    },
+    {
+     "w": "on",
+     "start": 0.857,
+     "end": 1.065
+    },
+    {
+     "w": "the",
+     "start": 1.078,
+     "end": 1.3
+    },
+    {
+     "w": "yellow",
+     "start": 1.314,
+     "end": 1.757
+    },
+    {
+     "w": "line:",
+     "start": 1.786,
+     "end": 2.022
+    },
+    {
+     "w": "'I",
+     "start": 2.151,
+     "end": 2.344
+    },
+    {
+     "w": "won't",
+     "start": 2.356,
+     "end": 2.592
+    },
+    {
+     "w": "get",
+     "start": 2.607,
+     "end": 2.829
+    },
+    {
+     "w": "a",
+     "start": 2.843,
+     "end": 3.036
+    },
+    {
+     "w": "TICKET.'",
+     "start": 3.048,
+     "end": 3.492
+    }
+   ]
+  },
+  {
+   "text": "You've thought it too: bad stuff happens. Just not to YOU.",
+   "sec": "cd",
+   "start": 3.84,
+   "end": 8.92,
+   "words": [
+    {
+     "w": "You've",
+     "start": 3.84,
+     "end": 4.24
+    },
+    {
+     "w": "thought",
+     "start": 4.265,
+     "end": 4.711
+    },
+    {
+     "w": "it",
+     "start": 4.739,
+     "end": 5.071
+    },
+    {
+     "w": "too:",
+     "start": 5.092,
+     "end": 5.446
+    },
+    {
+     "w": "bad",
+     "start": 5.651,
+     "end": 6.005
+    },
+    {
+     "w": "stuff",
+     "start": 6.028,
+     "end": 6.427
+    },
+    {
+     "w": "happens.",
+     "start": 6.453,
+     "end": 7.184
+    },
+    {
+     "w": "Just",
+     "start": 7.413,
+     "end": 7.79
+    },
+    {
+     "w": "not",
+     "start": 7.814,
+     "end": 8.168
+    },
+    {
+     "w": "to",
+     "start": 8.191,
+     "end": 8.522
+    },
+    {
+     "w": "YOU.",
+     "start": 8.543,
+     "end": 8.897
+    }
+   ]
+  },
+  {
+   "text": "But that's not arrogance. It's how most BRAINS work.",
+   "sec": "cd",
+   "start": 9.24,
+   "end": 12.43,
+   "words": [
+    {
+     "w": "But",
+     "start": 9.24,
+     "end": 9.491
+    },
+    {
+     "w": "that's",
+     "start": 9.507,
+     "end": 9.791
+    },
+    {
+     "w": "not",
+     "start": 9.809,
+     "end": 10.06
+    },
+    {
+     "w": "arrogance.",
+     "start": 10.076,
+     "end": 10.83
+    },
+    {
+     "w": "It's",
+     "start": 11.007,
+     "end": 11.259
+    },
+    {
+     "w": "how",
+     "start": 11.275,
+     "end": 11.526
+    },
+    {
+     "w": "most",
+     "start": 11.542,
+     "end": 11.809
+    },
+    {
+     "w": "BRAINS",
+     "start": 11.826,
+     "end": 12.126
+    },
+    {
+     "w": "work.",
+     "start": 12.145,
+     "end": 12.413
+    }
+   ]
+  },
+  {
+   "text": "In 1980, Neil Weinstein asked students to rate their FUTURE.",
+   "sec": "cd",
+   "start": 12.75,
+   "end": 16.79,
+   "words": [
+    {
+     "w": "In",
+     "start": 12.75,
+     "end": 12.992
+    },
+    {
+     "w": "1980,",
+     "start": 13.007,
+     "end": 13.216
+    },
+    {
+     "w": "Neil",
+     "start": 13.363,
+     "end": 13.638
+    },
+    {
+     "w": "Weinstein",
+     "start": 13.656,
+     "end": 14.223
+    },
+    {
+     "w": "asked",
+     "start": 14.259,
+     "end": 14.76
+    },
+    {
+     "w": "students",
+     "start": 14.792,
+     "end": 15.343
+    },
+    {
+     "w": "to",
+     "start": 15.378,
+     "end": 15.62
+    },
+    {
+     "w": "rate",
+     "start": 15.636,
+     "end": 15.911
+    },
+    {
+     "w": "their",
+     "start": 15.929,
+     "end": 16.221
+    },
+    {
+     "w": "FUTURE.",
+     "start": 16.239,
+     "end": 16.757
+    }
+   ]
+  },
+  {
+   "text": "Good things: more likely for ME than classmates. Bad things: less.",
+   "sec": "cd",
+   "start": 17.11,
+   "end": 22.68,
+   "words": [
+    {
+     "w": "Good",
+     "start": 17.11,
+     "end": 17.44
+    },
+    {
+     "w": "things:",
+     "start": 17.461,
+     "end": 17.83
+    },
+    {
+     "w": "more",
+     "start": 18.014,
+     "end": 18.343
+    },
+    {
+     "w": "likely",
+     "start": 18.364,
+     "end": 19.234
+    },
+    {
+     "w": "for",
+     "start": 19.289,
+     "end": 19.599
+    },
+    {
+     "w": "ME",
+     "start": 19.619,
+     "end": 19.908
+    },
+    {
+     "w": "than",
+     "start": 19.927,
+     "end": 20.257
+    },
+    {
+     "w": "classmates.",
+     "start": 20.278,
+     "end": 21.227
+    },
+    {
+     "w": "Bad",
+     "start": 21.447,
+     "end": 21.757
+    },
+    {
+     "w": "things:",
+     "start": 21.776,
+     "end": 22.146
+    },
+    {
+     "w": "less.",
+     "start": 22.329,
+     "end": 22.659
+    }
+   ]
+  },
+  {
+   "text": "But not everyone can be above AVERAGE.",
+   "sec": "cd",
+   "start": 23.0,
+   "end": 25.34,
+   "words": [
+    {
+     "w": "But",
+     "start": 23.0,
+     "end": 23.188
+    },
+    {
+     "w": "not",
+     "start": 23.2,
+     "end": 23.389
+    },
+    {
+     "w": "everyone",
+     "start": 23.401,
+     "end": 23.954
+    },
+    {
+     "w": "can",
+     "start": 23.989,
+     "end": 24.177
+    },
+    {
+     "w": "be",
+     "start": 24.189,
+     "end": 24.366
+    },
+    {
+     "w": "above",
+     "start": 24.377,
+     "end": 24.741
+    },
+    {
+     "w": "AVERAGE.",
+     "start": 24.765,
+     "end": 25.305
+    }
+   ]
+  },
+  {
+   "text": "It's called optimism BIAS.",
+   "sec": "cd",
+   "start": 25.66,
+   "end": 27.82,
+   "words": [
+    {
+     "w": "It's",
+     "start": 25.66,
+     "end": 25.95
+    },
+    {
+     "w": "called",
+     "start": 25.969,
+     "end": 26.549
+    },
+    {
+     "w": "optimism",
+     "start": 26.586,
+     "end": 27.437
+    },
+    {
+     "w": "BIAS.",
+     "start": 27.492,
+     "end": 27.8
+    }
+   ]
+  },
+  {
+   "text": "Think of the last time you skipped the umbrella. Yeah, THAT one.",
+   "sec": "cd",
+   "start": 28.14,
+   "end": 31.98,
+   "words": [
+    {
+     "w": "Think",
+     "start": 28.14,
+     "end": 28.378
+    },
+    {
+     "w": "of",
+     "start": 28.394,
+     "end": 28.591
+    },
+    {
+     "w": "the",
+     "start": 28.604,
+     "end": 28.815
+    },
+    {
+     "w": "last",
+     "start": 28.828,
+     "end": 29.053
+    },
+    {
+     "w": "time",
+     "start": 29.067,
+     "end": 29.292
+    },
+    {
+     "w": "you",
+     "start": 29.306,
+     "end": 29.518
+    },
+    {
+     "w": "skipped",
+     "start": 29.531,
+     "end": 29.967
+    },
+    {
+     "w": "the",
+     "start": 29.995,
+     "end": 30.206
+    },
+    {
+     "w": "umbrella.",
+     "start": 30.219,
+     "end": 30.839
+    },
+    {
+     "w": "Yeah,",
+     "start": 30.987,
+     "end": 31.212
+    },
+    {
+     "w": "THAT",
+     "start": 31.335,
+     "end": 31.56
+    },
+    {
+     "w": "one.",
+     "start": 31.574,
+     "end": 31.956
+    }
+   ]
+  },
+  {
+   "text": "Rosa got the ticket. Hope's GOOD. Read the sign anyway. 'I'll be fine' type? Send this to the friend who never reads the sign.",
+   "sec": "cd",
+   "start": 32.3,
+   "end": 40.65,
+   "words": [
+    {
+     "w": "Rosa",
+     "start": 32.3,
+     "end": 32.756
+    },
+    {
+     "w": "got",
+     "start": 32.785,
+     "end": 33.029
+    },
+    {
+     "w": "the",
+     "start": 33.045,
+     "end": 33.288
+    },
+    {
+     "w": "ticket.",
+     "start": 33.304,
+     "end": 33.792
+    },
+    {
+     "w": "Hope's",
+     "start": 33.948,
+     "end": 34.42
+    },
+    {
+     "w": "GOOD.",
+     "start": 34.45,
+     "end": 34.71
+    },
+    {
+     "w": "Read",
+     "start": 34.852,
+     "end": 35.111
+    },
+    {
+     "w": "the",
+     "start": 35.128,
+     "end": 35.372
+    },
+    {
+     "w": "sign",
+     "start": 35.387,
+     "end": 35.647
+    },
+    {
+     "w": "anyway.",
+     "start": 35.663,
+     "end": 36.348
+    },
+    {
+     "w": "'I'll",
+     "start": 36.517,
+     "end": 36.761
+    },
+    {
+     "w": "be",
+     "start": 36.776,
+     "end": 37.004
+    },
+    {
+     "w": "fine'",
+     "start": 37.019,
+     "end": 37.278
+    },
+    {
+     "w": "type?",
+     "start": 37.295,
+     "end": 37.554
+    },
+    {
+     "w": "Send",
+     "start": 37.697,
+     "end": 37.956
+    },
+    {
+     "w": "this",
+     "start": 37.973,
+     "end": 38.232
+    },
+    {
+     "w": "to",
+     "start": 38.249,
+     "end": 38.477
+    },
+    {
+     "w": "the",
+     "start": 38.491,
+     "end": 38.735
+    },
+    {
+     "w": "friend",
+     "start": 38.751,
+     "end": 39.042
+    },
+    {
+     "w": "who",
+     "start": 39.06,
+     "end": 39.304
+    },
+    {
+     "w": "never",
+     "start": 39.32,
+     "end": 39.792
+    },
+    {
+     "w": "reads",
+     "start": 39.822,
+     "end": 40.097
+    },
+    {
+     "w": "the",
+     "start": 40.115,
+     "end": 40.358
+    },
+    {
+     "w": "sign.",
+     "start": 40.374,
+     "end": 40.633
+    }
+   ]
+  }
+ ]
+}

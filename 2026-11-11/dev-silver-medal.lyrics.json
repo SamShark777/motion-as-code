@@ -1,0 +1,554 @@
+{
+ "lines": [
+  {
+   "text": "Dev won SILVER at the 5K, and he's sulking.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.89,
+   "words": [
+    {
+     "w": "Dev",
+     "start": 0.15,
+     "end": 0.46
+    },
+    {
+     "w": "won",
+     "start": 0.479,
+     "end": 0.789
+    },
+    {
+     "w": "SILVER",
+     "start": 0.809,
+     "end": 1.428
+    },
+    {
+     "w": "at",
+     "start": 1.467,
+     "end": 1.757
+    },
+    {
+     "w": "the",
+     "start": 1.776,
+     "end": 2.085
+    },
+    {
+     "w": "5K,",
+     "start": 2.105,
+     "end": 2.375
+    },
+    {
+     "w": "and",
+     "start": 2.551,
+     "end": 2.861
+    },
+    {
+     "w": "he's",
+     "start": 2.881,
+     "end": 3.19
+    },
+    {
+     "w": "sulking.",
+     "start": 3.21,
+     "end": 3.849
+    }
+   ]
+  },
+  {
+   "text": "Pause and pick: who looks happier, silver or BRONZE?",
+   "sec": "cd",
+   "start": 4.21,
+   "end": 9.67,
+   "words": [
+    {
+     "w": "Pause",
+     "start": 4.21,
+     "end": 4.674
+    },
+    {
+     "w": "and",
+     "start": 4.704,
+     "end": 5.115
+    },
+    {
+     "w": "pick:",
+     "start": 5.141,
+     "end": 5.579
+    },
+    {
+     "w": "who",
+     "start": 5.818,
+     "end": 6.229
+    },
+    {
+     "w": "looks",
+     "start": 6.256,
+     "end": 6.72
+    },
+    {
+     "w": "happier,",
+     "start": 6.75,
+     "end": 7.598
+    },
+    {
+     "w": "silver",
+     "start": 7.864,
+     "end": 8.686
+    },
+    {
+     "w": "or",
+     "start": 8.739,
+     "end": 9.123
+    },
+    {
+     "w": "BRONZE?",
+     "start": 9.148,
+     "end": 9.639
+    }
+   ]
+  },
+  {
+   "text": "Silver should win. But the faces say the OPPOSITE.",
+   "sec": "cd",
+   "start": 9.99,
+   "end": 14.19,
+   "words": [
+    {
+     "w": "Silver",
+     "start": 9.99,
+     "end": 10.573
+    },
+    {
+     "w": "should",
+     "start": 10.61,
+     "end": 10.958
+    },
+    {
+     "w": "win.",
+     "start": 10.98,
+     "end": 11.271
+    },
+    {
+     "w": "But",
+     "start": 11.44,
+     "end": 11.731
+    },
+    {
+     "w": "the",
+     "start": 11.75,
+     "end": 12.041
+    },
+    {
+     "w": "faces",
+     "start": 12.06,
+     "end": 12.624
+    },
+    {
+     "w": "say",
+     "start": 12.66,
+     "end": 12.951
+    },
+    {
+     "w": "the",
+     "start": 12.97,
+     "end": 13.261
+    },
+    {
+     "w": "OPPOSITE.",
+     "start": 13.28,
+     "end": 14.135
+    }
+   ]
+  },
+  {
+   "text": "In 1995, researchers had people rate Olympic medalists' FACES.",
+   "sec": "cd",
+   "start": 14.51,
+   "end": 20.61,
+   "words": [
+    {
+     "w": "In",
+     "start": 14.51,
+     "end": 14.821
+    },
+    {
+     "w": "1995,",
+     "start": 14.841,
+     "end": 15.11
+    },
+    {
+     "w": "researchers",
+     "start": 15.298,
+     "end": 16.34
+    },
+    {
+     "w": "had",
+     "start": 16.406,
+     "end": 16.739
+    },
+    {
+     "w": "people",
+     "start": 16.76,
+     "end": 17.426
+    },
+    {
+     "w": "rate",
+     "start": 17.469,
+     "end": 17.823
+    },
+    {
+     "w": "Olympic",
+     "start": 17.846,
+     "end": 18.801
+    },
+    {
+     "w": "medalists'",
+     "start": 18.862,
+     "end": 19.861
+    },
+    {
+     "w": "FACES.",
+     "start": 19.925,
+     "end": 20.569
+    }
+   ]
+  },
+  {
+   "text": "Bronze winners looked HAPPIER than silver.",
+   "sec": "cd",
+   "start": 20.93,
+   "end": 23.62,
+   "words": [
+    {
+     "w": "Bronze",
+     "start": 20.93,
+     "end": 21.221
+    },
+    {
+     "w": "winners",
+     "start": 21.239,
+     "end": 21.742
+    },
+    {
+     "w": "looked",
+     "start": 21.774,
+     "end": 22.261
+    },
+    {
+     "w": "HAPPIER",
+     "start": 22.292,
+     "end": 22.794
+    },
+    {
+     "w": "than",
+     "start": 22.826,
+     "end": 23.086
+    },
+    {
+     "w": "silver.",
+     "start": 23.102,
+     "end": 23.589
+    }
+   ]
+  },
+  {
+   "text": "Silver compares up: 'I almost had GOLD.'",
+   "sec": "cd",
+   "start": 23.94,
+   "end": 28.05,
+   "words": [
+    {
+     "w": "Silver",
+     "start": 23.94,
+     "end": 24.624
+    },
+    {
+     "w": "compares",
+     "start": 24.668,
+     "end": 25.673
+    },
+    {
+     "w": "up:",
+     "start": 25.737,
+     "end": 26.057
+    },
+    {
+     "w": "'I",
+     "start": 26.253,
+     "end": 26.551
+    },
+    {
+     "w": "almost",
+     "start": 26.57,
+     "end": 27.255
+    },
+    {
+     "w": "had",
+     "start": 27.298,
+     "end": 27.641
+    },
+    {
+     "w": "GOLD.'",
+     "start": 27.662,
+     "end": 28.027
+    }
+   ]
+  },
+  {
+   "text": "Bronze compares down: 'At least I MEDALED.'",
+   "sec": "cd",
+   "start": 28.37,
+   "end": 32.69,
+   "words": [
+    {
+     "w": "Bronze",
+     "start": 28.37,
+     "end": 28.792
+    },
+    {
+     "w": "compares",
+     "start": 28.819,
+     "end": 29.857
+    },
+    {
+     "w": "down:",
+     "start": 29.923,
+     "end": 30.3
+    },
+    {
+     "w": "'At",
+     "start": 30.506,
+     "end": 30.837
+    },
+    {
+     "w": "least",
+     "start": 30.858,
+     "end": 31.257
+    },
+    {
+     "w": "I",
+     "start": 31.282,
+     "end": 31.59
+    },
+    {
+     "w": "MEDALED.'",
+     "start": 31.61,
+     "end": 32.625
+    }
+   ]
+  },
+  {
+   "text": "Psychologists call it counterfactual THINKING.",
+   "sec": "cd",
+   "start": 33.01,
+   "end": 36.43,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 33.01,
+     "end": 34.07
+    },
+    {
+     "w": "call",
+     "start": 34.138,
+     "end": 34.416
+    },
+    {
+     "w": "it",
+     "start": 34.434,
+     "end": 34.678
+    },
+    {
+     "w": "counterfactual",
+     "start": 34.693,
+     "end": 35.77
+    },
+    {
+     "w": "THINKING.",
+     "start": 35.839,
+     "end": 36.395
+    }
+   ]
+  },
+  {
+   "text": "Think of the last time 'almost' ruined a good day. Yeah, that ONE.",
+   "sec": "cd",
+   "start": 36.75,
+   "end": 42.67,
+   "words": [
+    {
+     "w": "Think",
+     "start": 36.75,
+     "end": 37.119
+    },
+    {
+     "w": "of",
+     "start": 37.142,
+     "end": 37.448
+    },
+    {
+     "w": "the",
+     "start": 37.468,
+     "end": 37.794
+    },
+    {
+     "w": "last",
+     "start": 37.815,
+     "end": 38.163
+    },
+    {
+     "w": "time",
+     "start": 38.185,
+     "end": 38.533
+    },
+    {
+     "w": "'almost'",
+     "start": 38.555,
+     "end": 39.209
+    },
+    {
+     "w": "ruined",
+     "start": 39.25,
+     "end": 39.904
+    },
+    {
+     "w": "a",
+     "start": 39.945,
+     "end": 40.23
+    },
+    {
+     "w": "good",
+     "start": 40.248,
+     "end": 40.596
+    },
+    {
+     "w": "day.",
+     "start": 40.618,
+     "end": 40.945
+    },
+    {
+     "w": "Yeah,",
+     "start": 41.134,
+     "end": 41.482
+    },
+    {
+     "w": "that",
+     "start": 41.672,
+     "end": 42.02
+    },
+    {
+     "w": "ONE.",
+     "start": 42.042,
+     "end": 42.632
+    }
+   ]
+  },
+  {
+   "text": "Same race. Different COMPARISON. Which are you: silver or bronze? Send this to the friend who calls second place 'losing.'",
+   "sec": "cd",
+   "start": 42.99,
+   "end": 52.76,
+   "words": [
+    {
+     "w": "Same",
+     "start": 42.99,
+     "end": 43.3
+    },
+    {
+     "w": "race.",
+     "start": 43.32,
+     "end": 43.63
+    },
+    {
+     "w": "Different",
+     "start": 43.8,
+     "end": 44.674
+    },
+    {
+     "w": "COMPARISON.",
+     "start": 44.73,
+     "end": 45.858
+    },
+    {
+     "w": "Which",
+     "start": 46.08,
+     "end": 46.409
+    },
+    {
+     "w": "are",
+     "start": 46.43,
+     "end": 46.956
+    },
+    {
+     "w": "you:",
+     "start": 46.99,
+     "end": 47.281
+    },
+    {
+     "w": "silver",
+     "start": 47.45,
+     "end": 48.033
+    },
+    {
+     "w": "or",
+     "start": 48.07,
+     "end": 48.343
+    },
+    {
+     "w": "bronze?",
+     "start": 48.36,
+     "end": 48.708
+    },
+    {
+     "w": "Send",
+     "start": 48.88,
+     "end": 49.19
+    },
+    {
+     "w": "this",
+     "start": 49.21,
+     "end": 49.52
+    },
+    {
+     "w": "to",
+     "start": 49.54,
+     "end": 49.813
+    },
+    {
+     "w": "the",
+     "start": 49.83,
+     "end": 50.121
+    },
+    {
+     "w": "friend",
+     "start": 50.14,
+     "end": 50.488
+    },
+    {
+     "w": "who",
+     "start": 50.51,
+     "end": 50.801
+    },
+    {
+     "w": "calls",
+     "start": 50.82,
+     "end": 51.149
+    },
+    {
+     "w": "second",
+     "start": 51.17,
+     "end": 51.753
+    },
+    {
+     "w": "place",
+     "start": 51.79,
+     "end": 52.119
+    },
+    {
+     "w": "'losing.'",
+     "start": 52.14,
+     "end": 52.723
+    }
+   ]
+  }
+ ]
+}
