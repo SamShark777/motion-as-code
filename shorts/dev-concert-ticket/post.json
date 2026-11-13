@@ -1,0 +1,17 @@
+{
+ "no": 174,
+ "slug": "dev-concert-ticket",
+ "date": "2026-11-14",
+ "slot": "19:00",
+ "due": "2026-11-15T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-14/dev-concert-ticket.mp4",
+ "buffer": {
+  "youtube": "6af78cdd81e1228421c9cfac",
+  "instagram": "6af78cde81e1228421c9cfd9",
+  "tiktok": "6af78cdfd16af15d4dd81ed0"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 49.7
+}

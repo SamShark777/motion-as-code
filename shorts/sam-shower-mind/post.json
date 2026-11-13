@@ -1,0 +1,17 @@
+{
+ "no": 172,
+ "slug": "sam-shower-mind",
+ "date": "2026-11-14",
+ "slot": "09:00",
+ "due": "2026-11-14T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-14/sam-shower-mind.mp4",
+ "buffer": {
+  "youtube": "6af78cd378196a0a9724bf88",
+  "instagram": "6af78cd381e1228421c9ce22",
+  "tiktok": "6af78cd478196a0a9724bfc5"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 33.5
+}

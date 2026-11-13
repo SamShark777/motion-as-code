@@ -13,5 +13,10 @@
  "errors": {},
  "engine": "elevenlabs",
  "voice_name": "ElevenLabs Jessica",
- "duration": 52.3
+ "duration": 52.3,
+ "links": {
+  "youtube": "https://www.youtube.com/shorts/NA36poXoHoU",
+  "instagram": "https://www.instagram.com/reel/DfsqAD5iVjJ/",
+  "tiktok": "https://tiktok.com/@shivam.sharma85/video/7707779432919911694"
+ }
 }
