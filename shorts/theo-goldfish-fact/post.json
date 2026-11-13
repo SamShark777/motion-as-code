@@ -1,0 +1,17 @@
+{
+ "no": 168,
+ "slug": "theo-goldfish-fact",
+ "date": "2026-11-13",
+ "slot": "14:00",
+ "due": "2026-11-13T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-13/theo-goldfish-fact.mp4",
+ "buffer": {
+  "youtube": "6af6cfde4b6fe5c4b6db143e",
+  "instagram": "6af6cfdf6da77f9a4687e769",
+  "tiktok": "6af6cfe04b6fe5c4b6db14a3"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 52.3
+}

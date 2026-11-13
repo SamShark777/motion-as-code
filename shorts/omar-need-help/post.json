@@ -13,5 +13,10 @@
  "errors": {},
  "engine": "elevenlabs",
  "voice_name": "ElevenLabs Brian",
- "duration": 41.5
+ "duration": 41.5,
+ "links": {
+  "youtube": "https://www.youtube.com/shorts/ONQMW1xBcPs",
+  "instagram": "https://www.instagram.com/reel/DfoC2RYDZsk/",
+  "tiktok": "https://www.tiktok.com/@shivam.sharma85/video/7707114705461972237?utm_campaign=tt4d_open_api&utm_source=7103819247981182978"
+ }
 }

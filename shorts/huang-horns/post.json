@@ -1,0 +1,17 @@
+{
+ "no": 204,
+ "slug": "huang-horns",
+ "date": "2026-11-13",
+ "slot": "08:15",
+ "due": "2026-11-13T16:15:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-13/huang-horns.mp4",
+ "buffer": {
+  "youtube": "6af6cfd5f66277c9ba433607",
+  "instagram": "6af6cfd6e99967e2bfd7065a",
+  "tiktok": "6af6cfd64b6fe5c4b6db11d1"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 54.9
+}

@@ -1,0 +1,17 @@
+{
+ "no": 167,
+ "slug": "arthur-ask-favour",
+ "date": "2026-11-13",
+ "slot": "09:30",
+ "due": "2026-11-13T17:30:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-13/arthur-ask-favour.mp4",
+ "buffer": {
+  "youtube": "6af6cfdaf66277c9ba4336d9",
+  "instagram": "6af6cfda6d858908964d6fca",
+  "tiktok": "6af6cfdb6da77f9a4687e68e"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 32.9
+}
