@@ -1,0 +1,17 @@
+{
+ "no": 175,
+ "slug": "nia-bank-app",
+ "date": "2026-11-15",
+ "slot": "09:00",
+ "due": "2026-11-15T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-15/nia-bank-app.mp4",
+ "buffer": {
+  "youtube": "6af8cc5fc5b364e06217c665",
+  "instagram": "6af8cc5fb9a106584c6cb7fb",
+  "tiktok": "6af8cc6076c23bf1c73e3082"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 31.6
+}

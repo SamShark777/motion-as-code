@@ -1,0 +1,17 @@
+{
+ "no": 176,
+ "slug": "milo-everyone-agrees",
+ "date": "2026-11-15",
+ "slot": "14:00",
+ "due": "2026-11-15T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-15/milo-everyone-agrees.mp4",
+ "buffer": {
+  "youtube": "6af8cc6276c23bf1c73e3117",
+  "instagram": "6af8cc62c5b364e06217c7a4",
+  "tiktok": "6af8cc63e86a5789a6d02e40"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 41.3
+}
