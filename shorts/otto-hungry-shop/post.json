@@ -1,0 +1,17 @@
+{
+ "no": 179,
+ "slug": "otto-hungry-shop",
+ "date": "2026-11-16",
+ "slot": "14:00",
+ "due": "2026-11-16T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-16/otto-hungry-shop.mp4",
+ "buffer": {
+  "youtube": "6afa2221a869c35e5b9850e4",
+  "instagram": "6afa222106e1675856a75fc8",
+  "tiktok": "6afa222260a910801c4b3831"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 36.3
+}

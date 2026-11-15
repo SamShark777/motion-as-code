@@ -1,0 +1,17 @@
+{
+ "no": 178,
+ "slug": "leo-dream-job",
+ "date": "2026-11-16",
+ "slot": "09:00",
+ "due": "2026-11-16T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-16/leo-dream-job.mp4",
+ "buffer": {
+  "youtube": "6afa221ea869c35e5b984e29",
+  "instagram": "6afa221edaa378ad6892fedc",
+  "tiktok": "6afa221f06e1675856a759de"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 32.0
+}

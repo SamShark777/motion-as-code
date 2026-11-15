@@ -1,0 +1,17 @@
+{
+ "no": 180,
+ "slug": "lila-lucky-numbers",
+ "date": "2026-11-16",
+ "slot": "19:00",
+ "due": "2026-11-17T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-16/lila-lucky-numbers.mp4",
+ "buffer": {
+  "youtube": "6afa2224daa378ad6893001c",
+  "instagram": "6afa2224ff465c57dab1cf6f",
+  "tiktok": "6afa222560a910801c4b39b2"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 41.8
+}
