@@ -1,0 +1,337 @@
+{
+ "slug": "june-five-excuses",
+ "no": 186,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "June",
+ "episode": 7,
+ "cast": [
+  "june",
+  "theo"
+ ],
+ "title": [
+  "5 Signs",
+  "Excuse Ready"
+ ],
+ "credit": "Berglas & Jones · 1978",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs You're Quietly Building Your Excuse #shorts",
+  "description": "How many did you check? Tell me in the comments. Send this to the friend who checked all five. Exam tomorrow, and June is organizing her desk at 2 AM. Starting the night before, 'I barely studied', a late night out before the big day, 'I only gave it 50%': it can look like laziness, but it's often protection. In 'Drug Choice as a Self-Handicapping Strategy in Response to Noncontingent Success' (Journal of Personality and Social Psychology, 1978), Steven Berglas and Edward Jones gave students success on puzzles that were partly unsolvable, so they couldn't tell why they'd done well. Before a retest they could take a pill they were told would boost or impair performance; the unsure group more often picked the impairing one. If you fail, the excuse is ready; if you win, you look brilliant. It's called self-handicapping. Go to bed. #psychology #shorts #selfhandicapping #procrastination #overthinking",
+  "tags": [
+   "self-handicapping",
+   "procrastination",
+   "overthinking",
+   "Berglas and Jones",
+   "psychology"
+  ]
+ },
+ "thumb_text": "5 Signs You're Building an Excuse",
+ "thumb_emph": "Excuse",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Exam tomorrow and June's organizing her desk at 2 AM",
+  "lean": "pain",
+  "snapback": "It's not laziness. It's PROTECTION."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who checked all five.",
+ "question": "How many did you check?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "MGExamDesk",
+   "chunks": [
+    [
+     "EXAM tomorrow.",
+     {
+      "emph": "EXAM"
+     }
+    ],
+    [
+     "June's organizing"
+    ],
+    [
+     "her desk"
+    ],
+    [
+     "at 2 AM."
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "say": "Exam tomorrow. June's organizing her desk at two A M.",
+   "sec": "cd",
+   "text": "EXAM tomorrow. June's organizing her desk at 2 AM."
+  },
+  {
+   "scene": "Lean",
+   "art": "MGFiveCards",
+   "chunks": [
+    [
+     "Five SIGNS",
+     {
+      "emph": "SIGNS"
+     }
+    ],
+    [
+     "you do"
+    ],
+    [
+     "this too."
+    ]
+   ],
+   "tone": "knowingly",
+   "sec": "cd",
+   "text": "Five SIGNS you do this too."
+  },
+  {
+   "scene": "Snapback",
+   "art": "MGShield",
+   "chunks": [
+    [
+     "It's not laziness."
+    ],
+    [
+     "It's PROTECTION.",
+     {
+      "emph": "PROTECTION"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "It's not laziness. It's PROTECTION."
+  },
+  {
+   "scene": "Sign 1",
+   "art": "MGSignJ1",
+   "chunks": [
+    [
+     "One:"
+    ],
+    [
+     "you start"
+    ],
+    [
+     "the night BEFORE.",
+     {
+      "emph": "BEFORE"
+     }
+    ]
+   ],
+   "tone": "knowing",
+   "sec": "cd",
+   "text": "One: you start the night BEFORE."
+  },
+  {
+   "scene": "Sign 2",
+   "art": "MGSignJ2",
+   "chunks": [
+    [
+     "Two:"
+    ],
+    [
+     "'I barely studied'"
+    ],
+    [
+     "comes out FIRST.",
+     {
+      "emph": "FIRST"
+     }
+    ]
+   ],
+   "tone": "teasing, laughs softly",
+   "sec": "cd",
+   "text": "Two: 'I barely studied' comes out FIRST."
+  },
+  {
+   "scene": "Sign 3",
+   "art": "MGSignJ3",
+   "chunks": [
+    [
+     "Three:"
+    ],
+    [
+     "big day?"
+    ],
+    [
+     "Late NIGHT out.",
+     {
+      "emph": "NIGHT"
+     }
+    ]
+   ],
+   "tone": "playful",
+   "sec": "cd",
+   "text": "Three: big day? Late NIGHT out."
+  },
+  {
+   "scene": "Sign 4",
+   "art": "MGSignJ4",
+   "chunks": [
+    [
+     "Four:"
+    ],
+    [
+     "you 'only gave"
+    ],
+    [
+     "it fifty"
+    ],
+    [
+     "PERCENT.'",
+     {
+      "emph": "PERCENT"
+     }
+    ]
+   ],
+   "tone": "wry",
+   "say": "Four: you only gave it fifty percent.",
+   "sec": "cd",
+   "text": "Four: you 'only gave it fifty PERCENT.'"
+  },
+  {
+   "scene": "Sign 5",
+   "art": "MGSignJ5",
+   "chunks": [
+    [
+     "Five:"
+    ],
+    [
+     "failing hurts less"
+    ],
+    [
+     "with an EXCUSE",
+     {
+      "emph": "EXCUSE"
+     }
+    ],
+    [
+     "ready."
+    ]
+   ],
+   "tone": "quiet, knowing",
+   "sec": "cd",
+   "text": "Five: failing hurts less with an EXCUSE ready."
+  },
+  {
+   "scene": "Study",
+   "art": "MGPillStudy",
+   "chunks": [
+    [
+     "In 1978,"
+    ],
+    [
+     "students picked"
+    ],
+    [
+     "a pill"
+    ],
+    [
+     "before a TEST:",
+     {
+      "emph": "TEST"
+     }
+    ],
+    [
+     "boost or impair."
+    ]
+   ],
+   "tone": "curious",
+   "say": "In nineteen seventy-eight, students picked a pill before a test: boost or impair.",
+   "sec": "cd",
+   "text": "In 1978, students picked a pill before a TEST: boost or impair."
+  },
+  {
+   "scene": "Result",
+   "art": "MGUnsurePick",
+   "chunks": [
+    [
+     "The unsure ones"
+    ],
+    [
+     "leaned IMPAIR.",
+     {
+      "emph": "IMPAIR"
+     }
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "The unsure ones leaned IMPAIR."
+  },
+  {
+   "scene": "Name",
+   "art": "MGNameSH",
+   "chunks": [
+    [
+     "It's SELF-HANDICAPPING:",
+     {
+      "emph": "SELF-HANDICAPPING"
+     }
+    ],
+    [
+     "a ready excuse."
+    ]
+   ],
+   "tone": "thoughtfully, warm",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "say": "It's self-handicapping: a ready excuse.",
+   "sec": "cd",
+   "text": "It's SELF-HANDICAPPING: a ready excuse."
+  },
+  {
+   "scene": "End",
+   "art": "MGEndBed",
+   "chunks": [
+    [
+     "Go to BED.",
+     {
+      "emph": "BED"
+     }
+    ],
+    [
+     "How many"
+    ],
+    [
+     "did you check?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checked"
+    ],
+    [
+     "all five."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Go to BED. How many did you check? Send this to the friend who checked all five."
+  }
+ ]
+}

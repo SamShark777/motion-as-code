@@ -21,7 +21,9 @@
     "ep 6 (arthur-3am-worries, with The Doubt): wide awake at 3 AM while The Doubt whispers \"what if\" (the email, the meeting, the car noise); writes each worry down and checks later; worry's deceit (LaFreniere & Newman 2020: ~91% of worry predictions in people with GAD never came true)",
     "ep 7 (otto-rhyme-poster): nods at Otto's rhyming poster, then fixes it: \"Work late. Feel tired.\"",
     "ep 8 (arthur-ask-favour, with Otto): needs a favour from grumpy Otto and would rather struggle alone; Ben Franklin effect (Jecker & Landy 1969: people the researcher personally asked to return their winnings liked him more); borrows Otto's pen, next day Otto says hello",
-    "ep 9 (mae-rainy-holiday, with Mae): flicks through Mae's sunny album and points out it rained; rosy retrospection (Mitchell et al. 1997)"
+    "ep 9 (mae-rainy-holiday, with Mae): flicks through Mae's sunny album and points out it rained; rosy retrospection (Mitchell et al. 1997)",
+    "ep 10 (arthur-walk-it-out, with Mae): stuck on one email for an hour; walking and creativity (Oppezzo & Schwartz 2014: most people more creative walking than sitting, even on a treadmill facing a blank wall); Mae walks him round the block and the ideas keep coming",
+    "ep 11 (mae-meeting-nod): nods along in Otto's jargon meeting"
    ]
   },
   "critic": {
@@ -55,7 +57,9 @@
     "ep 5 (lila-group-photo, with Lila): shrugs off Lila's selfie panic: \"nobody inspects your face like you do\" (cheerleader effect, Walker & Vul 2014)",
     "ep 6 (lila-replay-write): hands Lila a pen: \"fifteen minutes, then close the notebook\"",
     "ep 7 (mae-too-many-shows, with The Doubt): endless choices on her streaming app, scrolls forty minutes and watches nothing; choice overload (Iyengar & Lepper 2000 jam study: 24 jams ~3% of stoppers bought, 6 jams ~30%); picks from three and is watching in a minute",
-    "ep 8 (mae-rainy-holiday, with Arthur): holiday photos look perfect though it rained for three days; laughs that her memory kept the good parts; rosy retrospection (Mitchell, Thompson, Peterson & Cronk 1997: bike tour 5% expected disappointment, 61% disappointed during, 11% remembered it a week later)"
+    "ep 8 (mae-rainy-holiday, with Arthur): holiday photos look perfect though it rained for three days; laughs that her memory kept the good parts; rosy retrospection (Mitchell, Thompson, Peterson & Cronk 1997: bike tour 5% expected disappointment, 61% disappointed during, 11% remembered it a week later)",
+    "ep 9 (arthur-walk-it-out): walks Arthur round the block when he's stuck",
+    "ep 10 (mae-meeting-nod, with Otto + Lila): nods through Otto's 'Q3 synergy pivot' meeting totally lost, sure she's the only one; pluralistic ignorance (Prentice & Miller 1993: Princeton students thought they were less comfortable with campus drinking than the average student); finally asks 'what's ROI²?'"
    ]
   },
   "otto": {
@@ -78,7 +82,9 @@
     "ep 7 (otto-name-it, with Lila): furious when the printer jams before his big meeting, types in caps, insists he's fine; affect labeling (Lieberman et al. 2007: naming the feeling lowered amygdala activity); Lila asks 'Frustrated?' and his jaw unclenches",
     "ep 8 (arthur-ask-favour, with Arthur): lends Arthur his pen and is suddenly friendly the next day",
     "ep 9 (otto-hungry-shop, with Lila): went in for milk, came out with six snacks; hot-cold empathy gap (Read & van Leeuwen 1998: 200 Amsterdam workers chose a snack for next week; hungry choosers picked more junk); Lila hands him a banana first",
-    "ep 10 (lila-lucky-numbers, with Lila): hands out random office-lottery tickets; shrugs at Lila's 'lucky' birthday numbers"
+    "ep 10 (lila-lucky-numbers, with Lila): hands out random office-lottery tickets; shrugs at Lila's 'lucky' birthday numbers",
+    "ep 11 (mae-meeting-nod): runs the jargon meeting nobody understands",
+    "ep 12 (otto-swapped-logo, with Lila): picks the red logo, certain; Lila swaps the cards and he praises the blue one; choice blindness (Johansson, Hall, Sikström & Olsson 2005: only 13% of swapped face choices caught right away)"
    ]
   },
   "lila": {
@@ -100,7 +106,9 @@
     "ep 6 (otto-name-it, with Otto): asks her boss 'Frustrated?' — naming it calms him (affect labeling)",
     "ep 7 (lila-train-stranger, with The Doubt): morning train, headphones in, eyes down while The Doubt hisses 'it'll be awkward'; mistakenly seeking solitude (Epley & Schroeder 2014: Chicago commuters who talked to a stranger had a more pleasant ride, though they predicted the opposite); asks 'Good book?' and twenty minutes vanish",
     "ep 8 (otto-hungry-shop, with Otto): hands Otto a banana before he shops; 'eat, then shop'",
-    "ep 9 (lila-lucky-numbers, with Otto): office lottery, won't take Otto's random ticket and picks her birthday; illusion of control (Langer 1975: $1 tickets, chose-own asked $8.67 to sell vs $1.96 handed); puts the rest into savings"
+    "ep 9 (lila-lucky-numbers, with Otto): office lottery, won't take Otto's random ticket and picks her birthday; illusion of control (Langer 1975: $1 tickets, chose-own asked $8.67 to sell vs $1.96 handed); puts the rest into savings",
+    "ep 10 (mae-meeting-nod): whispers 'thank you' when Mae finally asks",
+    "ep 11 (otto-swapped-logo, with Otto): swaps Otto's logo cards; guards her own 'pick' like a trophy"
    ]
   },
   "doubt": {

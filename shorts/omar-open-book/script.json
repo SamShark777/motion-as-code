@@ -1,0 +1,292 @@
+{
+ "slug": "omar-open-book",
+ "no": 182,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Omar",
+ "episode": 5,
+ "cast": [
+  "omar",
+  "grace"
+ ],
+ "title": [
+  "Open",
+  "Book"
+ ],
+ "credit": "Pronin, Kruger, Savitsky & Ross · 2001",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "You Think You Know Them Better Than They Know You #shorts",
+  "description": "Who reads you best? Tell me in the comments. Send this to the friend who always knows. Omar reads his friends like a book, and he's sure they can't read him. In 'You Don't Know Me, But I Know You: The Illusion of Asymmetric Insight' (Journal of Personality and Social Psychology, 2001), Emily Pronin, Justin Kruger, Kenneth Savitsky and Lee Ross ran six studies with friends and roommates: on average, people believed they knew their peers better than their peers knew them. Other people's little behaviours (a slip, an odd word choice) seemed revealing; our own seemed like noise, because we judge ourselves by our private thoughts. They probably read you better than you think. #psychology #shorts #overthinking #friendship #cognitivebias",
+  "tags": [
+   "illusion of asymmetric insight",
+   "friendship",
+   "overthinking",
+   "Emily Pronin",
+   "psychology"
+  ]
+ },
+ "thumb_text": "They Can Read You Too",
+ "thumb_emph": "Read You",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Omar reads his friends like a book",
+  "lean": "pain",
+  "snapback": "But you're sure they can't read YOU."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who always knows.",
+ "question": "Who reads you best?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "art": "AIBook",
+   "chunks": [
+    [
+     "Omar reads"
+    ],
+    [
+     "his FRIENDS",
+     {
+      "emph": "FRIENDS",
+      "fx": "pop"
+     }
+    ],
+    [
+     "like a book."
+    ]
+   ],
+   "tone": "amused, confident",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Omar reads his FRIENDS like a book."
+  },
+  {
+   "scene": "You",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "AIOneLook",
+   "chunks": [
+    [
+     "You do"
+    ],
+    [
+     "it too."
+    ],
+    [
+     "One look,"
+    ],
+    [
+     "you KNOW.",
+     {
+      "emph": "KNOW",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "tone": "knowingly",
+   "sec": "cd",
+   "text": "You do it too. One look, you KNOW."
+  },
+  {
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "AIFrosted",
+   "chunks": [
+    [
+     "But you're sure"
+    ],
+    [
+     "they can't"
+    ],
+    [
+     "read YOU.",
+     {
+      "emph": "YOU",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "But you're sure they can't read YOU."
+  },
+  {
+   "scene": "Study",
+   "color": "#2B6E7A",
+   "art": "AIStudy",
+   "chunks": [
+    [
+     "In 2001,"
+    ],
+    [
+     "Pronin's team"
+    ],
+    [
+     "quizzed friends"
+    ],
+    [
+     "and ROOMMATES.",
+     {
+      "emph": "ROOMMATES",
+      "fx": "type"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In twenty oh one, Pronin's team quizzed friends and roommates.",
+   "sec": "cd",
+   "text": "In 2001, Pronin's team quizzed friends and ROOMMATES."
+  },
+  {
+   "scene": "Result",
+   "color": "#B3202A",
+   "art": "AIBars",
+   "chunks": [
+    [
+     "On average:"
+    ],
+    [
+     "'I know you"
+    ],
+    [
+     "better than"
+    ],
+    [
+     "you know ME.'",
+     {
+      "emph": "ME",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "On average: 'I know you better than you know ME.'"
+  },
+  {
+   "scene": "Turn",
+   "color": "#6A3FA0",
+   "art": "AISlips",
+   "chunks": [
+    [
+     "Their slips"
+    ],
+    [
+     "reveal them."
+    ],
+    [
+     "Yours are"
+    ],
+    [
+     "just accidents."
+    ],
+    [
+     "The illusion"
+    ],
+    [
+     "of ASYMMETRIC",
+     {
+      "emph": "ASYMMETRIC",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "insight."
+    ]
+   ],
+   "tone": "serious, thoughtfully",
+   "say": "Their slips reveal them. Yours are just accidents. The illusion of ay-symmetric insight.",
+   "sec": "cd",
+   "text": "Their slips reveal them. Yours are just accidents. The illusion of ASYMMETRIC insight."
+  },
+  {
+   "scene": "Proof",
+   "color": "#2B6E7A",
+   "art": "AIFinish",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the friend"
+    ],
+    [
+     "who finished"
+    ],
+    [
+     "your sentence."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the friend who finished your sentence. Yeah, THAT one."
+  },
+  {
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "art": "AIMirror",
+   "chunks": [
+    [
+     "Grace: they"
+    ],
+    [
+     "READ you",
+     {
+      "emph": "READ",
+      "fx": "doodle",
+      "doodle": "📖"
+     }
+    ],
+    [
+     "too."
+    ],
+    [
+     "Who reads"
+    ],
+    [
+     "you best?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who always knows."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Grace: they READ you too. Who reads you best? Send this to the friend who always knows."
+  }
+ ]
+}

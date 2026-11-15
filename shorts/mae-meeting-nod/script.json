@@ -1,0 +1,281 @@
+{
+ "slug": "mae-meeting-nod",
+ "no": 183,
+ "format": "retro",
+ "look": "retro",
+ "series": "Mae",
+ "episode": 10,
+ "cast": [
+  "mae",
+  "otto",
+  "lila"
+ ],
+ "title": [
+  "The Nod",
+  "Trap"
+ ],
+ "credit": "Prentice & Miller · 1993",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Nobody Asks the Question in Meetings #shorts",
+  "description": "Ever nodded while totally lost? Tell me in the comments. Send this to the friend who nods at everything. Mae nods through Otto's meeting, lost, and sure she's the only one. In 'Pluralistic Ignorance and Alcohol Use on Campus: Some Consequences of Misperceiving the Social Norm' (Journal of Personality and Social Psychology, 1993), Deborah Prentice and Dale Miller found Princeton students believed they were more uncomfortable with campus drinking than the average student. Everyone kept the same private doubt and assumed they were alone in it. Psychologists call it pluralistic ignorance. Ask the question. #psychology #shorts #pluralisticignorance #overthinking #work",
+  "tags": [
+   "pluralistic ignorance",
+   "meetings",
+   "overthinking",
+   "Prentice and Miller",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why Nobody Asks",
+ "thumb_emph": "Nobody",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 2,
+ "hook": {
+  "context": "In Otto's meeting, Mae nods along, totally lost",
+  "lean": "pain",
+  "snapback": "But look around. Everyone's nodding the SAME way."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who nods at everything.",
+ "question": "Ever nodded while lost?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RMMeetingNod",
+   "chunks": [
+    [
+     "In Otto's"
+    ],
+    [
+     "MEETING,",
+     {
+      "emph": "MEETING"
+     }
+    ],
+    [
+     "Mae nods along."
+    ],
+    [
+     "She's totally lost."
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "In Otto's MEETING, Mae nods along. She's totally lost."
+  },
+  {
+   "scene": "You",
+   "art": "RMNodLost",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "it too."
+    ],
+    [
+     "Nod, smile,"
+    ],
+    [
+     "totally LOST.",
+     {
+      "emph": "LOST"
+     }
+    ]
+   ],
+   "tone": "knowingly, laughs",
+   "sec": "cd",
+   "text": "You've done it too. Nod, smile, totally LOST."
+  },
+  {
+   "scene": "Snapback",
+   "art": "RMRowOfNods",
+   "chunks": [
+    [
+     "But look around."
+    ],
+    [
+     "Everyone's nodding"
+    ],
+    [
+     "the SAME way.",
+     {
+      "emph": "SAME"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "But look around. Everyone's nodding the SAME way."
+  },
+  {
+   "scene": "Study",
+   "art": "RMPrincetonSurvey",
+   "chunks": [
+    [
+     "In 1993,"
+    ],
+    [
+     "Princeton students"
+    ],
+    [
+     "rated their comfort"
+    ],
+    [
+     "with campus DRINKING.",
+     {
+      "emph": "DRINKING"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In nineteen ninety-three, Princeton students rated their comfort with campus drinking.",
+   "sec": "cd",
+   "text": "In 1993, Princeton students rated their comfort with campus DRINKING."
+  },
+  {
+   "scene": "Result",
+   "art": "RMMeVsThem",
+   "chunks": [
+    [
+     "Each felt"
+    ],
+    [
+     "LESS comfortable",
+     {
+      "emph": "LESS"
+     }
+    ],
+    [
+     "than they thought"
+    ],
+    [
+     "everyone else was."
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Each felt LESS comfortable than they thought everyone else was."
+  },
+  {
+   "scene": "Name",
+   "art": "RMSameDoubt",
+   "chunks": [
+    [
+     "Same private doubt."
+    ],
+    [
+     "Pluralistic IGNORANCE.",
+     {
+      "emph": "IGNORANCE"
+     }
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "sec": "cd",
+   "text": "Same private doubt. Pluralistic IGNORANCE."
+  },
+  {
+   "scene": "Proof",
+   "art": "RMUnasked",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the question"
+    ],
+    [
+     "you didn't"
+    ],
+    [
+     "ASK.",
+     {
+      "emph": "ASK"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the question you didn't ASK. Yeah, that one."
+  },
+  {
+   "scene": "Payoff",
+   "art": "RMMaeAsks",
+   "chunks": [
+    [
+     "Mae asks."
+    ],
+    [
+     "Lila whispers,"
+    ],
+    [
+     "'THANK you.'",
+     {
+      "emph": "THANK"
+     }
+    ]
+   ],
+   "tone": "warmly, amused",
+   "sec": "cd",
+   "text": "Mae asks. Lila whispers, 'THANK you.'"
+  },
+  {
+   "scene": "End",
+   "art": "RMEndAsk",
+   "chunks": [
+    [
+     "ASK it.",
+     {
+      "emph": "ASK"
+     }
+    ],
+    [
+     "Ever nodded"
+    ],
+    [
+     "while lost?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who nods"
+    ],
+    [
+     "at everything."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "ASK it. Ever nodded while lost? Send this to the friend who nods at everything."
+  }
+ ]
+}

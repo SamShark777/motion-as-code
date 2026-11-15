@@ -1,0 +1,292 @@
+{
+ "slug": "arthur-walk-it-out",
+ "no": 181,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 10,
+ "cast": [
+  "arthur",
+  "mae"
+ ],
+ "title": [
+  "Walk",
+  "It Out"
+ ],
+ "credit": "Oppezzo & Schwartz · 2014",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Stuck on a Problem? Stand Up #shorts",
+  "description": "Where do your best ideas hit you? Tell me in the comments. Send this to someone glued to one screen. Arthur was stuck on one email for an hour. In 'Give Your Ideas Some Legs: The Positive Effect of Walking on Creative Thinking' (Journal of Experimental Psychology: Learning, Memory, and Cognition, 2014), Stanford researchers Marily Oppezzo and Daniel Schwartz tested 176 people, mostly college students. Most came up with more creative ideas while walking than sitting, even on a treadmill facing a blank wall; in one experiment walkers doubled their novel responses, and some of the boost carried over when they sat back down. (On single-right-answer puzzles, walking didn't help.) Stuck? Stand up. #psychology #shorts #creativity #overthinking #walking",
+  "tags": [
+   "walking and creativity",
+   "creative thinking",
+   "overthinking",
+   "Oppezzo and Schwartz",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Stuck? Stand Up",
+ "thumb_emph": "Stand Up",
+ "thumb_mood": "thinking",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Arthur's been stuck on one email for an hour",
+  "lean": "pain",
+  "snapback": "But sitting still might be the PROBLEM."
+ },
+ "relate": "barnum",
+ "share": "Send this to someone glued to one screen.",
+ "question": "Where do your ideas hit?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RMStuckDesk",
+   "chunks": [
+    [
+     "Arthur's been"
+    ],
+    [
+     "STUCK",
+     {
+      "emph": "STUCK"
+     }
+    ],
+    [
+     "on one email"
+    ],
+    [
+     "for an hour."
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Arthur's been STUCK on one email for an hour."
+  },
+  {
+   "scene": "You",
+   "art": "RMStareHarder",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "this too."
+    ],
+    [
+     "Staring HARDER.",
+     {
+      "emph": "HARDER"
+     }
+    ]
+   ],
+   "tone": "knowingly, sighs",
+   "sec": "cd",
+   "text": "You've done this too. Staring HARDER."
+  },
+  {
+   "scene": "Snapback",
+   "art": "RMChairProblem",
+   "chunks": [
+    [
+     "But sitting"
+    ],
+    [
+     "still might be"
+    ],
+    [
+     "the PROBLEM.",
+     {
+      "emph": "PROBLEM"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.2
+   ],
+   "sec": "cd",
+   "text": "But sitting still might be the PROBLEM."
+  },
+  {
+   "scene": "Study",
+   "art": "RMTreadmill",
+   "chunks": [
+    [
+     "In 2014,"
+    ],
+    [
+     "people walked"
+    ],
+    [
+     "a treadmill"
+    ],
+    [
+     "facing a blank"
+    ],
+    [
+     "WALL.",
+     {
+      "emph": "WALL"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In twenty fourteen, people walked a treadmill facing a blank wall.",
+   "sec": "cd",
+   "text": "In 2014, people walked a treadmill facing a blank WALL."
+  },
+  {
+   "scene": "Result",
+   "art": "RMIdeaBulbs",
+   "chunks": [
+    [
+     "Walking, most"
+    ],
+    [
+     "had more"
+    ],
+    [
+     "creative ideas."
+    ],
+    [
+     "One test:"
+    ],
+    [
+     "TWICE",
+     {
+      "emph": "TWICE"
+     }
+    ],
+    [
+     "the new ones."
+    ]
+   ],
+   "tone": "excited, amazed",
+   "sec": "cd",
+   "text": "Walking, most had more creative ideas. One test: TWICE the new ones."
+  },
+  {
+   "scene": "Name",
+   "art": "RMWalkingItself",
+   "chunks": [
+    [
+     "Not the view."
+    ],
+    [
+     "The WALKING",
+     {
+      "emph": "WALKING"
+     }
+    ],
+    [
+     "itself."
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "sec": "cd",
+   "text": "Not the view. The WALKING itself."
+  },
+  {
+   "scene": "Proof",
+   "art": "RMMidWalk",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the idea"
+    ],
+    [
+     "that hit you"
+    ],
+    [
+     "mid-WALK.",
+     {
+      "emph": "WALK"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the idea that hit you mid-WALK. Yeah, that one."
+  },
+  {
+   "scene": "Payoff",
+   "art": "RMRoundBlock",
+   "chunks": [
+    [
+     "Mae walks him"
+    ],
+    [
+     "round the block."
+    ],
+    [
+     "Ideas KEEP",
+     {
+      "emph": "KEEP"
+     }
+    ],
+    [
+     "coming."
+    ]
+   ],
+   "tone": "warmly",
+   "sec": "cd",
+   "text": "Mae walks him round the block. Ideas KEEP coming."
+  },
+  {
+   "scene": "End",
+   "art": "RMEndStandUp",
+   "chunks": [
+    [
+     "Stuck? STAND",
+     {
+      "emph": "STAND"
+     }
+    ],
+    [
+     "up."
+    ],
+    [
+     "Where do"
+    ],
+    [
+     "your ideas hit?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to someone glued"
+    ],
+    [
+     "to one screen."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Stuck? STAND up. Where do your ideas hit? Send this to someone glued to one screen."
+  }
+ ]
+}

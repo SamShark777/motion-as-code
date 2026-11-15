@@ -1,0 +1,436 @@
+{
+ "slug": "ivy-side-hustle",
+ "no": 184,
+ "format": "xplog",
+ "look": "xplog",
+ "series": "Ivy",
+ "episode": 1,
+ "cast": [
+  "ivy",
+  "gus"
+ ],
+ "title": [
+  "Side",
+  "Hustle"
+ ],
+ "credit": "Lepper, Greene & Nisbett · 1973",
+ "handle": "@aroundthestrangeai",
+ "hud": {
+  "clock_label": "SELLING YOUR HOBBY FOR",
+  "count_label": "CHORES",
+  "count_total": 5,
+  "tag": "THE OVERTHINK CLUB"
+ },
+ "post": {
+  "title": "I Turned My Hobby Into a Side Hustle for 6 Weeks #shorts",
+  "description": "Which hobby did you turn into a job? Tell me in the comments. Send this to the friend who monetized their joy. Your hobby is drawing, just for fun. Then you start selling it, and six weeks later you don't touch the pen on a free Sunday. In 'Undermining Children's Intrinsic Interest with Extrinsic Reward: A Test of the Overjustification Hypothesis' (Journal of Personality and Social Psychology, 1973), Mark Lepper, David Greene and Richard Nisbett promised preschoolers who already liked drawing a 'Good Player' certificate with a gold seal and ribbon. Later, in free play, those kids spent about half as much time drawing (about 9% vs 17-18%) as kids who got no reward or an unexpected one. The reward became the reason. Keep one thing unpaid. #psychology #shorts #sidehustle #motivation #overthinking",
+  "tags": [
+   "overjustification effect",
+   "side hustle",
+   "intrinsic motivation",
+   "Lepper Greene Nisbett",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Side Hustle Killed It",
+ "thumb_emph": "Killed",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi",
+ "pattern": "Experiment log",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Your hobby is drawing, just for fun, and a friend says sell these",
+  "lean": "pain",
+  "snapback": "But that might be what KILLS it."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who monetized their joy.",
+ "question": "Which hobby did you turn into a job?",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hobby",
+   "art": "XHHobby",
+   "chunks": [
+    [
+     "Your HOBBY",
+     {
+      "emph": "HOBBY"
+     }
+    ],
+    [
+     "is drawing."
+    ],
+    [
+     "Just for fun."
+    ]
+   ],
+   "text": "Your HOBBY is drawing. Just for fun.",
+   "tone": "warm, matter-of-fact",
+   "hud": {
+    "title": "DAY 0",
+    "clock": 0,
+    "run": false,
+    "count": 0
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Sell",
+   "art": "XHSell",
+   "chunks": [
+    [
+     "A friend says:"
+    ],
+    [
+     "SELL these.",
+     {
+      "emph": "SELL"
+     }
+    ]
+   ],
+   "text": "A friend says: SELL these.",
+   "tone": "excited, teasing",
+   "hud": {
+    "clock": 40
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "XHKills",
+   "chunks": [
+    [
+     "But that"
+    ],
+    [
+     "might be"
+    ],
+    [
+     "what KILLS it.",
+     {
+      "emph": "KILLS"
+     }
+    ]
+   ],
+   "text": "But that might be what KILLS it.",
+   "tone": "surprised, ominous",
+   "hud": {
+    "clock": 80
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "First order",
+   "art": "XHFirstOrder",
+   "chunks": [
+    [
+     "Day one."
+    ],
+    [
+     "You open"
+    ],
+    [
+     "a shop."
+    ],
+    [
+     "First ORDER!",
+     {
+      "emph": "ORDER"
+     }
+    ]
+   ],
+   "text": "Day one. You open a shop. First ORDER!",
+   "tone": "excited",
+   "hud": {
+    "title": "DAY 1",
+    "clock": 86400,
+    "count": 1
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Revision",
+   "art": "XHRevision",
+   "chunks": [
+    [
+     "Day three."
+    ],
+    [
+     "A client wants"
+    ],
+    [
+     "a REVISION.",
+     {
+      "emph": "REVISION"
+     }
+    ]
+   ],
+   "text": "Day three. A client wants a REVISION.",
+   "tone": "deadpan",
+   "hud": {
+    "title": "DAY 3",
+    "clock": 259200,
+    "count": 2
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Deadline",
+   "art": "XHDeadline",
+   "chunks": [
+    [
+     "Week two."
+    ],
+    [
+     "You draw against"
+    ],
+    [
+     "a DEADLINE.",
+     {
+      "emph": "DEADLINE"
+     }
+    ]
+   ],
+   "text": "Week two. You draw against a DEADLINE.",
+   "tone": "tense",
+   "hud": {
+    "title": "WEEK 2",
+    "clock": 1209600,
+    "count": 3
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Price",
+   "art": "XHPriceTags",
+   "chunks": [
+    [
+     "Week four."
+    ],
+    [
+     "Every doodle"
+    ],
+    [
+     "gets a PRICE.",
+     {
+      "emph": "PRICE"
+     }
+    ]
+   ],
+   "text": "Week four. Every doodle gets a PRICE.",
+   "tone": "tired, dry",
+   "hud": {
+    "title": "WEEK 4",
+    "clock": 2419200,
+    "count": 4
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Sunday",
+   "art": "XHSunday",
+   "chunks": [
+    [
+     "Week six."
+    ],
+    [
+     "Free Sunday."
+    ],
+    [
+     "You don't touch"
+    ],
+    [
+     "the PEN.",
+     {
+      "emph": "PEN"
+     }
+    ]
+   ],
+   "text": "Week six. Free Sunday. You don't touch the PEN.",
+   "tone": "sighs, quiet",
+   "hud": {
+    "title": "WEEK 6",
+    "clock": 3628800,
+    "count": 5
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "XHAward",
+   "chunks": [
+    [
+     "In 1973,"
+    ],
+    [
+     "preschoolers were"
+    ],
+    [
+     "promised a"
+    ],
+    [
+     "gold-seal AWARD",
+     {
+      "emph": "AWARD"
+     }
+    ],
+    [
+     "for drawing."
+    ]
+   ],
+   "text": "In 1973, preschoolers were promised a gold-seal AWARD for drawing.",
+   "tone": "curious",
+   "hud": {
+    "title": "THE STUDY",
+    "clock": 3628810
+   },
+   "say": "In nineteen seventy-three, preschoolers were promised a gold-seal award for drawing."
+  },
+  {
+   "sec": "cd",
+   "scene": "Half",
+   "art": "XHHalf",
+   "chunks": [
+    [
+     "Later they"
+    ],
+    [
+     "drew about"
+    ],
+    [
+     "HALF as much",
+     {
+      "emph": "HALF"
+     }
+    ],
+    [
+     "as unrewarded kids."
+    ]
+   ],
+   "text": "Later they drew about HALF as much as unrewarded kids.",
+   "tone": "whispers, amazed"
+  },
+  {
+   "sec": "cd",
+   "scene": "Surprise",
+   "art": "XHSurprise",
+   "chunks": [
+    [
+     "Surprise award?"
+    ],
+    [
+     "No DROP.",
+     {
+      "emph": "DROP"
+     }
+    ]
+   ],
+   "text": "Surprise award? No DROP.",
+   "tone": "bright"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "XHReason",
+   "chunks": [
+    [
+     "The reward"
+    ],
+    [
+     "became the reason:"
+    ],
+    [
+     "the overjustification"
+    ],
+    [
+     "EFFECT.",
+     {
+      "emph": "EFFECT"
+     }
+    ]
+   ],
+   "text": "The reward became the reason: the overjustification EFFECT.",
+   "tone": "thoughtfully",
+   "hud": {
+    "title": "THE TRICK"
+   },
+   "say": "The reward became the reason: the over-justification effect."
+  },
+  {
+   "sec": "cd",
+   "scene": "Unpaid",
+   "art": "XHUnpaid",
+   "chunks": [
+    [
+     "Keep one thing"
+    ],
+    [
+     "UNPAID.",
+     {
+      "emph": "UNPAID"
+     }
+    ],
+    [
+     "Just yours."
+    ]
+   ],
+   "text": "Keep one thing UNPAID. Just yours.",
+   "tone": "warm, clear",
+   "hud": {
+    "run": false
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Question",
+   "art": "XHAsk",
+   "chunks": [
+    [
+     "Which hobby"
+    ],
+    [
+     "did YOU",
+     {
+      "emph": "YOU"
+     }
+    ],
+    [
+     "turn into"
+    ],
+    [
+     "a job?"
+    ]
+   ],
+   "text": "Which hobby did YOU turn into a job?",
+   "tone": "curious, friendly",
+   "hud": {
+    "title": "YOUR TURN"
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Share",
+   "art": "XHShare",
+   "chunks": [
+    [
+     "Send this"
+    ],
+    [
+     "to the FRIEND",
+     {
+      "emph": "FRIEND"
+     }
+    ],
+    [
+     "who monetized"
+    ],
+    [
+     "their joy."
+    ]
+   ],
+   "text": "Send this to the FRIEND who monetized their joy.",
+   "tone": "warmly, playful"
+  }
+ ]
+}
