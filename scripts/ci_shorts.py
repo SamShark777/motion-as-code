@@ -44,6 +44,11 @@ def gh_out(k, v):
 # ------------------------------------------------------------------ plan
 def plan():
     day = tomorrow()
+    global SLOTS, N
+    news = json.loads((ROOT / "shorts" / "news" / "config.json").read_text()) if (ROOT / "shorts" / "news" / "config.json").exists() else {}
+    if news.get("enabled") and day.isoformat() >= news.get("from", "9999") and news.get("slot") in SLOTS:
+        SLOTS = [s for s in SLOTS if s != news["slot"]]  # Shivam 2026-11-16: the daily news Short owns this slot
+        N = min(N, len(SLOTS))
     taken = sum(1 for r in json.loads(tracker("scheduled")) if r.get("Post date") == day.isoformat())
     n = max(0, min(N, len(SLOTS)) - taken)
     batch = []
@@ -58,6 +63,8 @@ def plan():
         if not slug or not (ROOT / "shorts" / slug / "script.json").exists():
             print(f"skip No.{r['No.']}: Scripted but no shorts/<slug>/script.json", file=sys.stderr)
             continue
+        if not override and json.loads((ROOT / "shorts" / slug / "script.json").read_text()).get("pattern") == "news-psych":
+            continue  # news Shorts are scheduled by the news task itself
         if not override and day.isoformat() < STORY_FROM and json.loads((ROOT / "shorts" / slug / "script.json").read_text()).get("format") == "story":
             print(f"hold No.{r['No.']}: story Short, not posted before {STORY_FROM}", file=sys.stderr)
             continue

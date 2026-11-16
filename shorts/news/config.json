@@ -1,0 +1,6 @@
+{
+ "enabled": true,
+ "slot": "09:00",
+ "from": "2026-11-17",
+ "note": "Shivam 2026-11-16: daily news + psychology Short (Gus + Nell, HyperFrames news collage) takes the 09:00 slot; the regular pipeline posts 14:00 + 19:00. Set enabled false to give 09:00 back."
+}

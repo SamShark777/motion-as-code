@@ -1,0 +1,178 @@
+{
+ "slug": "huang-horns",
+ "masthead": "FRI · NOV 13",
+ "music": "3aab69285b.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Did you see? Nvidia's CEO is out.",
+   "board": {
+    "headline": "NVIDIA CEO\nRESIGNS"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Jensen Huang. Resigned Thursday, effective immediately.",
+   "board": {
+    "headline": "NVIDIA CEO\nRESIGNS",
+    "chips": [
+     {
+      "text": "JENSEN HUANG",
+      "color": "mus"
+     },
+     {
+      "text": "NOV 12, 2026",
+      "color": "paper",
+      "at": 0.9
+     },
+     {
+      "text": "EFFECTIVE IMMEDIATELY",
+      "color": "red",
+      "at": 1.9
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Because of the spy thing! I always knew something was off with him.",
+   "board": {
+    "figure": {
+     "mark": "none"
+    },
+    "scrawl": {
+     "text": "\"I KNEW IT!\"",
+     "at": 1.0
+    }
+   },
+   "brow": "down"
+  },
+  {
+   "who": "nell",
+   "text": "Always? Last week you called him a genius.",
+   "board": {
+    "figure": {
+     "mark": "halo"
+    },
+    "chips": [
+     {
+      "text": "LAST WEEK: \"GENIUS\"",
+      "color": "mus",
+      "at": 0.6
+     }
+    ]
+   },
+   "brow": "up"
+  },
+  {
+   "who": "gus",
+   "text": "Well... he was a genius."
+  },
+  {
+   "who": "nell",
+   "text": "Reports allege an affair with a woman suspected of spying for China. The FBI and Congress are investigating. Nothing is proven.",
+   "say": "Reports allege an affair with a woman suspected of spying for China. The F.B.I. and Congress are investigating. Nothing is proven.",
+   "board": {
+    "card": {
+     "title": "REPORTS ALLEGE",
+     "body": "an affair with a woman suspected of spying for China."
+    },
+    "chips": [
+     {
+      "text": "FBI + CONGRESS INVESTIGATING",
+      "color": "paper",
+      "at": 3.9
+     },
+     {
+      "text": "NVDA ▼ ~10%",
+      "color": "red",
+      "at": 3.1
+     }
+    ],
+    "stamp": {
+     "text": "NOTHING PROVEN",
+     "at": 6.3
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Then why does everything he ever did suddenly look shady?",
+   "board": {
+    "figure": {
+     "mark": "horns"
+    },
+    "scrawl": {
+     "text": "? ? ?",
+     "at": 0.8
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's the horns effect. The halo effect's evil twin.",
+   "board": {
+    "big": {
+     "text": "THE HORNS EFFECT",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1920, Edward Thorndike found that officers who rated a soldier highly on one trait rated him highly on everything.",
+   "say": "In nineteen twenty, Edward Thorndike found that officers who rated a soldier highly on one trait rated him highly on everything.",
+   "board": {
+    "rating": {
+     "title": "RATING CARD",
+     "source": "THORNDIKE · 1920",
+     "rows": [
+      "Intelligence",
+      "Leadership",
+      "Character",
+      "Physique"
+     ]
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Flip it, and one bad headline repaints the whole person. And the whole past.",
+   "board": {
+    "headline": "ONE HEADLINE.\nWHOLE PAST."
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So he's not a villain?",
+   "board": {
+    "big": {
+     "text": "VILLAIN?",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The facts are still coming in. Your brain just didn't wait.",
+   "board": {
+    "bar": {
+     "label": "INVESTIGATION ONGOING",
+     "sub": "your brain: ALREADY DECIDED",
+     "fill": 0.6
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Genius, villain, or too early to tell? Tell us in the comments.",
+   "board": {
+    "vote": [
+     "GENIUS",
+     "VILLAIN",
+     "TOO EARLY?"
+    ]
+   }
+  }
+ ]
+}
