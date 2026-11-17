@@ -1,0 +1,17 @@
+{
+ "no": 184,
+ "slug": "ivy-side-hustle",
+ "date": "2026-11-18",
+ "slot": "19:00",
+ "due": "2026-11-19T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-18/ivy-side-hustle.mp4",
+ "buffer": {
+  "youtube": "6afce8d2ab47737bddb394f2",
+  "instagram": "6afce8d2bb12698d1582fb53",
+  "tiktok": "6afce8d393fa11d37df21ae1"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 59.5
+}
