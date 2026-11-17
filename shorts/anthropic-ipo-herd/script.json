@@ -1,0 +1,31 @@
+{
+ "slug": "anthropic-ipo-herd",
+ "no": 215,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Buying, skipping, or just watching?",
+ "note": "Daily news-psych 2026-11-17. Confirmed by TechCrunch (Nov 10, 2026) and StockAnalysis (Nov 13, 2026, citing Bloomberg) + Yahoo Finance/Motley Fool (Nov 16): Anthropic IPO on Nasdaq as ANT, 825M shares at $70-$78, ~$1.4T fully diluted valuation at the top of the range, trading ~Nov 19, pricing Wed Nov 18 (StockAnalysis; Yahoo 'Wednesday night'). 'About six times oversubscribed' is REPORTED (Bloomberg via StockAnalysis), worded 'reportedly'. Psychology: herd behaviour; Ritter 1991 J. Finance 46(1):3-27 — 1975-84 IPOs substantially underperformed matched firms over 3 years, worst for high-volume years; investors periodically overoptimistic. Neutral, labelled not financial advice.",
+ "post": {
+  "title": "Anthropic's IPO Is 6× Oversubscribed. Here's What Your Brain Is Doing. #shorts",
+  "description": "Buying, skipping, or just watching? Comment below. Anthropic plans to price its IPO on Wednesday, Nov 18 and start trading on Nasdaq as ANT on Thursday, at a range of $70 to $78 a share, about $1.4 trillion fully diluted at the top. Orders reportedly reached about six times the shares on offer. Gus and Nell talk about herd behaviour: when everyone wanting something feels like proof. Jay Ritter (1991, Journal of Finance) found IPOs from 1975–84 lagged similar companies over three years, and those from the hottest years did worst. Not financial advice. Sources: TechCrunch (Nov 10, 2026); StockAnalysis citing Bloomberg (Nov 13, 2026); Yahoo Finance (Nov 16, 2026). Music: \"Twisting\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #anthropic #ipo #herdbehavior #news #shorts",
+  "tags": [
+   "Anthropic",
+   "Anthropic IPO",
+   "herd behavior",
+   "FOMO",
+   "psychology",
+   "news",
+   "stock market"
+  ]
+ }
+}

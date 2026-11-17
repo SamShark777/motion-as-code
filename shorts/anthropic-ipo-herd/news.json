@@ -1,0 +1,173 @@
+{
+ "slug": "anthropic-ipo-herd",
+ "masthead": "TUE · NOV 17",
+ "music": "5ae3fd2b63.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Anthropic's IPO is this week, and I need in. Everyone's buying!",
+   "say": "Anthropic's I.P.O. is this week, and I need in. Everyone's buying!",
+   "board": {
+    "headline": "AI GIANT\nGOES PUBLIC",
+    "chips": [
+     {
+      "text": "ANTHROPIC",
+      "color": "mus",
+      "at": 0.3
+     },
+     {
+      "text": "\"EVERYONE'S BUYING!\"",
+      "color": "red",
+      "at": 2.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "It prices Wednesday and trades Thursday on Nasdaq. About $70 to $78 a share.",
+   "say": "It prices Wednesday and trades Thursday on Nasdaq. About seventy to seventy-eight dollars a share.",
+   "board": {
+    "card": {
+     "title": "THE FACTS",
+     "body": "Prices Wed, Nov 18. Trades Thu, Nov 19 on Nasdaq as ANT."
+    },
+    "chips": [
+     {
+      "text": "$70–$78 A SHARE",
+      "color": "mus",
+      "at": 2.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's about $1.4 trillion at the top. And orders reportedly hit about six times the shares.",
+   "say": "That's about one point four trillion dollars at the top. And orders reportedly hit about six times the shares.",
+   "board": {
+    "headline": "~$1.4\nTRILLION",
+    "chips": [
+     {
+      "text": "~6× ORDERS",
+      "color": "red",
+      "at": 4.0
+     },
+     {
+      "text": "REPORTED",
+      "color": "paper",
+      "at": 4.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Six times! If everyone wants it, it's a sure thing.",
+   "brow": "up",
+   "board": {
+    "headline": "6× THE\nSHARES",
+    "chips": [
+     {
+      "text": "\"SURE THING!\"",
+      "color": "red",
+      "at": 1.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's herd behaviour. Everyone wanting it feels like proof.",
+   "board": {
+    "big": {
+     "text": "HERD BEHAVIOUR",
+     "color": "teal"
+    },
+    "chips": [
+     {
+      "text": "CROWD = PROOF?",
+      "color": "mus",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1991, Jay Ritter studied IPOs from 1975 to 1984. Over three years, they lagged similar companies.",
+   "say": "In nineteen ninety-one, Jay Ritter studied I.P.O.s from nineteen seventy-five to nineteen eighty-four. Over three years, they lagged similar companies.",
+   "board": {
+    "card": {
+     "title": "RITTER · 1991",
+     "body": "IPOs from 1975–84 lagged similar firms over three years."
+    },
+    "chips": [
+     {
+      "text": "JOURNAL OF FINANCE",
+      "color": "paper",
+      "at": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "And the ones from the busiest, hottest years did worst.",
+   "board": {
+    "bar": {
+     "label": "HOT IPO YEARS",
+     "sub": "3-year results: THE WORST",
+     "fill": 0.2
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Wait, so it's a bad company?",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "BAD COMPANY?",
+     "color": "ink"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's not what it says. A crowd isn't information. Hype sets the price, not the value.",
+   "board": {
+    "headline": "CROWD ≠\nINFO",
+    "stamp": {
+     "text": "NOT ADVICE",
+     "at": 2.2
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Just notice when everyone's buying is your only reason.",
+   "board": {
+    "headline": "YOUR ONLY\nREASON?",
+    "chips": [
+     {
+      "text": "\"EVERYONE'S BUYING\"",
+      "color": "red",
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Buying, skipping, or just watching? Vote in the comments.",
+   "board": {
+    "vote": [
+     "BUYING",
+     "SKIPPING",
+     "WATCHING"
+    ]
+   }
+  }
+ ]
+}
