@@ -1,0 +1,286 @@
+{
+ "slug": "leo-skipped-message",
+ "no": 189,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Leo",
+ "episode": 8,
+ "cast": [
+  "leo",
+  "priya"
+ ],
+ "title": [
+  "Left",
+  "Out"
+ ],
+ "credit": "Williams, Cheung & Choi · 2000 · Eisenberger, Lieberman & Williams · 2003",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why a Skipped Message Hurts So Much #shorts",
+  "description": "Ever been left out of the group chat? Tell me in the comments. Send this to the friend who got skipped. Leo's group chat skips his message, again, and it ruins his night. In 'Cyberostracism: Effects of Being Ignored Over the Internet' (Journal of Personality and Social Psychology, 2000), Kipling Williams, Christopher Cheung and Wilma Choi had 1,486 people from 62 countries play Cyberball, an online game of catch; after just a few minutes of not getting the ball, people reported lower belonging and self-esteem, and felt sad and angry. In 'Does Rejection Hurt? An fMRI Study of Social Exclusion' (Science, 2003), Naomi Eisenberger, Matthew Lieberman and Kipling Williams found that being left out of the game raised activity in the dorsal anterior cingulate cortex, a region tied to the distress of physical pain. You're not being dramatic: social pain is real. #psychology #shorts #ostracism #groupchat #overthinking",
+  "tags": [
+   "ostracism",
+   "cyberball",
+   "social pain",
+   "Kipling Williams",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why Being Ignored Hurts",
+ "thumb_emph": "Hurts",
+ "thumb_mood": "sad",
+ "music_vibe": "warm",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Leo's group chat skips his message, again",
+  "lean": "pain",
+  "snapback": "You're not being DRAMATIC. It's wiring."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who got skipped.",
+ "question": "Ever been left out?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "color": "#1F3B73",
+   "art": "GCChat",
+   "chunks": [
+    [
+     "Leo's GROUP CHAT",
+     {
+      "emph": "GROUP CHAT",
+      "fx": "pop"
+     }
+    ],
+    [
+     "skips his"
+    ],
+    [
+     "message. Again."
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Leo's GROUP CHAT skips his message. Again."
+  },
+  {
+   "scene": "You",
+   "color": "#E9E4D8",
+   "light": true,
+   "art": "GCSting",
+   "chunks": [
+    [
+     "You know"
+    ],
+    [
+     "this sting."
+    ],
+    [
+     "Tiny thing."
+    ],
+    [
+     "Ruins your NIGHT.",
+     {
+      "emph": "NIGHT",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "tone": "knowingly",
+   "sec": "cd",
+   "text": "You know this sting. Tiny thing. Ruins your NIGHT."
+  },
+  {
+   "scene": "Snapback",
+   "color": "#E8C547",
+   "light": true,
+   "art": "GCAlarm",
+   "chunks": [
+    [
+     "You're not"
+    ],
+    [
+     "being DRAMATIC.",
+     {
+      "emph": "DRAMATIC",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ],
+    [
+     "It's wiring."
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "You're not being DRAMATIC. It's wiring."
+  },
+  {
+   "scene": "Study",
+   "color": "#2B6E7A",
+   "art": "GCCatch",
+   "chunks": [
+    [
+     "In 2000,"
+    ],
+    [
+     "1,486 people"
+    ],
+    [
+     "played an online"
+    ],
+    [
+     "game of CATCH.",
+     {
+      "emph": "CATCH",
+      "fx": "type"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In two thousand, fourteen hundred and eighty-six people played an online game of catch.",
+   "sec": "cd",
+   "text": "In 2000, 1,486 people played an online game of CATCH."
+  },
+  {
+   "scene": "Result",
+   "color": "#B3202A",
+   "art": "GCLeftOut",
+   "chunks": [
+    [
+     "Left out"
+    ],
+    [
+     "for just"
+    ],
+    [
+     "a few MINUTES,",
+     {
+      "emph": "MINUTES",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "they felt"
+    ],
+    [
+     "sad and angry."
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Left out for just a few MINUTES, they felt sad and angry."
+  },
+  {
+   "scene": "Turn",
+   "color": "#6A3FA0",
+   "art": "GCBrainPain",
+   "chunks": [
+    [
+     "Brain scans:"
+    ],
+    [
+     "it lights"
+    ],
+    [
+     "a region"
+    ],
+    [
+     "tied to PAIN.",
+     {
+      "emph": "PAIN",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Social pain"
+    ],
+    [
+     "is real."
+    ]
+   ],
+   "tone": "serious, thoughtfully",
+   "say": "Brain scans: it lights a region tied to pain. Social pain is real.",
+   "sec": "cd",
+   "text": "Brain scans: it lights a region tied to PAIN. Social pain is real."
+  },
+  {
+   "scene": "Proof",
+   "color": "#2B6E7A",
+   "art": "GCSeen",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the 'seen'"
+    ],
+    [
+     "with NO reply.",
+     {
+      "emph": "NO",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the 'seen' with NO reply. Yeah, that one."
+  },
+  {
+   "scene": "Outro",
+   "color": "#1F3B73",
+   "art": "GCPriya",
+   "chunks": [
+    [
+     "Priya: you're"
+    ],
+    [
+     "not TOO much.",
+     {
+      "emph": "TOO",
+      "fx": "doodle",
+      "doodle": "💬"
+     }
+    ],
+    [
+     "Ever been"
+    ],
+    [
+     "left out?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who got skipped."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Priya: you're not TOO much. Ever been left out? Send this to the friend who got skipped."
+  }
+ ]
+}

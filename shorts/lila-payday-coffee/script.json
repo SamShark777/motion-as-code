@@ -1,0 +1,308 @@
+{
+ "slug": "lila-payday-coffee",
+ "no": 191,
+ "format": "retro",
+ "look": "retro",
+ "series": "Lila",
+ "episode": 12,
+ "cast": [
+  "lila",
+  "otto"
+ ],
+ "title": [
+  "Best",
+  "Five Bucks"
+ ],
+ "credit": "Dunn, Aknin & Norton · 2008",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "The $5 That Makes You Happier (Not on You) #shorts",
+  "description": "Who's getting your coffee? Tell me in the comments. Send this to the friend who always pays. Payday: Lila buys herself fancy headphones, and the buzz fades fast. In 'Spending Money on Others Promotes Happiness' (Science, 2008), Elizabeth Dunn, Lara Aknin and Michael Norton gave people a $5 or $20 bill to spend by 5 p.m. that day, either on themselves or on someone else. Those who spent it on others reported feeling happier at the end of the day; even $5 was enough. Psychologists call it prosocial spending. Treat someone. #psychology #shorts #happiness #money #kindness",
+  "tags": [
+   "prosocial spending",
+   "happiness",
+   "money",
+   "Elizabeth Dunn",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Spend It on Someone Else",
+ "thumb_emph": "Someone Else",
+ "thumb_mood": "happy",
+ "music_vibe": "warm",
+ "pattern": "Character story",
+ "thumb_scene": 8,
+ "hook": {
+  "context": "Payday treat: Lila buys herself fancy headphones",
+  "lean": "pain",
+  "snapback": "But the happiest spend isn't on YOU."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who always pays.",
+ "question": "Who's getting your coffee?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RMPayday",
+   "chunks": [
+    [
+     "Payday TREAT:",
+     {
+      "emph": "TREAT"
+     }
+    ],
+    [
+     "Lila buys"
+    ],
+    [
+     "herself fancy"
+    ],
+    [
+     "headphones."
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Payday TREAT: Lila buys herself fancy headphones."
+  },
+  {
+   "scene": "You",
+   "art": "RMHappyHour",
+   "chunks": [
+    [
+     "The buzz"
+    ],
+    [
+     "lasts an HOUR.",
+     {
+      "emph": "HOUR"
+     }
+    ],
+    [
+     "Sound familiar?"
+    ]
+   ],
+   "tone": "knowingly",
+   "sec": "cd",
+   "text": "The buzz lasts an HOUR. Sound familiar?"
+  },
+  {
+   "scene": "Snapback",
+   "art": "RMWrongPerson",
+   "chunks": [
+    [
+     "But the happiest"
+    ],
+    [
+     "spend isn't"
+    ],
+    [
+     "on YOU.",
+     {
+      "emph": "YOU"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "But the happiest spend isn't on YOU."
+  },
+  {
+   "scene": "Study",
+   "art": "RMEnvelopes",
+   "chunks": [
+    [
+     "In 2008,"
+    ],
+    [
+     "people got"
+    ],
+    [
+     "five or TWENTY",
+     {
+      "emph": "TWENTY"
+     }
+    ],
+    [
+     "dollars to spend"
+    ],
+    [
+     "by 5 p.m."
+    ]
+   ],
+   "tone": "curious",
+   "say": "In two thousand eight, people got five or twenty dollars to spend by five p.m.",
+   "sec": "cd",
+   "text": "In 2008, people got five or TWENTY dollars to spend by 5 p.m."
+  },
+  {
+   "scene": "Split",
+   "art": "RMHalfHalf",
+   "chunks": [
+    [
+     "Half on"
+    ],
+    [
+     "themselves."
+    ],
+    [
+     "Half on"
+    ],
+    [
+     "SOMEONE else.",
+     {
+      "emph": "SOMEONE"
+     }
+    ]
+   ],
+   "tone": "playful",
+   "sec": "cd",
+   "text": "Half on themselves. Half on SOMEONE else."
+  },
+  {
+   "scene": "Result",
+   "art": "RMGiversGlow",
+   "chunks": [
+    [
+     "That evening,"
+    ],
+    [
+     "the givers"
+    ],
+    [
+     "felt HAPPIER.",
+     {
+      "emph": "HAPPIER"
+     }
+    ],
+    [
+     "Five dollars"
+    ],
+    [
+     "was enough."
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "That evening, the givers felt HAPPIER. Five dollars was enough."
+  },
+  {
+   "scene": "Name",
+   "art": "RMProsocial",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "PROSOCIAL spending.",
+     {
+      "emph": "PROSOCIAL"
+     }
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "say": "Psychologists call it pro-social spending.",
+   "sec": "cd",
+   "text": "Psychologists call it PROSOCIAL spending."
+  },
+  {
+   "scene": "Proof",
+   "art": "RMGiftWait",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the gift"
+    ],
+    [
+     "you couldn't"
+    ],
+    [
+     "wait to GIVE.",
+     {
+      "emph": "GIVE"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the gift you couldn't wait to GIVE. Yeah, that one."
+  },
+  {
+   "scene": "Payoff",
+   "art": "RMOttoCoffee",
+   "chunks": [
+    [
+     "Lila buys"
+    ],
+    [
+     "Otto a coffee."
+    ],
+    [
+     "Best five BUCKS",
+     {
+      "emph": "BUCKS"
+     }
+    ],
+    [
+     "all week."
+    ]
+   ],
+   "tone": "warmly, amused",
+   "sec": "cd",
+   "text": "Lila buys Otto a coffee. Best five BUCKS all week."
+  },
+  {
+   "scene": "End",
+   "art": "RMEndCoffee",
+   "chunks": [
+    [
+     "Treat SOMEONE.",
+     {
+      "emph": "SOMEONE"
+     }
+    ],
+    [
+     "Who's getting"
+    ],
+    [
+     "your coffee?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who always pays."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Treat SOMEONE. Who's getting your coffee? Send this to the friend who always pays."
+  }
+ ]
+}

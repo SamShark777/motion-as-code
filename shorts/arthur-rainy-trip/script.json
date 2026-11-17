@@ -1,0 +1,284 @@
+{
+ "slug": "arthur-rainy-trip",
+ "no": 188,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 12,
+ "cast": [
+  "arthur",
+  "mae"
+ ],
+ "title": [
+  "Worst Trip",
+  "Best Story"
+ ],
+ "credit": "Walker, Vogl & Thompson · 1997",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Your Worst Trip Is Now Your Favourite Story #shorts",
+  "description": "What was your worst trip? Tell me in the comments. Send this to the friend from that trip. Arthur finds a photo of the worst holiday ever (rain all week, a flooded tent) and he's smiling. In 'Autobiographical Memory: Unpleasantness Fades Faster Than Pleasantness Over Time' (Applied Cognitive Psychology, 1997), W. Richard Walker, Rodney Vogl and Charles Thompson had people keep diaries of real events and rate how they felt; rated again later, the bad feelings attached to memories had faded faster than the good ones. Psychologists call it the fading affect bias. It's how bad days turn into good stories. #psychology #shorts #memory #fadingaffectbias #overthinking",
+  "tags": [
+   "fading affect bias",
+   "memory",
+   "nostalgia",
+   "Walker Vogl Thompson",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Memory Is Editing",
+ "thumb_emph": "Editing",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 1,
+ "hook": {
+  "context": "Arthur's worst holiday photo: rain all week, a flooded tent",
+  "lean": "pain",
+  "snapback": "Your memory isn't lying. It's EDITING."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend from that trip.",
+ "question": "Your worst trip?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RMWorstTrip",
+   "chunks": [
+    [
+     "Arthur's"
+    ],
+    [
+     "WORST holiday",
+     {
+      "emph": "WORST"
+     }
+    ],
+    [
+     "photo: rain"
+    ],
+    [
+     "all week,"
+    ],
+    [
+     "a flooded tent."
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Arthur's WORST holiday photo: rain all week, a flooded tent."
+  },
+  {
+   "scene": "You",
+   "art": "RMNowSmiling",
+   "chunks": [
+    [
+     "And he's"
+    ],
+    [
+     "SMILING.",
+     {
+      "emph": "SMILING"
+     }
+    ],
+    [
+     "You do this:"
+    ],
+    [
+     "the disaster"
+    ],
+    [
+     "is now"
+    ],
+    [
+     "your favourite story."
+    ]
+   ],
+   "tone": "knowingly, laughs",
+   "sec": "cd",
+   "text": "And he's SMILING. You do this: the disaster is now your favourite story."
+  },
+  {
+   "scene": "Snapback",
+   "art": "RMEditing",
+   "chunks": [
+    [
+     "Your memory"
+    ],
+    [
+     "isn't lying."
+    ],
+    [
+     "It's EDITING.",
+     {
+      "emph": "EDITING"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "Your memory isn't lying. It's EDITING."
+  },
+  {
+   "scene": "Study",
+   "art": "RMDiaries",
+   "chunks": [
+    [
+     "In 1997,"
+    ],
+    [
+     "people kept"
+    ],
+    [
+     "DIARIES",
+     {
+      "emph": "DIARIES"
+     }
+    ],
+    [
+     "of good"
+    ],
+    [
+     "and bad days."
+    ]
+   ],
+   "tone": "curious",
+   "say": "In nineteen ninety-seven, people kept diaries of good and bad days.",
+   "sec": "cd",
+   "text": "In 1997, people kept DIARIES of good and bad days."
+  },
+  {
+   "scene": "Result",
+   "art": "RMFadeRates",
+   "chunks": [
+    [
+     "Rated again later,"
+    ],
+    [
+     "the bad feelings"
+    ],
+    [
+     "faded FASTER",
+     {
+      "emph": "FASTER"
+     }
+    ],
+    [
+     "than the good."
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Rated again later, the bad feelings faded FASTER than the good."
+  },
+  {
+   "scene": "Name",
+   "art": "RMFadingTitle",
+   "chunks": [
+    [
+     "Psychologists call it"
+    ],
+    [
+     "the fading AFFECT",
+     {
+      "emph": "AFFECT"
+     }
+    ],
+    [
+     "bias."
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "sec": "cd",
+   "text": "Psychologists call it the fading AFFECT bias."
+  },
+  {
+   "scene": "Proof",
+   "art": "RMThatTrip",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the trip"
+    ],
+    [
+     "that went WRONG.",
+     {
+      "emph": "WRONG"
+     }
+    ],
+    [
+     "Funny now, right?"
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the trip that went WRONG. Funny now, right?"
+  },
+  {
+   "scene": "Payoff",
+   "art": "RMGoAgain",
+   "chunks": [
+    [
+     "Mae: 'Camping again?'"
+    ],
+    [
+     "Arthur: 'OBVIOUSLY.'",
+     {
+      "emph": "OBVIOUSLY"
+     }
+    ]
+   ],
+   "tone": "warmly, amused",
+   "say": "Mae: camping again? Arthur: obviously.",
+   "sec": "cd",
+   "text": "Mae: 'Camping again?' Arthur: 'OBVIOUSLY.'"
+  },
+  {
+   "scene": "End",
+   "art": "RMEndStory",
+   "chunks": [
+    [
+     "Bad days FADE.",
+     {
+      "emph": "FADE"
+     }
+    ],
+    [
+     "Your worst trip?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "from that trip."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Bad days FADE. Your worst trip? Send this to the friend from that trip."
+  }
+ ]
+}

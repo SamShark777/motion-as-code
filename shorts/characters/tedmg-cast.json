@@ -23,7 +23,8 @@
     "ep 7 (milo-google-egg, with Nia): googles 'boiled egg time' for the third time this week; Google effect (Sparrow, Liu & Wegner 2011: people told the computer would save facts remembered them less, but remembered where they were saved)",
     "ep 8 (theo-goldfish-fact, with Theo): hears the goldfish 'fact' from everywhere, never checked it; laughs when Theo looks it up",
     "ep 9 (nia-bank-app, with Nia): sits beside Nia with his cup when she finally opens the bank app",
-    "ep 10 (milo-everyone-agrees, with Theo): sure everyone thinks like him; the 'Eat at Joe's' sandwich-board test; false consensus effect (Ross, Greene & House 1977: agreers guessed ~62% would agree, refusers ~33%); learns his normal isn't everyone's"
+    "ep 10 (milo-everyone-agrees, with Theo): sure everyone thinks like him; the 'Eat at Joe's' sandwich-board test; false consensus effect (Ross, Greene & House 1977: agreers guessed ~62% would agree, refusers ~33%); learns his normal isn't everyone's",
+    "ep 11 (dev-five-text-signs): reads Dev's 'nice job, genius' as an insult ('is he mad at me?'), laughs once the laugh-face arrives"
    ]
   },
   "nia": {
@@ -46,7 +47,8 @@
     "ep 7 (milo-google-egg, with Milo): laughs at Milo's re-Googling; 'your brain filed it under PHONE'",
     "ep 8 (rosa-parking-ticket, with Rosa): unimpressed by Rosa's 'me: more likely' logic; laughs at the ticket",
     "ep 9 (dev-concert-ticket, with Dev): thumbs-up as Dev stays home; 'your evening costs too'",
-    "ep 10 (nia-bank-app, with Milo): bank app pings after a bad week, she flips the phone face down; ostrich effect (Karlsson, Loewenstein & Seppi 2009: investors checked their portfolios more in rising markets, less in flat or falling ones); opens it — one look, less wondering"
+    "ep 10 (nia-bank-app, with Milo): bank app pings after a bad week, she flips the phone face down; ostrich effect (Karlsson, Loewenstein & Seppi 2009: investors checked their portfolios more in rising markets, less in flat or falling ones); opens it — one look, less wondering",
+    "ep 11 (rosa-perfect-birthday): drops Rosa's birthday cake and finally breaks the spell; they dance"
    ]
   },
   "theo": {
@@ -88,7 +90,8 @@
     "ep 3 (rosa-start-monday, with Nia): Thursday night, crisps in hand, swears \"I'll start Monday\"; fresh start effect (Dai, Milkman & Riis 2014: diet searches, gym visits and commitment contracts rise after temporal landmarks); goes to the gym on the 1st with Nia",
     "ep 4 (rosa-five-signs, with Nia): performance review with nine compliments and one 'could improve' — rereads the bad one five times; 5-signs list on negativity bias (Baumeister, Bratslavsky, Finkenauer & Vohs 2001); Nia makes her read the nice ones out loud",
     "ep 5 (rosa-deleted-compliment, with Dev): types 'your talk was amazing!' to Dev, deletes it as too awkward; Zhao & Epley 2021 (senders underestimate how good compliments feel); sends it, Dev screenshots it",
-    "ep 6 (rosa-parking-ticket, with Nia): parks on the yellow line sure she won't get a ticket; optimism bias (Weinstein 1980); gets the ticket and shrugs"
+    "ep 6 (rosa-parking-ticket, with Nia): parks on the yellow line sure she won't get a ticket; optimism bias (Weinstein 1980); gets the ticket and shrugs",
+    "ep 7 (rosa-perfect-birthday, with Nia): her birthday HAS to be the happiest night ever, so she keeps checking 'happy yet?'; valuing happiness backfires (Mauss et al. 2011); laughs for real when Nia drops the cake"
    ]
   },
   "dev": {
@@ -109,7 +112,8 @@
     "ep 5 (dev-overthink-putt, with Theo): last hole of mini golf, overthinks a 2-foot putt and misses; choking / explicit monitoring (Beilock, Carr, MacMahon & Starkes 2002: experienced golfers putted better distracted than focusing on each step; novices the opposite); sinks it once Theo hums",
     "ep 6 (dev-silver-medal, with Theo): wins silver at the fun run 5K and sulks while Theo grins in third; counterfactual thinking (Medvec, Madey & Gilovich 1995: raters judged 1992 Olympic bronze medalists happier than silver); 'test' pattern; steps down to stand with Theo",
     "ep 7 (rosa-deleted-compliment, with Rosa): gets Rosa's compliment and screenshots it",
-    "ep 8 (dev-concert-ticket, with Nia): paid for concert tickets, sick in the rain, nearly goes anyway; sunk cost effect (Arkes & Blumer 1985); stays home with soup"
+    "ep 8 (dev-concert-ticket, with Nia): paid for concert tickets, sick in the rain, nearly goes anyway; sunk cost effect (Arkes & Blumer 1985); stays home with soup",
+    "ep 9 (dev-five-text-signs, with Milo; signs-list): texts Milo 'nice job, genius' as a joke; '5 signs your texts sound meaner than you think'; egocentrism over email (Kruger et al. 2005: 78% guessed vs 56%); adds a laugh-face"
    ]
   },
   "june": {
