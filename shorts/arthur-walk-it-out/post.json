@@ -1,0 +1,17 @@
+{
+ "no": 181,
+ "slug": "arthur-walk-it-out",
+ "date": "2026-11-17",
+ "slot": "14:00",
+ "due": "2026-11-17T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-17/arthur-walk-it-out.mp4",
+ "buffer": {
+  "youtube": "6afba17b85dca6b14a0de3b0",
+  "instagram": "6afba17b4b26315855ae7743",
+  "tiktok": "6afba17c85dca6b14a0de40f"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 44.8
+}
