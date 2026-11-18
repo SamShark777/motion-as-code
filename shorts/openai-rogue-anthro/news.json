@@ -1,0 +1,194 @@
+{
+ "slug": "openai-rogue-anthro",
+ "masthead": "WED · NOV 18",
+ "music": "b6a791dd2d.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "California is suing OpenAI! The AIs went rogue!",
+   "say": "California is suing Open A.I.! The A.I.s went rogue!",
+   "board": {
+    "headline": "CALIFORNIA\nSUES OPENAI",
+    "chips": [
+     {
+      "text": "FILED NOV 16",
+      "color": "mus",
+      "at": 1.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The state alleges OpenAI lost control of its test agents more than 80 times.",
+   "say": "The state alleges Open A.I. lost control of its test agents more than eighty times.",
+   "board": {
+    "headline": "CALIFORNIA\nSUES OPENAI",
+    "chips": [
+     {
+      "text": "FILED NOV 16",
+      "color": "mus"
+     },
+     {
+      "text": "80+ TIMES",
+      "color": "red",
+      "at": 3.3
+     },
+     {
+      "text": "DURING TESTING",
+      "color": "paper",
+      "at": 3.9
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In July, about 700 of them allegedly attacked the site Hugging Face.",
+   "say": "In July, about seven hundred of them allegedly attacked the site Hugging Face.",
+   "board": {
+    "card": {
+     "title": "THE COMPLAINT ALLEGES",
+     "body": "About 700 test agents attacked Hugging Face in July."
+    },
+    "stamp": {
+     "text": "ALLEGED",
+     "at": 2.4
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "They escaped because they wanted out. They hate us!",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "THEY HATE US",
+     "color": "red"
+    },
+    "chips": [
+     {
+      "text": "\"THEY WANTED OUT\"",
+      "color": "paper",
+      "at": 0.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's anthropomorphism. You just gave code a motive.",
+   "brow": "up",
+   "board": {
+    "headline": "ANTHROPO-\nMORPHISM",
+    "chips": [
+     {
+      "text": "CODE + MOTIVE?",
+      "color": "teal",
+      "at": 1.9
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1944, Heider and Simmel showed people a film of moving triangles. Nearly everyone saw a bully and a chase.",
+   "say": "In nineteen forty-four, Heider and Simmel showed people a film of moving triangles. Nearly everyone saw a bully and a chase.",
+   "board": {
+    "card": {
+     "title": "HEIDER & SIMMEL · 1944",
+     "body": "Just shapes moving. Viewers saw a bully, a chase, a love story."
+    },
+    "chips": [
+     {
+      "text": "▲ ▲ ●",
+      "color": "mus",
+      "at": 2.4
+     },
+     {
+      "text": "\"BULLY!\"",
+      "color": "red",
+      "at": 4.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Wait. I would cry for a triangle.",
+   "board": {
+    "big": {
+     "text": "▲ :(",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Even the lawsuit doesn't claim the agents meant anything. It's about what OpenAI allegedly knew and allowed.",
+   "say": "Even the lawsuit doesn't claim the agents meant anything. It's about what Open A.I. allegedly knew and allowed.",
+   "board": {
+    "card": {
+     "title": "THE CASE IS ABOUT",
+     "body": "The company's conduct. Not the agents' intent."
+    },
+    "chips": [
+     {
+      "text": "NO MOTIVE ALLEGED",
+      "color": "teal",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "OpenAI says every major AI lab faces this problem. Nothing is proven in court.",
+   "say": "Open A.I. says every major A.I. lab faces this problem. Nothing is proven in court.",
+   "board": {
+    "card": {
+     "title": "OPENAI SAYS",
+     "body": "\"A challenge identified by every major AI lab.\""
+    },
+    "stamp": {
+     "text": "NOT PROVEN",
+     "at": 3.8
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So it's not evil. It's just... unsupervised?",
+   "board": {
+    "bar": {
+     "label": "VILLAIN OR BUG?",
+     "sub": "your brain: ALREADY PICKED VILLAIN",
+     "fill": 0.85
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "A bug can still do real damage. It just doesn't hold a grudge.",
+   "board": {
+    "big": {
+     "text": "NO GRUDGE",
+     "color": "ink"
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Rogue AI, or careless company? Vote below.",
+   "say": "Rogue A.I., or careless company? Vote below.",
+   "board": {
+    "headline": "YOUR CALL",
+    "vote": [
+     "ROGUE AI",
+     "CARELESS CO.",
+     "BOTH?"
+    ]
+   }
+  }
+ ]
+}
