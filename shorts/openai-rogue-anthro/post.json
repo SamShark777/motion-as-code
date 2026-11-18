@@ -1,0 +1,17 @@
+{
+ "no": 216,
+ "slug": "openai-rogue-anthro",
+ "date": "2026-11-18",
+ "slot": "09:00",
+ "due": "2026-11-18T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-18/openai-rogue-anthro.mp4",
+ "buffer": {
+  "youtube": "6afdaa88b1824861ddb970be",
+  "instagram": "6afdaa89275aba8f453d1fa2",
+  "tiktok": "6afdaa896c30c3c86285c196"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 57.2
+}
