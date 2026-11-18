@@ -1,0 +1,17 @@
+{
+ "no": 186,
+ "slug": "june-five-excuses",
+ "date": "2026-11-19",
+ "slot": "19:00",
+ "due": "2026-11-20T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-19/june-five-excuses.mp4",
+ "buffer": {
+  "youtube": "6afe334b01ba7c5e791dcc93",
+  "instagram": "6afe334c4cace847b37f49a1",
+  "tiktok": "6afe334dc462756e9e27da94"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Brian",
+ "duration": 44.6
+}
