@@ -1,0 +1,299 @@
+{
+ "slug": "rosa-mirror-photo",
+ "no": 206,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Rosa",
+ "episode": 8,
+ "cast": [
+  "rosa",
+  "june"
+ ],
+ "title": [
+  "Mirror",
+  "vs Photo"
+ ],
+ "credit": "Mita, Dermer & Knight · 1977",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why You Hate Photos of Yourself #shorts",
+  "description": "Mirror or photo: which one looks like you? Tell me in the comments. Send this to the friend who untags everything. Rosa sees the group photo and wants it deleted: her face looks wrong. In 'Reversed Facial Images and the Mere-Exposure Hypothesis' (Journal of Personality and Social Psychology, 1977), Theodore Mita, Marshall Dermer and Jeffrey Knight printed women's photos twice, as they really look and mirror-reversed. The women preferred their mirror image; their close friends preferred the true one. We like the face we see most, and you mostly see yours in a mirror: the mere exposure effect. Your face isn't wrong in photos. It's just the right way round. #psychology #shorts #mereexposure #selfie #overthinking",
+  "tags": [
+   "mere exposure effect",
+   "photos of yourself",
+   "mirror image",
+   "Mita Dermer Knight",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why Photos Look Wrong",
+ "thumb_emph": "Wrong",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 2,
+ "hook": {
+  "context": "Rosa hates her face in the group photo",
+  "lean": "shock",
+  "snapback": "Your face isn't wrong. The mirror FLIPPED it."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who untags everything.",
+ "question": "Mirror or photo?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "MGGroupPhoto",
+   "chunks": [
+    [
+     "Rosa sees"
+    ],
+    [
+     "the group"
+    ],
+    [
+     "PHOTO:",
+     {
+      "emph": "PHOTO"
+     }
+    ],
+    [
+     "'Delete it."
+    ],
+    [
+     "I look wrong.'"
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Rosa sees the group PHOTO: 'Delete it. I look wrong.'"
+  },
+  {
+   "scene": "You",
+   "art": "MGFriendsPrefer",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "this too."
+    ],
+    [
+     "But your friends"
+    ],
+    [
+     "PREFER",
+     {
+      "emph": "PREFER"
+     }
+    ],
+    [
+     "that photo."
+    ]
+   ],
+   "tone": "knowingly, surprised",
+   "sec": "cd",
+   "text": "You've done this too. But your friends PREFER that photo."
+  },
+  {
+   "scene": "Snapback",
+   "art": "MGFlipped",
+   "chunks": [
+    [
+     "Your face"
+    ],
+    [
+     "isn't wrong."
+    ],
+    [
+     "The mirror"
+    ],
+    [
+     "FLIPPED it.",
+     {
+      "emph": "FLIPPED"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "Your face isn't wrong. The mirror FLIPPED it."
+  },
+  {
+   "scene": "Study",
+   "art": "MGTwoPrints",
+   "chunks": [
+    [
+     "In 1977,"
+    ],
+    [
+     "women's photos"
+    ],
+    [
+     "were printed"
+    ],
+    [
+     "true and"
+    ],
+    [
+     "MIRRORED.",
+     {
+      "emph": "MIRRORED"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In nineteen seventy-seven, women's photos were printed true and mirrored.",
+   "sec": "cd",
+   "text": "In 1977, women's photos were printed true and MIRRORED."
+  },
+  {
+   "scene": "Result",
+   "art": "MGPicks",
+   "chunks": [
+    [
+     "Women picked"
+    ],
+    [
+     "their mirror"
+    ],
+    [
+     "image. Friends"
+    ],
+    [
+     "picked the"
+    ],
+    [
+     "TRUE one.",
+     {
+      "emph": "TRUE"
+     }
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Women picked their mirror image. Friends picked the TRUE one."
+  },
+  {
+   "scene": "Name",
+   "art": "MGSeenMost",
+   "chunks": [
+    [
+     "We like"
+    ],
+    [
+     "the face"
+    ],
+    [
+     "we see MOST:",
+     {
+      "emph": "MOST"
+     }
+    ],
+    [
+     "mere exposure."
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "sec": "cd",
+   "text": "We like the face we see MOST: mere exposure."
+  },
+  {
+   "scene": "Proof",
+   "art": "MGUntagged",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last photo"
+    ],
+    [
+     "you untagged."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the last photo you untagged. Yeah, THAT one."
+  },
+  {
+   "scene": "Payoff",
+   "art": "MGKeepsIt",
+   "chunks": [
+    [
+     "June: 'That's"
+    ],
+    [
+     "just your FACE.'",
+     {
+      "emph": "FACE"
+     }
+    ],
+    [
+     "Rosa keeps it."
+    ]
+   ],
+   "tone": "warmly, amused",
+   "say": "June: that's just your face. Rosa keeps it.",
+   "sec": "cd",
+   "text": "June: 'That's just your FACE.' Rosa keeps it."
+  },
+  {
+   "scene": "End",
+   "art": "MGEndMirror",
+   "chunks": [
+    [
+     "Your mirror's"
+    ],
+    [
+     "the LIAR.",
+     {
+      "emph": "LIAR"
+     }
+    ],
+    [
+     "Mirror or photo?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who untags"
+    ],
+    [
+     "everything."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Your mirror's the LIAR. Mirror or photo? Send this to the friend who untags everything."
+  }
+ ]
+}

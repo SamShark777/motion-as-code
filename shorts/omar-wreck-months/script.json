@@ -1,0 +1,301 @@
+{
+ "slug": "omar-wreck-months",
+ "no": 209,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Omar",
+ "episode": 6,
+ "cast": [
+  "omar",
+  "grace"
+ ],
+ "title": [
+  "It Won't",
+  "Last"
+ ],
+ "credit": "Gilbert, Pinel, Wilson, Blumberg & Wheatley · 1998",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "It Won't Hurt As Long As You Think #shorts",
+  "description": "Been there? Tell me in the comments. Send this to the friend who thinks it's over. Omar loses the final and is sure he'll be miserable for months. In 'Immune Neglect: A Source of Durability Bias in Affective Forecasting' (Journal of Personality and Social Psychology, 1998), Daniel Gilbert, Elizabeth Pinel, Timothy Wilson, Stephen Blumberg and Thalia Wheatley found across six studies (a breakup, being denied tenure, losing an election, a job rejection and more) that people overestimate how long bad events will hurt. Young professors predicted years of unhappiness if denied tenure; former professors who had been denied were about as happy as those who were promoted. We forget our psychological immune system, the ways the mind quietly helps us cope. #psychology #shorts #impactbias #affectiveforecasting #overthinking",
+  "tags": [
+   "impact bias",
+   "affective forecasting",
+   "durability bias",
+   "Daniel Gilbert",
+   "psychology"
+  ]
+ },
+ "thumb_text": "It Won't Last Months",
+ "thumb_emph": "Won't Last",
+ "thumb_mood": "worried",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Omar loses the final and says he'll be miserable for months",
+  "lean": "proof",
+  "snapback": "Their brains got it WRONG."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who thinks it's over.",
+ "question": "Been there?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "OMFinal",
+   "chunks": [
+    [
+     "Omar loses"
+    ],
+    [
+     "the FINAL:",
+     {
+      "emph": "FINAL",
+      "fx": "pop"
+     }
+    ],
+    [
+     "'I'll be"
+    ],
+    [
+     "miserable"
+    ],
+    [
+     "for months.'"
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "say": "Omar loses the final: I'll be miserable for months.",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Omar loses the FINAL: 'I'll be miserable for months.'",
+   "color": "#1F3B73"
+  },
+  {
+   "scene": "Lean",
+   "art": "OMTenure",
+   "chunks": [
+    [
+     "In 1998,"
+    ],
+    [
+     "professors predicted"
+    ],
+    [
+     "the same"
+    ],
+    [
+     "about losing"
+    ],
+    [
+     "TENURE.",
+     {
+      "emph": "TENURE",
+      "fx": "type"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In nineteen ninety-eight, professors predicted the same about losing tenure.",
+   "sec": "cd",
+   "text": "In 1998, professors predicted the same about losing TENURE.",
+   "color": "#2B6E7A"
+  },
+  {
+   "scene": "Snapback",
+   "art": "OMWrong",
+   "chunks": [
+    [
+     "Their brains"
+    ],
+    [
+     "got it"
+    ],
+    [
+     "WRONG.",
+     {
+      "emph": "WRONG",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "Their brains got it WRONG.",
+   "color": "#E8C547",
+   "light": true
+  },
+  {
+   "scene": "Result",
+   "art": "OMHappyAnyway",
+   "chunks": [
+    [
+     "Later, those"
+    ],
+    [
+     "denied were"
+    ],
+    [
+     "about as"
+    ],
+    [
+     "HAPPY as",
+     {
+      "emph": "HAPPY",
+      "fx": "glitch"
+     }
+    ],
+    [
+     "those promoted."
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Later, those denied were about as HAPPY as those promoted.",
+   "color": "#B3202A"
+  },
+  {
+   "scene": "You",
+   "art": "OMWreck",
+   "chunks": [
+    [
+     "You do"
+    ],
+    [
+     "it too:"
+    ],
+    [
+     "'This will"
+    ],
+    [
+     "WRECK me.'",
+     {
+      "emph": "WRECK",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ]
+   ],
+   "tone": "knowingly",
+   "say": "You do it too: this will wreck me.",
+   "sec": "cd",
+   "text": "You do it too: 'This will WRECK me.'",
+   "color": "#E9E4D8",
+   "light": true
+  },
+  {
+   "scene": "Turn",
+   "art": "OMImmune",
+   "chunks": [
+    [
+     "We forget"
+    ],
+    [
+     "our mind's"
+    ],
+    [
+     "IMMUNE system.",
+     {
+      "emph": "IMMUNE",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "It helps"
+    ],
+    [
+     "us cope."
+    ]
+   ],
+   "tone": "serious, thoughtfully",
+   "sec": "cd",
+   "text": "We forget our mind's IMMUNE system. It helps us cope.",
+   "color": "#6A3FA0"
+  },
+  {
+   "scene": "Proof",
+   "art": "OMBreakup",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the breakup"
+    ],
+    [
+     "you'd 'never'"
+    ],
+    [
+     "get OVER.",
+     {
+      "emph": "OVER",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "say": "Think of the breakup you'd never get over. Yeah, that one.",
+   "sec": "cd",
+   "text": "Think of the breakup you'd 'never' get OVER. Yeah, that one.",
+   "color": "#2B6E7A"
+  },
+  {
+   "scene": "Outro",
+   "art": "OMGrace",
+   "chunks": [
+    [
+     "Grace: 'Sooner"
+    ],
+    [
+     "than you"
+    ],
+    [
+     "THINK.'",
+     {
+      "emph": "THINK",
+      "fx": "doodle",
+      "doodle": "🌤️"
+     }
+    ],
+    [
+     "Been there?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who thinks"
+    ],
+    [
+     "it's over."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "say": "Grace: sooner than you think. Been there? Send this to the friend who thinks it's over.",
+   "sec": "cd",
+   "text": "Grace: 'Sooner than you THINK.' Been there? Send this to the friend who thinks it's over.",
+   "color": "#1F3B73"
+  }
+ ]
+}

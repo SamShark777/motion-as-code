@@ -1,0 +1,337 @@
+{
+ "slug": "mae-five-safe-signs",
+ "no": 208,
+ "format": "retro",
+ "look": "retro",
+ "series": "Mae",
+ "episode": 12,
+ "cast": [
+  "mae",
+  "doubt"
+ ],
+ "title": [
+  "5 Signs",
+  "You Play It Safe"
+ ],
+ "credit": "Gilovich & Medvec · 1995",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs You're Playing It Too Safe #shorts",
+  "description": "Which sign got you? Tell me in the comments. Send this to the friend who checked all five. Mae skips the audition: there'll be other chances. In 'The Experience of Regret: What, When, and Why' (Psychological Review, 1995), Thomas Gilovich and Victoria Husted Medvec reviewed their studies of what people regret: in the short term, people regret the things they did more; looking back over the long term, they regret the things they didn't do. Mistakes fade. Missed chances stay. #psychology #shorts #regret #overthinking #confidence",
+  "tags": [
+   "regret",
+   "inaction regret",
+   "playing it safe",
+   "Gilovich Medvec",
+   "psychology"
+  ]
+ },
+ "thumb_text": "5 Signs You Play It Safe",
+ "thumb_emph": "Safe",
+ "thumb_mood": "worried",
+ "music_vibe": "uplifting",
+ "pattern": "signs-list",
+ "thumb_scene": 1,
+ "hook": {
+  "context": "Mae skips the audition: 'There'll be other chances'",
+  "lean": "pain",
+  "snapback": "Twist: it's not your mistakes you'll REGRET."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who checked all five.",
+ "question": "Which sign got you?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RMAudition",
+   "chunks": [
+    [
+     "Mae skips"
+    ],
+    [
+     "the AUDITION:",
+     {
+      "emph": "AUDITION"
+     }
+    ],
+    [
+     "'There'll be"
+    ],
+    [
+     "other chances.'"
+    ]
+   ],
+   "tone": "matter-of-fact, wry",
+   "say": "Mae skips the audition: there'll be other chances.",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Mae skips the AUDITION: 'There'll be other chances.'"
+  },
+  {
+   "scene": "Lean",
+   "art": "RMFiveSigns",
+   "chunks": [
+    [
+     "Five signs"
+    ],
+    [
+     "you do"
+    ],
+    [
+     "this TOO.",
+     {
+      "emph": "TOO"
+     }
+    ]
+   ],
+   "tone": "knowingly",
+   "sec": "cd",
+   "text": "Five signs you do this TOO."
+  },
+  {
+   "scene": "Snapback",
+   "art": "RMTwist",
+   "chunks": [
+    [
+     "Twist: it's"
+    ],
+    [
+     "not your mistakes"
+    ],
+    [
+     "you'll REGRET.",
+     {
+      "emph": "REGRET"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    1000,
+    1.0,
+    1.16
+   ],
+   "sec": "cd",
+   "text": "Twist: it's not your mistakes you'll REGRET."
+  },
+  {
+   "scene": "Sign 1",
+   "art": "RMSign1",
+   "chunks": [
+    [
+     "One: 'maybe"
+    ],
+    [
+     "next year,'"
+    ],
+    [
+     "every YEAR.",
+     {
+      "emph": "YEAR"
+     }
+    ]
+   ],
+   "tone": "teasing",
+   "say": "One: maybe next year, every year.",
+   "sec": "cd",
+   "text": "One: 'maybe next year,' every YEAR."
+  },
+  {
+   "scene": "Sign 2",
+   "art": "RMSign2",
+   "chunks": [
+    [
+     "Two: the text"
+    ],
+    [
+     "you wrote"
+    ],
+    [
+     "and never SENT.",
+     {
+      "emph": "SENT"
+     }
+    ]
+   ],
+   "tone": "knowing",
+   "sec": "cd",
+   "text": "Two: the text you wrote and never SENT."
+  },
+  {
+   "scene": "Sign 3",
+   "art": "RMSign3",
+   "chunks": [
+    [
+     "Three: you leave"
+    ],
+    [
+     "before anyone"
+    ],
+    [
+     "can say NO.",
+     {
+      "emph": "NO"
+     }
+    ]
+   ],
+   "tone": "knowing",
+   "sec": "cd",
+   "text": "Three: you leave before anyone can say NO."
+  },
+  {
+   "scene": "Sign 4",
+   "art": "RMSign4",
+   "chunks": [
+    [
+     "Four: you replay"
+    ],
+    [
+     "the day"
+    ],
+    [
+     "you didn't"
+    ],
+    [
+     "SPEAK up.",
+     {
+      "emph": "SPEAK"
+     }
+    ]
+   ],
+   "tone": "softly",
+   "sec": "cd",
+   "text": "Four: you replay the day you didn't SPEAK up."
+  },
+  {
+   "scene": "Sign 5",
+   "art": "RMSign5",
+   "chunks": [
+    [
+     "Five: 'what if?'"
+    ],
+    [
+     "wins every"
+    ],
+    [
+     "TIME.",
+     {
+      "emph": "TIME"
+     }
+    ]
+   ],
+   "tone": "whispers, sly",
+   "say": "Five: what if? wins every time.",
+   "sec": "cd",
+   "text": "Five: 'what if?' wins every TIME."
+  },
+  {
+   "scene": "Study",
+   "art": "RMRegretStudy",
+   "chunks": [
+    [
+     "Gilovich and Medvec"
+    ],
+    [
+     "found: short term,"
+    ],
+    [
+     "we regret"
+    ],
+    [
+     "what we DID.",
+     {
+      "emph": "DID"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "Gilovich and Medvec found: short term, we regret what we did.",
+   "sec": "cd",
+   "text": "Gilovich and Medvec found: short term, we regret what we DID."
+  },
+  {
+   "scene": "Result",
+   "art": "RMLongTerm",
+   "chunks": [
+    [
+     "Long term?"
+    ],
+    [
+     "The chances"
+    ],
+    [
+     "we DIDN'T take.",
+     {
+      "emph": "DIDN'T"
+     }
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Long term? The chances we DIDN'T take."
+  },
+  {
+   "scene": "Payoff",
+   "art": "RMBooksIt",
+   "chunks": [
+    [
+     "Mae books"
+    ],
+    [
+     "the audition."
+    ],
+    [
+     "The Doubt SHRINKS.",
+     {
+      "emph": "SHRINKS"
+     }
+    ]
+   ],
+   "tone": "warmly, amused",
+   "sec": "cd",
+   "text": "Mae books the audition. The Doubt SHRINKS."
+  },
+  {
+   "scene": "End",
+   "art": "RMEndFive",
+   "chunks": [
+    [
+     "Missed chances"
+    ],
+    [
+     "STAY.",
+     {
+      "emph": "STAY"
+     }
+    ],
+    [
+     "Which sign"
+    ],
+    [
+     "got you?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checked"
+    ],
+    [
+     "all five."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Missed chances STAY. Which sign got you? Send this to the friend who checked all five."
+  }
+ ]
+}

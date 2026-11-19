@@ -71,7 +71,8 @@
     "ep 8 (theo-goldfish-fact, with Milo): has 'heard a hundred times' that goldfish forget in three seconds; illusory truth effect (Hasher, Goldstein & Toppino 1977; Fazio et al. 2015); looks it up: goldfish remember for months",
     "ep 9 (june-five-signs, with June): shows June his own 1984 photo (big curly hair)",
     "ep 10 (milo-everyone-agrees, with Milo): holds up the YES/NO tally at the party — it's split",
-    "ep 11 (june-five-excuses): names self-handicapping and taps June's EXCUSE shield"
+    "ep 11 (june-five-excuses): names self-handicapping and taps June's EXCUSE shield",
+    "ep 12 (dev-zipper-explain, with Dev): hands Dev a marker: 'great, explain it'"
    ]
   },
   "rosa": {
@@ -91,7 +92,8 @@
     "ep 4 (rosa-five-signs, with Nia): performance review with nine compliments and one 'could improve' — rereads the bad one five times; 5-signs list on negativity bias (Baumeister, Bratslavsky, Finkenauer & Vohs 2001); Nia makes her read the nice ones out loud",
     "ep 5 (rosa-deleted-compliment, with Dev): types 'your talk was amazing!' to Dev, deletes it as too awkward; Zhao & Epley 2021 (senders underestimate how good compliments feel); sends it, Dev screenshots it",
     "ep 6 (rosa-parking-ticket, with Nia): parks on the yellow line sure she won't get a ticket; optimism bias (Weinstein 1980); gets the ticket and shrugs",
-    "ep 7 (rosa-perfect-birthday, with Nia): her birthday HAS to be the happiest night ever, so she keeps checking 'happy yet?'; valuing happiness backfires (Mauss et al. 2011); laughs for real when Nia drops the cake"
+    "ep 7 (rosa-perfect-birthday, with Nia): her birthday HAS to be the happiest night ever, so she keeps checking 'happy yet?'; valuing happiness backfires (Mauss et al. 2011); laughs for real when Nia drops the cake",
+    "ep 8 (rosa-mirror-photo, with June): hates her face in the group photo ('delete it, I look wrong'); mirror image vs true image, mere exposure (Mita, Dermer & Knight 1977); June: 'that's just your face', Rosa keeps it"
    ]
   },
   "dev": {
@@ -113,7 +115,8 @@
     "ep 6 (dev-silver-medal, with Theo): wins silver at the fun run 5K and sulks while Theo grins in third; counterfactual thinking (Medvec, Madey & Gilovich 1995: raters judged 1992 Olympic bronze medalists happier than silver); 'test' pattern; steps down to stand with Theo",
     "ep 7 (rosa-deleted-compliment, with Rosa): gets Rosa's compliment and screenshots it",
     "ep 8 (dev-concert-ticket, with Nia): paid for concert tickets, sick in the rain, nearly goes anyway; sunk cost effect (Arkes & Blumer 1985); stays home with soup",
-    "ep 9 (dev-five-text-signs, with Milo; signs-list): texts Milo 'nice job, genius' as a joke; '5 signs your texts sound meaner than you think'; egocentrism over email (Kruger et al. 2005: 78% guessed vs 56%); adds a laugh-face"
+    "ep 9 (dev-five-text-signs, with Milo; signs-list): texts Milo 'nice job, genius' as a joke; '5 signs your texts sound meaner than you think'; egocentrism over email (Kruger et al. 2005: 78% guessed vs 56%); adds a laugh-face",
+    "ep 10 (dev-zipper-explain, with Theo): 'easy, I know exactly how a zipper works', goes blank when asked to explain; illusion of explanatory depth (Rozenblit & Keil 2002); laughs: 'I know how to USE one'"
    ]
   },
   "june": {
@@ -133,7 +136,8 @@
     "ep 4 (june-doorway, with Theo): walks into the kitchen and forgets why, remembers at her desk (scissors); doorway effect (Radvansky et al. 2011); ends holding the scissors with no idea what for",
     "ep 5 (june-dont-think, with Nia): 1 AM, trying not to think about her ex — every song, every street is him; white bear / rebound effect (Wegner, Schneider, Carter & White 1987); Nia's trick: think about one other thing on purpose (a red car)",
     "ep 6 (june-five-signs, with Theo): finds her old diary and cringes; '5 signs you're not done changing'; end of history illusion (Quoidbach, Gilbert & Wilson 2013)",
-    "ep 7 (june-five-excuses, with Theo; signs-list): exam tomorrow, organizing her desk at 2 AM; '5 signs you're quietly building your excuse'; self-handicapping (Berglas & Jones 1978: unsure students chose a pill said to impair performance); goes to bed"
+    "ep 7 (june-five-excuses, with Theo; signs-list): exam tomorrow, organizing her desk at 2 AM; '5 signs you're quietly building your excuse'; self-handicapping (Berglas & Jones 1978: unsure students chose a pill said to impair performance); goes to bed",
+    "ep 8 (rosa-mirror-photo, with Rosa): tells her sister the group photo is fine, 'that's just your face'"
    ]
   }
  }

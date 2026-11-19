@@ -1,0 +1,308 @@
+{
+ "slug": "dev-zipper-explain",
+ "no": 207,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Dev",
+ "episode": 10,
+ "cast": [
+  "dev",
+  "theo"
+ ],
+ "title": [
+  "Explain",
+  "It. Go."
+ ],
+ "credit": "Rozenblit & Keil · 2002",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "You Can't Explain How a Zipper Works #shorts",
+  "description": "Could you explain it? Tell me in the comments. Send this to your know-it-all friend. Dev is sure he knows exactly how a zipper works, until Theo says: explain it. In 'The Misunderstood Limits of Folk Science: An Illusion of Explanatory Depth' (Cognitive Science, 2002), Leonid Rozenblit and Frank Keil had Yale students rate how well they understood everyday devices, then write step-by-step explanations of how they work. After explaining, their ratings of their own understanding dropped. Psychologists call it the illusion of explanatory depth: things we use every day feel understood because they feel familiar. Using isn't knowing, and that's fine. #psychology #shorts #overconfidence #learning #overthinking",
+  "tags": [
+   "illusion of explanatory depth",
+   "overconfidence",
+   "Rozenblit Keil",
+   "how things work",
+   "psychology"
+  ]
+ },
+ "thumb_text": "You Can't Explain This",
+ "thumb_emph": "Explain",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Dev is sure he knows exactly how a zipper works",
+  "lean": "pain",
+  "snapback": "Theo: 'Great. Explain it.' Dev goes BLANK."
+ },
+ "relate": "barnum",
+ "share": "Send this to your know-it-all friend.",
+ "question": "Could you explain it?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "MGZipperBet",
+   "chunks": [
+    [
+     "'Easy,' Dev says."
+    ],
+    [
+     "'I know"
+    ],
+    [
+     "exactly how"
+    ],
+    [
+     "a ZIPPER works.'",
+     {
+      "emph": "ZIPPER"
+     }
+    ]
+   ],
+   "tone": "confident, amused",
+   "say": "Easy, Dev says. I know exactly how a zipper works.",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "'Easy,' Dev says. 'I know exactly how a ZIPPER works.'"
+  },
+  {
+   "scene": "You",
+   "art": "MGYouNod",
+   "chunks": [
+    [
+     "You'd say"
+    ],
+    [
+     "it too."
+    ],
+    [
+     "OBVIOUS, right?",
+     {
+      "emph": "OBVIOUS"
+     }
+    ]
+   ],
+   "tone": "knowingly",
+   "sec": "cd",
+   "text": "You'd say it too. OBVIOUS, right?"
+  },
+  {
+   "scene": "Snapback",
+   "art": "MGExplainIt",
+   "chunks": [
+    [
+     "Theo: 'Great."
+    ],
+    [
+     "Explain it.'"
+    ],
+    [
+     "Dev goes BLANK.",
+     {
+      "emph": "BLANK"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "say": "Theo: great. Explain it. Dev goes blank.",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "Theo: 'Great. Explain it.' Dev goes BLANK."
+  },
+  {
+   "scene": "Problem",
+   "art": "MGTeethDraw",
+   "chunks": [
+    [
+     "'Teeth…"
+    ],
+    [
+     "a slidey bit…"
+    ],
+    [
+     "it just CLICKS?'",
+     {
+      "emph": "CLICKS"
+     }
+    ]
+   ],
+   "tone": "laughs, sheepish",
+   "say": "Teeth... a slidey bit... it just clicks?",
+   "sec": "cd",
+   "text": "'Teeth… a slidey bit… it just CLICKS?'"
+  },
+  {
+   "scene": "Study",
+   "art": "MGYaleRate",
+   "chunks": [
+    [
+     "In 2002,"
+    ],
+    [
+     "Yale students"
+    ],
+    [
+     "rated how well"
+    ],
+    [
+     "they understood"
+    ],
+    [
+     "everyday DEVICES.",
+     {
+      "emph": "DEVICES"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "say": "In two thousand two, Yale students rated how well they understood everyday devices.",
+   "sec": "cd",
+   "text": "In 2002, Yale students rated how well they understood everyday DEVICES."
+  },
+  {
+   "scene": "Result",
+   "art": "MGRatingsDrop",
+   "chunks": [
+    [
+     "Then they"
+    ],
+    [
+     "explained each one."
+    ],
+    [
+     "Their ratings DROPPED.",
+     {
+      "emph": "DROPPED"
+     }
+    ]
+   ],
+   "tone": "whispers, amazed",
+   "sec": "cd",
+   "text": "Then they explained each one. Their ratings DROPPED."
+  },
+  {
+   "scene": "Name",
+   "art": "MGIllusion",
+   "chunks": [
+    [
+     "Familiar feels"
+    ],
+    [
+     "like understood:"
+    ],
+    [
+     "the illusion"
+    ],
+    [
+     "of explanatory DEPTH.",
+     {
+      "emph": "DEPTH"
+     }
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ],
+   "sec": "cd",
+   "text": "Familiar feels like understood: the illusion of explanatory DEPTH."
+  },
+  {
+   "scene": "Proof",
+   "art": "MGYourTurn",
+   "chunks": [
+    [
+     "Explain how"
+    ],
+    [
+     "your fridge"
+    ],
+    [
+     "stays cold."
+    ],
+    [
+     "Go. Yeah, EXACTLY.",
+     {
+      "emph": "EXACTLY"
+     }
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Explain how your fridge stays cold. Go. Yeah, EXACTLY."
+  },
+  {
+   "scene": "Payoff",
+   "art": "MGDevLaughs",
+   "chunks": [
+    [
+     "Dev laughs:"
+    ],
+    [
+     "'Okay. I know"
+    ],
+    [
+     "how to"
+    ],
+    [
+     "USE one.'",
+     {
+      "emph": "USE"
+     }
+    ]
+   ],
+   "tone": "warmly, amused",
+   "say": "Dev laughs: okay. I know how to use one.",
+   "sec": "cd",
+   "text": "Dev laughs: 'Okay. I know how to USE one.'"
+  },
+  {
+   "scene": "End",
+   "art": "MGEndZip",
+   "chunks": [
+    [
+     "Using isn't"
+    ],
+    [
+     "KNOWING.",
+     {
+      "emph": "KNOWING"
+     }
+    ],
+    [
+     "Could you"
+    ],
+    [
+     "explain it?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to your"
+    ],
+    [
+     "know-it-all friend."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Using isn't KNOWING. Could you explain it? Send this to your know-it-all friend."
+  }
+ ]
+}

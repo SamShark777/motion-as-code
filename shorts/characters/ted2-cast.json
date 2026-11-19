@@ -60,7 +60,8 @@
     "ep 5 (sam-see-through): tells Sam the audience can't see his nerves (much)",
     "ep 6 (leo-ten-minutes): shows Leo his last essay took 2 hours: \"use last time, not hope\"",
     "ep 7 (omar-need-help, with Omar): hears Omar say 'I need help' over coffee and smiles",
-    "ep 8 (omar-open-book, with Omar): holds up a mirror to Omar: 'they read you too'"
+    "ep 8 (omar-open-book, with Omar): holds up a mirror to Omar: 'they read you too'",
+    "ep 9 (omar-wreck-months, with Omar): 'sooner than you think' — the psychological immune system"
    ]
   },
   "omar": {
@@ -72,7 +73,8 @@
     "ep 2 (gratitude-visit, with Grace): thinks thank-you notes are for weddings; writes to his old coach and reads it aloud, voice cracking (gratitude visit, Seligman et al. 2005)",
     "ep 3 (omar-knew-it, with Priya): yells \"I knew it!\" after the match, but last week texted \"no chance\"; hindsight bias (Fischhoff & Beyth 1975: after Nixon's 1972 trips, people remembered giving higher odds to what happened); starts writing his guesses down",
     "ep 4 (omar-need-help, with Grace): almost doesn't tell Grace 'I need help' because it would look weak; beautiful mess effect (Bruk, Scholl & Bless 2018); says it, and Grace just smiles",
-    "ep 5 (omar-open-book, with Grace): reads his friends like a book, sure they can't read him; illusion of asymmetric insight (Pronin, Kruger, Savitsky & Ross 2001); Grace holds up a mirror: they read you too"
+    "ep 5 (omar-open-book, with Grace): reads his friends like a book, sure they can't read him; illusion of asymmetric insight (Pronin, Kruger, Savitsky & Ross 2001); Grace holds up a mirror: they read you too",
+    "ep 6 (omar-wreck-months, with Grace): loses the final, sure he'll be miserable for months; impact/durability bias (Gilbert et al. 1998, tenure study)"
    ]
   }
  }
