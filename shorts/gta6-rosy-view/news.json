@@ -1,0 +1,176 @@
+{
+ "slug": "gta6-rosy-view",
+ "masthead": "THU · NOV 19",
+ "music": "1ec6b9c6c5.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Thirteen years! GTA 6 finally dropped... and I couldn't even log in.",
+   "say": "Thirteen years! G.T.A. Six finally dropped... and I couldn't even log in.",
+   "board": {
+    "headline": "GTA VI\nIS OUT",
+    "chips": [
+     {
+      "text": "13-YEAR WAIT",
+      "color": "mus",
+      "at": 0.2
+     },
+     {
+      "text": "\"CAN'T LOG IN\"",
+      "color": "red",
+      "at": 2.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "It unlocked at midnight Eastern on PS5 and Xbox. Then players reported PlayStation sign-in errors.",
+   "say": "It unlocked at midnight Eastern on P.S. Five and Xbox. Then players reported PlayStation sign-in errors.",
+   "board": {
+    "headline": "GTA VI\nIS OUT",
+    "chips": [
+     {
+      "text": "NOV 19 · MIDNIGHT ET",
+      "color": "paper",
+      "at": 0.3
+     },
+     {
+      "text": "PS5 + XBOX",
+      "color": "teal",
+      "at": 1.9
+     },
+     {
+      "text": "PSN SIGN-IN ERRORS",
+      "color": "red",
+      "at": 3.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Thousands of outage reports on Downdetector. Sony hasn't named a cause.",
+   "board": {
+    "card": {
+     "title": "REPORTED",
+     "body": "Thousands of PSN outage reports on Downdetector around launch."
+    },
+    "stamp": {
+     "text": "CAUSE NOT CONFIRMED",
+     "at": 2.8
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Thirteen years of hype for this? Worst launch ever. I'm calling it.",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "RUINED?",
+     "color": "red"
+    },
+    "chips": [
+     {
+      "text": "\"WORST LAUNCH EVER\"",
+      "color": "red",
+      "at": 1.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's the rosy view.",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "THE ROSY VIEW",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1997, Terence Mitchell and colleagues asked people to rate their vacations.",
+   "say": "In nineteen ninety-seven, Terence Mitchell and colleagues asked people to rate their vacations.",
+   "board": {
+    "card": {
+     "title": "MITCHELL ET AL · 1997",
+     "body": "People rated their trips before, during and after."
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Before and after, the trips felt great. During? Much less.",
+   "board": {
+    "card": {
+     "title": "MITCHELL ET AL · 1997",
+     "body": "People rated their trips before, during and after."
+    },
+    "chips": [
+     {
+      "text": "BEFORE: GREAT",
+      "color": "mus",
+      "at": 0.1
+     },
+     {
+      "text": "AFTER: GREAT",
+      "color": "teal",
+      "at": 1.0
+     },
+     {
+      "text": "DURING: MEH",
+      "color": "red",
+      "at": 2.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Wait. So the hype was always going to beat the real thing?",
+   "board": {
+    "headline": "HYPE VS.\nREALITY"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Thirteen years imagining a perfect night. Your fantasy had no login screen.",
+   "board": {
+    "headline": "PERFECT IN\nYOUR HEAD",
+    "chips": [
+     {
+      "text": "NO LOGIN SCREEN",
+      "color": "mus",
+      "at": 2.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Give it a month. You'll remember the game, not the error.",
+   "board": {
+    "bar": {
+     "label": "LAUNCH NIGHT",
+     "sub": "a month later: JUST THE GAME",
+     "fill": 0.25
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Worth the wait, or ruined launch? Tell us in the comments.",
+   "board": {
+    "vote": [
+     "WORTH IT",
+     "RUINED",
+     "LOADING…"
+    ]
+   }
+  }
+ ]
+}

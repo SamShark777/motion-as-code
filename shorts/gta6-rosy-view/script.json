@@ -1,0 +1,29 @@
+{
+ "slug": "gta6-rosy-view",
+ "no": 217,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "note": "Daily news-psych Short 2026-11-19. Confirmed (IBTimes UK Nov 19 + HappyGamer Nov 19; XDA Nov 18): GTA VI unlocked at midnight ET Nov 19 on PS5 and Xbox Series X|S; players reported PSN sign-in errors around launch, with thousands of Downdetector reports (IBTimes: ~8,400 US peak); Sony has not named a cause or tied it to GTA VI (so 'CAUSE NOT CONFIRMED'). 13-year gap since GTA V (2013). Sales figures (Sensor Tower estimate) deliberately left out: single source, unofficial. Psychology: 'rosy view', Mitchell, Thompson, Peterson & Cronk 1997, J. Experimental Social Psychology: people rated vacations more positively before and after than during.",
+ "post": {
+  "title": "GTA 6 Waited 13 Years. Then Login Failed. Here's Your Brain. #shorts",
+  "description": "Grand Theft Auto VI unlocked at midnight ET on Nov 19 for PS5 and Xbox Series X|S, 13 years after GTA V. Around launch, players reported PlayStation Network sign-in errors, with thousands of Downdetector reports; Sony hasn't named a cause. Gus and Nell talk about the rosy view: Mitchell and colleagues (1997) found people rate vacations better before and after than during, so 13 years of imagining a perfect night was always going to beat the real one. Worth the wait, or ruined launch? Comment below. Sources: IBTimes UK (Nov 19, 2026); HappyGamer (Nov 19, 2026); XDA Developers (Nov 18, 2026). Music: \"Itty Bitty 8 Bit\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #gta6 #gaming #news #shorts",
+  "tags": [
+   "GTA 6",
+   "GTA VI",
+   "PlayStation Network",
+   "rosy view",
+   "psychology",
+   "gaming news"
+  ]
+ }
+}
