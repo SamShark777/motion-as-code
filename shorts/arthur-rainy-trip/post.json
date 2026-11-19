@@ -1,0 +1,17 @@
+{
+ "no": 188,
+ "slug": "arthur-rainy-trip",
+ "date": "2026-11-20",
+ "slot": "19:00",
+ "due": "2026-11-21T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-20/arthur-rainy-trip.mp4",
+ "buffer": {
+  "youtube": "6aff85e9d5f8acdd0d5522ee",
+  "instagram": "6aff85ea738ce4635f6d5ba2",
+  "tiktok": "6aff85eb7b0a126ceb8ee673"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 43.3
+}
