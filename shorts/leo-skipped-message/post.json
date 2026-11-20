@@ -1,0 +1,17 @@
+{
+ "no": 189,
+ "slug": "leo-skipped-message",
+ "date": "2026-11-21",
+ "slot": "14:00",
+ "due": "2026-11-21T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-21/leo-skipped-message.mp4",
+ "buffer": {
+  "youtube": "6b00d0819ffbc8503cdff97c",
+  "instagram": "6b00d0815102766245dc1780",
+  "tiktok": "6b00d0829ffbc8503cdff9d4"
+ },
+ "errors": {},
+ "engine": "elevenlabs",
+ "voice_name": "ElevenLabs Jessica",
+ "duration": 46.2
+}
