@@ -1,0 +1,31 @@
+{
+ "slug": "voyager-awe",
+ "no": 228,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Did this make you feel tiny, amazed, or nothing at all?",
+ "note": "Daily news-psych 2026-11-20. CONFIRMED by NASA news release (Nov 19, 2026) and EarthSky (Nov 18, 2026): Voyager 1 reached one light-day from Earth on Nov 18, 2026 (~10:16 UTC), about 16.1 billion miles; launched 1977; signals take 24 h each way. Nothing alleged. Left out (single-source): NASA says no science/engineering data since Nov 14 (carrier signal only). Psychology: awe / 'small self' - Piff, Dietze, Feinberg, Stancato & Keltner (2015), Journal of Personality and Social Psychology, 'Awe, the Small Self, and Prosocial Behavior' (APA + UC Irvine releases May 19, 2015): awe inductions incl. a grove of towering eucalyptus trees; people felt smaller/less self-important and acted more prosocially. Music: Universal (cd132494ee).",
+ "post": {
+  "title": "Voyager 1 Is One Light-Day Away. Why Feeling Tiny Is Good for You. #shorts",
+  "description": "NASA's Voyager 1 reached one light-day from Earth on Nov 18, 2026: about 16 billion miles away, so a signal now takes 24 hours each way. It launched in 1977. Gus and Nell talk about why the news makes you feel tiny: that's awe. In 2015, Paul Piff and colleagues found that awe (like standing in a grove of towering eucalyptus trees) made people feel smaller and less self-important, and act more generously: the 'small self'. Did this make you feel tiny, amazed, or nothing at all? Comment below. Sources: NASA (Nov 19, 2026); EarthSky (Nov 18, 2026); Piff et al., Journal of Personality and Social Psychology (2015). Music: \"Universal\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #voyager1 #nasa #space #awe #shorts",
+  "tags": [
+   "Voyager 1",
+   "NASA",
+   "light-day",
+   "awe",
+   "small self",
+   "psychology",
+   "space news"
+  ]
+ }
+}

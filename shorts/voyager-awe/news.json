@@ -1,0 +1,172 @@
+{
+ "slug": "voyager-awe",
+ "masthead": "FRI · NOV 20",
+ "music": "cd132494ee.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Voyager 1 is now one light-day from Earth. A whole day at light speed!",
+   "say": "Voyager One is now one light-day from Earth. A whole day, at light speed!",
+   "board": {
+    "headline": "VOYAGER 1:\nONE LIGHT-DAY"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "NASA says it crossed that line on November 18. Launched in 1977, now about 16 billion miles out.",
+   "say": "NASA says it crossed that line on November eighteenth. Launched in nineteen seventy-seven, now about sixteen billion miles out.",
+   "board": {
+    "headline": "VOYAGER 1:\nONE LIGHT-DAY",
+    "chips": [
+     {
+      "text": "NOV 18, 2026",
+      "color": "paper",
+      "at": 0.9
+     },
+     {
+      "text": "LAUNCHED 1977",
+      "color": "mus",
+      "at": 2.6
+     },
+     {
+      "text": "~16 BILLION MILES",
+      "color": "teal",
+      "at": 4.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "And a message takes 24 hours each way. I can't wait 24 seconds for a text back.",
+   "say": "And a message takes twenty-four hours each way. I can't wait twenty-four seconds for a text back.",
+   "board": {
+    "card": {
+     "title": "SIGNAL DELAY",
+     "body": "24 hours there. 24 hours back."
+    },
+    "chips": [
+     {
+      "text": "SEEN: 1 DAY AGO",
+      "color": "red",
+      "at": 2.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Weirdly, it made me feel tiny. Like, what am I even doing?",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "TINY.",
+     "color": "ink"
+    },
+    "chips": [
+     {
+      "text": "\"WHAT AM I DOING?\"",
+      "color": "red",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's awe. And that tiny feeling is the point.",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "THAT'S AWE",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 2015, Paul Piff's team had people stand in a grove of towering eucalyptus trees.",
+   "say": "In twenty fifteen, Paul Piff's team had people stand in a grove of towering eucalyptus trees.",
+   "board": {
+    "card": {
+     "title": "PIFF ET AL · 2015",
+     "body": "People stood among towering eucalyptus trees."
+    },
+    "chips": [
+     {
+      "text": "J. PERS. SOC. PSYCH.",
+      "color": "paper",
+      "at": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "They felt smaller, less self-important, and they acted more generously.",
+   "board": {
+    "card": {
+     "title": "PIFF ET AL · 2015",
+     "body": "People stood among towering eucalyptus trees."
+    },
+    "chips": [
+     {
+      "text": "FELT SMALLER",
+      "color": "mus",
+      "at": 0.3
+     },
+     {
+      "text": "LESS SELF-IMPORTANT",
+      "color": "paper",
+      "at": 1.4
+     },
+     {
+      "text": "MORE GENEROUS",
+      "color": "teal",
+      "at": 3.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So feeling tiny is... good?",
+   "board": {
+    "big": {
+     "text": "TINY = GOOD?",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "They called it the small self. Less me, more us.",
+   "board": {
+    "headline": "SMALL SELF.\nBIG US."
+   }
+  },
+  {
+   "who": "nell",
+   "text": "A probe launched in 1977 just made you look up. That counts.",
+   "say": "A probe launched in nineteen seventy-seven just made you look up. That counts.",
+   "board": {
+    "bar": {
+     "label": "LOOKING UP",
+     "sub": "your ego: SHRINKING",
+     "fill": 0.35
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Did this make you feel tiny, amazed, or nothing at all? Vote below.",
+   "board": {
+    "vote": [
+     "TINY",
+     "AMAZED",
+     "NOTHING"
+    ]
+   }
+  }
+ ]
+}
