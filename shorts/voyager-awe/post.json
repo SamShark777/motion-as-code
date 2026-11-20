@@ -1,0 +1,18 @@
+{
+ "no": 228,
+ "slug": "voyager-awe",
+ "date": "2026-11-20",
+ "slot": "09:00",
+ "due": "2026-11-20T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-20/voyager-awe.mp4",
+ "buffer": {
+  "instagram": "6b004df144831c50e4ca789b",
+  "tiktok": "6b004df27efc64d5e4220b36"
+ },
+ "errors": {
+  "youtube": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+ },
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 52.7
+}
