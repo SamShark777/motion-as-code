@@ -1,0 +1,555 @@
+{
+ "lines": [
+  {
+   "text": "Dev TEXTS Milo: 'Nice job, genius.' He's joking.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.41,
+   "words": [
+    {
+     "w": "Dev",
+     "start": 0.15,
+     "end": 0.483
+    },
+    {
+     "w": "TEXTS",
+     "start": 0.504,
+     "end": 0.88
+    },
+    {
+     "w": "Milo:",
+     "start": 0.904,
+     "end": 1.526
+    },
+    {
+     "w": "'Nice",
+     "start": 1.738,
+     "end": 2.092
+    },
+    {
+     "w": "job,",
+     "start": 2.114,
+     "end": 2.447
+    },
+    {
+     "w": "genius.'",
+     "start": 2.64,
+     "end": 3.305
+    },
+    {
+     "w": "He's",
+     "start": 3.348,
+     "end": 3.681
+    },
+    {
+     "w": "joking.",
+     "start": 3.702,
+     "end": 4.368
+    }
+   ]
+  },
+  {
+   "text": "Milo reads an INSULT. Five signs you're Dev.",
+   "sec": "cd",
+   "start": 4.73,
+   "end": 8.36,
+   "words": [
+    {
+     "w": "Milo",
+     "start": 4.73,
+     "end": 5.324
+    },
+    {
+     "w": "reads",
+     "start": 5.362,
+     "end": 5.721
+    },
+    {
+     "w": "an",
+     "start": 5.744,
+     "end": 6.041
+    },
+    {
+     "w": "INSULT.",
+     "start": 6.06,
+     "end": 6.695
+    },
+    {
+     "w": "Five",
+     "start": 6.899,
+     "end": 7.237
+    },
+    {
+     "w": "signs",
+     "start": 7.259,
+     "end": 7.618
+    },
+    {
+     "w": "you're",
+     "start": 7.641,
+     "end": 7.999
+    },
+    {
+     "w": "Dev.",
+     "start": 8.022,
+     "end": 8.34
+    }
+   ]
+  },
+  {
+   "text": "Tone isn't in the text. It's in your HEAD.",
+   "sec": "cd",
+   "start": 8.68,
+   "end": 11.38,
+   "words": [
+    {
+     "w": "Tone",
+     "start": 8.68,
+     "end": 8.959
+    },
+    {
+     "w": "isn't",
+     "start": 8.977,
+     "end": 9.256
+    },
+    {
+     "w": "in",
+     "start": 9.274,
+     "end": 9.519
+    },
+    {
+     "w": "the",
+     "start": 9.535,
+     "end": 9.797
+    },
+    {
+     "w": "text.",
+     "start": 9.814,
+     "end": 10.093
+    },
+    {
+     "w": "It's",
+     "start": 10.246,
+     "end": 10.508
+    },
+    {
+     "w": "in",
+     "start": 10.525,
+     "end": 10.77
+    },
+    {
+     "w": "your",
+     "start": 10.786,
+     "end": 11.065
+    },
+    {
+     "w": "HEAD.",
+     "start": 11.083,
+     "end": 11.362
+    }
+   ]
+  },
+  {
+   "text": "One: 'ok.' with a full STOP.",
+   "sec": "cd",
+   "start": 11.7,
+   "end": 13.72,
+   "words": [
+    {
+     "w": "One:",
+     "start": 11.7,
+     "end": 12.17
+    },
+    {
+     "w": "'ok.'",
+     "start": 12.335,
+     "end": 12.578
+    },
+    {
+     "w": "with",
+     "start": 12.594,
+     "end": 12.871
+    },
+    {
+     "w": "a",
+     "start": 12.889,
+     "end": 13.116
+    },
+    {
+     "w": "full",
+     "start": 13.13,
+     "end": 13.407
+    },
+    {
+     "w": "STOP.",
+     "start": 13.425,
+     "end": 13.702
+    }
+   ]
+  },
+  {
+   "text": "Two: your joke had no EMOJI.",
+   "sec": "cd",
+   "start": 14.04,
+   "end": 16.52,
+   "words": [
+    {
+     "w": "Two:",
+     "start": 14.04,
+     "end": 14.321
+    },
+    {
+     "w": "your",
+     "start": 14.484,
+     "end": 14.783
+    },
+    {
+     "w": "joke",
+     "start": 14.802,
+     "end": 15.102
+    },
+    {
+     "w": "had",
+     "start": 15.121,
+     "end": 15.402
+    },
+    {
+     "w": "no",
+     "start": 15.42,
+     "end": 15.683
+    },
+    {
+     "w": "EMOJI.",
+     "start": 15.7,
+     "end": 16.471
+    }
+   ]
+  },
+  {
+   "text": "Three: you reread it after SENDING.",
+   "sec": "cd",
+   "start": 16.84,
+   "end": 19.45,
+   "words": [
+    {
+     "w": "Three:",
+     "start": 16.84,
+     "end": 17.13
+    },
+    {
+     "w": "you",
+     "start": 17.281,
+     "end": 17.538
+    },
+    {
+     "w": "reread",
+     "start": 17.554,
+     "end": 18.068
+    },
+    {
+     "w": "it",
+     "start": 18.101,
+     "end": 18.341
+    },
+    {
+     "w": "after",
+     "start": 18.357,
+     "end": 18.854
+    },
+    {
+     "w": "SENDING.",
+     "start": 18.886,
+     "end": 19.416
+    }
+   ]
+  },
+  {
+   "text": "Four: they reply 'WHAT?'",
+   "sec": "cd",
+   "start": 19.77,
+   "end": 21.78,
+   "words": [
+    {
+     "w": "Four:",
+     "start": 19.77,
+     "end": 20.128
+    },
+    {
+     "w": "they",
+     "start": 20.324,
+     "end": 20.683
+    },
+    {
+     "w": "reply",
+     "start": 20.706,
+     "end": 21.357
+    },
+    {
+     "w": "'WHAT?'",
+     "start": 21.399,
+     "end": 21.757
+    }
+   ]
+  },
+  {
+   "text": "Five: 'they'll know I'm KIDDING.'",
+   "sec": "cd",
+   "start": 22.1,
+   "end": 24.2,
+   "words": [
+    {
+     "w": "Five:",
+     "start": 22.1,
+     "end": 22.409
+    },
+    {
+     "w": "'they'll",
+     "start": 22.578,
+     "end": 22.924
+    },
+    {
+     "w": "know",
+     "start": 22.946,
+     "end": 23.255
+    },
+    {
+     "w": "I'm",
+     "start": 23.274,
+     "end": 23.546
+    },
+    {
+     "w": "KIDDING.'",
+     "start": 23.563,
+     "end": 24.162
+    }
+   ]
+  },
+  {
+   "text": "In 2005, senders bet 78 PERCENT would get their tone.",
+   "sec": "cd",
+   "start": 24.52,
+   "end": 29.61,
+   "words": [
+    {
+     "w": "In",
+     "start": 24.52,
+     "end": 24.879
+    },
+    {
+     "w": "2005,",
+     "start": 24.901,
+     "end": 25.211
+    },
+    {
+     "w": "senders",
+     "start": 25.428,
+     "end": 26.219
+    },
+    {
+     "w": "bet",
+     "start": 26.269,
+     "end": 26.653
+    },
+    {
+     "w": "78",
+     "start": 26.677,
+     "end": 26.986
+    },
+    {
+     "w": "PERCENT",
+     "start": 27.006,
+     "end": 27.797
+    },
+    {
+     "w": "would",
+     "start": 27.848,
+     "end": 28.28
+    },
+    {
+     "w": "get",
+     "start": 28.308,
+     "end": 28.691
+    },
+    {
+     "w": "their",
+     "start": 28.716,
+     "end": 29.148
+    },
+    {
+     "w": "tone.",
+     "start": 29.176,
+     "end": 29.584
+    }
+   ]
+  },
+  {
+   "text": "Real score: 56. You hear your voice. They DON'T.",
+   "sec": "cd",
+   "start": 29.93,
+   "end": 34.87,
+   "words": [
+    {
+     "w": "Real",
+     "start": 29.93,
+     "end": 30.386
+    },
+    {
+     "w": "score:",
+     "start": 30.415,
+     "end": 30.899
+    },
+    {
+     "w": "56.",
+     "start": 31.15,
+     "end": 31.496
+    },
+    {
+     "w": "You",
+     "start": 31.738,
+     "end": 32.167
+    },
+    {
+     "w": "hear",
+     "start": 32.194,
+     "end": 32.65
+    },
+    {
+     "w": "your",
+     "start": 32.679,
+     "end": 33.135
+    },
+    {
+     "w": "voice.",
+     "start": 33.165,
+     "end": 33.648
+    },
+    {
+     "w": "They",
+     "start": 33.9,
+     "end": 34.356
+    },
+    {
+     "w": "DON'T.",
+     "start": 34.385,
+     "end": 34.841
+    }
+   ]
+  },
+  {
+   "text": "Dev adds a laugh-face. Milo LAUGHS.",
+   "sec": "cd",
+   "start": 35.19,
+   "end": 37.59,
+   "words": [
+    {
+     "w": "Dev",
+     "start": 35.19,
+     "end": 35.45
+    },
+    {
+     "w": "adds",
+     "start": 35.467,
+     "end": 35.743
+    },
+    {
+     "w": "a",
+     "start": 35.761,
+     "end": 35.987
+    },
+    {
+     "w": "laugh-face.",
+     "start": 36.002,
+     "end": 36.572
+    },
+    {
+     "w": "Milo",
+     "start": 36.742,
+     "end": 37.229
+    },
+    {
+     "w": "LAUGHS.",
+     "start": 37.26,
+     "end": 37.57
+    }
+   ]
+  },
+  {
+   "text": "How MANY did you check? Send this to the friend who checks all five.",
+   "sec": "cd",
+   "start": 37.91,
+   "end": 42.03,
+   "words": [
+    {
+     "w": "How",
+     "start": 37.91,
+     "end": 38.152
+    },
+    {
+     "w": "MANY",
+     "start": 38.167,
+     "end": 38.62
+    },
+    {
+     "w": "did",
+     "start": 38.649,
+     "end": 38.891
+    },
+    {
+     "w": "you",
+     "start": 38.907,
+     "end": 39.149
+    },
+    {
+     "w": "check?",
+     "start": 39.164,
+     "end": 39.438
+    },
+    {
+     "w": "Send",
+     "start": 39.58,
+     "end": 39.837
+    },
+    {
+     "w": "this",
+     "start": 39.854,
+     "end": 40.111
+    },
+    {
+     "w": "to",
+     "start": 40.128,
+     "end": 40.354
+    },
+    {
+     "w": "the",
+     "start": 40.369,
+     "end": 40.611
+    },
+    {
+     "w": "friend",
+     "start": 40.626,
+     "end": 40.915
+    },
+    {
+     "w": "who",
+     "start": 40.934,
+     "end": 41.176
+    },
+    {
+     "w": "checks",
+     "start": 41.191,
+     "end": 41.48
+    },
+    {
+     "w": "all",
+     "start": 41.498,
+     "end": 41.74
+    },
+    {
+     "w": "five.",
+     "start": 41.756,
+     "end": 42.014
+    }
+   ]
+  }
+ ]
+}

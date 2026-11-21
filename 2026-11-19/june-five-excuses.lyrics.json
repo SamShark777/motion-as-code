@@ -1,0 +1,565 @@
+{
+ "lines": [
+  {
+   "text": "EXAM tomorrow. June's organizing her desk at 2 AM.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.39,
+   "words": [
+    {
+     "w": "EXAM",
+     "start": 0.15,
+     "end": 0.621
+    },
+    {
+     "w": "tomorrow.",
+     "start": 0.651,
+     "end": 1.39
+    },
+    {
+     "w": "June's",
+     "start": 1.566,
+     "end": 2.053
+    },
+    {
+     "w": "organizing",
+     "start": 2.084,
+     "end": 3.058
+    },
+    {
+     "w": "her",
+     "start": 3.121,
+     "end": 3.372
+    },
+    {
+     "w": "desk",
+     "start": 3.388,
+     "end": 3.656
+    },
+    {
+     "w": "at",
+     "start": 3.673,
+     "end": 3.909
+    },
+    {
+     "w": "2",
+     "start": 3.924,
+     "end": 4.127
+    },
+    {
+     "w": "AM.",
+     "start": 4.14,
+     "end": 4.375
+    }
+   ]
+  },
+  {
+   "text": "Five SIGNS you do this too.",
+   "sec": "cd",
+   "start": 4.71,
+   "end": 6.42,
+   "words": [
+    {
+     "w": "Five",
+     "start": 4.71,
+     "end": 4.986
+    },
+    {
+     "w": "SIGNS",
+     "start": 5.004,
+     "end": 5.297
+    },
+    {
+     "w": "you",
+     "start": 5.316,
+     "end": 5.575
+    },
+    {
+     "w": "do",
+     "start": 5.592,
+     "end": 5.835
+    },
+    {
+     "w": "this",
+     "start": 5.85,
+     "end": 6.126
+    },
+    {
+     "w": "too.",
+     "start": 6.144,
+     "end": 6.403
+    }
+   ]
+  },
+  {
+   "text": "It's not laziness. It's PROTECTION.",
+   "sec": "cd",
+   "start": 6.74,
+   "end": 9.42,
+   "words": [
+    {
+     "w": "It's",
+     "start": 6.74,
+     "end": 7.006
+    },
+    {
+     "w": "not",
+     "start": 7.023,
+     "end": 7.288
+    },
+    {
+     "w": "laziness.",
+     "start": 7.305,
+     "end": 8.085
+    },
+    {
+     "w": "It's",
+     "start": 8.271,
+     "end": 8.537
+    },
+    {
+     "w": "PROTECTION.",
+     "start": 8.554,
+     "end": 9.368
+    }
+   ]
+  },
+  {
+   "text": "One: you start the night BEFORE.",
+   "sec": "cd",
+   "start": 9.74,
+   "end": 11.8,
+   "words": [
+    {
+     "w": "One:",
+     "start": 9.74,
+     "end": 10.149
+    },
+    {
+     "w": "you",
+     "start": 10.292,
+     "end": 10.518
+    },
+    {
+     "w": "start",
+     "start": 10.533,
+     "end": 10.789
+    },
+    {
+     "w": "the",
+     "start": 10.805,
+     "end": 11.032
+    },
+    {
+     "w": "night",
+     "start": 11.046,
+     "end": 11.302
+    },
+    {
+     "w": "BEFORE.",
+     "start": 11.318,
+     "end": 11.771
+    }
+   ]
+  },
+  {
+   "text": "Two: 'I barely studied' comes out FIRST.",
+   "sec": "cd",
+   "start": 12.12,
+   "end": 16.02,
+   "words": [
+    {
+     "w": "Two:",
+     "start": 12.12,
+     "end": 12.445
+    },
+    {
+     "w": "'I",
+     "start": 12.633,
+     "end": 12.915
+    },
+    {
+     "w": "barely",
+     "start": 12.933,
+     "end": 13.845
+    },
+    {
+     "w": "studied'",
+     "start": 13.903,
+     "end": 14.573
+    },
+    {
+     "w": "comes",
+     "start": 14.616,
+     "end": 15.244
+    },
+    {
+     "w": "out",
+     "start": 15.285,
+     "end": 15.609
+    },
+    {
+     "w": "FIRST.",
+     "start": 15.63,
+     "end": 15.997
+    }
+   ]
+  },
+  {
+   "text": "Three: big day? Late NIGHT out.",
+   "sec": "cd",
+   "start": 16.34,
+   "end": 19.38,
+   "words": [
+    {
+     "w": "Three:",
+     "start": 16.34,
+     "end": 16.783
+    },
+    {
+     "w": "big",
+     "start": 17.013,
+     "end": 17.405
+    },
+    {
+     "w": "day?",
+     "start": 17.43,
+     "end": 17.822
+    },
+    {
+     "w": "Late",
+     "start": 18.048,
+     "end": 18.466
+    },
+    {
+     "w": "NIGHT",
+     "start": 18.492,
+     "end": 18.935
+    },
+    {
+     "w": "out.",
+     "start": 18.963,
+     "end": 19.355
+    }
+   ]
+  },
+  {
+   "text": "Four: you 'only gave it fifty PERCENT.'",
+   "sec": "cd",
+   "start": 19.7,
+   "end": 22.55,
+   "words": [
+    {
+     "w": "Four:",
+     "start": 19.7,
+     "end": 19.974
+    },
+    {
+     "w": "you",
+     "start": 20.124,
+     "end": 20.381
+    },
+    {
+     "w": "'only",
+     "start": 20.397,
+     "end": 20.878
+    },
+    {
+     "w": "gave",
+     "start": 20.909,
+     "end": 21.183
+    },
+    {
+     "w": "it",
+     "start": 21.2,
+     "end": 21.441
+    },
+    {
+     "w": "fifty",
+     "start": 21.456,
+     "end": 21.954
+    },
+    {
+     "w": "PERCENT.'",
+     "start": 21.985,
+     "end": 22.516
+    }
+   ]
+  },
+  {
+   "text": "Five: failing hurts less with an EXCUSE ready.",
+   "sec": "cd",
+   "start": 22.87,
+   "end": 26.28,
+   "words": [
+    {
+     "w": "Five:",
+     "start": 22.87,
+     "end": 23.161
+    },
+    {
+     "w": "failing",
+     "start": 23.32,
+     "end": 23.883
+    },
+    {
+     "w": "hurts",
+     "start": 23.919,
+     "end": 24.227
+    },
+    {
+     "w": "less",
+     "start": 24.247,
+     "end": 24.538
+    },
+    {
+     "w": "with",
+     "start": 24.556,
+     "end": 24.847
+    },
+    {
+     "w": "an",
+     "start": 24.865,
+     "end": 25.121
+    },
+    {
+     "w": "EXCUSE",
+     "start": 25.137,
+     "end": 25.683
+    },
+    {
+     "w": "ready.",
+     "start": 25.718,
+     "end": 26.246
+    }
+   ]
+  },
+  {
+   "text": "In 1978, students picked a pill before a TEST: boost or impair.",
+   "sec": "cd",
+   "start": 26.6,
+   "end": 32.13,
+   "words": [
+    {
+     "w": "In",
+     "start": 26.6,
+     "end": 26.89
+    },
+    {
+     "w": "1978,",
+     "start": 26.908,
+     "end": 27.158
+    },
+    {
+     "w": "students",
+     "start": 27.334,
+     "end": 27.994
+    },
+    {
+     "w": "picked",
+     "start": 28.036,
+     "end": 28.655
+    },
+    {
+     "w": "a",
+     "start": 28.695,
+     "end": 28.965
+    },
+    {
+     "w": "pill",
+     "start": 28.982,
+     "end": 29.312
+    },
+    {
+     "w": "before",
+     "start": 29.333,
+     "end": 29.953
+    },
+    {
+     "w": "a",
+     "start": 29.992,
+     "end": 30.262
+    },
+    {
+     "w": "TEST:",
+     "start": 30.28,
+     "end": 30.609
+    },
+    {
+     "w": "boost",
+     "start": 30.79,
+     "end": 31.14
+    },
+    {
+     "w": "or",
+     "start": 31.162,
+     "end": 31.452
+    },
+    {
+     "w": "impair.",
+     "start": 31.471,
+     "end": 32.09
+    }
+   ]
+  },
+  {
+   "text": "The unsure ones leaned IMPAIR.",
+   "sec": "cd",
+   "start": 32.45,
+   "end": 34.86,
+   "words": [
+    {
+     "w": "The",
+     "start": 32.45,
+     "end": 32.705
+    },
+    {
+     "w": "unsure",
+     "start": 32.722,
+     "end": 33.232
+    },
+    {
+     "w": "ones",
+     "start": 33.265,
+     "end": 33.743
+    },
+    {
+     "w": "leaned",
+     "start": 33.773,
+     "end": 34.284
+    },
+    {
+     "w": "IMPAIR.",
+     "start": 34.317,
+     "end": 34.827
+    }
+   ]
+  },
+  {
+   "text": "It's SELF-HANDICAPPING: a ready excuse.",
+   "sec": "cd",
+   "start": 35.18,
+   "end": 38.28,
+   "words": [
+    {
+     "w": "It's",
+     "start": 35.18,
+     "end": 35.437
+    },
+    {
+     "w": "SELF-HANDICAPPING:",
+     "start": 35.453,
+     "end": 36.753
+    },
+    {
+     "w": "a",
+     "start": 36.968,
+     "end": 37.191
+    },
+    {
+     "w": "ready",
+     "start": 37.206,
+     "end": 37.702
+    },
+    {
+     "w": "excuse.",
+     "start": 37.734,
+     "end": 38.247
+    }
+   ]
+  },
+  {
+   "text": "Go to BED. How many did you check? Send this to the friend who checked all five.",
+   "sec": "cd",
+   "start": 38.6,
+   "end": 43.61,
+   "words": [
+    {
+     "w": "Go",
+     "start": 38.6,
+     "end": 38.818
+    },
+    {
+     "w": "to",
+     "start": 38.832,
+     "end": 39.05
+    },
+    {
+     "w": "BED.",
+     "start": 39.063,
+     "end": 39.296
+    },
+    {
+     "w": "How",
+     "start": 39.431,
+     "end": 39.664
+    },
+    {
+     "w": "many",
+     "start": 39.679,
+     "end": 40.114
+    },
+    {
+     "w": "did",
+     "start": 40.142,
+     "end": 40.375
+    },
+    {
+     "w": "you",
+     "start": 40.39,
+     "end": 40.623
+    },
+    {
+     "w": "check?",
+     "start": 40.638,
+     "end": 40.9
+    },
+    {
+     "w": "Send",
+     "start": 41.037,
+     "end": 41.285
+    },
+    {
+     "w": "this",
+     "start": 41.301,
+     "end": 41.549
+    },
+    {
+     "w": "to",
+     "start": 41.564,
+     "end": 41.782
+    },
+    {
+     "w": "the",
+     "start": 41.796,
+     "end": 42.029
+    },
+    {
+     "w": "friend",
+     "start": 42.044,
+     "end": 42.322
+    },
+    {
+     "w": "who",
+     "start": 42.34,
+     "end": 42.572
+    },
+    {
+     "w": "checked",
+     "start": 42.587,
+     "end": 43.068
+    },
+    {
+     "w": "all",
+     "start": 43.099,
+     "end": 43.331
+    },
+    {
+     "w": "five.",
+     "start": 43.346,
+     "end": 43.594
+    }
+   ]
+  }
+ ]
+}

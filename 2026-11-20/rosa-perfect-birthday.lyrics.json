@@ -1,0 +1,554 @@
+{
+ "lines": [
+  {
+   "text": "Rosa's birthday has to be the HAPPIEST night of her life.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.07,
+   "words": [
+    {
+     "w": "Rosa's",
+     "start": 0.15,
+     "end": 0.524
+    },
+    {
+     "w": "birthday",
+     "start": 0.548,
+     "end": 0.96
+    },
+    {
+     "w": "has",
+     "start": 0.986,
+     "end": 1.18
+    },
+    {
+     "w": "to",
+     "start": 1.192,
+     "end": 1.373
+    },
+    {
+     "w": "be",
+     "start": 1.384,
+     "end": 1.565
+    },
+    {
+     "w": "the",
+     "start": 1.577,
+     "end": 1.77
+    },
+    {
+     "w": "HAPPIEST",
+     "start": 1.783,
+     "end": 2.194
+    },
+    {
+     "w": "night",
+     "start": 2.221,
+     "end": 2.439
+    },
+    {
+     "w": "of",
+     "start": 2.453,
+     "end": 2.634
+    },
+    {
+     "w": "her",
+     "start": 2.645,
+     "end": 2.839
+    },
+    {
+     "w": "life.",
+     "start": 2.851,
+     "end": 3.057
+    }
+   ]
+  },
+  {
+   "text": "You've done this too. The night that had to be PERFECT.",
+   "sec": "cd",
+   "start": 3.39,
+   "end": 7.42,
+   "words": [
+    {
+     "w": "You've",
+     "start": 3.39,
+     "end": 3.722
+    },
+    {
+     "w": "done",
+     "start": 3.744,
+     "end": 4.057
+    },
+    {
+     "w": "this",
+     "start": 4.077,
+     "end": 4.39
+    },
+    {
+     "w": "too.",
+     "start": 4.41,
+     "end": 4.704
+    },
+    {
+     "w": "The",
+     "start": 4.875,
+     "end": 5.169
+    },
+    {
+     "w": "night",
+     "start": 5.188,
+     "end": 5.52
+    },
+    {
+     "w": "that",
+     "start": 5.541,
+     "end": 5.855
+    },
+    {
+     "w": "had",
+     "start": 5.875,
+     "end": 6.169
+    },
+    {
+     "w": "to",
+     "start": 6.188,
+     "end": 6.463
+    },
+    {
+     "w": "be",
+     "start": 6.481,
+     "end": 6.756
+    },
+    {
+     "w": "PERFECT.",
+     "start": 6.774,
+     "end": 7.381
+    }
+   ]
+  },
+  {
+   "text": "But trying this HARD is what's ruining it.",
+   "sec": "cd",
+   "start": 7.74,
+   "end": 10.22,
+   "words": [
+    {
+     "w": "But",
+     "start": 7.74,
+     "end": 7.988
+    },
+    {
+     "w": "trying",
+     "start": 8.004,
+     "end": 8.301
+    },
+    {
+     "w": "this",
+     "start": 8.32,
+     "end": 8.584
+    },
+    {
+     "w": "HARD",
+     "start": 8.601,
+     "end": 8.865
+    },
+    {
+     "w": "is",
+     "start": 8.882,
+     "end": 9.114
+    },
+    {
+     "w": "what's",
+     "start": 9.129,
+     "end": 9.41
+    },
+    {
+     "w": "ruining",
+     "start": 9.427,
+     "end": 9.94
+    },
+    {
+     "w": "it.",
+     "start": 9.973,
+     "end": 10.205
+    }
+   ]
+  },
+  {
+   "text": "She keeps checking: 'Happy YET?'",
+   "sec": "cd",
+   "start": 10.54,
+   "end": 13.33,
+   "words": [
+    {
+     "w": "She",
+     "start": 10.54,
+     "end": 10.882
+    },
+    {
+     "w": "keeps",
+     "start": 10.903,
+     "end": 11.289
+    },
+    {
+     "w": "checking:",
+     "start": 11.314,
+     "end": 12.041
+    },
+    {
+     "w": "'Happy",
+     "start": 12.263,
+     "end": 12.924
+    },
+    {
+     "w": "YET?'",
+     "start": 12.967,
+     "end": 13.308
+    }
+   ]
+  },
+  {
+   "text": "In 2011, people read an article PRAISING happiness.",
+   "sec": "cd",
+   "start": 13.65,
+   "end": 16.76,
+   "words": [
+    {
+     "w": "In",
+     "start": 13.65,
+     "end": 13.842
+    },
+    {
+     "w": "2011,",
+     "start": 13.855,
+     "end": 14.02
+    },
+    {
+     "w": "people",
+     "start": 14.137,
+     "end": 14.548
+    },
+    {
+     "w": "read",
+     "start": 14.574,
+     "end": 14.793
+    },
+    {
+     "w": "an",
+     "start": 14.807,
+     "end": 14.999
+    },
+    {
+     "w": "article",
+     "start": 15.011,
+     "end": 15.601
+    },
+    {
+     "w": "PRAISING",
+     "start": 15.639,
+     "end": 16.076
+    },
+    {
+     "w": "happiness.",
+     "start": 16.104,
+     "end": 16.721
+    }
+   ]
+  },
+  {
+   "text": "Then a happy film. They felt LESS happy than the others.",
+   "sec": "cd",
+   "start": 17.08,
+   "end": 21.01,
+   "words": [
+    {
+     "w": "Then",
+     "start": 17.08,
+     "end": 17.349
+    },
+    {
+     "w": "a",
+     "start": 17.366,
+     "end": 17.586
+    },
+    {
+     "w": "happy",
+     "start": 17.601,
+     "end": 18.09
+    },
+    {
+     "w": "film.",
+     "start": 18.121,
+     "end": 18.39
+    },
+    {
+     "w": "They",
+     "start": 18.537,
+     "end": 18.807
+    },
+    {
+     "w": "felt",
+     "start": 18.824,
+     "end": 19.093
+    },
+    {
+     "w": "LESS",
+     "start": 19.11,
+     "end": 19.379
+    },
+    {
+     "w": "happy",
+     "start": 19.396,
+     "end": 19.886
+    },
+    {
+     "w": "than",
+     "start": 19.917,
+     "end": 20.186
+    },
+    {
+     "w": "the",
+     "start": 20.203,
+     "end": 20.456
+    },
+    {
+     "w": "others.",
+     "start": 20.472,
+     "end": 20.978
+    }
+   ]
+  },
+  {
+   "text": "Chasing happiness makes you GRADE it. Grades disappoint.",
+   "sec": "cd",
+   "start": 21.33,
+   "end": 25.51,
+   "words": [
+    {
+     "w": "Chasing",
+     "start": 21.33,
+     "end": 21.85
+    },
+    {
+     "w": "happiness",
+     "start": 21.883,
+     "end": 22.638
+    },
+    {
+     "w": "makes",
+     "start": 22.686,
+     "end": 23.173
+    },
+    {
+     "w": "you",
+     "start": 23.204,
+     "end": 23.456
+    },
+    {
+     "w": "GRADE",
+     "start": 23.472,
+     "end": 23.756
+    },
+    {
+     "w": "it.",
+     "start": 23.774,
+     "end": 24.01
+    },
+    {
+     "w": "Grades",
+     "start": 24.154,
+     "end": 24.657
+    },
+    {
+     "w": "disappoint.",
+     "start": 24.69,
+     "end": 25.461
+    }
+   ]
+  },
+  {
+   "text": "Think of the New Year's you OVER-PLANNED. Yeah, that one.",
+   "sec": "cd",
+   "start": 25.83,
+   "end": 28.91,
+   "words": [
+    {
+     "w": "Think",
+     "start": 25.83,
+     "end": 26.047
+    },
+    {
+     "w": "of",
+     "start": 26.061,
+     "end": 26.242
+    },
+    {
+     "w": "the",
+     "start": 26.253,
+     "end": 26.446
+    },
+    {
+     "w": "New",
+     "start": 26.458,
+     "end": 26.65
+    },
+    {
+     "w": "Year's",
+     "start": 26.663,
+     "end": 26.88
+    },
+    {
+     "w": "you",
+     "start": 26.894,
+     "end": 27.087
+    },
+    {
+     "w": "OVER-PLANNED.",
+     "start": 27.099,
+     "end": 27.857
+    },
+    {
+     "w": "Yeah,",
+     "start": 28.005,
+     "end": 28.21
+    },
+    {
+     "w": "that",
+     "start": 28.322,
+     "end": 28.527
+    },
+    {
+     "w": "one.",
+     "start": 28.54,
+     "end": 28.888
+    }
+   ]
+  },
+  {
+   "text": "Nia drops the cake. Rosa finally LAUGHS.",
+   "sec": "cd",
+   "start": 29.23,
+   "end": 32.43,
+   "words": [
+    {
+     "w": "Nia",
+     "start": 29.23,
+     "end": 29.513
+    },
+    {
+     "w": "drops",
+     "start": 29.532,
+     "end": 29.852
+    },
+    {
+     "w": "the",
+     "start": 29.872,
+     "end": 30.155
+    },
+    {
+     "w": "cake.",
+     "start": 30.173,
+     "end": 30.475
+    },
+    {
+     "w": "Rosa",
+     "start": 30.64,
+     "end": 31.171
+    },
+    {
+     "w": "finally",
+     "start": 31.204,
+     "end": 32.018
+    },
+    {
+     "w": "LAUGHS.",
+     "start": 32.07,
+     "end": 32.408
+    }
+   ]
+  },
+  {
+   "text": "Stop GRADING. Which night was yours? Send this to the friend planning a perfect birthday.",
+   "sec": "cd",
+   "start": 32.75,
+   "end": 38.25,
+   "words": [
+    {
+     "w": "Stop",
+     "start": 32.75,
+     "end": 33.013
+    },
+    {
+     "w": "GRADING.",
+     "start": 33.03,
+     "end": 33.539
+    },
+    {
+     "w": "Which",
+     "start": 33.699,
+     "end": 33.978
+    },
+    {
+     "w": "night",
+     "start": 33.996,
+     "end": 34.275
+    },
+    {
+     "w": "was",
+     "start": 34.292,
+     "end": 34.539
+    },
+    {
+     "w": "yours?",
+     "start": 34.555,
+     "end": 34.834
+    },
+    {
+     "w": "Send",
+     "start": 34.979,
+     "end": 35.242
+    },
+    {
+     "w": "this",
+     "start": 35.258,
+     "end": 35.521
+    },
+    {
+     "w": "to",
+     "start": 35.538,
+     "end": 35.769
+    },
+    {
+     "w": "the",
+     "start": 35.784,
+     "end": 36.031
+    },
+    {
+     "w": "friend",
+     "start": 36.047,
+     "end": 36.341
+    },
+    {
+     "w": "planning",
+     "start": 36.36,
+     "end": 36.886
+    },
+    {
+     "w": "a",
+     "start": 36.919,
+     "end": 37.135
+    },
+    {
+     "w": "perfect",
+     "start": 37.148,
+     "end": 37.658
+    },
+    {
+     "w": "birthday.",
+     "start": 37.691,
+     "end": 38.216
+    }
+   ]
+  }
+ ]
+}

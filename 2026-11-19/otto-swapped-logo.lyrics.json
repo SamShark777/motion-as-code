@@ -1,0 +1,512 @@
+{
+ "lines": [
+  {
+   "text": "Otto picks the red LOGO. Certain.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 4.12,
+   "words": [
+    {
+     "w": "Otto",
+     "start": 0.15,
+     "end": 0.891
+    },
+    {
+     "w": "picks",
+     "start": 0.939,
+     "end": 1.386
+    },
+    {
+     "w": "the",
+     "start": 1.414,
+     "end": 1.811
+    },
+    {
+     "w": "red",
+     "start": 1.836,
+     "end": 2.232
+    },
+    {
+     "w": "LOGO.",
+     "start": 2.257,
+     "end": 2.999
+    },
+    {
+     "w": "Certain.",
+     "start": 3.25,
+     "end": 4.068
+    }
+   ]
+  },
+  {
+   "text": "You'd notice a SWAP, right?",
+   "sec": "cd",
+   "start": 4.44,
+   "end": 6.42,
+   "words": [
+    {
+     "w": "You'd",
+     "start": 4.44,
+     "end": 4.74
+    },
+    {
+     "w": "notice",
+     "start": 4.759,
+     "end": 5.322
+    },
+    {
+     "w": "a",
+     "start": 5.358,
+     "end": 5.603
+    },
+    {
+     "w": "SWAP,",
+     "start": 5.618,
+     "end": 5.918
+    },
+    {
+     "w": "right?",
+     "start": 6.082,
+     "end": 6.4
+    }
+   ]
+  },
+  {
+   "text": "Most people DON'T.",
+   "sec": "cd",
+   "start": 6.74,
+   "end": 8.04,
+   "words": [
+    {
+     "w": "Most",
+     "start": 6.74,
+     "end": 7.055
+    },
+    {
+     "w": "people",
+     "start": 7.075,
+     "end": 7.667
+    },
+    {
+     "w": "DON'T.",
+     "start": 7.705,
+     "end": 8.02
+    }
+   ]
+  },
+  {
+   "text": "In 2005, 120 people picked the more attractive of two FACES.",
+   "sec": "cd",
+   "start": 8.36,
+   "end": 14.4,
+   "words": [
+    {
+     "w": "In",
+     "start": 8.36,
+     "end": 8.691
+    },
+    {
+     "w": "2005,",
+     "start": 8.712,
+     "end": 8.998
+    },
+    {
+     "w": "120",
+     "start": 9.199,
+     "end": 9.484
+    },
+    {
+     "w": "people",
+     "start": 9.502,
+     "end": 10.211
+    },
+    {
+     "w": "picked",
+     "start": 10.256,
+     "end": 10.964
+    },
+    {
+     "w": "the",
+     "start": 11.009,
+     "end": 11.363
+    },
+    {
+     "w": "more",
+     "start": 11.386,
+     "end": 11.763
+    },
+    {
+     "w": "attractive",
+     "start": 11.787,
+     "end": 12.872
+    },
+    {
+     "w": "of",
+     "start": 12.942,
+     "end": 13.273
+    },
+    {
+     "w": "two",
+     "start": 13.294,
+     "end": 13.648
+    },
+    {
+     "w": "FACES.",
+     "start": 13.671,
+     "end": 14.356
+    }
+   ]
+  },
+  {
+   "text": "Sleight of hand: they got the OTHER one.",
+   "sec": "cd",
+   "start": 14.72,
+   "end": 17.41,
+   "words": [
+    {
+     "w": "Sleight",
+     "start": 14.72,
+     "end": 15.022
+    },
+    {
+     "w": "of",
+     "start": 15.041,
+     "end": 15.265
+    },
+    {
+     "w": "hand:",
+     "start": 15.279,
+     "end": 15.535
+    },
+    {
+     "w": "they",
+     "start": 15.674,
+     "end": 15.929
+    },
+    {
+     "w": "got",
+     "start": 15.946,
+     "end": 16.185
+    },
+    {
+     "w": "the",
+     "start": 16.201,
+     "end": 16.44
+    },
+    {
+     "w": "OTHER",
+     "start": 16.456,
+     "end": 16.92
+    },
+    {
+     "w": "one.",
+     "start": 16.949,
+     "end": 17.382
+    }
+   ]
+  },
+  {
+   "text": "Only 13% of swaps were caught right AWAY.",
+   "sec": "cd",
+   "start": 17.73,
+   "end": 21.9,
+   "words": [
+    {
+     "w": "Only",
+     "start": 17.73,
+     "end": 18.463
+    },
+    {
+     "w": "13%",
+     "start": 18.51,
+     "end": 18.826
+    },
+    {
+     "w": "of",
+     "start": 18.846,
+     "end": 19.213
+    },
+    {
+     "w": "swaps",
+     "start": 19.237,
+     "end": 19.679
+    },
+    {
+     "w": "were",
+     "start": 19.707,
+     "end": 20.125
+    },
+    {
+     "w": "caught",
+     "start": 20.151,
+     "end": 20.619
+    },
+    {
+     "w": "right",
+     "start": 20.649,
+     "end": 21.092
+    },
+    {
+     "w": "AWAY.",
+     "start": 21.12,
+     "end": 21.853
+    }
+   ]
+  },
+  {
+   "text": "And they explained WHY they chose it.",
+   "sec": "cd",
+   "start": 22.22,
+   "end": 24.42,
+   "words": [
+    {
+     "w": "And",
+     "start": 22.22,
+     "end": 22.445
+    },
+    {
+     "w": "they",
+     "start": 22.459,
+     "end": 22.699
+    },
+    {
+     "w": "explained",
+     "start": 22.714,
+     "end": 23.389
+    },
+    {
+     "w": "WHY",
+     "start": 23.432,
+     "end": 23.657
+    },
+    {
+     "w": "they",
+     "start": 23.671,
+     "end": 23.911
+    },
+    {
+     "w": "chose",
+     "start": 23.926,
+     "end": 24.18
+    },
+    {
+     "w": "it.",
+     "start": 24.196,
+     "end": 24.407
+    }
+   ]
+  },
+  {
+   "text": "That's choice BLINDNESS.",
+   "sec": "cd",
+   "start": 24.74,
+   "end": 26.24,
+   "words": [
+    {
+     "w": "That's",
+     "start": 24.74,
+     "end": 25.092
+    },
+    {
+     "w": "choice",
+     "start": 25.115,
+     "end": 25.488
+    },
+    {
+     "w": "BLINDNESS.",
+     "start": 25.511,
+     "end": 26.196
+    }
+   ]
+  },
+  {
+   "text": "Think of a pick you'd DEFEND forever. Yeah, that one.",
+   "sec": "cd",
+   "start": 26.56,
+   "end": 32.99,
+   "words": [
+    {
+     "w": "Think",
+     "start": 26.56,
+     "end": 27.02
+    },
+    {
+     "w": "of",
+     "start": 27.049,
+     "end": 27.43
+    },
+    {
+     "w": "a",
+     "start": 27.455,
+     "end": 27.809
+    },
+    {
+     "w": "pick",
+     "start": 27.832,
+     "end": 28.266
+    },
+    {
+     "w": "you'd",
+     "start": 28.293,
+     "end": 28.727
+    },
+    {
+     "w": "DEFEND",
+     "start": 28.755,
+     "end": 29.569
+    },
+    {
+     "w": "forever.",
+     "start": 29.621,
+     "end": 30.791
+    },
+    {
+     "w": "Yeah,",
+     "start": 31.075,
+     "end": 31.509
+    },
+    {
+     "w": "that",
+     "start": 31.746,
+     "end": 32.179
+    },
+    {
+     "w": "one.",
+     "start": 32.207,
+     "end": 32.943
+    }
+   ]
+  },
+  {
+   "text": "Otto praises the blue logo. He picked RED.",
+   "sec": "cd",
+   "start": 33.31,
+   "end": 37.03,
+   "words": [
+    {
+     "w": "Otto",
+     "start": 33.31,
+     "end": 33.842
+    },
+    {
+     "w": "praises",
+     "start": 33.876,
+     "end": 34.464
+    },
+    {
+     "w": "the",
+     "start": 34.501,
+     "end": 34.786
+    },
+    {
+     "w": "blue",
+     "start": 34.804,
+     "end": 35.107
+    },
+    {
+     "w": "logo.",
+     "start": 35.126,
+     "end": 35.658
+    },
+    {
+     "w": "He",
+     "start": 35.839,
+     "end": 36.105
+    },
+    {
+     "w": "picked",
+     "start": 36.122,
+     "end": 36.691
+    },
+    {
+     "w": "RED.",
+     "start": 36.727,
+     "end": 37.012
+    }
+   ]
+  },
+  {
+   "text": "Ever defended a pick you didn't MAKE? Send this to the friend who's never wrong.",
+   "sec": "cd",
+   "start": 37.35,
+   "end": 42.25,
+   "words": [
+    {
+     "w": "Ever",
+     "start": 37.35,
+     "end": 37.785
+    },
+    {
+     "w": "defended",
+     "start": 37.813,
+     "end": 38.495
+    },
+    {
+     "w": "a",
+     "start": 38.539,
+     "end": 38.742
+    },
+    {
+     "w": "pick",
+     "start": 38.755,
+     "end": 39.002
+    },
+    {
+     "w": "you",
+     "start": 39.018,
+     "end": 39.25
+    },
+    {
+     "w": "didn't",
+     "start": 39.265,
+     "end": 39.528
+    },
+    {
+     "w": "MAKE?",
+     "start": 39.545,
+     "end": 39.792
+    },
+    {
+     "w": "Send",
+     "start": 39.928,
+     "end": 40.175
+    },
+    {
+     "w": "this",
+     "start": 40.191,
+     "end": 40.439
+    },
+    {
+     "w": "to",
+     "start": 40.454,
+     "end": 40.672
+    },
+    {
+     "w": "the",
+     "start": 40.686,
+     "end": 40.918
+    },
+    {
+     "w": "friend",
+     "start": 40.933,
+     "end": 41.211
+    },
+    {
+     "w": "who's",
+     "start": 41.228,
+     "end": 41.476
+    },
+    {
+     "w": "never",
+     "start": 41.492,
+     "end": 41.942
+    },
+    {
+     "w": "wrong.",
+     "start": 41.971,
+     "end": 42.233
+    }
+   ]
+  }
+ ]
+}

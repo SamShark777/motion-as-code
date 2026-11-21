@@ -1,0 +1,488 @@
+{
+ "lines": [
+  {
+   "text": "Leo's GROUP CHAT skips his message. Again.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.83,
+   "words": [
+    {
+     "w": "Leo's",
+     "start": 0.15,
+     "end": 0.523
+    },
+    {
+     "w": "GROUP",
+     "start": 0.547,
+     "end": 0.943
+    },
+    {
+     "w": "CHAT",
+     "start": 0.968,
+     "end": 1.341
+    },
+    {
+     "w": "skips",
+     "start": 1.365,
+     "end": 1.76
+    },
+    {
+     "w": "his",
+     "start": 1.786,
+     "end": 2.136
+    },
+    {
+     "w": "message.",
+     "start": 2.158,
+     "end": 2.882
+    },
+    {
+     "w": "Again.",
+     "start": 3.108,
+     "end": 3.787
+    }
+   ]
+  },
+  {
+   "text": "You know this sting. Tiny thing. Ruins your NIGHT.",
+   "sec": "cd",
+   "start": 4.15,
+   "end": 8.64,
+   "words": [
+    {
+     "w": "You",
+     "start": 4.15,
+     "end": 4.515
+    },
+    {
+     "w": "know",
+     "start": 4.539,
+     "end": 4.928
+    },
+    {
+     "w": "this",
+     "start": 4.953,
+     "end": 5.342
+    },
+    {
+     "w": "sting.",
+     "start": 5.367,
+     "end": 5.779
+    },
+    {
+     "w": "Tiny",
+     "start": 5.994,
+     "end": 6.677
+    },
+    {
+     "w": "thing.",
+     "start": 6.721,
+     "end": 7.134
+    },
+    {
+     "w": "Ruins",
+     "start": 7.348,
+     "end": 7.761
+    },
+    {
+     "w": "your",
+     "start": 7.787,
+     "end": 8.176
+    },
+    {
+     "w": "NIGHT.",
+     "start": 8.201,
+     "end": 8.614
+    }
+   ]
+  },
+  {
+   "text": "You're not being DRAMATIC. It's wiring.",
+   "sec": "cd",
+   "start": 8.96,
+   "end": 11.94,
+   "words": [
+    {
+     "w": "You're",
+     "start": 8.96,
+     "end": 9.287
+    },
+    {
+     "w": "not",
+     "start": 9.308,
+     "end": 9.597
+    },
+    {
+     "w": "being",
+     "start": 9.616,
+     "end": 9.942
+    },
+    {
+     "w": "DRAMATIC.",
+     "start": 9.963,
+     "end": 10.813
+    },
+    {
+     "w": "It's",
+     "start": 11.016,
+     "end": 11.306
+    },
+    {
+     "w": "wiring.",
+     "start": 11.324,
+     "end": 11.903
+    }
+   ]
+  },
+  {
+   "text": "In 2000, 1,486 people played an online game of CATCH.",
+   "sec": "cd",
+   "start": 12.26,
+   "end": 18.62,
+   "words": [
+    {
+     "w": "In",
+     "start": 12.26,
+     "end": 12.715
+    },
+    {
+     "w": "2000,",
+     "start": 12.744,
+     "end": 13.136
+    },
+    {
+     "w": "1,486",
+     "start": 13.412,
+     "end": 13.804
+    },
+    {
+     "w": "people",
+     "start": 13.829,
+     "end": 14.802
+    },
+    {
+     "w": "played",
+     "start": 14.864,
+     "end": 15.445
+    },
+    {
+     "w": "an",
+     "start": 15.482,
+     "end": 15.937
+    },
+    {
+     "w": "online",
+     "start": 15.966,
+     "end": 16.939
+    },
+    {
+     "w": "game",
+     "start": 17.001,
+     "end": 17.519
+    },
+    {
+     "w": "of",
+     "start": 17.552,
+     "end": 18.007
+    },
+    {
+     "w": "CATCH.",
+     "start": 18.036,
+     "end": 18.585
+    }
+   ]
+  },
+  {
+   "text": "Left out for just a few MINUTES, they felt sad and angry.",
+   "sec": "cd",
+   "start": 18.94,
+   "end": 24.62,
+   "words": [
+    {
+     "w": "Left",
+     "start": 18.94,
+     "end": 19.309
+    },
+    {
+     "w": "out",
+     "start": 19.332,
+     "end": 19.678
+    },
+    {
+     "w": "for",
+     "start": 19.701,
+     "end": 20.047
+    },
+    {
+     "w": "just",
+     "start": 20.069,
+     "end": 20.437
+    },
+    {
+     "w": "a",
+     "start": 20.461,
+     "end": 20.763
+    },
+    {
+     "w": "few",
+     "start": 20.782,
+     "end": 21.128
+    },
+    {
+     "w": "MINUTES,",
+     "start": 21.15,
+     "end": 22.144
+    },
+    {
+     "w": "they",
+     "start": 22.386,
+     "end": 22.755
+    },
+    {
+     "w": "felt",
+     "start": 22.778,
+     "end": 23.147
+    },
+    {
+     "w": "sad",
+     "start": 23.17,
+     "end": 23.517
+    },
+    {
+     "w": "and",
+     "start": 23.539,
+     "end": 23.885
+    },
+    {
+     "w": "angry.",
+     "start": 23.907,
+     "end": 24.577
+    }
+   ]
+  },
+  {
+   "text": "Brain scans: it lights a region tied to PAIN. Social pain is real.",
+   "sec": "cd",
+   "start": 24.94,
+   "end": 31.25,
+   "words": [
+    {
+     "w": "Brain",
+     "start": 24.94,
+     "end": 25.349
+    },
+    {
+     "w": "scans:",
+     "start": 25.376,
+     "end": 25.785
+    },
+    {
+     "w": "it",
+     "start": 25.998,
+     "end": 26.337
+    },
+    {
+     "w": "lights",
+     "start": 26.359,
+     "end": 26.792
+    },
+    {
+     "w": "a",
+     "start": 26.819,
+     "end": 27.135
+    },
+    {
+     "w": "region",
+     "start": 27.155,
+     "end": 27.881
+    },
+    {
+     "w": "tied",
+     "start": 27.927,
+     "end": 28.313
+    },
+    {
+     "w": "to",
+     "start": 28.338,
+     "end": 28.677
+    },
+    {
+     "w": "PAIN.",
+     "start": 28.699,
+     "end": 29.085
+    },
+    {
+     "w": "Social",
+     "start": 29.296,
+     "end": 30.021
+    },
+    {
+     "w": "pain",
+     "start": 30.068,
+     "end": 30.454
+    },
+    {
+     "w": "is",
+     "start": 30.478,
+     "end": 30.818
+    },
+    {
+     "w": "real.",
+     "start": 30.839,
+     "end": 31.225
+    }
+   ]
+  },
+  {
+   "text": "Think of the 'seen' with NO reply. Yeah, that one.",
+   "sec": "cd",
+   "start": 31.57,
+   "end": 37.33,
+   "words": [
+    {
+     "w": "Think",
+     "start": 31.57,
+     "end": 32.041
+    },
+    {
+     "w": "of",
+     "start": 32.071,
+     "end": 32.462
+    },
+    {
+     "w": "the",
+     "start": 32.487,
+     "end": 32.905
+    },
+    {
+     "w": "'seen'",
+     "start": 32.931,
+     "end": 33.376
+    },
+    {
+     "w": "with",
+     "start": 33.404,
+     "end": 33.848
+    },
+    {
+     "w": "NO",
+     "start": 33.877,
+     "end": 34.267
+    },
+    {
+     "w": "reply.",
+     "start": 34.292,
+     "end": 35.101
+    },
+    {
+     "w": "Yeah,",
+     "start": 35.367,
+     "end": 35.811
+    },
+    {
+     "w": "that",
+     "start": 36.055,
+     "end": 36.499
+    },
+    {
+     "w": "one.",
+     "start": 36.528,
+     "end": 37.282
+    }
+   ]
+  },
+  {
+   "text": "Priya: you're not TOO much. Ever been left out? Send this to the friend who got skipped.",
+   "sec": "cd",
+   "start": 37.65,
+   "end": 45.18,
+   "words": [
+    {
+     "w": "Priya:",
+     "start": 37.65,
+     "end": 38.029
+    },
+    {
+     "w": "you're",
+     "start": 38.226,
+     "end": 38.604
+    },
+    {
+     "w": "not",
+     "start": 38.629,
+     "end": 38.964
+    },
+    {
+     "w": "TOO",
+     "start": 38.986,
+     "end": 39.321
+    },
+    {
+     "w": "much.",
+     "start": 39.343,
+     "end": 39.7
+    },
+    {
+     "w": "Ever",
+     "start": 39.895,
+     "end": 40.523
+    },
+    {
+     "w": "been",
+     "start": 40.563,
+     "end": 40.92
+    },
+    {
+     "w": "left",
+     "start": 40.943,
+     "end": 41.3
+    },
+    {
+     "w": "out?",
+     "start": 41.323,
+     "end": 41.658
+    },
+    {
+     "w": "Send",
+     "start": 41.853,
+     "end": 42.21
+    },
+    {
+     "w": "this",
+     "start": 42.232,
+     "end": 42.59
+    },
+    {
+     "w": "to",
+     "start": 42.612,
+     "end": 42.926
+    },
+    {
+     "w": "the",
+     "start": 42.946,
+     "end": 43.282
+    },
+    {
+     "w": "friend",
+     "start": 43.303,
+     "end": 43.704
+    },
+    {
+     "w": "who",
+     "start": 43.729,
+     "end": 44.065
+    },
+    {
+     "w": "got",
+     "start": 44.086,
+     "end": 44.422
+    },
+    {
+     "w": "skipped.",
+     "start": 44.443,
+     "end": 45.136
+    }
+   ]
+  }
+ ]
+}
