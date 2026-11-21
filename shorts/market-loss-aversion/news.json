@@ -1,0 +1,178 @@
+{
+ "slug": "market-loss-aversion",
+ "masthead": "SAT · NOV 21",
+ "music": "0bf2e31074.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Stocks just had their worst week in over a year. My app is all red!",
+   "board": {
+    "headline": "WORST WEEK\nIN OVER A YEAR"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "On Friday the Nasdaq fell about 5%. The S&P 500 and the Dow closed in correction, more than 10% off their highs.",
+   "say": "On Friday, the Nasdaq fell about five percent. The S and P five hundred and the Dow closed in correction. More than ten percent off their highs.",
+   "board": {
+    "headline": "WORST WEEK\nIN OVER A YEAR",
+    "chips": [
+     {
+      "text": "NASDAQ ▼ ~5%",
+      "color": "red",
+      "at": 1.2
+     },
+     {
+      "text": "S&P 500 + DOW",
+      "color": "paper",
+      "at": 3.4
+     },
+     {
+      "text": "IN CORRECTION",
+      "color": "mus",
+      "at": 5.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The AI sell-off deepened. Nvidia dropped about 14%, and the Nasdaq is now down for the year.",
+   "say": "The A.I. sell-off deepened. Nvidia dropped about fourteen percent, and the Nasdaq is now down for the year.",
+   "board": {
+    "card": {
+     "title": "FRIDAY, NOV 20",
+     "body": "The AI sell-off deepened. The Nasdaq is now down for 2026."
+    },
+    "chips": [
+     {
+      "text": "NVDA ▼ ~14%",
+      "color": "red",
+      "at": 1.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "That's it. I'm selling everything before it hits zero!",
+   "brow": "down",
+   "board": {
+    "headline": "SELL\nEVERYTHING?",
+    "chips": [
+     {
+      "text": "\"GET ME OUT!\"",
+      "color": "red",
+      "at": 1.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's loss aversion talking.",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "LOSS AVERSION",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1979, Daniel Kahneman and Amos Tversky showed that losses loom larger than gains. Roughly twice as large.",
+   "say": "In nineteen seventy-nine, Daniel Kahneman and Amos Tversky showed that losses loom larger than gains. Roughly twice as large.",
+   "board": {
+    "card": {
+     "title": "KAHNEMAN & TVERSKY · 1979",
+     "body": "Losing $100 hurts more than winning $100 feels good."
+    },
+    "stamp": {
+     "text": "~2× LOUDER",
+     "at": 5.2
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So a red week feels like the end of the world?",
+   "board": {
+    "bar": {
+     "label": "WHAT HAPPENED",
+     "sub": "how it FEELS: ~2× WORSE",
+     "fill": 0.9
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "It feels twice as loud. And checking every hour means you feel every single dip.",
+   "board": {
+    "bar": {
+     "label": "WHAT HAPPENED",
+     "sub": "how it FEELS: ~2× WORSE",
+     "fill": 0.9
+    },
+    "chips": [
+     {
+      "text": "CHECKED: EVERY HOUR",
+      "color": "mus",
+      "at": 2.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "So notice the fear first. Then decide.",
+   "board": {
+    "headline": "FEEL IT.\nTHEN DECIDE."
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Okay. Phone down. After one more look.",
+   "board": {
+    "headline": "FEEL IT.\nTHEN DECIDE.",
+    "chips": [
+     {
+      "text": "PHONE DOWN",
+      "color": "teal",
+      "at": 0.6
+     },
+     {
+      "text": "...ONE MORE LOOK",
+      "color": "mus",
+      "at": 1.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Not financial advice. Just your brain.",
+   "board": {
+    "stamp": {
+     "text": "NOT FINANCIAL ADVICE",
+     "at": 0.2
+    },
+    "big": {
+     "text": "JUST YOUR BRAIN",
+     "color": "ink"
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Be honest: panic sell, hold, or not even looking? Tell us in the comments.",
+   "board": {
+    "vote": [
+     "PANIC SELL",
+     "HOLD",
+     "NOT LOOKING"
+    ]
+   }
+  }
+ ]
+}

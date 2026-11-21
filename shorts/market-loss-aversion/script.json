@@ -1,0 +1,32 @@
+{
+ "slug": "market-loss-aversion",
+ "no": 229,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Be honest: panic sell, hold, or not even looking?",
+ "note": "Daily news-psych 2026-11-21. CONFIRMED by Yahoo Finance live blog (Nov 20, 2026) and AP figures via FinChannel (Nov 20, 2026), also matching The Closing Print / CappNotes: Fri Nov 20 Nasdaq -5.28% to 22,617.73 and negative for 2026; S&P 500 -3.70% and Dow -1.93%, both closed in correction (10%+ off peaks); Nvidia -14.0% to $125.53; S&P worst week in more than a year (~-8.6% wk, Nasdaq ~-10% wk); driven by an AI-stock sell-off. Left out: reports of an SEC accounting examination of Nvidia (reported, single-chain, not used). Psychology: loss aversion - Kahneman & Tversky (1979), 'Prospect Theory: An Analysis of Decision under Risk', Econometrica: losses loom larger than gains; ~2x ratio from Tversky & Kahneman (1992) estimates (lambda ~2.25). 'Checking every hour' reframe = myopic loss aversion (Benartzi & Thaler 1995), not named on screen. Not financial advice (said on screen). Music: Scissors (0bf2e31074).",
+ "post": {
+  "title": "Stocks Just Had Their Worst Week in a Year. Here's Why It Hurts So Much. #shorts",
+  "description": "Be honest: panic sell, hold, or not even looking? Comment below. On Friday, Nov 20, 2026, the Nasdaq fell about 5% and is now down for the year, while the S&P 500 and the Dow closed in correction, more than 10% below their highs, as an AI-stock sell-off deepened (Nvidia fell about 14%). Gus wants to sell everything; Nell calls it loss aversion: in 1979, Daniel Kahneman and Amos Tversky showed losses loom larger than gains, roughly twice as large. Notice the fear first, then decide. Not financial advice. Sources: Yahoo Finance (Nov 20, 2026); Associated Press via FinChannel (Nov 20, 2026); Kahneman & Tversky, Econometrica (1979). Music: \"Scissors\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #stockmarket #lossaversion #investing #shorts",
+  "tags": [
+   "stock market",
+   "Nasdaq",
+   "correction",
+   "loss aversion",
+   "Kahneman",
+   "prospect theory",
+   "psychology",
+   "AI stocks"
+  ]
+ }
+}
