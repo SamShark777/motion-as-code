@@ -1,0 +1,18 @@
+{
+ "no": 229,
+ "slug": "market-loss-aversion",
+ "date": "2026-11-21",
+ "slot": "09:00",
+ "due": "2026-11-21T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-21/market-loss-aversion.mp4",
+ "buffer": {
+  "instagram": "6b019eaad864a011054a1b00",
+  "tiktok": "6b019eaad5eabfb8cc33bdab"
+ },
+ "errors": {
+  "youtube": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+ },
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 57.1
+}
