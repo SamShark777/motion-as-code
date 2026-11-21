@@ -1,0 +1,456 @@
+{
+ "slug": "gus-no-time",
+ "no": 214,
+ "format": "xplog",
+ "look": "xplog",
+ "series": "Gus",
+ "episode": 2,
+ "cast": [
+  "gus",
+  "finn"
+ ],
+ "title": [
+  "No",
+  "Time"
+ ],
+ "credit": "Rudd, Vohs & Aaker · 2012",
+ "handle": "@aroundthestrangeai",
+ "hud": {
+  "clock_label": "AWAKE FOR",
+  "count_label": "'NO TIME'",
+  "count_total": 5,
+  "tag": "THE OVERTHINK CLUB"
+ },
+ "post": {
+  "title": "I Said 'No Time' 5 Times in One Day #shorts",
+  "description": "When did you last feel awe? Tell me in the comments. Send this to the friend who's always 'so busy'. You're rushed from 7 AM: inbox, lunch at your desk, a call you let ring. In 'Awe Expands People's Perception of Time, Alters Decision Making, and Enhances Well-Being' (Psychological Science, 2012), Melanie Rudd, Kathleen Vohs and Jennifer Aaker had people watch a 60-second ad full of awe (waterfalls, whales, space) or a happy ad. The awe group agreed more that they had plenty of time; in other experiments awe made people less impatient and more willing to volunteer their time. The fix for 'no time' might not be more hours. Look up. #psychology #shorts #awe #busy #overthinking",
+  "tags": [
+   "awe",
+   "time pressure",
+   "always busy",
+   "Rudd Vohs Aaker",
+   "psychology"
+  ]
+ },
+ "thumb_text": "One Minute of Awe",
+ "thumb_emph": "Awe",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi",
+ "pattern": "Experiment log",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "You're always rushed: coffee in one hand, phone in the other",
+  "lean": "pain",
+  "snapback": "The fix might not be more hours. It might be AWE."
+ },
+ "relate": "barnum",
+ "share": "Send this to the FRIEND who's always 'so busy'.",
+ "question": "When did you last feel awe?",
+ "lines": [
+  {
+   "scene": "Rushed",
+   "art": "XAGRushed",
+   "chunks": [
+    [
+     "You're always"
+    ],
+    [
+     "RUSHED.",
+     {
+      "emph": "RUSHED"
+     }
+    ],
+    [
+     "Coffee in"
+    ],
+    [
+     "one hand,"
+    ],
+    [
+     "phone in"
+    ],
+    [
+     "the other."
+    ]
+   ],
+   "tone": "brisk, matter-of-fact",
+   "hud": {
+    "title": "7:02 AM",
+    "clock": 0,
+    "run": false,
+    "count": 0
+   },
+   "sec": "cd",
+   "text": "You're always RUSHED. Coffee in one hand, phone in the other."
+  },
+  {
+   "scene": "Count",
+   "art": "XAGCount",
+   "chunks": [
+    [
+     "You say"
+    ],
+    [
+     "'no TIME'",
+     {
+      "emph": "TIME"
+     }
+    ],
+    [
+     "all day."
+    ],
+    [
+     "Count them."
+    ]
+   ],
+   "tone": "teasing",
+   "hud": {
+    "clock": 30
+   },
+   "sec": "cd",
+   "text": "You say 'no TIME' all day. Count them."
+  },
+  {
+   "scene": "Snapback",
+   "art": "XAGAwe",
+   "chunks": [
+    [
+     "The fix"
+    ],
+    [
+     "might not be"
+    ],
+    [
+     "more hours."
+    ],
+    [
+     "It might"
+    ],
+    [
+     "be AWE.",
+     {
+      "emph": "AWE"
+     }
+    ]
+   ],
+   "tone": "surprised, soft",
+   "hud": {
+    "clock": 60
+   },
+   "sec": "cd",
+   "text": "The fix might not be more hours. It might be AWE."
+  },
+  {
+   "scene": "Inbox",
+   "art": "XAGInbox",
+   "chunks": [
+    [
+     "Nine fifteen."
+    ],
+    [
+     "Your INBOX",
+     {
+      "emph": "INBOX"
+     }
+    ],
+    [
+     "explodes."
+    ],
+    [
+     "'No time.'"
+    ]
+   ],
+   "tone": "deadpan",
+   "hud": {
+    "title": "9:15 AM",
+    "clock": 7980,
+    "count": 1
+   },
+   "sec": "cd",
+   "text": "Nine fifteen. Your INBOX explodes. 'No time.'"
+  },
+  {
+   "scene": "Lunch",
+   "art": "XAGLunch",
+   "chunks": [
+    [
+     "One p.m."
+    ],
+    [
+     "Lunch at"
+    ],
+    [
+     "your DESK.",
+     {
+      "emph": "DESK"
+     }
+    ],
+    [
+     "'No time.'"
+    ]
+   ],
+   "tone": "dry",
+   "hud": {
+    "title": "1:00 PM",
+    "clock": 21480,
+    "count": 2
+   },
+   "sec": "cd",
+   "text": "One p.m. Lunch at your DESK. 'No time.'"
+  },
+  {
+   "scene": "Call",
+   "art": "XAGCall",
+   "chunks": [
+    [
+     "Five thirty."
+    ],
+    [
+     "A friend calls."
+    ],
+    [
+     "You let"
+    ],
+    [
+     "it RING.",
+     {
+      "emph": "RING"
+     }
+    ]
+   ],
+   "tone": "flat, guilty",
+   "hud": {
+    "title": "5:30 PM",
+    "clock": 37680,
+    "count": 3
+   },
+   "sec": "cd",
+   "text": "Five thirty. A friend calls. You let it RING."
+  },
+  {
+   "scene": "Sunset",
+   "art": "XAGSunset",
+   "chunks": [
+    [
+     "Seven."
+    ],
+    [
+     "A huge sunset."
+    ],
+    [
+     "You don't"
+    ],
+    [
+     "look UP.",
+     {
+      "emph": "UP"
+     }
+    ]
+   ],
+   "tone": "quiet",
+   "hud": {
+    "title": "7:00 PM",
+    "clock": 43080,
+    "count": 4
+   },
+   "sec": "cd",
+   "text": "Seven. A huge sunset. You don't look UP."
+  },
+  {
+   "scene": "Bed",
+   "art": "XAGBed",
+   "chunks": [
+    [
+     "Midnight."
+    ],
+    [
+     "'Where did"
+    ],
+    [
+     "the day GO?'",
+     {
+      "emph": "GO"
+     }
+    ]
+   ],
+   "tone": "sighs",
+   "hud": {
+    "title": "MIDNIGHT",
+    "clock": 61080,
+    "count": 5
+   },
+   "sec": "cd",
+   "text": "Midnight. 'Where did the day GO?'"
+  },
+  {
+   "scene": "Study",
+   "art": "XAGStudy",
+   "chunks": [
+    [
+     "In 2012,"
+    ],
+    [
+     "people watched"
+    ],
+    [
+     "one minute"
+    ],
+    [
+     "of AWE:",
+     {
+      "emph": "AWE"
+     }
+    ],
+    [
+     "waterfalls, whales,"
+    ],
+    [
+     "space."
+    ]
+   ],
+   "tone": "curious",
+   "hud": {
+    "title": "THE STUDY",
+    "clock": 61090
+   },
+   "say": "In twenty twelve, people watched one minute of awe: waterfalls, whales, space.",
+   "sec": "cd",
+   "text": "In 2012, people watched one minute of AWE: waterfalls, whales, space."
+  },
+  {
+   "scene": "Result",
+   "art": "XAGMore",
+   "chunks": [
+    [
+     "Versus a"
+    ],
+    [
+     "happy ad,"
+    ],
+    [
+     "they felt"
+    ],
+    [
+     "they had"
+    ],
+    [
+     "MORE time.",
+     {
+      "emph": "MORE"
+     }
+    ]
+   ],
+   "tone": "amazed, whispers",
+   "sec": "cd",
+   "text": "Versus a happy ad, they felt they had MORE time."
+  },
+  {
+   "scene": "Proof",
+   "art": "XAGLastTime",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last time"
+    ],
+    [
+     "you stopped"
+    ],
+    [
+     "for a sky."
+    ],
+    [
+     "Yeah. THAT long.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "tone": "knowing, gentle laugh",
+   "hud": {
+    "title": "THE TRICK"
+   },
+   "sec": "cd",
+   "text": "Think of the last time you stopped for a sky. Yeah. THAT long."
+  },
+  {
+   "scene": "Payoff",
+   "art": "XAGSky",
+   "chunks": [
+    [
+     "Tomorrow:"
+    ],
+    [
+     "one minute"
+    ],
+    [
+     "of SKY",
+     {
+      "emph": "SKY"
+     }
+    ],
+    [
+     "before the inbox."
+    ]
+   ],
+   "tone": "warm, clear",
+   "hud": {
+    "title": "DAY 2",
+    "clock": 0,
+    "run": false
+   },
+   "sec": "cd",
+   "text": "Tomorrow: one minute of SKY before the inbox."
+  },
+  {
+   "scene": "Ask",
+   "art": "XAGAsk",
+   "chunks": [
+    [
+     "When did"
+    ],
+    [
+     "YOU last",
+     {
+      "emph": "YOU"
+     }
+    ],
+    [
+     "feel awe?"
+    ]
+   ],
+   "tone": "curious, friendly",
+   "hud": {
+    "title": "YOUR TURN",
+    "run": false
+   },
+   "sec": "cd",
+   "text": "When did YOU last feel awe?"
+  },
+  {
+   "scene": "Share",
+   "art": "XAGShare",
+   "chunks": [
+    [
+     "Send this"
+    ],
+    [
+     "to the FRIEND",
+     {
+      "emph": "FRIEND"
+     }
+    ],
+    [
+     "who's always"
+    ],
+    [
+     "'so busy.'"
+    ]
+   ],
+   "tone": "warmly, playful",
+   "sec": "cd",
+   "text": "Send this to the FRIEND who's always 'so busy.'"
+  }
+ ]
+}

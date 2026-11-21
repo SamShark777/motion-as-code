@@ -1,0 +1,294 @@
+{
+ "slug": "milo-dont-open",
+ "no": 212,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Milo",
+ "episode": 12,
+ "cast": [
+  "milo",
+  "nia",
+  "theo"
+ ],
+ "title": [
+  "Don't",
+  "Open It"
+ ],
+ "credit": "Brehm · 1966 · Pennebaker & Sanders · 1976",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why 'Don't' Makes You Want It More #shorts",
+  "description": "Would you open it? Tell me in the comments. Send this to the friend who hears 'don't' as 'do'. Theo leaves a box with a note: DON'T OPEN. Milo says he doesn't care, then stares at it for ten minutes. Psychologist Jack Brehm called it reactance (A Theory of Psychological Reactance, 1966): when a freedom is threatened, we want it back. In 1976 James Pennebaker and Deborah Sanders (Personality and Social Psychology Bulletin, 'American Graffiti: Effects of Authority and Reactance Arousal') put signs banning graffiti in toilet stalls: the stronger the threat and the higher the authority behind it, the more graffiti ended up on the signs themselves. The box wasn't interesting. The rule was. #psychology #shorts #reactance #overthinking #relatable",
+  "tags": [
+   "reactance",
+   "reverse psychology",
+   "forbidden fruit",
+   "Pennebaker Sanders",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Why 'Don't' Backfires",
+ "thumb_emph": "Don't",
+ "thumb_mood": "shocked",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 1,
+ "hook": {
+  "context": "Theo's note says don't open the box; Milo: 'Don't care.'",
+  "lean": "pain",
+  "snapback": "It's not the box. The rule made you WANT it."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who hears 'don't' as 'do'.",
+ "question": "Would you open it?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "MGNoteBox",
+   "chunks": [
+    [
+     "Theo's note:"
+    ],
+    [
+     "DON'T open",
+     {
+      "emph": "DON'T"
+     }
+    ],
+    [
+     "this box."
+    ],
+    [
+     "Milo: 'Don't care.'"
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "say": "Theo's note: don't open this box. Milo: don't care.",
+   "sec": "cd",
+   "text": "Theo's note: DON'T open this box. Milo: 'Don't care.'"
+  },
+  {
+   "scene": "You",
+   "art": "MGStaring",
+   "chunks": [
+    [
+     "Ten minutes on,"
+    ],
+    [
+     "he's still"
+    ],
+    [
+     "STARING.",
+     {
+      "emph": "STARING"
+     }
+    ],
+    [
+     "You've done"
+    ],
+    [
+     "this too."
+    ]
+   ],
+   "tone": "knowingly, teasing",
+   "sec": "cd",
+   "text": "Ten minutes on, he's still STARING. You've done this too."
+  },
+  {
+   "scene": "Snapback",
+   "art": "MGWantMore",
+   "chunks": [
+    [
+     "It's not"
+    ],
+    [
+     "the box."
+    ],
+    [
+     "The rule"
+    ],
+    [
+     "made you"
+    ],
+    [
+     "WANT it.",
+     {
+      "emph": "WANT"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "It's not the box. The rule made you WANT it."
+  },
+  {
+   "scene": "Study",
+   "art": "MGStallSigns",
+   "chunks": [
+    [
+     "In 1976,"
+    ],
+    [
+     "toilet stalls"
+    ],
+    [
+     "got SIGNS:",
+     {
+      "emph": "SIGNS"
+     }
+    ],
+    [
+     "no graffiti."
+    ]
+   ],
+   "tone": "curious",
+   "say": "In nineteen seventy-six, toilet stalls got signs: no graffiti.",
+   "sec": "cd",
+   "text": "In 1976, toilet stalls got SIGNS: no graffiti."
+  },
+  {
+   "scene": "Result",
+   "art": "MGMoreGraffiti",
+   "chunks": [
+    [
+     "The STRICTER",
+     {
+      "emph": "STRICTER"
+     }
+    ],
+    [
+     "the sign,"
+    ],
+    [
+     "the more"
+    ],
+    [
+     "graffiti on it."
+    ]
+   ],
+   "tone": "amazed, laughs",
+   "sec": "cd",
+   "text": "The STRICTER the sign, the more graffiti on it."
+  },
+  {
+   "scene": "Name",
+   "art": "MGReactance",
+   "chunks": [
+    [
+     "REACTANCE:",
+     {
+      "emph": "REACTANCE"
+     }
+    ],
+    [
+     "lose a freedom,"
+    ],
+    [
+     "grab it back."
+    ]
+   ],
+   "tone": "thoughtfully",
+   "cam": [
+    540,
+    700,
+    1.0,
+    1.08
+   ],
+   "sec": "cd",
+   "text": "REACTANCE: lose a freedom, grab it back."
+  },
+  {
+   "scene": "Proof",
+   "art": "MGYouCant",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last"
+    ],
+    [
+     "'you can't.'"
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the last 'you can't.' Yeah, THAT one."
+  },
+  {
+   "scene": "Payoff",
+   "art": "MGSocks",
+   "chunks": [
+    [
+     "Nia opens it."
+    ],
+    [
+     "Theo's SOCKS.",
+     {
+      "emph": "SOCKS"
+     }
+    ],
+    [
+     "Milo stops caring."
+    ]
+   ],
+   "tone": "deadpan, amused",
+   "sec": "cd",
+   "text": "Nia opens it. Theo's SOCKS. Milo stops caring."
+  },
+  {
+   "scene": "End",
+   "art": "MGEndBait",
+   "chunks": [
+    [
+     "The rule"
+    ],
+    [
+     "was the BAIT.",
+     {
+      "emph": "BAIT"
+     }
+    ],
+    [
+     "Would you"
+    ],
+    [
+     "open it?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who hears 'don't'"
+    ],
+    [
+     "as 'do'."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "The rule was the BAIT. Would you open it? Send this to the friend who hears 'don't' as 'do'."
+  }
+ ]
+}

@@ -1,0 +1,269 @@
+{
+ "slug": "dev-new-watch",
+ "no": 213,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Dev",
+ "episode": 11,
+ "cast": [
+  "dev",
+  "nia"
+ ],
+ "title": [
+  "Things",
+  "vs Trips"
+ ],
+ "credit": "Van Boven & Gilovich · 2003",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why the New Thing Stops Making You Happy #shorts",
+  "description": "Trip or thing? Tell me in the comments. Send this to the friend whose cart is always full. Dev buys a smart watch: 'This'll make me happy for years.' By week three it's just a watch. In 'To Do or to Have? That Is the Question' (Journal of Personality and Social Psychology, 2003), Leaf Van Boven and Thomas Gilovich reported a national survey of more than 12,000 Americans: asked about purchases made to increase their happiness, most said the experience made them happier than the material thing. Their lab studies agreed. Experiences turn into stories: we reinterpret them kindly, share them, and make them part of who we are. Buy the memory. #psychology #shorts #happiness #experiences #overthinking",
+  "tags": [
+   "experiential purchases",
+   "money and happiness",
+   "experiences vs things",
+   "Van Boven Gilovich",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Buy the Memory",
+ "thumb_emph": "Memory",
+ "thumb_mood": "happy",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Dev buys a smart watch: 'This'll make me happy for years.'",
+  "lean": "proof",
+  "snapback": "Week three: the watch is just a WATCH."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend whose cart is always full.",
+ "question": "Trip or thing?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "MGNewWatch",
+   "chunks": [
+    [
+     "Dev buys"
+    ],
+    [
+     "a smart WATCH:",
+     {
+      "emph": "WATCH"
+     }
+    ],
+    [
+     "'This'll make"
+    ],
+    [
+     "me happy"
+    ],
+    [
+     "for years.'"
+    ]
+   ],
+   "tone": "confident, upbeat",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ],
+   "sec": "cd",
+   "text": "Dev buys a smart WATCH: 'This'll make me happy for years.'"
+  },
+  {
+   "scene": "Proof",
+   "art": "MGSurvey",
+   "chunks": [
+    [
+     "Asked for"
+    ],
+    [
+     "their happiest buy,"
+    ],
+    [
+     "most of 12,000"
+    ],
+    [
+     "Americans named"
+    ],
+    [
+     "an EXPERIENCE.",
+     {
+      "emph": "EXPERIENCE"
+     }
+    ]
+   ],
+   "tone": "curious, knowing",
+   "say": "Asked for their happiest buy, most of twelve thousand Americans named an experience.",
+   "sec": "cd",
+   "text": "Asked for their happiest buy, most of 12,000 Americans named an EXPERIENCE."
+  },
+  {
+   "scene": "Snapback",
+   "art": "MGJustAWatch",
+   "chunks": [
+    [
+     "Week three:"
+    ],
+    [
+     "the watch"
+    ],
+    [
+     "is just"
+    ],
+    [
+     "a WATCH.",
+     {
+      "emph": "WATCH"
+     }
+    ]
+   ],
+   "tone": "deadpan, amused",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.18
+   ],
+   "sec": "cd",
+   "text": "Week three: the watch is just a WATCH."
+  },
+  {
+   "scene": "Name",
+   "art": "MGStudy",
+   "chunks": [
+    [
+     "Van Boven"
+    ],
+    [
+     "and Gilovich,"
+    ],
+    [
+     "2003: experiences"
+    ],
+    [
+     "BEAT stuff.",
+     {
+      "emph": "BEAT"
+     }
+    ]
+   ],
+   "tone": "thoughtfully",
+   "say": "Van Boven and Gilovich, two thousand three: experiences beat stuff.",
+   "sec": "cd",
+   "text": "Van Boven and Gilovich, 2003: experiences BEAT stuff."
+  },
+  {
+   "scene": "Why",
+   "art": "MGStories",
+   "chunks": [
+    [
+     "They become"
+    ],
+    [
+     "STORIES you",
+     {
+      "emph": "STORIES"
+     }
+    ],
+    [
+     "retell, share"
+    ],
+    [
+     "and keep."
+    ]
+   ],
+   "tone": "warmly",
+   "sec": "cd",
+   "text": "They become STORIES you retell, share and keep."
+  },
+  {
+   "scene": "Proof2",
+   "art": "MGRetell",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the trip"
+    ],
+    [
+     "you still"
+    ],
+    [
+     "bring up."
+    ],
+    [
+     "Yeah, THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "sec": "cd",
+   "text": "Think of the trip you still bring up. Yeah, THAT one."
+  },
+  {
+   "scene": "Payoff",
+   "art": "MGGig",
+   "chunks": [
+    [
+     "Nia drags Dev"
+    ],
+    [
+     "to a GIG.",
+     {
+      "emph": "GIG"
+     }
+    ],
+    [
+     "He's still"
+    ],
+    [
+     "talking about it."
+    ]
+   ],
+   "tone": "warmly, amused",
+   "sec": "cd",
+   "text": "Nia drags Dev to a GIG. He's still talking about it."
+  },
+  {
+   "scene": "End",
+   "art": "MGEndTicket",
+   "chunks": [
+    [
+     "Buy the"
+    ],
+    [
+     "MEMORY.",
+     {
+      "emph": "MEMORY"
+     }
+    ],
+    [
+     "Trip or thing?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "whose cart"
+    ],
+    [
+     "is always full."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "sec": "cd",
+   "text": "Buy the MEMORY. Trip or thing? Send this to the friend whose cart is always full."
+  }
+ ]
+}

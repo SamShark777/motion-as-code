@@ -24,7 +24,8 @@
     "ep 8 (theo-goldfish-fact, with Theo): hears the goldfish 'fact' from everywhere, never checked it; laughs when Theo looks it up",
     "ep 9 (nia-bank-app, with Nia): sits beside Nia with his cup when she finally opens the bank app",
     "ep 10 (milo-everyone-agrees, with Theo): sure everyone thinks like him; the 'Eat at Joe's' sandwich-board test; false consensus effect (Ross, Greene & House 1977: agreers guessed ~62% would agree, refusers ~33%); learns his normal isn't everyone's",
-    "ep 11 (dev-five-text-signs): reads Dev's 'nice job, genius' as an insult ('is he mad at me?'), laughs once the laugh-face arrives"
+    "ep 11 (dev-five-text-signs): reads Dev's 'nice job, genius' as an insult ('is he mad at me?'), laughs once the laugh-face arrives",
+    "ep 12 (milo-dont-open, with Nia + Theo): Theo's box says DON'T OPEN, Milo says 'don't care' then stares for ten minutes; reactance (Brehm 1966; Pennebaker & Sanders 1976: stricter no-graffiti signs drew more graffiti); Nia opens it: Theo's socks, Milo stops caring"
    ]
   },
   "nia": {
@@ -48,7 +49,9 @@
     "ep 8 (rosa-parking-ticket, with Rosa): unimpressed by Rosa's 'me: more likely' logic; laughs at the ticket",
     "ep 9 (dev-concert-ticket, with Dev): thumbs-up as Dev stays home; 'your evening costs too'",
     "ep 10 (nia-bank-app, with Milo): bank app pings after a bad week, she flips the phone face down; ostrich effect (Karlsson, Loewenstein & Seppi 2009: investors checked their portfolios more in rising markets, less in flat or falling ones); opens it — one look, less wondering",
-    "ep 11 (rosa-perfect-birthday): drops Rosa's birthday cake and finally breaks the spell; they dance"
+    "ep 11 (rosa-perfect-birthday): drops Rosa's birthday cake and finally breaks the spell; they dance",
+    "ep 12 (milo-dont-open): opens Theo's forbidden box for Milo: socks",
+    "ep 13 (dev-new-watch): drags Dev to a gig"
    ]
   },
   "theo": {
@@ -72,7 +75,9 @@
     "ep 9 (june-five-signs, with June): shows June his own 1984 photo (big curly hair)",
     "ep 10 (milo-everyone-agrees, with Milo): holds up the YES/NO tally at the party — it's split",
     "ep 11 (june-five-excuses): names self-handicapping and taps June's EXCUSE shield",
-    "ep 12 (dev-zipper-explain, with Dev): hands Dev a marker: 'great, explain it'"
+    "ep 12 (dev-zipper-explain, with Dev): hands Dev a marker: 'great, explain it'",
+    "ep 13 (milo-dont-open): leaves the DON'T OPEN note on his box of socks",
+    "ep 14 (june-day-22): tells June on day 23 'you're not late, the rule was wrong'"
    ]
   },
   "rosa": {
@@ -116,7 +121,8 @@
     "ep 7 (rosa-deleted-compliment, with Rosa): gets Rosa's compliment and screenshots it",
     "ep 8 (dev-concert-ticket, with Nia): paid for concert tickets, sick in the rain, nearly goes anyway; sunk cost effect (Arkes & Blumer 1985); stays home with soup",
     "ep 9 (dev-five-text-signs, with Milo; signs-list): texts Milo 'nice job, genius' as a joke; '5 signs your texts sound meaner than you think'; egocentrism over email (Kruger et al. 2005: 78% guessed vs 56%); adds a laugh-face",
-    "ep 10 (dev-zipper-explain, with Theo): 'easy, I know exactly how a zipper works', goes blank when asked to explain; illusion of explanatory depth (Rozenblit & Keil 2002); laughs: 'I know how to USE one'"
+    "ep 10 (dev-zipper-explain, with Theo): 'easy, I know exactly how a zipper works', goes blank when asked to explain; illusion of explanatory depth (Rozenblit & Keil 2002); laughs: 'I know how to USE one'",
+    "ep 11 (dev-new-watch, with Nia): buys a smart watch, 'this'll make me happy for years', by week three it's just a watch; experiential vs material purchases (Van Boven & Gilovich 2003: most of 12,000+ surveyed Americans named an experience as their happier buy); Nia drags him to a gig he still talks about"
    ]
   },
   "june": {
@@ -137,7 +143,8 @@
     "ep 5 (june-dont-think, with Nia): 1 AM, trying not to think about her ex — every song, every street is him; white bear / rebound effect (Wegner, Schneider, Carter & White 1987); Nia's trick: think about one other thing on purpose (a red car)",
     "ep 6 (june-five-signs, with Theo): finds her old diary and cringes; '5 signs you're not done changing'; end of history illusion (Quoidbach, Gilbert & Wilson 2013)",
     "ep 7 (june-five-excuses, with Theo; signs-list): exam tomorrow, organizing her desk at 2 AM; '5 signs you're quietly building your excuse'; self-handicapping (Berglas & Jones 1978: unsure students chose a pill said to impair performance); goes to bed",
-    "ep 8 (rosa-mirror-photo, with Rosa): tells her sister the group photo is fine, 'that's just your face'"
+    "ep 8 (rosa-mirror-photo, with Rosa): tells her sister the group photo is fine, 'that's just your face'",
+    "ep 9 (june-day-22, with Theo; signs-list): day 22 of a running habit, 'it should be automatic by now'; '5 signs your new habit is working'; habit formation (Lally et al. 2010: about 66 days on average, one missed day had little effect; the 21-day rule came from a 1960 self-help book); laces up on day 23"
    ]
   }
  }
