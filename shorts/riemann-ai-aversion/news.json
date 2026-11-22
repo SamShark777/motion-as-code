@@ -1,0 +1,167 @@
+{
+ "slug": "riemann-ai-aversion",
+ "masthead": "SUN · NOV 22",
+ "music": "356a2c0cb1.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "AI helped crack the Riemann hypothesis? Math's biggest puzzle?",
+   "board": {
+    "headline": "RIEMANN\nCRACKED?"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's the claim. An Anthropic mathematician posted it Friday. He says he found it working with Claude.",
+   "board": {
+    "headline": "RIEMANN\nCRACKED?",
+    "chips": [
+     {
+      "text": "LEVENT ALPÖGE",
+      "color": "mus",
+      "at": 1.0
+     },
+     {
+      "text": "FRI · NOV 20",
+      "color": "paper",
+      "at": 2.6
+     },
+     {
+      "text": "MADE WITH CLAUDE",
+      "color": "teal",
+      "at": 4.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Unsolved since 1859. There's a million-dollar prize on it.",
+   "say": "Unsolved since eighteen fifty-nine. There's a million-dollar prize on it.",
+   "board": {
+    "big": {
+     "text": "1859",
+     "color": "ink"
+    },
+    "chips": [
+     {
+      "text": "UNSOLVED 167 YEARS",
+      "color": "paper",
+      "at": 0.4
+     },
+     {
+      "text": "$1M CLAY PRIZE",
+      "color": "mus",
+      "at": 2.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "A chatbot did it? Then it doesn't count. I don't trust it.",
+   "brow": "down",
+   "board": {
+    "headline": "A CHATBOT?\nNOPE.",
+    "chips": [
+     {
+      "text": "\"DOESN'T COUNT!\"",
+      "color": "red",
+      "at": 1.3
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Fair to wait. It's not peer-reviewed, and he admits he doesn't fully understand it yet.",
+   "board": {
+    "card": {
+     "title": "CONFIRMED SO FAR",
+     "body": "Released as Lean code, which a computer can check. No human-readable paper yet."
+    },
+    "stamp": {
+     "text": "NOT PEER-REVIEWED",
+     "at": 1.0
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "See? Fake."
+  },
+  {
+   "who": "nell",
+   "text": "Unchecked isn't fake. You rejected it because of who made it.",
+   "brow": "up",
+   "board": {
+    "headline": "UNCHECKED\n≠ FAKE"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's algorithm aversion.",
+   "board": {
+    "big": {
+     "text": "ALGORITHM AVERSION",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 2015, Dietvorst and colleagues found people dropped an algorithm after watching it make mistakes, even when it beat the humans.",
+   "say": "In twenty fifteen, Dietvorst and colleagues found people dropped an algorithm after watching it make mistakes, even when it beat the humans.",
+   "board": {
+    "bar": {
+     "label": "ALGORITHM: MORE ACCURATE",
+     "sub": "people picked: THE HUMAN",
+     "fill": 0.8
+    },
+    "chips": [
+     {
+      "text": "DIETVORST · 2015",
+      "color": "red",
+      "at": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So I should just believe the robot?",
+   "board": {
+    "big": {
+     "text": "TRUST IT?",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "No. Judge the proof, not the prover. That's what the checks are for.",
+   "board": {
+    "headline": "JUDGE THE\nPROOF",
+    "chips": [
+     {
+      "text": "NOT THE PROVER",
+      "color": "red",
+      "at": 1.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Does an AI-made proof count? Yes, no, or not until humans get it?",
+   "board": {
+    "headline": "DOES AN AI\nPROOF COUNT?",
+    "vote": [
+     "YES",
+     "NO",
+     "NOT YET"
+    ]
+   }
+  }
+ ]
+}

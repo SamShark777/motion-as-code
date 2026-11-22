@@ -1,0 +1,31 @@
+{
+ "slug": "riemann-ai-aversion",
+ "no": 240,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Does an AI-made proof count? Yes, no, or not until humans get it?",
+ "note": "Daily news Short 2026-11-22. Confirmed by AFP (via ynetnews, Nov 21 2026) and The Next Web (Nov 21 2026): Levent Alpöge, a mathematician at Anthropic, posted a four-page note on Fri Nov 20 saying he found a proof of the Riemann hypothesis 'working with Claude'; released only as Lean (machine-checkable) code; no human-readable paper and no peer review yet; he admits he hasn't mastered all of the maths involved; RH dates to 1859 and carries a $1M Clay prize (needs journal publication + 2 years' scrutiny). NOT stated as confirmed in the video: that the proof is correct (some experts and Lean groups are reported confident; that is not presented as fact). Algorithm aversion: Dietvorst, Simmons & Massey 2015, J Exp Psychol: General ('People erroneously avoid algorithms after seeing them err').",
+ "post": {
+  "title": "AI Helped \"Solve\" Math's Biggest Puzzle. Why Your Brain Says No. #shorts",
+  "description": "Does an AI-made proof count? Yes, no, or not until humans get it? Comment below. On Nov 20, Anthropic mathematician Levent Alpöge posted a note saying he found a proof of the Riemann hypothesis — unsolved since 1859, with a $1M Clay prize — working with Claude. It's released as Lean code a computer can check, but there's no human-readable paper or peer review yet, and he says he doesn't fully understand it. Gus says a chatbot proof 'doesn't count' — Nell calls that algorithm aversion: Dietvorst, Simmons & Massey (2015) found people abandon an algorithm after seeing it err, even when it beats humans. Judge the proof, not the prover. Sources: AFP (Nov 21, 2026); The Next Web (Nov 21, 2026). Music: \"Look Busy\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #ai #math #riemannhypothesis #shorts",
+  "tags": [
+   "Riemann hypothesis",
+   "AI",
+   "Claude",
+   "algorithm aversion",
+   "psychology",
+   "math",
+   "news"
+  ]
+ }
+}
