@@ -1,0 +1,17 @@
+{
+ "no": 240,
+ "slug": "riemann-ai-aversion",
+ "date": "2026-11-22",
+ "slot": "09:00",
+ "due": "2026-11-22T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-22/riemann-ai-aversion.mp4",
+ "buffer": {
+  "youtube": "6b02f03bd864a01105c82f40",
+  "instagram": "6b02f03ccc364169c158720b",
+  "tiktok": "6b02f03cd864a01105c83068"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 52.1
+}
