@@ -1,0 +1,279 @@
+{
+ "slug": "leo-wishlist-gift",
+ "no": 222,
+ "format": "cdesign",
+ "look": "ted2",
+ "series": "Leo",
+ "episode": 9,
+ "cast": [
+  "leo",
+  "priya"
+ ],
+ "title": [
+  "Buy The",
+  "List"
+ ],
+ "credit": "Gino & Flynn · 2011",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Wishlist or Surprise? Pause and Pick #shorts",
+  "description": "Which did you pick: wishlist or surprise? Tell me in the comments. Send this to the friend who never buys off the list. Leo skips the wishlist to find something 'thoughtful'. In 'Give them what they want: The benefits of explicitness in gift exchange' (Journal of Experimental Social Psychology, 2011), Francesca Gino and Francis Flynn found across five experiments that people appreciated gifts they had asked for more than unrequested ones, and saw them as more thoughtful, while givers expected the opposite. Listening is the thoughtful part. #psychology #shorts #gifts #giftideas #overthinking",
+  "tags": [
+   "gift giving",
+   "wishlist",
+   "Gino Flynn",
+   "thoughtful gifts",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Just Buy the List",
+ "thumb_emph": "List",
+ "thumb_mood": "nervous",
+ "music_vibe": "uplifting",
+ "pattern": "test",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Leo skips the wishlist to find something 'thoughtful'",
+  "lean": "pain",
+  "snapback": "Givers pick the surprise. Receivers want the LIST."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who never buys off the list.",
+ "question": "Which did you pick?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "LWList",
+   "chunks": [
+    [
+     "Leo skips"
+    ],
+    [
+     "the WISHLIST",
+     {
+      "emph": "WISHLIST",
+      "fx": "pop"
+     }
+    ],
+    [
+     "to find something"
+    ],
+    [
+     "'thoughtful.'"
+    ]
+   ],
+   "tone": "amused, matter-of-fact",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.06
+   ],
+   "text": "Leo skips the WISHLIST to find something 'thoughtful.'",
+   "sec": "cd",
+   "color": "#1F3B73"
+  },
+  {
+   "scene": "Test",
+   "art": "LWPick",
+   "chunks": [
+    [
+     "You've done it."
+    ],
+    [
+     "Pause and PICK:",
+     {
+      "emph": "PICK",
+      "fx": "type"
+     }
+    ],
+    [
+     "wishlist,"
+    ],
+    [
+     "or surprise?"
+    ]
+   ],
+   "tone": "playful, teasing",
+   "text": "You've done it. Pause and PICK: wishlist, or surprise?",
+   "sec": "cd",
+   "color": "#E8C547",
+   "light": true
+  },
+  {
+   "scene": "Snapback",
+   "art": "LWSplit",
+   "chunks": [
+    [
+     "Givers pick"
+    ],
+    [
+     "the surprise."
+    ],
+    [
+     "Receivers want"
+    ],
+    [
+     "the LIST.",
+     {
+      "emph": "LIST",
+      "fx": "stamp",
+      "block": "#B3202A"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    486,
+    1150,
+    1.0,
+    1.18
+   ],
+   "text": "Givers pick the surprise. Receivers want the LIST.",
+   "sec": "cd",
+   "color": "#E9E4D8",
+   "light": true
+  },
+  {
+   "scene": "Study",
+   "art": "LWStudy",
+   "chunks": [
+    [
+     "In 2011,"
+    ],
+    [
+     "Gino and Flynn"
+    ],
+    [
+     "found people"
+    ],
+    [
+     "appreciated gifts"
+    ],
+    [
+     "they ASKED for",
+     {
+      "emph": "ASKED",
+      "fx": "underline",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "more."
+    ]
+   ],
+   "tone": "curious",
+   "say": "In twenty eleven, Gino and Flynn found people appreciated gifts they asked for more.",
+   "text": "In 2011, Gino and Flynn found people appreciated gifts they ASKED for more.",
+   "sec": "cd",
+   "color": "#2B6E7A"
+  },
+  {
+   "scene": "Result",
+   "art": "LWThoughtful",
+   "chunks": [
+    [
+     "And saw them"
+    ],
+    [
+     "as more THOUGHTFUL.",
+     {
+      "emph": "THOUGHTFUL",
+      "fx": "glitch"
+     }
+    ]
+   ],
+   "tone": "amazed, whispers",
+   "text": "And saw them as more THOUGHTFUL.",
+   "sec": "cd",
+   "color": "#B3202A"
+  },
+  {
+   "scene": "Proof",
+   "art": "LWDrawer",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the 'surprise'"
+    ],
+    [
+     "you never USED.",
+     {
+      "emph": "USED",
+      "fx": "circle",
+      "mark": "#B3202A"
+     }
+    ],
+    [
+     "Yeah, that one."
+    ]
+   ],
+   "tone": "knowing, laughs",
+   "text": "Think of the 'surprise' you never USED. Yeah, that one.",
+   "sec": "cd",
+   "color": "#E07A2E"
+  },
+  {
+   "scene": "Turn",
+   "art": "LWPriya",
+   "chunks": [
+    [
+     "But Priya"
+    ],
+    [
+     "gets it:"
+    ],
+    [
+     "listening IS",
+     {
+      "emph": "IS",
+      "fx": "doodle",
+      "doodle": "👂"
+     }
+    ],
+    [
+     "the thoughtful part."
+    ]
+   ],
+   "tone": "warm, reassuring",
+   "text": "But Priya gets it: listening IS the thoughtful part.",
+   "sec": "cd",
+   "color": "#6A3FA0"
+  },
+  {
+   "scene": "Outro",
+   "art": "LWOutro",
+   "chunks": [
+    [
+     "Which did"
+    ],
+    [
+     "you PICK?",
+     {
+      "emph": "PICK",
+      "fx": "circle",
+      "mark": "#E8C547"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who never buys"
+    ],
+    [
+     "off the list."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "text": "Which did you PICK? Send this to the friend who never buys off the list.",
+   "sec": "cd",
+   "color": "#1F3B73"
+  }
+ ]
+}

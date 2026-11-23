@@ -83,7 +83,7 @@ function RMTwist({ T, t, beats }) {
 }
 /* 4 — sign 1: calendar pages flip, each stamped NEXT YEAR */
 function RMSign1({ T, t, beats }) {
-  const n = Math.min(3, Math.floor(t / 0.45) + 1);
+  const n = Math.max(0, Math.min(3, Math.floor(t / 0.45) + 1));
   return (<g><RMBg kind="red" /><SignCard n={1} label="'MAYBE NEXT YEAR'" t={t} />
     {[...Array(n)].map((_, i) => (<g key={i} transform={`translate(${540 + (i - 1) * 40} ${860 + i * 30}) rotate(${(i - 1) * 6})`}>
       <rect x="-260" y="-300" width="520" height="560" fill={P.blk} transform="translate(12 12)" /><rect x="-260" y="-300" width="520" height="560" fill={P.cream} {...ink(7)} />

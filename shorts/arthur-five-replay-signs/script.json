@@ -1,0 +1,371 @@
+{
+ "slug": "arthur-five-replay-signs",
+ "no": 221,
+ "format": "retro",
+ "look": "retro",
+ "series": "Arthur",
+ "episode": 13,
+ "cast": [
+  "arthur",
+  "critic"
+ ],
+ "title": [
+  "5 Signs",
+  "Your Brain's On Replay"
+ ],
+ "credit": "Bratman, Hamilton, Hahn, Daily & Gross · 2015",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs Your Brain Is Stuck on Replay #shorts",
+  "description": "Which sign got you? Tell me in the comments. Send this to the friend who checked all five. Arthur is on day three of the same worry. In 'Nature experience reduces rumination and subgenual prefrontal cortex activation' (PNAS, 2015), Gregory Bratman, J. Paul Hamilton, Kevin Hahn, Gretchen Daily and James Gross had people take a 90-minute walk either through a natural area or beside a busy four-lane road. Only the nature walk lowered self-reported rumination and activity in the subgenual prefrontal cortex, a brain area linked to it. You're not broken. Just indoors. #psychology #shorts #overthinking #rumination #nature",
+  "tags": [
+   "rumination",
+   "overthinking",
+   "nature walk",
+   "Bratman Stanford",
+   "psychology"
+  ]
+ },
+ "thumb_text": "5 Signs Your Brain's On Replay",
+ "thumb_emph": "Replay",
+ "thumb_mood": "worried",
+ "music_vibe": "uplifting",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Day three: Arthur's still replaying the same worry",
+  "lean": "pain",
+  "snapback": "Twist: the fix isn't in your head. It's in your SHOES."
+ },
+ "relate": "barnum",
+ "share": "Send this to the friend who checked all five.",
+ "question": "Which sign got you?",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RMRWorry",
+   "chunks": [
+    [
+     "Day three."
+    ],
+    [
+     "Arthur's still"
+    ],
+    [
+     "replaying"
+    ],
+    [
+     "the same WORRY.",
+     {
+      "emph": "WORRY"
+     }
+    ]
+   ],
+   "tone": "weary, wry",
+   "say": "Day three. Arthur's still replaying the same worry.",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ],
+   "text": "Day three. Arthur's still replaying the same WORRY.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Lean",
+   "art": "RMRFive",
+   "chunks": [
+    [
+     "Five signs"
+    ],
+    [
+     "you do"
+    ],
+    [
+     "this TOO.",
+     {
+      "emph": "TOO"
+     }
+    ]
+   ],
+   "tone": "knowingly",
+   "text": "Five signs you do this TOO.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Snapback",
+   "art": "RMRShoes",
+   "chunks": [
+    [
+     "Twist: the fix"
+    ],
+    [
+     "isn't in"
+    ],
+    [
+     "your head."
+    ],
+    [
+     "It's in"
+    ],
+    [
+     "your SHOES.",
+     {
+      "emph": "SHOES"
+     }
+    ]
+   ],
+   "tone": "surprised, whispers",
+   "cam": [
+    540,
+    1000,
+    1.0,
+    1.16
+   ],
+   "text": "Twist: the fix isn't in your head. It's in your SHOES.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign 1",
+   "art": "RMRSign1",
+   "chunks": [
+    [
+     "One: you replay"
+    ],
+    [
+     "what you SAID.",
+     {
+      "emph": "SAID"
+     }
+    ]
+   ],
+   "tone": "teasing",
+   "text": "One: you replay what you SAID.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign 2",
+   "art": "RMRSign2",
+   "chunks": [
+    [
+     "Two: you win"
+    ],
+    [
+     "arguments in"
+    ],
+    [
+     "the SHOWER.",
+     {
+      "emph": "SHOWER"
+     }
+    ]
+   ],
+   "tone": "knowing, amused",
+   "text": "Two: you win arguments in the SHOWER.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign 3",
+   "art": "RMRSign3",
+   "chunks": [
+    [
+     "Three: bedtime"
+    ],
+    [
+     "is when"
+    ],
+    [
+     "it gets LOUDER.",
+     {
+      "emph": "LOUDER"
+     }
+    ]
+   ],
+   "tone": "softly",
+   "text": "Three: bedtime is when it gets LOUDER.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign 4",
+   "art": "RMRSign4",
+   "chunks": [
+    [
+     "Four: you 'relax',"
+    ],
+    [
+     "but your mind"
+    ],
+    [
+     "WORKS.",
+     {
+      "emph": "WORKS"
+     }
+    ]
+   ],
+   "tone": "dry",
+   "text": "Four: you 'relax', but your mind WORKS.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign 5",
+   "art": "RMRSign5",
+   "chunks": [
+    [
+     "Five: overthinking"
+    ],
+    [
+     "feels like"
+    ],
+    [
+     "FIXING it.",
+     {
+      "emph": "FIXING"
+     }
+    ]
+   ],
+   "tone": "whispers, sly",
+   "text": "Five: overthinking feels like FIXING it.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Study",
+   "art": "RMRStudy",
+   "chunks": [
+    [
+     "In 2015,"
+    ],
+    [
+     "people walked"
+    ],
+    [
+     "ninety minutes:"
+    ],
+    [
+     "through NATURE,",
+     {
+      "emph": "NATURE"
+     }
+    ],
+    [
+     "or by traffic."
+    ]
+   ],
+   "tone": "curious",
+   "say": "In twenty fifteen, people walked ninety minutes: through nature, or by traffic.",
+   "text": "In 2015, people walked ninety minutes: through NATURE, or by traffic.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Result",
+   "art": "RMRScan",
+   "chunks": [
+    [
+     "Only nature"
+    ],
+    [
+     "quieted it,"
+    ],
+    [
+     "even on"
+    ],
+    [
+     "a brain SCAN.",
+     {
+      "emph": "SCAN"
+     }
+    ]
+   ],
+   "tone": "amazed, whispers",
+   "text": "Only nature quieted it, even on a brain SCAN.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Proof",
+   "art": "RMRProof",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "the last walk"
+    ],
+    [
+     "that 'cleared"
+    ],
+    [
+     "your head.'"
+    ],
+    [
+     "THAT one.",
+     {
+      "emph": "THAT"
+     }
+    ]
+   ],
+   "tone": "knowing, gentle laugh",
+   "text": "Think of the last walk that 'cleared your head.' THAT one.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Payoff",
+   "art": "RMRPark",
+   "chunks": [
+    [
+     "Arthur takes"
+    ],
+    [
+     "the park."
+    ],
+    [
+     "The Critic"
+    ],
+    [
+     "goes QUIET.",
+     {
+      "emph": "QUIET"
+     }
+    ]
+   ],
+   "tone": "warmly, amused",
+   "text": "Arthur takes the park. The Critic goes QUIET.",
+   "sec": "cd"
+  },
+  {
+   "scene": "End",
+   "art": "RMREnd",
+   "chunks": [
+    [
+     "Not BROKEN.",
+     {
+      "emph": "BROKEN"
+     }
+    ],
+    [
+     "Just indoors."
+    ],
+    [
+     "Which sign"
+    ],
+    [
+     "got you?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checked"
+    ],
+    [
+     "all five."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "text": "Not BROKEN. Just indoors. Which sign got you? Send this to the friend who checked all five.",
+   "sec": "cd"
+  }
+ ]
+}
