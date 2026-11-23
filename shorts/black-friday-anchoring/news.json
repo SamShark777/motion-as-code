@@ -166,27 +166,6 @@
   },
   {
    "who": "gus",
-   "text": "So I close five tabs?",
-   "board": {
-    "big": {
-     "text": "5 TABS?",
-     "color": "ink"
-    }
-   }
-  },
-  {
-   "who": "nell",
-   "text": "Close the ones where the old price did the selling.",
-   "board": {
-    "bar": {
-     "label": "TABS CLOSED",
-     "sub": "your wallet: RELIEVED",
-     "fill": 0.8
-    }
-   }
-  },
-  {
-   "who": "gus",
    "text": "Be honest: do you check the real price, or just the discount?",
    "board": {
     "vote": [
