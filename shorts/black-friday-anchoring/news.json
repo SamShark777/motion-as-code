@@ -1,0 +1,200 @@
+{
+ "slug": "black-friday-anchoring",
+ "masthead": "MON · NOV 23",
+ "music": "cc2e7d2119.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Black Friday is this week, and I already have six tabs open.",
+   "board": {
+    "headline": "BLACK FRIDAY\nWEEK",
+    "chips": [
+     {
+      "text": "FRI · NOV 27",
+      "color": "mus",
+      "at": 0.3
+     },
+     {
+      "text": "6 TABS OPEN",
+      "color": "red",
+      "at": 2.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The NRF expects about 183 million shoppers this weekend. Slightly fewer than last year.",
+   "say": "The N.R.F. expects about a hundred and eighty-three million shoppers this weekend. Slightly fewer than last year.",
+   "board": {
+    "card": {
+     "title": "NRF SURVEY · NOV 19",
+     "body": "~183 million expected to shop Thanksgiving weekend."
+    },
+    "chips": [
+     {
+      "text": "▼ ~2% VS 2025",
+      "color": "teal",
+      "at": 4.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "And almost half say the deals are too good to pass up.",
+   "board": {
+    "big": {
+     "text": "48%",
+     "color": "red"
+    },
+    "chips": [
+     {
+      "text": "\"TOO GOOD TO PASS UP\"",
+      "color": "mus",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Because they are! This TV was nine hundred. Now it's four ninety-nine!",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "$499!",
+     "color": "red"
+    },
+    "chips": [
+     {
+      "text": "WAS $900",
+      "color": "paper",
+      "at": 1.0
+     },
+     {
+      "text": "NOW $499",
+      "color": "mus",
+      "at": 2.3
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Adobe expects top discounts around thirty percent. About the same as last year.",
+   "board": {
+    "card": {
+     "title": "ADOBE FORECAST",
+     "body": "Peak discounts up to ~30%. On par with 2025."
+    },
+    "stamp": {
+     "text": "SAME AS 2025",
+     "at": 3.4
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Then why does mine feel like a steal?",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "A STEAL?",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's anchoring. The first number you see sets the scale.",
+   "board": {
+    "big": {
+     "text": "ANCHORING",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1974, Tversky and Kahneman spun a wheel that landed on 10 or 65, then asked what percent of UN countries are African.",
+   "say": "In nineteen seventy-four, Tversky and Kahneman spun a wheel that landed on ten or sixty-five, then asked what percent of U.N. countries are African.",
+   "board": {
+    "card": {
+     "title": "TVERSKY & KAHNEMAN · 1974",
+     "body": "A rigged wheel lands on 10 or 65. Then: guess a percentage."
+    },
+    "chips": [
+     {
+      "text": "WHEEL: 10",
+      "color": "paper",
+      "at": 3.6
+     },
+     {
+      "text": "WHEEL: 65",
+      "color": "mus",
+      "at": 4.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The sixty-five group guessed about 45. The ten group, about 25. From a random wheel.",
+   "say": "The sixty-five group guessed about forty-five. The ten group, about twenty-five. From a random wheel.",
+   "board": {
+    "headline": "SPIN 65 → 45%\nSPIN 10 → 25%",
+    "stamp": {
+     "text": "RANDOM!",
+     "at": 4.0
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That \"was nine hundred\" is your wheel. Ask what it's worth to you.",
+   "board": {
+    "headline": "IGNORE THE\n'WAS' PRICE",
+    "chips": [
+     {
+      "text": "WAS $900 = THE WHEEL",
+      "color": "red",
+      "at": 0.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So I close five tabs?",
+   "board": {
+    "big": {
+     "text": "5 TABS?",
+     "color": "ink"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Close the ones where the old price did the selling.",
+   "board": {
+    "bar": {
+     "label": "TABS CLOSED",
+     "sub": "your wallet: RELIEVED",
+     "fill": 0.8
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Be honest: do you check the real price, or just the discount?",
+   "board": {
+    "vote": [
+     "REAL PRICE",
+     "JUST THE %",
+     "NEITHER"
+    ]
+   }
+  }
+ ]
+}

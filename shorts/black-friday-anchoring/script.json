@@ -1,0 +1,31 @@
+{
+ "slug": "black-friday-anchoring",
+ "no": 241,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Do you check the real price, or just the discount?",
+ "note": "Daily news Short 2026-11-23 (Thanksgiving / Black Friday week). Confirmed: NRF press release Nov 19 2026 (Prosper survey of 7,956 adults, Oct 30-Nov 9): 182.7M expected to shop Thanksgiving weekend vs 186.9M last year (~-2%); 48% say deals 'too good to pass up'; matched by Chain Store Age and Mass Market Retailers (Nov 19). Adobe Digital Insights forecast Sep 28 2026: Cyber Week peak discounts up to 30% off list, 'on par with the 2025 season'; Black Friday online ~$12.9B forecast. Gus's $900->$499 TV is a made-up example, not a real deal. Nothing alleged. Psychology: anchoring, Tversky & Kahneman 1974, Science 185 (wheel rigged to 10 or 65; median estimates of % African countries in UN 25 vs 45).",
+ "post": {
+  "title": "Black Friday's \"Was $900\" Price Is a Trick on Your Brain #shorts",
+  "description": "About 183 million people are expected to shop over Thanksgiving weekend, slightly fewer than last year, and 48% say the deals are \"too good to pass up\" (NRF survey, Nov 19). Adobe expects peak online discounts of up to about 30% this season, on par with 2025. Gus and Nell talk about anchoring: in Tversky & Kahneman's 1974 study, a random wheel landing on 10 or 65 pulled people's guesses to about 25% or 45%. That \"was\" price works the same way. Do you check the real price, or just the discount? Comment below. Sources: National Retail Federation (Nov 19, 2026); Chain Store Age (Nov 2026); Adobe Digital Insights holiday forecast (Sep 28, 2026); Tversky & Kahneman, Science (1974). Music: \"Hand Trolley\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #blackfriday #anchoring #shopping #shorts",
+  "tags": [
+   "Black Friday",
+   "anchoring",
+   "anchoring bias",
+   "Kahneman",
+   "shopping psychology",
+   "psychology",
+   "news"
+  ]
+ }
+}
