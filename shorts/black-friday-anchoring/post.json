@@ -1,0 +1,17 @@
+{
+ "no": 241,
+ "slug": "black-friday-anchoring",
+ "date": "2026-11-23",
+ "slot": "09:00",
+ "due": "2026-11-23T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-23/black-friday-anchoring.mp4",
+ "buffer": {
+  "youtube": "6b04446eb94e468a6da6da00",
+  "instagram": "6b04446ed35c00e2ba750d2e",
+  "tiktok": "6b04446fa910126ee832f3c0"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 55.6
+}
