@@ -1,0 +1,186 @@
+{
+ "slug": "huang-return-overreact",
+ "masthead": "TUE · NOV 24",
+ "music": "3bb337f255.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Jensen Huang is back! Nvidia just rehired its CEO.",
+   "board": {
+    "headline": "HUANG IS\nBACK",
+    "chips": [
+     {
+      "text": "NVIDIA CEO",
+      "color": "mus",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Eleven days after he resigned. The board voted unanimously, after input from top U.S. officials.",
+   "say": "Eleven days after he resigned. The board voted unanimously, after input from top U.S. officials.",
+   "board": {
+    "headline": "HUANG IS\nBACK",
+    "chips": [
+     {
+      "text": "11 DAYS LATER",
+      "color": "paper",
+      "at": 0.2
+     },
+     {
+      "text": "UNANIMOUS VOTE",
+      "color": "teal",
+      "at": 2.0
+     },
+     {
+      "text": "U.S. OFFICIALS WEIGHED IN",
+      "color": "red",
+      "at": 3.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "And the stock went to the moon! Up about thirty percent in one day!",
+   "board": {
+    "big": {
+     "text": "▲ ~30%",
+     "color": "teal"
+    },
+    "chips": [
+     {
+      "text": "NVIDIA STOCK",
+      "color": "paper",
+      "at": 0.6
+     },
+     {
+      "text": "MONDAY · NOV 23",
+      "color": "mus",
+      "at": 2.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Told you. Genius. Always was.",
+   "board": {
+    "figure": {
+     "mark": "halo"
+    },
+    "scrawl": {
+     "text": "\"GENIUS!\"",
+     "at": 0.7
+    }
+   },
+   "brow": "up"
+  },
+  {
+   "who": "nell",
+   "text": "Last time, you said you always knew he was shady.",
+   "board": {
+    "figure": {
+     "mark": "horns"
+    },
+    "chips": [
+     {
+      "text": "NOV 13: \"SHADY\"",
+      "color": "red",
+      "at": 0.9
+     }
+    ]
+   },
+   "brow": "up"
+  },
+  {
+   "who": "nell",
+   "text": "And the board's probe into the reported spy allegations is still running. Nothing is proven, either way.",
+   "board": {
+    "card": {
+     "title": "STILL ONGOING",
+     "body": "the board's own probe into the reported spy allegations."
+    },
+    "stamp": {
+     "text": "NOTHING PROVEN",
+     "at": 4.6
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So why did my brain flip twice in two weeks?",
+   "board": {
+    "big": {
+     "text": "WHIPLASH?",
+     "color": "ink"
+    }
+   },
+   "brow": "down"
+  },
+  {
+   "who": "nell",
+   "text": "That's overreaction. We swing too hard on fresh news.",
+   "board": {
+    "big": {
+     "text": "OVERREACTION",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1985, De Bondt and Thaler found the stocks investors dumped hardest later beat the market's darlings, by about twenty-five percent.",
+   "say": "In nineteen eighty-five, De Bont and Thaler found the stocks investors dumped hardest later beat the market's darlings, by about twenty-five percent.",
+   "board": {
+    "card": {
+     "title": "DE BONDT & THALER · 1985",
+     "body": "Past \"losers\" beat past \"winners\" by ~25% over the next 3 years."
+    },
+    "chips": [
+     {
+      "text": "PANIC",
+      "color": "red",
+      "at": 3.2
+     },
+     {
+      "text": "HYPE",
+      "color": "mus",
+      "at": 5.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Big news feels like the whole story. It's usually just the latest chapter.",
+   "board": {
+    "headline": "LATEST\nCHAPTER"
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So I should just... wait?",
+   "board": {
+    "bar": {
+     "label": "INVESTIGATION ONGOING",
+     "sub": "your brain: FLIPPED TWICE",
+     "fill": 0.6
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Smart comeback, or too soon to tell? Comment below.",
+   "board": {
+    "vote": [
+     "SMART MOVE",
+     "TOO SOON",
+     "CAN'T TELL"
+    ]
+   }
+  }
+ ]
+}

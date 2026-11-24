@@ -1,0 +1,31 @@
+{
+ "slug": "huang-return-overreact",
+ "no": 252,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Smart comeback, or too soon to tell?",
+ "note": "Follow-up to huang-horns (No. 204): new development. Confirmed (NVIDIA press release / 8-K Nov 23 2026 + Fox Business Nov 23 2026): board voted unanimously to reinstate Jensen Huang as President, CEO and director, effective immediately, after 'input from senior levels of the United States government'; the board's independent committee investigation 'will proceed to conclusion'; Colette Kress back to CFO. Resigned Nov 12 (huang-horns 8-K) -> 11 days. Stock: CNBC headline 'Stock skyrockets 31%' + SBS/Newsquawk ~31% -> said 'about 30%'. Allegations (reported spy ties) kept as 'reported / nothing is proven, either way'. Trump's reported role not named (only 'top U.S. officials', NVIDIA's own wording) to stay neutral. Psychology: overreaction hypothesis, De Bondt & Thaler 1985, Journal of Finance 'Does the Stock Market Overreact?' (past 3-yr losers beat past winners by ~25% over the next 36 months).",
+ "post": {
+  "title": "Nvidia's CEO Is Back and the Stock Jumped ~30%. Your Brain Flipped Twice. #shorts",
+  "description": "Smart comeback, or too soon to tell? Comment below. Nvidia's board voted unanimously on Nov 23 to reinstate Jensen Huang as CEO, 11 days after he resigned, after input from senior U.S. government officials; the stock closed up about 30%. The board's own investigation into the reported spy allegations is still running, and nothing has been proven either way. Gus and Nell talk about overreaction: De Bondt and Thaler (1985) found that stocks investors dumped hardest went on to beat the market's darlings by about 25% over three years. Big news feels like the whole story; it's usually just the latest chapter. Sources: NVIDIA press release / SEC 8-K (Nov 23, 2026); Fox Business (Nov 23, 2026); CNBC (Nov 23, 2026). Music: \"Mysterioso March\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #nvidia #news #behavioralfinance #shorts",
+  "tags": [
+   "Nvidia",
+   "Jensen Huang",
+   "overreaction",
+   "behavioral finance",
+   "De Bondt Thaler",
+   "psychology",
+   "news"
+  ]
+ }
+}
