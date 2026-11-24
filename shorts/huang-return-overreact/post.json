@@ -1,0 +1,18 @@
+{
+ "no": 252,
+ "slug": "huang-return-overreact",
+ "date": "2026-11-24",
+ "slot": "09:00",
+ "due": "2026-11-24T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-24/huang-return-overreact.mp4",
+ "buffer": {
+  "instagram": "6b0592ee9dcfd38809245c49",
+  "tiktok": "6b0592eff1f2f25fac84a610"
+ },
+ "errors": {
+  "youtube": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+ },
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 53.6
+}
