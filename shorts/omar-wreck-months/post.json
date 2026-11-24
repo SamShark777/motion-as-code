@@ -1,0 +1,17 @@
+{
+ "no": 209,
+ "slug": "omar-wreck-months",
+ "date": "2026-11-24",
+ "slot": "19:00",
+ "due": "2026-11-25T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-24/omar-wreck-months.mp4",
+ "buffer": {
+  "youtube": "6b05034af0d7b1e0deaa68ef",
+  "instagram": "6b05034b9a4bd32ca3ed5c8c",
+  "tiktok": "6b05034c9a4bd32ca3ed5ce6"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 26.9
+}

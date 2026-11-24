@@ -1,0 +1,17 @@
+{
+ "no": 208,
+ "slug": "mae-five-safe-signs",
+ "date": "2026-11-24",
+ "slot": "14:00",
+ "due": "2026-11-24T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-24/mae-five-safe-signs.mp4",
+ "buffer": {
+  "youtube": "6b050346db52b449cf1fc9e6",
+  "instagram": "6b050347db52b449cf1fca17",
+  "tiktok": "6b0503489a4bd32ca3ed5ac7"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 33.8
+}
