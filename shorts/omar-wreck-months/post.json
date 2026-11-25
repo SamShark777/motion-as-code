@@ -13,5 +13,10 @@
  "errors": {},
  "engine": "kokoro",
  "voice_name": null,
- "duration": 26.9
+ "duration": 26.9,
+ "links": {
+  "youtube": "https://www.youtube.com/shorts/Q3T2FdHtZcA",
+  "instagram": "https://www.instagram.com/reel/DgJhCNnKJpQ/",
+  "tiktok": "https://tiktok.com/@shivam.sharma85/video/7711938685964504334"
+ }
 }

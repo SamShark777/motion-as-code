@@ -1,0 +1,18 @@
+{
+ "no": 253,
+ "slug": "thanksgiving-planning-fallacy",
+ "date": "2026-11-25",
+ "slot": "09:00",
+ "due": "2026-11-25T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-25/thanksgiving-planning-fallacy.mp4",
+ "buffer": {
+  "instagram": "6b06e56f9493f0e483f291d5",
+  "tiktok": "6b06e56f24eceb1185cec738"
+ },
+ "errors": {
+  "youtube": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+ },
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 54.3
+}
