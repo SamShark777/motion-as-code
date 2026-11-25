@@ -1,0 +1,313 @@
+{
+ "slug": "lila-next-desk",
+ "no": 223,
+ "format": "retro",
+ "look": "retro",
+ "series": "Lila",
+ "episode": 13,
+ "cast": [
+  "lila",
+  "mae"
+ ],
+ "title": [
+  "Best Friend",
+  "Next Door"
+ ],
+ "credit": "Festinger, Schachter & Back · 1950",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Why Your Best Friend Is Probably Your Neighbour #shorts",
+  "description": "Met your best friend by chance? Tell me in the comments. Send this to the friend who sat next to you. Lila's new work best friend is Mae, from the next desk. In 1950, Leon Festinger, Stanley Schachter and Kurt Back mapped friendships among married students in MIT's Westgate housing ('Social Pressures in Informal Groups'). Friendships formed most between next-door neighbours, and residents living by the stairways made more friends on other floors. Psychologists call it the proximity (propinquity) effect: we come to like the people we keep bumping into. Chance picks who you meet. You pick who stays. #psychology #shorts #friendship #proximityeffect #overthinking",
+  "tags": [
+   "proximity effect",
+   "propinquity",
+   "friendship psychology",
+   "Festinger Westgate",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Best Friend Is Your Neighbour",
+ "thumb_emph": "Neighbour",
+ "thumb_mood": "curious",
+ "music_vibe": "uplifting",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Lila's new best friend at work is Mae, from the next desk",
+  "lean": "pain",
+  "snapback": "But often, you picked their DOOR."
+ },
+ "relate": "barnum",
+ "question": "Met yours by chance?",
+ "share": "Send this to the friend who sat next to you.",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "RPDesks",
+   "chunks": [
+    [
+     "Lila's new"
+    ],
+    [
+     "best FRIEND",
+     {
+      "emph": "FRIEND"
+     }
+    ],
+    [
+     "at work? Mae."
+    ],
+    [
+     "The next"
+    ],
+    [
+     "desk over."
+    ]
+   ],
+   "tone": "bright, wry",
+   "text": "Lila's new best FRIEND at work? Mae. The next desk over.",
+   "sec": "cd",
+   "cam": [
+    540,
+    900,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "scene": "Lean",
+   "art": "RPHumour",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "it too."
+    ],
+    [
+     "You think"
+    ],
+    [
+     "you picked yours"
+    ],
+    [
+     "for their HUMOUR.",
+     {
+      "emph": "HUMOUR"
+     }
+    ]
+   ],
+   "tone": "knowingly, teasing",
+   "text": "You've done it too. You think you picked yours for their HUMOUR.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Snapback",
+   "art": "RPDoor",
+   "chunks": [
+    [
+     "But often,"
+    ],
+    [
+     "you picked"
+    ],
+    [
+     "their DOOR.",
+     {
+      "emph": "DOOR"
+     }
+    ]
+   ],
+   "tone": "whispers, surprised",
+   "text": "But often, you picked their DOOR.",
+   "sec": "cd",
+   "cam": [
+    540,
+    1000,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "scene": "Study",
+   "art": "RPHousing",
+   "chunks": [
+    [
+     "In 1950,"
+    ],
+    [
+     "psychologists mapped"
+    ],
+    [
+     "friendships in"
+    ],
+    [
+     "student HOUSING.",
+     {
+      "emph": "HOUSING"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "text": "In 1950, psychologists mapped friendships in student HOUSING.",
+   "sec": "cd",
+   "say": "In nineteen fifty, psychologists mapped friendships in student housing."
+  },
+  {
+   "scene": "Result",
+   "art": "RPStairs",
+   "chunks": [
+    [
+     "Next-door neighbours"
+    ],
+    [
+     "won. The flats"
+    ],
+    [
+     "by the STAIRS",
+     {
+      "emph": "STAIRS"
+     }
+    ],
+    [
+     "made friends upstairs."
+    ]
+   ],
+   "tone": "amazed",
+   "text": "Next-door neighbours won. The flats by the STAIRS made friends upstairs.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Name",
+   "art": "RPEffect",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "proximity EFFECT.",
+     {
+      "emph": "EFFECT"
+     }
+    ],
+    [
+     "We like who"
+    ],
+    [
+     "we keep"
+    ],
+    [
+     "bumping into."
+    ]
+   ],
+   "tone": "clear, warm",
+   "text": "It's the proximity EFFECT. We like who we keep bumping into.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Proof",
+   "art": "RPSchool",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "your first"
+    ],
+    [
+     "school friend."
+    ],
+    [
+     "Where did"
+    ],
+    [
+     "they SIT?",
+     {
+      "emph": "SIT"
+     }
+    ],
+    [
+     "Yeah."
+    ]
+   ],
+   "tone": "knowing, gentle laugh",
+   "text": "Think of your first school friend. Where did they SIT? Yeah.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Turn",
+   "art": "RPMove",
+   "chunks": [
+    [
+     "Lila moves desks."
+    ],
+    [
+     "Mae walks over"
+    ],
+    [
+     "ANYWAY.",
+     {
+      "emph": "ANYWAY"
+     }
+    ]
+   ],
+   "tone": "softly, smiling",
+   "text": "Lila moves desks. Mae walks over ANYWAY.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Payoff",
+   "art": "RPChoice",
+   "chunks": [
+    [
+     "Chance picks"
+    ],
+    [
+     "who you MEET.",
+     {
+      "emph": "MEET"
+     }
+    ],
+    [
+     "You pick"
+    ],
+    [
+     "who stays."
+    ]
+   ],
+   "tone": "warm, blunt",
+   "text": "Chance picks who you MEET. You pick who stays.",
+   "sec": "cd"
+  },
+  {
+   "scene": "End",
+   "art": "RPEnd",
+   "chunks": [
+    [
+     "Met yours"
+    ],
+    [
+     "by CHANCE?",
+     {
+      "emph": "CHANCE"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who sat"
+    ],
+    [
+     "next to you."
+    ]
+   ],
+   "tone": "warmly, playful",
+   "text": "Met yours by CHANCE? Send this to the friend who sat next to you.",
+   "sec": "cd"
+  }
+ ]
+}

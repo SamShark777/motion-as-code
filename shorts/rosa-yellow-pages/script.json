@@ -1,0 +1,358 @@
+{
+ "slug": "rosa-yellow-pages",
+ "no": 224,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Rosa",
+ "episode": 9,
+ "cast": [
+  "rosa",
+  "theo"
+ ],
+ "title": [
+  "5 Signs",
+  "You Study Wrong"
+ ],
+ "credit": "Slamecka & Graf · 1978",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs You're Studying the Way That Feels Good (Not the Way That Works) #shorts",
+  "description": "How many did you check? Tell me in the comments. Send this to the friend with the yellow textbook. Rosa's exam is Friday and she has highlighted the whole book. In 'The Generation Effect: Delineation of a Phenomenon' (Journal of Experimental Psychology: Human Learning and Memory, 1978), Norman Slamecka and Peter Graf had people either read word pairs (rapid – fast) or generate the second word themselves from a rule and its first letter (rapid – f_). Across five experiments, words people generated were remembered better than words they only read. Psychologists call it the generation effect: making your brain fill in the blank is the point. Cover your notes and test yourself. #psychology #shorts #studytips #generationeffect #overthinking",
+  "tags": [
+   "generation effect",
+   "study tips",
+   "how to remember",
+   "Slamecka Graf 1978",
+   "psychology"
+  ]
+ },
+ "thumb_text": "5 Signs You Study Wrong",
+ "thumb_emph": "Wrong",
+ "thumb_mood": "worried",
+ "music_vibe": "uplifting",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Rosa's exam is Friday and she's highlighted the whole book",
+  "lean": "pain",
+  "snapback": "But feeling ready isn't REMEMBERING."
+ },
+ "relate": "barnum",
+ "question": "How many did you check?",
+ "share": "Send this to the friend with the yellow textbook.",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "MGHighlight",
+   "chunks": [
+    [
+     "Rosa's exam"
+    ],
+    [
+     "is Friday."
+    ],
+    [
+     "She's HIGHLIGHTED",
+     {
+      "emph": "HIGHLIGHTED"
+     }
+    ],
+    [
+     "the whole book."
+    ]
+   ],
+   "tone": "confident, a little smug",
+   "text": "Rosa's exam is Friday. She's HIGHLIGHTED the whole book.",
+   "sec": "cd",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "scene": "Lean",
+   "art": "MGFiveStudy",
+   "chunks": [
+    [
+     "Five signs"
+    ],
+    [
+     "you study"
+    ],
+    [
+     "like Rosa"
+    ],
+    [
+     "TOO.",
+     {
+      "emph": "TOO"
+     }
+    ]
+   ],
+   "tone": "knowingly, teasing",
+   "text": "Five signs you study like Rosa TOO.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Snapback",
+   "art": "MGFeelsReady",
+   "chunks": [
+    [
+     "But feeling"
+    ],
+    [
+     "ready isn't"
+    ],
+    [
+     "REMEMBERING.",
+     {
+      "emph": "REMEMBERING"
+     }
+    ]
+   ],
+   "tone": "whispers, surprised",
+   "text": "But feeling ready isn't REMEMBERING.",
+   "sec": "cd",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "scene": "Sign1",
+   "art": "MGSignYellow",
+   "chunks": [
+    [
+     "One: half"
+    ],
+    [
+     "the page"
+    ],
+    [
+     "is YELLOW.",
+     {
+      "emph": "YELLOW"
+     }
+    ]
+   ],
+   "tone": "teasing",
+   "text": "One: half the page is YELLOW.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign2",
+   "art": "MGSignReread",
+   "chunks": [
+    [
+     "Two: you re-read,"
+    ],
+    [
+     "and it feels"
+    ],
+    [
+     "FAMILIAR.",
+     {
+      "emph": "FAMILIAR"
+     }
+    ]
+   ],
+   "tone": "knowing",
+   "text": "Two: you re-read, and it feels FAMILIAR.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign3",
+   "art": "MGSignPeek",
+   "chunks": [
+    [
+     "Three: you"
+    ],
+    [
+     "peek at"
+    ],
+    [
+     "the ANSWER first.",
+     {
+      "emph": "ANSWER"
+     }
+    ]
+   ],
+   "tone": "playful",
+   "text": "Three: you peek at the ANSWER first.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign4",
+   "art": "MGSignCopy",
+   "chunks": [
+    [
+     "Four: you copy"
+    ],
+    [
+     "notes word"
+    ],
+    [
+     "for WORD.",
+     {
+      "emph": "WORD"
+     }
+    ]
+   ],
+   "tone": "dry",
+   "text": "Four: you copy notes word for WORD.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Sign5",
+   "art": "MGSignVideo",
+   "chunks": [
+    [
+     "Five: the video"
+    ],
+    [
+     "made total SENSE.",
+     {
+      "emph": "SENSE"
+     }
+    ],
+    [
+     "Then the test."
+    ]
+   ],
+   "tone": "playful, laughs",
+   "text": "Five: the video made total SENSE. Then the test.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Study",
+   "art": "MGStudy1978",
+   "chunks": [
+    [
+     "In 1978,"
+    ],
+    [
+     "people either"
+    ],
+    [
+     "READ word pairs,",
+     {
+      "emph": "READ"
+     }
+    ],
+    [
+     "or filled in"
+    ],
+    [
+     "the missing word."
+    ]
+   ],
+   "tone": "curious",
+   "text": "In 1978, people either READ word pairs, or filled in the missing word.",
+   "sec": "cd",
+   "say": "In nineteen seventy-eight, people either read word pairs, or filled in the missing word."
+  },
+  {
+   "scene": "Result",
+   "art": "MGStuck",
+   "chunks": [
+    [
+     "The words"
+    ],
+    [
+     "they filled in"
+    ],
+    [
+     "stuck BETTER.",
+     {
+      "emph": "BETTER"
+     }
+    ]
+   ],
+   "tone": "amazed",
+   "text": "The words they filled in stuck BETTER.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Name",
+   "art": "MGGenEffect",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "generation EFFECT.",
+     {
+      "emph": "EFFECT"
+     }
+    ],
+    [
+     "The effort"
+    ],
+    [
+     "is the point."
+    ]
+   ],
+   "tone": "clear, warm",
+   "text": "It's the generation EFFECT. The effort is the point.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Payoff",
+   "art": "MGTheoCover",
+   "chunks": [
+    [
+     "Theo covers"
+    ],
+    [
+     "her notes."
+    ],
+    [
+     "'Now tell me.'"
+    ],
+    [
+     "She REMEMBERS.",
+     {
+      "emph": "REMEMBERS"
+     }
+    ]
+   ],
+   "tone": "warmly, dry",
+   "text": "Theo covers her notes. 'Now tell me.' She REMEMBERS.",
+   "sec": "cd"
+  },
+  {
+   "scene": "End",
+   "art": "MGEndStudy",
+   "chunks": [
+    [
+     "How MANY",
+     {
+      "emph": "MANY"
+     }
+    ],
+    [
+     "did you check?"
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "with the"
+    ],
+    [
+     "yellow textbook."
+    ]
+   ],
+   "tone": "warmly, blunt",
+   "text": "How MANY did you check? Send this to the friend with the yellow textbook.",
+   "sec": "cd"
+  }
+ ]
+}

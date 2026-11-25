@@ -1,0 +1,435 @@
+{
+ "slug": "gus-name-letters",
+ "no": 225,
+ "format": "xplog",
+ "look": "xplog",
+ "series": "Gus",
+ "episode": 4,
+ "cast": [
+  "gus",
+  "ivy"
+ ],
+ "title": [
+  "Your Favourite",
+  "Letter"
+ ],
+ "credit": "Nuttin · 1985, 1987",
+ "handle": "@aroundthestrangeai",
+ "hud": {
+  "clock_label": "TESTING FOR",
+  "count_label": "NAME LETTERS PICKED",
+  "count_total": 3,
+  "tag": "THE OVERTHINK CLUB"
+ },
+ "post": {
+  "title": "Your Favourite Letter Is Probably In Your Name #shorts",
+  "description": "Was your letter in your name? Tell me in the comments. Send this to the friend whose favourite letter is their initial. Gus picks G because 'it just looks nice'. In 1985 the Belgian psychologist Jozef Nuttin (European Journal of Social Psychology) had people circle the letter they liked more in pairs of letters: they preferred letters from their own name more than other people did. In 1987 he repeated it across 12 European languages with over 2,000 students: the preference for one's own initials was clear in every language. Psychologists call it the name-letter effect. Not vanity: we just like what's ours. #psychology #shorts #nameletter #overthinking #funfacts",
+  "tags": [
+   "name letter effect",
+   "Nuttin",
+   "favourite letter",
+   "psychology test",
+   "psychology"
+  ]
+ },
+ "thumb_text": "Your Favourite Letter Is In Your Name",
+ "thumb_emph": "Name",
+ "thumb_mood": "wide",
+ "music_vibe": "lofi",
+ "pattern": "Experiment log",
+ "thumb_scene": 5,
+ "hook": {
+  "context": "Quick test: pick your favourite letter",
+  "lean": "pain",
+  "snapback": "But it might be hiding in your own NAME."
+ },
+ "relate": "barnum",
+ "question": "Was your letter in your name?",
+ "share": "Send this to the FRIEND whose favourite letter is their initial.",
+ "lines": [
+  {
+   "scene": "Hook",
+   "art": "XGLetter",
+   "chunks": [
+    [
+     "Quick test:"
+    ],
+    [
+     "pick your"
+    ],
+    [
+     "favourite LETTER.",
+     {
+      "emph": "LETTER"
+     }
+    ],
+    [
+     "Don't think."
+    ]
+   ],
+   "tone": "playful, quick",
+   "text": "Quick test: pick your favourite LETTER. Don't think.",
+   "sec": "cd",
+   "hud": {
+    "title": "SECOND 1",
+    "clock": 0,
+    "count": 0
+   }
+  },
+  {
+   "scene": "Lean",
+   "art": "XGLooks",
+   "chunks": [
+    [
+     "Gus picks G."
+    ],
+    [
+     "'It just"
+    ],
+    [
+     "looks nice.'"
+    ],
+    [
+     "You picked yours"
+    ],
+    [
+     "for its LOOKS",
+     {
+      "emph": "LOOKS"
+     }
+    ],
+    [
+     "too."
+    ]
+   ],
+   "tone": "knowing, teasing",
+   "text": "Gus picks G. 'It just looks nice.' You picked yours for its LOOKS too.",
+   "sec": "cd",
+   "hud": {
+    "clock": 4
+   }
+  },
+  {
+   "scene": "Snapback",
+   "art": "XGName",
+   "chunks": [
+    [
+     "But it might"
+    ],
+    [
+     "be hiding"
+    ],
+    [
+     "in your"
+    ],
+    [
+     "own NAME.",
+     {
+      "emph": "NAME"
+     }
+    ]
+   ],
+   "tone": "whispers, surprised",
+   "text": "But it might be hiding in your own NAME.",
+   "sec": "cd",
+   "hud": {
+    "title": "THE TWIST",
+    "clock": 9
+   },
+   "cam": [
+    540,
+    304,
+    1.0,
+    1.18
+   ]
+  },
+  {
+   "scene": "Round1",
+   "art": "XGRound1",
+   "chunks": [
+    [
+     "Round one:"
+    ],
+    [
+     "G or P?"
+    ],
+    [
+     "G. OBVIOUSLY.",
+     {
+      "emph": "OBVIOUSLY"
+     }
+    ]
+   ],
+   "tone": "confident, smug",
+   "text": "Round one: G or P? G. OBVIOUSLY.",
+   "sec": "cd",
+   "hud": {
+    "title": "ROUND 1",
+    "clock": 14,
+    "count": 1,
+    "count_beat": 2
+   }
+  },
+  {
+   "scene": "Round2",
+   "art": "XGRound2",
+   "chunks": [
+    [
+     "Round two:"
+    ],
+    [
+     "S or T?"
+    ],
+    [
+     "S. Feels RANDOM.",
+     {
+      "emph": "RANDOM"
+     }
+    ]
+   ],
+   "tone": "casual",
+   "text": "Round two: S or T? S. Feels RANDOM.",
+   "sec": "cd",
+   "hud": {
+    "title": "ROUND 2",
+    "clock": 20,
+    "count": 2,
+    "count_beat": 2
+   }
+  },
+  {
+   "scene": "Round3",
+   "art": "XGRound3",
+   "chunks": [
+    [
+     "Round three:"
+    ],
+    [
+     "U or R?"
+    ],
+    [
+     "U."
+    ],
+    [
+     "G, U, S…"
+    ],
+    [
+     "GUS.",
+     {
+      "emph": "GUS"
+     }
+    ]
+   ],
+   "tone": "slow realisation, then laughs",
+   "text": "Round three: U or R? U. G, U, S… GUS.",
+   "sec": "cd",
+   "hud": {
+    "title": "ROUND 3",
+    "clock": 26,
+    "count": 3,
+    "count_beat": 4
+   }
+  },
+  {
+   "scene": "Study",
+   "art": "XGStudy",
+   "chunks": [
+    [
+     "In 1985,"
+    ],
+    [
+     "Jozef Nuttin"
+    ],
+    [
+     "had people circle"
+    ],
+    [
+     "their favourite letter"
+    ],
+    [
+     "in PAIRS.",
+     {
+      "emph": "PAIRS"
+     }
+    ]
+   ],
+   "tone": "curious",
+   "text": "In 1985, Jozef Nuttin had people circle their favourite letter in PAIRS.",
+   "sec": "cd",
+   "hud": {
+    "title": "THE STUDY",
+    "run": false
+   },
+   "say": "In nineteen eighty-five, Yo-zef Nuttin had people circle their favourite letter in pairs."
+  },
+  {
+   "scene": "Result",
+   "art": "XGResult",
+   "chunks": [
+    [
+     "They picked"
+    ],
+    [
+     "letters from"
+    ],
+    [
+     "their own NAME",
+     {
+      "emph": "NAME"
+     }
+    ],
+    [
+     "more often."
+    ]
+   ],
+   "tone": "amazed",
+   "text": "They picked letters from their own NAME more often.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Languages",
+   "art": "XGLanguages",
+   "chunks": [
+    [
+     "Then twelve LANGUAGES.",
+     {
+      "emph": "LANGUAGES"
+     }
+    ],
+    [
+     "Two thousand students."
+    ],
+    [
+     "Initials won"
+    ],
+    [
+     "everywhere."
+    ]
+   ],
+   "tone": "building, impressed",
+   "text": "Then twelve LANGUAGES. Two thousand students. Initials won everywhere.",
+   "sec": "cd",
+   "hud": {
+    "title": "1987"
+   }
+  },
+  {
+   "scene": "Name",
+   "art": "XGEffect",
+   "chunks": [
+    [
+     "It's the"
+    ],
+    [
+     "name-letter EFFECT.",
+     {
+      "emph": "EFFECT"
+     }
+    ]
+   ],
+   "tone": "matter-of-fact",
+   "text": "It's the name-letter EFFECT.",
+   "sec": "cd"
+  },
+  {
+   "scene": "Proof",
+   "art": "XGUsername",
+   "chunks": [
+    [
+     "Think of"
+    ],
+    [
+     "your last USERNAME.",
+     {
+      "emph": "USERNAME"
+     }
+    ],
+    [
+     "Initials in it?"
+    ],
+    [
+     "Yeah."
+    ]
+   ],
+   "tone": "knowing, gentle laugh",
+   "text": "Think of your last USERNAME. Initials in it? Yeah.",
+   "sec": "cd",
+   "hud": {
+    "title": "YOU"
+   }
+  },
+  {
+   "scene": "Payoff",
+   "art": "XGMine",
+   "chunks": [
+    [
+     "Not vanity."
+    ],
+    [
+     "Your brain"
+    ],
+    [
+     "just likes"
+    ],
+    [
+     "what's YOURS.",
+     {
+      "emph": "YOURS"
+     }
+    ]
+   ],
+   "tone": "warm, reassuring",
+   "text": "Not vanity. Your brain just likes what's YOURS.",
+   "sec": "cd",
+   "hud": {
+    "title": "THE TRUTH"
+   }
+  },
+  {
+   "scene": "Ask",
+   "art": "XGAsk",
+   "chunks": [
+    [
+     "Was your letter"
+    ],
+    [
+     "IN your name?",
+     {
+      "emph": "IN"
+     }
+    ]
+   ],
+   "tone": "curious, friendly",
+   "text": "Was your letter IN your name?",
+   "sec": "cd",
+   "hud": {
+    "title": "YOUR TURN",
+    "run": false
+   }
+  },
+  {
+   "scene": "Share",
+   "art": "XGShare",
+   "chunks": [
+    [
+     "Send this"
+    ],
+    [
+     "to the FRIEND",
+     {
+      "emph": "FRIEND"
+     }
+    ],
+    [
+     "whose favourite letter"
+    ],
+    [
+     "is their initial."
+    ]
+   ],
+   "tone": "warmly, playful",
+   "text": "Send this to the FRIEND whose favourite letter is their initial.",
+   "sec": "cd"
+  }
+ ]
+}
