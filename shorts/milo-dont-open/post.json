@@ -1,0 +1,17 @@
+{
+ "no": 212,
+ "slug": "milo-dont-open",
+ "date": "2026-11-25",
+ "slot": "14:00",
+ "due": "2026-11-25T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-25/milo-dont-open.mp4",
+ "buffer": {
+  "youtube": "6b0633d5a2fd17422e7529e0",
+  "instagram": "6b0633d691929194132bf1a8",
+  "tiktok": "6b0633d7a8becebb774c1efe"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 31.2
+}
