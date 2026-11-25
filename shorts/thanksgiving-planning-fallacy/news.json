@@ -1,0 +1,168 @@
+{
+ "slug": "thanksgiving-planning-fallacy",
+ "masthead": "WED · NOV 25",
+ "music": "c53747c424.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Over 81 million people traveling for Thanksgiving, and I'll still beat traffic.",
+   "say": "Over eighty-one million people traveling for Thanksgiving, and I'll still beat traffic.",
+   "board": {
+    "headline": "81 MILLION\nHIT THE ROAD"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "AAA says about 81.5 million, Tuesday to Monday. Nearly nine in ten drive.",
+   "say": "Triple A says about eighty-one and a half million, Tuesday to Monday. Nearly nine in ten drive.",
+   "board": {
+    "card": {
+     "title": "AAA FORECAST",
+     "body": "~81.5M travelers, Nov 24–30. ~73M by car."
+    },
+    "chips": [
+     {
+      "text": "NOV 24–30",
+      "color": "mus",
+      "at": 2.6
+     },
+     {
+      "text": "~9 IN 10 DRIVE",
+      "color": "teal",
+      "at": 3.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Today's one of the busiest road days. And storms are in the forecast.",
+   "board": {
+    "headline": "TODAY:\nPEAK ROADS",
+    "chips": [
+     {
+      "text": "BUSIEST ROAD DAY",
+      "color": "red",
+      "at": 0.5
+     },
+     {
+      "text": "STORMS FORECAST",
+      "color": "paper",
+      "at": 2.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Relax. I leave at noon, I'm there in three hours. Tops.",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "3 HOURS",
+     "color": "teal"
+    },
+    "chips": [
+     {
+      "text": "\"TOPS.\"",
+      "color": "mus",
+      "at": 2.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "You said that last year. It took seven.",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "7 HOURS",
+     "color": "red"
+    },
+    "stamp": {
+     "text": "LAST YEAR",
+     "at": 0.9
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Last year was bad luck. This year is different."
+  },
+  {
+   "who": "nell",
+   "text": "That's the planning fallacy.",
+   "board": {
+    "big": {
+     "text": "PLANNING FALLACY",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1994, Roger Buehler asked students when they'd finish their thesis. They guessed about 34 days. It took about 56.",
+   "say": "In nineteen ninety-four, Roger Buehler asked students when they'd finish their thesis. They guessed about thirty-four days. It took about fifty-six.",
+   "board": {
+    "card": {
+     "title": "BUEHLER · 1994",
+     "body": "Students' guess: ~34 days. Reality: ~56 days."
+    },
+    "chips": [
+     {
+      "text": "ONLY ~30% ON TIME",
+      "color": "red",
+      "at": 6.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "We picture the best case, and forget every trip that went wrong.",
+   "board": {
+    "headline": "BEST CASE\nVS. LAST TIME"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The fix? Plan with your last real trip time, not your hopes.",
+   "board": {
+    "bar": {
+     "label": "LAST REAL TRIP: 7 HRS",
+     "sub": "your plan: 3 hrs",
+     "fill": 0.43
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So I leave at five a.m.?",
+   "board": {
+    "big": {
+     "text": "5 A.M.?",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Leave whenever. Just believe the old number.",
+   "board": {
+    "headline": "TRUST THE\nOLD NUMBER"
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Be honest. How late will you be? Tell us in the comments.",
+   "board": {
+    "vote": [
+     "ON TIME",
+     "1 HR LATE",
+     "DON'T ASK"
+    ]
+   }
+  }
+ ]
+}

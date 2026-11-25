@@ -1,0 +1,29 @@
+{
+ "slug": "thanksgiving-planning-fallacy",
+ "no": 253,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "note": "Daily news Short 2026-11-25. Confirmed (AAA forecast via Fox Weather Nov 17 2026 + The National Desk/TravelPulse Nov 16 2026): ~81.5M Americans travel 50+ miles Tue Nov 24 - Mon Nov 30 (last year 81.6M), ~72.9M by car (~90%); Tue/Wed before Thanksgiving busiest road days; storms likely Thanksgiving week (Fox Weather). Nothing alleged. Gus's '3 hours / last year 7' is the characters' own banter, not news. Planning fallacy: Buehler, Griffin & Ross 1994 JPSP 67(3) - thesis students predicted ~33.9 days, took ~55.5; ~30% finished by their estimate.",
+ "post": {
+  "title": "81 Million Are Traveling for Thanksgiving. You Won't Beat Traffic. #shorts",
+  "description": "AAA expects about 81.5 million Americans to travel for Thanksgiving between Nov 24 and Nov 30, roughly 73 million of them by car, with Tuesday and Wednesday the busiest road days and storms in the forecast. Gus is sure he'll beat traffic anyway. Nell calls it the planning fallacy: in 1994, Roger Buehler's team found students guessed their thesis would take about 34 days; it took about 56, and only ~30% finished on time. The fix: plan with your last real trip time, not your hopes. Be honest: how late will you be? Comment below. Sources: AAA forecast via Fox Weather (Nov 17, 2026) and The National Desk (Nov 16, 2026); Buehler, Griffin & Ross, Journal of Personality and Social Psychology (1994). Music: \"Mighty Like Us\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #thanksgiving #planningfallacy #travel #shorts",
+  "tags": [
+   "Thanksgiving",
+   "Thanksgiving travel",
+   "AAA",
+   "planning fallacy",
+   "psychology",
+   "news"
+  ]
+ }
+}
