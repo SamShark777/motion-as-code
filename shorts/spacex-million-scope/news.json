@@ -1,0 +1,180 @@
+{
+ "slug": "spacex-million-scope",
+ "masthead": "THU · NOV 26",
+ "music": "e22b03e6c6.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "SpaceX just got the green light for a million satellites.",
+   "board": {
+    "headline": "1 MILLION\nSATELLITES"
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The FCC approved it Wednesday. Up to a million, to run AI data centers in space.",
+   "say": "The F.C.C. approved it Wednesday. Up to a million, to run A.I. data centers in space.",
+   "board": {
+    "headline": "1 MILLION\nSATELLITES",
+    "chips": [
+     {
+      "text": "FCC APPROVED",
+      "color": "mus",
+      "at": 0.3
+     },
+     {
+      "text": "NOV 25, 2026",
+      "color": "paper",
+      "at": 1.3
+     },
+     {
+      "text": "AI DATA CENTERS IN SPACE",
+      "color": "teal",
+      "at": 3.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Astronomers objected. They're worried about debris and crowded orbits. None are up there yet.",
+   "board": {
+    "card": {
+     "title": "CRITICS WARN",
+     "body": "Space debris. Crowded orbits. Radio interference."
+    },
+    "stamp": {
+     "text": "NOT LAUNCHED YET",
+     "at": 4.6
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Eh. Space is huge. A thousand, a million, same thing.",
+   "brow": "down",
+   "board": {
+    "big": {
+     "text": "SAME THING?",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Is it? That's a thousand times more.",
+   "brow": "up",
+   "board": {
+    "chips": [
+     {
+      "text": "1,000",
+      "color": "paper",
+      "at": 0.6
+     },
+     {
+      "text": "× 1,000",
+      "color": "mus",
+      "at": 1.3
+     },
+     {
+      "text": "= 1,000,000",
+      "color": "red",
+      "at": 1.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Okay, but they both just feel like... a lot."
+  },
+  {
+   "who": "nell",
+   "text": "That's scope insensitivity.",
+   "board": {
+    "big": {
+     "text": "SCOPE INSENSITIVITY",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1993, William Desvousges asked people what they'd pay to save birds from oil ponds.",
+   "say": "In nineteen ninety-three, William Desvousges asked people what they'd pay to save birds from oil ponds.",
+   "board": {
+    "card": {
+     "title": "DESVOUSGES · 1993",
+     "body": "How much would you pay to save birds from oil ponds?"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "2,000 birds, or 200,000 birds. The answers barely moved. About 80 dollars.",
+   "say": "Two thousand birds, or two hundred thousand birds. The answers barely moved. About eighty dollars.",
+   "board": {
+    "card": {
+     "title": "DESVOUSGES · 1993",
+     "body": "How much would you pay to save birds from oil ponds?"
+    },
+    "chips": [
+     {
+      "text": "2,000 → $80",
+      "color": "paper",
+      "at": 0.2
+     },
+     {
+      "text": "20,000 → $78",
+      "color": "mus",
+      "at": 1.0
+     },
+     {
+      "text": "200,000 → $88",
+      "color": "red",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Your brain pictures one oily bird. Or one dot in the sky. Not the number.",
+   "board": {
+    "headline": "ONE DOT.\nNOT A MILLION."
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So I should picture a million dots?",
+   "board": {
+    "big": {
+     "text": "1,000,000",
+     "color": "ink"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "You can't. That's why it slips past you. Do the math instead.",
+   "board": {
+    "bar": {
+     "label": "YOUR GUT FEELING",
+     "sub": "1,000 ≈ 1,000,000",
+     "fill": 0.5
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Bold new frontier, or too crowded up there? Tell us in the comments.",
+   "board": {
+    "vote": [
+     "BOLD FRONTIER",
+     "TOO CROWDED",
+     "NEED MORE INFO"
+    ]
+   }
+  }
+ ]
+}

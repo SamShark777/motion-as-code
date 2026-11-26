@@ -1,0 +1,30 @@
+{
+ "slug": "spacex-million-scope",
+ "no": 254,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Bold new frontier, or too crowded up there?",
+ "note": "Daily news Short 2026-11-26. Confirmed by CBS News + TechCrunch (both Nov 25 2026): FCC approved SpaceX request for up to 1 million satellites for orbital AI data centers (Carr: 'historic first'); TechCrunch: conditional, objections from American Astronomical Society (debris, congestion, RF interference), Amazon, Viasat; 10things.news also reports scientists warning of debris. 'None are up there yet' = TechCrunch 'not imminent' + CBS 'as early as 2028'. No allegations involved. Scope insensitivity: Desvousges et al. 1993 (birds in oil ponds: 2,000/20,000/200,000 -> $80/$78/$88).",
+ "post": {
+  "title": "SpaceX Can Launch 1 Million Satellites. Your Brain Can't Feel It. #shorts",
+  "description": "The FCC approved SpaceX's request on Nov 25, 2026 to deploy up to 1 million satellites to run AI data centers in space. Astronomers and rivals objected over space debris, crowded orbits and radio interference, and none of the satellites are in orbit yet. Gus and Nell talk about scope insensitivity: our feelings barely change between a thousand and a million. In a 1993 study by William Desvousges and colleagues, people offered about the same (~$80) to save 2,000, 20,000 or 200,000 birds from oil ponds. Bold new frontier, too crowded up there, or need more info? Comment below. Sources: CBS News (Nov 25, 2026); TechCrunch (Nov 25, 2026); Desvousges et al. (1993). Music: \"Wallpaper\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #spacex #space #news #scopeinsensitivity #shorts",
+  "tags": [
+   "SpaceX",
+   "FCC",
+   "satellites",
+   "scope insensitivity",
+   "psychology",
+   "news"
+  ]
+ }
+}
