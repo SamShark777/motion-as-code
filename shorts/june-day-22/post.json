@@ -1,0 +1,17 @@
+{
+ "no": 218,
+ "slug": "june-day-22",
+ "date": "2026-11-26",
+ "slot": "19:00",
+ "due": "2026-11-27T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-26/june-day-22.mp4",
+ "buffer": {
+  "youtube": "6b07805907071a60673f6016",
+  "instagram": "6b07805a07071a60673f6049",
+  "tiktok": "6b07805b9f6dda31ccad80ae"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 32.6
+}
