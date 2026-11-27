@@ -65,7 +65,8 @@
     "ep 10 (mae-meeting-nod, with Otto + Lila): nods through Otto's 'Q3 synergy pivot' meeting totally lost, sure she's the only one; pluralistic ignorance (Prentice & Miller 1993: Princeton students thought they were less comfortable with campus drinking than the average student); finally asks 'what's ROI²?'",
     "ep 11 (arthur-rainy-trip): waves a camping brochure at Arthur; he says 'obviously'",
     "ep 12 (mae-five-safe-signs, with The Doubt; signs-list): skips the audition ('there'll be other chances'); '5 signs you play it safe'; regret of inaction (Gilovich & Medvec 1995); books the next audition",
-    "ep 13 cameo (lila-next-desk): Lila's next-desk best friend; walks over with two coffees after Lila moves desks"
+    "ep 13 cameo (lila-next-desk): Lila's next-desk best friend; walks over with two coffees after Lila moves desks",
+    "ep 14 (mae-said-no, with The Doubt + Otto): says no to Otto's barbecue, lies awake sure he's furious; invitation declines (Givi & Kirk 2023: five experiments, 2,000+ people; decliners overestimate the inviter's upset); Monday Otto shrugs 'next month, then'"
    ]
   },
   "otto": {
@@ -91,7 +92,8 @@
     "ep 10 (lila-lucky-numbers, with Lila): hands out random office-lottery tickets; shrugs at Lila's 'lucky' birthday numbers",
     "ep 11 (mae-meeting-nod): runs the jargon meeting nobody understands",
     "ep 12 (otto-swapped-logo, with Lila): picks the red logo, certain; Lila swaps the cards and he praises the blue one; choice blindness (Johansson, Hall, Sikström & Olsson 2005: only 13% of swapped face choices caught right away)",
-    "ep 13 (lila-payday-coffee): speechless for once when Lila hands him a coffee ('For me?!')"
+    "ep 13 (lila-payday-coffee): speechless for once when Lila hands him a coffee ('For me?!')",
+    "ep 14 (otto-lunch-talker, with Lila; signs-list): talks through a whole lunch and calls it a great chat; '5 signs you talk more than you ask'; question-asking increases liking (Huang, Yeomans, Brooks, Minson & Gino 2017: follow-up questions liked more, more second dates); next lunch asks 'then what happened?' and Lila stays for dessert. Cameo in mae-said-no: shrugs off Mae's no"
    ]
   },
   "lila": {
@@ -117,7 +119,8 @@
     "ep 10 (mae-meeting-nod): whispers 'thank you' when Mae finally asks",
     "ep 11 (otto-swapped-logo, with Otto): swaps Otto's logo cards; guards her own 'pick' like a trophy",
     "ep 12 (lila-payday-coffee, with Otto): payday headphones buzz lasts an hour; prosocial spending (Dunn, Aknin & Norton 2008); buys Otto a coffee, best five bucks all week",
-    "ep 13 (lila-next-desk, with Mae): new work best friend is Mae from the next desk; proximity effect (Festinger, Schachter & Back 1950, MIT Westgate: next-door neighbours, stairway flats made friends upstairs); Lila moves desks, Mae walks over anyway"
+    "ep 13 (lila-next-desk, with Mae): new work best friend is Mae from the next desk; proximity effect (Festinger, Schachter & Back 1950, MIT Westgate: next-door neighbours, stairway flats made friends upstairs); Lila moves desks, Mae walks over anyway",
+    "ep 14 (otto-lunch-talker): buried under Otto's monologue at lunch; stays for dessert once he asks a follow-up"
    ]
   },
   "doubt": {
@@ -133,7 +136,8 @@
     "ep 2 (arthur-3am-worries, with Arthur): whispers \"what if…\" at 3 AM; gets stamped WRONG and shrinks once Arthur writes his worries down and checks them (LaFreniere & Newman 2020)",
     "ep 3 (mae-too-many-shows, with Mae): whispers 'what if the other one's better?' over a long menu (choice overload)",
     "ep 4 (lila-train-stranger, with Lila): hisses 'it'll be awkward' on the train; shrinks to a pea when Lila says hi",
-    "ep 5 (mae-five-safe-signs, with Mae): rides Mae's shoulder past the audition door, shouts 'WHAT IF?'; shrinks to a pea when she signs up"
+    "ep 5 (mae-five-safe-signs, with Mae): rides Mae's shoulder past the audition door, shouts 'WHAT IF?'; shrinks to a pea when she signs up",
+    "ep 6 (mae-said-no): whispers 'he's furious, he'll never invite you again' from Mae's shoulder; shrinks to a pea when Otto shrugs"
    ]
   }
  }

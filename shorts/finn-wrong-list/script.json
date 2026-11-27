@@ -1,0 +1,451 @@
+{
+ "slug": "finn-wrong-list",
+ "no": 227,
+ "format": "xplog",
+ "look": "xplog",
+ "series": "Finn",
+ "episode": 3,
+ "cast": [
+  "finn",
+  "ivy"
+ ],
+ "title": [
+  "The Other",
+  "List"
+ ],
+ "credit": "Emmons & McCullough · 2003",
+ "handle": "@aroundthestrangeai",
+ "hud": {
+  "clock_label": "LYING AWAKE FOR",
+  "count_label": "WENT WRONG",
+  "count_total": 5,
+  "tag": "THE OVERTHINK CLUB"
+ },
+ "post": {
+  "title": "Your Brain Lists What Went Wrong Every Night. Give It the Other List. #shorts",
+  "description": "What's one good thing from today? Tell me in the comments. Send this to the friend who replays every mistake. Every night your brain runs the same list: the typo, the weird wave, the text with no emoji. In 'Counting blessings versus burdens' (Journal of Personality and Social Psychology, 2003), Robert Emmons and Michael McCullough had people keep a weekly list for ten weeks: hassles, neutral events, or things they were grateful for. The gratitude group felt better about their lives as a whole, was more optimistic about the coming week, reported fewer physical symptoms and exercised more. Your brain isn't broken; it just never gets asked for the other list. #psychology #shorts #gratitude #overthinking #rumination",
+  "tags": [
+   "gratitude",
+   "overthinking",
+   "counting blessings",
+   "Emmons McCullough 2003",
+   "psychology",
+   "can't sleep"
+  ]
+ },
+ "thumb_text": "Your Brain Keeps the Wrong List",
+ "thumb_emph": "Wrong",
+ "thumb_mood": "worried",
+ "music_vibe": "calm",
+ "pattern": "Experiment log",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "At bedtime your brain lists everything that went wrong today",
+  "lean": "pain",
+  "snapback": "But you're only keeping ONE list."
+ },
+ "relate": "barnum",
+ "question": "What's one good thing from today?",
+ "share": "Send this to the friend who replays every mistake.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "XFBed",
+   "chunks": [
+    [
+     "Bedtime. Your"
+    ],
+    [
+     "brain lists"
+    ],
+    [
+     "what went"
+    ],
+    [
+     "WRONG.",
+     {
+      "emph": "WRONG"
+     }
+    ]
+   ],
+   "text": "Bedtime. Your brain lists what went WRONG.",
+   "tone": "dry, tired",
+   "hud": {
+    "title": "11:48 PM",
+    "clock": 0,
+    "count": 0
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "XFTypoWave",
+   "chunks": [
+    [
+     "The typo."
+    ],
+    [
+     "The weird wave."
+    ],
+    [
+     "You know"
+    ],
+    [
+     "this LIST.",
+     {
+      "emph": "LIST"
+     }
+    ]
+   ],
+   "text": "The typo. The weird wave. You know this LIST.",
+   "tone": "knowingly, teasing",
+   "hud": {
+    "clock": 40,
+    "count": 2,
+    "count_beat": 4
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "XFOneList",
+   "chunks": [
+    [
+     "But you're"
+    ],
+    [
+     "only keeping"
+    ],
+    [
+     "ONE list.",
+     {
+      "emph": "ONE"
+     }
+    ]
+   ],
+   "text": "But you're only keeping ONE list.",
+   "tone": "whispers, surprised",
+   "hud": {
+    "title": "THE TWIST",
+    "clock": 70
+   },
+   "cam": [
+    540,
+    960,
+    1.0,
+    1.15
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Meeting",
+   "art": "XFMeeting",
+   "chunks": [
+    [
+     "Minute six."
+    ],
+    [
+     "The meeting"
+    ],
+    [
+     "where you"
+    ],
+    [
+     "talked too MUCH.",
+     {
+      "emph": "MUCH"
+     }
+    ]
+   ],
+   "text": "Minute six. The meeting where you talked too MUCH.",
+   "tone": "wincing",
+   "hud": {
+    "title": "MINUTE 6",
+    "clock": 360,
+    "count": 3,
+    "count_beat": 4
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Emoji",
+   "art": "XFNoEmoji",
+   "chunks": [
+    [
+     "Minute nineteen."
+    ],
+    [
+     "That text"
+    ],
+    [
+     "with no EMOJI.",
+     {
+      "emph": "EMOJI"
+     }
+    ]
+   ],
+   "text": "Minute nineteen. That text with no EMOJI.",
+   "tone": "anxious, quick",
+   "hud": {
+    "title": "MINUTE 19",
+    "clock": 1140,
+    "count": 4,
+    "count_beat": 3
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Old",
+   "art": "XFOld",
+   "chunks": [
+    [
+     "Minute thirty-four."
+    ],
+    [
+     "Something from"
+    ],
+    [
+     "2014. Somehow"
+    ],
+    [
+     "STILL here.",
+     {
+      "emph": "STILL"
+     }
+    ]
+   ],
+   "text": "Minute thirty-four. Something from 2014. Somehow STILL here.",
+   "tone": "exasperated, laughs",
+   "hud": {
+    "title": "MINUTE 34",
+    "clock": 2040,
+    "count": 5,
+    "count_beat": 4
+   },
+   "say": "Minute thirty-four. Something from twenty fourteen. Somehow still here."
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "XFStudy",
+   "chunks": [
+    [
+     "In 2003,"
+    ],
+    [
+     "researchers had"
+    ],
+    [
+     "people keep"
+    ],
+    [
+     "a weekly list"
+    ],
+    [
+     "for ten WEEKS.",
+     {
+      "emph": "WEEKS"
+     }
+    ]
+   ],
+   "text": "In 2003, researchers had people keep a weekly list for ten WEEKS.",
+   "tone": "curious",
+   "hud": {
+    "title": "THE STUDY",
+    "run": false
+   },
+   "say": "In two thousand three, researchers had people keep a weekly list for ten weeks."
+  },
+  {
+   "sec": "cd",
+   "scene": "Groups",
+   "art": "XFGroups",
+   "chunks": [
+    [
+     "Hassles. Or"
+    ],
+    [
+     "just events."
+    ],
+    [
+     "Or things"
+    ],
+    [
+     "they were GRATEFUL",
+     {
+      "emph": "GRATEFUL"
+     }
+    ],
+    [
+     "for."
+    ]
+   ],
+   "text": "Hassles. Or just events. Or things they were GRATEFUL for.",
+   "tone": "building",
+   "hud": {
+    "title": "3 LISTS"
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "XFResult",
+   "chunks": [
+    [
+     "The grateful"
+    ],
+    [
+     "group felt"
+    ],
+    [
+     "BETTER",
+     {
+      "emph": "BETTER"
+     }
+    ],
+    [
+     "about life,"
+    ],
+    [
+     "and hopeful"
+    ],
+    [
+     "about next week."
+    ]
+   ],
+   "text": "The grateful group felt BETTER about life, and hopeful about next week.",
+   "tone": "warm, impressed",
+   "hud": {
+    "title": "WEEK 10"
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Body",
+   "art": "XFBody",
+   "chunks": [
+    [
+     "They even"
+    ],
+    [
+     "exercised more,"
+    ],
+    [
+     "with fewer ACHES.",
+     {
+      "emph": "ACHES"
+     }
+    ]
+   ],
+   "text": "They even exercised more, with fewer ACHES.",
+   "tone": "surprised, light"
+  },
+  {
+   "sec": "cd",
+   "scene": "Truth",
+   "art": "XFTruth",
+   "chunks": [
+    [
+     "Your brain"
+    ],
+    [
+     "isn't broken."
+    ],
+    [
+     "It's never"
+    ],
+    [
+     "asked for"
+    ],
+    [
+     "the OTHER list.",
+     {
+      "emph": "OTHER"
+     }
+    ]
+   ],
+   "text": "Your brain isn't broken. It's never asked for the OTHER list.",
+   "tone": "thoughtfully, reassuring",
+   "hud": {
+    "title": "THE TRUTH"
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Tonight",
+   "art": "XFTonight",
+   "chunks": [
+    [
+     "So Finn"
+    ],
+    [
+     "writes three"
+    ],
+    [
+     "things that"
+    ],
+    [
+     "went RIGHT.",
+     {
+      "emph": "RIGHT"
+     }
+    ]
+   ],
+   "text": "So Finn writes three things that went RIGHT.",
+   "tone": "warmly",
+   "hud": {
+    "title": "TONIGHT"
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Ask",
+   "art": "XFAsk",
+   "chunks": [
+    [
+     "What's one"
+    ],
+    [
+     "good thing"
+    ],
+    [
+     "from TODAY?",
+     {
+      "emph": "TODAY"
+     }
+    ]
+   ],
+   "text": "What's one good thing from TODAY?",
+   "tone": "curious, friendly",
+   "hud": {
+    "title": "YOUR TURN",
+    "run": false
+   }
+  },
+  {
+   "sec": "cd",
+   "scene": "Share",
+   "art": "XFShare",
+   "chunks": [
+    [
+     "Send this"
+    ],
+    [
+     "to the FRIEND",
+     {
+      "emph": "FRIEND"
+     }
+    ],
+    [
+     "who replays"
+    ],
+    [
+     "every mistake."
+    ]
+   ],
+   "text": "Send this to the FRIEND who replays every mistake.",
+   "tone": "warmly, playful"
+  }
+ ]
+}

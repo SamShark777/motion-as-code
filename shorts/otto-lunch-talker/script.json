@@ -1,0 +1,377 @@
+{
+ "slug": "otto-lunch-talker",
+ "no": 232,
+ "format": "retro",
+ "look": "retro",
+ "series": "Otto",
+ "episode": 14,
+ "cast": [
+  "otto",
+  "lila"
+ ],
+ "title": [
+  "5 Signs",
+  "You Over-Talk"
+ ],
+ "credit": "Huang, Yeomans, Brooks, Minson & Gino · 2017",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "5 Signs You Talk More Than You Ask (And the One Fix) #shorts",
+  "description": "How many did you check? Tell me in the comments. Send this to the friend who checks all five. Otto talked through the whole lunch and thinks it went great. In 'It doesn't hurt to ask: Question-asking increases liking' (Journal of Personality and Social Psychology, 2017), Karen Huang, Michael Yeomans, Alison Wood Brooks, Julia Minson and Francesca Gino studied online chats and speed dates: people who asked more questions, especially follow-up questions, were liked more by their partners, and on speed dates question-askers got more second dates. Being interesting isn't the trick; being interested is. Ask 'then what happened?' #psychology #shorts #conversation #likability #overthinking",
+  "tags": [
+   "follow-up questions",
+   "how to be likable",
+   "conversation tips",
+   "Huang 2017",
+   "psychology",
+   "speed dating"
+  ]
+ },
+ "thumb_text": "5 Signs You Over-Talk",
+ "thumb_emph": "Over-Talk",
+ "thumb_mood": "smug",
+ "music_vibe": "playful",
+ "pattern": "signs-list",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Otto talked through the whole lunch and thinks it went great",
+  "lean": "pain",
+  "snapback": "But being interesting isn't the TRICK."
+ },
+ "relate": "barnum",
+ "question": "How many did you check?",
+ "share": "Send this to the friend who checks all five.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RLLunch",
+   "chunks": [
+    [
+     "Otto talked"
+    ],
+    [
+     "through the"
+    ],
+    [
+     "whole LUNCH.",
+     {
+      "emph": "LUNCH"
+     }
+    ],
+    [
+     "He thinks"
+    ],
+    [
+     "it went great."
+    ]
+   ],
+   "text": "Otto talked through the whole LUNCH. He thinks it went great.",
+   "tone": "dry, amused",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "RLFiveSigns",
+   "chunks": [
+    [
+     "Five signs"
+    ],
+    [
+     "you do"
+    ],
+    [
+     "it TOO.",
+     {
+      "emph": "TOO"
+     }
+    ]
+   ],
+   "text": "Five signs you do it TOO.",
+   "tone": "knowingly, teasing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RLNotTrick",
+   "chunks": [
+    [
+     "But being"
+    ],
+    [
+     "interesting isn't"
+    ],
+    [
+     "the TRICK.",
+     {
+      "emph": "TRICK"
+     }
+    ]
+   ],
+   "text": "But being interesting isn't the TRICK.",
+   "tone": "whispers, surprised",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.2
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign1",
+   "art": "RLSignLine",
+   "chunks": [
+    [
+     "One: you"
+    ],
+    [
+     "plan your"
+    ],
+    [
+     "next LINE",
+     {
+      "emph": "LINE"
+     }
+    ],
+    [
+     "while they talk."
+    ]
+   ],
+   "text": "One: you plan your next LINE while they talk.",
+   "tone": "teasing"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign2",
+   "art": "RLSignSame",
+   "chunks": [
+    [
+     "Two: 'Same!"
+    ],
+    [
+     "Once I…'"
+    ],
+    [
+     "Their story"
+    ],
+    [
+     "becomes YOURS.",
+     {
+      "emph": "YOURS"
+     }
+    ]
+   ],
+   "text": "Two: 'Same! Once I…' Their story becomes YOURS.",
+   "tone": "playful"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign3",
+   "art": "RLSignSilence",
+   "chunks": [
+    [
+     "Three: silence"
+    ],
+    [
+     "feels like"
+    ],
+    [
+     "an EMERGENCY.",
+     {
+      "emph": "EMERGENCY"
+     }
+    ]
+   ],
+   "text": "Three: silence feels like an EMERGENCY.",
+   "tone": "dramatic, quick"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign4",
+   "art": "RLSignHowAre",
+   "chunks": [
+    [
+     "Four: you"
+    ],
+    [
+     "ask 'how"
+    ],
+    [
+     "are you?'"
+    ],
+    [
+     "then skip"
+    ],
+    [
+     "the ANSWER.",
+     {
+      "emph": "ANSWER"
+     }
+    ]
+   ],
+   "text": "Four: you ask 'how are you?' then skip the ANSWER.",
+   "tone": "sheepish"
+  },
+  {
+   "sec": "cd",
+   "scene": "Sign5",
+   "art": "RLSignNothing",
+   "chunks": [
+    [
+     "Five: you"
+    ],
+    [
+     "leave knowing"
+    ],
+    [
+     "NOTHING new",
+     {
+      "emph": "NOTHING"
+     }
+    ],
+    [
+     "about them."
+    ]
+   ],
+   "text": "Five: you leave knowing NOTHING new about them.",
+   "tone": "slower, a little guilty"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RLStudy",
+   "chunks": [
+    [
+     "In 2017,"
+    ],
+    [
+     "Harvard researchers"
+    ],
+    [
+     "studied chats"
+    ],
+    [
+     "and SPEED dates.",
+     {
+      "emph": "SPEED"
+     }
+    ]
+   ],
+   "text": "In 2017, Harvard researchers studied chats and SPEED dates.",
+   "tone": "curious",
+   "say": "In twenty seventeen, Harvard researchers studied chats and speed dates."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "RLFollowUp",
+   "chunks": [
+    [
+     "People who"
+    ],
+    [
+     "asked more"
+    ],
+    [
+     "FOLLOW-UP",
+     {
+      "emph": "FOLLOW-UP"
+     }
+    ],
+    [
+     "questions were"
+    ],
+    [
+     "liked more."
+    ]
+   ],
+   "text": "People who asked more FOLLOW-UP questions were liked more.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Dates",
+   "art": "RLSecondDate",
+   "chunks": [
+    [
+     "On speed dates,"
+    ],
+    [
+     "they got more"
+    ],
+    [
+     "SECOND dates.",
+     {
+      "emph": "SECOND"
+     }
+    ]
+   ],
+   "text": "On speed dates, they got more SECOND dates.",
+   "tone": "impressed, playful"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "RLThenWhat",
+   "chunks": [
+    [
+     "Next lunch,"
+    ],
+    [
+     "Otto asks:"
+    ],
+    [
+     "'Then what"
+    ],
+    [
+     "happened?' Lila"
+    ],
+    [
+     "STAYS.",
+     {
+      "emph": "STAYS"
+     }
+    ]
+   ],
+   "text": "Next lunch, Otto asks: 'Then what happened?' Lila STAYS.",
+   "tone": "warmly, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RLEndSigns",
+   "chunks": [
+    [
+     "How many"
+    ],
+    [
+     "did you CHECK?",
+     {
+      "emph": "CHECK"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who checks"
+    ],
+    [
+     "all five."
+    ]
+   ],
+   "text": "How many did you CHECK? Send this to the friend who checks all five.",
+   "tone": "warmly, playful"
+  }
+ ]
+}

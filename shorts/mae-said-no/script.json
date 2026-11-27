@@ -1,0 +1,309 @@
+{
+ "slug": "mae-said-no",
+ "no": 230,
+ "format": "retro",
+ "look": "retro",
+ "series": "Mae",
+ "episode": 14,
+ "cast": [
+  "mae",
+  "doubt",
+  "otto"
+ ],
+ "title": [
+  "Saying",
+  "No"
+ ],
+ "credit": "Givi & Kirk · 2023",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "You Said No to the Invite. They Barely Minded. #shorts",
+  "description": "Ever said yes just to dodge the guilt? Send this to the friend who can't say no. Mae turned down Otto's barbecue and spent the night sure he was angry. In 'Saying no: The negative ramifications from invitation declines are less severe than we think' (Journal of Personality and Social Psychology, published online 2023), Julian Givi and Colleen Kirk ran five experiments with more than 2,000 people. People who declined an invitation expected the inviter to be angrier and more disappointed, and less likely to invite them again, than inviters actually were. In their pilot, 77% said they had accepted an invitation to something they didn't want to go to. A kind no costs less than you think. #psychology #shorts #peoplepleaser #overthinking #boundaries",
+  "tags": [
+   "saying no",
+   "people pleaser",
+   "declining invitations",
+   "Givi Kirk 2023",
+   "psychology",
+   "overthinking"
+  ]
+ },
+ "thumb_text": "They Barely Minded Your No",
+ "thumb_emph": "No",
+ "thumb_mood": "worried",
+ "music_vibe": "lofi",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Mae said no to Otto's barbecue invite and now she can't sleep",
+  "lean": "pain",
+  "snapback": "But that guilt is guessing WRONG."
+ },
+ "relate": "barnum",
+ "question": "Ever said yes just to dodge the guilt?",
+ "share": "Send this to the friend who can't say no.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "RMNoCard",
+   "chunks": [
+    [
+     "Mae said"
+    ],
+    [
+     "NO",
+     {
+      "emph": "NO"
+     }
+    ],
+    [
+     "to Otto's"
+    ],
+    [
+     "barbecue."
+    ],
+    [
+     "Now she"
+    ],
+    [
+     "can't sleep."
+    ]
+   ],
+   "text": "Mae said NO to Otto's barbecue. Now she can't sleep.",
+   "tone": "dry, a little guilty",
+   "cam": [
+    540,
+    800,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "RMYouToo",
+   "chunks": [
+    [
+     "You've done"
+    ],
+    [
+     "this. One"
+    ],
+    [
+     "small no,"
+    ],
+    [
+     "a whole night"
+    ],
+    [
+     "of GUILT.",
+     {
+      "emph": "GUILT"
+     }
+    ]
+   ],
+   "text": "You've done this. One small no, a whole night of GUILT.",
+   "tone": "knowingly, warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "RMGuessWrong",
+   "chunks": [
+    [
+     "But that"
+    ],
+    [
+     "guilt is"
+    ],
+    [
+     "guessing WRONG.",
+     {
+      "emph": "WRONG"
+     }
+    ]
+   ],
+   "text": "But that guilt is guessing WRONG.",
+   "tone": "whispers, surprised",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.2
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Whisper",
+   "art": "RMDoubtWhisper",
+   "chunks": [
+    [
+     "The Doubt"
+    ],
+    [
+     "whispers: 'He's"
+    ],
+    [
+     "FURIOUS.",
+     {
+      "emph": "FURIOUS"
+     }
+    ]
+   ],
+   "text": "The Doubt whispers: 'He's FURIOUS.",
+   "tone": "sly, ominous"
+  },
+  {
+   "sec": "cd",
+   "scene": "Never",
+   "art": "RMNeverAgain",
+   "chunks": [
+    [
+     "He'll never"
+    ],
+    [
+     "invite you"
+    ],
+    [
+     "AGAIN.'",
+     {
+      "emph": "AGAIN"
+     }
+    ]
+   ],
+   "text": "He'll never invite you AGAIN.'",
+   "tone": "whispers, dramatic"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "RMStudy2023",
+   "chunks": [
+    [
+     "Researchers ran"
+    ],
+    [
+     "five experiments,"
+    ],
+    [
+     "over 2,000 PEOPLE.",
+     {
+      "emph": "PEOPLE"
+     }
+    ]
+   ],
+   "text": "Researchers ran five experiments, over 2,000 PEOPLE.",
+   "tone": "curious",
+   "say": "Researchers ran five experiments, over two thousand people."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "RMScaleNo",
+   "chunks": [
+    [
+     "Inviters were"
+    ],
+    [
+     "far less UPSET",
+     {
+      "emph": "UPSET"
+     }
+    ],
+    [
+     "than decliners"
+    ],
+    [
+     "guessed."
+    ]
+   ],
+   "text": "Inviters were far less UPSET than decliners guessed.",
+   "tone": "surprised, light"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "RMNoName",
+   "chunks": [
+    [
+     "We OVERESTIMATE",
+     {
+      "emph": "OVERESTIMATE"
+     }
+    ],
+    [
+     "how much"
+    ],
+    [
+     "a no hurts."
+    ]
+   ],
+   "text": "We OVERESTIMATE how much a no hurts.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "RMMonday",
+   "chunks": [
+    [
+     "Monday, Otto"
+    ],
+    [
+     "shrugs: 'Next"
+    ],
+    [
+     "month, then.'"
+    ],
+    [
+     "The Doubt"
+    ],
+    [
+     "goes QUIET.",
+     {
+      "emph": "QUIET"
+     }
+    ]
+   ],
+   "text": "Monday, Otto shrugs: 'Next month, then.' The Doubt goes QUIET.",
+   "tone": "warmly, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "RMEndNo",
+   "chunks": [
+    [
+     "Ever said"
+    ],
+    [
+     "yes just"
+    ],
+    [
+     "to dodge"
+    ],
+    [
+     "the GUILT?",
+     {
+      "emph": "GUILT"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who can't"
+    ],
+    [
+     "say no."
+    ]
+   ],
+   "text": "Ever said yes just to dodge the GUILT? Send this to the friend who can't say no.",
+   "tone": "warmly, playful"
+  }
+ ]
+}

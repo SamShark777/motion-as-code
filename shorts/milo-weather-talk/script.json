@@ -1,0 +1,329 @@
+{
+ "slug": "milo-weather-talk",
+ "no": 231,
+ "format": "tedmg",
+ "look": "tedmg",
+ "series": "Milo",
+ "episode": 13,
+ "cast": [
+  "milo",
+  "nia"
+ ],
+ "title": [
+  "Skip the",
+  "Weather"
+ ],
+ "credit": "Kardas, Kumar & Epley · 2021",
+ "handle": "@aroundthestrangeai",
+ "post": {
+  "title": "Stop Talking About the Weather (Strangers Want the Deep Stuff) #shorts",
+  "description": "Weather talk or deep talk: which are you? Send this to the friend who only talks about the weather. Milo is at a party, on his third chat about rain. Deep questions feel like too much. But in 'Overly Shallow? Miscalibrated Expectations Create a Barrier to Deeper Conversation' (Journal of Personality and Social Psychology, published 2021), Michael Kardas, Amit Kumar and Nicholas Epley ran 12 experiments with more than 1,800 people, mostly strangers, talking about deep questions ('Can you describe a time you cried in front of another person?') or shallow ones ('What do you think about the weather today?'). Conversations felt less awkward and more connecting than people expected, especially the deep ones: we underestimate how interested others are in getting to know us. Ask one real question. #psychology #shorts #smalltalk #conversation #overthinking",
+  "tags": [
+   "small talk",
+   "deep conversations",
+   "social anxiety",
+   "Kardas Kumar Epley",
+   "psychology",
+   "overthinking"
+  ]
+ },
+ "thumb_text": "Skip the Weather Talk",
+ "thumb_emph": "Weather",
+ "thumb_mood": "worried",
+ "music_vibe": "playful",
+ "pattern": "Character story",
+ "thumb_scene": 0,
+ "hook": {
+  "context": "Milo is at a party, talking about the weather again",
+  "lean": "pain",
+  "snapback": "But the stranger WANTED the deep talk."
+ },
+ "relate": "barnum",
+ "question": "Weather talk or deep talk: which are you?",
+ "share": "Send this to the friend who only talks about the weather.",
+ "lines": [
+  {
+   "sec": "cd",
+   "scene": "Hook",
+   "art": "MGWeather",
+   "chunks": [
+    [
+     "Milo's at"
+    ],
+    [
+     "a party,"
+    ],
+    [
+     "talking about"
+    ],
+    [
+     "the WEATHER.",
+     {
+      "emph": "WEATHER"
+     }
+    ],
+    [
+     "Again."
+    ]
+   ],
+   "text": "Milo's at a party, talking about the WEATHER. Again.",
+   "tone": "dry, amused",
+   "cam": [
+    540,
+    760,
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Lean",
+   "art": "MGYouToo",
+   "chunks": [
+    [
+     "You do"
+    ],
+    [
+     "this too."
+    ],
+    [
+     "Deep questions"
+    ],
+    [
+     "feel like"
+    ],
+    [
+     "TOO much.",
+     {
+      "emph": "TOO"
+     }
+    ]
+   ],
+   "text": "You do this too. Deep questions feel like TOO much.",
+   "tone": "knowingly, warmly"
+  },
+  {
+   "sec": "cd",
+   "scene": "Snapback",
+   "art": "MGWanted",
+   "chunks": [
+    [
+     "But the"
+    ],
+    [
+     "stranger WANTED",
+     {
+      "emph": "WANTED"
+     }
+    ],
+    [
+     "the deep talk."
+    ]
+   ],
+   "text": "But the stranger WANTED the deep talk.",
+   "tone": "whispers, surprised",
+   "cam": [
+    540,
+    820,
+    1.0,
+    1.2
+   ]
+  },
+  {
+   "sec": "cd",
+   "scene": "Problem",
+   "art": "MGThirdChat",
+   "chunks": [
+    [
+     "Third chat."
+    ],
+    [
+     "Rain. Traffic."
+    ],
+    [
+     "Milo's BORED",
+     {
+      "emph": "BORED"
+     }
+    ],
+    [
+     "of himself."
+    ]
+   ],
+   "text": "Third chat. Rain. Traffic. Milo's BORED of himself.",
+   "tone": "sighs"
+  },
+  {
+   "sec": "cd",
+   "scene": "Dare",
+   "art": "MGNiaDare",
+   "chunks": [
+    [
+     "Nia leans in:"
+    ],
+    [
+     "'Ask something"
+    ],
+    [
+     "REAL.'",
+     {
+      "emph": "REAL"
+     }
+    ]
+   ],
+   "text": "Nia leans in: 'Ask something REAL.'",
+   "tone": "mischievously"
+  },
+  {
+   "sec": "cd",
+   "scene": "Fear",
+   "art": "MGWeird",
+   "chunks": [
+    [
+     "Milo freezes."
+    ],
+    [
+     "'They'll think"
+    ],
+    [
+     "I'm WEIRD.'",
+     {
+      "emph": "WEIRD"
+     }
+    ]
+   ],
+   "text": "Milo freezes. 'They'll think I'm WEIRD.'",
+   "tone": "nervous, quick"
+  },
+  {
+   "sec": "cd",
+   "scene": "Study",
+   "art": "MGStudy12",
+   "chunks": [
+    [
+     "Twelve experiments."
+    ],
+    [
+     "Over 1,800 people,"
+    ],
+    [
+     "mostly STRANGERS.",
+     {
+      "emph": "STRANGERS"
+     }
+    ]
+   ],
+   "text": "Twelve experiments. Over 1,800 people, mostly STRANGERS.",
+   "tone": "curious",
+   "say": "Twelve experiments. Over eighteen hundred people, mostly strangers."
+  },
+  {
+   "sec": "cd",
+   "scene": "Result",
+   "art": "MGLessAwkward",
+   "chunks": [
+    [
+     "Deep talks"
+    ],
+    [
+     "felt less AWKWARD",
+     {
+      "emph": "AWKWARD"
+     }
+    ],
+    [
+     "than they"
+    ],
+    [
+     "expected."
+    ]
+   ],
+   "text": "Deep talks felt less AWKWARD than they expected.",
+   "tone": "surprised"
+  },
+  {
+   "sec": "cd",
+   "scene": "Name",
+   "art": "MGUnderestimate",
+   "chunks": [
+    [
+     "We UNDERESTIMATE",
+     {
+      "emph": "UNDERESTIMATE"
+     }
+    ],
+    [
+     "how much"
+    ],
+    [
+     "people want"
+    ],
+    [
+     "to know us."
+    ]
+   ],
+   "text": "We UNDERESTIMATE how much people want to know us.",
+   "tone": "thoughtfully"
+  },
+  {
+   "sec": "cd",
+   "scene": "Payoff",
+   "art": "MGMiloAsks",
+   "chunks": [
+    [
+     "Milo asks"
+    ],
+    [
+     "one real"
+    ],
+    [
+     "question. They"
+    ],
+    [
+     "talk till"
+    ],
+    [
+     "the music STOPS.",
+     {
+      "emph": "STOPS"
+     }
+    ]
+   ],
+   "text": "Milo asks one real question. They talk till the music STOPS.",
+   "tone": "warmly, amused"
+  },
+  {
+   "sec": "cd",
+   "scene": "End",
+   "art": "MGEndWeather",
+   "chunks": [
+    [
+     "Weather or"
+    ],
+    [
+     "deep talk:"
+    ],
+    [
+     "which ARE you?",
+     {
+      "emph": "ARE"
+     }
+    ],
+    [
+     "Send this"
+    ],
+    [
+     "to the friend"
+    ],
+    [
+     "who only"
+    ],
+    [
+     "talks weather."
+    ]
+   ],
+   "text": "Weather or deep talk: which ARE you? Send this to the friend who only talks weather.",
+   "tone": "warmly, playful"
+  }
+ ]
+}
