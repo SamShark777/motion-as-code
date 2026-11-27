@@ -1,0 +1,17 @@
+{
+ "no": 220,
+ "slug": "finn-cant-hang-up",
+ "date": "2026-11-27",
+ "slot": "19:00",
+ "due": "2026-11-28T03:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-27/finn-cant-hang-up.mp4",
+ "buffer": {
+  "youtube": "6b08d2bd7c3f43554e4415f7",
+  "instagram": "6b08d2bd70e2a88e2ce34ff4",
+  "tiktok": "6b08d2be548b6e180d48d198"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 42.2
+}
