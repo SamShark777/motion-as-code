@@ -1,0 +1,187 @@
+{
+ "slug": "parade-anticipation",
+ "masthead": "FRI · NOV 27",
+ "music": "d1fcb1a50b.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Macy's postponed the Thanksgiving parade! The holiday is ruined.",
+   "board": {
+    "headline": "PARADE\nPOSTPONED",
+    "chips": [
+     {
+      "text": "\"HOLIDAY RUINED!\"",
+      "color": "red",
+      "at": 2.4
+     }
+    ]
+   },
+   "brow": "down"
+  },
+  {
+   "who": "nell",
+   "text": "First time in its 100-year history. Severe weather, strong winds.",
+   "say": "First time in its hundred-year history. Severe weather, strong winds.",
+   "board": {
+    "card": {
+     "title": "FIRST TIME EVER",
+     "body": "The 100th parade, moved for severe weather."
+    },
+    "chips": [
+     {
+      "text": "100TH PARADE",
+      "color": "mus",
+      "at": 0.6
+     },
+     {
+      "text": "STRONG WINDS",
+      "color": "red",
+      "at": 3.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "It marches tomorrow instead. Saturday, 8:30 a.m.",
+   "say": "It marches tomorrow instead. Saturday, eight thirty A.M.",
+   "board": {
+    "headline": "NOW:\nSATURDAY",
+    "chips": [
+     {
+      "text": "SAT · 8:30 AM ET",
+      "color": "teal",
+      "at": 1.6
+     },
+     {
+      "text": "MACY'S: SAFETY FIRST",
+      "color": "paper",
+      "at": 2.4
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Two extra days of waiting? That's torture. I want it now.",
+   "board": {
+    "big": {
+     "text": "WAIT?!",
+     "color": "red"
+    },
+    "scrawl": {
+     "text": "\"NOW!!\"",
+     "at": 2.6
+    }
+   },
+   "brow": "down"
+  },
+  {
+   "who": "nell",
+   "text": "Actually, the waiting might be the best part.",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "THE WAIT",
+     "color": "ink"
+    },
+    "chips": [
+     {
+      "text": "BEST PART?",
+      "color": "mus",
+      "at": 1.6
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "That makes zero sense, Nell."
+  },
+  {
+   "who": "nell",
+   "text": "That's the joy of anticipation.",
+   "board": {
+    "headline": "ANTICI-\nPATION",
+    "chips": [
+     {
+      "text": "THE JOY OF WAITING",
+      "color": "teal",
+      "at": 0.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 1987, economist George Loewenstein asked students when they'd want a kiss from their favorite movie star.",
+   "say": "In nineteen eighty-seven, economist George Loewenstein asked students when they'd want a kiss from their favorite movie star.",
+   "board": {
+    "card": {
+     "title": "LOEWENSTEIN · 1987",
+     "body": "When do you want a kiss from your favorite movie star?"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "The winner wasn't right now. It was in three days.",
+   "board": {
+    "card": {
+     "title": "LOEWENSTEIN · 1987",
+     "body": "When do you want a kiss from your favorite movie star?"
+    },
+    "chips": [
+     {
+      "text": "RIGHT NOW",
+      "color": "paper",
+      "at": 0.9
+     },
+     {
+      "text": "IN 3 DAYS ★",
+      "color": "red",
+      "at": 2.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Waiting lets you enjoy it twice. Once in your head, once for real.",
+   "board": {
+    "headline": "ENJOY IT\nTWICE"
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So the storm gave me two bonus days of hype?",
+   "board": {
+    "bar": {
+     "label": "HYPE LEVEL",
+     "sub": "+2 bonus days",
+     "fill": 0.85
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Only if you savor it instead of sulking.",
+   "board": {
+    "big": {
+     "text": "SAVOR IT",
+     "color": "teal"
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Saturday parade: still special, or not the same? Vote below.",
+   "board": {
+    "vote": [
+     "STILL SPECIAL",
+     "NOT THE SAME"
+    ]
+   }
+  }
+ ]
+}

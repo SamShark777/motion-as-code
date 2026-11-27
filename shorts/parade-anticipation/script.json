@@ -1,0 +1,31 @@
+{
+ "slug": "parade-anticipation",
+ "no": 255,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "question": "Saturday parade: still special, or not the same?",
+ "note": "Daily news Short 2026-11-27. Confirmed by CBS New York (Nov 26) + Yahoo News live blog (Nov 25): Macy's announced Wed Nov 25 that the 100th Thanksgiving Day Parade is postponed to Saturday Nov 28, 8:30 a.m. ET, due to severe weather (high winds/coastal storm) - first weather postponement in its history (it was suspended 1942-44 in WWII, not counted as weather). Macy's statement: safety of participants and spectators top priority. No allegations involved. Psychology: Loewenstein (1987) 'Anticipation and the Valuation of Delayed Consumption', Economic Journal 97(387) - students would pay most to delay a kiss from a movie star of their choice by 3 days vs immediately (savoring).",
+ "post": {
+  "title": "Macy's Parade Was Postponed for the First Time Ever. Why That's Good News. #shorts",
+  "description": "Saturday parade: still special, or not the same? Comment below. For the first time in its 100-year history, the Macy's Thanksgiving Day Parade was postponed for severe weather. It now marches Saturday at 8:30 a.m. ET, and Macy's says the safety of participants and spectators is its top priority. Gus thinks the holiday is ruined; Nell explains the joy of anticipation: in 1987 economist George Loewenstein found people valued a kiss from their favorite movie star most when it came in three days, not right now, because waiting lets you enjoy it twice. Sources: CBS New York (Nov 26, 2026); Yahoo News live updates (Nov 25, 2026); Loewenstein, The Economic Journal (1987). Music: \"Gonna Start\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #macysparade #thanksgiving #anticipation #news #shorts",
+  "tags": [
+   "Macy's Thanksgiving Day Parade",
+   "parade postponed",
+   "anticipation",
+   "savoring",
+   "Loewenstein",
+   "psychology",
+   "news"
+  ]
+ }
+}
