@@ -1,0 +1,18 @@
+{
+ "no": 255,
+ "slug": "parade-anticipation",
+ "date": "2026-11-27",
+ "slot": "09:00",
+ "due": "2026-11-27T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-27/parade-anticipation.mp4",
+ "buffer": {
+  "instagram": "6b098770015034238d2cab55",
+  "tiktok": "6b09877134d224b14a877d22"
+ },
+ "errors": {
+  "youtube": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+ },
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 49.9
+}
