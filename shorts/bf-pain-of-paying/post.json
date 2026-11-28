@@ -1,0 +1,18 @@
+{
+ "no": 266,
+ "slug": "bf-pain-of-paying",
+ "date": "2026-11-28",
+ "slot": "09:00",
+ "due": "2026-11-28T17:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-28/bf-pain-of-paying.mp4",
+ "buffer": {
+  "instagram": "6b0ad9c60f9559e0ce171c11",
+  "tiktok": "6b0ad9c78e7dd71de791ee91"
+ },
+ "errors": {
+  "youtube": "You have already scheduled the maximum number of posts YouTube allows in a day (2). Please consider scheduling this post for another day."
+ },
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 53.2
+}
