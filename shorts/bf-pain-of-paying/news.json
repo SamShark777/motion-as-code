@@ -1,0 +1,167 @@
+{
+ "slug": "bf-pain-of-paying",
+ "masthead": "SAT · NOV 28",
+ "music": "bd7becc51a.ogg",
+ "lines": [
+  {
+   "who": "gus",
+   "text": "Black Friday online sales hit $9.7 billion. Before dinner!",
+   "say": "Black Friday online sales hit nine point seven billion dollars. Before dinner!",
+   "board": {
+    "headline": "$9.7 BILLION\nBY DINNER",
+    "chips": [
+     {
+      "text": "BLACK FRIDAY",
+      "color": "red",
+      "at": 0.3
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Adobe's data. That's through 6:30 p.m. Eastern, up about 13% on last year.",
+   "say": "Adobe's data. That's through six thirty p.m. Eastern, up about thirteen percent on last year.",
+   "board": {
+    "card": {
+     "title": "ADOBE ANALYTICS",
+     "body": "$9.7B online by 6:30 p.m. ET, Nov 27."
+    },
+    "chips": [
+     {
+      "text": "▲ ~13% VS 2025",
+      "color": "teal",
+      "at": 2.8
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Adobe expects $13 to $13.4 billion for the whole day.",
+   "say": "Adobe expects thirteen to thirteen point four billion for the whole day.",
+   "board": {
+    "headline": "$13–13.4B\nEXPECTED",
+    "chips": [
+     {
+      "text": "ONE DAY",
+      "color": "mus",
+      "at": 2.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Well, I didn't spend anything. I just tapped my phone a few times.",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "TAP TAP TAP",
+     "color": "teal"
+    },
+    "chips": [
+     {
+      "text": "\"THAT'S NOT SPENDING\"",
+      "color": "mus",
+      "at": 2.2
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "And how much did the taps cost?",
+   "brow": "up",
+   "board": {
+    "big": {
+     "text": "$ ? ? ?",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "I'd rather not check.",
+   "board": {
+    "bar": {
+     "label": "MY BANK APP",
+     "sub": "status: NOT OPENING IT",
+     "fill": 0.9
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "That's the pain of paying. Or really, the lack of it.",
+   "board": {
+    "big": {
+     "text": "PAIN OF PAYING",
+     "color": "red"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "In 2001, MIT researchers auctioned Celtics tickets. People paying by card bid up to twice as much as people paying cash.",
+   "say": "In two thousand one, M.I.T. researchers auctioned Celtics tickets. People paying by card bid up to twice as much as people paying cash.",
+   "board": {
+    "card": {
+     "title": "PRELEC & SIMESTER · 2001",
+     "body": "Same tickets. Card bidders offered up to 2× more than cash bidders."
+    },
+    "chips": [
+     {
+      "text": "CASH: $",
+      "color": "paper",
+      "at": 5.2
+     },
+     {
+      "text": "CARD: $$",
+      "color": "red",
+      "at": 4.0
+     }
+    ]
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Cash hurts. Cards and phones numb the sting. So we spend more.",
+   "board": {
+    "headline": "CASH HURTS.\nTAPS DON'T."
+   }
+  },
+  {
+   "who": "gus",
+   "text": "So I should pay for everything in cash?",
+   "board": {
+    "big": {
+     "text": "CASH ONLY?",
+     "color": "mus"
+    }
+   }
+  },
+  {
+   "who": "nell",
+   "text": "Or just read the total before you tap. Let it sting a little.",
+   "board": {
+    "headline": "READ THE\nTOTAL FIRST",
+    "stamp": {
+     "text": "LET IT STING",
+     "at": 2.6
+    }
+   }
+  },
+  {
+   "who": "gus",
+   "text": "Be honest. Did you check your total this weekend? Tell us below.",
+   "board": {
+    "vote": [
+     "YES",
+     "NOPE",
+     "SCARED"
+    ]
+   }
+  }
+ ]
+}

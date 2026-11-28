@@ -1,0 +1,29 @@
+{
+ "slug": "bf-pain-of-paying",
+ "no": 266,
+ "format": "prebuilt",
+ "look": "news-collage",
+ "cover": false,
+ "voice": {
+  "engine": "kokoro",
+  "kokoro_voice": "am_michael + bf_isabella"
+ },
+ "pattern": "news-psych",
+ "cast": [
+  "gus",
+  "nell"
+ ],
+ "note": "Daily news Short 2026-11-28. Confirmed by Reuters (Nov 27, 2026) and Investing.com (Simon Mugo, Nov 27, 2026), both citing Adobe Analytics: US Black Friday online spending $9.7B through 6:30 p.m. ET, up 12.8% YoY; Adobe expects $13.0B-$13.4B for the full day. Nothing alleged. Different story/angle from black-friday-anchoring (Nov 23, pre-sale prices): this is the result + pain of paying. Study: Prelec & Simester 2001 'Always Leave Home Without It' (Marketing Letters), MIT Celtics-ticket auction, credit-card bidders bid up to ~2x cash bidders (MIT Spectrum 1999 quotes Prelec 'more than twice'; MSU Extension 'nearly twice'). Kept as 'up to twice'.",
+ "post": {
+  "title": "Black Friday Hit $9.7 Billion by Dinner. Your Phone Made It Painless. #shorts",
+  "description": "US shoppers spent $9.7 billion online on Black Friday by 6:30 p.m. ET, up about 13% on last year, and Adobe expects $13 to $13.4 billion for the full day. Gus and Nell talk about the pain of paying: in a 2001 MIT study by Drazen Prelec and Duncan Simester, people paying by credit card bid up to twice as much for Celtics tickets as people paying cash. Cards and phone taps numb the sting, so we spend more. Did you check your total this weekend? Comment below. Sources: Reuters (Nov 27, 2026); Investing.com (Nov 27, 2026), both citing Adobe Analytics. Music: \"Jazz Brunch\" by Kevin MacLeod (incompetech.com), CC BY 4.0. #psychology #blackfriday #money #shopping #shorts",
+  "tags": [
+   "Black Friday",
+   "pain of paying",
+   "spending psychology",
+   "Adobe",
+   "psychology",
+   "news"
+  ]
+ }
+}
