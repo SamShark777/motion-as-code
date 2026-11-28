@@ -1,0 +1,17 @@
+{
+ "no": 221,
+ "slug": "arthur-five-replay-signs",
+ "date": "2026-11-28",
+ "slot": "14:00",
+ "due": "2026-11-28T22:00:00.000Z",
+ "url": "https://raw.githubusercontent.com/SamShark777/motion-as-code/media/2026-11-28/arthur-five-replay-signs.mp4",
+ "buffer": {
+  "youtube": "6b0a1ec7eada83daa6aed676",
+  "instagram": "6b0a1ec823fb5b770004eb8c",
+  "tiktok": "6b0a1ec9eab081a3f50be4c1"
+ },
+ "errors": {},
+ "engine": "kokoro",
+ "voice_name": null,
+ "duration": 39.7
+}
