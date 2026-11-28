@@ -1,0 +1,458 @@
+{
+ "lines": [
+  {
+   "text": "Leo skips the WISHLIST to find something 'thoughtful.'",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 2.64,
+   "words": [
+    {
+     "w": "Leo",
+     "start": 0.15,
+     "end": 0.337
+    },
+    {
+     "w": "skips",
+     "start": 0.349,
+     "end": 0.56
+    },
+    {
+     "w": "the",
+     "start": 0.574,
+     "end": 0.761
+    },
+    {
+     "w": "WISHLIST",
+     "start": 0.772,
+     "end": 1.171
+    },
+    {
+     "w": "to",
+     "start": 1.196,
+     "end": 1.371
+    },
+    {
+     "w": "find",
+     "start": 1.382,
+     "end": 1.581
+    },
+    {
+     "w": "something",
+     "start": 1.594,
+     "end": 2.155
+    },
+    {
+     "w": "'thoughtful.'",
+     "start": 2.191,
+     "end": 2.613
+    }
+   ]
+  },
+  {
+   "text": "You've done it. Pause and PICK: wishlist, or surprise?",
+   "sec": "cd",
+   "start": 2.96,
+   "end": 5.99,
+   "words": [
+    {
+     "w": "You've",
+     "start": 2.96,
+     "end": 3.208
+    },
+    {
+     "w": "done",
+     "start": 3.224,
+     "end": 3.458
+    },
+    {
+     "w": "it.",
+     "start": 3.473,
+     "end": 3.678
+    },
+    {
+     "w": "Pause",
+     "start": 3.804,
+     "end": 4.052
+    },
+    {
+     "w": "and",
+     "start": 4.068,
+     "end": 4.288
+    },
+    {
+     "w": "PICK:",
+     "start": 4.302,
+     "end": 4.535
+    },
+    {
+     "w": "wishlist,",
+     "start": 4.663,
+     "end": 5.131
+    },
+    {
+     "w": "or",
+     "start": 5.274,
+     "end": 5.479
+    },
+    {
+     "w": "surprise?",
+     "start": 5.493,
+     "end": 5.96
+    }
+   ]
+  },
+  {
+   "text": "Givers pick the surprise. Receivers want the LIST.",
+   "sec": "cd",
+   "start": 6.31,
+   "end": 9.06,
+   "words": [
+    {
+     "w": "Givers",
+     "start": 6.31,
+     "end": 6.714
+    },
+    {
+     "w": "pick",
+     "start": 6.739,
+     "end": 6.954
+    },
+    {
+     "w": "the",
+     "start": 6.968,
+     "end": 7.17
+    },
+    {
+     "w": "surprise.",
+     "start": 7.183,
+     "end": 7.613
+    },
+    {
+     "w": "Receivers",
+     "start": 7.744,
+     "end": 8.349
+    },
+    {
+     "w": "want",
+     "start": 8.388,
+     "end": 8.603
+    },
+    {
+     "w": "the",
+     "start": 8.617,
+     "end": 8.819
+    },
+    {
+     "w": "LIST.",
+     "start": 8.831,
+     "end": 9.046
+    }
+   ]
+  },
+  {
+   "text": "In 2011, Gino and Flynn found people appreciated gifts they ASKED for more.",
+   "sec": "cd",
+   "start": 9.38,
+   "end": 14.34,
+   "words": [
+    {
+     "w": "In",
+     "start": 9.38,
+     "end": 9.604
+    },
+    {
+     "w": "2011,",
+     "start": 9.618,
+     "end": 9.811
+    },
+    {
+     "w": "Gino",
+     "start": 9.947,
+     "end": 10.394
+    },
+    {
+     "w": "and",
+     "start": 10.423,
+     "end": 10.662
+    },
+    {
+     "w": "Flynn",
+     "start": 10.677,
+     "end": 10.948
+    },
+    {
+     "w": "found",
+     "start": 10.965,
+     "end": 11.235
+    },
+    {
+     "w": "people",
+     "start": 11.252,
+     "end": 11.731
+    },
+    {
+     "w": "appreciated",
+     "start": 11.761,
+     "end": 12.703
+    },
+    {
+     "w": "gifts",
+     "start": 12.763,
+     "end": 13.033
+    },
+    {
+     "w": "they",
+     "start": 13.051,
+     "end": 13.305
+    },
+    {
+     "w": "ASKED",
+     "start": 13.322,
+     "end": 13.785
+    },
+    {
+     "w": "for",
+     "start": 13.814,
+     "end": 14.054
+    },
+    {
+     "w": "more.",
+     "start": 14.069,
+     "end": 14.324
+    }
+   ]
+  },
+  {
+   "text": "And saw them as more THOUGHTFUL.",
+   "sec": "cd",
+   "start": 14.66,
+   "end": 16.19,
+   "words": [
+    {
+     "w": "And",
+     "start": 14.66,
+     "end": 14.856
+    },
+    {
+     "w": "saw",
+     "start": 14.869,
+     "end": 15.065
+    },
+    {
+     "w": "them",
+     "start": 15.078,
+     "end": 15.287
+    },
+    {
+     "w": "as",
+     "start": 15.3,
+     "end": 15.484
+    },
+    {
+     "w": "more",
+     "start": 15.496,
+     "end": 15.705
+    },
+    {
+     "w": "THOUGHTFUL.",
+     "start": 15.718,
+     "end": 16.162
+    }
+   ]
+  },
+  {
+   "text": "Think of the 'surprise' you never USED. Yeah, that one.",
+   "sec": "cd",
+   "start": 16.51,
+   "end": 19.31,
+   "words": [
+    {
+     "w": "Think",
+     "start": 16.51,
+     "end": 16.709
+    },
+    {
+     "w": "of",
+     "start": 16.722,
+     "end": 16.887
+    },
+    {
+     "w": "the",
+     "start": 16.898,
+     "end": 17.074
+    },
+    {
+     "w": "'surprise'",
+     "start": 17.086,
+     "end": 17.462
+    },
+    {
+     "w": "you",
+     "start": 17.486,
+     "end": 17.662
+    },
+    {
+     "w": "never",
+     "start": 17.674,
+     "end": 18.015
+    },
+    {
+     "w": "USED.",
+     "start": 18.037,
+     "end": 18.368
+    },
+    {
+     "w": "Yeah,",
+     "start": 18.48,
+     "end": 18.668
+    },
+    {
+     "w": "that",
+     "start": 18.771,
+     "end": 18.959
+    },
+    {
+     "w": "one.",
+     "start": 18.971,
+     "end": 19.29
+    }
+   ]
+  },
+  {
+   "text": "But Priya gets it: listening IS the thoughtful part.",
+   "sec": "cd",
+   "start": 19.63,
+   "end": 22.49,
+   "words": [
+    {
+     "w": "But",
+     "start": 19.63,
+     "end": 19.839
+    },
+    {
+     "w": "Priya",
+     "start": 19.852,
+     "end": 20.088
+    },
+    {
+     "w": "gets",
+     "start": 20.103,
+     "end": 20.325
+    },
+    {
+     "w": "it:",
+     "start": 20.34,
+     "end": 20.535
+    },
+    {
+     "w": "listening",
+     "start": 20.655,
+     "end": 21.282
+    },
+    {
+     "w": "IS",
+     "start": 21.322,
+     "end": 21.517
+    },
+    {
+     "w": "the",
+     "start": 21.529,
+     "end": 21.738
+    },
+    {
+     "w": "thoughtful",
+     "start": 21.752,
+     "end": 22.223
+    },
+    {
+     "w": "part.",
+     "start": 22.253,
+     "end": 22.476
+    }
+   ]
+  },
+  {
+   "text": "Which did you PICK? Send this to the friend who never buys off the list.",
+   "sec": "cd",
+   "start": 22.81,
+   "end": 26.52,
+   "words": [
+    {
+     "w": "Which",
+     "start": 22.81,
+     "end": 23.042
+    },
+    {
+     "w": "did",
+     "start": 23.056,
+     "end": 23.262
+    },
+    {
+     "w": "you",
+     "start": 23.275,
+     "end": 23.48
+    },
+    {
+     "w": "PICK?",
+     "start": 23.493,
+     "end": 23.711
+    },
+    {
+     "w": "Send",
+     "start": 23.831,
+     "end": 24.049
+    },
+    {
+     "w": "this",
+     "start": 24.063,
+     "end": 24.281
+    },
+    {
+     "w": "to",
+     "start": 24.295,
+     "end": 24.487
+    },
+    {
+     "w": "the",
+     "start": 24.5,
+     "end": 24.705
+    },
+    {
+     "w": "friend",
+     "start": 24.718,
+     "end": 24.963
+    },
+    {
+     "w": "who",
+     "start": 24.978,
+     "end": 25.183
+    },
+    {
+     "w": "never",
+     "start": 25.197,
+     "end": 25.594
+    },
+    {
+     "w": "buys",
+     "start": 25.619,
+     "end": 25.837
+    },
+    {
+     "w": "off",
+     "start": 25.851,
+     "end": 26.056
+    },
+    {
+     "w": "the",
+     "start": 26.069,
+     "end": 26.275
+    },
+    {
+     "w": "list.",
+     "start": 26.288,
+     "end": 26.506
+    }
+   ]
+  }
+ ]
+}

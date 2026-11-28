@@ -1,0 +1,678 @@
+{
+ "lines": [
+  {
+   "text": "Day three. Arthur's still replaying the same WORRY.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 2.76,
+   "words": [
+    {
+     "w": "Day",
+     "start": 0.15,
+     "end": 0.354
+    },
+    {
+     "w": "three.",
+     "start": 0.367,
+     "end": 0.598
+    },
+    {
+     "w": "Arthur's",
+     "start": 0.718,
+     "end": 1.14
+    },
+    {
+     "w": "still",
+     "start": 1.167,
+     "end": 1.398
+    },
+    {
+     "w": "replaying",
+     "start": 1.413,
+     "end": 1.861
+    },
+    {
+     "w": "the",
+     "start": 1.89,
+     "end": 2.094
+    },
+    {
+     "w": "same",
+     "start": 2.107,
+     "end": 2.325
+    },
+    {
+     "w": "WORRY.",
+     "start": 2.339,
+     "end": 2.735
+    }
+   ]
+  },
+  {
+   "text": "Five signs you do this TOO.",
+   "sec": "cd",
+   "start": 3.08,
+   "end": 4.41,
+   "words": [
+    {
+     "w": "Five",
+     "start": 3.08,
+     "end": 3.295
+    },
+    {
+     "w": "signs",
+     "start": 3.309,
+     "end": 3.536
+    },
+    {
+     "w": "you",
+     "start": 3.551,
+     "end": 3.753
+    },
+    {
+     "w": "do",
+     "start": 3.766,
+     "end": 3.955
+    },
+    {
+     "w": "this",
+     "start": 3.967,
+     "end": 4.182
+    },
+    {
+     "w": "TOO.",
+     "start": 4.195,
+     "end": 4.397
+    }
+   ]
+  },
+  {
+   "text": "Twist: the fix isn't in your head. It's in your SHOES.",
+   "sec": "cd",
+   "start": 4.73,
+   "end": 7.58,
+   "words": [
+    {
+     "w": "Twist:",
+     "start": 4.73,
+     "end": 4.975
+    },
+    {
+     "w": "the",
+     "start": 5.102,
+     "end": 5.319
+    },
+    {
+     "w": "fix",
+     "start": 5.333,
+     "end": 5.55
+    },
+    {
+     "w": "isn't",
+     "start": 5.563,
+     "end": 5.794
+    },
+    {
+     "w": "in",
+     "start": 5.809,
+     "end": 6.012
+    },
+    {
+     "w": "your",
+     "start": 6.025,
+     "end": 6.256
+    },
+    {
+     "w": "head.",
+     "start": 6.27,
+     "end": 6.501
+    },
+    {
+     "w": "It's",
+     "start": 6.628,
+     "end": 6.844
+    },
+    {
+     "w": "in",
+     "start": 6.858,
+     "end": 7.061
+    },
+    {
+     "w": "your",
+     "start": 7.074,
+     "end": 7.305
+    },
+    {
+     "w": "SHOES.",
+     "start": 7.32,
+     "end": 7.564
+    }
+   ]
+  },
+  {
+   "text": "One: you replay what you SAID.",
+   "sec": "cd",
+   "start": 7.9,
+   "end": 9.47,
+   "words": [
+    {
+     "w": "One:",
+     "start": 7.9,
+     "end": 8.217
+    },
+    {
+     "w": "you",
+     "start": 8.327,
+     "end": 8.502
+    },
+    {
+     "w": "replay",
+     "start": 8.514,
+     "end": 8.864
+    },
+    {
+     "w": "what",
+     "start": 8.887,
+     "end": 9.073
+    },
+    {
+     "w": "you",
+     "start": 9.085,
+     "end": 9.26
+    },
+    {
+     "w": "SAID.",
+     "start": 9.271,
+     "end": 9.458
+    }
+   ]
+  },
+  {
+   "text": "Two: you win arguments in the SHOWER.",
+   "sec": "cd",
+   "start": 9.79,
+   "end": 11.59,
+   "words": [
+    {
+     "w": "Two:",
+     "start": 9.79,
+     "end": 9.952
+    },
+    {
+     "w": "you",
+     "start": 10.046,
+     "end": 10.209
+    },
+    {
+     "w": "win",
+     "start": 10.219,
+     "end": 10.381
+    },
+    {
+     "w": "arguments",
+     "start": 10.392,
+     "end": 10.879
+    },
+    {
+     "w": "in",
+     "start": 10.91,
+     "end": 11.062
+    },
+    {
+     "w": "the",
+     "start": 11.072,
+     "end": 11.234
+    },
+    {
+     "w": "SHOWER.",
+     "start": 11.244,
+     "end": 11.569
+    }
+   ]
+  },
+  {
+   "text": "Three: bedtime is when it gets LOUDER.",
+   "sec": "cd",
+   "start": 11.91,
+   "end": 13.93,
+   "words": [
+    {
+     "w": "Three:",
+     "start": 11.91,
+     "end": 12.132
+    },
+    {
+     "w": "bedtime",
+     "start": 12.247,
+     "end": 12.652
+    },
+    {
+     "w": "is",
+     "start": 12.678,
+     "end": 12.861
+    },
+    {
+     "w": "when",
+     "start": 12.873,
+     "end": 13.082
+    },
+    {
+     "w": "it",
+     "start": 13.095,
+     "end": 13.279
+    },
+    {
+     "w": "gets",
+     "start": 13.29,
+     "end": 13.499
+    },
+    {
+     "w": "LOUDER.",
+     "start": 13.513,
+     "end": 13.905
+    }
+   ]
+  },
+  {
+   "text": "Four: you 'relax', but your mind WORKS.",
+   "sec": "cd",
+   "start": 14.25,
+   "end": 16.43,
+   "words": [
+    {
+     "w": "Four:",
+     "start": 14.25,
+     "end": 14.486
+    },
+    {
+     "w": "you",
+     "start": 14.616,
+     "end": 14.838
+    },
+    {
+     "w": "'relax',",
+     "start": 14.852,
+     "end": 15.282
+    },
+    {
+     "w": "but",
+     "start": 15.424,
+     "end": 15.646
+    },
+    {
+     "w": "your",
+     "start": 15.66,
+     "end": 15.897
+    },
+    {
+     "w": "mind",
+     "start": 15.912,
+     "end": 16.148
+    },
+    {
+     "w": "WORKS.",
+     "start": 16.163,
+     "end": 16.414
+    }
+   ]
+  },
+  {
+   "text": "Five: overthinking feels like FIXING it.",
+   "sec": "cd",
+   "start": 16.75,
+   "end": 18.86,
+   "words": [
+    {
+     "w": "Five:",
+     "start": 16.75,
+     "end": 16.948
+    },
+    {
+     "w": "overthinking",
+     "start": 17.056,
+     "end": 17.799
+    },
+    {
+     "w": "feels",
+     "start": 17.846,
+     "end": 18.056
+    },
+    {
+     "w": "like",
+     "start": 18.07,
+     "end": 18.267
+    },
+    {
+     "w": "FIXING",
+     "start": 18.28,
+     "end": 18.651
+    },
+    {
+     "w": "it.",
+     "start": 18.675,
+     "end": 18.849
+    }
+   ]
+  },
+  {
+   "text": "In 2015, people walked ninety minutes: through NATURE, or by traffic.",
+   "sec": "cd",
+   "start": 19.18,
+   "end": 23.83,
+   "words": [
+    {
+     "w": "In",
+     "start": 19.18,
+     "end": 19.384
+    },
+    {
+     "w": "2015,",
+     "start": 19.397,
+     "end": 19.572
+    },
+    {
+     "w": "people",
+     "start": 19.696,
+     "end": 20.132
+    },
+    {
+     "w": "walked",
+     "start": 20.159,
+     "end": 20.595
+    },
+    {
+     "w": "ninety",
+     "start": 20.623,
+     "end": 21.234
+    },
+    {
+     "w": "minutes:",
+     "start": 21.273,
+     "end": 21.899
+    },
+    {
+     "w": "through",
+     "start": 22.051,
+     "end": 22.325
+    },
+    {
+     "w": "NATURE,",
+     "start": 22.342,
+     "end": 22.778
+    },
+    {
+     "w": "or",
+     "start": 22.918,
+     "end": 23.122
+    },
+    {
+     "w": "by",
+     "start": 23.135,
+     "end": 23.338
+    },
+    {
+     "w": "traffic.",
+     "start": 23.352,
+     "end": 23.801
+    }
+   ]
+  },
+  {
+   "text": "Only nature quieted it, even on a brain SCAN.",
+   "sec": "cd",
+   "start": 24.15,
+   "end": 26.98,
+   "words": [
+    {
+     "w": "Only",
+     "start": 24.15,
+     "end": 24.526
+    },
+    {
+     "w": "nature",
+     "start": 24.55,
+     "end": 24.953
+    },
+    {
+     "w": "quieted",
+     "start": 24.978,
+     "end": 25.394
+    },
+    {
+     "w": "it,",
+     "start": 25.42,
+     "end": 25.608
+    },
+    {
+     "w": "even",
+     "start": 25.724,
+     "end": 26.1
+    },
+    {
+     "w": "on",
+     "start": 26.124,
+     "end": 26.312
+    },
+    {
+     "w": "a",
+     "start": 26.324,
+     "end": 26.499
+    },
+    {
+     "w": "brain",
+     "start": 26.511,
+     "end": 26.738
+    },
+    {
+     "w": "SCAN.",
+     "start": 26.752,
+     "end": 26.966
+    }
+   ]
+  },
+  {
+   "text": "Think of the last walk that 'cleared your head.' THAT one.",
+   "sec": "cd",
+   "start": 27.3,
+   "end": 29.98,
+   "words": [
+    {
+     "w": "Think",
+     "start": 27.3,
+     "end": 27.513
+    },
+    {
+     "w": "of",
+     "start": 27.527,
+     "end": 27.704
+    },
+    {
+     "w": "the",
+     "start": 27.715,
+     "end": 27.904
+    },
+    {
+     "w": "last",
+     "start": 27.916,
+     "end": 28.118
+    },
+    {
+     "w": "walk",
+     "start": 28.131,
+     "end": 28.332
+    },
+    {
+     "w": "that",
+     "start": 28.345,
+     "end": 28.546
+    },
+    {
+     "w": "'cleared",
+     "start": 28.559,
+     "end": 28.949
+    },
+    {
+     "w": "your",
+     "start": 28.974,
+     "end": 29.175
+    },
+    {
+     "w": "head.'",
+     "start": 29.188,
+     "end": 29.39
+    },
+    {
+     "w": "THAT",
+     "start": 29.402,
+     "end": 29.604
+    },
+    {
+     "w": "one.",
+     "start": 29.617,
+     "end": 29.958
+    }
+   ]
+  },
+  {
+   "text": "Arthur takes the park. The Critic goes QUIET.",
+   "sec": "cd",
+   "start": 30.3,
+   "end": 32.79,
+   "words": [
+    {
+     "w": "Arthur",
+     "start": 30.3,
+     "end": 30.701
+    },
+    {
+     "w": "takes",
+     "start": 30.726,
+     "end": 31.114
+    },
+    {
+     "w": "the",
+     "start": 31.139,
+     "end": 31.34
+    },
+    {
+     "w": "park.",
+     "start": 31.352,
+     "end": 31.566
+    },
+    {
+     "w": "The",
+     "start": 31.683,
+     "end": 31.883
+    },
+    {
+     "w": "Critic",
+     "start": 31.896,
+     "end": 32.297
+    },
+    {
+     "w": "goes",
+     "start": 32.322,
+     "end": 32.536
+    },
+    {
+     "w": "QUIET.",
+     "start": 32.549,
+     "end": 32.776
+    }
+   ]
+  },
+  {
+   "text": "Not BROKEN. Just indoors. Which sign got you? Send this to the friend who checked all five.",
+   "sec": "cd",
+   "start": 33.11,
+   "end": 38.72,
+   "words": [
+    {
+     "w": "Not",
+     "start": 33.11,
+     "end": 33.348
+    },
+    {
+     "w": "BROKEN.",
+     "start": 33.363,
+     "end": 33.839
+    },
+    {
+     "w": "Just",
+     "start": 33.992,
+     "end": 34.245
+    },
+    {
+     "w": "indoors.",
+     "start": 34.261,
+     "end": 34.753
+    },
+    {
+     "w": "Which",
+     "start": 34.906,
+     "end": 35.175
+    },
+    {
+     "w": "sign",
+     "start": 35.192,
+     "end": 35.446
+    },
+    {
+     "w": "got",
+     "start": 35.462,
+     "end": 35.7
+    },
+    {
+     "w": "you?",
+     "start": 35.715,
+     "end": 35.953
+    },
+    {
+     "w": "Send",
+     "start": 36.091,
+     "end": 36.344
+    },
+    {
+     "w": "this",
+     "start": 36.36,
+     "end": 36.613
+    },
+    {
+     "w": "to",
+     "start": 36.629,
+     "end": 36.852
+    },
+    {
+     "w": "the",
+     "start": 36.866,
+     "end": 37.104
+    },
+    {
+     "w": "friend",
+     "start": 37.119,
+     "end": 37.403
+    },
+    {
+     "w": "who",
+     "start": 37.422,
+     "end": 37.66
+    },
+    {
+     "w": "checked",
+     "start": 37.675,
+     "end": 38.166
+    },
+    {
+     "w": "all",
+     "start": 38.197,
+     "end": 38.435
+    },
+    {
+     "w": "five.",
+     "start": 38.45,
+     "end": 38.704
+    }
+   ]
+  }
+ ]
+}

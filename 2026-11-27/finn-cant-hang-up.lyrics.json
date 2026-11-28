@@ -1,0 +1,754 @@
+{
+ "lines": [
+  {
+   "text": "You've wanted to END this call for ten minutes.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 2.22,
+   "words": [
+    {
+     "w": "You've",
+     "start": 0.15,
+     "end": 0.332
+    },
+    {
+     "w": "wanted",
+     "start": 0.344,
+     "end": 0.666
+    },
+    {
+     "w": "to",
+     "start": 0.687,
+     "end": 0.838
+    },
+    {
+     "w": "END",
+     "start": 0.847,
+     "end": 1.009
+    },
+    {
+     "w": "this",
+     "start": 1.019,
+     "end": 1.191
+    },
+    {
+     "w": "call",
+     "start": 1.202,
+     "end": 1.373
+    },
+    {
+     "w": "for",
+     "start": 1.384,
+     "end": 1.546
+    },
+    {
+     "w": "ten",
+     "start": 1.556,
+     "end": 1.717
+    },
+    {
+     "w": "minutes.",
+     "start": 1.727,
+     "end": 2.19
+    }
+   ]
+  },
+  {
+   "text": "You say 'anyway\u2026' She keeps TALKING.",
+   "sec": "cd",
+   "start": 2.54,
+   "end": 4.17,
+   "words": [
+    {
+     "w": "You",
+     "start": 2.54,
+     "end": 2.71
+    },
+    {
+     "w": "say",
+     "start": 2.721,
+     "end": 2.891
+    },
+    {
+     "w": "'anyway\u2026'",
+     "start": 2.902,
+     "end": 3.38
+    },
+    {
+     "w": "She",
+     "start": 3.411,
+     "end": 3.581
+    },
+    {
+     "w": "keeps",
+     "start": 3.592,
+     "end": 3.784
+    },
+    {
+     "w": "TALKING.",
+     "start": 3.796,
+     "end": 4.148
+    }
+   ]
+  },
+  {
+   "text": "But Ivy might be stuck TOO. Psychologists measured this.",
+   "sec": "cd",
+   "start": 4.49,
+   "end": 7.76,
+   "words": [
+    {
+     "w": "But",
+     "start": 4.49,
+     "end": 4.688
+    },
+    {
+     "w": "Ivy",
+     "start": 4.7,
+     "end": 5.057
+    },
+    {
+     "w": "might",
+     "start": 5.08,
+     "end": 5.303
+    },
+    {
+     "w": "be",
+     "start": 5.318,
+     "end": 5.503
+    },
+    {
+     "w": "stuck",
+     "start": 5.514,
+     "end": 5.738
+    },
+    {
+     "w": "TOO.",
+     "start": 5.752,
+     "end": 5.95
+    },
+    {
+     "w": "Psychologists",
+     "start": 6.064,
+     "end": 6.867
+    },
+    {
+     "w": "measured",
+     "start": 6.919,
+     "end": 7.499
+    },
+    {
+     "w": "this.",
+     "start": 7.536,
+     "end": 7.747
+    }
+   ]
+  },
+  {
+   "text": "Minute twenty-four. You YAWN.",
+   "sec": "cd",
+   "start": 8.08,
+   "end": 9.76,
+   "words": [
+    {
+     "w": "Minute",
+     "start": 8.08,
+     "end": 8.495
+    },
+    {
+     "w": "twenty-four.",
+     "start": 8.521,
+     "end": 9.157
+    },
+    {
+     "w": "You",
+     "start": 9.304,
+     "end": 9.512
+    },
+    {
+     "w": "YAWN.",
+     "start": 9.525,
+     "end": 9.746
+    }
+   ]
+  },
+  {
+   "text": "'I should let you GO.' She laughs. New topic.",
+   "sec": "cd",
+   "start": 10.08,
+   "end": 12.42,
+   "words": [
+    {
+     "w": "'I",
+     "start": 10.08,
+     "end": 10.261
+    },
+    {
+     "w": "should",
+     "start": 10.272,
+     "end": 10.519
+    },
+    {
+     "w": "let",
+     "start": 10.535,
+     "end": 10.742
+    },
+    {
+     "w": "you",
+     "start": 10.756,
+     "end": 10.963
+    },
+    {
+     "w": "GO.'",
+     "start": 10.976,
+     "end": 11.17
+    },
+    {
+     "w": "She",
+     "start": 11.182,
+     "end": 11.39
+    },
+    {
+     "w": "laughs.",
+     "start": 11.403,
+     "end": 11.65
+    },
+    {
+     "w": "New",
+     "start": 11.773,
+     "end": 11.98
+    },
+    {
+     "w": "topic.",
+     "start": 11.993,
+     "end": 12.394
+    }
+   ]
+  },
+  {
+   "text": "You check the TIME. Out loud.",
+   "sec": "cd",
+   "start": 12.74,
+   "end": 14.51,
+   "words": [
+    {
+     "w": "You",
+     "start": 12.74,
+     "end": 12.987
+    },
+    {
+     "w": "check",
+     "start": 13.003,
+     "end": 13.281
+    },
+    {
+     "w": "the",
+     "start": 13.299,
+     "end": 13.546
+    },
+    {
+     "w": "TIME.",
+     "start": 13.561,
+     "end": 13.824
+    },
+    {
+     "w": "Out",
+     "start": 13.968,
+     "end": 14.215
+    },
+    {
+     "w": "loud.",
+     "start": 14.231,
+     "end": 14.493
+    }
+   ]
+  },
+  {
+   "text": "'Okay, BYE!' Ten more minutes of goodbye.",
+   "sec": "cd",
+   "start": 14.83,
+   "end": 16.89,
+   "words": [
+    {
+     "w": "'Okay,",
+     "start": 14.83,
+     "end": 15.176
+    },
+    {
+     "w": "BYE!'",
+     "start": 15.293,
+     "end": 15.477
+    },
+    {
+     "w": "Ten",
+     "start": 15.489,
+     "end": 15.674
+    },
+    {
+     "w": "more",
+     "start": 15.686,
+     "end": 15.882
+    },
+    {
+     "w": "minutes",
+     "start": 15.895,
+     "end": 16.425
+    },
+    {
+     "w": "of",
+     "start": 16.459,
+     "end": 16.632
+    },
+    {
+     "w": "goodbye.",
+     "start": 16.643,
+     "end": 16.875
+    }
+   ]
+  },
+  {
+   "text": "In 2021, researchers asked: when did you want it to END?",
+   "sec": "cd",
+   "start": 17.21,
+   "end": 20.98,
+   "words": [
+    {
+     "w": "In",
+     "start": 17.21,
+     "end": 17.434
+    },
+    {
+     "w": "2021,",
+     "start": 17.449,
+     "end": 17.642
+    },
+    {
+     "w": "researchers",
+     "start": 17.778,
+     "end": 18.529
+    },
+    {
+     "w": "asked:",
+     "start": 18.576,
+     "end": 19.041
+    },
+    {
+     "w": "when",
+     "start": 19.194,
+     "end": 19.449
+    },
+    {
+     "w": "did",
+     "start": 19.465,
+     "end": 19.705
+    },
+    {
+     "w": "you",
+     "start": 19.721,
+     "end": 19.96
+    },
+    {
+     "w": "want",
+     "start": 19.976,
+     "end": 20.231
+    },
+    {
+     "w": "it",
+     "start": 20.247,
+     "end": 20.472
+    },
+    {
+     "w": "to",
+     "start": 20.486,
+     "end": 20.711
+    },
+    {
+     "w": "END?",
+     "start": 20.725,
+     "end": 20.965
+    }
+   ]
+  },
+  {
+   "text": "Only about two PERCENT ended when both wanted.",
+   "sec": "cd",
+   "start": 21.3,
+   "end": 23.85,
+   "words": [
+    {
+     "w": "Only",
+     "start": 21.3,
+     "end": 21.647
+    },
+    {
+     "w": "about",
+     "start": 21.669,
+     "end": 22.027
+    },
+    {
+     "w": "two",
+     "start": 22.05,
+     "end": 22.236
+    },
+    {
+     "w": "PERCENT",
+     "start": 22.248,
+     "end": 22.63
+    },
+    {
+     "w": "ended",
+     "start": 22.654,
+     "end": 23.013
+    },
+    {
+     "w": "when",
+     "start": 23.036,
+     "end": 23.233
+    },
+    {
+     "w": "both",
+     "start": 23.246,
+     "end": 23.443
+    },
+    {
+     "w": "wanted.",
+     "start": 23.456,
+     "end": 23.826
+    }
+   ]
+  },
+  {
+   "text": "People were way OFF guessing what the other wanted.",
+   "sec": "cd",
+   "start": 24.17,
+   "end": 26.44,
+   "words": [
+    {
+     "w": "People",
+     "start": 24.17,
+     "end": 24.493
+    },
+    {
+     "w": "were",
+     "start": 24.514,
+     "end": 24.686
+    },
+    {
+     "w": "way",
+     "start": 24.697,
+     "end": 24.859
+    },
+    {
+     "w": "OFF",
+     "start": 24.869,
+     "end": 25.031
+    },
+    {
+     "w": "guessing",
+     "start": 25.041,
+     "end": 25.386
+    },
+    {
+     "w": "what",
+     "start": 25.408,
+     "end": 25.58
+    },
+    {
+     "w": "the",
+     "start": 25.591,
+     "end": 25.753
+    },
+    {
+     "w": "other",
+     "start": 25.763,
+     "end": 26.076
+    },
+    {
+     "w": "wanted.",
+     "start": 26.096,
+     "end": 26.419
+    }
+   ]
+  },
+  {
+   "text": "So you both keep going, guessing WRONG.",
+   "sec": "cd",
+   "start": 26.76,
+   "end": 28.71,
+   "words": [
+    {
+     "w": "So",
+     "start": 26.76,
+     "end": 26.952
+    },
+    {
+     "w": "you",
+     "start": 26.964,
+     "end": 27.169
+    },
+    {
+     "w": "both",
+     "start": 27.182,
+     "end": 27.401
+    },
+    {
+     "w": "keep",
+     "start": 27.415,
+     "end": 27.633
+    },
+    {
+     "w": "going,",
+     "start": 27.647,
+     "end": 27.879
+    },
+    {
+     "w": "guessing",
+     "start": 27.999,
+     "end": 28.436
+    },
+    {
+     "w": "WRONG.",
+     "start": 28.464,
+     "end": 28.695
+    }
+   ]
+  },
+  {
+   "text": "Think of the last call you couldn't get OUT of. Yeah. That one.",
+   "sec": "cd",
+   "start": 29.03,
+   "end": 32.33,
+   "words": [
+    {
+     "w": "Think",
+     "start": 29.03,
+     "end": 29.259
+    },
+    {
+     "w": "of",
+     "start": 29.274,
+     "end": 29.463
+    },
+    {
+     "w": "the",
+     "start": 29.476,
+     "end": 29.678
+    },
+    {
+     "w": "last",
+     "start": 29.691,
+     "end": 29.907
+    },
+    {
+     "w": "call",
+     "start": 29.921,
+     "end": 30.137
+    },
+    {
+     "w": "you",
+     "start": 30.151,
+     "end": 30.354
+    },
+    {
+     "w": "couldn't",
+     "start": 30.367,
+     "end": 30.622
+    },
+    {
+     "w": "get",
+     "start": 30.638,
+     "end": 30.841
+    },
+    {
+     "w": "OUT",
+     "start": 30.854,
+     "end": 31.057
+    },
+    {
+     "w": "of.",
+     "start": 31.07,
+     "end": 31.26
+    },
+    {
+     "w": "Yeah.",
+     "start": 31.376,
+     "end": 31.592
+    },
+    {
+     "w": "That",
+     "start": 31.71,
+     "end": 31.926
+    },
+    {
+     "w": "one.",
+     "start": 31.94,
+     "end": 32.307
+    }
+   ]
+  },
+  {
+   "text": "Say it kindly: 'I've got to go.' She might be RELIEVED.",
+   "sec": "cd",
+   "start": 32.65,
+   "end": 35.74,
+   "words": [
+    {
+     "w": "Say",
+     "start": 32.65,
+     "end": 32.842
+    },
+    {
+     "w": "it",
+     "start": 32.855,
+     "end": 33.035
+    },
+    {
+     "w": "kindly:",
+     "start": 33.046,
+     "end": 33.431
+    },
+    {
+     "w": "'I've",
+     "start": 33.555,
+     "end": 33.902
+    },
+    {
+     "w": "got",
+     "start": 33.924,
+     "end": 34.117
+    },
+    {
+     "w": "to",
+     "start": 34.129,
+     "end": 34.309
+    },
+    {
+     "w": "go.'",
+     "start": 34.32,
+     "end": 34.5
+    },
+    {
+     "w": "She",
+     "start": 34.512,
+     "end": 34.704
+    },
+    {
+     "w": "might",
+     "start": 34.717,
+     "end": 34.934
+    },
+    {
+     "w": "be",
+     "start": 34.948,
+     "end": 35.128
+    },
+    {
+     "w": "RELIEVED.",
+     "start": 35.139,
+     "end": 35.704
+    }
+   ]
+  },
+  {
+   "text": "Who ends YOUR calls: you, or them?",
+   "sec": "cd",
+   "start": 36.06,
+   "end": 37.82,
+   "words": [
+    {
+     "w": "Who",
+     "start": 36.06,
+     "end": 36.261
+    },
+    {
+     "w": "ends",
+     "start": 36.274,
+     "end": 36.488
+    },
+    {
+     "w": "YOUR",
+     "start": 36.502,
+     "end": 36.716
+    },
+    {
+     "w": "calls:",
+     "start": 36.729,
+     "end": 36.957
+    },
+    {
+     "w": "you,",
+     "start": 37.075,
+     "end": 37.276
+    },
+    {
+     "w": "or",
+     "start": 37.392,
+     "end": 37.58
+    },
+    {
+     "w": "them?",
+     "start": 37.592,
+     "end": 37.806
+    }
+   ]
+  },
+  {
+   "text": "Send this to the FRIEND whose goodbyes take ten minutes.",
+   "sec": "cd",
+   "start": 38.14,
+   "end": 41.18,
+   "words": [
+    {
+     "w": "Send",
+     "start": 38.14,
+     "end": 38.366
+    },
+    {
+     "w": "this",
+     "start": 38.381,
+     "end": 38.607
+    },
+    {
+     "w": "to",
+     "start": 38.621,
+     "end": 38.82
+    },
+    {
+     "w": "the",
+     "start": 38.833,
+     "end": 39.045
+    },
+    {
+     "w": "FRIEND",
+     "start": 39.059,
+     "end": 39.312
+    },
+    {
+     "w": "whose",
+     "start": 39.328,
+     "end": 39.568
+    },
+    {
+     "w": "goodbyes",
+     "start": 39.583,
+     "end": 40.036
+    },
+    {
+     "w": "take",
+     "start": 40.065,
+     "end": 40.291
+    },
+    {
+     "w": "ten",
+     "start": 40.305,
+     "end": 40.518
+    },
+    {
+     "w": "minutes.",
+     "start": 40.531,
+     "end": 41.141
+    }
+   ]
+  }
+ ]
+}

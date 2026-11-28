@@ -1,0 +1,739 @@
+{
+ "lines": [
+  {
+   "text": "You and Gus bet on a COIN flip. Heads.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 2.41,
+   "words": [
+    {
+     "w": "You",
+     "start": 0.15,
+     "end": 0.372
+    },
+    {
+     "w": "and",
+     "start": 0.387,
+     "end": 0.609
+    },
+    {
+     "w": "Gus",
+     "start": 0.623,
+     "end": 0.846
+    },
+    {
+     "w": "bet",
+     "start": 0.86,
+     "end": 1.083
+    },
+    {
+     "w": "on",
+     "start": 1.097,
+     "end": 1.305
+    },
+    {
+     "w": "a",
+     "start": 1.318,
+     "end": 1.512
+    },
+    {
+     "w": "COIN",
+     "start": 1.524,
+     "end": 1.761
+    },
+    {
+     "w": "flip.",
+     "start": 1.776,
+     "end": 2.013
+    },
+    {
+     "w": "Heads.",
+     "start": 2.143,
+     "end": 2.394
+    }
+   ]
+  },
+  {
+   "text": "Heads. Heads. You can FEEL tails coming.",
+   "sec": "cd",
+   "start": 2.73,
+   "end": 4.91,
+   "words": [
+    {
+     "w": "Heads.",
+     "start": 2.73,
+     "end": 2.976
+    },
+    {
+     "w": "Heads.",
+     "start": 3.103,
+     "end": 3.349
+    },
+    {
+     "w": "You",
+     "start": 3.477,
+     "end": 3.694
+    },
+    {
+     "w": "can",
+     "start": 3.708,
+     "end": 3.926
+    },
+    {
+     "w": "FEEL",
+     "start": 3.939,
+     "end": 4.171
+    },
+    {
+     "w": "tails",
+     "start": 4.186,
+     "end": 4.431
+    },
+    {
+     "w": "coming.",
+     "start": 4.447,
+     "end": 4.882
+    }
+   ]
+  },
+  {
+   "text": "But the coin feels NOTHING. In 1913, that cost gamblers a fortune.",
+   "sec": "cd",
+   "start": 5.23,
+   "end": 9.85,
+   "words": [
+    {
+     "w": "But",
+     "start": 5.23,
+     "end": 5.499
+    },
+    {
+     "w": "the",
+     "start": 5.516,
+     "end": 5.785
+    },
+    {
+     "w": "coin",
+     "start": 5.802,
+     "end": 6.088
+    },
+    {
+     "w": "feels",
+     "start": 6.106,
+     "end": 6.409
+    },
+    {
+     "w": "NOTHING.",
+     "start": 6.429,
+     "end": 6.984
+    },
+    {
+     "w": "In",
+     "start": 7.157,
+     "end": 7.409
+    },
+    {
+     "w": "1913,",
+     "start": 7.425,
+     "end": 7.641
+    },
+    {
+     "w": "that",
+     "start": 7.794,
+     "end": 8.08
+    },
+    {
+     "w": "cost",
+     "start": 8.098,
+     "end": 8.384
+    },
+    {
+     "w": "gamblers",
+     "start": 8.402,
+     "end": 8.974
+    },
+    {
+     "w": "a",
+     "start": 9.011,
+     "end": 9.245
+    },
+    {
+     "w": "fortune.",
+     "start": 9.26,
+     "end": 9.815
+    }
+   ]
+  },
+  {
+   "text": "Heads, four. You bet TAILS.",
+   "sec": "cd",
+   "start": 10.17,
+   "end": 11.75,
+   "words": [
+    {
+     "w": "Heads,",
+     "start": 10.17,
+     "end": 10.437
+    },
+    {
+     "w": "four.",
+     "start": 10.575,
+     "end": 10.826
+    },
+    {
+     "w": "You",
+     "start": 10.964,
+     "end": 11.2
+    },
+    {
+     "w": "bet",
+     "start": 11.215,
+     "end": 11.451
+    },
+    {
+     "w": "TAILS.",
+     "start": 11.466,
+     "end": 11.733
+    }
+   ]
+  },
+  {
+   "text": "Heads. Five. Tails is DUE. Double it.",
+   "sec": "cd",
+   "start": 12.07,
+   "end": 14.25,
+   "words": [
+    {
+     "w": "Heads.",
+     "start": 12.07,
+     "end": 12.31
+    },
+    {
+     "w": "Five.",
+     "start": 12.435,
+     "end": 12.661
+    },
+    {
+     "w": "Tails",
+     "start": 12.785,
+     "end": 13.024
+    },
+    {
+     "w": "is",
+     "start": 13.04,
+     "end": 13.238
+    },
+    {
+     "w": "DUE.",
+     "start": 13.251,
+     "end": 13.464
+    },
+    {
+     "w": "Double",
+     "start": 13.587,
+     "end": 14.011
+    },
+    {
+     "w": "it.",
+     "start": 14.039,
+     "end": 14.237
+    }
+   ]
+  },
+  {
+   "text": "Six. Now the coin must be BROKEN.",
+   "sec": "cd",
+   "start": 14.57,
+   "end": 16.47,
+   "words": [
+    {
+     "w": "Six.",
+     "start": 14.57,
+     "end": 14.779
+    },
+    {
+     "w": "Now",
+     "start": 14.9,
+     "end": 15.109
+    },
+    {
+     "w": "the",
+     "start": 15.122,
+     "end": 15.331
+    },
+    {
+     "w": "coin",
+     "start": 15.344,
+     "end": 15.567
+    },
+    {
+     "w": "must",
+     "start": 15.581,
+     "end": 15.803
+    },
+    {
+     "w": "be",
+     "start": 15.818,
+     "end": 16.013
+    },
+    {
+     "w": "BROKEN.",
+     "start": 16.025,
+     "end": 16.443
+    }
+   ]
+  },
+  {
+   "text": "Monte Carlo, 1913. Black comes up. Again. And AGAIN.",
+   "sec": "cd",
+   "start": 16.79,
+   "end": 20.9,
+   "words": [
+    {
+     "w": "Monte",
+     "start": 16.79,
+     "end": 17.087
+    },
+    {
+     "w": "Carlo,",
+     "start": 17.106,
+     "end": 17.616
+    },
+    {
+     "w": "1913.",
+     "start": 17.784,
+     "end": 17.996
+    },
+    {
+     "w": "Black",
+     "start": 18.145,
+     "end": 18.442
+    },
+    {
+     "w": "comes",
+     "start": 18.461,
+     "end": 18.971
+    },
+    {
+     "w": "up.",
+     "start": 19.003,
+     "end": 19.249
+    },
+    {
+     "w": "Again.",
+     "start": 19.401,
+     "end": 19.91
+    },
+    {
+     "w": "And",
+     "start": 20.078,
+     "end": 20.341
+    },
+    {
+     "w": "AGAIN.",
+     "start": 20.358,
+     "end": 20.867
+    }
+   ]
+  },
+  {
+   "text": "Twenty-six in a ROW. Gamblers kept betting against it.",
+   "sec": "cd",
+   "start": 21.22,
+   "end": 24.32,
+   "words": [
+    {
+     "w": "Twenty-six",
+     "start": 21.22,
+     "end": 21.821
+    },
+    {
+     "w": "in",
+     "start": 21.859,
+     "end": 22.047
+    },
+    {
+     "w": "a",
+     "start": 22.059,
+     "end": 22.233
+    },
+    {
+     "w": "ROW.",
+     "start": 22.244,
+     "end": 22.444
+    },
+    {
+     "w": "Gamblers",
+     "start": 22.56,
+     "end": 22.987
+    },
+    {
+     "w": "kept",
+     "start": 23.014,
+     "end": 23.227
+    },
+    {
+     "w": "betting",
+     "start": 23.241,
+     "end": 23.654
+    },
+    {
+     "w": "against",
+     "start": 23.681,
+     "end": 24.094
+    },
+    {
+     "w": "it.",
+     "start": 24.121,
+     "end": 24.308
+    }
+   ]
+  },
+  {
+   "text": "But every flip starts FRESH. Fifty-fifty.",
+   "sec": "cd",
+   "start": 24.64,
+   "end": 27.19,
+   "words": [
+    {
+     "w": "But",
+     "start": 24.64,
+     "end": 24.849
+    },
+    {
+     "w": "every",
+     "start": 24.862,
+     "end": 25.434
+    },
+    {
+     "w": "flip",
+     "start": 25.471,
+     "end": 25.693
+    },
+    {
+     "w": "starts",
+     "start": 25.707,
+     "end": 25.956
+    },
+    {
+     "w": "FRESH.",
+     "start": 25.972,
+     "end": 26.208
+    },
+    {
+     "w": "Fifty-fifty.",
+     "start": 26.33,
+     "end": 27.138
+    }
+   ]
+  },
+  {
+   "text": "It's the gambler's FALLACY.",
+   "sec": "cd",
+   "start": 27.51,
+   "end": 28.91,
+   "words": [
+    {
+     "w": "It's",
+     "start": 27.51,
+     "end": 27.698
+    },
+    {
+     "w": "the",
+     "start": 27.71,
+     "end": 27.898
+    },
+    {
+     "w": "gambler's",
+     "start": 27.91,
+     "end": 28.31
+    },
+    {
+     "w": "FALLACY.",
+     "start": 28.336,
+     "end": 28.876
+    }
+   ]
+  },
+  {
+   "text": "In 1971, Tversky and Kahneman showed we expect short streaks to BALANCE out.",
+   "sec": "cd",
+   "start": 29.23,
+   "end": 34.48,
+   "words": [
+    {
+     "w": "In",
+     "start": 29.23,
+     "end": 29.466
+    },
+    {
+     "w": "1971,",
+     "start": 29.481,
+     "end": 29.685
+    },
+    {
+     "w": "Tversky",
+     "start": 29.828,
+     "end": 30.349
+    },
+    {
+     "w": "and",
+     "start": 30.382,
+     "end": 30.635
+    },
+    {
+     "w": "Kahneman",
+     "start": 30.651,
+     "end": 31.392
+    },
+    {
+     "w": "showed",
+     "start": 31.439,
+     "end": 31.944
+    },
+    {
+     "w": "we",
+     "start": 31.976,
+     "end": 32.212
+    },
+    {
+     "w": "expect",
+     "start": 32.228,
+     "end": 32.732
+    },
+    {
+     "w": "short",
+     "start": 32.765,
+     "end": 33.05
+    },
+    {
+     "w": "streaks",
+     "start": 33.068,
+     "end": 33.385
+    },
+    {
+     "w": "to",
+     "start": 33.406,
+     "end": 33.642
+    },
+    {
+     "w": "BALANCE",
+     "start": 33.657,
+     "end": 34.178
+    },
+    {
+     "w": "out.",
+     "start": 34.211,
+     "end": 34.464
+    }
+   ]
+  },
+  {
+   "text": "Think of the last time you said 'I'm DUE.' That one.",
+   "sec": "cd",
+   "start": 34.8,
+   "end": 37.23,
+   "words": [
+    {
+     "w": "Think",
+     "start": 34.8,
+     "end": 35.014
+    },
+    {
+     "w": "of",
+     "start": 35.027,
+     "end": 35.205
+    },
+    {
+     "w": "the",
+     "start": 35.216,
+     "end": 35.405
+    },
+    {
+     "w": "last",
+     "start": 35.417,
+     "end": 35.619
+    },
+    {
+     "w": "time",
+     "start": 35.632,
+     "end": 35.833
+    },
+    {
+     "w": "you",
+     "start": 35.846,
+     "end": 36.035
+    },
+    {
+     "w": "said",
+     "start": 36.047,
+     "end": 36.249
+    },
+    {
+     "w": "'I'm",
+     "start": 36.262,
+     "end": 36.439
+    },
+    {
+     "w": "DUE.'",
+     "start": 36.45,
+     "end": 36.64
+    },
+    {
+     "w": "That",
+     "start": 36.652,
+     "end": 36.853
+    },
+    {
+     "w": "one.",
+     "start": 36.866,
+     "end": 37.208
+    }
+   ]
+  },
+  {
+   "text": "Flip seven: heads. The coin never kept SCORE. Neither should you.",
+   "sec": "cd",
+   "start": 37.55,
+   "end": 41.02,
+   "words": [
+    {
+     "w": "Flip",
+     "start": 37.55,
+     "end": 37.767
+    },
+    {
+     "w": "seven:",
+     "start": 37.78,
+     "end": 38.174
+    },
+    {
+     "w": "heads.",
+     "start": 38.304,
+     "end": 38.534
+    },
+    {
+     "w": "The",
+     "start": 38.653,
+     "end": 38.857
+    },
+    {
+     "w": "coin",
+     "start": 38.87,
+     "end": 39.086
+    },
+    {
+     "w": "never",
+     "start": 39.1,
+     "end": 39.494
+    },
+    {
+     "w": "kept",
+     "start": 39.519,
+     "end": 39.735
+    },
+    {
+     "w": "SCORE.",
+     "start": 39.749,
+     "end": 39.979
+    },
+    {
+     "w": "Neither",
+     "start": 40.098,
+     "end": 40.518
+    },
+    {
+     "w": "should",
+     "start": 40.545,
+     "end": 40.788
+    },
+    {
+     "w": "you.",
+     "start": 40.804,
+     "end": 41.007
+    }
+   ]
+  },
+  {
+   "text": "Would YOU have bet tails?",
+   "sec": "cd",
+   "start": 41.34,
+   "end": 42.58,
+   "words": [
+    {
+     "w": "Would",
+     "start": 41.34,
+     "end": 41.587
+    },
+    {
+     "w": "YOU",
+     "start": 41.603,
+     "end": 41.822
+    },
+    {
+     "w": "have",
+     "start": 41.836,
+     "end": 42.069
+    },
+    {
+     "w": "bet",
+     "start": 42.084,
+     "end": 42.303
+    },
+    {
+     "w": "tails?",
+     "start": 42.317,
+     "end": 42.564
+    }
+   ]
+  },
+  {
+   "text": "Send this to the FRIEND who's always 'due.'",
+   "sec": "cd",
+   "start": 42.9,
+   "end": 45.01,
+   "words": [
+    {
+     "w": "Send",
+     "start": 42.9,
+     "end": 43.126
+    },
+    {
+     "w": "this",
+     "start": 43.141,
+     "end": 43.367
+    },
+    {
+     "w": "to",
+     "start": 43.382,
+     "end": 43.581
+    },
+    {
+     "w": "the",
+     "start": 43.594,
+     "end": 43.806
+    },
+    {
+     "w": "FRIEND",
+     "start": 43.82,
+     "end": 44.074
+    },
+    {
+     "w": "who's",
+     "start": 44.09,
+     "end": 44.317
+    },
+    {
+     "w": "always",
+     "start": 44.331,
+     "end": 44.757
+    },
+    {
+     "w": "'due.'",
+     "start": 44.784,
+     "end": 44.996
+    }
+   ]
+  }
+ ]
+}

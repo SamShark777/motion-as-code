@@ -1,0 +1,741 @@
+{
+ "lines": [
+  {
+   "text": "You're always RUSHED. Coffee in one hand, phone in the other.",
+   "sec": "cd",
+   "start": 0.15,
+   "end": 3.2,
+   "words": [
+    {
+     "w": "You're",
+     "start": 0.15,
+     "end": 0.351
+    },
+    {
+     "w": "always",
+     "start": 0.364,
+     "end": 0.72
+    },
+    {
+     "w": "RUSHED.",
+     "start": 0.743,
+     "end": 1.099
+    },
+    {
+     "w": "Coffee",
+     "start": 1.214,
+     "end": 1.426
+    },
+    {
+     "w": "in",
+     "start": 1.44,
+     "end": 1.606
+    },
+    {
+     "w": "one",
+     "start": 1.617,
+     "end": 1.939
+    },
+    {
+     "w": "hand,",
+     "start": 1.959,
+     "end": 2.149
+    },
+    {
+     "w": "phone",
+     "start": 2.253,
+     "end": 2.454
+    },
+    {
+     "w": "in",
+     "start": 2.467,
+     "end": 2.633
+    },
+    {
+     "w": "the",
+     "start": 2.644,
+     "end": 2.822
+    },
+    {
+     "w": "other.",
+     "start": 2.833,
+     "end": 3.178
+    }
+   ]
+  },
+  {
+   "text": "You say 'no TIME' all day. Count them.",
+   "sec": "cd",
+   "start": 3.52,
+   "end": 5.7,
+   "words": [
+    {
+     "w": "You",
+     "start": 3.52,
+     "end": 3.756
+    },
+    {
+     "w": "say",
+     "start": 3.771,
+     "end": 4.007
+    },
+    {
+     "w": "'no",
+     "start": 4.022,
+     "end": 4.243
+    },
+    {
+     "w": "TIME'",
+     "start": 4.257,
+     "end": 4.509
+    },
+    {
+     "w": "all",
+     "start": 4.525,
+     "end": 4.761
+    },
+    {
+     "w": "day.",
+     "start": 4.776,
+     "end": 5.012
+    },
+    {
+     "w": "Count",
+     "start": 5.149,
+     "end": 5.416
+    },
+    {
+     "w": "them.",
+     "start": 5.433,
+     "end": 5.684
+    }
+   ]
+  },
+  {
+   "text": "The fix might not be more hours. It might be AWE.",
+   "sec": "cd",
+   "start": 6.02,
+   "end": 8.5,
+   "words": [
+    {
+     "w": "The",
+     "start": 6.02,
+     "end": 6.206
+    },
+    {
+     "w": "fix",
+     "start": 6.218,
+     "end": 6.403
+    },
+    {
+     "w": "might",
+     "start": 6.415,
+     "end": 6.625
+    },
+    {
+     "w": "not",
+     "start": 6.638,
+     "end": 6.824
+    },
+    {
+     "w": "be",
+     "start": 6.836,
+     "end": 7.01
+    },
+    {
+     "w": "more",
+     "start": 7.021,
+     "end": 7.219
+    },
+    {
+     "w": "hours.",
+     "start": 7.231,
+     "end": 7.441
+    },
+    {
+     "w": "It",
+     "start": 7.55,
+     "end": 7.724
+    },
+    {
+     "w": "might",
+     "start": 7.735,
+     "end": 7.945
+    },
+    {
+     "w": "be",
+     "start": 7.958,
+     "end": 8.132
+    },
+    {
+     "w": "AWE.",
+     "start": 8.143,
+     "end": 8.479
+    }
+   ]
+  },
+  {
+   "text": "Nine fifteen. Your INBOX explodes. 'No time.'",
+   "sec": "cd",
+   "start": 8.82,
+   "end": 11.73,
+   "words": [
+    {
+     "w": "Nine",
+     "start": 8.82,
+     "end": 9.062
+    },
+    {
+     "w": "fifteen.",
+     "start": 9.077,
+     "end": 9.547
+    },
+    {
+     "w": "Your",
+     "start": 9.694,
+     "end": 9.936
+    },
+    {
+     "w": "INBOX",
+     "start": 9.951,
+     "end": 10.391
+    },
+    {
+     "w": "explodes.",
+     "start": 10.419,
+     "end": 11.087
+    },
+    {
+     "w": "'No",
+     "start": 11.246,
+     "end": 11.459
+    },
+    {
+     "w": "time.'",
+     "start": 11.473,
+     "end": 11.715
+    }
+   ]
+  },
+  {
+   "text": "One p.m. Lunch at your DESK. 'No time.'",
+   "sec": "cd",
+   "start": 12.05,
+   "end": 14.74,
+   "words": [
+    {
+     "w": "One",
+     "start": 12.05,
+     "end": 12.511
+    },
+    {
+     "w": "p.m.",
+     "start": 12.541,
+     "end": 12.78
+    },
+    {
+     "w": "Lunch",
+     "start": 12.926,
+     "end": 13.214
+    },
+    {
+     "w": "at",
+     "start": 13.233,
+     "end": 13.472
+    },
+    {
+     "w": "your",
+     "start": 13.487,
+     "end": 13.759
+    },
+    {
+     "w": "DESK.",
+     "start": 13.776,
+     "end": 14.048
+    },
+    {
+     "w": "'No",
+     "start": 14.197,
+     "end": 14.436
+    },
+    {
+     "w": "time.'",
+     "start": 14.451,
+     "end": 14.723
+    }
+   ]
+  },
+  {
+   "text": "Five thirty. A friend calls. You let it RING.",
+   "sec": "cd",
+   "start": 15.06,
+   "end": 17.58,
+   "words": [
+    {
+     "w": "Five",
+     "start": 15.06,
+     "end": 15.285
+    },
+    {
+     "w": "thirty.",
+     "start": 15.299,
+     "end": 15.721
+    },
+    {
+     "w": "A",
+     "start": 15.857,
+     "end": 16.04
+    },
+    {
+     "w": "friend",
+     "start": 16.052,
+     "end": 16.304
+    },
+    {
+     "w": "calls.",
+     "start": 16.32,
+     "end": 16.558
+    },
+    {
+     "w": "You",
+     "start": 16.682,
+     "end": 16.893
+    },
+    {
+     "w": "let",
+     "start": 16.907,
+     "end": 17.118
+    },
+    {
+     "w": "it",
+     "start": 17.131,
+     "end": 17.328
+    },
+    {
+     "w": "RING.",
+     "start": 17.341,
+     "end": 17.566
+    }
+   ]
+  },
+  {
+   "text": "Seven. A huge sunset. You don't look UP.",
+   "sec": "cd",
+   "start": 17.9,
+   "end": 20.31,
+   "words": [
+    {
+     "w": "Seven.",
+     "start": 17.9,
+     "end": 18.302
+    },
+    {
+     "w": "A",
+     "start": 18.435,
+     "end": 18.616
+    },
+    {
+     "w": "huge",
+     "start": 18.627,
+     "end": 18.848
+    },
+    {
+     "w": "sunset.",
+     "start": 18.863,
+     "end": 19.278
+    },
+    {
+     "w": "You",
+     "start": 19.412,
+     "end": 19.619
+    },
+    {
+     "w": "don't",
+     "start": 19.633,
+     "end": 19.854
+    },
+    {
+     "w": "look",
+     "start": 19.868,
+     "end": 20.089
+    },
+    {
+     "w": "UP.",
+     "start": 20.103,
+     "end": 20.298
+    }
+   ]
+  },
+  {
+   "text": "Midnight. 'Where did the day GO?'",
+   "sec": "cd",
+   "start": 20.63,
+   "end": 22.22,
+   "words": [
+    {
+     "w": "Midnight.",
+     "start": 20.63,
+     "end": 21.044
+    },
+    {
+     "w": "'Where",
+     "start": 21.171,
+     "end": 21.391
+    },
+    {
+     "w": "did",
+     "start": 21.405,
+     "end": 21.6
+    },
+    {
+     "w": "the",
+     "start": 21.612,
+     "end": 21.807
+    },
+    {
+     "w": "day",
+     "start": 21.819,
+     "end": 22.014
+    },
+    {
+     "w": "GO?'",
+     "start": 22.026,
+     "end": 22.208
+    }
+   ]
+  },
+  {
+   "text": "In 2012, people watched one minute of AWE: waterfalls, whales, space.",
+   "sec": "cd",
+   "start": 22.54,
+   "end": 26.85,
+   "words": [
+    {
+     "w": "In",
+     "start": 22.54,
+     "end": 22.725
+    },
+    {
+     "w": "2012,",
+     "start": 22.737,
+     "end": 22.896
+    },
+    {
+     "w": "people",
+     "start": 23.008,
+     "end": 23.404
+    },
+    {
+     "w": "watched",
+     "start": 23.429,
+     "end": 23.837
+    },
+    {
+     "w": "one",
+     "start": 23.864,
+     "end": 24.221
+    },
+    {
+     "w": "minute",
+     "start": 24.244,
+     "end": 24.639
+    },
+    {
+     "w": "of",
+     "start": 24.664,
+     "end": 24.849
+    },
+    {
+     "w": "AWE:",
+     "start": 24.861,
+     "end": 25.219
+    },
+    {
+     "w": "waterfalls,",
+     "start": 25.343,
+     "end": 25.949
+    },
+    {
+     "w": "whales,",
+     "start": 26.09,
+     "end": 26.485
+    },
+    {
+     "w": "space.",
+     "start": 26.612,
+     "end": 26.836
+    }
+   ]
+  },
+  {
+   "text": "Versus a happy ad, they felt they had MORE time.",
+   "sec": "cd",
+   "start": 27.17,
+   "end": 29.87,
+   "words": [
+    {
+     "w": "Versus",
+     "start": 27.17,
+     "end": 27.575
+    },
+    {
+     "w": "a",
+     "start": 27.6,
+     "end": 27.776
+    },
+    {
+     "w": "happy",
+     "start": 27.788,
+     "end": 28.179
+    },
+    {
+     "w": "ad,",
+     "start": 28.204,
+     "end": 28.393
+    },
+    {
+     "w": "they",
+     "start": 28.51,
+     "end": 28.725
+    },
+    {
+     "w": "felt",
+     "start": 28.739,
+     "end": 28.954
+    },
+    {
+     "w": "they",
+     "start": 28.968,
+     "end": 29.183
+    },
+    {
+     "w": "had",
+     "start": 29.197,
+     "end": 29.399
+    },
+    {
+     "w": "MORE",
+     "start": 29.412,
+     "end": 29.627
+    },
+    {
+     "w": "time.",
+     "start": 29.641,
+     "end": 29.856
+    }
+   ]
+  },
+  {
+   "text": "Think of the last time you stopped for a sky. Yeah. THAT long.",
+   "sec": "cd",
+   "start": 30.19,
+   "end": 33.47,
+   "words": [
+    {
+     "w": "Think",
+     "start": 30.19,
+     "end": 30.418
+    },
+    {
+     "w": "of",
+     "start": 30.432,
+     "end": 30.621
+    },
+    {
+     "w": "the",
+     "start": 30.633,
+     "end": 30.835
+    },
+    {
+     "w": "last",
+     "start": 30.847,
+     "end": 31.062
+    },
+    {
+     "w": "time",
+     "start": 31.076,
+     "end": 31.29
+    },
+    {
+     "w": "you",
+     "start": 31.304,
+     "end": 31.506
+    },
+    {
+     "w": "stopped",
+     "start": 31.519,
+     "end": 31.935
+    },
+    {
+     "w": "for",
+     "start": 31.961,
+     "end": 32.163
+    },
+    {
+     "w": "a",
+     "start": 32.176,
+     "end": 32.352
+    },
+    {
+     "w": "sky.",
+     "start": 32.363,
+     "end": 32.564
+    },
+    {
+     "w": "Yeah.",
+     "start": 32.681,
+     "end": 32.896
+    },
+    {
+     "w": "THAT",
+     "start": 33.013,
+     "end": 33.228
+    },
+    {
+     "w": "long.",
+     "start": 33.242,
+     "end": 33.456
+    }
+   ]
+  },
+  {
+   "text": "Tomorrow: one minute of SKY before the inbox.",
+   "sec": "cd",
+   "start": 33.79,
+   "end": 36.53,
+   "words": [
+    {
+     "w": "Tomorrow:",
+     "start": 33.79,
+     "end": 34.326
+    },
+    {
+     "w": "one",
+     "start": 34.455,
+     "end": 34.785
+    },
+    {
+     "w": "minute",
+     "start": 34.806,
+     "end": 35.171
+    },
+    {
+     "w": "of",
+     "start": 35.194,
+     "end": 35.365
+    },
+    {
+     "w": "SKY",
+     "start": 35.376,
+     "end": 35.559
+    },
+    {
+     "w": "before",
+     "start": 35.571,
+     "end": 35.936
+    },
+    {
+     "w": "the",
+     "start": 35.959,
+     "end": 36.142
+    },
+    {
+     "w": "inbox.",
+     "start": 36.154,
+     "end": 36.507
+    }
+   ]
+  },
+  {
+   "text": "When did YOU last feel awe?",
+   "sec": "cd",
+   "start": 36.85,
+   "end": 38.05,
+   "words": [
+    {
+     "w": "When",
+     "start": 36.85,
+     "end": 37.022
+    },
+    {
+     "w": "did",
+     "start": 37.032,
+     "end": 37.194
+    },
+    {
+     "w": "YOU",
+     "start": 37.204,
+     "end": 37.365
+    },
+    {
+     "w": "last",
+     "start": 37.375,
+     "end": 37.547
+    },
+    {
+     "w": "feel",
+     "start": 37.558,
+     "end": 37.729
+    },
+    {
+     "w": "awe?",
+     "start": 37.74,
+     "end": 38.031
+    }
+   ]
+  },
+  {
+   "text": "Send this to the FRIEND who's always 'so busy.'",
+   "sec": "cd",
+   "start": 38.37,
+   "end": 40.74,
+   "words": [
+    {
+     "w": "Send",
+     "start": 38.37,
+     "end": 38.583
+    },
+    {
+     "w": "this",
+     "start": 38.597,
+     "end": 38.81
+    },
+    {
+     "w": "to",
+     "start": 38.823,
+     "end": 39.011
+    },
+    {
+     "w": "the",
+     "start": 39.023,
+     "end": 39.223
+    },
+    {
+     "w": "FRIEND",
+     "start": 39.236,
+     "end": 39.474
+    },
+    {
+     "w": "who's",
+     "start": 39.49,
+     "end": 39.703
+    },
+    {
+     "w": "always",
+     "start": 39.716,
+     "end": 40.117
+    },
+    {
+     "w": "'so",
+     "start": 40.142,
+     "end": 40.33
+    },
+    {
+     "w": "busy.'",
+     "start": 40.342,
+     "end": 40.716
+    }
+   ]
+  }
+ ]
+}
